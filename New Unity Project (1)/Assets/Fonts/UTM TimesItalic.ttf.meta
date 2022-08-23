@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 927cb833ea3b8b64f9700add3091ff35
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: UTM Times
+  fontNames:
+  - UTM Times
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 88465096104806e49942c29adff044dd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
