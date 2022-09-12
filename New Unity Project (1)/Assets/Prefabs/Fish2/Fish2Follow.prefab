@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoundCircleRadius: 0.4
   RotateSpeed: 60
-  Speed: 1
+  Speed: 2
 --- !u!114 &11458250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +87,7 @@ MonoBehaviour:
   HpMax: 1
   RndHpMax: 2
   _gold: 1
+  damage: 0
 --- !u!95 &9574230
 Animator:
   serializedVersion: 3
@@ -196,6 +197,18 @@ PrefabInstance:
     - target: {fileID: 4490539422285700, guid: c47975c1e341e064cb12197350951fc8, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490539422285700, guid: c47975c1e341e064cb12197350951fc8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490539422285700, guid: c47975c1e341e064cb12197350951fc8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490539422285700, guid: c47975c1e341e064cb12197350951fc8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4490539422285700, guid: c47975c1e341e064cb12197350951fc8, type: 3}
       propertyPath: m_LocalPosition.x

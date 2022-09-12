@@ -22,8 +22,15 @@ public class FishControl : MonoBehaviour
 
     public delegate void CallDie();
     public CallDie _callDie;
-
+    public int armor;
     public int _gold;
+    [SerializeField] GameObject armorEffect;
+    public float resetArmor;
+    public bool armorCreate;
+    public float resetOnHit;
+
+    public int evade;
+    public bool canEvade;
 
     void OnEnable()
     {
@@ -37,28 +44,66 @@ public class FishControl : MonoBehaviour
             _hp = Random.Range(HpMax - RndHpMax, HpMax + RndHpMax);
         else
             _hp = Random.Range(Hp - RndHp, Hp - RndHp);
+        
     }
-
+    private void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold + 10);
+        }
+        if (armor == 50)
+        {
+            armorEffect.SetActive(true);
+        }
+        if (armor < 50 && armorCreate == true && resetOnHit <= 0)
+        {
+            resetArmor += Time.deltaTime;
+        }
+        if (resetArmor > 60)
+        {
+            armor = 50;
+            resetArmor = 0;
+        }
+        if (resetOnHit > 0)
+        {
+            resetOnHit -= Time.deltaTime;
+        }
+    }
     public void hitDame(int dame, GameObject obj)
     {
-        if (_checkCollsion == null || (_checkCollsion.GetInstanceID() != obj.GetInstanceID()))
+        if(armorCreate == true)
         {
-            _hp -= dame;
-            _checkCollsion = obj;
-
-            if (_hp <= 0)
+            resetOnHit = 10;
+        }
+        evade = Random.Range(0, 10);
+        if(evade != 1) {
+            if (_checkCollsion == null || (_checkCollsion.GetInstanceID() != obj.GetInstanceID()))
             {
-                if (_callDie != null)
+                //dame = GunControl.instance.damage;
+                Debug.Log(GunControl.instance.damage);
+                armor -= GunControl.instance.damage;
+                if (armor <= 0)
                 {
-                    _callDie();
+                    _hp -= GunControl.instance.damage;
+                    armorEffect.SetActive(false);
                 }
-                _swim.enabled = false;
-                _ani.Play(AnimationNameDie, 0, 0);
-                GetComponent<BoxCollider2D>().enabled = false;
-                Instantiate(Resources.Load("coinEff"), transform.position + Vector3.up * 0.5f, Quaternion.identity);
-                UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
-                FishManage.Instance._FishMange.Remove(transform);
-                Destroy(gameObject, 0.8f);
+                _checkCollsion = obj;
+
+                if (_hp <= 0)
+                {
+                    if (_callDie != null)
+                    {
+                        _callDie();
+                    }
+                    _swim.enabled = false;
+                    _ani.Play(AnimationNameDie, 0, 0);
+                    GetComponent<BoxCollider2D>().enabled = false;
+                    Instantiate(Resources.Load("coinEff"), transform.position + Vector3.up * 0.5f, Quaternion.identity);
+                    UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
+                    FishManage.Instance._FishMange.Remove(transform);
+                    Destroy(gameObject, 0.8f);
+                }
             }
         }
     }

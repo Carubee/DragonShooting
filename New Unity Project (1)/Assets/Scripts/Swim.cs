@@ -24,6 +24,8 @@ public class Swim : MonoBehaviour
     bool acpectRotate;
     public float RotateSpeed = 90;
     public float Speed;
+    public float FreezeTime;
+    public bool Freeze;
 
 
     void OnEnable()
@@ -59,6 +61,16 @@ public class Swim : MonoBehaviour
 
     void Update()
     {
+        if (Freeze == true)
+            FreezeTime += Time.deltaTime;
+
+        if (FreezeTime >= 1)
+        {
+            Freeze = false;
+            FreezeTime = 0;
+        }
+
+        if(Freeze == false)
         transform.position += _tr.right * Time.deltaTime * Speed;
 
         if (acpectRotate)
@@ -68,6 +80,13 @@ public class Swim : MonoBehaviour
             mCurRotateData.rotatedAngle += mCurRotateData.rotateDelta;
             if (mCurRotateData.rotatedAngle > mCurRotateData.stopRotateRadian)
                 acpectRotate = false;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Arrow")
+        {
+            Freeze = true;
         }
     }
 }

@@ -16,8 +16,8 @@ public class BoomControl : MonoBehaviour
             AudioControl.Instance.boom();
             for (int i = 0; i < fish.Length; i++)
             {
-                if (fish[i].collider.tag == "fish")
-                    fish[i].collider.gameObject.GetComponent<FishControl>().hitDame(1000, gameObject);
+                /*if (fish[i].collider.tag == "fish")
+                    fish[i].collider.gameObject.GetComponent<FishControl>().hitDame(1000, gameObject);*/
             }
             GameObject boom = (GameObject)Instantiate(eff, transform.position, Quaternion.identity);
             Destroy(boom, 1.5f);

@@ -18,16 +18,21 @@ public class WebControl : MonoBehaviour
         _sprite = GetComponent<SpriteRenderer>();
         _Collider = GetComponent<CircleCollider2D>();
     }
+    private void Update()
+    {
+        dame = GunControl.instance.damage;
+    }
 
     public void InitWeb(int level)
     {
         _sprite.sprite = ListWeb[level - 1];
         _Collider.radius = ListRadius[level - 1];
-        dame = level + Random.Range(0, 1);
+        /*dame = level + Random.Range(0, 1);
         if (level > 7)
         {
             dame = dame + 7 - level;
-        }
+        }*/
+        
         Invoke("DisableCollision", 0.1f);
         LeanTween.scale(gameObject, new Vector2(1, 1), 0.4f).setEase(LeanTweenType.easeOutElastic).setOnComplete(() =>
         {

@@ -18,8 +18,8 @@ public class ItemControl : MonoBehaviour
             {
                 Transform aFish = FishManage.Instance._CaMapManage[0];
                 FishManage.Instance._CaMapManage.RemoveAt(0);
-                if (aFish != null)
-                    aFish.GetComponent<FishControl>().hitDame(10000, efBoom);
+                /*if (aFish != null)
+                    aFish.GetComponent<FishControl>().hitDame(10000, efBoom);*/
             }
             PlayerPrefs.SetInt("itemcamap", PlayerPrefs.GetInt("itemcamap") - 1);
             AudioControl.Instance.clickButton();
@@ -38,8 +38,8 @@ public class ItemControl : MonoBehaviour
             {
                 Transform aFish = FishManage.Instance._MucManager[0];
                 FishManage.Instance._MucManager.RemoveAt(0);
-                if (aFish != null)
-                    aFish.GetComponent<FishControl>().hitDame(10000, efBoom);
+                /*if (aFish != null)
+                    aFish.GetComponent<FishControl>().hitDame(10000, efBoom);*/
             }
             PlayerPrefs.SetInt("itemmuc", PlayerPrefs.GetInt("itemmuc") - 1);
             AudioControl.Instance.clickButton();
@@ -59,8 +59,8 @@ public class ItemControl : MonoBehaviour
             {
                 Transform aFish = FishManage.Instance._FishMange[0];
                 FishManage.Instance._FishMange.RemoveAt(0);
-                if (aFish != null)
-                    aFish.GetComponent<FishControl>().hitDame(10000, efBoom);
+                /*if (aFish != null)
+                    aFish.GetComponent<FishControl>().hitDame(10000, efBoom);*/
             }
             Instantiate(efNT, Vector3.zero, Quaternion.identity);
             PlayerPrefs.SetInt("itemnt", PlayerPrefs.GetInt("itemnt") - 1);
@@ -158,4 +158,5 @@ public class ItemControl : MonoBehaviour
     {
         Application.LoadLevel("Home");
     }
+    
 }

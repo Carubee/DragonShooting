@@ -104,5 +104,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 564e03e79b85b4844ab8b83ea16ac941, type: 3}
   - {fileID: 21300000, guid: 81f6bd68731802048bce4b21ab456b78, type: 3}
   - {fileID: 21300000, guid: dcaf752f6f41259468a491535f990bd7, type: 3}
-  speed: 0.15
+  speed: 0.1
   _web: {fileID: 195388, guid: 34af1dfd5dad4404280f5ff9129ffe3c, type: 3}

@@ -18,7 +18,7 @@ public class UiTextSpawmControl : MonoBehaviour
     void Start()
     {
         Instance = this;
-        TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
+        TextGold.text = "" + PlayerPrefs.GetInt("gold", 200 ) + " DHC";
         EXPbar.fillAmount = PlayerPrefs.GetFloat("EXP") / (450 + 500 * PlayerPrefs.GetInt("level", 1));
         TextLevel.text = PlayerPrefs.GetInt("level", 1) + "";
     }
@@ -29,7 +29,7 @@ public class UiTextSpawmControl : MonoBehaviour
         obj.GetComponent<effScoreTextControl>().InitEffScore(_pos, gold);
 
         PlayerPrefs.SetFloat("EXP", PlayerPrefs.GetFloat("EXP") + gold);
-        EXPbar.fillAmount = PlayerPrefs.GetFloat("EXP") / (450 + 500 * PlayerPrefs.GetInt("level", 1));
+        //EXPbar.fillAmount = PlayerPrefs.GetFloat("EXP") / (450 + 500 * PlayerPrefs.GetInt("level", 1));
         RocketImg.fillAmount += (float)((float)gold / 1000);
         if (RocketImg.fillAmount == 1)
         {

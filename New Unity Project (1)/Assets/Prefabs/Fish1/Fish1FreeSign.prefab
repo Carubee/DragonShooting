@@ -81,11 +81,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimationName: fish1swim
   AnimationNameDie: fish1die
-  Hp: 1
+  Hp: 5
   RndHp: 0
-  HpMax: 4
+  HpMax: 5
   RndHpMax: 1
-  _gold: 1
+  _gold: 10
 --- !u!95 &9596210
 Animator:
   serializedVersion: 3
@@ -94,7 +94,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 614fdd423a0a98343a3a661540026eb8, type: 2}
   m_CullingMode: 0
@@ -112,7 +112,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -195,6 +195,18 @@ PrefabInstance:
     - target: {fileID: 4014747597690416, guid: 1a9265e8d2deba54c8027b3ac02b11ca, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014747597690416, guid: 1a9265e8d2deba54c8027b3ac02b11ca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014747597690416, guid: 1a9265e8d2deba54c8027b3ac02b11ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014747597690416, guid: 1a9265e8d2deba54c8027b3ac02b11ca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4014747597690416, guid: 1a9265e8d2deba54c8027b3ac02b11ca, type: 3}
       propertyPath: m_LocalPosition.x

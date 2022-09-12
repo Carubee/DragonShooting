@@ -9,14 +9,14 @@ public class WaveQuadControl : MonoBehaviour
 
     void Start()
     {
-        ren = GetComponent<MeshRenderer>();
+        /*ren = GetComponent<MeshRenderer>();
         ren.material.mainTextureOffset = new Vector2(0, 0);
         ren.sortingOrder = 1;
-        ren.sortingLayerName = "bg";
+        ren.sortingLayerName = "bg";*/
     }
 
     void Update()
     {
-        ren.material.mainTextureOffset = new Vector2(Mathf.Repeat(Time.timeSinceLevelLoad * speed / 20, 1), 0);
+        //ren.material.mainTextureOffset = new Vector2(Mathf.Repeat(Time.timeSinceLevelLoad * speed / 20, 1), 0);
     }
 }

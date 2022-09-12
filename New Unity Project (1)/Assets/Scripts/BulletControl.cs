@@ -20,7 +20,7 @@ public class BulletControl : MonoBehaviour
     {
         _sprite.sprite = ListBullet[level - 1];
         transform.up = Gun.up;
-        LeanTween.move(gameObject, target, speed*(Vector2.Distance(target,transform.position))).setOnComplete(() =>
+        LeanTween.move(gameObject, target, speed).setOnComplete(() =>
         {
             GameObject web = (GameObject)Instantiate(_web);
             web.transform.position = transform.position;
