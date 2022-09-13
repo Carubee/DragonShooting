@@ -93,9 +93,9 @@
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.4.20f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor\SpriteEditorModule\TextureImporterDataProvider.cs" />
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2019.4.20f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor\SpriteEditorModule\TextureImporterDataProviderImplementation.cs" />
     <None Include="C:\Program Files\Unity\Hub\Editor\2019.4.20f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor\UI\SpriteEditor\SpriteFrameModuleInspector.uxml" />
-    <None Include="C:\Program Files\Unity\Hub\Editor\2019.4.20f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor\Unity.2D.Sprite.Editor.asmdef" />
-    <None Include="C:\Program Files\Unity\Hub\Editor\2019.4.20f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor\UI\SpriteEditor\PolygonChangeShapeWindow.uxml" />
     <None Include="C:\Program Files\Unity\Hub\Editor\2019.4.20f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor\UI\SpriteEditor\SpriteEditor.uss" />
+    <None Include="C:\Program Files\Unity\Hub\Editor\2019.4.20f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor\UI\SpriteEditor\PolygonChangeShapeWindow.uxml" />
+    <None Include="C:\Program Files\Unity\Hub\Editor\2019.4.20f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite\Editor\Unity.2D.Sprite.Editor.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

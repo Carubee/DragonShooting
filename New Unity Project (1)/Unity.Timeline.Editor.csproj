@@ -330,11 +330,11 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\treeview\TrackGui\TrackResizeHandle.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\treeview\TrackPropertyCurvesDataSource.cs" />
     <None Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\Unity.Timeline.Editor.asmdef" />
-    <None Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\StyleSheets\res\Timeline_LightSkin.txt" />
-    <None Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\StyleSheets\Extensions\dark.uss" />
-    <None Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\StyleSheets\res\Timeline_DarkSkin.txt" />
     <None Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\StyleSheets\Extensions\light.uss" />
     <None Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\StyleSheets\Extensions\common.uss" />
+    <None Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\StyleSheets\res\Timeline_DarkSkin.txt" />
+    <None Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\StyleSheets\Extensions\dark.uss" />
+    <None Include="Library\PackageCache\com.unity.timeline@1.6.3\Editor\StyleSheets\res\Timeline_LightSkin.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

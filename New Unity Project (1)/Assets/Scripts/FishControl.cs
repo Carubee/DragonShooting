@@ -28,7 +28,8 @@ public class FishControl : MonoBehaviour
     public float resetArmor;
     public bool armorCreate;
     public float resetOnHit;
-
+    public bool canRegen;
+    public float regenTime;
     public int evade;
     public bool canEvade;
 
@@ -69,6 +70,10 @@ public class FishControl : MonoBehaviour
         {
             resetOnHit -= Time.deltaTime;
         }
+        if (canRegen == true && resetOnHit == 0 && _hp < HpMax)
+        {
+            regenTime += Time.deltaTime;
+        }
     }
     public void hitDame(int dame, GameObject obj)
     {
@@ -76,17 +81,22 @@ public class FishControl : MonoBehaviour
         {
             resetOnHit = 10;
         }
-        evade = Random.Range(0, 10);
+        if (canEvade == true)
+        {
+            evade = Random.Range(0, 10);
+        }
         if(evade != 1) {
             if (_checkCollsion == null || (_checkCollsion.GetInstanceID() != obj.GetInstanceID()))
             {
                 //dame = GunControl.instance.damage;
-                Debug.Log(GunControl.instance.damage);
+                
                 armor -= GunControl.instance.damage;
                 if (armor <= 0)
                 {
                     _hp -= GunControl.instance.damage;
-                    armorEffect.SetActive(false);
+                    if (armorCreate == true)
+                        armorEffect.SetActive(false);
+                    Debug.Log(GunControl.instance.damage);
                 }
                 _checkCollsion = obj;
 
@@ -99,7 +109,7 @@ public class FishControl : MonoBehaviour
                     _swim.enabled = false;
                     _ani.Play(AnimationNameDie, 0, 0);
                     GetComponent<BoxCollider2D>().enabled = false;
-                    Instantiate(Resources.Load("coinEff"), transform.position + Vector3.up * 0.5f, Quaternion.identity);
+                    Instantiate(Resources.Load("coinEff"), transform.position + Vector3.up * 0.1f, Quaternion.identity);
                     UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
                     FishManage.Instance._FishMange.Remove(transform);
                     Destroy(gameObject, 0.8f);
@@ -116,7 +126,6 @@ public class FishControl : MonoBehaviour
         }
         FishManage.Instance._FishMange.Remove(transform);
         Destroy(gameObject);
-
 
     }
 

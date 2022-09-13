@@ -212,8 +212,8 @@
     <Compile Include="Assets\Xffect\Editor\XffectEventCustom.cs" />
     <Compile Include="Assets\Xffect\EnhancementTools\XSpline\Editor\XSplineEditor.cs" />
     <Compile Include="Assets\Xffect\EnhancementTools\XWeaponTrail\Editor\XWeaponTrailEditor.cs" />
-    <None Include="Assets\DarkTonic\MasterAudio\Editor\RelationsInspector\README.txt" />
     <None Include="Assets\DarkTonic\MasterAudio\Editor\RelationsInspector\changelog.txt" />
+    <None Include="Assets\DarkTonic\MasterAudio\Editor\RelationsInspector\README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

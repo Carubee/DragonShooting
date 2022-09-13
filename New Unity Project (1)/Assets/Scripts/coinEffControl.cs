@@ -11,7 +11,7 @@ public class coinEffControl : MonoBehaviour
         {
             Destroy(gameObject);
         });
-        AudioControl.Instance.coin();
+       // AudioControl.Instance.coin();
     }
 
 

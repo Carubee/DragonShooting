@@ -77,11 +77,11 @@
     <Compile Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\Settings\UiUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\Utils\AdsDashboardUrls.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\Utils\EditorTimer.cs" />
-    <None Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\StyleSheets\AdsService.uss" />
     <None Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\UXML\AdsServiceGameIds.uxml" />
+    <None Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\StyleSheets\AdsService.uss" />
     <None Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\UXML\AdsServiceGettingStarted.uxml" />
-    <None Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\UnityEngine.Advertisements.DevX.Editor.asmdef" />
     <None Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\UXML\AdsServiceTestMode.uxml" />
+    <None Include="Library\PackageCache\com.unity.ads@4.3.0\Editor\DevX\UnityEngine.Advertisements.DevX.Editor.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

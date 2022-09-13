@@ -91,6 +91,11 @@ MonoBehaviour:
   armor: 50
   _gold: 1000
   armorEffect: {fileID: 3760863822703508941}
+  resetArmor: 0
+  armorCreate: 1
+  resetOnHit: 0
+  evade: 0
+  canEvade: 0
 --- !u!95 &9533650
 Animator:
   serializedVersion: 3

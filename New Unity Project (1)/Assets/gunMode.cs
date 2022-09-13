@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using CodeMonkey.Utils;
 
 public class gunMode : MonoBehaviour
 {
@@ -28,6 +30,8 @@ public class gunMode : MonoBehaviour
     void Start()
     {
         instance = this;
+        
+        
     }
 
     void Update()
@@ -76,6 +80,8 @@ public class gunMode : MonoBehaviour
             {
                 firerate = 0;
                 Gatling();
+                Vector3 mousePosition = UtilsClass.GetMouseWorldPosition();
+                
             }
         }
         if (Input.GetKeyDown("1"))
@@ -162,7 +168,7 @@ public class gunMode : MonoBehaviour
             GameObject bullet = Instantiate(shotgunBullet, firepoint.position, firepoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             Vector2 dir = transform.rotation * Vector2.up;
-             Vector2 pdir = Vector2.Perpendicular(dir) * Random.Range(-spread, spread);
+             Vector2 pdir = Vector2.Perpendicular(dir) * UnityEngine.Random.Range(-spread, spread);
              rb.velocity = (dir + pdir) * bulletForce;
 
         }
