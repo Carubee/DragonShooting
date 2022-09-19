@@ -15,7 +15,7 @@ public class FishControl : MonoBehaviour
     public int RndHpMax;
 
     Swim _swim;
-    int _hp;
+    public int _hp;
     GameObject _checkCollsion;
 
     bool _checkInvisible;
@@ -25,6 +25,7 @@ public class FishControl : MonoBehaviour
     public int armor;
     public int _gold;
     [SerializeField] GameObject armorEffect;
+    [SerializeField] GameObject healEffect;
     public float resetArmor;
     public bool armorCreate;
     public float resetOnHit;
@@ -53,9 +54,9 @@ public class FishControl : MonoBehaviour
         {
             UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold + 10);
         }
-        if (armor == 50)
+        if (armor == 50 && armorCreate == true)
         {
-            armorEffect.SetActive(true);
+            //armorEffect.SetActive(true);
         }
         if (armor < 50 && armorCreate == true && resetOnHit <= 0)
         {
@@ -70,7 +71,17 @@ public class FishControl : MonoBehaviour
         {
             resetOnHit -= Time.deltaTime;
         }
-        if (canRegen == true && resetOnHit == 0 && _hp < HpMax)
+        if (canRegen == true && resetOnHit <= 0 && _hp < HpMax)
+        {
+            regenTime += Time.deltaTime;
+            if(regenTime >= 3)
+            {
+                regenTime = 0;
+                _hp += 1;
+                GameObject bullet = Instantiate(healEffect, new Vector2 (this.gameObject.transform.position.x, this.gameObject.transform.position.y), this.gameObject.transform.rotation);
+            }
+        }
+        if (canRegen == true  && _hp >= HpMax)
         {
             regenTime += Time.deltaTime;
         }
@@ -93,9 +104,16 @@ public class FishControl : MonoBehaviour
                 armor -= GunControl.instance.damage;
                 if (armor <= 0)
                 {
-                    _hp -= GunControl.instance.damage;
-                    if (armorCreate == true)
-                        armorEffect.SetActive(false);
+                    if (item.instace.doubleDamage == true)
+                    {
+                        _hp -= GunControl.instance.damage * 2    ;
+                    }
+
+                    if (item.instace.doubleDamage == false)
+                    {
+                        _hp -= GunControl.instance.damage;
+                    }
+
                     Debug.Log(GunControl.instance.damage);
                 }
                 _checkCollsion = obj;
@@ -110,7 +128,16 @@ public class FishControl : MonoBehaviour
                     _ani.Play(AnimationNameDie, 0, 0);
                     GetComponent<BoxCollider2D>().enabled = false;
                     Instantiate(Resources.Load("coinEff"), transform.position + Vector3.up * 0.1f, Quaternion.identity);
-                    UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
+
+                    if(item.instace.doubleGold == true)
+                    {
+                        UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold * 2);
+                    }
+                    else 
+                    {
+                        UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
+                    }
+
                     FishManage.Instance._FishMange.Remove(transform);
                     Destroy(gameObject, 0.8f);
                 }

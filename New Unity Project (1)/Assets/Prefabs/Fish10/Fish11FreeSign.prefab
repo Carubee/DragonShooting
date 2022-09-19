@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48444387, y: -0.063069716, z: 0}
+  m_LocalPosition: {x: 0.503, y: -0.087, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children:
   - {fileID: 8221184106193933412}
@@ -52,6 +52,8 @@ MonoBehaviour:
   BoundCircleRadius: 0.4
   RotateSpeed: 20
   Speed: 2
+  FreezeTime: 0
+  Freeze: 0
 --- !u!114 &11487418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +87,18 @@ MonoBehaviour:
   RndHp: 0
   HpMax: 105
   RndHpMax: 0
+  _hp: 0
+  armor: 0
   _gold: 500
+  armorEffect: {fileID: 0}
+  healEffect: {fileID: 152564, guid: 0e4a7fa9fd28f154b91c98ee6fe8ebea, type: 3}
+  resetArmor: 0
+  armorCreate: 0
+  resetOnHit: 0
+  canRegen: 1
+  regenTime: 0
+  evade: 0
+  canEvade: 0
 --- !u!95 &9500968
 Animator:
   serializedVersion: 3
@@ -168,7 +181,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.2281771, y: 0.08619928}
+  m_Offset: {x: 0.028565556, y: 0.10521008}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -179,7 +192,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.5322413, y: 0.68191934}
+  m_Size: {x: 0.57803434, y: 0.28269652}
   m_EdgeRadius: 0
 --- !u!1001 &8221658591048405758
 PrefabInstance:
@@ -210,11 +223,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4135876023830170, guid: a00d93971bb7f9d4ebbb6c8df37c5a75, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.444
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4135876023830170, guid: a00d93971bb7f9d4ebbb6c8df37c5a75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.101
+      value: 0.099
       objectReference: {fileID: 0}
     - target: {fileID: 4135876023830170, guid: a00d93971bb7f9d4ebbb6c8df37c5a75, type: 3}
       propertyPath: m_LocalPosition.z

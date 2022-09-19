@@ -220,6 +220,19 @@
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\SpatializerHelper.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\TransformFollower.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\UtilStrings.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXFireProjectile.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXLoopScript.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXMouseOrbit.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXSceneManager.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXTarget.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\VFX Library\ParticleEffectsLibrary.cs" />
+    <Compile Include="Assets\Epic Toon FX\Demo\Scripts\VFX Library\UICanvasManager.cs" />
+    <Compile Include="Assets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
+    <Compile Include="Assets\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
+    <Compile Include="Assets\Epic Toon FX\Scripts\ETFXRotation.cs" />
     <Compile Include="Assets\GoldText.cs" />
     <Compile Include="Assets\ItemCountLb.cs" />
     <Compile Include="Assets\MainPlayControl.cs" />
@@ -479,9 +492,12 @@
     <Compile Include="Assets\changbgcontroll.cs" />
     <Compile Include="Assets\changbonus.cs" />
     <Compile Include="Assets\deactiveThuong.cs" />
+    <Compile Include="Assets\destroyEffect.cs" />
     <Compile Include="Assets\enableitem.cs" />
     <Compile Include="Assets\gunMode.cs" />
+    <Compile Include="Assets\item.cs" />
     <Compile Include="Assets\openShop.cs" />
+    <Compile Include="Assets\shakeCamera.cs" />
     <Compile Include="Assets\shopScenes.cs" />
     <Compile Include="Assets\splashControl.cs" />
     <Compile Include="Assets\texttimecontrol.cs" />
@@ -545,6 +561,7 @@
     <None Include="Assets\2DxFX\Resources\_2dxFX_EnergyBar.shader" />
     <None Include="Assets\Xffect\EnhancementTools\XPerObjImageEffects\Resources\Shaders\xft_blur.shader" />
     <None Include="Assets\Xffect\Resources\Shaders\ImageEffect\GlowPerObj\xft_glow_replacement.shader" />
+    <None Include="Assets\Epic Toon FX\Prefabs\Combat\Combat FX.txt" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
     <None Include="Assets\Xffect\EnhancementTools\XClipArea\xft_clip_add.shader" />
     <None Include="Assets\Xffect\Resources\Shaders\AdvanceShader\xft_mask_additive.shader" />
@@ -600,6 +617,7 @@
     <None Include="Assets\2DxFX\Resources\_2dxFX_Fire.shader" />
     <None Include="Assets\UI\uDialog\Examples\Audio\Audio sourced from.txt" />
     <None Include="Assets\Xffect\EnhancementTools\XWeaponTrail\Model\readme.txt" />
+    <None Include="Assets\Epic Toon FX\Prefabs\Interactive\Interactive FX.txt" />
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\CharaOutline.cginc" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Clipping.shader" />
@@ -643,6 +661,7 @@
     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_GrassFX.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Twist.shader" />
+    <None Include="Assets\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />
     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
     <None Include="Assets\Xffect\Resources\Shaders\ImageEffect\xft_radial_blur_mask.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_CompressionFX.shader" />

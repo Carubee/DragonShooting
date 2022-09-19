@@ -105,7 +105,7 @@ public class GunControl : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("gold", 1000) >= _levelGun && _checkfire && _tenlua == false && mousePoint.y < range )
             {
-                if (gunMode.instance.mode == "NormalGun")
+               /* if (gunMode.instance.mode == "NormalGun")
                 {
                     //Debug.Log("Fire");
                     _ani.Play("Fire", 0, 0);
@@ -113,7 +113,7 @@ public class GunControl : MonoBehaviour
                     GameObject _bullet = (GameObject)Instantiate(Bullet);
                     _bullet.transform.position = transform.position + transform.up * 0.5f;
                     _bullet.GetComponent<BulletControl>().InitBullet(_levelGun, transform, new Vector3(mousePoint.x, mousePoint.y, -2.5f));
-                }
+                }*/
                 UiTextSpawmControl.Instance.MinusGold(cost);
 
                 OnShoot?.Invoke(this, new OnShootEventArgs { 

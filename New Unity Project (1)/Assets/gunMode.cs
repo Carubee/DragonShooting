@@ -19,8 +19,13 @@ public class gunMode : MonoBehaviour
     public GameObject arrowBullet;
     public GameObject shotgunBullet;
     public GameObject laserbullet;
+    public GameObject normalBullet;
+    public GameObject longBullet;
+    public GameObject flashGun;
 
     public float bulletForce = 20f;
+    public float bulletForceSlow = 10f;
+    public float bulletForceGating = 40f;
     public float spread;
     public int amountofshotgun;
     public float offset;
@@ -38,6 +43,8 @@ public class gunMode : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+
             if (mode == "Balista")
             {
                 ShootArrow();
@@ -49,6 +56,14 @@ public class gunMode : MonoBehaviour
             if (mode == "laser")
             {
                 laserSwitch = true;
+            }
+            if (mode == "NormalGun")
+            {
+               Normal();
+            }
+            if (mode == "Long-RangeGun")
+            {
+               Long();
             }
             
         }
@@ -71,17 +86,17 @@ public class gunMode : MonoBehaviour
             float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle + offset, Vector3.forward);
         }
-
+       
         if (Input.GetMouseButton(0) && mode == "Gatling") 
         {
             
             firerate += Time.deltaTime;
-            if (firerate >= 0.1)
+            if (firerate >= 0.07)
             {
+                GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
                 firerate = 0;
                 Gatling();
-                Vector3 mousePosition = UtilsClass.GetMouseWorldPosition();
-                
+                UiTextSpawmControl.Instance.MinusGold(1);
             }
         }
         if (Input.GetKeyDown("1"))
@@ -144,15 +159,27 @@ public class gunMode : MonoBehaviour
             gunControl.range = 3;
             GunControl.instance._ani.SetFloat("level", 6);
         }
+        
+    }
+    void Normal()
+    {
+        GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
+        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+
+    }
+    void Long()
+    {
+        GameObject bullet2 = Instantiate(longBullet, firepoint.position, Quaternion.identity);
+        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
 
     }
     void Gatling()
     {
-        Vector3 mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        GameObject _bullet = (GameObject)Instantiate(Bullet);
-        _bullet.transform.position = transform.position + transform.up * 0.5f;
-        _bullet.GetComponent<BulletControl>().InitBullet(GunControl.instance._levelGun, transform, new Vector3(mousePoint.x, mousePoint.y, -2.5f));
-        UiTextSpawmControl.Instance.MinusGold(3);
+        GameObject bullet2 = Instantiate(longBullet, firepoint.position, Quaternion.identity);
+        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
 
     }
     void ShootArrow()

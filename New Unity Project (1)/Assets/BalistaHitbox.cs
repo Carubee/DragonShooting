@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CodeMonkey.Utils;
 
 public class BalistaHitbox : MonoBehaviour
 {
     public float destroy;
     public bool destroyOnHit;
     public bool allow;
+    [SerializeField] GameObject explosion;
     void Start()
     {
         if(allow == false)
@@ -24,6 +26,8 @@ public class BalistaHitbox : MonoBehaviour
         {
             if(destroyOnHit == true)
             {
+                UtilsClass.ShakeCamera(0.03f, .1f);
+                Instantiate(explosion, this.gameObject.transform.position , Quaternion.identity);
                 Destroy(this.gameObject);
             }
             collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
