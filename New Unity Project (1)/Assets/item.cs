@@ -42,6 +42,7 @@ public class item : MonoBehaviour
 
             if (TimeDouble >= 10)
                 doubleGold = false;
+            
         }
         if (doubleDamage == true)
         {
@@ -63,8 +64,9 @@ public class item : MonoBehaviour
     public void DragonTracker()
     {
         Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity); 
-        buffText.text = "Bulle Follow";
-        
+        buffText.text = "Bullet Follow";
+
+        TimeDouble = 0;
 
     }
     public void Bomb()
@@ -79,9 +81,11 @@ public class item : MonoBehaviour
     }
     public void Spare()
     {
+        TimeDouble = 0;
+
         spare = true;
         Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
-        buffText.text = "There is a 30 percent chance of shooting for free";
+        buffText.text = "30 percent Shoot Free";
     }
     public void Double()
     {
@@ -92,6 +96,8 @@ public class item : MonoBehaviour
     }
     public void HunterBag()
     {
+        TimeDouble = 0;
+
         doubleGold = true;
         Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
         buffText.text = "Double Gold";

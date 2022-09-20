@@ -56,7 +56,7 @@ public class FishControl : MonoBehaviour
         }
         if (armor == 50 && armorCreate == true)
         {
-            //armorEffect.SetActive(true);
+            armorEffect.SetActive(true);
         }
         if (armor < 50 && armorCreate == true && resetOnHit <= 0)
         {
