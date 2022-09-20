@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CodeMonkey.Utils;
+
 
 public class item : MonoBehaviour
 {
@@ -16,12 +18,19 @@ public class item : MonoBehaviour
 
     public bool doubleDamage;
     public float TimeDamage;
-
+    public GameObject bomb;
+    public GameObject upgrade;
+    public GameObject lockTarget;
     public Slider timeMode;
+
+    public Transform pointUpgrade;
+
+    public UILabel buffText;
 
     void Start()
     {
         instace = this;
+        buffText.text = "";
     }
 
     void Update()
@@ -46,31 +55,46 @@ public class item : MonoBehaviour
             if (TimeSpare >= 10)
                 spare = false;
         }
+        Vector3 mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (Input.GetButtonDown("Fire1"))
+            Instantiate(lockTarget, new Vector3(mousePoint.x , mousePoint.y, mousePoint.z + 90) , Quaternion.identity);
     }
 
     public void DragonTracker()
     {
-        Debug.Log("+++"); 
+        Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity); 
+        buffText.text = "Bulle Follow";
+        
+
     }
     public void Bomb()
     {
-        Debug.Log("+++");
+
+        for(int i = 0; i < 5; i++)
+        {
+            Instantiate(bomb, new Vector3(Random.Range(-5,6.5f), Random.Range(-3, 3)), Quaternion.identity);
+        }
+        UtilsClass.ShakeCamera(0.03f, .1f);
+
     }
     public void Spare()
     {
         spare = true;
-        Debug.Log("+++");
+        Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
+        buffText.text = "There is a 30 percent chance of shooting for free";
     }
     public void Double()
     {
         TimeDouble = 0;
         doubleDamage = true;
-        Debug.Log("+++");
+        Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
+        buffText.text = "Double Damage";
     }
     public void HunterBag()
     {
         doubleGold = true;
-        Debug.Log("+++");
+        Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
+        buffText.text = "Double Gold";
     }
     public void CardCollection()
     {

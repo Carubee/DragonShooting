@@ -496,6 +496,7 @@
     <Compile Include="Assets\enableitem.cs" />
     <Compile Include="Assets\gunMode.cs" />
     <Compile Include="Assets\item.cs" />
+    <Compile Include="Assets\lockOn.cs" />
     <Compile Include="Assets\openShop.cs" />
     <Compile Include="Assets\shakeCamera.cs" />
     <Compile Include="Assets\shopScenes.cs" />

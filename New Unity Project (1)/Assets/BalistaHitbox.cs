@@ -8,6 +8,7 @@ public class BalistaHitbox : MonoBehaviour
     public float destroy;
     public bool destroyOnHit;
     public bool allow;
+    public bool bomb;
     [SerializeField] GameObject explosion;
     void Start()
     {
@@ -30,7 +31,10 @@ public class BalistaHitbox : MonoBehaviour
                 Instantiate(explosion, this.gameObject.transform.position , Quaternion.identity);
                 Destroy(this.gameObject);
             }
+            if(bomb == false)
             collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+            if (bomb == true)
+            collision.GetComponent<FishControl>().hitDame(100, gameObject);
         }
     }
 }
