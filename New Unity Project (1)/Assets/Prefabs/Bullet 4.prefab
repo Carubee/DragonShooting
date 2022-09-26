@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2447030445355977279}
   - component: {fileID: 5492285444636023039}
   - component: {fileID: 1964761836439622335}
+  - component: {fileID: 1891247093699282675}
   m_Layer: 0
   m_Name: Bullet 4
   m_TagString: Untagged
@@ -147,8 +148,26 @@ MonoBehaviour:
   destroy: 1
   destroyOnHit: 1
   allow: 0
+  bomb: 0
   explosion: {fileID: 1663114390011713154, guid: fdfadff348a89f247963606b7e945200,
     type: 3}
+--- !u!114 &1891247093699282675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2447030445355977266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c33e7e7da3ddd74290066c3200925da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  targetObject: {fileID: 0}
+  speed: 20
+  rotateSpeed: 500
+  movement: {x: 0, y: 0}
 --- !u!1001 &7027127012286345947
 PrefabInstance:
   m_ObjectHideFlags: 0

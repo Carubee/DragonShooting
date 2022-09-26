@@ -56,7 +56,7 @@ public class FishControl : MonoBehaviour
         }
         if (armor == 50 && armorCreate == true)
         {
-            armorEffect.SetActive(true);
+            //armorEffect.SetActive(true);
         }
         if (armor < 50 && armorCreate == true && resetOnHit <= 0)
         {
@@ -84,6 +84,20 @@ public class FishControl : MonoBehaviour
         if (canRegen == true  && _hp >= HpMax)
         {
             regenTime += Time.deltaTime;
+        }
+        if (Input.GetKeyDown("1"))
+        {
+            if (item.instace.tracker == true)
+            {
+                gameObject.tag = "fish";
+            }
+        }
+    }
+    private void OnMouseDown()
+    {
+        if (item.instace.tracker == true)
+        {
+            gameObject.tag = "lock";
         }
     }
     public void hitDame(int dame, GameObject obj)

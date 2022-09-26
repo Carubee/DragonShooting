@@ -16,6 +16,9 @@ public class item : MonoBehaviour
     public bool spare;
     public float TimeSpare;
 
+    public bool tracker;
+    public float Timetracker;
+
     public bool doubleDamage;
     public float TimeDamage;
     public GameObject bomb;
@@ -66,6 +69,7 @@ public class item : MonoBehaviour
         Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity); 
         buffText.text = "Bullet Follow";
 
+        tracker = true;
         TimeDouble = 0;
 
     }

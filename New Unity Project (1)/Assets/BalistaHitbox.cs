@@ -23,7 +23,7 @@ public class BalistaHitbox : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "fish")
+        if (collision.gameObject.tag == "fish" && item.instace.tracker == false)
         {
             if(destroyOnHit == true)
             {
@@ -35,6 +35,17 @@ public class BalistaHitbox : MonoBehaviour
             collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
             if (bomb == true)
             collision.GetComponent<FishControl>().hitDame(100, gameObject);
+        }
+        if (collision.gameObject.tag == "lock" && item.instace.tracker == true)
+        {
+            if (destroyOnHit == true)
+            {
+                UtilsClass.ShakeCamera(0.03f, .1f);
+                Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
+                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+                Destroy(this.gameObject);
+            }
+            
         }
     }
 }
