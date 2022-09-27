@@ -10,6 +10,8 @@ public class BalistaHitbox : MonoBehaviour
     public bool allow;
     public bool bomb;
     [SerializeField] GameObject explosion;
+    [SerializeField] GameObject enchanceDamage;
+    [SerializeField] GameObject normalBullet;
     void Start()
     {
         if(allow == false)
@@ -19,11 +21,18 @@ public class BalistaHitbox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(item.instace.doubleDamage == true)
+        {
+            enchanceDamage.SetActive(true);
+            normalBullet.SetActive(false);
+        }
+        else
+            enchanceDamage.SetActive(false);
+        normalBullet.SetActive(true);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "fish" && item.instace.tracker == false)
+        if (collision.gameObject.tag == "fish" && GameObject.FindGameObjectWithTag("lock") == null)
         {
             if(destroyOnHit == true)
             {
@@ -42,10 +51,12 @@ public class BalistaHitbox : MonoBehaviour
             {
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
-                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
                 Destroy(this.gameObject);
             }
-            
+            if (bomb == false)
+                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+            if (bomb == true)
+                collision.GetComponent<FishControl>().hitDame(100, gameObject);
         }
     }
 }

@@ -27,6 +27,8 @@ public class GunControl : MonoBehaviour
     public GameObject showrange;
     public GameObject showrange1;
     public GameObject showrange2;
+
+    public int randomFreefire;
     public class OnShootEventArgs : EventArgs
     {
         public Vector3 gunEndPointPosition;
@@ -105,17 +107,25 @@ public class GunControl : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("gold", 1000) >= _levelGun && _checkfire && _tenlua == false && mousePoint.y < range )
             {
-               /* if (gunMode.instance.mode == "NormalGun")
+                /* if (gunMode.instance.mode == "NormalGun")
+                 {
+                     //Debug.Log("Fire");
+                     _ani.Play("Fire", 0, 0);
+                     // AudioControl.Instance.shoot();
+                     GameObject _bullet = (GameObject)Instantiate(Bullet);
+                     _bullet.transform.position = transform.position + transform.up * 0.5f;
+                     _bullet.GetComponent<BulletControl>().InitBullet(_levelGun, transform, new Vector3(mousePoint.x, mousePoint.y, -2.5f));
+                 }*/
+                if (item.instace.spare == false)
                 {
-                    //Debug.Log("Fire");
-                    _ani.Play("Fire", 0, 0);
-                    // AudioControl.Instance.shoot();
-                    GameObject _bullet = (GameObject)Instantiate(Bullet);
-                    _bullet.transform.position = transform.position + transform.up * 0.5f;
-                    _bullet.GetComponent<BulletControl>().InitBullet(_levelGun, transform, new Vector3(mousePoint.x, mousePoint.y, -2.5f));
-                }*/
-                UiTextSpawmControl.Instance.MinusGold(cost);
-
+                    UiTextSpawmControl.Instance.MinusGold(cost);
+                }
+                if (item.instace.spare == true)
+                {
+                    randomFreefire = UnityEngine.Random.Range(0,3);
+                    if(randomFreefire == 1 || randomFreefire == 2)
+                    UiTextSpawmControl.Instance.MinusGold(cost);
+                }
                 OnShoot?.Invoke(this, new OnShootEventArgs { 
                     gunEndPointPosition = aimGunEndPointTransform.position,shootPosition = mousePoint,
                 });

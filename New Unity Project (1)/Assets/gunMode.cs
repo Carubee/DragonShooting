@@ -89,11 +89,9 @@ public class gunMode : MonoBehaviour
        
         if (Input.GetMouseButton(0) && mode == "Gatling") 
         {
-            
             firerate += Time.deltaTime;
             if (firerate >= 0.07)
             {
-                GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
                 firerate = 0;
                 Gatling();
                 UiTextSpawmControl.Instance.MinusGold(1);

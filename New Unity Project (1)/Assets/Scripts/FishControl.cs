@@ -26,6 +26,7 @@ public class FishControl : MonoBehaviour
     public int _gold;
     [SerializeField] GameObject armorEffect;
     [SerializeField] GameObject healEffect;
+    [SerializeField] GameObject lockEffect;
     public float resetArmor;
     public bool armorCreate;
     public float resetOnHit;
@@ -90,7 +91,16 @@ public class FishControl : MonoBehaviour
             if (item.instace.tracker == true)
             {
                 gameObject.tag = "fish";
+                
             }
+        }
+        if(item.instace.tracker == false)
+        {
+            gameObject.tag = "fish";
+        }
+        if(_hp <= 0 && item.instace.tracker == true)
+        {
+            gameObject.tag = "fish";
         }
     }
     private void OnMouseDown()
@@ -98,6 +108,7 @@ public class FishControl : MonoBehaviour
         if (item.instace.tracker == true)
         {
             gameObject.tag = "lock";
+            lockEffect.SetActive(true);
         }
     }
     public void hitDame(int dame, GameObject obj)

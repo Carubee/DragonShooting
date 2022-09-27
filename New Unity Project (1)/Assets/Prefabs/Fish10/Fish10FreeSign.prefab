@@ -93,6 +93,8 @@ MonoBehaviour:
   _gold: 1000
   armorEffect: {fileID: 0}
   healEffect: {fileID: 0}
+  lockEffect: {fileID: 4572166908939240136, guid: 372ae4b37e48e4c428edb9a1bda71262,
+    type: 3}
   resetArmor: 0
   armorCreate: 1
   resetOnHit: 0

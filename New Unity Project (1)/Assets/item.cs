@@ -24,6 +24,7 @@ public class item : MonoBehaviour
     public GameObject bomb;
     public GameObject upgrade;
     public GameObject lockTarget;
+    public GameObject goldEffect;
     public Slider timeMode;
 
     public Transform pointUpgrade;
@@ -40,24 +41,35 @@ public class item : MonoBehaviour
     {
         if(doubleGold == true)
         {
+            goldEffect.SetActive(true);
             TimeDouble += Time.deltaTime;
             timeMode.value = TimeDouble;
-
             if (TimeDouble >= 10)
+            {
                 doubleGold = false;
-            
+                goldEffect.SetActive(false);
+            }
         }
         if (doubleDamage == true)
         {
             TimeDamage += Time.deltaTime;
+            timeMode.value = TimeDamage;
             if (TimeDamage >= 10)
                 doubleDamage = false;
         }
         if (spare == true)
         {
             TimeSpare += Time.deltaTime;
+            timeMode.value = TimeSpare;
             if (TimeSpare >= 10)
                 spare = false;
+        }
+        if (tracker == true)
+        {
+            Timetracker += Time.deltaTime;
+            timeMode.value = Timetracker;
+            if (Timetracker >= 10)
+                tracker = false;
         }
         Vector3 mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetButtonDown("Fire1"))
@@ -68,10 +80,8 @@ public class item : MonoBehaviour
     {
         Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity); 
         buffText.text = "Bullet Follow";
-
         tracker = true;
-        TimeDouble = 0;
-
+        Timetracker = 0;
     }
     public void Bomb()
     {
@@ -85,15 +95,14 @@ public class item : MonoBehaviour
     }
     public void Spare()
     {
-        TimeDouble = 0;
-
+        TimeSpare = 0;
         spare = true;
         Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
         buffText.text = "30 percent Shoot Free";
     }
     public void Double()
     {
-        TimeDouble = 0;
+        TimeDamage = 0;
         doubleDamage = true;
         Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
         buffText.text = "Double Damage";
@@ -101,7 +110,6 @@ public class item : MonoBehaviour
     public void HunterBag()
     {
         TimeDouble = 0;
-
         doubleGold = true;
         Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
         buffText.text = "Double Gold";

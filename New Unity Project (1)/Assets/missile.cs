@@ -29,12 +29,13 @@ public class missile : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("lock") != null)
             {
                 target = targetObject.transform;
-                Vector3 direction = target.position - transform.position;
-                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                rb.rotation = angle;
+                Vector2 direction = (Vector2)target.position - rb.position;
+                float angle = Vector3.Cross(direction , transform.up).z;
+                rb.angularVelocity = -angle * rotateSpeed;
                 direction.Normalize();
-                movement = direction;
-                moveBullet(movement);
+                rb.velocity = transform.up * speed;
+                /*movement = direction;
+                moveBullet(movement);*/
             }
             
             
