@@ -152,6 +152,7 @@ MonoBehaviour:
   explosion: {fileID: 1663114390011713154, guid: fdfadff348a89f247963606b7e945200,
     type: 3}
   enchanceDamage: {fileID: 4863111878071511746}
+  normalBullet: {fileID: 4227468661462253170}
 --- !u!1001 &4227468661462355128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -233,6 +234,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed28e53c93fc7d2449d7c68bb8409223, type: 3}
+--- !u!1 &4227468661462253170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 193226, guid: ed28e53c93fc7d2449d7c68bb8409223,
+    type: 3}
+  m_PrefabInstance: {fileID: 4227468661462355128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4227468661462007230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 438534, guid: ed28e53c93fc7d2449d7c68bb8409223,

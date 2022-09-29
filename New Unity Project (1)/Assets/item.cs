@@ -39,7 +39,7 @@ public class item : MonoBehaviour
 
     void Update()
     {
-        if(doubleGold == true)
+        if(doubleGold == true && PlayerPrefs.GetInt("gold", 1000) >= 350)
         {
             goldEffect.SetActive(true);
             TimeDouble += Time.deltaTime;
@@ -50,21 +50,21 @@ public class item : MonoBehaviour
                 goldEffect.SetActive(false);
             }
         }
-        if (doubleDamage == true)
+        if (doubleDamage == true && PlayerPrefs.GetInt("gold", 1000) >= 35)
         {
             TimeDamage += Time.deltaTime;
             timeMode.value = TimeDamage;
             if (TimeDamage >= 10)
                 doubleDamage = false;
         }
-        if (spare == true)
+        if (spare == true && PlayerPrefs.GetInt("gold", 1000) >= 25)
         {
             TimeSpare += Time.deltaTime;
             timeMode.value = TimeSpare;
             if (TimeSpare >= 10)
                 spare = false;
         }
-        if (tracker == true)
+        if (tracker == true && PlayerPrefs.GetInt("gold", 1000) >= 150)
         {
             Timetracker += Time.deltaTime;
             timeMode.value = Timetracker;
@@ -85,13 +85,14 @@ public class item : MonoBehaviour
     }
     public void Bomb()
     {
-
-        for(int i = 0; i < 5; i++)
+        if (PlayerPrefs.GetInt("gold", 1000) >= 45)
         {
-            Instantiate(bomb, new Vector3(Random.Range(-5,6.5f), Random.Range(-3, 3)), Quaternion.identity);
+            for (int i = 0; i < 5; i++)
+            {
+                Instantiate(bomb, new Vector3(Random.Range(-5, 6.5f), Random.Range(-3, 3)), Quaternion.identity);
+            }
+            UtilsClass.ShakeCamera(0.03f, .1f);
         }
-        UtilsClass.ShakeCamera(0.03f, .1f);
-
     }
     public void Spare()
     {

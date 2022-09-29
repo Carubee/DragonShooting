@@ -32,6 +32,12 @@ public class gunMode : MonoBehaviour
     public GunControl gunControl;
     public UILabel modeGun;
 
+    public GameObject normalGun;
+    public GameObject longGun;
+    public GameObject shotGun;
+    public GameObject gatingGun;
+    public GameObject balistaGun;
+    public GameObject laserGun;
     void Start()
     {
         instance = this;
@@ -106,6 +112,13 @@ public class gunMode : MonoBehaviour
             gunControl.range = 1;
             gunMode.instance.mode = "NormalGun";
             GunControl.instance._ani.SetFloat("level", 1);
+
+            normalGun.SetActive(true);
+            longGun.SetActive(false);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(false);
         }
         if (Input.GetKeyDown("2"))
         {
@@ -116,6 +129,13 @@ public class gunMode : MonoBehaviour
             gunControl.damage = 2;
             gunControl.range = 3;
             GunControl.instance._ani.SetFloat("level", 2);
+
+            normalGun.SetActive(false);
+            longGun.SetActive(true);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(false);
         }
         if (Input.GetKeyDown("3"))
         {
@@ -126,6 +146,13 @@ public class gunMode : MonoBehaviour
             gunControl.damage = 2;
             gunControl.range = 0;
             GunControl.instance._ani.SetFloat("level", 3);
+
+            normalGun.SetActive(false);
+            longGun.SetActive(false);
+            shotGun.SetActive(true);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(false);
         }
         if (Input.GetKeyDown("4"))
         {
@@ -136,6 +163,13 @@ public class gunMode : MonoBehaviour
             gunControl.range = 3;
             gunMode.instance.mode = "Gatling";
             GunControl.instance._ani.SetFloat("level", 4);
+
+            normalGun.SetActive(false);
+            longGun.SetActive(false);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(true);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(false);
         }
         if (Input.GetKeyDown("5"))
         {
@@ -146,6 +180,13 @@ public class gunMode : MonoBehaviour
             gunControl.damage = 10;
             gunControl.range = 3;
             GunControl.instance._ani.SetFloat("level", 5);
+
+            normalGun.SetActive(false);
+            longGun.SetActive(false);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(true);
+            laserGun.SetActive(false);
         }
         if (Input.GetKeyDown("6"))
         {
@@ -156,6 +197,13 @@ public class gunMode : MonoBehaviour
             gunControl.damage = 100;
             gunControl.range = 3;
             GunControl.instance._ani.SetFloat("level", 6);
+
+            normalGun.SetActive(false);
+            longGun.SetActive(false);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(true);
         }
         
     }
@@ -190,7 +238,7 @@ public class gunMode : MonoBehaviour
     {
         for(int i = 0; i < amountofshotgun; i++ )
         {
-            GameObject bullet = Instantiate(shotgunBullet, firepoint.position, firepoint.rotation);
+            GameObject bullet = Instantiate(shotgunBullet, firepoint.position, Quaternion.identity);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             Vector2 dir = transform.rotation * Vector2.up;
              Vector2 pdir = Vector2.Perpendicular(dir) * UnityEngine.Random.Range(-spread, spread);

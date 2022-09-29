@@ -21,14 +21,16 @@ public class BalistaHitbox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(item.instace.doubleDamage == true)
+        if (item.instace.doubleDamage == true)
         {
             enchanceDamage.SetActive(true);
             normalBullet.SetActive(false);
         }
-        else
+        if(item.instace.doubleDamage == false)
+        {
             enchanceDamage.SetActive(false);
-        normalBullet.SetActive(true);
+            normalBullet.SetActive(true);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
