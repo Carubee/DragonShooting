@@ -126,6 +126,12 @@ public class ItemControl : MonoBehaviour
         shop.SetActive(false);
         _lb.text = PlayerPrefs.GetInt("gold", 200) + "";
     }
+    public void plusMoney()
+    {
+        PlayerPrefs.SetInt("gold", PlayerPrefs.GetInt("gold", 200) + 50);
+        _lb.text = "" + PlayerPrefs.GetInt("gold", 200);
+        shop.SetActive(false);
+    }
     public void showAds()
     {
         /*if (Advertisement.IsReady())

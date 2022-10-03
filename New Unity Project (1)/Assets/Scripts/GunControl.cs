@@ -101,11 +101,11 @@ public class GunControl : MonoBehaviour
         Vector3 mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if(gunMode.instance.laserSwitch == false)
         transform.up = Vector3.Normalize(mousePoint + Vector3.forward * 10 - transform.position);
-        if (PlayerPrefs.GetInt("gold", 1000) < _levelGun && _tenlua == false )
+        if (PlayerPrefs.GetInt("gold", 1000) < _levelGun )
             popUp.SetActive(true);
         else
         {
-            if (PlayerPrefs.GetInt("gold", 1000) >= _levelGun && _checkfire && _tenlua == false && mousePoint.y < range )
+            if (PlayerPrefs.GetInt("gold", 1000) >= _levelGun   )
             {
                 /* if (gunMode.instance.mode == "NormalGun")
                  {
@@ -116,16 +116,7 @@ public class GunControl : MonoBehaviour
                      _bullet.transform.position = transform.position + transform.up * 0.5f;
                      _bullet.GetComponent<BulletControl>().InitBullet(_levelGun, transform, new Vector3(mousePoint.x, mousePoint.y, -2.5f));
                  }*/
-                if (item.instace.spare == false)
-                {
-                    UiTextSpawmControl.Instance.MinusGold(cost);
-                }
-                if (item.instace.spare == true)
-                {
-                    randomFreefire = UnityEngine.Random.Range(0,3);
-                    if(randomFreefire == 1 || randomFreefire == 2)
-                    UiTextSpawmControl.Instance.MinusGold(cost);
-                }
+                
                 OnShoot?.Invoke(this, new OnShootEventArgs { 
                     gunEndPointPosition = aimGunEndPointTransform.position,shootPosition = mousePoint,
                 });

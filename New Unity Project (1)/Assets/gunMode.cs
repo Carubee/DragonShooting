@@ -12,6 +12,7 @@ public class gunMode : MonoBehaviour
     public GameObject Bullet;
     int _levelGun;
     public float firerate ;
+    public float firerateAmount ;
     public float firelaser ;
     public bool laserSwitch ;
 
@@ -38,16 +39,19 @@ public class gunMode : MonoBehaviour
     public GameObject gatingGun;
     public GameObject balistaGun;
     public GameObject laserGun;
+
+    public int randomFreefire;
+
     void Start()
     {
         instance = this;
-        
-        
+
+        firerateAmount = 0.5f;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetButtonDown("Fire1"))
+        /*if (Input.GetButtonDown("Fire1") && PlayerPrefs.GetInt("gold", 1000) > 0)
         {
             GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
 
@@ -73,6 +77,7 @@ public class gunMode : MonoBehaviour
             }
             
         }
+        */
         modeGun.text = mode;
         if (laserSwitch == true)
         {
@@ -80,7 +85,7 @@ public class gunMode : MonoBehaviour
             laserbullet.SetActive(true);
 
         }
-        if (firelaser >= 1)
+        if (firelaser >= 0.5)
         {
             firelaser = 0;
             laserSwitch = false;
@@ -92,8 +97,50 @@ public class gunMode : MonoBehaviour
             float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle + offset, Vector3.forward);
         }
-       
-        if (Input.GetMouseButton(0) && mode == "Gatling") 
+        if(firerate <= 2)
+            firerate += Time.deltaTime;
+        
+        if (Input.GetMouseButton(0)  && PlayerPrefs.GetInt("gold", 1000) > 0)
+        {
+            if (firerate >= firerateAmount)
+            {
+                if (item.instace.spare == false)
+                {
+                    UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
+                }
+                if (item.instace.spare == true)
+                {
+                    randomFreefire = UnityEngine.Random.Range(0, 3);
+                    if (randomFreefire == 1 || randomFreefire == 2)
+                        UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
+                }
+                
+                GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+                firerate = 0;
+                if (mode == "NormalGun")
+                {
+                    Normal();
+                }
+                if (mode == "Long-RangeGun")
+                {
+                    Long();
+                }
+                if (mode == "Shotgun")
+                {
+                    ShootShotgun();
+                }
+                if (mode == "laser")
+                {
+                    laserSwitch = true;
+                }
+                if (mode == "Balista")
+                {
+                    ShootArrow();
+                }
+            }
+        }
+
+            if (Input.GetMouseButton(0) && mode == "Gatling" && PlayerPrefs.GetInt("gold", 1000) > 0) 
         {
             firerate += Time.deltaTime;
             if (firerate >= 0.07)
@@ -106,7 +153,6 @@ public class gunMode : MonoBehaviour
         if (Input.GetKeyDown("1"))
         {
             Debug.Log("Buy");
-            UiTextSpawmControl.Instance.MinusGold(0);
             gunControl.cost = 1;
             gunControl.damage = 1;
             gunControl.range = 1;
@@ -123,7 +169,6 @@ public class gunMode : MonoBehaviour
         if (Input.GetKeyDown("2"))
         {
             Debug.Log("Buy1");
-            UiTextSpawmControl.Instance.MinusGold(0);
             gunMode.instance.mode = "Long-RangeGun";
             gunControl.cost = 2;
             gunControl.damage = 2;
@@ -140,7 +185,6 @@ public class gunMode : MonoBehaviour
         if (Input.GetKeyDown("3"))
         {
             Debug.Log("Buy2");
-            UiTextSpawmControl.Instance.MinusGold(0);
             gunMode.instance.mode = "Shotgun";
             gunControl.cost = 5;
             gunControl.damage = 2;
@@ -157,7 +201,6 @@ public class gunMode : MonoBehaviour
         if (Input.GetKeyDown("4"))
         {
             Debug.Log("Buy3");
-            UiTextSpawmControl.Instance.MinusGold(0);
             gunControl.cost = 3;
             gunControl.damage = 3;
             gunControl.range = 3;
@@ -174,7 +217,6 @@ public class gunMode : MonoBehaviour
         if (Input.GetKeyDown("5"))
         {
             Debug.Log("Buy4");
-            UiTextSpawmControl.Instance.MinusGold(0);
             gunMode.instance.mode = "Balista";
             gunControl.cost = 15;
             gunControl.damage = 10;
@@ -191,7 +233,6 @@ public class gunMode : MonoBehaviour
         if (Input.GetKeyDown("6"))
         {
             Debug.Log("Buy5");
-            UiTextSpawmControl.Instance.MinusGold(0);
             gunMode.instance.mode = "laser";
             gunControl.cost = 25;
             gunControl.damage = 100;
@@ -212,7 +253,6 @@ public class gunMode : MonoBehaviour
         GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
         Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
         rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
-
     }
     void Long()
     {

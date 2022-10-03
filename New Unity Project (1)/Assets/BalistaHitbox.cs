@@ -21,12 +21,12 @@ public class BalistaHitbox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (item.instace.doubleDamage == true)
+        if (item.instace.doubleDamage == true && bomb == false) 
         {
             enchanceDamage.SetActive(true);
             normalBullet.SetActive(false);
         }
-        if(item.instace.doubleDamage == false)
+        if(item.instace.doubleDamage == false && bomb == false)
         {
             enchanceDamage.SetActive(false);
             normalBullet.SetActive(true);

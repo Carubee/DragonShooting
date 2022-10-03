@@ -41,6 +41,7 @@ public class item : MonoBehaviour
     {
         if(doubleGold == true && PlayerPrefs.GetInt("gold", 1000) >= 350)
         {
+            UiTextSpawmControl.Instance.MinusGold(350);
             goldEffect.SetActive(true);
             TimeDouble += Time.deltaTime;
             timeMode.value = TimeDouble;
@@ -52,6 +53,7 @@ public class item : MonoBehaviour
         }
         if (doubleDamage == true && PlayerPrefs.GetInt("gold", 1000) >= 35)
         {
+            UiTextSpawmControl.Instance.MinusGold(35);
             TimeDamage += Time.deltaTime;
             timeMode.value = TimeDamage;
             if (TimeDamage >= 10)
@@ -59,6 +61,7 @@ public class item : MonoBehaviour
         }
         if (spare == true && PlayerPrefs.GetInt("gold", 1000) >= 25)
         {
+            UiTextSpawmControl.Instance.MinusGold(25);
             TimeSpare += Time.deltaTime;
             timeMode.value = TimeSpare;
             if (TimeSpare >= 10)
@@ -66,6 +69,7 @@ public class item : MonoBehaviour
         }
         if (tracker == true && PlayerPrefs.GetInt("gold", 1000) >= 150)
         {
+            UiTextSpawmControl.Instance.MinusGold(150);
             Timetracker += Time.deltaTime;
             timeMode.value = Timetracker;
             if (Timetracker >= 10)
@@ -87,6 +91,7 @@ public class item : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("gold", 1000) >= 45)
         {
+            UiTextSpawmControl.Instance.MinusGold(45);
             for (int i = 0; i < 5; i++)
             {
                 Instantiate(bomb, new Vector3(Random.Range(-5, 6.5f), Random.Range(-3, 3)), Quaternion.identity);
