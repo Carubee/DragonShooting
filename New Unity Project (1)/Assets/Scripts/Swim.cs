@@ -31,7 +31,7 @@ public class Swim : MonoBehaviour
     void OnEnable()
     {
         _tr = transform;
-
+        //_tr.position = new Vector3(0, 0, 10);
     }
 
     public void Rotate(float angle)

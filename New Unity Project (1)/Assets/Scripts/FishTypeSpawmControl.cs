@@ -40,7 +40,7 @@ public class FishTypeSpawmControl : MonoBehaviour
         {
             case 0:
                 float _posY0 = Random.Range(-limitHieght + 1, limitHieght - 1);
-                _tr.position = new Vector2(-limitWith - 1 - _distance, _posY0);
+                _tr.position = new Vector3(-limitWith - 1 - _distance, _posY0,2);
                 if (_posY0 < -limitHieght / 2)
                 {
                     _tr.eulerAngles = new Vector3(0, 0, Random.Range(25, 65));
@@ -60,7 +60,7 @@ public class FishTypeSpawmControl : MonoBehaviour
 
             case 1:
                 float _posX1 = Random.Range(-limitWith + 1, limitWith - 1);
-                _tr.position = new Vector2(_posX1, limitHieght + 1 + _distance);
+                _tr.position = new Vector3(_posX1, limitHieght + 1 + _distance,1);
                 if (_posX1 < -limitWith / 2)
                 {
                     _tr.eulerAngles = new Vector3(0, 0, Random.Range(295, 335));
@@ -81,7 +81,7 @@ public class FishTypeSpawmControl : MonoBehaviour
             case 2:
 
                 float _posX2 = Random.Range(-limitWith + 1, limitWith - 1);
-                _tr.position = new Vector2(_posX2, -limitHieght - 1 - _distance);
+                _tr.position = new Vector3(_posX2, -limitHieght - 1 - _distance,3);
                 if (_posX2 < -limitWith / 2)
                 {
                     _tr.eulerAngles = new Vector3(0, 0, Random.Range(25, 65));
@@ -101,7 +101,7 @@ public class FishTypeSpawmControl : MonoBehaviour
 
             case 3:
                 float _posY3 = Random.Range(-limitHieght + 1, limitHieght - 1);
-                _tr.position = new Vector2(limitWith + 1 + _distance, _posY3);
+                _tr.position = new Vector3(limitWith + 1 + _distance, _posY3,4);
                 if (_posY3 < -limitHieght / 2)
                 {
                     _tr.eulerAngles = new Vector3(0, 0, Random.Range(115, 165));

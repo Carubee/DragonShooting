@@ -53,25 +53,25 @@ public class GunControl : MonoBehaviour
     }
     public void Update()
     {
-        if(range == 0)
+        if (range == 0)
         {
             showrange.SetActive(true);
             showrange1.SetActive(false);
             showrange2.SetActive(false);
         }
-        if(range == 1)
+        if (range == 1)
         {
             showrange.SetActive(false);
             showrange1.SetActive(true);
             showrange2.SetActive(false);
         }
-        if(range == 3)
+        if (range == 3)
         {
             showrange.SetActive(false);
             showrange1.SetActive(false);
             showrange2.SetActive(true);
         }
-        
+
     }
 
     public void PlusGun()
@@ -99,74 +99,70 @@ public class GunControl : MonoBehaviour
     public void Fire()
     {
         Vector3 mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if(gunMode.instance.laserSwitch == false)
-        transform.up = Vector3.Normalize(mousePoint + Vector3.forward * 10 - transform.position);
-        if (PlayerPrefs.GetInt("gold", 1000) < _levelGun )
-            popUp.SetActive(true);
-        else
-        {
-            if (PlayerPrefs.GetInt("gold", 1000) >= _levelGun   )
+        if (gunMode.instance.laserSwitch == false)
+            //transform.up = Vector3.Normalize(mousePoint + Vector3.forward * 10 - transform.position);
+
+        if (PlayerPrefs.GetInt("gold", 1000) >= _levelGun)
             {
-                /* if (gunMode.instance.mode == "NormalGun")
-                 {
-                     //Debug.Log("Fire");
-                     _ani.Play("Fire", 0, 0);
-                     // AudioControl.Instance.shoot();
-                     GameObject _bullet = (GameObject)Instantiate(Bullet);
-                     _bullet.transform.position = transform.position + transform.up * 0.5f;
-                     _bullet.GetComponent<BulletControl>().InitBullet(_levelGun, transform, new Vector3(mousePoint.x, mousePoint.y, -2.5f));
-                 }*/
-                
-                OnShoot?.Invoke(this, new OnShootEventArgs { 
-                    gunEndPointPosition = aimGunEndPointTransform.position,shootPosition = mousePoint,
-                });
-            }
-        }
-        
-        if (_tenlua && _checkfire)
-        {
-            _tenlua = false;
-            tenlua.transform.up = Vector3.Normalize(mousePoint + Vector3.forward * 10 - tenlua.transform.position);
-            _checkfire = false;
-            LeanTween.move(tenlua, new Vector3(mousePoint.x, mousePoint.y, 0), 0.2f * (Vector2.Distance(mousePoint, tenlua.transform.position))).setOnComplete(() =>
-            {
-                RaycastHit2D[] fish = Physics2D.CircleCastAll(new Vector3(tenlua.transform.position.x, tenlua.transform.position.y, 0), 2, Vector3.zero);
-                AudioControl.Instance.boom();
-                for (int i = 0; i < fish.Length; i++)
+                if (gunMode.instance.mode == "NormalGun")
                 {
-                    /*if (fish[i].collider.tag == "fish")
-                        fish[i].collider.gameObject.GetComponent<FishControl>().hitDame(500, gameObject);*/
+                    //Debug.Log("Fire");
+                    //_ani.Play("Fire", 0, 0);
+                    // AudioControl.Instance.shoot();
+                    /*GameObject _bullet = (GameObject)Instantiate(Bullet);
+                    _bullet.transform.position = transform.position + transform.up * 0.5f;
+                    _bullet.GetComponent<BulletControl>().InitBullet(_levelGun, transform, new Vector3(mousePoint.x, mousePoint.y, -2.5f));*/
                 }
-                GameObject boom = (GameObject)Instantiate(_effboom, tenlua.transform.position + tenlua.transform.up * 0.5f, Quaternion.identity);
-                Destroy(boom, 1.5f);
-                tenlua.SetActive(false);
-                GetComponent<SpriteRenderer>().enabled = true;
-                transform.up = Vector3.up;
-                transform.localScale = Vector3.zero;
-                LeanTween.scale(gameObject, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeOutBack).setOnComplete(() =>
+
+            }
+
+
+            /*if (_tenlua && _checkfire)
+            {
+                _tenlua = false;
+                tenlua.transform.up = Vector3.Normalize(mousePoint + Vector3.forward * 10 - tenlua.transform.position);
+                _checkfire = false;
+                LeanTween.move(tenlua, new Vector3(mousePoint.x, mousePoint.y, 0), 0.2f * (Vector2.Distance(mousePoint, tenlua.transform.position))).setOnComplete(() =>
                 {
-                    _checkfire = true;
+                    RaycastHit2D[] fish = Physics2D.CircleCastAll(new Vector3(tenlua.transform.position.x, tenlua.transform.position.y, 0), 2, Vector3.zero);
+                    AudioControl.Instance.boom();
+                    for (int i = 0; i < fish.Length; i++)
+                    {
+                        if (fish[i].collider.tag == "fish")
+                            fish[i].collider.gameObject.GetComponent<FishControl>().hitDame(500, gameObject);
+                    }
+                    GameObject boom = (GameObject)Instantiate(_effboom, tenlua.transform.position + tenlua.transform.up * 0.5f, Quaternion.identity);
+                    Destroy(boom, 1.5f);
+                    tenlua.SetActive(false);
+                    GetComponent<SpriteRenderer>().enabled = true;
+                    transform.up = Vector3.up;
+                    transform.localScale = Vector3.zero;
+                    LeanTween.scale(gameObject, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeOutBack).setOnComplete(() =>
+                    {
+                        _checkfire = true;
+                    });
                 });
-            });
+            }*/
         }
     }
 
-    public void ChangtoRocket()
-    {
-        /*_checkfire = false;
-        LeanTween.scale(gameObject, Vector3.zero, 0.5f).setOnComplete(() =>
-        {
 
-            GetComponent<SpriteRenderer>().enabled = false;
-            _checkfire = true;
-            _tenlua = true;
-        });
-        tenlua.SetActive(true);
-        tenlua.transform.localScale = Vector3.zero;
-        tenlua.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
-        tenlua.transform.up = Vector3.up;
-        LeanTween.scale(tenlua, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeOutBack);
-        */
-    }
+    //public void ChangtoRocket()
+    //{
+    //    _checkfire = false;
+    //    LeanTween.scale(gameObject, Vector3.zero, 0.5f).setOnComplete(() =>
+    //    {
+
+    //        GetComponent<SpriteRenderer>().enabled = false;
+    //        _checkfire = true;
+    //        _tenlua = true;
+    //    });
+    //    tenlua.SetActive(true);
+    //    tenlua.transform.localScale = Vector3.zero;
+    //    tenlua.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+    //    tenlua.transform.up = Vector3.up;
+    //    LeanTween.scale(tenlua, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeOutBack);
+        
+    //}
     
-}
+

@@ -41,7 +41,7 @@ public class gunMode : MonoBehaviour
     public GameObject laserGun;
 
     public int randomFreefire;
-    public bool 
+    //public bool 
 
     void Start()
     {
@@ -52,6 +52,10 @@ public class gunMode : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown("space"))
+        {
+            UiTextSpawmControl.Instance.PushGold(50);
+        }
         /*if (Input.GetButtonDown("Fire1") && PlayerPrefs.GetInt("gold", 1000) > 0)
         {
             GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);

@@ -20,6 +20,7 @@ public class FishFlockLeaderControl : MonoBehaviour
         {
             Transform _tr = Instantiate(_FishPre).transform;
             _tr.GetComponent<FishFlockControl>().SetLeader(transform);
+            _tr.position = new Vector3(0, 0, 10);
             _fish.Add(_tr);
             _tr.position = new Vector2(transform.position.x, transform.position.y) + Random.insideUnitCircle * 0.8f;
            // FishManage.Instance._FishMange.Add(_tr);

@@ -36,41 +36,41 @@ public class FishManage : MonoBehaviour
     }
     void Update()
     {
-        if (_checkTimeBonus && Bonus.activeInHierarchy)
-        {
-            if (_FishMange.Count == 0)
-            {
-                Normal.SetActive(true);
-                Bonus.SetActive(false);
-                _checkTimeBonus = false;
-                _FishMange.Clear();
-            }
-        }
+        //if (_checkTimeBonus && Bonus.activeInHierarchy)
+        //{
+        //    if (_FishMange.Count == 0)
+        //    {
+        //        Normal.SetActive(true);
+        //        Bonus.SetActive(false);
+        //        _checkTimeBonus = false;
+        //        _FishMange.Clear();
+        //    }
+        //}
     }
 
     public void ChangeToBonus()
     {
-        Normal.SetActive(false);
-        Bonus.SetActive(false);
+        //Normal.SetActive(false);
+        //Bonus.SetActive(false);
 
-        Instantiate(wave, new Vector2(8, 0), Quaternion.identity);
-        _stt = stastus.bonus;
-        Invoke("activeeffwave", 0.2f);
+        //Instantiate(wave, new Vector2(8, 0), Quaternion.identity);
+        //_stt = stastus.bonus;
+        //Invoke("activeeffwave", 0.2f);
     }
     void activeeffwave()
     {
-        effwave.SetActive(true);
+        //effwave.SetActive(true);
     }
 
     public void BonusTime()
     {
-        Normal.SetActive(false);
-        Bonus.SetActive(true);
-        Invoke("encheck", 2);
+        //Normal.SetActive(false);
+        //Bonus.SetActive(true);
+        //Invoke("encheck", 2);
     }
 
     void encheck()
     {
-        _checkTimeBonus = true;
+        //_checkTimeBonus = true;
     }
 }

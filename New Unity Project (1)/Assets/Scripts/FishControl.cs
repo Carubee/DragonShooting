@@ -51,10 +51,7 @@ public class FishControl : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold + 10);
-        }
+
         if (armor == 50 && armorCreate == true)
         {
             //armorEffect.SetActive(true);

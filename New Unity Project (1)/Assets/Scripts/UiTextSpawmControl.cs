@@ -33,7 +33,7 @@ public class UiTextSpawmControl : MonoBehaviour
         RocketImg.fillAmount += (float)((float)gold / 1000);
         if (RocketImg.fillAmount == 1)
         {
-            GunControl.Instance.ChangtoRocket();
+            //GunControl.Instance.ChangtoRocket();
             RocketImg.fillAmount = 0;
         }
 
