@@ -41,6 +41,7 @@ public class gunMode : MonoBehaviour
     public GameObject laserGun;
 
     public int randomFreefire;
+    public bool 
 
     void Start()
     {
@@ -49,7 +50,7 @@ public class gunMode : MonoBehaviour
         firerateAmount = 0.5f;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         /*if (Input.GetButtonDown("Fire1") && PlayerPrefs.GetInt("gold", 1000) > 0)
         {
@@ -143,7 +144,7 @@ public class gunMode : MonoBehaviour
             if (Input.GetMouseButton(0) && mode == "Gatling" && PlayerPrefs.GetInt("gold", 1000) > 0) 
         {
             firerate += Time.deltaTime;
-            if (firerate >= 0.07)
+            if (firerate >= 0.1)
             {
                 firerate = 0;
                 Gatling();
