@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoundCircleRadius: 0.4
   RotateSpeed: 20
-  Speed: 0.7
+  Speed: 0.3
   FreezeTime: 0
   Freeze: 0
 --- !u!114 &11430506

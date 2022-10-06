@@ -21,12 +21,12 @@ public class BalistaHitbox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (item.instace.doubleDamage == true && bomb == false) 
+        if (item.instace.doubleDamage == true && bomb == false && allow == false) 
         {
             enchanceDamage.SetActive(true);
             normalBullet.SetActive(false);
         }
-        if(item.instace.doubleDamage == false && bomb == false)
+        if(item.instace.doubleDamage == false && bomb == false && allow == false)
         {
             enchanceDamage.SetActive(false);
             normalBullet.SetActive(true);
@@ -59,6 +59,14 @@ public class BalistaHitbox : MonoBehaviour
                 collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
             if (bomb == true)
                 collision.GetComponent<FishControl>().hitDame(100, gameObject);
+        }
+    }
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "fish" && allow == true)
+        {
+            collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+
         }
     }
 }
