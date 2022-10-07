@@ -17,12 +17,14 @@ public class gunMode : MonoBehaviour
     public bool laserSwitch ;
 
     public Transform firepoint;
+    public Transform firepoint2;
     public GameObject arrowBullet;
     public GameObject shotgunBullet;
     public GameObject laserbullet;
     public GameObject normalBullet;
     public GameObject longBullet;
     public GameObject flashGun;
+    public GameObject flashGun2;
 
     public float bulletForce = 20f;
     public float bulletForceSlow = 10f;
@@ -39,6 +41,7 @@ public class gunMode : MonoBehaviour
     public GameObject gatingGun;
     public GameObject balistaGun;
     public GameObject laserGun;
+    public GameObject laserCollision;
 
     public int randomFreefire;
     //public bool 
@@ -86,27 +89,29 @@ public class gunMode : MonoBehaviour
         modeGun.text = mode;
         if (laserSwitch == true)
         {
-            firelaser += Time.deltaTime;
             laserbullet.SetActive(true);
-
+            Laser();
         }
-        if (firelaser >= 0.5)
+        if (Input.GetMouseButtonUp(0))
         {
-            firelaser = 0;
             laserSwitch = false;
             laserbullet.SetActive(false);
         }
-        if (laserSwitch == false)
-        {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(angle + offset, Vector3.forward);
-        }
+        
+         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+         transform.rotation = Quaternion.AngleAxis(angle + offset, Vector3.forward);
+        
         if(firerate <= 2)
             firerate += Time.deltaTime;
         
         if (Input.GetMouseButton(0)  && PlayerPrefs.GetInt("gold", 1000) > 0)
         {
+
+            if (mode == "laser")
+            {
+                laserSwitch = true;
+            }
             if (firerate >= firerateAmount)
             {
                 if (item.instace.spare == false)
@@ -120,27 +125,31 @@ public class gunMode : MonoBehaviour
                         UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
                 }
                 
-                GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+                
                 firerate = 0;
                 if (mode == "NormalGun")
                 {
                     Normal();
+
+                    GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
                 }
                 if (mode == "Long-RangeGun")
                 {
+                    GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
+
                     Long();
                 }
                 if (mode == "Shotgun")
                 {
+                    GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
                     ShootShotgun();
                 }
-                if (mode == "laser")
-                {
-                    laserSwitch = true;
-                }
+                
                 if (mode == "Balista")
                 {
                     ShootArrow();
+                    GameObject bullet = Instantiate(flashGun2, firepoint.position, firepoint.rotation);
+
                 }
             }
         }
@@ -240,7 +249,7 @@ public class gunMode : MonoBehaviour
             Debug.Log("Buy5");
             gunMode.instance.mode = "laser";
             gunControl.cost = 25;
-            gunControl.damage = 100;
+            gunControl.damage = 1;
             gunControl.range = 3;
             GunControl.instance._ani.SetFloat("level", 6);
 
@@ -291,5 +300,10 @@ public class gunMode : MonoBehaviour
 
         }
     }
-    
+    void Laser()
+    {
+        GameObject bullet = Instantiate(laserCollision, firepoint.position, firepoint.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
+    }
 }

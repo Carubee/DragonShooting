@@ -35,6 +35,7 @@ public class FishControl : MonoBehaviour
     public int evade;
     public bool canEvade;
 
+
     void OnEnable()
     {
         _checkInvisible = false;
@@ -136,7 +137,7 @@ public class FishControl : MonoBehaviour
                         _hp -= GunControl.instance.damage;
                     }
 
-                    Debug.Log(GunControl.instance.damage);
+                    //Debug.Log(GunControl.instance.damage);
                 }
                 _checkCollsion = obj;
 
@@ -146,6 +147,8 @@ public class FishControl : MonoBehaviour
                     {
                         _callDie();
                     }
+
+
                     _swim.enabled = false;
                     _ani.Play(AnimationNameDie, 0, 0);
                     GetComponent<BoxCollider2D>().enabled = false;

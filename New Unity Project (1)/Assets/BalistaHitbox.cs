@@ -14,19 +14,19 @@ public class BalistaHitbox : MonoBehaviour
     [SerializeField] GameObject normalBullet;
     void Start()
     {
-        if(allow == false)
-        Destroy(this.gameObject, destroy);
+        if (allow == false)
+            Destroy(this.gameObject, destroy);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (item.instace.doubleDamage == true && bomb == false && allow == false) 
+        if (item.instace.doubleDamage == true && bomb == false && allow == false)
         {
             enchanceDamage.SetActive(true);
             normalBullet.SetActive(false);
         }
-        if(item.instace.doubleDamage == false && bomb == false && allow == false)
+        if (item.instace.doubleDamage == false && bomb == false && allow == false)
         {
             enchanceDamage.SetActive(false);
             normalBullet.SetActive(true);
@@ -36,16 +36,16 @@ public class BalistaHitbox : MonoBehaviour
     {
         if (collision.gameObject.tag == "fish" && GameObject.FindGameObjectWithTag("lock") == null)
         {
-            if(destroyOnHit == true)
+            if (destroyOnHit == true)
             {
                 UtilsClass.ShakeCamera(0.03f, .1f);
-                Instantiate(explosion, this.gameObject.transform.position , Quaternion.identity);
+                Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
                 Destroy(this.gameObject);
             }
-            if(bomb == false)
-            collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+            if (bomb == false)
+                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
             if (bomb == true)
-            collision.GetComponent<FishControl>().hitDame(100, gameObject);
+                collision.GetComponent<FishControl>().hitDame(100, gameObject);
         }
         if (collision.gameObject.tag == "lock" && item.instace.tracker == true)
         {
@@ -60,13 +60,14 @@ public class BalistaHitbox : MonoBehaviour
             if (bomb == true)
                 collision.GetComponent<FishControl>().hitDame(100, gameObject);
         }
+
     }
-    public void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "fish" && allow == true)
         {
-            collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
-
+            //collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+            //Debug.Log("Work");
         }
     }
 }

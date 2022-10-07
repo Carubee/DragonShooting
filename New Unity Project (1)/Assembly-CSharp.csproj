@@ -1352,21 +1352,21 @@
       <Project>{D1FC152F-5D48-A5E9-750A-A264EE52E81C}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{0F73DEBA-C8DC-31EA-E6DC-D07687C33C2A}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{3B7DC6CE-6F5A-E748-2C6C-8C1195BDD1C1}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
       <Project>{ACF66EC4-3828-9C49-F9E7-A12612B53F07}</Project>
       <Name>Unity.Postprocessing.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{0F73DEBA-C8DC-31EA-E6DC-D07687C33C2A}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
       <Project>{DA8BD255-9083-28EE-F196-D0541FA861FE}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{3B7DC6CE-6F5A-E748-2C6C-8C1195BDD1C1}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
