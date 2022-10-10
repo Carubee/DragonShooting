@@ -83,7 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimationName: fish12swim
   AnimationNameDie: fish12die
-  Hp: 125
+  Hp: 2000
   RndHp: 0
   HpMax: 125
   RndHpMax: 0

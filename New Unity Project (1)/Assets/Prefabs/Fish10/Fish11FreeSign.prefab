@@ -83,13 +83,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimationName: fish11swim
   AnimationNameDie: fish11die
-  Hp: 105
+  Hp: 300
   RndHp: 0
-  HpMax: 105
+  HpMax: 300
   RndHpMax: 0
   _hp: 0
   armor: 0
-  _gold: 500
+  _gold: 200
   armorEffect: {fileID: 0}
   healEffect: {fileID: 152564, guid: 0e4a7fa9fd28f154b91c98ee6fe8ebea, type: 3}
   lockEffect: {fileID: 4572166908939240136, guid: 372ae4b37e48e4c428edb9a1bda71262,

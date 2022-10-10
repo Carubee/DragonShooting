@@ -249,7 +249,7 @@ public class gunMode : MonoBehaviour
             Debug.Log("Buy5");
             gunMode.instance.mode = "laser";
             gunControl.cost = 25;
-            gunControl.damage = 1;
+            gunControl.damage = 50;
             gunControl.range = 3;
             GunControl.instance._ani.SetFloat("level", 6);
 

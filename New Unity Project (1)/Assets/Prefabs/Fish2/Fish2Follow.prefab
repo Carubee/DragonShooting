@@ -88,7 +88,7 @@ MonoBehaviour:
   Hp: 1
   RndHp: 0
   HpMax: 1
-  RndHpMax: 2
+  RndHpMax: 0
   _hp: 0
   armor: 0
   _gold: 1

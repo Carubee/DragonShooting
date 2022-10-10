@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoundCircleRadius: 0.4
   RotateSpeed: 20
-  Speed: 1
+  Speed: 0.5
   FreezeTime: 0
   Freeze: 0
 --- !u!114 &11412822
@@ -84,13 +84,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimationName: fish3swim
   AnimationNameDie: fish3die
-  Hp: 5
+  Hp: 300
   RndHp: 0
-  HpMax: 5
+  HpMax: 300
   RndHpMax: 0
   _hp: 0
   armor: 0
-  _gold: 10
+  _gold: 150
   armorEffect: {fileID: 0}
   healEffect: {fileID: 0}
   lockEffect: {fileID: 3187466296130785459}

@@ -46,7 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoundCircleRadius: 0.4
   RotateSpeed: 60
-  Speed: 1
+  Speed: 0.5
+  FreezeTime: 0
+  Freeze: 0
 --- !u!114 &11476496
 MonoBehaviour:
   m_ObjectHideFlags: 0

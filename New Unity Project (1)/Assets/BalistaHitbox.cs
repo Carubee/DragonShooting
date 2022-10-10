@@ -43,9 +43,15 @@ public class BalistaHitbox : MonoBehaviour
                 Destroy(this.gameObject);
             }
             if (bomb == false)
+            {
                 collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+            }
             if (bomb == true)
+            {
                 collision.GetComponent<FishControl>().hitDame(100, gameObject);
+                Debug.Log("Boom");
+            }
+            
         }
         if (collision.gameObject.tag == "lock" && item.instace.tracker == true)
         {
@@ -55,19 +61,16 @@ public class BalistaHitbox : MonoBehaviour
                 Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
                 Destroy(this.gameObject);
             }
-            if (bomb == false)
+           /* if (bomb == false)
+            {
                 collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+            }
             if (bomb == true)
+            {
                 collision.GetComponent<FishControl>().hitDame(100, gameObject);
+            }*/
         }
 
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "fish" && allow == true)
-        {
-            //collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
-            //Debug.Log("Work");
-        }
-    }
+    
 }
