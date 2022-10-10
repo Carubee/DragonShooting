@@ -31,6 +31,12 @@ public class item : MonoBehaviour
 
     public UILabel buffText;
 
+    public int amountDragonTracker;
+    public int amountBomb;
+    public int amountSpare;
+    public int amountDoubleDamage;
+    public int amountHunterBag;
+
     void Start()
     {
         instace = this;
@@ -78,7 +84,7 @@ public class item : MonoBehaviour
 
     public void DragonTracker()
     {
-        UiTextSpawmControl.Instance.MinusGold(150);
+        
         Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity); 
         buffText.text = "Bullet Follow";
         tracker = true;
