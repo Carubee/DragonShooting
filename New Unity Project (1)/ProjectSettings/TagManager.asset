@@ -8,6 +8,7 @@ TagManager:
   - wave
   - Arrow
   - lock
+  - Menu
   layers:
   - Default
   - TransparentFX

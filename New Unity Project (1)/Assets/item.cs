@@ -31,6 +31,12 @@ public class item : MonoBehaviour
 
     public UILabel buffText;
 
+    public UILabel itemTrackText;
+    public UILabel itemBombText;
+    public UILabel itemSpareText;
+    public UILabel itemDoubleDamageText;
+    public UILabel itemDoubleGoldText;
+
     public int amountDragonTracker;
     public int amountBomb;
     public int amountSpare;
@@ -84,17 +90,22 @@ public class item : MonoBehaviour
 
     public void DragonTracker()
     {
-        
-        Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity); 
-        buffText.text = "Bullet Follow";
-        tracker = true;
-        Timetracker = 0;
+        if (amountDragonTracker > 0)
+        {
+            amountDragonTracker -= 1;
+            UpdateText();
+            Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
+            buffText.text = "Bullet Follow";
+            tracker = true;
+            Timetracker = 0;
+        }
     }
     public void Bomb()
     {
-        if (PlayerPrefs.GetInt("gold", 1000) >= 45)
+        if (amountBomb > 0)
         {
-            UiTextSpawmControl.Instance.MinusGold(45);
+            amountBomb -= 1;
+            UpdateText();
             for (int i = 0; i < 5; i++)
             {
                 Instantiate(bomb, new Vector3(Random.Range(-5, 6.5f), Random.Range(-3, 3)), Quaternion.identity);
@@ -104,30 +115,50 @@ public class item : MonoBehaviour
     }
     public void Spare()
     {
-        UiTextSpawmControl.Instance.MinusGold(25);
-        TimeSpare = 0;
-        spare = true;
-        Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
-        buffText.text = "30 percent Shoot Free";
+        if (amountSpare > 0)
+        {
+            amountSpare -= 1;
+            UpdateText();
+            TimeSpare = 0;
+            spare = true;
+            Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
+            buffText.text = "30 percent Shoot Free";
+        }
     }
     public void Double()
     {
-        UiTextSpawmControl.Instance.MinusGold(35);
-        TimeDamage = 0;
-        doubleDamage = true;
-        Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
-        buffText.text = "Double Damage";
+        if (amountDoubleDamage > 0)
+        {
+            amountDoubleDamage -= 1;
+            UpdateText();
+            TimeDamage = 0;
+            doubleDamage = true;
+            Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
+            buffText.text = "Double Damage";
+        }
     }
     public void HunterBag()
     {
-        UiTextSpawmControl.Instance.MinusGold(350);
-        TimeDouble = 0;
-        doubleGold = true;
-        Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
-        buffText.text = "Double Gold";
+        if (amountHunterBag > 0)
+        {
+            amountHunterBag -= 1;
+            UpdateText();
+            TimeDouble = 0;
+            doubleGold = true;
+            Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
+            buffText.text = "Double Gold";
+        }
     }
     public void CardCollection()
     {
         Debug.Log("+++");
+    }
+    public void UpdateText()
+    {
+        itemTrackText.text = amountDragonTracker.ToString();
+        itemBombText.text = amountBomb.ToString();
+        itemSpareText.text = amountSpare.ToString();
+        itemDoubleDamageText.text = amountDoubleDamage.ToString();
+        itemDoubleGoldText.text = amountHunterBag.ToString();
     }
 }

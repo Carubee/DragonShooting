@@ -43,18 +43,19 @@ public class gunMode : MonoBehaviour
     public GameObject laserGun;
     public GameObject laserCollision;
 
+    public bool canfire;
+
     public int randomFreefire;
-    //public bool 
 
     void Start()
     {
         instance = this;
-
         firerateAmount = 0.5f;
     }
 
     void Update()
     {
+        
         if (Input.GetKeyDown("space"))
         {
             UiTextSpawmControl.Instance.PushGold(50);
@@ -105,7 +106,7 @@ public class gunMode : MonoBehaviour
         if(firerate <= 2)
             firerate += Time.deltaTime;
         
-        if (Input.GetMouseButton(0)  && PlayerPrefs.GetInt("gold", 1000) > 0)
+        if (Input.GetMouseButton(0)  && PlayerPrefs.GetInt("gold", 1000) > gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
         {
 
             if (mode == "laser")

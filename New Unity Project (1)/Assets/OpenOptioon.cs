@@ -17,15 +17,26 @@ public class OpenOptioon : MonoBehaviour
     bool HunterBag;
 
     [SerializeField] item itemUse;
-    
+    [SerializeField] gunMode gunmode;
+    public static OpenOptioon instant;
+    public bool openMenu;
 
+    public void Start()
+    {
+        instant = this;
+        CloseOption();
+    }
     public void OpenOption()
     {
+        gunmode.canfire = false;
         option.SetActive(true);
+        openMenu = true;
+
     }
     public void ShopOption()
     {
         shop.SetActive(true);
+        openMenu = true;
     }
     public void CloseOption()
     {
@@ -33,11 +44,16 @@ public class OpenOptioon : MonoBehaviour
         shop.SetActive(false);
         NoticeBuy.SetActive(false);
         NoticeNotEnough.SetActive(false);
+        gunmode.canfire = true;
+        openMenu = false;
+
     }
     public void CloseBeforeBuy()
     {
         NoticeBuy.SetActive(false);
+        NoticeNotEnough.SetActive(false);
     }
+    
     public void LeaveGame()
     {
         SceneManager.LoadScene(1);
@@ -61,7 +77,7 @@ public class OpenOptioon : MonoBehaviour
     public void BuyBomb()
     {
         Bomb = true;
-        OpenOption();
+        Confirm();
 
     }
     public void BuySpareSoht()
@@ -84,6 +100,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void buyChose()
     {
+        
         if (DragonTracker == true)
         {
             if (PlayerPrefs.GetInt("gold", 1000) >= 150)
@@ -159,5 +176,10 @@ public class OpenOptioon : MonoBehaviour
             HunterBag = false;
 
         }
+        itemUse.UpdateText();
+    }
+    public void OnMouseOver()
+    {
+        Debug.Log("Over");
     }
 }

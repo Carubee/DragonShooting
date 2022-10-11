@@ -174,8 +174,9 @@ public class UIButtonColor : UIWidgetContainer
 		{
 			if (UICamera.currentTouch.pressed == gameObject) OnPress(true);
 			else if (UICamera.currentTouch.current == gameObject) OnHover(true);
-		}
-	}
+
+        }
+    }
 
 	/// <summary>
 	/// Reset the initial state.
@@ -190,28 +191,37 @@ public class UIButtonColor : UIWidgetContainer
 		{
 			SetState(State.Normal, true);
 
-			TweenColor tc = tweenTarget.GetComponent<TweenColor>();
+            TweenColor tc = tweenTarget.GetComponent<TweenColor>();
 
-			if (tc != null)
+            if (tc != null)
 			{
 				tc.value = mDefaultColor;
 				tc.enabled = false;
 			}
 		}
-	}
 
-	/// <summary>
-	/// Set the hover state.
-	/// </summary>
+    }
 
-	protected virtual void OnHover (bool isOver)
+    /// <summary>
+    /// Set the hover state.
+    /// </summary>
+
+    protected virtual void OnHover (bool isOver)
 	{
-		if (isEnabled)
+
+        if (isEnabled)
 		{
-			if (!mInitDone) OnInit();
+            gunMode.instance.canfire = false;
+            if (!mInitDone) OnInit();
 			if (tweenTarget != null) SetState(isOver ? State.Hover : State.Normal, false);
 		}
-	}
+        if (!isOver)
+        {
+            gunMode.instance.canfire = true;
+
+        }
+
+    }
 
 	/// <summary>
 	/// Set the pressed state.
@@ -219,8 +229,10 @@ public class UIButtonColor : UIWidgetContainer
 
 	protected virtual void OnPress (bool isPressed)
 	{
+
 		if (isEnabled && UICamera.currentTouch != null)
 		{
+
 			if (!mInitDone) OnInit();
 
 			if (tweenTarget != null)
