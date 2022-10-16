@@ -34,6 +34,7 @@ public class gunMode : MonoBehaviour
     public float offset;
     public GunControl gunControl;
     public UILabel modeGun;
+    public UILabel costGun;
 
     public GameObject normalGun;
     public GameObject longGun;
@@ -55,7 +56,7 @@ public class gunMode : MonoBehaviour
 
     void Update()
     {
-        
+        costGun.text = gunControl.cost.ToString();
         if (Input.GetKeyDown("space"))
         {
             UiTextSpawmControl.Instance.PushGold(50);
@@ -90,10 +91,12 @@ public class gunMode : MonoBehaviour
         modeGun.text = mode;
         if (laserSwitch == true)
         {
-            laserbullet.SetActive(true);
-            Laser();
+            
+                laserbullet.SetActive(true);
+                Laser();
+            
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost )
         {
             laserSwitch = false;
             laserbullet.SetActive(false);
@@ -106,7 +109,7 @@ public class gunMode : MonoBehaviour
         if(firerate <= 2)
             firerate += Time.deltaTime;
         
-        if (Input.GetMouseButton(0)  && PlayerPrefs.GetInt("gold", 1000) > gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
+        if (Input.GetMouseButton(0)  && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
         {
 
             if (mode == "laser")
@@ -155,7 +158,7 @@ public class gunMode : MonoBehaviour
             }
         }
 
-            if (Input.GetMouseButton(0) && mode == "Gatling" && PlayerPrefs.GetInt("gold", 1000) > 0) 
+            if (Input.GetMouseButton(0) && mode == "Gatling" && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false) 
         {
             firerate += Time.deltaTime;
             if (firerate >= 0.1)
@@ -249,8 +252,8 @@ public class gunMode : MonoBehaviour
         {
             Debug.Log("Buy5");
             gunMode.instance.mode = "laser";
-            gunControl.cost = 25;
-            gunControl.damage = 50;
+            gunControl.cost = 75;
+            gunControl.damage = 10;
             gunControl.range = 3;
             GunControl.instance._ani.SetFloat("level", 6);
 

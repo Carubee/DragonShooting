@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - NGUITransformInspector
     Assembly-CSharp.dll:
     - AudioControl
     - BalistaHitbox
@@ -37,8 +39,11 @@ ScriptsOnlyBuild:
     - MainMenu
     - MainPlayControl
     - MainStartControl
+    - MouseHover
     - OpenOptioon
     - RotateLoading
+    - SciFiBeamStatic
+    - SciFiLightFlicker
     - Swim
     - UI.Dialogs.uDialog
     - UI.Dialogs.uDialog_Button
@@ -103,7 +108,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -130,85 +141,85 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25960}
+      Script: {instanceID: 42126}
     - Class: 114
-      Script: {instanceID: 26638}
+      Script: {instanceID: 42556}
     - Class: 114
-      Script: {instanceID: 26772}
+      Script: {instanceID: 43152}
     - Class: 114
-      Script: {instanceID: 26900}
+      Script: {instanceID: 43820}
     - Class: 114
-      Script: {instanceID: 26988}
+      Script: {instanceID: 43954}
     - Class: 114
-      Script: {instanceID: 27098}
+      Script: {instanceID: 44078}
     - Class: 114
-      Script: {instanceID: 27126}
+      Script: {instanceID: 44164}
     - Class: 114
-      Script: {instanceID: 27132}
+      Script: {instanceID: 44272}
     - Class: 114
-      Script: {instanceID: 27220}
+      Script: {instanceID: 44300}
     - Class: 114
-      Script: {instanceID: 27368}
+      Script: {instanceID: 44306}
     - Class: 114
-      Script: {instanceID: 27432}
+      Script: {instanceID: 44390}
     - Class: 114
-      Script: {instanceID: 27830}
+      Script: {instanceID: 44598}
     - Class: 114
-      Script: {instanceID: 27948}
+      Script: {instanceID: 44994}
     - Class: 114
-      Script: {instanceID: 28190}
+      Script: {instanceID: 45110}
     - Class: 114
-      Script: {instanceID: 28204}
+      Script: {instanceID: 45352}
     - Class: 114
-      Script: {instanceID: 28216}
+      Script: {instanceID: 45366}
     - Class: 114
-      Script: {instanceID: 28852}
+      Script: {instanceID: 45378}
     - Class: 114
-      Script: {instanceID: 29260}
+      Script: {instanceID: 46008}
     - Class: 114
-      Script: {instanceID: 29406}
+      Script: {instanceID: 46410}
     - Class: 114
-      Script: {instanceID: 29734}
+      Script: {instanceID: 46554}
     - Class: 114
-      Script: {instanceID: 29946}
+      Script: {instanceID: 46876}
     - Class: 114
-      Script: {instanceID: 30292}
+      Script: {instanceID: 47086}
     - Class: 114
-      Script: {instanceID: 30318}
+      Script: {instanceID: 47430}
     - Class: 114
-      Script: {instanceID: 30662}
+      Script: {instanceID: 47456}
     - Class: 114
-      Script: {instanceID: 30680}
+      Script: {instanceID: 47800}
     - Class: 114
-      Script: {instanceID: 30780}
+      Script: {instanceID: 47818}
     - Class: 114
-      Script: {instanceID: 31104}
+      Script: {instanceID: 47918}
     - Class: 114
-      Script: {instanceID: 31328}
+      Script: {instanceID: 48240}
     - Class: 114
-      Script: {instanceID: 31744}
+      Script: {instanceID: 48462}
     - Class: 114
-      Script: {instanceID: 32044}
+      Script: {instanceID: 48866}
     - Class: 114
-      Script: {instanceID: 32336}
+      Script: {instanceID: 49164}
     - Class: 114
-      Script: {instanceID: 32444}
+      Script: {instanceID: 49454}
     - Class: 114
-      Script: {instanceID: 32608}
+      Script: {instanceID: 49560}
     - Class: 114
-      Script: {instanceID: 32696}
+      Script: {instanceID: 49724}
     - Class: 114
-      Script: {instanceID: 32998}
+      Script: {instanceID: 49810}
     - Class: 114
-      Script: {instanceID: 33062}
+      Script: {instanceID: 50110}
     - Class: 114
-      Script: {instanceID: 33210}
+      Script: {instanceID: 50172}
     - Class: 114
-      Script: {instanceID: 33266}
+      Script: {instanceID: 50318}
     - Class: 114
-      Script: {instanceID: 33332}
+      Script: {instanceID: 50434}
     - Class: 114
-      Script: {instanceID: 33462}
+      Script: {instanceID: 50562}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -263,39 +274,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25960}
+      Script: {instanceID: 38938}
     - Class: 114
-      Script: {instanceID: 26424}
+      Script: {instanceID: 39930}
     - Class: 114
-      Script: {instanceID: 26638}
+      Script: {instanceID: 43152}
     - Class: 114
-      Script: {instanceID: 26772}
+      Script: {instanceID: 43820}
     - Class: 114
-      Script: {instanceID: 26988}
+      Script: {instanceID: 43954}
     - Class: 114
-      Script: {instanceID: 27126}
+      Script: {instanceID: 44164}
     - Class: 114
-      Script: {instanceID: 27372}
+      Script: {instanceID: 44300}
     - Class: 114
-      Script: {instanceID: 28190}
+      Script: {instanceID: 45352}
     - Class: 114
-      Script: {instanceID: 28204}
+      Script: {instanceID: 45366}
     - Class: 114
-      Script: {instanceID: 28216}
+      Script: {instanceID: 45378}
     - Class: 114
-      Script: {instanceID: 28852}
+      Script: {instanceID: 46008}
     - Class: 114
-      Script: {instanceID: 29260}
+      Script: {instanceID: 46410}
     - Class: 114
-      Script: {instanceID: 29946}
+      Script: {instanceID: 47086}
     - Class: 114
-      Script: {instanceID: 30662}
+      Script: {instanceID: 47800}
     - Class: 114
-      Script: {instanceID: 31744}
+      Script: {instanceID: 48866}
     - Class: 114
-      Script: {instanceID: 32336}
+      Script: {instanceID: 49454}
     - Class: 114
-      Script: {instanceID: 33210}
+      Script: {instanceID: 50318}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -368,134 +379,140 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25960}
+      Script: {instanceID: 32772}
     - Class: 114
-      Script: {instanceID: 26016}
+      Script: {instanceID: 34848}
     - Class: 114
-      Script: {instanceID: 26196}
+      Script: {instanceID: 35278}
     - Class: 114
-      Script: {instanceID: 26258}
+      Script: {instanceID: 37330}
     - Class: 114
-      Script: {instanceID: 26376}
+      Script: {instanceID: 37488}
     - Class: 114
-      Script: {instanceID: 26520}
+      Script: {instanceID: 38508}
     - Class: 114
-      Script: {instanceID: 26638}
+      Script: {instanceID: 39418}
     - Class: 114
-      Script: {instanceID: 26720}
+      Script: {instanceID: 39982}
     - Class: 114
-      Script: {instanceID: 26736}
+      Script: {instanceID: 40606}
     - Class: 114
-      Script: {instanceID: 26772}
+      Script: {instanceID: 42528}
     - Class: 114
-      Script: {instanceID: 27386}
+      Script: {instanceID: 43152}
     - Class: 114
-      Script: {instanceID: 27830}
+      Script: {instanceID: 43208}
     - Class: 114
-      Script: {instanceID: 27860}
+      Script: {instanceID: 43386}
     - Class: 114
-      Script: {instanceID: 28038}
+      Script: {instanceID: 43446}
     - Class: 114
-      Script: {instanceID: 28216}
+      Script: {instanceID: 43564}
     - Class: 114
-      Script: {instanceID: 28252}
+      Script: {instanceID: 43820}
     - Class: 114
-      Script: {instanceID: 28306}
+      Script: {instanceID: 43902}
     - Class: 114
-      Script: {instanceID: 28322}
+      Script: {instanceID: 43918}
     - Class: 114
-      Script: {instanceID: 28328}
+      Script: {instanceID: 43954}
     - Class: 114
-      Script: {instanceID: 28588}
+      Script: {instanceID: 44552}
     - Class: 114
-      Script: {instanceID: 28592}
+      Script: {instanceID: 44994}
     - Class: 114
-      Script: {instanceID: 28648}
+      Script: {instanceID: 45024}
     - Class: 114
-      Script: {instanceID: 28680}
+      Script: {instanceID: 45200}
     - Class: 114
-      Script: {instanceID: 28790}
+      Script: {instanceID: 45378}
     - Class: 114
-      Script: {instanceID: 28880}
+      Script: {instanceID: 45414}
     - Class: 114
-      Script: {instanceID: 28900}
+      Script: {instanceID: 45468}
     - Class: 114
-      Script: {instanceID: 29130}
+      Script: {instanceID: 45484}
     - Class: 114
-      Script: {instanceID: 29206}
+      Script: {instanceID: 45490}
     - Class: 114
-      Script: {instanceID: 29342}
+      Script: {instanceID: 45752}
     - Class: 114
-      Script: {instanceID: 29390}
+      Script: {instanceID: 45808}
     - Class: 114
-      Script: {instanceID: 29420}
+      Script: {instanceID: 45840}
     - Class: 114
-      Script: {instanceID: 29426}
+      Script: {instanceID: 45946}
     - Class: 114
-      Script: {instanceID: 29558}
+      Script: {instanceID: 46036}
     - Class: 114
-      Script: {instanceID: 29560}
+      Script: {instanceID: 46356}
     - Class: 114
-      Script: {instanceID: 29598}
+      Script: {instanceID: 46492}
     - Class: 114
-      Script: {instanceID: 29734}
+      Script: {instanceID: 46540}
     - Class: 114
-      Script: {instanceID: 29946}
+      Script: {instanceID: 46568}
     - Class: 114
-      Script: {instanceID: 30220}
+      Script: {instanceID: 46574}
     - Class: 114
-      Script: {instanceID: 30292}
+      Script: {instanceID: 46704}
     - Class: 114
-      Script: {instanceID: 30724}
+      Script: {instanceID: 46706}
     - Class: 114
-      Script: {instanceID: 31104}
+      Script: {instanceID: 46876}
     - Class: 114
-      Script: {instanceID: 31232}
+      Script: {instanceID: 47086}
     - Class: 114
-      Script: {instanceID: 31254}
+      Script: {instanceID: 47358}
     - Class: 114
-      Script: {instanceID: 31328}
+      Script: {instanceID: 47430}
     - Class: 114
-      Script: {instanceID: 31434}
+      Script: {instanceID: 47862}
     - Class: 114
-      Script: {instanceID: 31466}
+      Script: {instanceID: 48240}
     - Class: 114
-      Script: {instanceID: 31744}
+      Script: {instanceID: 48366}
     - Class: 114
-      Script: {instanceID: 31862}
+      Script: {instanceID: 48388}
     - Class: 114
-      Script: {instanceID: 31920}
+      Script: {instanceID: 48462}
     - Class: 114
-      Script: {instanceID: 31990}
+      Script: {instanceID: 48564}
     - Class: 114
-      Script: {instanceID: 32024}
+      Script: {instanceID: 48594}
     - Class: 114
-      Script: {instanceID: 32204}
+      Script: {instanceID: 48866}
     - Class: 114
-      Script: {instanceID: 32280}
+      Script: {instanceID: 49040}
     - Class: 114
-      Script: {instanceID: 32324}
+      Script: {instanceID: 49110}
     - Class: 114
-      Script: {instanceID: 32358}
+      Script: {instanceID: 49144}
     - Class: 114
-      Script: {instanceID: 32380}
+      Script: {instanceID: 49324}
     - Class: 114
-      Script: {instanceID: 32504}
+      Script: {instanceID: 49400}
     - Class: 114
-      Script: {instanceID: 32696}
+      Script: {instanceID: 49496}
     - Class: 114
-      Script: {instanceID: 32968}
+      Script: {instanceID: 49620}
     - Class: 114
-      Script: {instanceID: 33202}
+      Script: {instanceID: 49810}
     - Class: 114
-      Script: {instanceID: 33210}
+      Script: {instanceID: 50080}
     - Class: 114
-      Script: {instanceID: 33358}
+      Script: {instanceID: 50310}
     - Class: 114
-      Script: {instanceID: 33462}
+      Script: {instanceID: 50318}
     - Class: 114
-      Script: {instanceID: 63438}
+      Script: {instanceID: 50458}
+    - Class: 114
+      Script: {instanceID: 50562}
+    - Class: 114
+      Script: {instanceID: 166998}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
@@ -526,6 +543,462 @@ ScriptsOnlyBuild:
     - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 0880b30b97266268dd6c5edaaf8c4f61
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RandomSFX
+  - hash:
+      serializedVersion: 2
+      Hash: 096a50f6a3d89528ac732e9bb63631c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiLoadSceneOnClick
+  - hash:
+      serializedVersion: 2
+      Hash: bbefda033199be081e5fd849fb1ccb48
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParticleCollisionController
+  - hash:
+      serializedVersion: 2
+      Hash: 096a50f6a3d89528ac732e9bb63631c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ETFXSceneManager
+  - hash:
+      serializedVersion: 2
+      Hash: 42499b36e5db23b809157b5a00b8029d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SciFiLightFlicker
+  - hash:
+      serializedVersion: 2
+      Hash: a4900d574c1d1a9001f0f83b0dddb24d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParticleEffectsLibrary
+  - hash:
+      serializedVersion: 2
+      Hash: 8e5e00ca42eeebc1eae2f91fabb1ee02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXButtonScript
+  - hash:
+      serializedVersion: 2
+      Hash: 2890c468cf196dca883ea02bde96343e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiLightFade
+  - hash:
+      serializedVersion: 2
+      Hash: 8ec0e792978bd03f071b8a441f3cbb19
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiLoopScript
+  - hash:
+      serializedVersion: 2
+      Hash: 7e6ed836cbaa230e56d6a2bbae1b9bb5
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessEffectSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 2890c468cf196dca883ea02bde96343e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXLightFade
+  - hash:
+      serializedVersion: 2
+      Hash: d6fc8d3165070298511ec776ea575626
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessResources
+  - hash:
+      serializedVersion: 2
+      Hash: 5b1d3232bdaba52e260d32a9eb24296b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.MonoBehaviours
+    className: CameraFollowSetup
+  - hash:
+      serializedVersion: 2
+      Hash: 56c90168bc19fe9aee4ba7e6b19350e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiBeamScript
+  - hash:
+      serializedVersion: 2
+      Hash: 57bd5e94952707337619f875398a964e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MetaAudioController
+  - hash:
+      serializedVersion: 2
+      Hash: e888ef4305b8fac9cd5510fefa0636bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiFireProjectile
+  - hash:
+      serializedVersion: 2
+      Hash: e82c0521cdfe8cb6a168ef7208a98d4a
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Vignette
+  - hash:
+      serializedVersion: 2
+      Hash: 69c08f048981d4770c212acd4e1280b1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseTargetLasers
+  - hash:
+      serializedVersion: 2
+      Hash: fa653120b8e2e20f2e5fa15091afeb95
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.Utils
+    className: Button_Sprite
+  - hash:
+      serializedVersion: 2
+      Hash: 71f7f12b8d0f4fd73590db8bcb6d453c
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Bloom
+  - hash:
+      serializedVersion: 2
+      Hash: a611cafee6b934d454dfbd2f26b6de95
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ArmorDragon
+  - hash:
+      serializedVersion: 2
+      Hash: 24b2edb739e02ab9678256f4cc52b87d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PEButtonScript
+  - hash:
+      serializedVersion: 2
+      Hash: 8860633d29a22ff64e02e18da3716cdf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityTemplateProjects
+    className: SimpleCameraController
+  - hash:
+      serializedVersion: 2
+      Hash: 8e5e00ca42eeebc1eae2f91fabb1ee02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiButtonScript
+  - hash:
+      serializedVersion: 2
+      Hash: f542c1afca5bb4022f91fdda19b8d622
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: DepthOfField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: lockOn
+  - hash:
+      serializedVersion: 2
+      Hash: 5361b0646bac5a1f446f9fcc963ffb5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIController
+  - hash:
+      serializedVersion: 2
+      Hash: ed97efcea24677fbcd02678e6010ac16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SciFiBeamStatic
+  - hash:
+      serializedVersion: 2
+      Hash: a2b249e27e25a975ba9d3c9b8e130910
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.Utils
+    className: Button_UI
+  - hash:
+      serializedVersion: 2
+      Hash: 61b9d9b6f4b6a222dfea8b131b3d3227
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ChromaticAberration
+  - hash:
+      serializedVersion: 2
+      Hash: fc1725bc95eec3bbf83b4a7b4a08e77e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: item
+  - hash:
+      serializedVersion: 2
+      Hash: 0e2dcecfc1a59863d6161482eaa244b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXPitchRandomizer
+  - hash:
+      serializedVersion: 2
+      Hash: 0e2dcecfc1a59863d6161482eaa244b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiPitchRandomizer
+  - hash:
+      serializedVersion: 2
+      Hash: b41f6a02beff5d31b9210834dce1767e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UICanvasManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: shakeCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 0912db8419735ecb16044b834208729d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXLoopScript
+  - hash:
+      serializedVersion: 2
+      Hash: b5aaf686465544e9e949e46e293afee1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiDragMouseOrbit
+  - hash:
+      serializedVersion: 2
+      Hash: 63d7b9b64a11859f416d72ba9a3c3fec
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ScreenSpaceReflections
+  - hash:
+      serializedVersion: 2
+      Hash: 79566861074b80c5467fa81dddcf4f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXRotation
+  - hash:
+      serializedVersion: 2
+      Hash: 3094220493f986ccf5d9896919109501
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: destroyEffect
+  - hash:
+      serializedVersion: 2
+      Hash: d5630f96bd5a6a6eed7e1754c3fb8703
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessVolume
+  - hash:
+      serializedVersion: 2
+      Hash: e095f87a56bef0dc3d7238d7a3dd1640
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: missile
+  - hash:
+      serializedVersion: 2
+      Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessProfile
+  - hash:
+      serializedVersion: 2
+      Hash: a1f19ad47d3094e235f21b74dfc423a8
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessLayer
+  - hash:
+      serializedVersion: 2
+      Hash: b13de7a0a457cb8e026d4237dc1b5797
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: LensDistortion
+  - hash:
+      serializedVersion: 2
+      Hash: b5aaf686465544e9e949e46e293afee1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXMouseOrbit
+  - hash:
+      serializedVersion: 2
+      Hash: e888ef4305b8fac9cd5510fefa0636bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXFireProjectile
+  - hash:
+      serializedVersion: 2
+      Hash: 9ace32b9f03ad8156cf751c46edb1542
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpenOptioon
+  - hash:
+      serializedVersion: 2
+      Hash: b82d3baaadf685d6fd725b055ab9c9ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LobbyScript
+  - hash:
+      serializedVersion: 2
+      Hash: 5058e62971372d10db24fe80294c7a3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ETFXProjectileScript
+  - hash:
+      serializedVersion: 2
+      Hash: 726fcf7961cbb4108aa5be5e55b8c8bf
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ColorGrading
+  - hash:
+      serializedVersion: 2
+      Hash: efd01c8863b70c52193874909b7f9ab3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnchantedMeshApply
+  - hash:
+      serializedVersion: 2
+      Hash: 05cede3f915399cac147f9e5eea79328
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.MonoBehaviours
+    className: PositionRendererSorter
+  - hash:
+      serializedVersion: 2
+      Hash: a53651ee3996fbba20dfe0fce02f0b23
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AutoExposure
+  - hash:
+      serializedVersion: 2
+      Hash: b8e953f3ce9159257cbdaf9f866bdeae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiProjectileScript
+  - hash:
+      serializedVersion: 2
+      Hash: bb8ad540d7c0aea559396755357cd6c8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: gunMode
+  - hash:
+      serializedVersion: 2
+      Hash: af93f9c42e90877a9ba31e37adfd900c
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: MotionBlur
+  - hash:
+      serializedVersion: 2
+      Hash: bb6a9bd0f6a16e700da0328c6fad4de5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RotateLoading
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseHover
+  - hash:
+      serializedVersion: 2
+      Hash: ac6acd886c54c48c599ab5fed5781ea7
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AmbientOcclusion
+  - hash:
+      serializedVersion: 2
+      Hash: 79566861074b80c5467fa81dddcf4f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SciFiArsenal
+    className: SciFiRotation
+  - hash:
+      serializedVersion: 2
+      Hash: 50c443b12ccc0b475183318b5088bcc5
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessDebug
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.MonoBehaviours
+    className: ComponentActions
+  - hash:
+      serializedVersion: 2
+      Hash: a41d3e08a24582d7ce8cf47c87e3af86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: buyGun
+  - hash:
+      serializedVersion: 2
+      Hash: 32cebb2ae4cddf0e4d07ddef22ca3a5c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXTarget
+  - hash:
+      serializedVersion: 2
+      Hash: d0987ce3e9092dbe0fa30d73f333fffa
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Grain
+  - hash:
+      serializedVersion: 2
+      Hash: 687d95258613ec1de08a0429e1c361b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HomingParticles
+  - hash:
+      serializedVersion: 2
+      Hash: 2877c7b19b606abc948d13be795ad409
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelfDestroy
+  - hash:
+      serializedVersion: 2
+      Hash: bd01651357485f604eb3798069d22715
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 037607a0e0bfa81a26ecb706b5b70c37
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LaserLine
+  - hash:
+      serializedVersion: 2
+      Hash: e4bdd198714ebacf1ebef1367327eff4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey
+    className: Assets
+  - hash:
+      serializedVersion: 2
+      Hash: e8fcb6a9292578ee6a495f36085c39f1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BalistaHitbox
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CodeMonkey.MonoBehaviours
+    className: CameraFollow
+  - hash:
+      serializedVersion: 2
+      Hash: dfc52690239ec8e8ca9986a1a5b1ba50
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Shooting
+  - hash:
+      serializedVersion: 2
+      Hash: ae393eace4ca07d5bcab18923a0ae9b5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ConLaser
   - hash:
       serializedVersion: 2
       Hash: 592f066edb973a58b34c6653c76c7aac
@@ -570,12 +1043,6 @@ ScriptsOnlyBuild:
     className: SoundGroupOrganizer
   - hash:
       serializedVersion: 2
-      Hash: b41f6a02beff5d31b9210834dce1767e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UICanvasManager
-  - hash:
-      serializedVersion: 2
       Hash: 4e9b850596f3308450e9dc6e6b8eaa82
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -604,12 +1071,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: _2dxFX_PatternAdditive
-  - hash:
-      serializedVersion: 2
-      Hash: 0e2dcecfc1a59863d6161482eaa244b3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EpicToonFX
-    className: ETFXPitchRandomizer
   - hash:
       serializedVersion: 2
       Hash: e6e41e73ee0d3b3b52333e08f89f56e7
@@ -666,12 +1127,6 @@ ScriptsOnlyBuild:
     className: UIForwardEvents
   - hash:
       serializedVersion: 2
-      Hash: b82d3baaadf685d6fd725b055ab9c9ce
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LobbyScript
-  - hash:
-      serializedVersion: 2
       Hash: 0a0eaf3e50e05c836043e6387ea322c9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -702,22 +1157,10 @@ ScriptsOnlyBuild:
     className: XftCameraShakeComp
   - hash:
       serializedVersion: 2
-      Hash: e24cb68c33faa87ec18b425b737757ff
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: OpenOptioon
-  - hash:
-      serializedVersion: 2
       Hash: a99b59d27d911423ed976291aea0f77f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIButtonScale
-  - hash:
-      serializedVersion: 2
-      Hash: 096a50f6a3d89528ac732e9bb63631c7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ETFXSceneManager
   - hash:
       serializedVersion: 2
       Hash: 0a4fe5e36c07dc2e4413285b0165efdd
@@ -798,12 +1241,6 @@ ScriptsOnlyBuild:
     className: EventSounds
   - hash:
       serializedVersion: 2
-      Hash: 05cede3f915399cac147f9e5eea79328
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: CodeMonkey.MonoBehaviours
-    className: PositionRendererSorter
-  - hash:
-      serializedVersion: 2
       Hash: 002020d0363e1d2fc6726436c90292ce
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -814,12 +1251,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UI.Dialogs
     className: uDialog
-  - hash:
-      serializedVersion: 2
-      Hash: 5058e62971372d10db24fe80294c7a3d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ETFXProjectileScript
   - hash:
       serializedVersion: 2
       Hash: bd9740fbab7b5f5f36677f847ac860fd
@@ -888,18 +1319,6 @@ ScriptsOnlyBuild:
     className: _2dxFX_DestroyedFX
   - hash:
       serializedVersion: 2
-      Hash: a611cafee6b934d454dfbd2f26b6de95
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ArmorDragon
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: shakeCamera
-  - hash:
-      serializedVersion: 2
       Hash: b4d532d421d2467959f6acdc9c40299f
     assemblyName: Assembly-CSharp.dll
     namespaceName: UI.Dialogs.Examples
@@ -952,18 +1371,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ReleaseYourEffect
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainMenu
-  - hash:
-      serializedVersion: 2
-      Hash: bb6a9bd0f6a16e700da0328c6fad4de5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RotateLoading
   - hash:
       serializedVersion: 2
       Hash: ba3b26aed8df09496279d3788f8736db
@@ -1296,12 +1703,6 @@ ScriptsOnlyBuild:
     className: UISoundVolume
   - hash:
       serializedVersion: 2
-      Hash: e8fcb6a9292578ee6a495f36085c39f1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BalistaHitbox
-  - hash:
-      serializedVersion: 2
       Hash: 92eeb25669276244eff5afa8ff746589
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1368,22 +1769,10 @@ ScriptsOnlyBuild:
     className: CompositeXffect
   - hash:
       serializedVersion: 2
-      Hash: b5aaf686465544e9e949e46e293afee1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EpicToonFX
-    className: ETFXMouseOrbit
-  - hash:
-      serializedVersion: 2
       Hash: 218a8101db24f71ae4b21e3c0e33891b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DownloadTexture
-  - hash:
-      serializedVersion: 2
-      Hash: 0912db8419735ecb16044b834208729d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EpicToonFX
-    className: ETFXLoopScript
   - hash:
       serializedVersion: 2
       Hash: b8d5ca95d34a73b9ff9247e3d8093f21
@@ -1452,12 +1841,6 @@ ScriptsOnlyBuild:
     className: XftMagicChainDemo
   - hash:
       serializedVersion: 2
-      Hash: 707df71996a505689462eebe803d2a1c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: item
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1522,12 +1905,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LagRotation
-  - hash:
-      serializedVersion: 2
-      Hash: a41d3e08a24582d7ce8cf47c87e3af86
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: buyGun
   - hash:
       serializedVersion: 2
       Hash: f53ce3a57faf70908be1c5bd8d9b54fa
@@ -1596,12 +1973,6 @@ ScriptsOnlyBuild:
     className: FishSwimBonus4
   - hash:
       serializedVersion: 2
-      Hash: e888ef4305b8fac9cd5510fefa0636bf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EpicToonFX
-    className: ETFXFireProjectile
-  - hash:
-      serializedVersion: 2
       Hash: 51d2f167abf9a12d125156c29599ef77
     assemblyName: Assembly-CSharp.dll
     namespaceName: UI.Dialogs
@@ -1668,18 +2039,6 @@ ScriptsOnlyBuild:
     className: UiTextSpawmControl
   - hash:
       serializedVersion: 2
-      Hash: 5b1d3232bdaba52e260d32a9eb24296b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: CodeMonkey.MonoBehaviours
-    className: CameraFollowSetup
-  - hash:
-      serializedVersion: 2
-      Hash: e095f87a56bef0dc3d7238d7a3dd1640
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: missile
-  - hash:
-      serializedVersion: 2
       Hash: aecbd573bbc1f7d53dc165c0f3513395
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1720,12 +2079,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
-  - hash:
-      serializedVersion: 2
-      Hash: 79566861074b80c5467fa81dddcf4f5a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EpicToonFX
-    className: ETFXRotation
   - hash:
       serializedVersion: 2
       Hash: 06f86e46f4509164c48be005bf88d766
@@ -2046,12 +2399,6 @@ ScriptsOnlyBuild:
     className: MA_Bootstrapper
   - hash:
       serializedVersion: 2
-      Hash: 8e5e00ca42eeebc1eae2f91fabb1ee02
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EpicToonFX
-    className: ETFXButtonScript
-  - hash:
-      serializedVersion: 2
       Hash: 7452c0e96abf750df5104e82555ca736
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2080,12 +2427,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WebControl
-  - hash:
-      serializedVersion: 2
-      Hash: a4900d574c1d1a9001f0f83b0dddb24d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ParticleEffectsLibrary
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2118,28 +2459,10 @@ ScriptsOnlyBuild:
     className: texttimecontrol
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: CodeMonkey.MonoBehaviours
-    className: CameraFollow
-  - hash:
-      serializedVersion: 2
       Hash: 6aed80ce73ce8e49bb8b9531cb34e90e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIAtlas
-  - hash:
-      serializedVersion: 2
-      Hash: 32cebb2ae4cddf0e4d07ddef22ca3a5c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EpicToonFX
-    className: ETFXTarget
-  - hash:
-      serializedVersion: 2
-      Hash: a2b249e27e25a975ba9d3c9b8e130910
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: CodeMonkey.Utils
-    className: Button_UI
   - hash:
       serializedVersion: 2
       Hash: a99b59d27d911423ed976291aea0f77f
@@ -2224,12 +2547,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIButtonActivate
-  - hash:
-      serializedVersion: 2
-      Hash: de678646bec259560f6c9abfcaf91943
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: gunMode
   - hash:
       serializedVersion: 2
       Hash: 624686d3e7ebd38450cb7123e1dd5a77
@@ -2352,12 +2669,6 @@ ScriptsOnlyBuild:
     className: AnimatedAlpha
   - hash:
       serializedVersion: 2
-      Hash: 2890c468cf196dca883ea02bde96343e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EpicToonFX
-    className: ETFXLightFade
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: DarkTonic.MasterAudio
@@ -2368,12 +2679,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: _2dxFX_Hologram3
-  - hash:
-      serializedVersion: 2
-      Hash: 3094220493f986ccf5d9896919109501
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: destroyEffect
   - hash:
       serializedVersion: 2
       Hash: 0632adbb21ddc60a4f027135760798fd
@@ -2442,12 +2747,6 @@ ScriptsOnlyBuild:
     className: MasterAudioSettings
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: lockOn
-  - hash:
-      serializedVersion: 2
       Hash: 7351921daa158102b594ef12701c8a31
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2500,12 +2799,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UISlider
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: CodeMonkey.MonoBehaviours
-    className: ComponentActions
   - hash:
       serializedVersion: 2
       Hash: bdbb48d71b863c427dc3493f977251a3
@@ -2598,12 +2891,6 @@ ScriptsOnlyBuild:
     className: XffectCache
   - hash:
       serializedVersion: 2
-      Hash: 24b2edb739e02ab9678256f4cc52b87d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PEButtonScript
-  - hash:
-      serializedVersion: 2
       Hash: d3cfeb0b2ec8b729f9e0584c546c10e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2614,12 +2901,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: fa653120b8e2e20f2e5fa15091afeb95
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: CodeMonkey.Utils
-    className: Button_Sprite
   - hash:
       serializedVersion: 2
       Hash: e2f33780f2ed353b40695f4b7e9d62dd
@@ -2668,12 +2949,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: StandaloneInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: e4bdd198714ebacf1ebef1367327eff4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: CodeMonkey
-    className: Assets
   - hash:
       serializedVersion: 2
       Hash: aa88ae22474df55295327e4ee99e5a24

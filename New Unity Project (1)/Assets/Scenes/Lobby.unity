@@ -520,6 +520,8 @@ MonoBehaviour:
   loading: {fileID: 1184643285}
   popUp: {fileID: 321123571}
   loadingCheck: 0
+  noticCheck: 0
+  reSet: 0
 --- !u!1 &246243885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5367,7 +5369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1985045038
 Transform:
   m_ObjectHideFlags: 0

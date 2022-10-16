@@ -47,11 +47,19 @@ public class item : MonoBehaviour
     {
         instace = this;
         buffText.text = "";
+
+        amountDragonTracker = 3;
+        amountBomb = 3;
+        amountSpare = 3;
+        amountDoubleDamage = 3;
+        amountHunterBag = 3;
+
+        UpdateText();
     }
 
     void Update()
     {
-        if(doubleGold == true && PlayerPrefs.GetInt("gold", 1000) >= 350)
+        if(doubleGold == true )
         {
             goldEffect.SetActive(true);
             TimeDouble += Time.deltaTime;
@@ -62,21 +70,21 @@ public class item : MonoBehaviour
                 goldEffect.SetActive(false);
             }
         }
-        if (doubleDamage == true && PlayerPrefs.GetInt("gold", 1000) >= 35)
+        if (doubleDamage == true )
         {
             TimeDamage += Time.deltaTime;
             timeMode.value = TimeDamage;
             if (TimeDamage >= 10)
                 doubleDamage = false;
         }
-        if (spare == true && PlayerPrefs.GetInt("gold", 1000) >= 25)
+        if (spare == true )
         {
             TimeSpare += Time.deltaTime;
             timeMode.value = TimeSpare;
             if (TimeSpare >= 10)
                 spare = false;
         }
-        if (tracker == true && PlayerPrefs.GetInt("gold", 1000) >= 150)
+        if (tracker == true )
         {
             Timetracker += Time.deltaTime;
             timeMode.value = Timetracker;

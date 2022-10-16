@@ -18,7 +18,7 @@ public class UiTextSpawmControl : MonoBehaviour
     void Start()
     {
         Instance = this;
-        TextGold.text = "" + PlayerPrefs.GetInt("gold", 200 ) + " DHC";
+        TextGold.text = "" + PlayerPrefs.GetInt("gold", 200 ) ;
         EXPbar.fillAmount = PlayerPrefs.GetFloat("EXP") / (450 + 500 * PlayerPrefs.GetInt("level", 1));
         TextLevel.text = PlayerPrefs.GetInt("level", 1) + "";
     }
