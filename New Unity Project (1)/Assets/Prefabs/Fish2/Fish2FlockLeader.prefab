@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 11408230}
   - component: {fileID: 11447990}
   - component: {fileID: 11465088}
+  - component: {fileID: -4149333106455876118}
   m_Layer: 0
   m_Name: Fish2FlockLeader
   m_TagString: Untagged
@@ -48,6 +49,8 @@ MonoBehaviour:
   BoundCircleRadius: 0.4
   RotateSpeed: 60
   Speed: 1
+  FreezeTime: 0
+  Freeze: 0
 --- !u!114 &11447990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +66,7 @@ MonoBehaviour:
   _FishPre: {fileID: 138562, guid: 405ddd31e7af61b4faeaab31940b1828, type: 3}
   minCount: 3
   maxCount: 5
+  DestroyWithSpawner: 0
 --- !u!114 &11465088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,3 +82,19 @@ MonoBehaviour:
   RotateInterval: 1.5
   RotateIntervalRndRange: 0.5
   RotateAngleRndRange: 50
+--- !u!114 &-4149333106455876118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 951099334
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1

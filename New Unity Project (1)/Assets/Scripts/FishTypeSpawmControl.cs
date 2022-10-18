@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using Unity.Netcode;
 using System.Collections;
 
-public class FishTypeSpawmControl : MonoBehaviour
+public class FishTypeSpawmControl : NetworkBehaviour 
 {
 
     public GameObject[] _pre;
@@ -16,6 +17,9 @@ public class FishTypeSpawmControl : MonoBehaviour
     float limitHieght;
     float limitWith;
 
+    private NetworkObject m_SpawnedNetworkObject;
+    private bool DestroyWithSpawner;
+
     public void Start()
     {
 
@@ -23,11 +27,20 @@ public class FishTypeSpawmControl : MonoBehaviour
         limitWith = (Screen.width) / 200;
         _free = this;
     }
-
-    void OnEnable()
+    public override void OnNetworkSpawn()
     {
+        enabled = IsServer;
+        if (!enabled)
+        {
+            return;
+        }
         StartCoroutine(spawm(StartWaitTime));
+
     }
+
+    
+        
+    
 
     IEnumerator spawm(float starttime)
     {
@@ -35,6 +48,7 @@ public class FishTypeSpawmControl : MonoBehaviour
 
         int a = Random.Range(0, _pre.Length);
         Transform _tr = Instantiate(_pre[a]).transform;
+        m_SpawnedNetworkObject = _tr.GetComponent<NetworkObject>();
         int directionPos = Random.Range(0, 4);
         switch (directionPos)
         {
@@ -124,13 +138,25 @@ public class FishTypeSpawmControl : MonoBehaviour
         {
             case 2:
                 _tr.GetComponent<FishFlockLeaderControl>().FlockStart();
+                _tr.GetComponent<FishFlockLeaderControl>().OnNetworkSpawn();
                 break;
             case 1:
                 _tr.GetComponent<FishFollowLeaderControl>().FollowStart();
                 break;
         }
+        m_SpawnedNetworkObject.Spawn();
 
         yield return new WaitForSeconds(countTime);
         StartCoroutine(spawm(0));
     }
+
+    public override void OnNetworkDespawn()
+    {
+        if(IsServer && DestroyWithSpawner && m_SpawnedNetworkObject != null && m_SpawnedNetworkObject.IsSpawned)
+        {
+            m_SpawnedNetworkObject.Despawn();
+        }
+        base.OnNetworkDespawn();
+    }
+
 }

@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 using CodeMonkey.Utils;
 
-public class BalistaHitbox : MonoBehaviour
+public class BalistaHitbox : NetworkBehaviour
 {
     public float destroy;
     public bool destroyOnHit;
@@ -14,8 +15,17 @@ public class BalistaHitbox : MonoBehaviour
     [SerializeField] GameObject normalBullet;
     void Start()
     {
+        if (!IsOwner) return;
         if (allow == false)
+        {
             Destroy(this.gameObject, destroy);
+            StartCoroutine(DestroyTimer());
+        }
+    }
+    private IEnumerator DestroyTimer()
+    {
+        yield return new WaitForSeconds(destroy);
+        this.gameObject.GetComponent<NetworkObject>().Despawn();
     }
 
     // Update is called once per frame
@@ -34,12 +44,16 @@ public class BalistaHitbox : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
+
         if (collision.gameObject.tag == "fish" && GameObject.FindGameObjectWithTag("lock") == null)
         {
             if (destroyOnHit == true)
             {
                 UtilsClass.ShakeCamera(0.03f, .1f);
-                Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
+                GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
+                bomb.GetComponent<NetworkObject>().Spawn();
+                this.gameObject.GetComponent<NetworkObject>().Despawn();
                 Destroy(this.gameObject);
             }
             if (bomb == false)
@@ -59,6 +73,7 @@ public class BalistaHitbox : MonoBehaviour
             {
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
+                this.gameObject.GetComponent<NetworkObject>().Despawn();
                 Destroy(this.gameObject);
             }
            /* if (bomb == false)

@@ -53,24 +53,7 @@ public class GunControl : MonoBehaviour
     }
     public void Update()
     {
-        if (range == 0)
-        {
-            showrange.SetActive(true);
-            showrange1.SetActive(false);
-            showrange2.SetActive(false);
-        }
-        if (range == 1)
-        {
-            showrange.SetActive(false);
-            showrange1.SetActive(true);
-            showrange2.SetActive(false);
-        }
-        if (range == 3)
-        {
-            showrange.SetActive(false);
-            showrange1.SetActive(false);
-            showrange2.SetActive(true);
-        }
+       
 
     }
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Unity.Netcode;
 using System.Collections;
 
 public class FishControl : MonoBehaviour
@@ -35,7 +36,10 @@ public class FishControl : MonoBehaviour
     public int evade;
     public bool canEvade;
 
-
+    private void Start()
+    {
+        Destroy(this.gameObject, 50);
+    }
     void OnEnable()
     {
         _checkInvisible = false;

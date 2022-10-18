@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
 using CodeMonkey.Utils;
+using Unity.Netcode;
 
-public class gunMode : MonoBehaviour
+public class gunMode : NetworkBehaviour
 {
+
+    private NetworkVariable<int> randomnuber = new NetworkVariable<int>(1);
     public string mode;
     public static gunMode instance;
     public GameObject Bullet;
-    int _levelGun;
     public float firerate ;
     public float firerateAmount ;
     public float firelaser ;
@@ -47,19 +48,30 @@ public class gunMode : MonoBehaviour
     public bool canfire;
 
     public int randomFreefire;
+    
 
     void Start()
     {
+        randomnuber.Value = Random.Range(0, 100);
+        Debug.Log(OwnerClientId + "; randomNumber" + randomnuber.Value);
         instance = this;
         firerateAmount = 0.5f;
     }
 
     void Update()
     {
-        costGun.text = gunControl.cost.ToString();
+        if (!IsOwner) return;
+        //costGun.text = gunControl.cost.ToString();
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            TestServerRpc();
+            //TestClientRpc(new ClientRpcParams { Send = new ClientRpcSendParams { TargetClientIds = new List<ulong> { 1 } } });
+
+        }
         if (Input.GetKeyDown("space"))
         {
             UiTextSpawmControl.Instance.PushGold(50);
+
         }
         /*if (Input.GetButtonDown("Fire1") && PlayerPrefs.GetInt("gold", 1000) > 0)
         {
@@ -88,7 +100,7 @@ public class gunMode : MonoBehaviour
             
         }
         */
-        modeGun.text = mode;
+        //modeGun.text = mode;
         if (laserSwitch == true)
         {
             
@@ -134,8 +146,9 @@ public class gunMode : MonoBehaviour
                 if (mode == "NormalGun")
                 {
                     Normal();
-
                     GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+                    bullet.GetComponent<NetworkObject>().Spawn();
+
                 }
                 if (mode == "Long-RangeGun")
                 {
@@ -268,7 +281,9 @@ public class gunMode : MonoBehaviour
     }
     void Normal()
     {
+        if (!IsOwner) return;
         GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
+        bullet2.GetComponent<NetworkObject>().Spawn();
         Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
         rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
     }
@@ -309,5 +324,15 @@ public class gunMode : MonoBehaviour
         GameObject bullet = Instantiate(laserCollision, firepoint.position, firepoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
+    }
+    [ServerRpc]
+    private void TestServerRpc()
+    {
+        Debug.Log("TestClientRpc" + OwnerClientId ) ;
+    }
+    [ClientRpc]
+    private void TestClientRpc(ClientRpcParams clientRpcParams)
+    {
+        Debug.Log("TestClientRpc");
     }
 }
