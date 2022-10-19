@@ -16,15 +16,16 @@ public class FishTypeSpawmControl : NetworkBehaviour
 
     float limitHieght;
     float limitWith;
-
+    
     private NetworkObject m_SpawnedNetworkObject;
     private bool DestroyWithSpawner;
 
     public void Start()
     {
 
-        limitHieght = (Screen.height) / 200;
-        limitWith = (Screen.width) / 200;
+        limitHieght = (Screen.height) / 300;
+        limitWith = (Screen.width) / 300;
+
         _free = this;
     }
     public override void OnNetworkSpawn()

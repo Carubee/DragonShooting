@@ -64,6 +64,7 @@ ScriptsOnlyBuild:
     - destroyEffect
     - effScoreTextControl
     - enableitem
+    - exitDestroy
     - gunMode
     - item
     - missile
@@ -221,129 +222,131 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5592}
     - Class: 114
-      Script: {instanceID: 5632}
+      Script: {instanceID: 5618}
     - Class: 114
-      Script: {instanceID: 5724}
+      Script: {instanceID: 5634}
     - Class: 114
-      Script: {instanceID: 5802}
+      Script: {instanceID: 5726}
     - Class: 114
-      Script: {instanceID: 5864}
+      Script: {instanceID: 5804}
     - Class: 114
-      Script: {instanceID: 5954}
+      Script: {instanceID: 5866}
     - Class: 114
-      Script: {instanceID: 6048}
+      Script: {instanceID: 5956}
     - Class: 114
-      Script: {instanceID: 6174}
+      Script: {instanceID: 6050}
     - Class: 114
-      Script: {instanceID: 6288}
+      Script: {instanceID: 6176}
     - Class: 114
-      Script: {instanceID: 6312}
+      Script: {instanceID: 6290}
     - Class: 114
-      Script: {instanceID: 6354}
+      Script: {instanceID: 6314}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6356}
     - Class: 114
-      Script: {instanceID: 6408}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 6584}
+      Script: {instanceID: 6410}
     - Class: 114
-      Script: {instanceID: 7306}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 7512}
+      Script: {instanceID: 7308}
     - Class: 114
-      Script: {instanceID: 7524}
+      Script: {instanceID: 7514}
     - Class: 114
-      Script: {instanceID: 7768}
+      Script: {instanceID: 7526}
     - Class: 114
-      Script: {instanceID: 7786}
+      Script: {instanceID: 7770}
     - Class: 114
-      Script: {instanceID: 7828}
+      Script: {instanceID: 7788}
     - Class: 114
-      Script: {instanceID: 7870}
+      Script: {instanceID: 7830}
     - Class: 114
-      Script: {instanceID: 7906}
+      Script: {instanceID: 7872}
     - Class: 114
-      Script: {instanceID: 8126}
+      Script: {instanceID: 7908}
     - Class: 114
-      Script: {instanceID: 8448}
+      Script: {instanceID: 8128}
     - Class: 114
-      Script: {instanceID: 8634}
+      Script: {instanceID: 8450}
     - Class: 114
-      Script: {instanceID: 8800}
+      Script: {instanceID: 8636}
     - Class: 114
-      Script: {instanceID: 8856}
+      Script: {instanceID: 8802}
     - Class: 114
-      Script: {instanceID: 8958}
+      Script: {instanceID: 8858}
     - Class: 114
-      Script: {instanceID: 9088}
+      Script: {instanceID: 8960}
     - Class: 114
-      Script: {instanceID: 9596}
+      Script: {instanceID: 9090}
     - Class: 114
-      Script: {instanceID: 9848}
+      Script: {instanceID: 9598}
     - Class: 114
-      Script: {instanceID: 10004}
+      Script: {instanceID: 9850}
     - Class: 114
-      Script: {instanceID: 10050}
+      Script: {instanceID: 10006}
     - Class: 114
-      Script: {instanceID: 10436}
+      Script: {instanceID: 10052}
     - Class: 114
-      Script: {instanceID: 10574}
+      Script: {instanceID: 10438}
     - Class: 114
-      Script: {instanceID: 10772}
+      Script: {instanceID: 10576}
     - Class: 114
-      Script: {instanceID: 10858}
+      Script: {instanceID: 10774}
     - Class: 114
-      Script: {instanceID: 11012}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 11076}
+      Script: {instanceID: 11014}
     - Class: 114
-      Script: {instanceID: 11130}
+      Script: {instanceID: 11078}
     - Class: 114
-      Script: {instanceID: 11136}
+      Script: {instanceID: 11132}
     - Class: 114
-      Script: {instanceID: 11142}
+      Script: {instanceID: 11138}
     - Class: 114
-      Script: {instanceID: 11158}
+      Script: {instanceID: 11144}
     - Class: 114
-      Script: {instanceID: 11182}
+      Script: {instanceID: 11160}
     - Class: 114
-      Script: {instanceID: 11224}
+      Script: {instanceID: 11184}
     - Class: 114
-      Script: {instanceID: 11266}
+      Script: {instanceID: 11226}
     - Class: 114
-      Script: {instanceID: 11318}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11320}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11718}
+      Script: {instanceID: 11382}
     - Class: 114
-      Script: {instanceID: 11752}
+      Script: {instanceID: 11720}
     - Class: 114
-      Script: {instanceID: 11848}
+      Script: {instanceID: 11754}
     - Class: 114
-      Script: {instanceID: 11924}
+      Script: {instanceID: 11850}
     - Class: 114
-      Script: {instanceID: 11996}
+      Script: {instanceID: 11926}
     - Class: 114
-      Script: {instanceID: 12178}
+      Script: {instanceID: 11998}
     - Class: 114
-      Script: {instanceID: 12254}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 12492}
+      Script: {instanceID: 12256}
     - Class: 114
-      Script: {instanceID: 12636}
+      Script: {instanceID: 12494}
     - Class: 114
-      Script: {instanceID: 12886}
+      Script: {instanceID: 12638}
     - Class: 114
-      Script: {instanceID: 13048}
+      Script: {instanceID: 12888}
     - Class: 114
-      Script: {instanceID: 27472}
+      Script: {instanceID: 13050}
     - Class: 114
-      Script: {instanceID: 50654}
+      Script: {instanceID: 27492}
     - Class: 114
-      Script: {instanceID: 213266}
+      Script: {instanceID: 46074}
+    - Class: 114
+      Script: {instanceID: 85276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1389,6 +1392,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: AnimatorMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 09863a8f00ab8edc8f12be889165ae7b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestingNetwork
   - hash:
       serializedVersion: 2
       Hash: 662280df05332bc430b085c07433530c
@@ -3617,10 +3626,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 09863a8f00ab8edc8f12be889165ae7b
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TestingNetwork
+    className: exitDestroy
   platform: 19
   scenePathNames:
   - Assets/Scenes/Play4.unity

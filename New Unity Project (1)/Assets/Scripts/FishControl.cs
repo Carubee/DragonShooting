@@ -2,7 +2,7 @@
 using Unity.Netcode;
 using System.Collections;
 
-public class FishControl : MonoBehaviour
+public class FishControl : NetworkBehaviour
 {
 
     public string AnimationName;
@@ -36,9 +36,10 @@ public class FishControl : MonoBehaviour
     public int evade;
     public bool canEvade;
 
+
     private void Start()
     {
-        Destroy(this.gameObject, 50);
+
     }
     void OnEnable()
     {
@@ -52,9 +53,9 @@ public class FishControl : MonoBehaviour
             _hp = Random.Range(HpMax - RndHpMax, HpMax + RndHpMax);
         else
             _hp = Random.Range(Hp - RndHp, Hp - RndHp);
-        
+
     }
-    private void Update()
+    private void FixedUpdate()
     {
 
         if (armor == 50 && armorCreate == true)
@@ -77,14 +78,14 @@ public class FishControl : MonoBehaviour
         if (canRegen == true && resetOnHit <= 0 && _hp < HpMax)
         {
             regenTime += Time.deltaTime;
-            if(regenTime >= 3)
+            if (regenTime >= 3)
             {
                 regenTime = 0;
                 _hp += 1;
-                GameObject bullet = Instantiate(healEffect, new Vector2 (this.gameObject.transform.position.x, this.gameObject.transform.position.y), this.gameObject.transform.rotation);
+                GameObject bullet = Instantiate(healEffect, new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y), this.gameObject.transform.rotation);
             }
         }
-        if (canRegen == true  && _hp >= HpMax)
+        if (canRegen == true && _hp >= HpMax)
         {
             regenTime += Time.deltaTime;
         }
@@ -93,14 +94,14 @@ public class FishControl : MonoBehaviour
             if (item.instace.tracker == true)
             {
                 gameObject.tag = "fish";
-                
+
             }
         }
-        if(item.instace.tracker == false)
+        if (item.instace.tracker == false)
         {
             gameObject.tag = "fish";
         }
-        if(_hp <= 0 && item.instace.tracker == true)
+        if (_hp <= 0 && item.instace.tracker == true)
         {
             gameObject.tag = "fish";
         }
@@ -115,7 +116,7 @@ public class FishControl : MonoBehaviour
     }
     public void hitDame(int dame, GameObject obj)
     {
-        if(armorCreate == true)
+        if (armorCreate == true)
         {
             resetOnHit = 10;
         }
@@ -123,17 +124,18 @@ public class FishControl : MonoBehaviour
         {
             evade = Random.Range(0, 10);
         }
-        if(evade != 1) {
+        if (evade != 1)
+        {
             if (_checkCollsion == null || (_checkCollsion.GetInstanceID() != obj.GetInstanceID()))
             {
                 //dame = GunControl.instance.damage;
-                
+
                 armor -= GunControl.instance.damage;
                 if (armor <= 0)
                 {
                     if (item.instace.doubleDamage == true)
                     {
-                        _hp -= GunControl.instance.damage * 2    ;
+                        _hp -= GunControl.instance.damage * 2;
                     }
 
                     if (item.instace.doubleDamage == false)
@@ -158,11 +160,11 @@ public class FishControl : MonoBehaviour
                     GetComponent<BoxCollider2D>().enabled = false;
                     Instantiate(Resources.Load("coinEff"), transform.position + Vector3.up * 0.1f, Quaternion.identity);
 
-                    if(item.instace.doubleGold == true)
+                    if (item.instace.doubleGold == true)
                     {
                         UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold * 2);
                     }
-                    else 
+                    else
                     {
                         UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
                     }
@@ -246,4 +248,5 @@ public class FishControl : MonoBehaviour
         Destroy(gameObject);
 
     }
+    
 }

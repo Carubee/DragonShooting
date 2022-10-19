@@ -9,6 +9,7 @@ TagManager:
   - Arrow
   - lock
   - Menu
+  - canSwim
   layers:
   - Default
   - TransparentFX
