@@ -13,6 +13,8 @@ public class BalistaHitbox : NetworkBehaviour
     [SerializeField] GameObject explosion;
     [SerializeField] GameObject enchanceDamage;
     [SerializeField] GameObject normalBullet;
+
+    float rotateBomb;
     void Start()
     {
         if (!IsOwner) return;
@@ -21,6 +23,7 @@ public class BalistaHitbox : NetworkBehaviour
             Destroy(this.gameObject, destroy);
             StartCoroutine(DestroyTimer());
         }
+        rotateBomb = 90;
     }
     private IEnumerator DestroyTimer()
     {
@@ -51,7 +54,7 @@ public class BalistaHitbox : NetworkBehaviour
             if (destroyOnHit == true)
             {
                 UtilsClass.ShakeCamera(0.03f, .1f);
-                GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
+                GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.Euler(new Vector3(-90,0,0)));
                 bomb.GetComponent<NetworkObject>().Spawn();
                 this.gameObject.GetComponent<NetworkObject>().Despawn();
                 Destroy(this.gameObject);

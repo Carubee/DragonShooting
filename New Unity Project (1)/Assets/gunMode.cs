@@ -183,7 +183,7 @@ public class gunMode : NetworkBehaviour
         }
         if (Input.GetKeyDown("1"))
         {
-            Debug.Log("Buy");
+            //Debug.Log("Buy");
             gunControl.cost = 1;
             gunControl.damage = 1;
             gunControl.range = 1;
@@ -199,7 +199,7 @@ public class gunMode : NetworkBehaviour
         }
         if (Input.GetKeyDown("2"))
         {
-            Debug.Log("Buy1");
+            //Debug.Log("Buy1");
             gunMode.instance.mode = "Long-RangeGun";
             gunControl.cost = 2;
             gunControl.damage = 2;
@@ -215,7 +215,7 @@ public class gunMode : NetworkBehaviour
         }
         if (Input.GetKeyDown("3"))
         {
-            Debug.Log("Buy2");
+            //Debug.Log("Buy2");
             gunMode.instance.mode = "Shotgun";
             gunControl.cost = 5;
             gunControl.damage = 2;
@@ -231,7 +231,7 @@ public class gunMode : NetworkBehaviour
         }
         if (Input.GetKeyDown("4"))
         {
-            Debug.Log("Buy3");
+            //Debug.Log("Buy3");
             gunControl.cost = 3;
             gunControl.damage = 3;
             gunControl.range = 3;
@@ -247,7 +247,7 @@ public class gunMode : NetworkBehaviour
         }
         if (Input.GetKeyDown("5"))
         {
-            Debug.Log("Buy4");
+            //Debug.Log("Buy4");
             gunMode.instance.mode = "Balista";
             gunControl.cost = 15;
             gunControl.damage = 10;
@@ -263,7 +263,7 @@ public class gunMode : NetworkBehaviour
         }
         if (Input.GetKeyDown("6"))
         {
-            Debug.Log("Buy5");
+            //Debug.Log("Buy5");
             gunMode.instance.mode = "laser";
             gunControl.cost = 75;
             gunControl.damage = 10;

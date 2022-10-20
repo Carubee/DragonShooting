@@ -23,4 +23,5 @@ public class exitDestroy : NetworkBehaviour
             collision.gameObject.GetComponent<NetworkObject>().Despawn();
         }
     }
+    
 }
