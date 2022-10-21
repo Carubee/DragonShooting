@@ -1945,7 +1945,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127920767}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.71, y: 0.22, z: -0.69611484}
+  m_LocalPosition: {x: -7.71, y: 0.22, z: -6.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3493,8 +3493,8 @@ GameObject:
   - component: {fileID: 244900154}
   - component: {fileID: 244900158}
   - component: {fileID: 244900159}
-  - component: {fileID: 244900161}
   - component: {fileID: 244900160}
+  - component: {fileID: 244900161}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3645,10 +3645,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 244900153}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20dbe26ea1b14cf40974b2ce448697fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d6df1a941f49604d94bd4dc79c7c452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrefabToSpawn: {fileID: 158538, guid: 652175786b643d44cbc47c47e2679bbf, type: 3}
+  PrefabToSpawn: {fileID: 2447030445355977266, guid: 4a3aa732794d641479c8c3fca03a0422,
+    type: 3}
   DestroyWithSpawner: 0
 --- !u!1 &250473263
 GameObject:
@@ -15226,6 +15227,12 @@ MonoBehaviour:
       SourcePrefabToOverride: {fileID: 0}
       SourceHashToOverride: 0
       OverridingTargetPrefab: {fileID: 0}
+    - Override: 0
+      Prefab: {fileID: 2447030445355977266, guid: 4a3aa732794d641479c8c3fca03a0422,
+        type: 3}
+      SourcePrefabToOverride: {fileID: 0}
+      SourceHashToOverride: 0
+      OverridingTargetPrefab: {fileID: 0}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -25859,7 +25866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2025612919
 Transform:
   m_ObjectHideFlags: 0

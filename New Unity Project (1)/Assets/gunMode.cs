@@ -12,10 +12,10 @@ public class gunMode : NetworkBehaviour
     public string mode;
     public static gunMode instance;
     public GameObject Bullet;
-    public float firerate ;
-    public float firerateAmount ;
-    public float firelaser ;
-    public bool laserSwitch ;
+    public float firerate;
+    public float firerateAmount;
+    public float firelaser;
+    public bool laserSwitch;
 
     public Transform firepoint;
     public Transform firepoint2;
@@ -48,7 +48,7 @@ public class gunMode : NetworkBehaviour
     public bool canfire;
 
     public int randomFreefire;
-    
+    private NetworkObject m_SpawnedNetworkObject;
 
     void Start()
     {
@@ -61,67 +61,37 @@ public class gunMode : NetworkBehaviour
     void Update()
     {
         if (!IsOwner) return;
-        //costGun.text = gunControl.cost.ToString();
         if (Input.GetKeyDown(KeyCode.T))
         {
-            TestServerRpc();
-            //TestClientRpc(new ClientRpcParams { Send = new ClientRpcSendParams { TargetClientIds = new List<ulong> { 1 } } });
-
+            PlayerShootGunServerRPC();
         }
         if (Input.GetKeyDown("space"))
         {
             UiTextSpawmControl.Instance.PushGold(50);
 
         }
-        /*if (Input.GetButtonDown("Fire1") && PlayerPrefs.GetInt("gold", 1000) > 0)
-        {
-            GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
 
-            if (mode == "Balista")
-            {
-                ShootArrow();
-            }
-            if (mode == "Shotgun" && GunControl.instance.range <= 1)
-            {
-                ShootShotgun();
-            } 
-            if (mode == "laser")
-            {
-                laserSwitch = true;
-            }
-            if (mode == "NormalGun")
-            {
-               Normal();
-            }
-            if (mode == "Long-RangeGun")
-            {
-               Long();
-            }
-            
-        }
-        */
-        //modeGun.text = mode;
         if (laserSwitch == true)
         {
-            
-                laserbullet.SetActive(true);
-                Laser();
-            
+
+            laserbullet.SetActive(true);
+            Laser();
+
         }
-        if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost )
+        if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost)
         {
             laserSwitch = false;
             laserbullet.SetActive(false);
         }
-        
-         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-         transform.rotation = Quaternion.AngleAxis(angle + offset, Vector3.forward);
-        
-        if(firerate <= 2)
+
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle + offset, Vector3.forward);
+
+        if (firerate <= 2)
             firerate += Time.deltaTime;
-        
-        if (Input.GetMouseButton(0)  && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
+
+        if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
         {
 
             if (mode == "laser")
@@ -140,15 +110,15 @@ public class gunMode : NetworkBehaviour
                     if (randomFreefire == 1 || randomFreefire == 2)
                         UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
                 }
-                
-                
+
+
                 firerate = 0;
                 if (mode == "NormalGun")
                 {
                     Normal();
                     GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
                     bullet.GetComponent<NetworkObject>().Spawn();
-
+                    OnNetworkSpawn();
                 }
                 if (mode == "Long-RangeGun")
                 {
@@ -161,7 +131,7 @@ public class gunMode : NetworkBehaviour
                     GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
                     ShootShotgun();
                 }
-                
+
                 if (mode == "Balista")
                 {
                     ShootArrow();
@@ -170,8 +140,8 @@ public class gunMode : NetworkBehaviour
                 }
             }
         }
-
-            if (Input.GetMouseButton(0) && mode == "Gatling" && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false) 
+        if (!IsServer) return;
+        if (Input.GetMouseButton(0) && mode == "Gatling" && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
         {
             firerate += Time.deltaTime;
             if (firerate >= 0.1)
@@ -277,15 +247,41 @@ public class gunMode : NetworkBehaviour
             balistaGun.SetActive(false);
             laserGun.SetActive(true);
         }
-        
+
     }
-    void Normal()
+    [ServerRpc(RequireOwnership = false)]
+    public void PlayerShootGunServerRPC(Vector3 headFace)
     {
-        if (!IsOwner) return;
         GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
         bullet2.GetComponent<NetworkObject>().Spawn();
         Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
         rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+    [ClientRpc]
+    public void showResultClientRpc()
+    {
+        if (!IsOwner) return;
+        ShowResult();
+
+    }
+    public void ShowResult()
+    {
+        GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
+        bullet2.GetComponent<NetworkObject>().Spawn();
+        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+    /*[ClientRpc]
+    public void hitResultClientRoc(Vector3 position)
+    {
+        //Normal();
+    }*/
+    void Normal()
+    {
+        /*GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
+        bullet2.GetComponent<NetworkObject>().Spawn();
+        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);*/
     }
     void Long()
     {
@@ -335,4 +331,5 @@ public class gunMode : NetworkBehaviour
     {
         Debug.Log("TestClientRpc");
     }
+  
 }

@@ -19,8 +19,9 @@ public class exitDestroy : NetworkBehaviour
 
         if (collision.gameObject.tag == "fish")
         {
+            collision.gameObject.GetComponent<NetworkObject>().Despawn(true);
             Destroy(collision.gameObject);
-            collision.gameObject.GetComponent<NetworkObject>().Despawn();
+   
         }
     }
     

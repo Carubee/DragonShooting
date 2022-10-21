@@ -65,11 +65,11 @@ public class FishFollowControl : MonoBehaviour
 
     void OnDisable()
     {
-        _swimLeader.EventRotate -= Handlel_TargetFishRotateStasrt;
+        //_swimLeader.EventRotate -= Handlel_TargetFishRotateStasrt;
     }
 
     void OnDestroy()
     {
-        _swimLeader.EventRotate -= Handlel_TargetFishRotateStasrt;
+        //_swimLeader.EventRotate -= Handlel_TargetFishRotateStasrt;
     }
 }

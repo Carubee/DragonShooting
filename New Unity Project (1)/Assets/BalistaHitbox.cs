@@ -47,8 +47,8 @@ public class BalistaHitbox : NetworkBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
 
+        //if (!IsServer) return;
         if (collision.gameObject.tag == "fish" && GameObject.FindGameObjectWithTag("lock") == null)
         {
             if (destroyOnHit == true)
