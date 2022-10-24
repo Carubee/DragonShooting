@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.40f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\AudioUtil.cs" />
@@ -400,6 +400,7 @@
     <Compile Include="Assets\Xffect\Scripts\Affectors\GravityAffector.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_WaterAndBackground.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Singleton\AudioResourceOptimizer.cs" />
+    <Compile Include="Assets\testmoving.cs" />
     <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiBeamScript.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\SpringPanel.cs" />
     <Compile Include="Assets\SineVFX\MagicMissilesAndLasers\Scripts\SelfDestroy.cs" />
@@ -531,7 +532,6 @@
     <Compile Include="Assets\ButtonStartControl.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionPeriodic.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
-    <Compile Include="Assets\testmoving.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

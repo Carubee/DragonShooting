@@ -171,6 +171,7 @@ public class FishControl : NetworkBehaviour
 
                     FishManage.Instance._FishMange.Remove(transform);
                     Destroy(gameObject, 0.8f);
+                    this.gameObject.GetComponent<NetworkObject>().Despawn();
                 }
             }
         }

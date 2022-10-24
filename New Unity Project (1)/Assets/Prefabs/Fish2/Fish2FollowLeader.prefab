@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2033126395273987774}
   m_Layer: 0
   m_Name: Fish2FollowLeader
-  m_TagString: Untagged
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,6 +68,7 @@ MonoBehaviour:
   Distan: 0.8
   minCount: 2
   maxCount: 5
+  DestroyWithSpawner: 0
 --- !u!114 &11486392
 MonoBehaviour:
   m_ObjectHideFlags: 0

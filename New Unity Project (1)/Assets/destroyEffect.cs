@@ -14,11 +14,9 @@ public class destroyEffect : NetworkBehaviour
 
     void Update()
     {
-        if (!IsOwner) return;
         timeRun += Time.deltaTime;
         if (timeRun >= destroytime)
         {
-            this.gameObject.GetComponent<NetworkObject>().Despawn(true);
             Destroy(this.gameObject);
         }
     }

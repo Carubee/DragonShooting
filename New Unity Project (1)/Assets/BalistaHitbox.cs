@@ -13,27 +13,25 @@ public class BalistaHitbox : NetworkBehaviour
     [SerializeField] GameObject explosion;
     [SerializeField] GameObject enchanceDamage;
     [SerializeField] GameObject normalBullet;
+    public float timeToDestroy;
 
     float rotateBomb;
     void Start()
     {
-        if (!IsOwner) return;
-        if (allow == false)
-        {
-            Destroy(this.gameObject, destroy);
-            StartCoroutine(DestroyTimer());
-        }
         rotateBomb = 90;
-    }
-    private IEnumerator DestroyTimer()
-    {
-        yield return new WaitForSeconds(destroy);
-        this.gameObject.GetComponent<NetworkObject>().Despawn();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        if (!IsOwner) return;
+        timeToDestroy += Time.deltaTime;
+        if (timeToDestroy > destroy || allow == false)
+        {
+            //this.gameObject.GetComponent<NetworkObject>().Despawn();
+            Destroy(this.gameObject);
+
+        }
         if (item.instace.doubleDamage == true && bomb == false && allow == false)
         {
             enchanceDamage.SetActive(true);
@@ -48,15 +46,15 @@ public class BalistaHitbox : NetworkBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        //if (!IsServer) return;
         if (collision.gameObject.tag == "fish" && GameObject.FindGameObjectWithTag("lock") == null)
         {
             if (destroyOnHit == true)
             {
                 UtilsClass.ShakeCamera(0.03f, .1f);
-                GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.Euler(new Vector3(-90,0,0)));
-                bomb.GetComponent<NetworkObject>().Spawn();
-                this.gameObject.GetComponent<NetworkObject>().Despawn();
+                GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
+                //bomb.GetComponent<NetworkObject>().Spawn();
+                //this.gameObject.GetComponent<NetworkObject>().Despawn();
+                //BombServerRPC();
                 Destroy(this.gameObject);
             }
             if (bomb == false)
@@ -66,7 +64,7 @@ public class BalistaHitbox : NetworkBehaviour
             if (bomb == true)
             {
                 collision.GetComponent<FishControl>().hitDame(100, gameObject);
-                Debug.Log("Boom");
+
             }
             
         }
@@ -90,5 +88,18 @@ public class BalistaHitbox : NetworkBehaviour
         }
 
     }
-    
+    [ServerRpc(RequireOwnership = false)]
+    public void BombServerRPC()
+    {
+        Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
+        showResultClientRpc();
+    }
+
+    [ClientRpc]
+    public void showResultClientRpc()
+    {
+        Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
+
+    }
+
 }

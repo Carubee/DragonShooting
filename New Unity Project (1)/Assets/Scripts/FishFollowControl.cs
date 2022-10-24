@@ -33,6 +33,7 @@ public class FishFollowControl : MonoBehaviour
 
     public void Handlel_TargetFishRotateStasrt(float angle)
     {
+        if (this == null) return;
         StartCoroutine(_Rotate(angle));
     }
 

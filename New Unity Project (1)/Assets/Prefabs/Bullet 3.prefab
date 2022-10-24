@@ -137,6 +137,7 @@ MonoBehaviour:
     type: 3}
   enchanceDamage: {fileID: 4863111878071511746}
   normalBullet: {fileID: 4227468661462253170}
+  timeToDestroy: 0
 --- !u!114 &2554510369475912272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 951099334
   AlwaysReplicateAsRoot: 0
-  DontDestroyWithOwner: 0
+  DontDestroyWithOwner: 1
   AutoObjectParentSync: 1
 --- !u!114 &-1724298377385699464
 MonoBehaviour:
@@ -219,7 +220,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2447030445355977266}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4df192d184570a49a143c332712c171, type: 3}
   m_Name: 

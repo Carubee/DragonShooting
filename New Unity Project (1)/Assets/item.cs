@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using CodeMonkey.Utils;
+using Unity.Netcode;
 
 
-public class item : MonoBehaviour
+public class item : NetworkBehaviour
 {
     
     public static item instace;
@@ -110,6 +111,11 @@ public class item : MonoBehaviour
     }
     public void Bomb()
     {
+        BombServerRPC();
+    }
+    [ServerRpc(RequireOwnership = false)]
+    public void BombServerRPC()
+    {
         if (amountBomb > 0)
         {
             amountBomb -= 1;
@@ -119,8 +125,10 @@ public class item : MonoBehaviour
                 Instantiate(bomb, new Vector3(Random.Range(-5, 6.5f), Random.Range(-3, 3)), Quaternion.identity);
             }
             UtilsClass.ShakeCamera(0.03f, .1f);
+
         }
     }
+    
     public void Spare()
     {
         if (amountSpare > 0)

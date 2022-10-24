@@ -30,6 +30,7 @@ public class gunMode : NetworkBehaviour
     public float bulletForce = 20f;
     public float bulletForceSlow = 10f;
     public float bulletForceGating = 40f;
+    public float bulletForceSim = 40f;
     public float spread;
     public int amountofshotgun;
     public float offset;
@@ -50,10 +51,11 @@ public class gunMode : NetworkBehaviour
     public int randomFreefire;
     private NetworkObject m_SpawnedNetworkObject;
 
+    private float checkRotate;
+
     void Start()
     {
-        randomnuber.Value = Random.Range(0, 100);
-        Debug.Log(OwnerClientId + "; randomNumber" + randomnuber.Value);
+
         instance = this;
         firerateAmount = 0.5f;
     }
@@ -63,12 +65,12 @@ public class gunMode : NetworkBehaviour
         if (!IsOwner) return;
         if (Input.GetKeyDown(KeyCode.T))
         {
-            PlayerShootGunServerRPC();
+            checkRotate =this.gameObject.transform.rotation.z;
+            PlayerShootGunServerRPC(checkRotate);
         }
         if (Input.GetKeyDown("space"))
         {
             UiTextSpawmControl.Instance.PushGold(50);
-
         }
 
         if (laserSwitch == true)
@@ -115,10 +117,9 @@ public class gunMode : NetworkBehaviour
                 firerate = 0;
                 if (mode == "NormalGun")
                 {
-                    Normal();
-                    GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
-                    bullet.GetComponent<NetworkObject>().Spawn();
-                    OnNetworkSpawn();
+                    //PlayerShootGunServerRPC(checkRotate);
+                    //GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+                    //bullet.GetComponent<NetworkObject>().Spawn();
                 }
                 if (mode == "Long-RangeGun")
                 {
@@ -250,26 +251,26 @@ public class gunMode : NetworkBehaviour
 
     }
     [ServerRpc(RequireOwnership = false)]
-    public void PlayerShootGunServerRPC(Vector3 headFace)
+    public void PlayerShootGunServerRPC(float checkRotate)
     {
-        GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
-        bullet2.GetComponent<NetworkObject>().Spawn();
-        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
-        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+
+        Normal();
+        showResultClientRpc();
+        GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+
     }
     [ClientRpc]
     public void showResultClientRpc()
     {
-        if (!IsOwner) return;
+        //if (!IsOwner) return;
         ShowResult();
 
     }
     public void ShowResult()
     {
-        GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
-        bullet2.GetComponent<NetworkObject>().Spawn();
-        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
-        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        Normal();
+        GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+
     }
     /*[ClientRpc]
     public void hitResultClientRoc(Vector3 position)
@@ -278,10 +279,9 @@ public class gunMode : NetworkBehaviour
     }*/
     void Normal()
     {
-        /*GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
-        bullet2.GetComponent<NetworkObject>().Spawn();
+        GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
         Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
-        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);*/
+        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
     }
     void Long()
     {
