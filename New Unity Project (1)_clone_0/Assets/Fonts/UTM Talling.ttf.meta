@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 9929757e137a99142834101a81aab351
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: UTM Talling
+  fontNames:
+  - UTM Talling
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7ab9d8b678ea3714aaf5f685fff322cc, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.40f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\AudioUtil.cs" />
@@ -421,6 +421,7 @@
     <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiButtonScript.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragResize.cs" />
+    <Compile Include="Assets\ParrelSync\Examples\CustomArgumentExample.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\ArrayListUtil.cs" />
     <Compile Include="Assets\Xffect\Tutorial\GettingStart\ReleaseYourEffect.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButton.cs" />
@@ -693,6 +694,7 @@
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\FireDartsOriginalFinal.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\DistortionSpherePS.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\StartSphereV2.shader" />
+    <None Include="Assets\ParrelSync\VERSION.txt" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\xRLib.hlsl" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Readme.txt" />
     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
@@ -1577,6 +1579,10 @@
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
       <Project>{ACF66EC4-3828-9C49-F9E7-A12612B53F07}</Project>
       <Name>Unity.Postprocessing.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{164DBBD5-BCE8-0EA8-0809-20AF9BBC3B10}</Project>
+      <Name>ParrelSync</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
       <Project>{DA8BD255-9083-28EE-F196-D0541FA861FE}</Project>

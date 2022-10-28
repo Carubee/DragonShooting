@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: d61abbc0e08111941a3ab1acb65c0823
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: UTM Penumbra
+  fontNames:
+  - UTM Penumbra
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: af7f7b950ae8c6f43b5ae072ae2d909d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
