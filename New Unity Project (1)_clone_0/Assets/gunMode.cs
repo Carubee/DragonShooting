@@ -50,7 +50,7 @@ public class gunMode : NetworkBehaviour
 
     public bool canfire;
     public int randomFreefire;
-    private int seatNumber;
+    public bool canPlay;
 
     public override void OnNetworkSpawn()
     {
@@ -59,10 +59,10 @@ public class gunMode : NetworkBehaviour
         Debug.Log(OwnerClientId);
     }
 
-
     void Update()
     {
         if (!IsOwner) return;
+        if (!canPlay) return;
         if (Input.GetKeyDown(KeyCode.T))
         {
             PlayerShootGunServerRPC(bulletTypeValue.Value);
@@ -337,9 +337,24 @@ public class gunMode : NetworkBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
     }
-    void SelectSpawn()
+    public void SelectSpawn(int seatNum)
     {
-
+        if(seatNum == 1)
+        {
+            this.gameObject.transform.position = new Vector3(-3.057f, -3.303f, -4.55f);
+        }
+        if(seatNum == 2)
+        {
+            this.gameObject.transform.position = new Vector3(3.3f, -3.303f, -4.55f);
+        }
+        if(seatNum == 3)
+        {
+            this.gameObject.transform.position = new Vector3(-3.057f, 3.35f, -4.55f);
+        }
+        if(seatNum == 4)
+        {
+            this.gameObject.transform.position = new Vector3(3.057f, 3.35f, -4.55f);
+        }
     }
   
 }

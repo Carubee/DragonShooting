@@ -16,6 +16,7 @@ public class FishSignFreeControl : MonoBehaviour
 
     void OnEnable()
     {
+        if (_fishControl == null) return;
         _fishControl = GetComponent<FishControl>();
         if (gameObject.tag == "fish")
             _fishControl._callDie += calldie;
@@ -32,6 +33,7 @@ public class FishSignFreeControl : MonoBehaviour
     {
         if (ElapseRotate > TimeRotate)
         {
+            if (_swim == null) return;
             _swim.Rotate(Random.Range(-RotateAngleRndRange, RotateAngleRndRange));
             ElapseRotate = 0;
             TimeRotate = RotateInterval + Random.Range(-RotateIntervalRndRange, RotateIntervalRndRange);

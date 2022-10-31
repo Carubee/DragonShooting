@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564599842314950120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.057, y: -3.303, z: -4.55}
+  m_LocalPosition: {x: 83.2, y: -4.7, z: -4.55}
   m_LocalScale: {x: 0.99, y: 0.99, z: 0.99}
   m_Children:
   - {fileID: 564599843173598209}
@@ -122,6 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunTypeValue:
     m_InternalValue: 1
+  bulletTypeValue:
+    m_InternalValue: 1
   mode: NormalGun
   Bullet: {fileID: 142546, guid: 486a1d0e74310e246946a7037ed7275a, type: 3}
   firerate: 0
@@ -163,6 +165,7 @@ MonoBehaviour:
     type: 3}
   canfire: 1
   randomFreefire: 0
+  seatNumber: 0
 --- !u!114 &564599842314950115
 MonoBehaviour:
   m_ObjectHideFlags: 0
