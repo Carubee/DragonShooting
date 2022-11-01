@@ -41,7 +41,7 @@ public class FishControl : NetworkBehaviour
     {
 
     }
-    void OnEnable()
+    public override void OnNetworkSpawn()
     {
         _checkInvisible = false;
         _ani = GetComponent<Animator>();
@@ -170,7 +170,7 @@ public class FishControl : NetworkBehaviour
                     }
 
                     FishManage.Instance._FishMange.Remove(transform);
-                    Destroy(gameObject, 0.8f);
+                    Destroy(this.gameObject, 0.8f);
                     this.gameObject.GetComponent<NetworkObject>().Despawn();
                 }
             }

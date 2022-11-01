@@ -145,6 +145,8 @@ MonoBehaviour:
   flashGun: {fileID: 147450, guid: d786954ea58ae6f45b3de29c31ec67f9, type: 3}
   flashGun2: {fileID: 508542962291670211, guid: 461d3aa06d0344146b8e9b0932218eda,
     type: 3}
+  bulletDouble: {fileID: 2447030445355977266, guid: 862e3f96118108e4f9ca8a63a55599c1,
+    type: 3}
   bulletForce: 20
   bulletForceSlow: 10
   bulletForceGating: 40
@@ -165,7 +167,7 @@ MonoBehaviour:
     type: 3}
   canfire: 1
   randomFreefire: 0
-  seatNumber: 0
+  canPlay: 0
 --- !u!114 &564599842314950115
 MonoBehaviour:
   m_ObjectHideFlags: 0

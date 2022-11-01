@@ -10,6 +10,7 @@ public class gunMode : NetworkBehaviour
 {
     public  NetworkVariable<int> gunTypeValue = new NetworkVariable<int>(1);
     public  NetworkVariable<int> bulletTypeValue = new NetworkVariable<int>(1);
+    public  NetworkVariable<bool> DoubleBullet = new NetworkVariable<bool>(false);
     public string mode;
     public static gunMode instance;
     public GameObject Bullet;
@@ -28,6 +29,8 @@ public class gunMode : NetworkBehaviour
     public GameObject longBullet;
     public GameObject flashGun;
     public GameObject flashGun2;
+
+    public GameObject bulletDouble;
 
     public float bulletForce = 20f;
     public float bulletForceSlow = 10f;
@@ -52,6 +55,8 @@ public class gunMode : NetworkBehaviour
     public int randomFreefire;
     public bool canPlay;
 
+    public float TimeDouble = 10;
+    
     public override void OnNetworkSpawn()
     {
         instance = this;
@@ -63,16 +68,12 @@ public class gunMode : NetworkBehaviour
     {
         if (!IsOwner) return;
         if (!canPlay) return;
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            PlayerShootGunServerRPC(bulletTypeValue.Value);
-        }
-        if (Input.GetKeyDown("space"))
-        {
-            UiTextSpawmControl.Instance.PushGold(50);
-        }
 
-        if (laserSwitch == true)
+        if (TimeDouble < 10)
+        {
+            TimeDouble += Time.deltaTime;
+        }
+            if (laserSwitch == true)
         {
             laserbullet.SetActive(true);
             Laser();
@@ -94,6 +95,7 @@ public class gunMode : NetworkBehaviour
 
         if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
         {
+            
 
             if (mode == "laser")
             {
@@ -101,10 +103,22 @@ public class gunMode : NetworkBehaviour
             }
             if (firerate >= firerateAmount)
             {
+                if (TimeDouble < 10)
+                {
+                    PlayerShootGunServerRpc(bulletTypeValue.Value, true);
+                }
+                else
+                {
+                    PlayerShootGunServerRpc(bulletTypeValue.Value, false);
+                }
                 if (item.instace.spare == false)
                 {
-                    if(bulletTypeValue.Value != 4)
-                    PlayerShootGunServerRPC(bulletTypeValue.Value);
+                    if (Input.GetKeyDown("space"))
+                    {
+                        UiTextSpawmControl.Instance.PushGold(50);
+                    }
+                    if (bulletTypeValue.Value != 4)
+                        PlayerShootGunServerRpc(bulletTypeValue.Value, DoubleBullet.Value);
                     UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
                 }
                 if (item.instace.spare == true)
@@ -115,6 +129,7 @@ public class gunMode : NetworkBehaviour
                 }
                 firerate = 0;
             }
+           
         }
         if (Input.GetMouseButton(0) && bulletTypeValue.Value == 4 && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
         {
@@ -122,7 +137,7 @@ public class gunMode : NetworkBehaviour
             if (firerate >= 0.1)
             {
                 firerate = 0;
-                PlayerShootGunServerRPC(bulletTypeValue.Value);
+                PlayerShootGunServerRpc(bulletTypeValue.Value , DoubleBullet.Value);
                 UiTextSpawmControl.Instance.MinusGold(1);
             }
         }
@@ -177,7 +192,7 @@ public class gunMode : NetworkBehaviour
     }
     
     [ServerRpc]
-    public void OnstateChangedServerRpc(int changeGun)
+    public void OnstateChangedServerRpc(int changeGun )
     {
         gunTypeValue.Value = changeGun;
         OnstateChangedClientRpc(changeGun);
@@ -251,23 +266,24 @@ public class gunMode : NetworkBehaviour
 
     }
     [ServerRpc]
-    public void PlayerShootGunServerRPC(int shootType)
+    public void PlayerShootGunServerRpc(int shootType, bool enchance)
     {
         bulletTypeValue.Value = shootType;
-        showResultClientRpc(shootType);
+        DoubleBullet.Value = enchance;
+        showResultClientRpc(shootType , enchance);
     }
     [ClientRpc]
-    public void showResultClientRpc(int bulltetType)
+    public void showResultClientRpc(int bulltetType, bool enchance2)
     {
-        CheckBullet(bulltetType);
+        CheckBullet(bulltetType , enchance2);
     }
 
-    public void CheckBullet(int gunmode)
+    public void CheckBullet(int gunmode , bool enchance3)
     {
         if (gunmode == 1)
         {
            GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
-            Normal();
+            Normal(enchance3);
         }
         if (gunmode == 2)
         {
@@ -293,42 +309,85 @@ public class gunMode : NetworkBehaviour
     }
 
     
-    void Normal()
+    void Normal(bool enchance)
     {
-        GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
-        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
-        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        if (!enchance){
+            GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+            rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        }
+        else
+        {
+            GameObject bullet2 = Instantiate(bulletDouble, firepoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+            rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        }
     }
-    void Long()
+    void Long(bool enchance)
     {
-        GameObject bullet2 = Instantiate(longBullet, firepoint.position, Quaternion.identity);
-        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
-        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        if (!enchance)
+        {
+            GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+            rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        }
+        else 
+        { 
+            GameObject bullet2 = Instantiate(bulletDouble, firepoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+            rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        }
 
     }
-    void Gatling()
+    void Gatling(bool enchance)
     {
-        GameObject bullet2 = Instantiate(longBullet, firepoint.position, Quaternion.identity);
-        Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
-        rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        if (!enchance)
+        {
+            GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+            rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        }
+        else
+        {
+            GameObject bullet2 = Instantiate(longBullet, firepoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+            rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        }
 
     }
-    void ShootArrow()
+    void ShootArrow(bool enchance)
     {
+        if (!enchance)
+        {
+            GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+            rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+        }
         GameObject bullet = Instantiate(arrowBullet, firepoint.position, firepoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
     }
-    void ShootShotgun()
+    void ShootShotgun(bool enchance)
     {
-        for(int i = 0; i < amountofshotgun; i++ )
+        if (!enchance)
         {
-            GameObject bullet = Instantiate(shotgunBullet, firepoint.position, Quaternion.identity);
-            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            Vector2 dir = transform.rotation * Vector2.up;
-             Vector2 pdir = Vector2.Perpendicular(dir) * UnityEngine.Random.Range(-spread, spread);
-             rb.velocity = (dir + pdir) * bulletForce;
-
+            for (int i = 0; i < amountofshotgun; i++)
+            {
+                GameObject bullet2 = Instantiate(normalBullet, firepoint.position, Quaternion.identity);
+                Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
+                rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < amountofshotgun; i++)
+            {
+                GameObject bullet = Instantiate(shotgunBullet, firepoint.position, Quaternion.identity);
+                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                Vector2 dir = transform.rotation * Vector2.up;
+                Vector2 pdir = Vector2.Perpendicular(dir) * UnityEngine.Random.Range(-spread, spread);
+                rb.velocity = (dir + pdir) * bulletForce;
+            }
         }
     }
     void Laser()
@@ -355,6 +414,10 @@ public class gunMode : NetworkBehaviour
         {
             this.gameObject.transform.position = new Vector3(3.057f, 3.35f, -4.55f);
         }
+    }
+    public void DoubleDamage(float TimeDouble2)
+    {
+        TimeDouble = TimeDouble2;
     }
   
 }

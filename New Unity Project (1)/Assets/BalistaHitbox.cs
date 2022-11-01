@@ -5,7 +5,8 @@ using Unity.Netcode;
 using CodeMonkey.Utils;
 
 public class BalistaHitbox : NetworkBehaviour
-{
+{    
+    public  NetworkVariable<bool> bulletTypeValue = new NetworkVariable<bool>();
     public float destroy;
     public bool destroyOnHit;
     public bool allow;
@@ -16,7 +17,7 @@ public class BalistaHitbox : NetworkBehaviour
     public float timeToDestroy;
 
     float rotateBomb;
-    void Start()
+    public override void OnNetworkSpawn()
     {
         rotateBomb = 90;
     }
@@ -29,16 +30,8 @@ public class BalistaHitbox : NetworkBehaviour
         {
             Destroy(this.gameObject);
         }
-        if (item.instace.doubleDamage == true && bomb == false && allow == false)
-        {
-            enchanceDamage.SetActive(true);
-            normalBullet.SetActive(false);
-        }
-        if (item.instace.doubleDamage == false && bomb == false && allow == false)
-        {
-            enchanceDamage.SetActive(false);
-            normalBullet.SetActive(true);
-        }
+        bulletTypeValue.Value = item.instace.doubleDamage;
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -88,6 +81,20 @@ public class BalistaHitbox : NetworkBehaviour
     {
         Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
 
+    }
+    
+    public void CheckTypeBullet(bool bullet2)
+    {
+        if (bullet2 == true && bomb == false && allow == false)
+        {
+            enchanceDamage.SetActive(true);
+            normalBullet.SetActive(false);
+        }
+        if (bullet2 == false && bomb == false && allow == false)
+        {
+            enchanceDamage.SetActive(false);
+            normalBullet.SetActive(true);
+        }
     }
 
 }
