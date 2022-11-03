@@ -7,7 +7,7 @@
     },
     {
       "FullName": "Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-11-02T04:41:09.893092Z"
+      "LastWriteTime": "2022-11-02T09:57:03.9435122Z"
     },
     {
       "FullName": "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -15,7 +15,7 @@
     },
     {
       "FullName": "Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-11-02T04:41:08.6860939Z"
+      "LastWriteTime": "2022-11-02T09:57:02.4549271Z"
     },
     {
       "FullName": "netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
@@ -23,7 +23,7 @@
     },
     {
       "FullName": "Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-11-02T04:41:09.478955Z"
+      "LastWriteTime": "2022-11-02T09:57:03.5181598Z"
     },
     {
       "FullName": "Unity.Burst.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=null",
@@ -35,7 +35,7 @@
     },
     {
       "FullName": "Unity.Networking.Transport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-11-02T04:41:09.955135Z"
+      "LastWriteTime": "2022-11-02T09:57:04.0125311Z"
     },
     {
       "FullName": "Unity.Collections.LowLevel.ILSupport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -51,7 +51,7 @@
     },
     {
       "FullName": "Unity.Netcode.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-11-02T04:41:11.5681178Z"
+      "LastWriteTime": "2022-11-02T09:57:05.2660441Z"
     }
   ],
   "Functions": [
@@ -202,8 +202,8 @@
       "AssemblyDependencyIndices": [
         0,
         1,
-        2,
         3,
+        2,
         4,
         5,
         6
@@ -835,10 +835,10 @@
       "LinkName": "2170EE3B2ED43638",
       "AssemblyDependencyIndices": [
         8,
+        11,
         4,
         2,
         1,
-        11,
         0,
         3,
         6,
@@ -898,10 +898,10 @@
       "LinkName": "61EB38371943037B",
       "AssemblyDependencyIndices": [
         8,
-        11,
         4,
         2,
         1,
+        11,
         0,
         3,
         6,

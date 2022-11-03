@@ -50,7 +50,7 @@ public class item : NetworkBehaviour
         buffText.text = "";
 
         amountDragonTracker = 3;
-        amountBomb = 3;
+        amountBomb = 1000   ;
         amountSpare = 3;
         amountDoubleDamage = 3;
         amountHunterBag = 3;
@@ -111,21 +111,10 @@ public class item : NetworkBehaviour
     }
     public void Bomb()
     {
-        BombServerRPC();
-    }
-    [ServerRpc(RequireOwnership = false)]
-    public void BombServerRPC()
-    {
         if (amountBomb > 0)
         {
             amountBomb -= 1;
-            UpdateText();
-            for (int i = 0; i < 5; i++)
-            {
-                Instantiate(bomb, new Vector3(Random.Range(-5, 6.5f), Random.Range(-3, 3)), Quaternion.identity);
-            }
-            UtilsClass.ShakeCamera(0.03f, .1f);
-
+            gunMode.instance.BombTrigger();
         }
     }
     
