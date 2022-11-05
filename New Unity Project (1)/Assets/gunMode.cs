@@ -54,6 +54,7 @@ public class gunMode : NetworkBehaviour
     public GameObject laserCollision;
 
     public GameObject bomb;
+    public GameObject upgradeEffect;
 
     public bool canfire;
     public int randomFreefire;
@@ -182,7 +183,6 @@ public class gunMode : NetworkBehaviour
             OnstateChangedServerRpc(6);
 
         }
-
     }
 
     [ServerRpc]
@@ -327,6 +327,7 @@ public class gunMode : NetworkBehaviour
             Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
             rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
         }
+       
     }
     void Long(bool enchance)
     {
@@ -423,15 +424,15 @@ public class gunMode : NetworkBehaviour
         }
         if (seatNum == 2)
         {
-            this.gameObject.transform.position = new Vector3(3.3f, -3.303f, -4.55f);
+            this.gameObject.transform.position = new Vector3(3.351f, -3.303f, -4.55f);
         }
         if (seatNum == 3)
         {
-            this.gameObject.transform.position = new Vector3(-3.057f, 3.35f, -4.55f);
+            this.gameObject.transform.position = new Vector3(-3.04f, 3.27f, -4.55f);
         }
         if (seatNum == 4)
         {
-            this.gameObject.transform.position = new Vector3(3.057f, 3.35f, -4.55f);
+            this.gameObject.transform.position = new Vector3(3.359f, 3.248f, -4.55f);
         }
     }
     public void DoubleDamage(float TimeDouble2)
@@ -447,7 +448,7 @@ public class gunMode : NetworkBehaviour
             BombServerRpc(positionX, positionY);
         }
     }
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = false)]
     public void BombServerRpc(float posX, float posY)
     {
         BombClientRpc(posX, posY);
@@ -461,5 +462,20 @@ public class gunMode : NetworkBehaviour
     {
         Instantiate(bomb, new Vector3(posX,posY), Quaternion.identity);
         UtilsClass.ShakeCamera(0.03f, .1f);
+    }
+    [ServerRpc]
+    public void EffectItemServerRpc()
+    {
+        EffectItemClientRpc();
+    }
+    [ClientRpc]
+    public void EffectItemClientRpc()
+    {
+        ResultEffectItem();
+    }
+    void ResultEffectItem()
+    {
+        Instantiate(upgradeEffect, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y,-4.55f), Quaternion.identity);
+
     }
 }

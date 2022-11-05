@@ -31,7 +31,6 @@ ScriptsOnlyBuild:
     - NetworkManagerUI
     - OpenOptioon
     - SciFiBeamStatic
-    - SciFiLightFlicker
     - Swim
     - UI.Dialogs.uDialog
     - UI.Dialogs.uDialog_Button
@@ -161,17 +160,17 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1096}
+      Script: {instanceID: 1092}
     - Class: 114
-      Script: {instanceID: 1098}
+      Script: {instanceID: 1094}
+    - Class: 114
+      Script: {instanceID: 1964}
+    - Class: 114
+      Script: {instanceID: 1966}
     - Class: 114
       Script: {instanceID: 1968}
     - Class: 114
-      Script: {instanceID: 1970}
-    - Class: 114
       Script: {instanceID: 1972}
-    - Class: 114
-      Script: {instanceID: 1976}
     - Class: 114
       Script: {instanceID: 2124}
     - Class: 114
@@ -345,9 +344,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13082}
     - Class: 114
-      Script: {instanceID: 29186}
+      Script: {instanceID: 40722}
     - Class: 114
-      Script: {instanceID: 99796}
+      Script: {instanceID: 61840}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120

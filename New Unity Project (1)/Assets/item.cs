@@ -8,7 +8,6 @@ using Unity.Netcode;
 
 public class item : NetworkBehaviour
 {
-    
     public static item instace;
 
     public bool doubleGold;
@@ -103,11 +102,12 @@ public class item : NetworkBehaviour
         {
             amountDragonTracker -= 1;
             UpdateText();
-            //Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
             buffText.text = "Bullet Follow";
             tracker = true;
             Timetracker = 0;
         }
+        Effect();
+
     }
     public void Bomb()
     {
@@ -126,22 +126,15 @@ public class item : NetworkBehaviour
             UpdateText();
             TimeSpare = 0;
             spare = true;
-            //Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
             buffText.text = "30 percent Shoot Free";
         }
+        Effect();
+
     }
     public void Double()
     {
-        /*if (amountDoubleDamage > 0)
-        {
-            amountDoubleDamage -= 1;
-            UpdateText();
-            TimeDamage = 0;
-            doubleDamage = true;
-            //Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
-            buffText.text = "Double Damage";
-        }*/
         gunMode.instance.DoubleDamage(0);
+        Effect();
     }
     public void HunterBag()
     {
@@ -151,13 +144,13 @@ public class item : NetworkBehaviour
             UpdateText();
             TimeDouble = 0;
             doubleGold = true;
-            //Instantiate(upgrade, new Vector3(pointUpgrade.position.x, pointUpgrade.position.y), Quaternion.identity);
             buffText.text = "Double Gold";
         }
+        Effect();
+
     }
     public void CardCollection()
     {
-        Debug.Log("+++");
     }
     public void UpdateText()
     {
@@ -166,5 +159,9 @@ public class item : NetworkBehaviour
         itemSpareText.text = amountSpare.ToString();
         itemDoubleDamageText.text = amountDoubleDamage.ToString();
         itemDoubleGoldText.text = amountHunterBag.ToString();
+    }
+    public void Effect()
+    {
+        gunMode.instance.EffectItemServerRpc();
     }
 }

@@ -15,22 +15,38 @@ public class BalistaHitbox : NetworkBehaviour
     [SerializeField] GameObject enchanceDamage;
     [SerializeField] GameObject normalBullet;
     public float timeToDestroy;
-
-    float rotateBomb;
+    public float speed = 5f;
+    public float rotateSpeed = 200f;
+    public GameObject target;
+    private Rigidbody2D rb;
+    private string tagName = "lock";
     public override void OnNetworkSpawn()
     {
-        rotateBomb = 90;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        timeToDestroy += Time.deltaTime;
+        if (item.instace.tracker)
+        {
+            target = GameObject.FindGameObjectWithTag(tagName);
+        }
+            timeToDestroy += Time.deltaTime;
         if (timeToDestroy > destroy && allow == false)
         {
             Destroy(this.gameObject);
         }
         bulletTypeValue.Value = item.instace.doubleDamage;
+        if (item.instace.tracker)
+        {
+            
+            Vector3 direction = new Vector2(target.transform.position.x, target.transform.position.y) - rb.position;
+            direction.Normalize();
+            float rotateAmount = Vector3.Cross(direction, transform.up).z;
+            rb.angularVelocity = rotateAmount * rotateSpeed;
+            rb.velocity = transform.up * speed;
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -60,6 +76,8 @@ public class BalistaHitbox : NetworkBehaviour
         {
             if (destroyOnHit == true)
             {
+                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
                 this.gameObject.GetComponent<NetworkObject>().Despawn();
