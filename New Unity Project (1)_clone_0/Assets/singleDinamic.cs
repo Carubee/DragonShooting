@@ -1,19 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.Netcode;
 
-public class singleDinamic : NetworkBehaviour
+public class singleDinamic : MonoBehaviour
 {
     public GameObject PrefabToSpawn;
     public bool DestroyWithSpawner;
     private GameObject m_PrefabInstance;
-    private NetworkObject m_SpawnedNetworkObject;
 
     public  void shoot()
     {
         // Only the server spawns, clients will disable this component on their side
-        enabled = IsServer;
         if (!enabled || PrefabToSpawn == null)
         {
             return;
@@ -26,12 +23,10 @@ public class singleDinamic : NetworkBehaviour
         m_PrefabInstance.transform.rotation = transform.rotation;
 
         // Get the instance's NetworkObject and Spawn
-        m_SpawnedNetworkObject = m_PrefabInstance.GetComponent<NetworkObject>();
-        m_SpawnedNetworkObject.Spawn();
+       
     }
     private void Update()
     {
-        if (!IsClient) return;
         if (Input.GetKeyDown("1"))
         {
             shoot();
@@ -39,12 +34,5 @@ public class singleDinamic : NetworkBehaviour
         }
     }
 
-    public override void OnNetworkDespawn()
-    {
-        if (IsServer && DestroyWithSpawner && m_SpawnedNetworkObject != null && m_SpawnedNetworkObject.IsSpawned)
-        {
-            m_SpawnedNetworkObject.Despawn();
-        }
-        base.OnNetworkDespawn();
-    }
+    
 }

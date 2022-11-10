@@ -1543,8 +1543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb9e698272c4a994295bc89f9ced4d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RuntimeAnimatorController: {fileID: 9100000, guid: 4ea4c44e288b43242b205b28ca7ac857,
-    type: 2}
+  RuntimeAnimatorController: {fileID: 9100000, guid: 4ea4c44e288b43242b205b28ca7ac857, type: 2}
 --- !u!1 &189720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,8 +1798,7 @@ MonoBehaviour:
   GO_ScreenOverlay: {fileID: 11445304}
   GO_ButtonContainer: {fileID: 189720}
   GO_ButtonTemplate: {fileID: 11400602}
-  RuntimeAnimatorController: {fileID: 9100000, guid: 4ea4c44e288b43242b205b28ca7ac857,
-    type: 2}
+  RuntimeAnimatorController: {fileID: 9100000, guid: 4ea4c44e288b43242b205b28ca7ac857, type: 2}
   ResizeListeners: []
   GO_Content: {fileID: 0}
 --- !u!114 &11486384

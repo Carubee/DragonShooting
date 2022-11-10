@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Netcode;
 
-public class FishFollowLeaderControl : NetworkBehaviour
+public class FishFollowLeaderControl : MonoBehaviour
 {
 
     List<Transform> _fish;
@@ -14,16 +13,10 @@ public class FishFollowLeaderControl : NetworkBehaviour
 
     public int minCount;
     public int maxCount;
-    private NetworkObject m_SpawnedNetworkObject;
     public bool DestroyWithSpawner;
-    public override void OnNetworkSpawn()
+    public void Start()
     {
-        enabled = IsServer;
-        if(!enabled )
-        {
-            return;
-        }
-        base.OnNetworkSpawn();
+        
     }
     public void FollowStart()
     {
@@ -39,8 +32,7 @@ public class FishFollowLeaderControl : NetworkBehaviour
             _tr.GetComponent<FishFollowControl>().SetTarget(transform, Vector3.Magnitude(transform.right * Distan * i));
             _tr.GetComponent<Swim>().Speed = _swim.Speed;
             _fish.Add(_tr);
-            m_SpawnedNetworkObject = _tr.GetComponent<NetworkObject>();
-            m_SpawnedNetworkObject.Spawn();
+            
         }
     }
 
@@ -53,12 +45,5 @@ public class FishFollowLeaderControl : NetworkBehaviour
             Destroy(gameObject);
         }
     }
-    public override void OnNetworkDespawn()
-    {
-        if (IsServer && DestroyWithSpawner && m_SpawnedNetworkObject != null && m_SpawnedNetworkObject.IsSpawned)
-        {
-            m_SpawnedNetworkObject.Despawn();
-        }
-        base.OnNetworkDespawn();
-    }
+    
 }

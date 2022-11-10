@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using CodeMonkey.Utils;
-using Unity.Netcode;
 
 
-public class item : NetworkBehaviour
+public class item : MonoBehaviour
 {
     public static item instace;
 

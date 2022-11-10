@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.Netcode;
 
-public class destroyEffect : NetworkBehaviour
+public class destroyEffect : MonoBehaviour
 {
     public float destroytime;
     public float timeRun;

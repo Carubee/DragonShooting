@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-using Unity.Netcode;
 using System.Collections;
 
-public class FishControl : NetworkBehaviour
+public class FishControl : MonoBehaviour
 {
 
     public string AnimationName;
@@ -37,11 +36,8 @@ public class FishControl : NetworkBehaviour
     public bool canEvade;
 
 
-    private void Start()
-    {
-
-    }
-    public override void OnNetworkSpawn()
+    
+    public void Start()
     {
         _checkInvisible = false;
         _ani = GetComponent<Animator>();
@@ -158,7 +154,7 @@ public class FishControl : NetworkBehaviour
                     _swim.enabled = false;
                     _ani.Play(AnimationNameDie, 0, 0);
                     GetComponent<BoxCollider2D>().enabled = false;
-                    Instantiate(Resources.Load("coinEff"), transform.position + Vector3.up * 0.1f, Quaternion.identity);
+                    Instantiate(Resources.Load("coinEff"),new Vector3 (transform.position.x, transform.position.y , -4.55f) , Quaternion.identity);
 
                     if (item.instace.doubleGold == true)
                     {
@@ -171,7 +167,6 @@ public class FishControl : NetworkBehaviour
 
                     FishManage.Instance._FishMange.Remove(transform);
                     Destroy(this.gameObject, 0.8f);
-                    this.gameObject.GetComponent<NetworkObject>().Despawn();
                 }
             }
         }
@@ -249,5 +244,16 @@ public class FishControl : NetworkBehaviour
         Destroy(gameObject);
 
     }
-    
+    public void DeadServerRpc()
+    {
+        DeadServerRpc();
+    }
+    public void DeadClientRpc()
+    {
+        DeadClientRpc();
+    }
+    public void DeadResult()
+    {
+
+    }
 }

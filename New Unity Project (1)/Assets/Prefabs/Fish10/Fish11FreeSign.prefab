@@ -15,8 +15,6 @@ GameObject:
   - component: {fileID: 9500968}
   - component: {fileID: 21293184}
   - component: {fileID: 6171894}
-  - component: {fileID: 3746496686389289493}
-  - component: {fileID: 5817902001665987841}
   m_Layer: 0
   m_Name: Fish11FreeSign
   m_TagString: fish
@@ -94,8 +92,7 @@ MonoBehaviour:
   _gold: 200
   armorEffect: {fileID: 0}
   healEffect: {fileID: 152564, guid: 0e4a7fa9fd28f154b91c98ee6fe8ebea, type: 3}
-  lockEffect: {fileID: 4572166908939240136, guid: 372ae4b37e48e4c428edb9a1bda71262,
-    type: 3}
+  lockEffect: {fileID: 4572166908939240136, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
   resetArmor: 0
   armorCreate: 0
   resetOnHit: 0
@@ -199,48 +196,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.57803434, y: 0.28269652}
   m_EdgeRadius: 0
---- !u!114 &3746496686389289493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 951099334
-  AlwaysReplicateAsRoot: 0
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
---- !u!114 &5817902001665987841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!1001 &8221658591048405758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,8 +263,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.00001
       objectReference: {fileID: 0}
-    - target: {fileID: 137968660341564002, guid: a00d93971bb7f9d4ebbb6c8df37c5a75,
-        type: 3}
+    - target: {fileID: 137968660341564002, guid: a00d93971bb7f9d4ebbb6c8df37c5a75, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4073fe7a53094384499acbdf02391989, type: 2}
@@ -317,7 +271,6 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: a00d93971bb7f9d4ebbb6c8df37c5a75, type: 3}
 --- !u!4 &8221184106193933412 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4135876023830170, guid: a00d93971bb7f9d4ebbb6c8df37c5a75,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 4135876023830170, guid: a00d93971bb7f9d4ebbb6c8df37c5a75, type: 3}
   m_PrefabInstance: {fileID: 8221658591048405758}
   m_PrefabAsset: {fileID: 0}

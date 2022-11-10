@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.Netcode;
 
-public class exitDestroy : NetworkBehaviour
+public class exitDestroy : MonoBehaviour
 {
     void Start()
     {
@@ -19,7 +18,6 @@ public class exitDestroy : NetworkBehaviour
 
         if (collision.gameObject.tag == "fish")
         {
-            collision.gameObject.GetComponent<NetworkObject>().Despawn(true);
             Destroy(collision.gameObject);
    
         }

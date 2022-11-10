@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.Netcode;
 using CodeMonkey.Utils;
 
-public class BalistaHitbox : NetworkBehaviour
+public class BalistaHitbox : MonoBehaviour
 {    
-    public  NetworkVariable<bool> bulletTypeValue = new NetworkVariable<bool>();
     public float destroy;
     public bool destroyOnHit;
     public bool allow;
@@ -20,14 +18,14 @@ public class BalistaHitbox : NetworkBehaviour
     public GameObject target;
     private Rigidbody2D rb;
     private string tagName = "lock";
-    public override void OnNetworkSpawn()
+    public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
+        
         if (item.instace.tracker)
         {
             target = GameObject.FindGameObjectWithTag(tagName);
@@ -37,7 +35,7 @@ public class BalistaHitbox : NetworkBehaviour
         {
             Destroy(this.gameObject);
         }
-        bulletTypeValue.Value = item.instace.doubleDamage;
+        //bulletTypeValue.Value = item.instace.doubleDamage;
         if (item.instace.tracker)
         {
             
@@ -58,7 +56,6 @@ public class BalistaHitbox : NetworkBehaviour
             {
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
-                
                 Destroy(this.gameObject);
             }
             if (bomb == false)
@@ -80,27 +77,14 @@ public class BalistaHitbox : NetworkBehaviour
 
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
-                this.gameObject.GetComponent<NetworkObject>().Despawn();
                 Destroy(this.gameObject);
             }
            
         }
 
     }
-    [ServerRpc(RequireOwnership = false)]
-    public void BombServerRPC()
-    {
-        Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
-        showResultClientRpc();
-    }
-
-    [ClientRpc]
-    public void showResultClientRpc()
-    {
-        Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
-
-    }
     
+
     public void CheckTypeBullet(bool bullet2)
     {
         if (bullet2 == true && bomb == false && allow == false)
@@ -113,6 +97,10 @@ public class BalistaHitbox : NetworkBehaviour
             enchanceDamage.SetActive(false);
             normalBullet.SetActive(true);
         }
+    }
+    public void UserOwner(int ID)
+    {
+
     }
 
 }

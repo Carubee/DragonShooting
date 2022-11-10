@@ -1,0 +1,737 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Boolean Unity.Netcode.BufferedLinearInterpolator`1::get_InvalidState()
+// 0x00000002 System.Void Unity.Netcode.BufferedLinearInterpolator`1::Clear()
+// 0x00000003 System.Void Unity.Netcode.BufferedLinearInterpolator`1::ResetTo(T,System.Double)
+// 0x00000004 System.Void Unity.Netcode.BufferedLinearInterpolator`1::TryConsumeFromBuffer(System.Double,System.Double)
+// 0x00000005 T Unity.Netcode.BufferedLinearInterpolator`1::Update(System.Single,Unity.Netcode.NetworkTime)
+// 0x00000006 T Unity.Netcode.BufferedLinearInterpolator`1::Update(System.Single,System.Double,System.Double)
+// 0x00000007 System.Void Unity.Netcode.BufferedLinearInterpolator`1::AddMeasurement(T,System.Double)
+// 0x00000008 T Unity.Netcode.BufferedLinearInterpolator`1::GetInterpolatedValue()
+// 0x00000009 T Unity.Netcode.BufferedLinearInterpolator`1::Interpolate(T,T,System.Single)
+// 0x0000000A T Unity.Netcode.BufferedLinearInterpolator`1::InterpolateUnclamped(T,T,System.Single)
+// 0x0000000B System.Void Unity.Netcode.BufferedLinearInterpolator`1::.ctor()
+// 0x0000000C System.Void Unity.Netcode.BufferedLinearInterpolator`1/BufferedItem::.ctor(T,System.Double)
+// 0x0000000D System.Single Unity.Netcode.BufferedLinearInterpolatorFloat::InterpolateUnclamped(System.Single,System.Single,System.Single)
+extern void BufferedLinearInterpolatorFloat_InterpolateUnclamped_m43713876A4D545E37790EFC5495F319E07CE5039 (void);
+// 0x0000000E System.Single Unity.Netcode.BufferedLinearInterpolatorFloat::Interpolate(System.Single,System.Single,System.Single)
+extern void BufferedLinearInterpolatorFloat_Interpolate_m36EDC43BE7F2ED1C77A1A3C633F76D7BCDA094F7 (void);
+// 0x0000000F System.Void Unity.Netcode.BufferedLinearInterpolatorFloat::.ctor()
+extern void BufferedLinearInterpolatorFloat__ctor_m29CEB9F7C452AF1AEB9058EC0EEDD07A4EE74BDD (void);
+// 0x00000010 UnityEngine.Quaternion Unity.Netcode.BufferedLinearInterpolatorQuaternion::InterpolateUnclamped(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
+extern void BufferedLinearInterpolatorQuaternion_InterpolateUnclamped_m8C64ED6CF8DDB3F8656B1D5C5CCD5F6B0B0FBA9C (void);
+// 0x00000011 UnityEngine.Quaternion Unity.Netcode.BufferedLinearInterpolatorQuaternion::Interpolate(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
+extern void BufferedLinearInterpolatorQuaternion_Interpolate_mD45833A66540AA3359238ABB99F6B5AF75CBC87B (void);
+// 0x00000012 System.Void Unity.Netcode.BufferedLinearInterpolatorQuaternion::.ctor()
+extern void BufferedLinearInterpolatorQuaternion__ctor_m2733946696DC8221436914CA6BC26EFAE68C0166 (void);
+// 0x00000013 System.Void Unity.Netcode.Components.NetworkAnimatorStateChangeHandler::FlushMessages()
+extern void NetworkAnimatorStateChangeHandler_FlushMessages_m40EDF1A3DD4A9E6336C9C5B3A016DCB9C5ADBC3A (void);
+// 0x00000014 System.Void Unity.Netcode.Components.NetworkAnimatorStateChangeHandler::NetworkUpdate(Unity.Netcode.NetworkUpdateStage)
+extern void NetworkAnimatorStateChangeHandler_NetworkUpdate_m2221F3C042742BFDD220C39686E52E22CC0B2B8A (void);
+// 0x00000015 System.Void Unity.Netcode.Components.NetworkAnimatorStateChangeHandler::SynchronizeClient(System.UInt64)
+extern void NetworkAnimatorStateChangeHandler_SynchronizeClient_m30BC46A6A2F5BFB21639AAA04234AF69D86D5418 (void);
+// 0x00000016 System.Void Unity.Netcode.Components.NetworkAnimatorStateChangeHandler::SendAnimationUpdate(Unity.Netcode.Components.NetworkAnimator/AnimationMessage,Unity.Netcode.ClientRpcParams)
+extern void NetworkAnimatorStateChangeHandler_SendAnimationUpdate_mB0C216023A487B22CFCB0ED6809E191D9604EA43 (void);
+// 0x00000017 System.Void Unity.Netcode.Components.NetworkAnimatorStateChangeHandler::SendParameterUpdate(Unity.Netcode.Components.NetworkAnimator/ParametersUpdateMessage,Unity.Netcode.ClientRpcParams)
+extern void NetworkAnimatorStateChangeHandler_SendParameterUpdate_mEDEAEFAF8E0DAE7C216D07147A0FE94F8CD7BF3B (void);
+// 0x00000018 System.Void Unity.Netcode.Components.NetworkAnimatorStateChangeHandler::ProcessParameterUpdate(Unity.Netcode.Components.NetworkAnimator/ParametersUpdateMessage)
+extern void NetworkAnimatorStateChangeHandler_ProcessParameterUpdate_mA4D653CC7808FF5B6A0117F7BEA269DD8822792F (void);
+// 0x00000019 System.Void Unity.Netcode.Components.NetworkAnimatorStateChangeHandler::SendTriggerUpdate(Unity.Netcode.Components.NetworkAnimator/AnimationTriggerMessage,Unity.Netcode.ClientRpcParams)
+extern void NetworkAnimatorStateChangeHandler_SendTriggerUpdate_m4035669A18A0244CF9C9281927B76BBB27230B3A (void);
+// 0x0000001A System.Void Unity.Netcode.Components.NetworkAnimatorStateChangeHandler::DeregisterUpdate()
+extern void NetworkAnimatorStateChangeHandler_DeregisterUpdate_m587E64C9939F3C40F76C831FADE1B471BB3DDA84 (void);
+// 0x0000001B System.Void Unity.Netcode.Components.NetworkAnimatorStateChangeHandler::.ctor(Unity.Netcode.Components.NetworkAnimator)
+extern void NetworkAnimatorStateChangeHandler__ctor_m52679679869447248A08959C7FAE84C036CB8AD5 (void);
+// 0x0000001C UnityEngine.Animator Unity.Netcode.Components.NetworkAnimator::get_Animator()
+extern void NetworkAnimator_get_Animator_m0FCC2C325F8DCF385DCC3BB960BE8571C5182064 (void);
+// 0x0000001D System.Void Unity.Netcode.Components.NetworkAnimator::set_Animator(UnityEngine.Animator)
+extern void NetworkAnimator_set_Animator_m6DD3456B48DAF8E434225FA56B4EE8693F150BF4 (void);
+// 0x0000001E System.Boolean Unity.Netcode.Components.NetworkAnimator::IsServerAuthoritative()
+extern void NetworkAnimator_IsServerAuthoritative_m9BEC01CCE682FE15CA040879587910C7B9A8B600 (void);
+// 0x0000001F System.Boolean Unity.Netcode.Components.NetworkAnimator::OnIsServerAuthoritative()
+extern void NetworkAnimator_OnIsServerAuthoritative_m72EF5F6CAB15568AB190A23EF3692A2582240429 (void);
+// 0x00000020 System.Void Unity.Netcode.Components.NetworkAnimator::Cleanup()
+extern void NetworkAnimator_Cleanup_mB6A62191DB7A94BB2C3E6DB26AFC4D0CE3E6038E (void);
+// 0x00000021 System.Void Unity.Netcode.Components.NetworkAnimator::OnDestroy()
+extern void NetworkAnimator_OnDestroy_m98CC7A2B0D5A7D55374B59DC751A0D5A1AB062EF (void);
+// 0x00000022 System.Void Unity.Netcode.Components.NetworkAnimator::OnNetworkSpawn()
+extern void NetworkAnimator_OnNetworkSpawn_m99B69A27468E08C656CA417861143E3D7F9C2645 (void);
+// 0x00000023 System.Void Unity.Netcode.Components.NetworkAnimator::OnNetworkDespawn()
+extern void NetworkAnimator_OnNetworkDespawn_m1E64CC4D0A07720D91EC1D12E05A25695B73E495 (void);
+// 0x00000024 System.Void Unity.Netcode.Components.NetworkAnimator::ServerSynchronizeNewPlayer(System.UInt64)
+extern void NetworkAnimator_ServerSynchronizeNewPlayer_m175AFE5EBF372CF88AF4BABAB1AE19E8F9C735B1 (void);
+// 0x00000025 System.Void Unity.Netcode.Components.NetworkAnimator::OnClientConnectedCallback(System.UInt64)
+extern void NetworkAnimator_OnClientConnectedCallback_mC9A97D128768F31EB0DE28B9582B484616F74255 (void);
+// 0x00000026 System.Void Unity.Netcode.Components.NetworkAnimator::CheckForAnimatorChanges()
+extern void NetworkAnimator_CheckForAnimatorChanges_mC9D625423580C090A6E7D10479B2BAA6280011D5 (void);
+// 0x00000027 System.Void Unity.Netcode.Components.NetworkAnimator::SendParametersUpdate(Unity.Netcode.ClientRpcParams,System.Boolean)
+extern void NetworkAnimator_SendParametersUpdate_mED26F0B94624185383294774128C5FEA92CD838F (void);
+// 0x00000028 T Unity.Netcode.Components.NetworkAnimator::GetValue(Unity.Netcode.Components.NetworkAnimator/AnimatorParamCache&)
+// 0x00000029 System.Boolean Unity.Netcode.Components.NetworkAnimator::CheckParametersChanged()
+extern void NetworkAnimator_CheckParametersChanged_m5466078AD9B78CDEB2F88D791002F56A3315178F (void);
+// 0x0000002A System.Boolean Unity.Netcode.Components.NetworkAnimator::CheckAnimStateChanged(System.Int32&,System.Single&,System.Int32)
+extern void NetworkAnimator_CheckAnimStateChanged_mC7E162F5E00A71E4D4770536B29302BCEB26A114 (void);
+// 0x0000002B System.Void Unity.Netcode.Components.NetworkAnimator::WriteParameters(Unity.Netcode.FastBufferWriter,System.Boolean)
+extern void NetworkAnimator_WriteParameters_mF9BE02E46DBC938A9899C6D4188F64DC59E940EC (void);
+// 0x0000002C System.Void Unity.Netcode.Components.NetworkAnimator::ReadParameters(Unity.Netcode.FastBufferReader)
+extern void NetworkAnimator_ReadParameters_m0F58D0BF8B19A36FF89373520497D55665833194 (void);
+// 0x0000002D System.Void Unity.Netcode.Components.NetworkAnimator::UpdateParameters(Unity.Netcode.Components.NetworkAnimator/ParametersUpdateMessage)
+extern void NetworkAnimator_UpdateParameters_m1D8B9ABBD6464A68EB4D3CB7E94596BBF4DE54E5 (void);
+// 0x0000002E System.Void Unity.Netcode.Components.NetworkAnimator::UpdateAnimationState(Unity.Netcode.Components.NetworkAnimator/AnimationMessage)
+extern void NetworkAnimator_UpdateAnimationState_mC7221AD506A916B104D754AC349D0873E49505E9 (void);
+// 0x0000002F System.Void Unity.Netcode.Components.NetworkAnimator::SendParametersUpdateServerRpc(Unity.Netcode.Components.NetworkAnimator/ParametersUpdateMessage,Unity.Netcode.ServerRpcParams)
+extern void NetworkAnimator_SendParametersUpdateServerRpc_m4DC81823337C46A7A9E6F832ED99E750DEC2AFF2 (void);
+// 0x00000030 System.Void Unity.Netcode.Components.NetworkAnimator::SendParametersUpdateClientRpc(Unity.Netcode.Components.NetworkAnimator/ParametersUpdateMessage,Unity.Netcode.ClientRpcParams)
+extern void NetworkAnimator_SendParametersUpdateClientRpc_m5B91C9B9EE030E9EFB93143453092884B532F274 (void);
+// 0x00000031 System.Void Unity.Netcode.Components.NetworkAnimator::SendAnimStateServerRpc(Unity.Netcode.Components.NetworkAnimator/AnimationMessage,Unity.Netcode.ServerRpcParams)
+extern void NetworkAnimator_SendAnimStateServerRpc_mCD9E5C21ABEAA538E028AC43306B049976F72CA6 (void);
+// 0x00000032 System.Void Unity.Netcode.Components.NetworkAnimator::SendAnimStateClientRpc(Unity.Netcode.Components.NetworkAnimator/AnimationMessage,Unity.Netcode.ClientRpcParams)
+extern void NetworkAnimator_SendAnimStateClientRpc_m0CA1238DAFB4CA56C0895AF88339D7D52B440E84 (void);
+// 0x00000033 System.Void Unity.Netcode.Components.NetworkAnimator::SendAnimTriggerServerRpc(Unity.Netcode.Components.NetworkAnimator/AnimationTriggerMessage,Unity.Netcode.ServerRpcParams)
+extern void NetworkAnimator_SendAnimTriggerServerRpc_m211B7AEED0953D395902EDB67B6D8C08DEBD2BE2 (void);
+// 0x00000034 System.Void Unity.Netcode.Components.NetworkAnimator::SendAnimTriggerClientRpc(Unity.Netcode.Components.NetworkAnimator/AnimationTriggerMessage,Unity.Netcode.ClientRpcParams)
+extern void NetworkAnimator_SendAnimTriggerClientRpc_m21F974B6453EDCCA910C0B47A2AA1FC212B62AED (void);
+// 0x00000035 System.Void Unity.Netcode.Components.NetworkAnimator::SetTrigger(System.String)
+extern void NetworkAnimator_SetTrigger_m5A85CFD0B15DB911BAF5ECB6B36ACD8457F9EA96 (void);
+// 0x00000036 System.Void Unity.Netcode.Components.NetworkAnimator::SetTrigger(System.Int32,System.Boolean)
+extern void NetworkAnimator_SetTrigger_m5EF843378176B81721CFB79246813286A0D26FD1 (void);
+// 0x00000037 System.Void Unity.Netcode.Components.NetworkAnimator::ResetTrigger(System.String)
+extern void NetworkAnimator_ResetTrigger_m05BA7FF14AD05130059426EB5E55047026A1CF78 (void);
+// 0x00000038 System.Void Unity.Netcode.Components.NetworkAnimator::ResetTrigger(System.Int32)
+extern void NetworkAnimator_ResetTrigger_mFFF1F7E8AFD3BDB4D314AF96F85520160499E124 (void);
+// 0x00000039 System.Void Unity.Netcode.Components.NetworkAnimator::.ctor()
+extern void NetworkAnimator__ctor_mDBE18DEB6073E262913B7F3734A27FA9048C64E4 (void);
+// 0x0000003A System.Void Unity.Netcode.Components.NetworkAnimator::.cctor()
+extern void NetworkAnimator__cctor_m650EAEEE21A5743E7538147DC441C829C5CB2A0F (void);
+// 0x0000003B System.Void Unity.Netcode.Components.NetworkAnimator::__rpc_handler_1665640498(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+extern void NetworkAnimator___rpc_handler_1665640498_mFA34E0624A44980A695E49DC84F1DDD308B63DBB (void);
+// 0x0000003C System.Void Unity.Netcode.Components.NetworkAnimator::__rpc_handler_1189168715(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+extern void NetworkAnimator___rpc_handler_1189168715_m63C2B5239B0D97C6F84904D42CEBC8048B80ACBF (void);
+// 0x0000003D System.Void Unity.Netcode.Components.NetworkAnimator::__rpc_handler_4140764492(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+extern void NetworkAnimator___rpc_handler_4140764492_m4DB026DF1BF516B17B0A5DAC78A20EA7FB9D54FA (void);
+// 0x0000003E System.Void Unity.Netcode.Components.NetworkAnimator::__rpc_handler_1069363937(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+extern void NetworkAnimator___rpc_handler_1069363937_m47D993D2D5B8AE94317FC5D6DFF372351B955388 (void);
+// 0x0000003F System.Void Unity.Netcode.Components.NetworkAnimator::__rpc_handler_817791944(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+extern void NetworkAnimator___rpc_handler_817791944_m5682A0322B6ADF1E90CCD201AB2F7BFD1C8844FE (void);
+// 0x00000040 System.Void Unity.Netcode.Components.NetworkAnimator::__rpc_handler_2230447564(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+extern void NetworkAnimator___rpc_handler_2230447564_m4D542F3EFFF76DAD49A9D73A43CF08ADB2C40864 (void);
+// 0x00000041 System.String Unity.Netcode.Components.NetworkAnimator::__getTypeName()
+extern void NetworkAnimator___getTypeName_m9B4AD03E8DCA75CD3087AA7B66226079F71D25FD (void);
+// 0x00000042 System.Void Unity.Netcode.Components.NetworkAnimator/AnimationMessage::NetworkSerialize(Unity.Netcode.BufferSerializer`1<T>)
+// 0x00000043 System.Void Unity.Netcode.Components.NetworkAnimator/ParametersUpdateMessage::NetworkSerialize(Unity.Netcode.BufferSerializer`1<T>)
+// 0x00000044 System.Void Unity.Netcode.Components.NetworkAnimator/AnimationTriggerMessage::NetworkSerialize(Unity.Netcode.BufferSerializer`1<T>)
+// 0x00000045 System.Void Unity.Netcode.Components.NetworkAnimator/AnimationParamEnumWrapper::.cctor()
+extern void AnimationParamEnumWrapper__cctor_m3F2D57DC459F7E8CC026D706B0F3A963A6E7C9D1 (void);
+// 0x00000046 System.Void Unity.Netcode.Components.NetworkRigidbody::Awake()
+extern void NetworkRigidbody_Awake_m42BAFC9455720BF0E198A04CD323051A5DA9B228 (void);
+// 0x00000047 System.Void Unity.Netcode.Components.NetworkRigidbody::OnGainedOwnership()
+extern void NetworkRigidbody_OnGainedOwnership_m30CCCCF7250004EAF795F02F198822535A8D7D6F (void);
+// 0x00000048 System.Void Unity.Netcode.Components.NetworkRigidbody::OnLostOwnership()
+extern void NetworkRigidbody_OnLostOwnership_m30C7AC7619F987FCD3C10FACF2E1F1381F24795C (void);
+// 0x00000049 System.Void Unity.Netcode.Components.NetworkRigidbody::UpdateOwnershipAuthority()
+extern void NetworkRigidbody_UpdateOwnershipAuthority_m9E86EC56E2768E3C07A707B344F9DE8268C3F99E (void);
+// 0x0000004A System.Void Unity.Netcode.Components.NetworkRigidbody::OnNetworkSpawn()
+extern void NetworkRigidbody_OnNetworkSpawn_mCFEC19D6DC986D3C5CC0B9366A3C13A523D25BFC (void);
+// 0x0000004B System.Void Unity.Netcode.Components.NetworkRigidbody::OnNetworkDespawn()
+extern void NetworkRigidbody_OnNetworkDespawn_m14BA7C792D0BE820378AC2890ECAE480A0158981 (void);
+// 0x0000004C System.Void Unity.Netcode.Components.NetworkRigidbody::.ctor()
+extern void NetworkRigidbody__ctor_m91A9CC4A7585584E9EE5A749F43E78EEE010DA78 (void);
+// 0x0000004D System.String Unity.Netcode.Components.NetworkRigidbody::__getTypeName()
+extern void NetworkRigidbody___getTypeName_mFC21061DE1A958F054263C052461F37464265C56 (void);
+// 0x0000004E System.Boolean Unity.Netcode.Components.NetworkRigidbody2D::get_HasAuthority()
+extern void NetworkRigidbody2D_get_HasAuthority_m3ED886FCCA8C41251C7C0881F115AB0AABFED78E (void);
+// 0x0000004F System.Void Unity.Netcode.Components.NetworkRigidbody2D::Awake()
+extern void NetworkRigidbody2D_Awake_m2559FBC9DC83894635291FC266D5F08CD7E0147A (void);
+// 0x00000050 System.Void Unity.Netcode.Components.NetworkRigidbody2D::FixedUpdate()
+extern void NetworkRigidbody2D_FixedUpdate_mD306223746FF8FB25B4FC384F4B2AC00A971560F (void);
+// 0x00000051 System.Void Unity.Netcode.Components.NetworkRigidbody2D::UpdateRigidbodyKinematicMode()
+extern void NetworkRigidbody2D_UpdateRigidbodyKinematicMode_m1221BE0363E29F263F9828E5B6CBD3D5E1E1360F (void);
+// 0x00000052 System.Void Unity.Netcode.Components.NetworkRigidbody2D::OnNetworkSpawn()
+extern void NetworkRigidbody2D_OnNetworkSpawn_mAB047E1784D56D752F4A60701F0841EEFBDE1B6A (void);
+// 0x00000053 System.Void Unity.Netcode.Components.NetworkRigidbody2D::OnNetworkDespawn()
+extern void NetworkRigidbody2D_OnNetworkDespawn_m52C13E0957DAF0DFF0BE19228975313C2B8905EB (void);
+// 0x00000054 System.Void Unity.Netcode.Components.NetworkRigidbody2D::.ctor()
+extern void NetworkRigidbody2D__ctor_m3119B1E4172C3A981233CD92C88E49381E759620 (void);
+// 0x00000055 System.String Unity.Netcode.Components.NetworkRigidbody2D::__getTypeName()
+extern void NetworkRigidbody2D___getTypeName_m2BF4A0C71B5BB3E5DD3814A9193547D259E9A2D8 (void);
+// 0x00000056 System.Boolean Unity.Netcode.Components.NetworkTransform::get_SynchronizePosition()
+extern void NetworkTransform_get_SynchronizePosition_mFE99641131439CBE1A1F6DFC282C8019E5339923 (void);
+// 0x00000057 System.Boolean Unity.Netcode.Components.NetworkTransform::get_SynchronizeRotation()
+extern void NetworkTransform_get_SynchronizeRotation_mBEC4BE29CE2F2E79DE86F958BF686AA309E06E87 (void);
+// 0x00000058 System.Boolean Unity.Netcode.Components.NetworkTransform::get_SynchronizeScale()
+extern void NetworkTransform_get_SynchronizeScale_m98668BB4FB3979620180B048041CE4A1560FB5C0 (void);
+// 0x00000059 System.Boolean Unity.Netcode.Components.NetworkTransform::get_CanCommitToTransform()
+extern void NetworkTransform_get_CanCommitToTransform_m9A48B1A25C673BB3F161583DB687CEB994066F55 (void);
+// 0x0000005A System.Void Unity.Netcode.Components.NetworkTransform::set_CanCommitToTransform(System.Boolean)
+extern void NetworkTransform_set_CanCommitToTransform_m42E552D98628D7F818294C5FF4D01C79C59FC3CB (void);
+// 0x0000005B Unity.Netcode.NetworkVariable`1<Unity.Netcode.Components.NetworkTransform/NetworkTransformState> Unity.Netcode.Components.NetworkTransform::get_ReplicatedNetworkState()
+extern void NetworkTransform_get_ReplicatedNetworkState_m5A2C80FAE683F8FE0EA9C05F2BB90909361758F3 (void);
+// 0x0000005C Unity.Netcode.Components.NetworkTransform/NetworkTransformState Unity.Netcode.Components.NetworkTransform::GetLastSentState()
+extern void NetworkTransform_GetLastSentState_mDFB3698EF994496DA79353CCAAAE2F5612B04E71 (void);
+// 0x0000005D System.Void Unity.Netcode.Components.NetworkTransform::TryCommitTransformToServer(UnityEngine.Transform,System.Double)
+extern void NetworkTransform_TryCommitTransformToServer_mF8E67C8B8D2E4FAB3E2DEBF662D0D47695EB36FD (void);
+// 0x0000005E System.Void Unity.Netcode.Components.NetworkTransform::TryCommitTransform(UnityEngine.Transform,System.Double)
+extern void NetworkTransform_TryCommitTransform_m1FDD56CD9B3E190692454FE189CDC2FE859F25CB (void);
+// 0x0000005F System.Void Unity.Netcode.Components.NetworkTransform::ResetInterpolatedStateToCurrentAuthoritativeState()
+extern void NetworkTransform_ResetInterpolatedStateToCurrentAuthoritativeState_mB426D48B3B20E134277217E5C3F0FC04DB875BB1 (void);
+// 0x00000060 Unity.Netcode.Components.NetworkTransform/NetworkTransformState Unity.Netcode.Components.NetworkTransform::ApplyLocalNetworkState(UnityEngine.Transform)
+extern void NetworkTransform_ApplyLocalNetworkState_m068CC8059EE475355595A58708D98211907C81A2 (void);
+// 0x00000061 System.Boolean Unity.Netcode.Components.NetworkTransform::ApplyTransformToNetworkState(Unity.Netcode.Components.NetworkTransform/NetworkTransformState&,System.Double,UnityEngine.Transform)
+extern void NetworkTransform_ApplyTransformToNetworkState_m8CFCC01B79D058B7C439606E28466762A2BB8C60 (void);
+// 0x00000062 System.Boolean Unity.Netcode.Components.NetworkTransform::ApplyTransformToNetworkStateWithInfo(Unity.Netcode.Components.NetworkTransform/NetworkTransformState&,System.Double,UnityEngine.Transform)
+extern void NetworkTransform_ApplyTransformToNetworkStateWithInfo_mB0BD07B8985A79236EE389B1048D26189D32B199 (void);
+// 0x00000063 System.Void Unity.Netcode.Components.NetworkTransform::ApplyAuthoritativeState()
+extern void NetworkTransform_ApplyAuthoritativeState_m845934FBAFB931ABCF2B3377C6DB01084015E09C (void);
+// 0x00000064 System.Void Unity.Netcode.Components.NetworkTransform::AddInterpolatedState(Unity.Netcode.Components.NetworkTransform/NetworkTransformState)
+extern void NetworkTransform_AddInterpolatedState_m3C5530B429350E4C6E09BB4949275CED87FDE8B8 (void);
+// 0x00000065 System.Void Unity.Netcode.Components.NetworkTransform::OnNetworkStateChanged(Unity.Netcode.Components.NetworkTransform/NetworkTransformState,Unity.Netcode.Components.NetworkTransform/NetworkTransformState)
+extern void NetworkTransform_OnNetworkStateChanged_m068D91DD465041EF0A04DEE6DBA54B9D99AB9CDF (void);
+// 0x00000066 System.Void Unity.Netcode.Components.NetworkTransform::SetMaxInterpolationBound(System.Single)
+extern void NetworkTransform_SetMaxInterpolationBound_mCECD3D6E8B2F383A05ACB20C934956759AF7E16D (void);
+// 0x00000067 System.Void Unity.Netcode.Components.NetworkTransform::Awake()
+extern void NetworkTransform_Awake_m43903DCCB3BEEE6DE34670605B5DC9A941604A9E (void);
+// 0x00000068 System.Void Unity.Netcode.Components.NetworkTransform::OnNetworkSpawn()
+extern void NetworkTransform_OnNetworkSpawn_m7F7043E871E6F64D6696A44B03EE7C5CD9B9FD9F (void);
+// 0x00000069 System.Void Unity.Netcode.Components.NetworkTransform::OnNetworkDespawn()
+extern void NetworkTransform_OnNetworkDespawn_m176CC95F0A8C8DE640970A04A4EE0719F04AB1FE (void);
+// 0x0000006A System.Void Unity.Netcode.Components.NetworkTransform::OnDestroy()
+extern void NetworkTransform_OnDestroy_mCB74AE8734B144BBDD81405BCDDEEFCF17D25257 (void);
+// 0x0000006B System.Void Unity.Netcode.Components.NetworkTransform::OnGainedOwnership()
+extern void NetworkTransform_OnGainedOwnership_m4743BC7BABF8EE95AE362CEC9538F974CDB85884 (void);
+// 0x0000006C System.Void Unity.Netcode.Components.NetworkTransform::OnLostOwnership()
+extern void NetworkTransform_OnLostOwnership_m52348DD0AB77D6A491342767790A92749868AA52 (void);
+// 0x0000006D System.Void Unity.Netcode.Components.NetworkTransform::Initialize()
+extern void NetworkTransform_Initialize_m997E32CBEC947E523B3A4B562ED7451D6E0BEEEC (void);
+// 0x0000006E System.Void Unity.Netcode.Components.NetworkTransform::SetState(System.Nullable`1<UnityEngine.Vector3>,System.Nullable`1<UnityEngine.Quaternion>,System.Nullable`1<UnityEngine.Vector3>,System.Boolean)
+extern void NetworkTransform_SetState_mB927022ACDDB84AF08C44C00C2AD48D8B42C81BF (void);
+// 0x0000006F System.Void Unity.Netcode.Components.NetworkTransform::SetStateInternal(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,System.Boolean)
+extern void NetworkTransform_SetStateInternal_m3E72D6696D0EB4964DB918C27CFB9183E6C3FD92 (void);
+// 0x00000070 System.Void Unity.Netcode.Components.NetworkTransform::SetStateClientRpc(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,System.Boolean,Unity.Netcode.ClientRpcParams)
+extern void NetworkTransform_SetStateClientRpc_m5A824BB7A5411B09FEC58E7BB025273F35A7C7B9 (void);
+// 0x00000071 System.Void Unity.Netcode.Components.NetworkTransform::SetStateServerRpc(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,System.Boolean)
+extern void NetworkTransform_SetStateServerRpc_mFB359D2E01C2CD26D75E842F19F326485307BE2E (void);
+// 0x00000072 System.Void Unity.Netcode.Components.NetworkTransform::UpdateAuthoritativeState(UnityEngine.Transform)
+extern void NetworkTransform_UpdateAuthoritativeState_m6B49D7BE5A0A540A4F7424755523158798AC6953 (void);
+// 0x00000073 System.Void Unity.Netcode.Components.NetworkTransform::Update()
+extern void NetworkTransform_Update_mE850232F762A1C2D34E759A37418314B19DDDAC0 (void);
+// 0x00000074 System.Void Unity.Netcode.Components.NetworkTransform::Teleport(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3)
+extern void NetworkTransform_Teleport_m7A5D6A2BEF96AA459E3C2BE8D2C92B51DA514683 (void);
+// 0x00000075 System.Boolean Unity.Netcode.Components.NetworkTransform::OnIsServerAuthoritative()
+extern void NetworkTransform_OnIsServerAuthoritative_m681F8F44941C230E30DC985C9CA247C2D0927642 (void);
+// 0x00000076 System.Boolean Unity.Netcode.Components.NetworkTransform::IsServerAuthoritative()
+extern void NetworkTransform_IsServerAuthoritative_m9E51992112014C20476A7F23ADA68F29F52CF0C9 (void);
+// 0x00000077 System.Void Unity.Netcode.Components.NetworkTransform::.ctor()
+extern void NetworkTransform__ctor_m0921273526AB8C7F307A4EC5097E24CD13054E28 (void);
+// 0x00000078 System.Void Unity.Netcode.Components.NetworkTransform::.cctor()
+extern void NetworkTransform__cctor_m7AB1CC41A4D1DA6D2C7E460A5A2D2DAE02D6AFB9 (void);
+// 0x00000079 System.Void Unity.Netcode.Components.NetworkTransform::__rpc_handler_1724438000(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+extern void NetworkTransform___rpc_handler_1724438000_m434232B485A598919A53C5549D7242E9A5C2672A (void);
+// 0x0000007A System.Void Unity.Netcode.Components.NetworkTransform::__rpc_handler_640767722(Unity.Netcode.NetworkBehaviour,Unity.Netcode.FastBufferReader,Unity.Netcode.__RpcParams)
+extern void NetworkTransform___rpc_handler_640767722_mBAF0CDCFE48E567DAF0C55934428270FF6514795 (void);
+// 0x0000007B System.String Unity.Netcode.Components.NetworkTransform::__getTypeName()
+extern void NetworkTransform___getTypeName_m9B81388899D8C9B30DCC215287BBE5C54888B852 (void);
+// 0x0000007C System.Void Unity.Netcode.Components.NetworkTransform/OnClientRequestChangeDelegate::.ctor(System.Object,System.IntPtr)
+extern void OnClientRequestChangeDelegate__ctor_m7C3DDE9F00C1F772EB36D20EAB6A3E96E8A24C5B (void);
+// 0x0000007D System.ValueTuple`3<UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3> Unity.Netcode.Components.NetworkTransform/OnClientRequestChangeDelegate::Invoke(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3)
+extern void OnClientRequestChangeDelegate_Invoke_mEFDBF658E3A1B0FED79B13E5FAC440F6081104F8 (void);
+// 0x0000007E System.IAsyncResult Unity.Netcode.Components.NetworkTransform/OnClientRequestChangeDelegate::BeginInvoke(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,System.AsyncCallback,System.Object)
+extern void OnClientRequestChangeDelegate_BeginInvoke_m64E54FC1D111C193113BF5387023707338CF454C (void);
+// 0x0000007F System.ValueTuple`3<UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3> Unity.Netcode.Components.NetworkTransform/OnClientRequestChangeDelegate::EndInvoke(System.IAsyncResult)
+extern void OnClientRequestChangeDelegate_EndInvoke_m68843D4745C79EA22370A74CCAD88BDD95C84440 (void);
+// 0x00000080 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_InLocalSpace()
+extern void NetworkTransformState_get_InLocalSpace_m3AF9D9AB34415384F9109EBE77E89B8DA4D40511 (void);
+// 0x00000081 System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_InLocalSpace(System.Boolean)
+extern void NetworkTransformState_set_InLocalSpace_mF973D00C4A5E3CC203B6D22BC173F424B736A7D9 (void);
+// 0x00000082 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasPositionX()
+extern void NetworkTransformState_get_HasPositionX_m9C6FE08916A16EBAF8EBDE6CD6569393D5DC0445 (void);
+// 0x00000083 System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_HasPositionX(System.Boolean)
+extern void NetworkTransformState_set_HasPositionX_m240F2C27547F74F422A288FE3BA992F93283694C (void);
+// 0x00000084 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasPositionY()
+extern void NetworkTransformState_get_HasPositionY_m0C744222BC3DBF0B31409710295E92F29086416C (void);
+// 0x00000085 System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_HasPositionY(System.Boolean)
+extern void NetworkTransformState_set_HasPositionY_m586C5B62153D0E8BB91508AC3654FAF9CE3E55C5 (void);
+// 0x00000086 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasPositionZ()
+extern void NetworkTransformState_get_HasPositionZ_mA34324A2D4EAE14B069BFF5A10573C99902D8E1C (void);
+// 0x00000087 System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_HasPositionZ(System.Boolean)
+extern void NetworkTransformState_set_HasPositionZ_m563CB6103A575B4D0D9C50349F073C18210A1E66 (void);
+// 0x00000088 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasPositionChange()
+extern void NetworkTransformState_get_HasPositionChange_mADF6E97EAEDF0FD79BFF97F48C68C7E7FEA22BF1 (void);
+// 0x00000089 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasRotAngleX()
+extern void NetworkTransformState_get_HasRotAngleX_m2532ABF7120513A264C60DE4C2FDAB82A057DC20 (void);
+// 0x0000008A System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_HasRotAngleX(System.Boolean)
+extern void NetworkTransformState_set_HasRotAngleX_m16B08D2F6DD4098C8505C6D3AB4773A139E02D64 (void);
+// 0x0000008B System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasRotAngleY()
+extern void NetworkTransformState_get_HasRotAngleY_m16AF1BE8B3E18074851A361406D631A096A3AFFB (void);
+// 0x0000008C System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_HasRotAngleY(System.Boolean)
+extern void NetworkTransformState_set_HasRotAngleY_m1575AE73DAD31FE7FFEDB990E3B8C40FC8FB529C (void);
+// 0x0000008D System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasRotAngleZ()
+extern void NetworkTransformState_get_HasRotAngleZ_m138176B2D6517F29D0923548C0051B72E1E0B1AD (void);
+// 0x0000008E System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_HasRotAngleZ(System.Boolean)
+extern void NetworkTransformState_set_HasRotAngleZ_m6E99C6BB328984E99B4AB2D0B656C5EF96A9FB22 (void);
+// 0x0000008F System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasRotAngleChange()
+extern void NetworkTransformState_get_HasRotAngleChange_mF0E36C87F4B4682B4BA889BA15C35B90FC1BCE8B (void);
+// 0x00000090 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasScaleX()
+extern void NetworkTransformState_get_HasScaleX_m4D9FE027AD3DF34AA1B8E3DC4305ACA2CA13366B (void);
+// 0x00000091 System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_HasScaleX(System.Boolean)
+extern void NetworkTransformState_set_HasScaleX_mC44EB0B2C829B3A8D361A9273364E35A5EF18CDA (void);
+// 0x00000092 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasScaleY()
+extern void NetworkTransformState_get_HasScaleY_m03DA2AB93E3B0CAAFE500E5D030DB4801B9412EE (void);
+// 0x00000093 System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_HasScaleY(System.Boolean)
+extern void NetworkTransformState_set_HasScaleY_m892DFCB1EDC16BB21B1C0A327E6B0FF2421AA6E9 (void);
+// 0x00000094 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasScaleZ()
+extern void NetworkTransformState_get_HasScaleZ_mF11F81778CA6BA17C658AF6D4F80AC0D900B4BF8 (void);
+// 0x00000095 System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_HasScaleZ(System.Boolean)
+extern void NetworkTransformState_set_HasScaleZ_m71C40ED9D74943E7683551DAC21CCCD1DA308BA2 (void);
+// 0x00000096 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_HasScaleChange()
+extern void NetworkTransformState_get_HasScaleChange_mA88B6E1808144F2F532444F21D17290F7B415FE6 (void);
+// 0x00000097 System.Boolean Unity.Netcode.Components.NetworkTransform/NetworkTransformState::get_IsTeleportingNextFrame()
+extern void NetworkTransformState_get_IsTeleportingNextFrame_m64398AF0338290AB00D33081AE87CE54BE26E66A (void);
+// 0x00000098 System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::set_IsTeleportingNextFrame(System.Boolean)
+extern void NetworkTransformState_set_IsTeleportingNextFrame_mFAAB3CCDDDB5E160D106D29871D66B83A26B3C91 (void);
+// 0x00000099 System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::ClearBitSetForNextTick()
+extern void NetworkTransformState_ClearBitSetForNextTick_m8E346AF99F2D62389E67F349C2DE1BCADB890E30 (void);
+// 0x0000009A System.Void Unity.Netcode.Components.NetworkTransform/NetworkTransformState::NetworkSerialize(Unity.Netcode.BufferSerializer`1<T>)
+static Il2CppMethodPointer s_methodPointers[154] = 
+{
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	BufferedLinearInterpolatorFloat_InterpolateUnclamped_m43713876A4D545E37790EFC5495F319E07CE5039,
+	BufferedLinearInterpolatorFloat_Interpolate_m36EDC43BE7F2ED1C77A1A3C633F76D7BCDA094F7,
+	BufferedLinearInterpolatorFloat__ctor_m29CEB9F7C452AF1AEB9058EC0EEDD07A4EE74BDD,
+	BufferedLinearInterpolatorQuaternion_InterpolateUnclamped_m8C64ED6CF8DDB3F8656B1D5C5CCD5F6B0B0FBA9C,
+	BufferedLinearInterpolatorQuaternion_Interpolate_mD45833A66540AA3359238ABB99F6B5AF75CBC87B,
+	BufferedLinearInterpolatorQuaternion__ctor_m2733946696DC8221436914CA6BC26EFAE68C0166,
+	NetworkAnimatorStateChangeHandler_FlushMessages_m40EDF1A3DD4A9E6336C9C5B3A016DCB9C5ADBC3A,
+	NetworkAnimatorStateChangeHandler_NetworkUpdate_m2221F3C042742BFDD220C39686E52E22CC0B2B8A,
+	NetworkAnimatorStateChangeHandler_SynchronizeClient_m30BC46A6A2F5BFB21639AAA04234AF69D86D5418,
+	NetworkAnimatorStateChangeHandler_SendAnimationUpdate_mB0C216023A487B22CFCB0ED6809E191D9604EA43,
+	NetworkAnimatorStateChangeHandler_SendParameterUpdate_mEDEAEFAF8E0DAE7C216D07147A0FE94F8CD7BF3B,
+	NetworkAnimatorStateChangeHandler_ProcessParameterUpdate_mA4D653CC7808FF5B6A0117F7BEA269DD8822792F,
+	NetworkAnimatorStateChangeHandler_SendTriggerUpdate_m4035669A18A0244CF9C9281927B76BBB27230B3A,
+	NetworkAnimatorStateChangeHandler_DeregisterUpdate_m587E64C9939F3C40F76C831FADE1B471BB3DDA84,
+	NetworkAnimatorStateChangeHandler__ctor_m52679679869447248A08959C7FAE84C036CB8AD5,
+	NetworkAnimator_get_Animator_m0FCC2C325F8DCF385DCC3BB960BE8571C5182064,
+	NetworkAnimator_set_Animator_m6DD3456B48DAF8E434225FA56B4EE8693F150BF4,
+	NetworkAnimator_IsServerAuthoritative_m9BEC01CCE682FE15CA040879587910C7B9A8B600,
+	NetworkAnimator_OnIsServerAuthoritative_m72EF5F6CAB15568AB190A23EF3692A2582240429,
+	NetworkAnimator_Cleanup_mB6A62191DB7A94BB2C3E6DB26AFC4D0CE3E6038E,
+	NetworkAnimator_OnDestroy_m98CC7A2B0D5A7D55374B59DC751A0D5A1AB062EF,
+	NetworkAnimator_OnNetworkSpawn_m99B69A27468E08C656CA417861143E3D7F9C2645,
+	NetworkAnimator_OnNetworkDespawn_m1E64CC4D0A07720D91EC1D12E05A25695B73E495,
+	NetworkAnimator_ServerSynchronizeNewPlayer_m175AFE5EBF372CF88AF4BABAB1AE19E8F9C735B1,
+	NetworkAnimator_OnClientConnectedCallback_mC9A97D128768F31EB0DE28B9582B484616F74255,
+	NetworkAnimator_CheckForAnimatorChanges_mC9D625423580C090A6E7D10479B2BAA6280011D5,
+	NetworkAnimator_SendParametersUpdate_mED26F0B94624185383294774128C5FEA92CD838F,
+	NULL,
+	NetworkAnimator_CheckParametersChanged_m5466078AD9B78CDEB2F88D791002F56A3315178F,
+	NetworkAnimator_CheckAnimStateChanged_mC7E162F5E00A71E4D4770536B29302BCEB26A114,
+	NetworkAnimator_WriteParameters_mF9BE02E46DBC938A9899C6D4188F64DC59E940EC,
+	NetworkAnimator_ReadParameters_m0F58D0BF8B19A36FF89373520497D55665833194,
+	NetworkAnimator_UpdateParameters_m1D8B9ABBD6464A68EB4D3CB7E94596BBF4DE54E5,
+	NetworkAnimator_UpdateAnimationState_mC7221AD506A916B104D754AC349D0873E49505E9,
+	NetworkAnimator_SendParametersUpdateServerRpc_m4DC81823337C46A7A9E6F832ED99E750DEC2AFF2,
+	NetworkAnimator_SendParametersUpdateClientRpc_m5B91C9B9EE030E9EFB93143453092884B532F274,
+	NetworkAnimator_SendAnimStateServerRpc_mCD9E5C21ABEAA538E028AC43306B049976F72CA6,
+	NetworkAnimator_SendAnimStateClientRpc_m0CA1238DAFB4CA56C0895AF88339D7D52B440E84,
+	NetworkAnimator_SendAnimTriggerServerRpc_m211B7AEED0953D395902EDB67B6D8C08DEBD2BE2,
+	NetworkAnimator_SendAnimTriggerClientRpc_m21F974B6453EDCCA910C0B47A2AA1FC212B62AED,
+	NetworkAnimator_SetTrigger_m5A85CFD0B15DB911BAF5ECB6B36ACD8457F9EA96,
+	NetworkAnimator_SetTrigger_m5EF843378176B81721CFB79246813286A0D26FD1,
+	NetworkAnimator_ResetTrigger_m05BA7FF14AD05130059426EB5E55047026A1CF78,
+	NetworkAnimator_ResetTrigger_mFFF1F7E8AFD3BDB4D314AF96F85520160499E124,
+	NetworkAnimator__ctor_mDBE18DEB6073E262913B7F3734A27FA9048C64E4,
+	NetworkAnimator__cctor_m650EAEEE21A5743E7538147DC441C829C5CB2A0F,
+	NetworkAnimator___rpc_handler_1665640498_mFA34E0624A44980A695E49DC84F1DDD308B63DBB,
+	NetworkAnimator___rpc_handler_1189168715_m63C2B5239B0D97C6F84904D42CEBC8048B80ACBF,
+	NetworkAnimator___rpc_handler_4140764492_m4DB026DF1BF516B17B0A5DAC78A20EA7FB9D54FA,
+	NetworkAnimator___rpc_handler_1069363937_m47D993D2D5B8AE94317FC5D6DFF372351B955388,
+	NetworkAnimator___rpc_handler_817791944_m5682A0322B6ADF1E90CCD201AB2F7BFD1C8844FE,
+	NetworkAnimator___rpc_handler_2230447564_m4D542F3EFFF76DAD49A9D73A43CF08ADB2C40864,
+	NetworkAnimator___getTypeName_m9B4AD03E8DCA75CD3087AA7B66226079F71D25FD,
+	NULL,
+	NULL,
+	NULL,
+	AnimationParamEnumWrapper__cctor_m3F2D57DC459F7E8CC026D706B0F3A963A6E7C9D1,
+	NetworkRigidbody_Awake_m42BAFC9455720BF0E198A04CD323051A5DA9B228,
+	NetworkRigidbody_OnGainedOwnership_m30CCCCF7250004EAF795F02F198822535A8D7D6F,
+	NetworkRigidbody_OnLostOwnership_m30C7AC7619F987FCD3C10FACF2E1F1381F24795C,
+	NetworkRigidbody_UpdateOwnershipAuthority_m9E86EC56E2768E3C07A707B344F9DE8268C3F99E,
+	NetworkRigidbody_OnNetworkSpawn_mCFEC19D6DC986D3C5CC0B9366A3C13A523D25BFC,
+	NetworkRigidbody_OnNetworkDespawn_m14BA7C792D0BE820378AC2890ECAE480A0158981,
+	NetworkRigidbody__ctor_m91A9CC4A7585584E9EE5A749F43E78EEE010DA78,
+	NetworkRigidbody___getTypeName_mFC21061DE1A958F054263C052461F37464265C56,
+	NetworkRigidbody2D_get_HasAuthority_m3ED886FCCA8C41251C7C0881F115AB0AABFED78E,
+	NetworkRigidbody2D_Awake_m2559FBC9DC83894635291FC266D5F08CD7E0147A,
+	NetworkRigidbody2D_FixedUpdate_mD306223746FF8FB25B4FC384F4B2AC00A971560F,
+	NetworkRigidbody2D_UpdateRigidbodyKinematicMode_m1221BE0363E29F263F9828E5B6CBD3D5E1E1360F,
+	NetworkRigidbody2D_OnNetworkSpawn_mAB047E1784D56D752F4A60701F0841EEFBDE1B6A,
+	NetworkRigidbody2D_OnNetworkDespawn_m52C13E0957DAF0DFF0BE19228975313C2B8905EB,
+	NetworkRigidbody2D__ctor_m3119B1E4172C3A981233CD92C88E49381E759620,
+	NetworkRigidbody2D___getTypeName_m2BF4A0C71B5BB3E5DD3814A9193547D259E9A2D8,
+	NetworkTransform_get_SynchronizePosition_mFE99641131439CBE1A1F6DFC282C8019E5339923,
+	NetworkTransform_get_SynchronizeRotation_mBEC4BE29CE2F2E79DE86F958BF686AA309E06E87,
+	NetworkTransform_get_SynchronizeScale_m98668BB4FB3979620180B048041CE4A1560FB5C0,
+	NetworkTransform_get_CanCommitToTransform_m9A48B1A25C673BB3F161583DB687CEB994066F55,
+	NetworkTransform_set_CanCommitToTransform_m42E552D98628D7F818294C5FF4D01C79C59FC3CB,
+	NetworkTransform_get_ReplicatedNetworkState_m5A2C80FAE683F8FE0EA9C05F2BB90909361758F3,
+	NetworkTransform_GetLastSentState_mDFB3698EF994496DA79353CCAAAE2F5612B04E71,
+	NetworkTransform_TryCommitTransformToServer_mF8E67C8B8D2E4FAB3E2DEBF662D0D47695EB36FD,
+	NetworkTransform_TryCommitTransform_m1FDD56CD9B3E190692454FE189CDC2FE859F25CB,
+	NetworkTransform_ResetInterpolatedStateToCurrentAuthoritativeState_mB426D48B3B20E134277217E5C3F0FC04DB875BB1,
+	NetworkTransform_ApplyLocalNetworkState_m068CC8059EE475355595A58708D98211907C81A2,
+	NetworkTransform_ApplyTransformToNetworkState_m8CFCC01B79D058B7C439606E28466762A2BB8C60,
+	NetworkTransform_ApplyTransformToNetworkStateWithInfo_mB0BD07B8985A79236EE389B1048D26189D32B199,
+	NetworkTransform_ApplyAuthoritativeState_m845934FBAFB931ABCF2B3377C6DB01084015E09C,
+	NetworkTransform_AddInterpolatedState_m3C5530B429350E4C6E09BB4949275CED87FDE8B8,
+	NetworkTransform_OnNetworkStateChanged_m068D91DD465041EF0A04DEE6DBA54B9D99AB9CDF,
+	NetworkTransform_SetMaxInterpolationBound_mCECD3D6E8B2F383A05ACB20C934956759AF7E16D,
+	NetworkTransform_Awake_m43903DCCB3BEEE6DE34670605B5DC9A941604A9E,
+	NetworkTransform_OnNetworkSpawn_m7F7043E871E6F64D6696A44B03EE7C5CD9B9FD9F,
+	NetworkTransform_OnNetworkDespawn_m176CC95F0A8C8DE640970A04A4EE0719F04AB1FE,
+	NetworkTransform_OnDestroy_mCB74AE8734B144BBDD81405BCDDEEFCF17D25257,
+	NetworkTransform_OnGainedOwnership_m4743BC7BABF8EE95AE362CEC9538F974CDB85884,
+	NetworkTransform_OnLostOwnership_m52348DD0AB77D6A491342767790A92749868AA52,
+	NetworkTransform_Initialize_m997E32CBEC947E523B3A4B562ED7451D6E0BEEEC,
+	NetworkTransform_SetState_mB927022ACDDB84AF08C44C00C2AD48D8B42C81BF,
+	NetworkTransform_SetStateInternal_m3E72D6696D0EB4964DB918C27CFB9183E6C3FD92,
+	NetworkTransform_SetStateClientRpc_m5A824BB7A5411B09FEC58E7BB025273F35A7C7B9,
+	NetworkTransform_SetStateServerRpc_mFB359D2E01C2CD26D75E842F19F326485307BE2E,
+	NetworkTransform_UpdateAuthoritativeState_m6B49D7BE5A0A540A4F7424755523158798AC6953,
+	NetworkTransform_Update_mE850232F762A1C2D34E759A37418314B19DDDAC0,
+	NetworkTransform_Teleport_m7A5D6A2BEF96AA459E3C2BE8D2C92B51DA514683,
+	NetworkTransform_OnIsServerAuthoritative_m681F8F44941C230E30DC985C9CA247C2D0927642,
+	NetworkTransform_IsServerAuthoritative_m9E51992112014C20476A7F23ADA68F29F52CF0C9,
+	NetworkTransform__ctor_m0921273526AB8C7F307A4EC5097E24CD13054E28,
+	NetworkTransform__cctor_m7AB1CC41A4D1DA6D2C7E460A5A2D2DAE02D6AFB9,
+	NetworkTransform___rpc_handler_1724438000_m434232B485A598919A53C5549D7242E9A5C2672A,
+	NetworkTransform___rpc_handler_640767722_mBAF0CDCFE48E567DAF0C55934428270FF6514795,
+	NetworkTransform___getTypeName_m9B81388899D8C9B30DCC215287BBE5C54888B852,
+	OnClientRequestChangeDelegate__ctor_m7C3DDE9F00C1F772EB36D20EAB6A3E96E8A24C5B,
+	OnClientRequestChangeDelegate_Invoke_mEFDBF658E3A1B0FED79B13E5FAC440F6081104F8,
+	OnClientRequestChangeDelegate_BeginInvoke_m64E54FC1D111C193113BF5387023707338CF454C,
+	OnClientRequestChangeDelegate_EndInvoke_m68843D4745C79EA22370A74CCAD88BDD95C84440,
+	NetworkTransformState_get_InLocalSpace_m3AF9D9AB34415384F9109EBE77E89B8DA4D40511,
+	NetworkTransformState_set_InLocalSpace_mF973D00C4A5E3CC203B6D22BC173F424B736A7D9,
+	NetworkTransformState_get_HasPositionX_m9C6FE08916A16EBAF8EBDE6CD6569393D5DC0445,
+	NetworkTransformState_set_HasPositionX_m240F2C27547F74F422A288FE3BA992F93283694C,
+	NetworkTransformState_get_HasPositionY_m0C744222BC3DBF0B31409710295E92F29086416C,
+	NetworkTransformState_set_HasPositionY_m586C5B62153D0E8BB91508AC3654FAF9CE3E55C5,
+	NetworkTransformState_get_HasPositionZ_mA34324A2D4EAE14B069BFF5A10573C99902D8E1C,
+	NetworkTransformState_set_HasPositionZ_m563CB6103A575B4D0D9C50349F073C18210A1E66,
+	NetworkTransformState_get_HasPositionChange_mADF6E97EAEDF0FD79BFF97F48C68C7E7FEA22BF1,
+	NetworkTransformState_get_HasRotAngleX_m2532ABF7120513A264C60DE4C2FDAB82A057DC20,
+	NetworkTransformState_set_HasRotAngleX_m16B08D2F6DD4098C8505C6D3AB4773A139E02D64,
+	NetworkTransformState_get_HasRotAngleY_m16AF1BE8B3E18074851A361406D631A096A3AFFB,
+	NetworkTransformState_set_HasRotAngleY_m1575AE73DAD31FE7FFEDB990E3B8C40FC8FB529C,
+	NetworkTransformState_get_HasRotAngleZ_m138176B2D6517F29D0923548C0051B72E1E0B1AD,
+	NetworkTransformState_set_HasRotAngleZ_m6E99C6BB328984E99B4AB2D0B656C5EF96A9FB22,
+	NetworkTransformState_get_HasRotAngleChange_mF0E36C87F4B4682B4BA889BA15C35B90FC1BCE8B,
+	NetworkTransformState_get_HasScaleX_m4D9FE027AD3DF34AA1B8E3DC4305ACA2CA13366B,
+	NetworkTransformState_set_HasScaleX_mC44EB0B2C829B3A8D361A9273364E35A5EF18CDA,
+	NetworkTransformState_get_HasScaleY_m03DA2AB93E3B0CAAFE500E5D030DB4801B9412EE,
+	NetworkTransformState_set_HasScaleY_m892DFCB1EDC16BB21B1C0A327E6B0FF2421AA6E9,
+	NetworkTransformState_get_HasScaleZ_mF11F81778CA6BA17C658AF6D4F80AC0D900B4BF8,
+	NetworkTransformState_set_HasScaleZ_m71C40ED9D74943E7683551DAC21CCCD1DA308BA2,
+	NetworkTransformState_get_HasScaleChange_mA88B6E1808144F2F532444F21D17290F7B415FE6,
+	NetworkTransformState_get_IsTeleportingNextFrame_m64398AF0338290AB00D33081AE87CE54BE26E66A,
+	NetworkTransformState_set_IsTeleportingNextFrame_mFAAB3CCDDDB5E160D106D29871D66B83A26B3C91,
+	NetworkTransformState_ClearBitSetForNextTick_m8E346AF99F2D62389E67F349C2DE1BCADB890E30,
+	NULL,
+};
+extern void NetworkTransformState_get_InLocalSpace_m3AF9D9AB34415384F9109EBE77E89B8DA4D40511_AdjustorThunk (void);
+extern void NetworkTransformState_set_InLocalSpace_mF973D00C4A5E3CC203B6D22BC173F424B736A7D9_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasPositionX_m9C6FE08916A16EBAF8EBDE6CD6569393D5DC0445_AdjustorThunk (void);
+extern void NetworkTransformState_set_HasPositionX_m240F2C27547F74F422A288FE3BA992F93283694C_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasPositionY_m0C744222BC3DBF0B31409710295E92F29086416C_AdjustorThunk (void);
+extern void NetworkTransformState_set_HasPositionY_m586C5B62153D0E8BB91508AC3654FAF9CE3E55C5_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasPositionZ_mA34324A2D4EAE14B069BFF5A10573C99902D8E1C_AdjustorThunk (void);
+extern void NetworkTransformState_set_HasPositionZ_m563CB6103A575B4D0D9C50349F073C18210A1E66_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasPositionChange_mADF6E97EAEDF0FD79BFF97F48C68C7E7FEA22BF1_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasRotAngleX_m2532ABF7120513A264C60DE4C2FDAB82A057DC20_AdjustorThunk (void);
+extern void NetworkTransformState_set_HasRotAngleX_m16B08D2F6DD4098C8505C6D3AB4773A139E02D64_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasRotAngleY_m16AF1BE8B3E18074851A361406D631A096A3AFFB_AdjustorThunk (void);
+extern void NetworkTransformState_set_HasRotAngleY_m1575AE73DAD31FE7FFEDB990E3B8C40FC8FB529C_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasRotAngleZ_m138176B2D6517F29D0923548C0051B72E1E0B1AD_AdjustorThunk (void);
+extern void NetworkTransformState_set_HasRotAngleZ_m6E99C6BB328984E99B4AB2D0B656C5EF96A9FB22_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasRotAngleChange_mF0E36C87F4B4682B4BA889BA15C35B90FC1BCE8B_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasScaleX_m4D9FE027AD3DF34AA1B8E3DC4305ACA2CA13366B_AdjustorThunk (void);
+extern void NetworkTransformState_set_HasScaleX_mC44EB0B2C829B3A8D361A9273364E35A5EF18CDA_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasScaleY_m03DA2AB93E3B0CAAFE500E5D030DB4801B9412EE_AdjustorThunk (void);
+extern void NetworkTransformState_set_HasScaleY_m892DFCB1EDC16BB21B1C0A327E6B0FF2421AA6E9_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasScaleZ_mF11F81778CA6BA17C658AF6D4F80AC0D900B4BF8_AdjustorThunk (void);
+extern void NetworkTransformState_set_HasScaleZ_m71C40ED9D74943E7683551DAC21CCCD1DA308BA2_AdjustorThunk (void);
+extern void NetworkTransformState_get_HasScaleChange_mA88B6E1808144F2F532444F21D17290F7B415FE6_AdjustorThunk (void);
+extern void NetworkTransformState_get_IsTeleportingNextFrame_m64398AF0338290AB00D33081AE87CE54BE26E66A_AdjustorThunk (void);
+extern void NetworkTransformState_set_IsTeleportingNextFrame_mFAAB3CCDDDB5E160D106D29871D66B83A26B3C91_AdjustorThunk (void);
+extern void NetworkTransformState_ClearBitSetForNextTick_m8E346AF99F2D62389E67F349C2DE1BCADB890E30_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[26] = 
+{
+	{ 0x06000080, NetworkTransformState_get_InLocalSpace_m3AF9D9AB34415384F9109EBE77E89B8DA4D40511_AdjustorThunk },
+	{ 0x06000081, NetworkTransformState_set_InLocalSpace_mF973D00C4A5E3CC203B6D22BC173F424B736A7D9_AdjustorThunk },
+	{ 0x06000082, NetworkTransformState_get_HasPositionX_m9C6FE08916A16EBAF8EBDE6CD6569393D5DC0445_AdjustorThunk },
+	{ 0x06000083, NetworkTransformState_set_HasPositionX_m240F2C27547F74F422A288FE3BA992F93283694C_AdjustorThunk },
+	{ 0x06000084, NetworkTransformState_get_HasPositionY_m0C744222BC3DBF0B31409710295E92F29086416C_AdjustorThunk },
+	{ 0x06000085, NetworkTransformState_set_HasPositionY_m586C5B62153D0E8BB91508AC3654FAF9CE3E55C5_AdjustorThunk },
+	{ 0x06000086, NetworkTransformState_get_HasPositionZ_mA34324A2D4EAE14B069BFF5A10573C99902D8E1C_AdjustorThunk },
+	{ 0x06000087, NetworkTransformState_set_HasPositionZ_m563CB6103A575B4D0D9C50349F073C18210A1E66_AdjustorThunk },
+	{ 0x06000088, NetworkTransformState_get_HasPositionChange_mADF6E97EAEDF0FD79BFF97F48C68C7E7FEA22BF1_AdjustorThunk },
+	{ 0x06000089, NetworkTransformState_get_HasRotAngleX_m2532ABF7120513A264C60DE4C2FDAB82A057DC20_AdjustorThunk },
+	{ 0x0600008A, NetworkTransformState_set_HasRotAngleX_m16B08D2F6DD4098C8505C6D3AB4773A139E02D64_AdjustorThunk },
+	{ 0x0600008B, NetworkTransformState_get_HasRotAngleY_m16AF1BE8B3E18074851A361406D631A096A3AFFB_AdjustorThunk },
+	{ 0x0600008C, NetworkTransformState_set_HasRotAngleY_m1575AE73DAD31FE7FFEDB990E3B8C40FC8FB529C_AdjustorThunk },
+	{ 0x0600008D, NetworkTransformState_get_HasRotAngleZ_m138176B2D6517F29D0923548C0051B72E1E0B1AD_AdjustorThunk },
+	{ 0x0600008E, NetworkTransformState_set_HasRotAngleZ_m6E99C6BB328984E99B4AB2D0B656C5EF96A9FB22_AdjustorThunk },
+	{ 0x0600008F, NetworkTransformState_get_HasRotAngleChange_mF0E36C87F4B4682B4BA889BA15C35B90FC1BCE8B_AdjustorThunk },
+	{ 0x06000090, NetworkTransformState_get_HasScaleX_m4D9FE027AD3DF34AA1B8E3DC4305ACA2CA13366B_AdjustorThunk },
+	{ 0x06000091, NetworkTransformState_set_HasScaleX_mC44EB0B2C829B3A8D361A9273364E35A5EF18CDA_AdjustorThunk },
+	{ 0x06000092, NetworkTransformState_get_HasScaleY_m03DA2AB93E3B0CAAFE500E5D030DB4801B9412EE_AdjustorThunk },
+	{ 0x06000093, NetworkTransformState_set_HasScaleY_m892DFCB1EDC16BB21B1C0A327E6B0FF2421AA6E9_AdjustorThunk },
+	{ 0x06000094, NetworkTransformState_get_HasScaleZ_mF11F81778CA6BA17C658AF6D4F80AC0D900B4BF8_AdjustorThunk },
+	{ 0x06000095, NetworkTransformState_set_HasScaleZ_m71C40ED9D74943E7683551DAC21CCCD1DA308BA2_AdjustorThunk },
+	{ 0x06000096, NetworkTransformState_get_HasScaleChange_mA88B6E1808144F2F532444F21D17290F7B415FE6_AdjustorThunk },
+	{ 0x06000097, NetworkTransformState_get_IsTeleportingNextFrame_m64398AF0338290AB00D33081AE87CE54BE26E66A_AdjustorThunk },
+	{ 0x06000098, NetworkTransformState_set_IsTeleportingNextFrame_mFAAB3CCDDDB5E160D106D29871D66B83A26B3C91_AdjustorThunk },
+	{ 0x06000099, NetworkTransformState_ClearBitSetForNextTick_m8E346AF99F2D62389E67F349C2DE1BCADB890E30_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[154] = 
+{
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	806,
+	806,
+	3107,
+	801,
+	801,
+	3107,
+	3107,
+	2503,
+	2603,
+	1551,
+	1555,
+	2635,
+	1553,
+	3107,
+	2556,
+	3051,
+	2556,
+	3002,
+	3002,
+	3107,
+	3107,
+	3107,
+	3107,
+	2603,
+	2603,
+	3107,
+	1240,
+	-1,
+	3002,
+	632,
+	1251,
+	2527,
+	2635,
+	2633,
+	1556,
+	1555,
+	1552,
+	1551,
+	1554,
+	1553,
+	2556,
+	1339,
+	2556,
+	2534,
+	3107,
+	5066,
+	4175,
+	4175,
+	4175,
+	4175,
+	4175,
+	4175,
+	3051,
+	-1,
+	-1,
+	-1,
+	5066,
+	3107,
+	3107,
+	3107,
+	3107,
+	3107,
+	3107,
+	3107,
+	3051,
+	3002,
+	3107,
+	3107,
+	3107,
+	3107,
+	3107,
+	3107,
+	3051,
+	3002,
+	3002,
+	3002,
+	3002,
+	2503,
+	3051,
+	3138,
+	1479,
+	1479,
+	3107,
+	2694,
+	634,
+	634,
+	3107,
+	2644,
+	1559,
+	2590,
+	3107,
+	3107,
+	3107,
+	3107,
+	3107,
+	3107,
+	3107,
+	507,
+	621,
+	293,
+	621,
+	2556,
+	3107,
+	938,
+	3002,
+	3002,
+	3107,
+	5066,
+	4175,
+	4175,
+	3051,
+	1483,
+	629,
+	228,
+	1663,
+	3002,
+	2503,
+	3002,
+	2503,
+	3002,
+	2503,
+	3002,
+	2503,
+	3002,
+	3002,
+	2503,
+	3002,
+	2503,
+	3002,
+	2503,
+	3002,
+	3002,
+	2503,
+	3002,
+	2503,
+	3002,
+	2503,
+	3002,
+	3002,
+	2503,
+	3107,
+	-1,
+};
+static const Il2CppTokenRangePair s_rgctxIndices[6] = 
+{
+	{ 0x02000002, { 0, 18 } },
+	{ 0x06000028, { 18, 1 } },
+	{ 0x06000042, { 19, 2 } },
+	{ 0x06000043, { 21, 1 } },
+	{ 0x06000044, { 22, 2 } },
+	{ 0x0600009A, { 24, 4 } },
+};
+static const Il2CppRGCTXDefinition s_rgctxValues[28] = 
+{
+	{ (Il2CppRGCTXDataType)3, 10775 },
+	{ (Il2CppRGCTXDataType)3, 10773 },
+	{ (Il2CppRGCTXDataType)3, 1491 },
+	{ (Il2CppRGCTXDataType)3, 10776 },
+	{ (Il2CppRGCTXDataType)3, 14989 },
+	{ (Il2CppRGCTXDataType)3, 14990 },
+	{ (Il2CppRGCTXDataType)3, 14988 },
+	{ (Il2CppRGCTXDataType)3, 10774 },
+	{ (Il2CppRGCTXDataType)3, 1490 },
+	{ (Il2CppRGCTXDataType)3, 1492 },
+	{ (Il2CppRGCTXDataType)3, 1488 },
+	{ (Il2CppRGCTXDataType)3, 1487 },
+	{ (Il2CppRGCTXDataType)2, 1121 },
+	{ (Il2CppRGCTXDataType)3, 1484 },
+	{ (Il2CppRGCTXDataType)3, 1489 },
+	{ (Il2CppRGCTXDataType)3, 10772 },
+	{ (Il2CppRGCTXDataType)2, 2736 },
+	{ (Il2CppRGCTXDataType)3, 10771 },
+	{ (Il2CppRGCTXDataType)3, 23886 },
+	{ (Il2CppRGCTXDataType)3, 1290 },
+	{ (Il2CppRGCTXDataType)3, 1291 },
+	{ (Il2CppRGCTXDataType)3, 1294 },
+	{ (Il2CppRGCTXDataType)3, 1293 },
+	{ (Il2CppRGCTXDataType)3, 1292 },
+	{ (Il2CppRGCTXDataType)3, 1295 },
+	{ (Il2CppRGCTXDataType)3, 1297 },
+	{ (Il2CppRGCTXDataType)3, 1296 },
+	{ (Il2CppRGCTXDataType)3, 1298 },
+};
+extern const CustomAttributesCacheGenerator g_Unity_Netcode_Components_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_Netcode_Components_CodeGenModule;
+const Il2CppCodeGenModule g_Unity_Netcode_Components_CodeGenModule = 
+{
+	"Unity.Netcode.Components.dll",
+	154,
+	s_methodPointers,
+	26,
+	s_adjustorThunks,
+	s_InvokerIndices,
+	0,
+	NULL,
+	6,
+	s_rgctxIndices,
+	28,
+	s_rgctxValues,
+	NULL,
+	g_Unity_Netcode_Components_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};
