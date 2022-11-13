@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Fusion;
 
-public class FishControl : MonoBehaviour
+public class FishControl : NetworkBehaviour
 {
 
     public string AnimationName;
@@ -164,9 +165,10 @@ public class FishControl : MonoBehaviour
                     {
                         UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
                     }
-
-                    FishManage.Instance._FishMange.Remove(transform);
+                    Runner.Despawn(this.Object);
+                    //FishManage.Instance._FishMange.Remove(transform);
                     Destroy(this.gameObject, 0.8f);
+                    
                 }
             }
         }

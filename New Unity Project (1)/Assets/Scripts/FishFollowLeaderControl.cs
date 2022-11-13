@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Fusion;
 
-public class FishFollowLeaderControl : MonoBehaviour
+public class FishFollowLeaderControl : NetworkBehaviour
 {
 
     List<Transform> _fish;
@@ -14,9 +15,10 @@ public class FishFollowLeaderControl : MonoBehaviour
     public int minCount;
     public int maxCount;
     public bool DestroyWithSpawner;
+    public static FishFollowLeaderControl instance;
     public void Start()
     {
-        
+        instance = this;
     }
     public void FollowStart()
     {
@@ -25,7 +27,9 @@ public class FishFollowLeaderControl : MonoBehaviour
         countFish = Random.Range(minCount, maxCount);
         for (int i = 0; i < countFish; i++)
         {
-            Transform _tr = Instantiate(_FishPre).transform;
+            //Transform _tr = Instantiate(_FishPre).transform;
+            Transform _tr = Runner.Spawn(_FishPre).transform;
+
             _tr.position = Vector3.zero;
             _tr.position = transform.position - transform.right * Distan * i;
             _tr.right = transform.right;

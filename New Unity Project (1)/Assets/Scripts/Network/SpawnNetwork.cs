@@ -10,6 +10,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
 {
     private NetworkRunner _runner;
     public float pos;
+    public GameObject Fishspawn;
     async void StartGame(GameMode mode)
     {
         _runner = gameObject.AddComponent<NetworkRunner>();
@@ -21,7 +22,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             SessionName = "TestRoom",
             Scene = SceneManager.GetActiveScene().buildIndex,
             SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>()
-
+            
         }) ;}
     
 
@@ -30,37 +31,34 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     {
         if (_runner == null) 
         {
-            if (GUI.Button(new Rect(0, 0, 200, 40), "HOST"))
+            if (GUI.Button(new Rect(0, 0, 200, 40), "JOIN"))
             {
-                StartGame(GameMode.Host);
+                StartGame(GameMode.AutoHostOrClient);            
             } 
-            if (GUI.Button(new Rect(0, 40, 200, 40), "Join"))
-            {
-                StartGame(GameMode.Client);
-            }
+            
         }
     }
     
     public void StartClient()
     {
-        gunMode.instance.SelectSpawn(1);
+        gunMode.instance.Rpc_SpawnRPC(1);
         gunMode.instance.canPlay = true;
     }
     public void StartClient2()
     {
-        gunMode.instance.SelectSpawn(2);
+        gunMode.instance.Rpc_SpawnRPC(2);
         gunMode.instance.canPlay = true;
 
     }
     public void StartClient3()
     {
-        gunMode.instance.SelectSpawn(3);
+        gunMode.instance.Rpc_SpawnRPC(3);
         gunMode.instance.canPlay = true;
 
     }
     public void StartClient4()
     {
-        gunMode.instance.SelectSpawn(4);
+        gunMode.instance.Rpc_SpawnRPC(4);
         gunMode.instance.canPlay = true;
 
     }
@@ -76,6 +74,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             Vector3 spawnPos = new Vector3(0, 0, 0);
             NetworkObject networkObject = runner.Spawn(_playerPrefab, spawnPos, Quaternion.identity, player);
             _spawnedCharacter.Add(player, networkObject);
+            runner.Spawn(Fishspawn);
         }
     }
     public void OnInput(NetworkRunner runner,NetworkInput input)
