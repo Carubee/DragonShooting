@@ -34,6 +34,7 @@ ScriptsOnlyBuild:
     - OpenOptioon
     - PlayerAOIPrototype
     - SciFiBeamStatic
+    - SciFiLightFlicker
     - SpawnNetwork
     - Swim
     - UI.Dialogs.uDialog
@@ -163,7 +164,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1988}
     - Class: 114
-      Script: {instanceID: 1990}
+      Script: {instanceID: 1992}
     - Class: 114
       Script: {instanceID: 1994}
     - Class: 114
@@ -349,7 +350,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10228}
     - Class: 114
-      Script: {instanceID: 25656}
+      Script: {instanceID: 25554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -2417,7 +2418,7 @@ ScriptsOnlyBuild:
     className: UIPlayAnimation
   - hash:
       serializedVersion: 2
-      Hash: b3fe5a405400606f3ff69a482333956e
+      Hash: 8fadf92f7a60e169310a43bab02778ab
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManagerUI

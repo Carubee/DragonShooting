@@ -75,7 +75,7 @@ public class gunMode : NetworkBehaviour
     public  void Update()
     {
         if (Runner.IsServer) return;
-        //if (!canPlay) return;
+        if (!canPlay) return;
 
         if (Input.GetKeyDown("space"))
         {
@@ -144,17 +144,13 @@ public class gunMode : NetworkBehaviour
         if (Input.GetKeyDown("1"))
         {
             //Debug.Log("Buy");
-            gunControl.cost = 1;
-            gunControl.damage = 1;
-            gunModel = 1;
+            
             Rpc_ChangeGunCilent(1);
         }
         if (Input.GetKeyDown("2"))
         {
             //Debug.Log("Buy1");
-            gunControl.cost = 2;
-            gunControl.damage = 2;
-            gunModel = 2;
+           
             Rpc_ChangeGunCilent(2);
 
         }
@@ -207,7 +203,7 @@ public class gunMode : NetworkBehaviour
     }
 
         [Rpc(RpcSources.StateAuthority,RpcTargets.All)]
-    private void Rpc_ChangeGunServer(int gunValue)
+    public void Rpc_ChangeGunServer(int gunValue)
     {
 
         if (gunValue == 1)
@@ -219,6 +215,9 @@ public class gunMode : NetworkBehaviour
             balistaGun.SetActive(false);
             laserGun.SetActive(false);
 
+            gunControl.cost = 1;
+            gunControl.damage = 1;
+            gunModel = 1;
         }
         if (gunValue == 2)
         {
@@ -229,6 +228,10 @@ public class gunMode : NetworkBehaviour
             balistaGun.SetActive(false);
             laserGun.SetActive(false);
 
+            gunControl.cost = 2;
+            gunControl.damage = 2;
+            gunModel = 2;
+
         }
         if (gunValue == 3)
         {
@@ -238,6 +241,10 @@ public class gunMode : NetworkBehaviour
             gatingGun.SetActive(false);
             balistaGun.SetActive(false);
             laserGun.SetActive(false);
+
+            gunControl.cost = 5;
+            gunControl.damage = 2;
+            gunModel = 3;
         }
         if (gunValue == 4)
         {
@@ -247,6 +254,10 @@ public class gunMode : NetworkBehaviour
             gatingGun.SetActive(true);
             balistaGun.SetActive(false);
             laserGun.SetActive(false);
+
+            gunControl.cost = 3;
+            gunControl.damage = 3;
+            gunModel = 4;
         }
         if (gunValue == 5)
         {
@@ -256,6 +267,10 @@ public class gunMode : NetworkBehaviour
             gatingGun.SetActive(false);
             balistaGun.SetActive(true);
             laserGun.SetActive(false);
+
+            gunControl.cost = 15;
+            gunControl.damage = 10;
+            gunModel = 5;
         }
         if (gunValue == 6)
         {
@@ -265,6 +280,10 @@ public class gunMode : NetworkBehaviour
             gatingGun.SetActive(false);
             balistaGun.SetActive(false);
             laserGun.SetActive(true);
+
+            gunControl.cost = 75;
+            gunControl.damage = 10;
+            gunModel = 6;
         }
         //bulletTypeValue.Value = gunValue;
 
@@ -448,12 +467,8 @@ public class gunMode : NetworkBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
     }
-    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
-    public void Rpc_SpawnRPC(int seatNum)
-    {
-        Rpc_Spawn(seatNum);
-    }
-        [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+   
+        [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     public void Rpc_Spawn(int seatNum)
     {
         if (seatNum == 1)
@@ -466,11 +481,11 @@ public class gunMode : NetworkBehaviour
         }
         if (seatNum == 3)
         {
-            this.gameObject.transform.position = new Vector3(3.222f, 3.286f, -4.55f);
+            transform.position = new Vector3(3.222f, 3.286f, -4.55f);
         }
         if (seatNum == 4)
         {
-            this.gameObject.transform.position = new Vector3(-3.168f, 3.25f, -4.55f);
+            transform.position = new Vector3(-3.168f, 3.25f, -4.55f);
         }
     }
     public void DoubleDamage(float TimeDouble2)

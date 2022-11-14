@@ -11,6 +11,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     private NetworkRunner _runner;
     public float pos;
     public GameObject Fishspawn;
+    [Networked] bool FirstSpawn { get; set; }
     async void StartGame(GameMode mode)
     {
         _runner = gameObject.AddComponent<NetworkRunner>();
@@ -31,9 +32,15 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     {
         if (_runner == null) 
         {
-            if (GUI.Button(new Rect(0, 0, 200, 40), "JOIN"))
+            if (GUI.Button(new Rect(0, 0, 200, 40), "HOST"))
             {
-                StartGame(GameMode.AutoHostOrClient);            
+                StartGame(GameMode.Host);
+
+            } 
+            if (GUI.Button(new Rect(0, 40, 200, 40), "JOIN"))
+            {
+                StartGame(GameMode.Client);            
+
             } 
             
         }
@@ -41,41 +48,50 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     
     public void StartClient()
     {
-        gunMode.instance.Rpc_SpawnRPC(1);
         gunMode.instance.canPlay = true;
     }
     public void StartClient2()
     {
-        gunMode.instance.Rpc_SpawnRPC(2);
         gunMode.instance.canPlay = true;
 
     }
     public void StartClient3()
     {
-        gunMode.instance.Rpc_SpawnRPC(3);
         gunMode.instance.canPlay = true;
 
     }
     public void StartClient4()
     {
-        gunMode.instance.Rpc_SpawnRPC(4);
         gunMode.instance.canPlay = true;
 
     }
     public  void OnConnectedToServer(NetworkRunner runner)
     {
+       
+
+        
     }
     [SerializeField] private NetworkPrefabRef _playerPrefab;
     private Dictionary<PlayerRef, NetworkObject> _spawnedCharacter = new Dictionary<PlayerRef, NetworkObject>();
     public void OnPlayerJoined(NetworkRunner runner,PlayerRef player)
     {
+        
         if (runner.IsServer)
         {
-            Vector3 spawnPos = new Vector3(0, 0, 0);
+            Vector3 spawnPos = new Vector3(0, 90, 0);
             NetworkObject networkObject = runner.Spawn(_playerPrefab, spawnPos, Quaternion.identity, player);
             _spawnedCharacter.Add(player, networkObject);
-            runner.Spawn(Fishspawn);
+            gunMode.instance.Rpc_ChangeGunServer(1);
+            if (!FirstSpawn)
+            {
+                _runner.Spawn(Fishspawn);
+                FirstSpawn = true;
+            }
+
         }
+
+
+
     }
     public void OnInput(NetworkRunner runner,NetworkInput input)
     {
@@ -130,6 +146,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
 
     public void OnHostMigration(NetworkRunner runner, HostMigrationToken hostMigrationToken)
     {
+
     }
 
     public void OnReliableDataReceived(NetworkRunner runner, PlayerRef player, ArraySegment<byte> data)

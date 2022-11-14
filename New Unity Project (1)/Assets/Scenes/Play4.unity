@@ -4592,7 +4592,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3014
+  startingRenderQueue: 3013
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -5231,6 +5231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 511228476}
   - component: {fileID: 511228477}
+  - component: {fileID: 511228478}
   m_Layer: 5
   m_Name: NetworkManagerUI
   m_TagString: Untagged
@@ -5272,7 +5273,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c326f27d5451a446a5406aef55dc709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
   playerGun: {fileID: 564599842314950120, guid: 3205ba0403a6fa142a51718e77f7bfc9, type: 3}
+--- !u!114 &511228478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511228475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 2561
+  NetworkGuid:
+    RawGuidValue: 248b6ce5b51443e4b708652064ed2a57
+  NestedObjects: []
+  NetworkedBehaviours:
+  - {fileID: 511228477}
+  SimulationBehaviours: []
 --- !u!1 &523136891
 GameObject:
   m_ObjectHideFlags: 0
@@ -10959,8 +10985,8 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
   onClick:
-  - mTarget: {fileID: 0}
-    mMethodName: StartClient4
+  - mTarget: {fileID: 511228477}
+    mMethodName: StartClient3
     mParameters: []
     oneShot: 0
 --- !u!65 &960691857
@@ -13378,7 +13404,7 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
   onClick:
-  - mTarget: {fileID: 0}
+  - mTarget: {fileID: 511228477}
     mMethodName: StartClient2
     mParameters: []
     oneShot: 0
@@ -17777,8 +17803,8 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
   onClick:
-  - mTarget: {fileID: 0}
-    mMethodName: StartClient3
+  - mTarget: {fileID: 511228477}
+    mMethodName: StartClient4
     mParameters: []
     oneShot: 0
 --- !u!65 &1631604710
