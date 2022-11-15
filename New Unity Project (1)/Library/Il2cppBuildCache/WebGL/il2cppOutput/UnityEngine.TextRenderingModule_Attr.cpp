@@ -66,6 +66,8 @@ struct UnityEngineModuleAssembly_t33CB058FDDDC458E384578147D6027BB1EC86CFF;
 struct UsedByNativeCodeAttribute_t604CF4E57FB3E7BCCCF0871A9B526472B2CDCB92;
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
+// UnityEngine.WritableAttribute
+struct WritableAttribute_t00CD7A683EA83064B3741A90A772DD0DE1AF5103;
 
 IL2CPP_EXTERN_C const RuntimeType* MeshRenderer_tCD983A2F635E12BCB0BAA2E635D96A318757908B_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1_0_0_0_var;
@@ -677,6 +679,15 @@ public:
 };
 
 
+// UnityEngine.WritableAttribute
+struct WritableAttribute_t00CD7A683EA83064B3741A90A772DD0DE1AF5103  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
+{
+public:
+
+public:
+};
+
+
 // System.Reflection.BindingFlags
 struct BindingFlags_tAAAB07D9AC588F0D55D844E51D7035E96DF94733 
 {
@@ -986,6 +997,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompilerGeneratedAttribute__ctor_m9DC3E4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5 (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * __this, int32_t ___state0, const RuntimeMethod* method);
 // System.Void UnityEngine.Scripting.RequiredByNativeCodeAttribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequiredByNativeCodeAttribute__ctor_m97C095D1EE6AAB2894AE7E8B2F07D9B47CB8F8B5 (RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.WritableAttribute::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WritableAttribute__ctor_mB0E659E767991A5D8CE20F30E4E7015EAC9BB94E (WritableAttribute_t00CD7A683EA83064B3741A90A772DD0DE1AF5103 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Bindings.FreeFunctionAttribute::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FreeFunctionAttribute__ctor_mE37D1E356F51A379B44C570574608DC3E49E0DB0 (FreeFunctionAttribute_tBB3B939D760190FEC84762F1BA94B99672613D03 * __this, String_t* ___name0, const RuntimeMethod* method);
 // System.Void UnityEngine.Bindings.NativeMethodAttribute::set_HasExplicitThis(System.Boolean)
@@ -996,7 +1009,7 @@ static void UnityEngine_TextRenderingModule_CustomAttributesCacheGenerator(Custo
 {
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[0];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x2E\x49\x6E\x74\x65\x72\x6E\x61\x6C\x41\x50\x49\x45\x6E\x67\x69\x6E\x65\x42\x72\x69\x64\x67\x65\x2E\x30\x31\x30"), NULL);
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x2E\x49\x6E\x74\x65\x72\x6E\x61\x6C\x41\x50\x49\x45\x6E\x67\x69\x6E\x65\x42\x72\x69\x64\x67\x65\x2E\x30\x30\x39"), NULL);
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[1];
@@ -1357,7 +1370,7 @@ static void UnityEngine_TextRenderingModule_CustomAttributesCacheGenerator(Custo
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[90];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x50\x68\x79\x73\x69\x63\x73\x32\x44\x4D\x6F\x64\x75\x6C\x65"), NULL);
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x2E\x49\x6E\x74\x65\x72\x6E\x61\x6C\x41\x50\x49\x45\x6E\x67\x69\x6E\x65\x42\x72\x69\x64\x67\x65\x2E\x30\x31\x30"), NULL);
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[91];
@@ -1429,7 +1442,7 @@ static void UnityEngine_TextRenderingModule_CustomAttributesCacheGenerator(Custo
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[108];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x2E\x49\x6E\x74\x65\x72\x6E\x61\x6C\x41\x50\x49\x45\x6E\x67\x69\x6E\x65\x42\x72\x69\x64\x67\x65\x2E\x30\x30\x39"), NULL);
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x50\x68\x79\x73\x69\x63\x73\x32\x44\x4D\x6F\x64\x75\x6C\x65"), NULL);
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[109];
@@ -1732,12 +1745,12 @@ static void Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCache
 		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x54\x65\x78\x74\x52\x65\x6E\x64\x65\x72\x69\x6E\x67\x2F\x50\x75\x62\x6C\x69\x63\x2F\x46\x6F\x6E\x74\x49\x6D\x70\x6C\x2E\x68"), NULL);
 	}
 	{
-		NativeClassAttribute_tBE8213A7A54307A9A771B70B38CB946BED926B0D * tmp = (NativeClassAttribute_tBE8213A7A54307A9A771B70B38CB946BED926B0D *)cache->attributes[2];
-		NativeClassAttribute__ctor_m09D17E5BEBF83C346A205802AD37B936E85B4390(tmp, il2cpp_codegen_string_new_wrapper("\x54\x65\x78\x74\x52\x65\x6E\x64\x65\x72\x69\x6E\x67\x3A\x3A\x46\x6F\x6E\x74"), NULL);
+		StaticAccessorAttribute_t7A16FF0FA31E38510BBC8BCA5AE56C3E67D5A2BA * tmp = (StaticAccessorAttribute_t7A16FF0FA31E38510BBC8BCA5AE56C3E67D5A2BA *)cache->attributes[2];
+		StaticAccessorAttribute__ctor_m0C3215256AEFAEFDDCBCD2BA9AA579CDBB230706(tmp, il2cpp_codegen_string_new_wrapper("\x54\x65\x78\x74\x52\x65\x6E\x64\x65\x72\x69\x6E\x67\x50\x72\x69\x76\x61\x74\x65"), 2LL, NULL);
 	}
 	{
-		StaticAccessorAttribute_t7A16FF0FA31E38510BBC8BCA5AE56C3E67D5A2BA * tmp = (StaticAccessorAttribute_t7A16FF0FA31E38510BBC8BCA5AE56C3E67D5A2BA *)cache->attributes[3];
-		StaticAccessorAttribute__ctor_m0C3215256AEFAEFDDCBCD2BA9AA579CDBB230706(tmp, il2cpp_codegen_string_new_wrapper("\x54\x65\x78\x74\x52\x65\x6E\x64\x65\x72\x69\x6E\x67\x50\x72\x69\x76\x61\x74\x65"), 2LL, NULL);
+		NativeClassAttribute_tBE8213A7A54307A9A771B70B38CB946BED926B0D * tmp = (NativeClassAttribute_tBE8213A7A54307A9A771B70B38CB946BED926B0D *)cache->attributes[3];
+		NativeClassAttribute__ctor_m09D17E5BEBF83C346A205802AD37B936E85B4390(tmp, il2cpp_codegen_string_new_wrapper("\x54\x65\x78\x74\x52\x65\x6E\x64\x65\x72\x69\x6E\x67\x3A\x3A\x46\x6F\x6E\x74"), NULL);
 	}
 }
 static void Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_textureRebuilt(CustomAttributesCache* cache)
@@ -1754,12 +1767,12 @@ static void Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCache
 static void Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_m_FontTextureRebuildCallback(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 	{
-		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
-		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_add_textureRebuilt_m5AA790DF583AFD9EC3F569D23DC6A6694F95F887(CustomAttributesCache* cache)
@@ -1781,6 +1794,13 @@ static void Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCache
 	{
 		RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 * tmp = (RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 *)cache->attributes[0];
 		RequiredByNativeCodeAttribute__ctor_m97C095D1EE6AAB2894AE7E8B2F07D9B47CB8F8B5(tmp, NULL);
+	}
+}
+static void Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_Internal_CreateFont_mDD91EFD7C7CD8C5F437DF939FAAE9C8BBFB241BE____self0(CustomAttributesCache* cache)
+{
+	{
+		WritableAttribute_t00CD7A683EA83064B3741A90A772DD0DE1AF5103 * tmp = (WritableAttribute_t00CD7A683EA83064B3741A90A772DD0DE1AF5103 *)cache->attributes[0];
+		WritableAttribute__ctor_mB0E659E767991A5D8CE20F30E4E7015EAC9BB94E(tmp, NULL);
 	}
 }
 static void Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_GetCharacterInfo_m24ED802426FFDB6BA12ED7A5D46AE32B95FB3160(CustomAttributesCache* cache)
@@ -1820,7 +1840,7 @@ static void Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCache
 	}
 }
 IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_UnityEngine_TextRenderingModule_AttributeGenerators[];
-const CustomAttributesCacheGenerator g_UnityEngine_TextRenderingModule_AttributeGenerators[28] = 
+const CustomAttributesCacheGenerator g_UnityEngine_TextRenderingModule_AttributeGenerators[29] = 
 {
 	TextGenerationError_t09DA0156E184EBDC8621B676A0927983194A08E4_CustomAttributesCacheGenerator,
 	TextGenerator_t893F256D3587633108E00E5731CDC5A77AFF1B70_CustomAttributesCacheGenerator,
@@ -1845,6 +1865,7 @@ const CustomAttributesCacheGenerator g_UnityEngine_TextRenderingModule_Attribute
 	Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_remove_textureRebuilt_m8E903D18B6DD7A43BDABC5DE852BF10A8B2F1FC2,
 	Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_InvokeTextureRebuilt_Internal_mBA27EC1526245BFAB6C6F77DB125D19F5700FA2D,
 	Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_GetCharacterInfo_m24ED802426FFDB6BA12ED7A5D46AE32B95FB3160,
+	Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_Internal_CreateFont_mDD91EFD7C7CD8C5F437DF939FAAE9C8BBFB241BE____self0,
 	Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_GetCharacterInfo_m24ED802426FFDB6BA12ED7A5D46AE32B95FB3160____size2,
 	Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_GetCharacterInfo_m24ED802426FFDB6BA12ED7A5D46AE32B95FB3160____style3,
 	Font_tB53D3F362CB1A0B92307B362826F212AE2D2A6A9_CustomAttributesCacheGenerator_Font_RequestCharactersInTexture_mC997BCA7C84F89D53D4D8DF3BEC898E7B23BD2D7____size1,

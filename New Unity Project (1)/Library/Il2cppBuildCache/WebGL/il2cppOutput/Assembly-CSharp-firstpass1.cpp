@@ -963,8 +963,8 @@ public:
 	RuntimeObject * ___U3CU3E2__current_1;
 	// LeanTester LeanTester/<timeoutCheck>d__2::<>4__this
 	LeanTester_tD42BFA66605F78E6EF467D897D39ED4CDE4668D4 * ___U3CU3E4__this_2;
-	// System.Single LeanTester/<timeoutCheck>d__2::<pauseEndTime>5__1
-	float ___U3CpauseEndTimeU3E5__1_3;
+	// System.Single LeanTester/<timeoutCheck>d__2::<pauseEndTime>5__2
+	float ___U3CpauseEndTimeU3E5__2_3;
 
 public:
 	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CtimeoutCheckU3Ed__2_t50BE7F796B937AEAD94DD2B0EDBC61B33C9B5514, ___U3CU3E1__state_0)); }
@@ -993,12 +993,12 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CpauseEndTimeU3E5__1_3() { return static_cast<int32_t>(offsetof(U3CtimeoutCheckU3Ed__2_t50BE7F796B937AEAD94DD2B0EDBC61B33C9B5514, ___U3CpauseEndTimeU3E5__1_3)); }
-	inline float get_U3CpauseEndTimeU3E5__1_3() const { return ___U3CpauseEndTimeU3E5__1_3; }
-	inline float* get_address_of_U3CpauseEndTimeU3E5__1_3() { return &___U3CpauseEndTimeU3E5__1_3; }
-	inline void set_U3CpauseEndTimeU3E5__1_3(float value)
+	inline static int32_t get_offset_of_U3CpauseEndTimeU3E5__2_3() { return static_cast<int32_t>(offsetof(U3CtimeoutCheckU3Ed__2_t50BE7F796B937AEAD94DD2B0EDBC61B33C9B5514, ___U3CpauseEndTimeU3E5__2_3)); }
+	inline float get_U3CpauseEndTimeU3E5__2_3() const { return ___U3CpauseEndTimeU3E5__2_3; }
+	inline float* get_address_of_U3CpauseEndTimeU3E5__2_3() { return &___U3CpauseEndTimeU3E5__2_3; }
+	inline void set_U3CpauseEndTimeU3E5__2_3(float value)
 	{
-		___U3CpauseEndTimeU3E5__1_3 = value;
+		___U3CpauseEndTimeU3E5__2_3 = value;
 	}
 };
 
@@ -2766,14 +2766,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StoreService_Initialize_m60AABA44B65C955
 // System.Collections.Generic.List`1<UnityEngine.UI.Dropdown/OptionData> UnityEngine.UI.Dropdown::get_options()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tAF6577A540702C9F6C407DE69A8FAFB502339DC4 * Dropdown_get_options_mF427A2157CDD901C12F1B160C4D1F8207D7111D0 (Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.UI.Dropdown::get_value()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26 (Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * __this, const RuntimeMethod* method);
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26_inline (Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1<UnityEngine.UI.Dropdown/OptionData>::get_Item(System.Int32)
 inline OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_inline (List_1_tAF6577A540702C9F6C407DE69A8FAFB502339DC4 * __this, int32_t ___index0, const RuntimeMethod* method)
 {
 	return ((  OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * (*) (List_1_tAF6577A540702C9F6C407DE69A8FAFB502339DC4 *, int32_t, const RuntimeMethod*))List_1_get_Item_mF00B574E58FB078BB753B05A3B86DD0A7A266B63_gshared_inline)(__this, ___index0, method);
 }
 // System.String UnityEngine.UI.Dropdown/OptionData::get_text()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OptionData_get_text_m8652FE3866405C4C7C3782659009EF2C7E54D232 (OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * __this, const RuntimeMethod* method);
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* OptionData_get_text_m8652FE3866405C4C7C3782659009EF2C7E54D232_inline (OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * __this, const RuntimeMethod* method);
 // System.String System.String::Concat(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m10758B01687A2181C8727AD9FD9CCF5325C61C2A (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method);
 // System.Void UnityEngine.UDP.StoreService::Purchase(System.String,System.String,System.String,UnityEngine.UDP.IPurchaseListener)
@@ -2983,76 +2983,69 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0_U3CInitUIU3Eb_
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
-	bool V_1 = false;
 	{
 		// if (!_initialized)
 		bool L_0 = ((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->get__initialized_11();
-		V_1 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		bool L_1 = V_1;
-		if (!L_1)
+		if (L_0)
 		{
-			goto IL_001f;
+			goto IL_0013;
 		}
 	}
 	{
 		// Show("Please Initialize first");
 		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(_stringLiteral53D2D86526148B6E6C60E2769759D206312DC639, (bool)0, /*hidden argument*/NULL);
 		// return;
-		goto IL_00bf;
+		return;
 	}
 
-IL_001f:
+IL_0013:
 	{
 		// string prodcutId = _dropdown.options[_dropdown.value].text;
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_2 = __this->get_U3CU3E4__this_0();
-		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_3 = L_2->get__dropdown_8();
-		List_1_tAF6577A540702C9F6C407DE69A8FAFB502339DC4 * L_4;
-		L_4 = Dropdown_get_options_mF427A2157CDD901C12F1B160C4D1F8207D7111D0(L_3, /*hidden argument*/NULL);
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_5 = __this->get_U3CU3E4__this_0();
-		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_6 = L_5->get__dropdown_8();
-		int32_t L_7;
-		L_7 = Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26(L_6, /*hidden argument*/NULL);
-		OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * L_8;
-		L_8 = List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_inline(L_4, L_7, /*hidden argument*/List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_RuntimeMethod_var);
-		String_t* L_9;
-		L_9 = OptionData_get_text_m8652FE3866405C4C7C3782659009EF2C7E54D232(L_8, /*hidden argument*/NULL);
-		V_0 = L_9;
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_1 = __this->get_U3CU3E4__this_0();
+		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_2 = L_1->get__dropdown_8();
+		List_1_tAF6577A540702C9F6C407DE69A8FAFB502339DC4 * L_3;
+		L_3 = Dropdown_get_options_mF427A2157CDD901C12F1B160C4D1F8207D7111D0(L_2, /*hidden argument*/NULL);
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_4 = __this->get_U3CU3E4__this_0();
+		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_5 = L_4->get__dropdown_8();
+		int32_t L_6;
+		L_6 = Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26_inline(L_5, /*hidden argument*/NULL);
+		OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * L_7;
+		L_7 = List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_inline(L_3, L_6, /*hidden argument*/List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_RuntimeMethod_var);
+		String_t* L_8;
+		L_8 = OptionData_get_text_m8652FE3866405C4C7C3782659009EF2C7E54D232_inline(L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
 		// Debug.Log("Buy button is clicked.");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(_stringLiteral337E24A93702082CA80CEF021BFC34DEFE8B5634, /*hidden argument*/NULL);
 		// Show("Buying Product: " + prodcutId);
-		String_t* L_10 = V_0;
-		String_t* L_11;
-		L_11 = String_Concat_m10758B01687A2181C8727AD9FD9CCF5325C61C2A(_stringLiteral38F4515DDA186E78FD0D8D6B6DA0EC7A245ECD44, L_10, /*hidden argument*/NULL);
-		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_11, (bool)0, /*hidden argument*/NULL);
+		String_t* L_9 = V_0;
+		String_t* L_10;
+		L_10 = String_Concat_m10758B01687A2181C8727AD9FD9CCF5325C61C2A(_stringLiteral38F4515DDA186E78FD0D8D6B6DA0EC7A245ECD44, L_9, /*hidden argument*/NULL);
+		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_10, (bool)0, /*hidden argument*/NULL);
 		// m_consumeOnPurchase = false;
 		((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->set_m_consumeOnPurchase_6((bool)0);
 		// Debug.Log(_dropdown.options[_dropdown.value].text + " will be bought");
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_12 = __this->get_U3CU3E4__this_0();
-		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_13 = L_12->get__dropdown_8();
-		List_1_tAF6577A540702C9F6C407DE69A8FAFB502339DC4 * L_14;
-		L_14 = Dropdown_get_options_mF427A2157CDD901C12F1B160C4D1F8207D7111D0(L_13, /*hidden argument*/NULL);
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_15 = __this->get_U3CU3E4__this_0();
-		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_16 = L_15->get__dropdown_8();
-		int32_t L_17;
-		L_17 = Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26(L_16, /*hidden argument*/NULL);
-		OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * L_18;
-		L_18 = List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_inline(L_14, L_17, /*hidden argument*/List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_RuntimeMethod_var);
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_11 = __this->get_U3CU3E4__this_0();
+		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_12 = L_11->get__dropdown_8();
+		List_1_tAF6577A540702C9F6C407DE69A8FAFB502339DC4 * L_13;
+		L_13 = Dropdown_get_options_mF427A2157CDD901C12F1B160C4D1F8207D7111D0(L_12, /*hidden argument*/NULL);
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_14 = __this->get_U3CU3E4__this_0();
+		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_15 = L_14->get__dropdown_8();
+		int32_t L_16;
+		L_16 = Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26_inline(L_15, /*hidden argument*/NULL);
+		OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * L_17;
+		L_17 = List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_inline(L_13, L_16, /*hidden argument*/List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_RuntimeMethod_var);
+		String_t* L_18;
+		L_18 = OptionData_get_text_m8652FE3866405C4C7C3782659009EF2C7E54D232_inline(L_17, /*hidden argument*/NULL);
 		String_t* L_19;
-		L_19 = OptionData_get_text_m8652FE3866405C4C7C3782659009EF2C7E54D232(L_18, /*hidden argument*/NULL);
-		String_t* L_20;
-		L_20 = String_Concat_m10758B01687A2181C8727AD9FD9CCF5325C61C2A(L_19, _stringLiteral594B85CB961E17F7430C4D75614DC7D9C38A239E, /*hidden argument*/NULL);
-		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(L_20, /*hidden argument*/NULL);
+		L_19 = String_Concat_m10758B01687A2181C8727AD9FD9CCF5325C61C2A(L_18, _stringLiteral594B85CB961E17F7430C4D75614DC7D9C38A239E, /*hidden argument*/NULL);
+		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(L_19, /*hidden argument*/NULL);
 		// StoreService.Purchase(prodcutId, null, "{\"AnyKeyYouWant:\" : \"AnyValueYouWant\"}", purchaseListener);
-		String_t* L_21 = V_0;
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_22 = __this->get_U3CU3E4__this_0();
-		PurchaseListener_t0CA324D74590C4CEBA80237E70EADB287EB2000B * L_23 = L_22->get_purchaseListener_12();
+		String_t* L_20 = V_0;
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_21 = __this->get_U3CU3E4__this_0();
+		PurchaseListener_t0CA324D74590C4CEBA80237E70EADB287EB2000B * L_22 = L_21->get_purchaseListener_12();
 		IL2CPP_RUNTIME_CLASS_INIT(StoreService_t8D0ED3FEFA033A9CF929B43E2CDA7AE838A2E453_il2cpp_TypeInfo_var);
-		StoreService_Purchase_m96FD316381D2FC43EEF6B66C67096FFE6061DBF9(L_21, (String_t*)NULL, _stringLiteralADC1463F0951585C93B22720EBD05967309DA5EA, L_23, /*hidden argument*/NULL);
-	}
-
-IL_00bf:
-	{
+		StoreService_Purchase_m96FD316381D2FC43EEF6B66C67096FFE6061DBF9(L_20, (String_t*)NULL, _stringLiteralADC1463F0951585C93B22720EBD05967309DA5EA, L_22, /*hidden argument*/NULL);
 		// });
 		return;
 	}
@@ -3074,60 +3067,53 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0_U3CInitUIU3Eb_
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
-	bool V_1 = false;
 	{
 		// if (!_initialized)
 		bool L_0 = ((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->get__initialized_11();
-		V_1 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		bool L_1 = V_1;
-		if (!L_1)
+		if (L_0)
 		{
-			goto IL_001c;
+			goto IL_0013;
 		}
 	}
 	{
 		// Show("Please Initialize first");
 		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(_stringLiteral53D2D86526148B6E6C60E2769759D206312DC639, (bool)0, /*hidden argument*/NULL);
 		// return;
-		goto IL_0082;
+		return;
 	}
 
-IL_001c:
+IL_0013:
 	{
 		// string prodcutId = _dropdown.options[_dropdown.value].text;
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_2 = __this->get_U3CU3E4__this_0();
-		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_3 = L_2->get__dropdown_8();
-		List_1_tAF6577A540702C9F6C407DE69A8FAFB502339DC4 * L_4;
-		L_4 = Dropdown_get_options_mF427A2157CDD901C12F1B160C4D1F8207D7111D0(L_3, /*hidden argument*/NULL);
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_5 = __this->get_U3CU3E4__this_0();
-		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_6 = L_5->get__dropdown_8();
-		int32_t L_7;
-		L_7 = Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26(L_6, /*hidden argument*/NULL);
-		OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * L_8;
-		L_8 = List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_inline(L_4, L_7, /*hidden argument*/List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_RuntimeMethod_var);
-		String_t* L_9;
-		L_9 = OptionData_get_text_m8652FE3866405C4C7C3782659009EF2C7E54D232(L_8, /*hidden argument*/NULL);
-		V_0 = L_9;
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_1 = __this->get_U3CU3E4__this_0();
+		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_2 = L_1->get__dropdown_8();
+		List_1_tAF6577A540702C9F6C407DE69A8FAFB502339DC4 * L_3;
+		L_3 = Dropdown_get_options_mF427A2157CDD901C12F1B160C4D1F8207D7111D0(L_2, /*hidden argument*/NULL);
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_4 = __this->get_U3CU3E4__this_0();
+		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_5 = L_4->get__dropdown_8();
+		int32_t L_6;
+		L_6 = Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26_inline(L_5, /*hidden argument*/NULL);
+		OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * L_7;
+		L_7 = List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_inline(L_3, L_6, /*hidden argument*/List_1_get_Item_mF979E11037D572E72D866EC260EF0434EF296E67_RuntimeMethod_var);
+		String_t* L_8;
+		L_8 = OptionData_get_text_m8652FE3866405C4C7C3782659009EF2C7E54D232_inline(L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
 		// Show("Buying Product: " + prodcutId);
-		String_t* L_10 = V_0;
-		String_t* L_11;
-		L_11 = String_Concat_m10758B01687A2181C8727AD9FD9CCF5325C61C2A(_stringLiteral38F4515DDA186E78FD0D8D6B6DA0EC7A245ECD44, L_10, /*hidden argument*/NULL);
-		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_11, (bool)0, /*hidden argument*/NULL);
+		String_t* L_9 = V_0;
+		String_t* L_10;
+		L_10 = String_Concat_m10758B01687A2181C8727AD9FD9CCF5325C61C2A(_stringLiteral38F4515DDA186E78FD0D8D6B6DA0EC7A245ECD44, L_9, /*hidden argument*/NULL);
+		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_10, (bool)0, /*hidden argument*/NULL);
 		// Debug.Log("Buy&Consume button is clicked.");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(_stringLiteral804198904F8C1674D80BBD3A697271E8DF3AA846, /*hidden argument*/NULL);
 		// m_consumeOnPurchase = true;
 		((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->set_m_consumeOnPurchase_6((bool)1);
 		// StoreService.Purchase(prodcutId, null, "buy and consume developer payload", purchaseListener);
-		String_t* L_12 = V_0;
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_13 = __this->get_U3CU3E4__this_0();
-		PurchaseListener_t0CA324D74590C4CEBA80237E70EADB287EB2000B * L_14 = L_13->get_purchaseListener_12();
+		String_t* L_11 = V_0;
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_12 = __this->get_U3CU3E4__this_0();
+		PurchaseListener_t0CA324D74590C4CEBA80237E70EADB287EB2000B * L_13 = L_12->get_purchaseListener_12();
 		IL2CPP_RUNTIME_CLASS_INIT(StoreService_t8D0ED3FEFA033A9CF929B43E2CDA7AE838A2E453_il2cpp_TypeInfo_var);
-		StoreService_Purchase_m96FD316381D2FC43EEF6B66C67096FFE6061DBF9(L_12, (String_t*)NULL, _stringLiteral1BCC09A6BE154F240C8C94BF9F145AD9A74CADF4, L_14, /*hidden argument*/NULL);
-	}
-
-IL_0082:
-	{
+		StoreService_Purchase_m96FD316381D2FC43EEF6B66C67096FFE6061DBF9(L_11, (String_t*)NULL, _stringLiteral1BCC09A6BE154F240C8C94BF9F145AD9A74CADF4, L_13, /*hidden argument*/NULL);
 		// });
 		return;
 	}
@@ -3146,25 +3132,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0_U3CInitUIU3Eb_
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5BD8EC3D4C41CF57AE57F8EAF6D34AE2CDC161BC);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
 		// if (!_initialized)
 		bool L_0 = ((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->get__initialized_11();
-		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		bool L_1 = V_0;
-		if (!L_1)
+		if (L_0)
 		{
-			goto IL_001c;
+			goto IL_0013;
 		}
 	}
 	{
 		// Show("Please Initialize first");
 		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(_stringLiteral53D2D86526148B6E6C60E2769759D206312DC639, (bool)0, /*hidden argument*/NULL);
 		// return;
-		goto IL_0050;
+		return;
 	}
 
-IL_001c:
+IL_0013:
 	{
 		// _consumeOnQuery = false;
 		((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->set__consumeOnQuery_7((bool)0);
@@ -3174,15 +3157,11 @@ IL_001c:
 		// Show("Querying Inventory");
 		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(_stringLiteral5BD8EC3D4C41CF57AE57F8EAF6D34AE2CDC161BC, (bool)0, /*hidden argument*/NULL);
 		// StoreService.QueryInventory(productIds, purchaseListener);
-		List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 * L_2 = __this->get_productIds_1();
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_3 = __this->get_U3CU3E4__this_0();
-		PurchaseListener_t0CA324D74590C4CEBA80237E70EADB287EB2000B * L_4 = L_3->get_purchaseListener_12();
+		List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 * L_1 = __this->get_productIds_1();
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_2 = __this->get_U3CU3E4__this_0();
+		PurchaseListener_t0CA324D74590C4CEBA80237E70EADB287EB2000B * L_3 = L_2->get_purchaseListener_12();
 		IL2CPP_RUNTIME_CLASS_INIT(StoreService_t8D0ED3FEFA033A9CF929B43E2CDA7AE838A2E453_il2cpp_TypeInfo_var);
-		StoreService_QueryInventory_m9192A5A3496309A1447C563E4D340E5A2DF83491(L_2, L_4, /*hidden argument*/NULL);
-	}
-
-IL_0050:
-	{
+		StoreService_QueryInventory_m9192A5A3496309A1447C563E4D340E5A2DF83491(L_1, L_3, /*hidden argument*/NULL);
 		// });
 		return;
 	}
@@ -3201,25 +3180,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0_U3CInitUIU3Eb_
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5BD8EC3D4C41CF57AE57F8EAF6D34AE2CDC161BC);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
 		// if (!_initialized)
 		bool L_0 = ((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->get__initialized_11();
-		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		bool L_1 = V_0;
-		if (!L_1)
+		if (L_0)
 		{
-			goto IL_001c;
+			goto IL_0013;
 		}
 	}
 	{
 		// Show("Please Initialize first");
 		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(_stringLiteral53D2D86526148B6E6C60E2769759D206312DC639, (bool)0, /*hidden argument*/NULL);
 		// return;
-		goto IL_0050;
+		return;
 	}
 
-IL_001c:
+IL_0013:
 	{
 		// _consumeOnQuery = true;
 		((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->set__consumeOnQuery_7((bool)1);
@@ -3229,15 +3205,11 @@ IL_001c:
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(_stringLiteral029A11ACF56A0B68D7A32276BBC5B616BE4F9D59, /*hidden argument*/NULL);
 		// StoreService.QueryInventory(productIds, purchaseListener);
-		List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 * L_2 = __this->get_productIds_1();
-		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_3 = __this->get_U3CU3E4__this_0();
-		PurchaseListener_t0CA324D74590C4CEBA80237E70EADB287EB2000B * L_4 = L_3->get_purchaseListener_12();
+		List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 * L_1 = __this->get_productIds_1();
+		GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97 * L_2 = __this->get_U3CU3E4__this_0();
+		PurchaseListener_t0CA324D74590C4CEBA80237E70EADB287EB2000B * L_3 = L_2->get_purchaseListener_12();
 		IL2CPP_RUNTIME_CLASS_INIT(StoreService_t8D0ED3FEFA033A9CF929B43E2CDA7AE838A2E453_il2cpp_TypeInfo_var);
-		StoreService_QueryInventory_m9192A5A3496309A1447C563E4D340E5A2DF83491(L_2, L_4, /*hidden argument*/NULL);
-	}
-
-IL_0050:
-	{
+		StoreService_QueryInventory_m9192A5A3496309A1447C563E4D340E5A2DF83491(L_1, L_3, /*hidden argument*/NULL);
 		// });
 		return;
 	}
@@ -3331,8 +3303,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseListener_OnPurchase_mCD9DC73878C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral761601AA45498A7010C274E36AE11129F62D56C4);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
-	bool V_1 = false;
 	{
 		// string message = string.Format(
 		//     "[Game] Purchase Succeeded, productId: {0}, cpOrderId: {1}, developerPayload: {2}, storeJson: {3}",
@@ -3365,21 +3335,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseListener_OnPurchase_mCD9DC73878C
 		(L_10)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_12);
 		String_t* L_13;
 		L_13 = String_Format_m2CDD2A21AF2BCE3CE07D634645F9A61B4CB7D9B3(_stringLiteral37A7F50F0B638EEBDE8D70E1A9B52D991143386E, L_10, /*hidden argument*/NULL);
-		V_0 = L_13;
 		// Debug.Log(message);
-		String_t* L_14 = V_0;
+		String_t* L_14 = L_13;
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(L_14, /*hidden argument*/NULL);
 		// Show(message);
-		String_t* L_15 = V_0;
-		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_15, (bool)0, /*hidden argument*/NULL);
+		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_14, (bool)0, /*hidden argument*/NULL);
 		// if (m_consumeOnPurchase)
-		bool L_16 = ((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->get_m_consumeOnPurchase_6();
-		V_1 = L_16;
-		bool L_17 = V_1;
-		if (!L_17)
+		bool L_15 = ((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->get_m_consumeOnPurchase_6();
+		if (!L_15)
 		{
-			goto IL_0063;
+			goto IL_0058;
 		}
 	}
 	{
@@ -3387,12 +3353,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseListener_OnPurchase_mCD9DC73878C
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(_stringLiteral761601AA45498A7010C274E36AE11129F62D56C4, /*hidden argument*/NULL);
 		// StoreService.ConsumePurchase(purchaseInfo, this);
-		PurchaseInfo_tFC415BB1B7B823401B491DB1BEB08638D73670AB * L_18 = ___purchaseInfo0;
+		PurchaseInfo_tFC415BB1B7B823401B491DB1BEB08638D73670AB * L_16 = ___purchaseInfo0;
 		IL2CPP_RUNTIME_CLASS_INIT(StoreService_t8D0ED3FEFA033A9CF929B43E2CDA7AE838A2E453_il2cpp_TypeInfo_var);
-		StoreService_ConsumePurchase_mEF46BECA7A96726977B24848422276C949BC32AB(L_18, __this, /*hidden argument*/NULL);
+		StoreService_ConsumePurchase_mEF46BECA7A96726977B24848422276C949BC32AB(L_16, __this, /*hidden argument*/NULL);
 	}
 
-IL_0063:
+IL_0058:
 	{
 		// }
 		return;
@@ -3481,10 +3447,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseListener_OnMultiPurchaseConsume_
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	String_t* V_1 = NULL;
-	int32_t V_2 = 0;
-	bool V_3 = false;
-	bool V_4 = false;
+	int32_t V_1 = 0;
 	{
 		// int len = successful.Count;
 		List_1_tD4D2BACE5281B6C85799892C1F12F5F2F81A2DF3 * L_0 = ___successful0;
@@ -3492,88 +3455,81 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseListener_OnMultiPurchaseConsume_
 		L_1 = List_1_get_Count_m8547E31DBBBA85E2090BA3076611614A4C8F1A18_inline(L_0, /*hidden argument*/List_1_get_Count_m8547E31DBBBA85E2090BA3076611614A4C8F1A18_RuntimeMethod_var);
 		V_0 = L_1;
 		// for (int i = 0; i < len; i++)
-		V_2 = 0;
-		goto IL_0076;
+		V_1 = 0;
+		goto IL_0065;
 	}
 
-IL_000c:
+IL_000b:
 	{
 		// if (successful[i])
 		List_1_tD4D2BACE5281B6C85799892C1F12F5F2F81A2DF3 * L_2 = ___successful0;
-		int32_t L_3 = V_2;
+		int32_t L_3 = V_1;
 		bool L_4;
 		L_4 = List_1_get_Item_m6608CAE85049DBB39679FB41D1266AF732C97461_inline(L_2, L_3, /*hidden argument*/List_1_get_Item_m6608CAE85049DBB39679FB41D1266AF732C97461_RuntimeMethod_var);
-		V_3 = L_4;
-		bool L_5 = V_3;
-		if (!L_5)
+		if (!L_4)
 		{
-			goto IL_0042;
+			goto IL_0038;
 		}
 	}
 	{
 		// message = string.Format("Consuming succeeded for {0}\n", purchaseInfos[i].ProductId);
-		List_1_tFCDCEEF26E1DA0748B07652864550C5414586CD4 * L_6 = ___purchaseInfos1;
-		int32_t L_7 = V_2;
-		PurchaseInfo_tFC415BB1B7B823401B491DB1BEB08638D73670AB * L_8;
-		L_8 = List_1_get_Item_m72E8F73F28BD7C51D0DEF1CCDC2BE544BB7A9681_inline(L_6, L_7, /*hidden argument*/List_1_get_Item_m72E8F73F28BD7C51D0DEF1CCDC2BE544BB7A9681_RuntimeMethod_var);
+		List_1_tFCDCEEF26E1DA0748B07652864550C5414586CD4 * L_5 = ___purchaseInfos1;
+		int32_t L_6 = V_1;
+		PurchaseInfo_tFC415BB1B7B823401B491DB1BEB08638D73670AB * L_7;
+		L_7 = List_1_get_Item_m72E8F73F28BD7C51D0DEF1CCDC2BE544BB7A9681_inline(L_5, L_6, /*hidden argument*/List_1_get_Item_m72E8F73F28BD7C51D0DEF1CCDC2BE544BB7A9681_RuntimeMethod_var);
+		String_t* L_8;
+		L_8 = PurchaseInfo_get_ProductId_m792BD5225AF49A893523BD43F87F4CBEAF58CED2_inline(L_7, /*hidden argument*/NULL);
 		String_t* L_9;
-		L_9 = PurchaseInfo_get_ProductId_m792BD5225AF49A893523BD43F87F4CBEAF58CED2_inline(L_8, /*hidden argument*/NULL);
-		String_t* L_10;
-		L_10 = String_Format_m5A16F3ABC59A3E9804E0CB2636849CCD74CEC994(_stringLiteralACDD223A83CCB65F90E7012FF5FC49DCE64C8513, L_9, /*hidden argument*/NULL);
-		V_1 = L_10;
+		L_9 = String_Format_m5A16F3ABC59A3E9804E0CB2636849CCD74CEC994(_stringLiteralACDD223A83CCB65F90E7012FF5FC49DCE64C8513, L_8, /*hidden argument*/NULL);
 		// Show(message, true);
-		String_t* L_11 = V_1;
-		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_11, (bool)1, /*hidden argument*/NULL);
+		String_t* L_10 = L_9;
+		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_10, (bool)1, /*hidden argument*/NULL);
 		// Debug.Log(message);
-		String_t* L_12 = V_1;
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(L_12, /*hidden argument*/NULL);
-		goto IL_0071;
+		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(L_10, /*hidden argument*/NULL);
+		// }
+		goto IL_0061;
 	}
 
-IL_0042:
+IL_0038:
 	{
 		// message = string.Format("Consuming failed for {0}, reason: {1}", purchaseInfos[i].ProductId,
 		//     messages[i]);
-		List_1_tFCDCEEF26E1DA0748B07652864550C5414586CD4 * L_13 = ___purchaseInfos1;
-		int32_t L_14 = V_2;
-		PurchaseInfo_tFC415BB1B7B823401B491DB1BEB08638D73670AB * L_15;
-		L_15 = List_1_get_Item_m72E8F73F28BD7C51D0DEF1CCDC2BE544BB7A9681_inline(L_13, L_14, /*hidden argument*/List_1_get_Item_m72E8F73F28BD7C51D0DEF1CCDC2BE544BB7A9681_RuntimeMethod_var);
-		String_t* L_16;
-		L_16 = PurchaseInfo_get_ProductId_m792BD5225AF49A893523BD43F87F4CBEAF58CED2_inline(L_15, /*hidden argument*/NULL);
-		List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 * L_17 = ___messages2;
-		int32_t L_18 = V_2;
-		String_t* L_19;
-		L_19 = List_1_get_Item_m8578F26F0FE72EDB6A0290D78944B3D4F34DBFAC_inline(L_17, L_18, /*hidden argument*/List_1_get_Item_m8578F26F0FE72EDB6A0290D78944B3D4F34DBFAC_RuntimeMethod_var);
-		String_t* L_20;
-		L_20 = String_Format_m8464C6DD7299114954DA87FC39FCD129F3E2ACA2(_stringLiteral734F39F21A558E7EF51DCA413BB2B2FC29B22AF0, L_16, L_19, /*hidden argument*/NULL);
-		V_1 = L_20;
+		List_1_tFCDCEEF26E1DA0748B07652864550C5414586CD4 * L_11 = ___purchaseInfos1;
+		int32_t L_12 = V_1;
+		PurchaseInfo_tFC415BB1B7B823401B491DB1BEB08638D73670AB * L_13;
+		L_13 = List_1_get_Item_m72E8F73F28BD7C51D0DEF1CCDC2BE544BB7A9681_inline(L_11, L_12, /*hidden argument*/List_1_get_Item_m72E8F73F28BD7C51D0DEF1CCDC2BE544BB7A9681_RuntimeMethod_var);
+		String_t* L_14;
+		L_14 = PurchaseInfo_get_ProductId_m792BD5225AF49A893523BD43F87F4CBEAF58CED2_inline(L_13, /*hidden argument*/NULL);
+		List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 * L_15 = ___messages2;
+		int32_t L_16 = V_1;
+		String_t* L_17;
+		L_17 = List_1_get_Item_m8578F26F0FE72EDB6A0290D78944B3D4F34DBFAC_inline(L_15, L_16, /*hidden argument*/List_1_get_Item_m8578F26F0FE72EDB6A0290D78944B3D4F34DBFAC_RuntimeMethod_var);
+		String_t* L_18;
+		L_18 = String_Format_m8464C6DD7299114954DA87FC39FCD129F3E2ACA2(_stringLiteral734F39F21A558E7EF51DCA413BB2B2FC29B22AF0, L_14, L_17, /*hidden argument*/NULL);
 		// Show(message, true);
-		String_t* L_21 = V_1;
-		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_21, (bool)1, /*hidden argument*/NULL);
+		String_t* L_19 = L_18;
+		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_19, (bool)1, /*hidden argument*/NULL);
 		// Debug.Log(message);
-		String_t* L_22 = V_1;
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(L_22, /*hidden argument*/NULL);
+		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(L_19, /*hidden argument*/NULL);
 	}
 
-IL_0071:
+IL_0061:
 	{
 		// for (int i = 0; i < len; i++)
-		int32_t L_23 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_23, (int32_t)1));
+		int32_t L_20 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_20, (int32_t)1));
 	}
 
-IL_0076:
+IL_0065:
 	{
 		// for (int i = 0; i < len; i++)
-		int32_t L_24 = V_2;
-		int32_t L_25 = V_0;
-		V_4 = (bool)((((int32_t)L_24) < ((int32_t)L_25))? 1 : 0);
-		bool L_26 = V_4;
-		if (L_26)
+		int32_t L_21 = V_1;
+		int32_t L_22 = V_0;
+		if ((((int32_t)L_21) < ((int32_t)L_22)))
 		{
-			goto IL_000c;
+			goto IL_000b;
 		}
 	}
 	{
@@ -3647,7 +3603,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseListener_OnQueryInventory_m13A5E
 	RuntimeObject* V_3 = NULL;
 	KeyValuePair_2_t8E9947DA599543BC6F17EDD9E59082A61949C164  V_4;
 	memset((&V_4), 0, sizeof(V_4));
-	bool V_5 = false;
 	Exception_t * __last_unhandled_exception = 0;
 	il2cpp::utils::ExceptionSupportStack<int32_t, 2> __leave_targets;
 	{
@@ -3667,14 +3622,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseListener_OnQueryInventory_m13A5E
 		V_1 = L_2;
 	}
 
-IL_002a:
+IL_0026:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_00f4;
+			goto IL_00ed;
 		}
 
-IL_002f:
+IL_002b:
 		{
 			// foreach (KeyValuePair<string, ProductInfo> productInfo in inventory.GetProductDictionary())
 			RuntimeObject* L_3 = V_1;
@@ -3776,7 +3731,7 @@ IL_002f:
 			V_0 = L_39;
 		}
 
-IL_00f4:
+IL_00ed:
 		{
 			// foreach (KeyValuePair<string, ProductInfo> productInfo in inventory.GetProductDictionary())
 			RuntimeObject* L_40 = V_1;
@@ -3784,49 +3739,49 @@ IL_00f4:
 			L_41 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t5956F3AFB7ECF1117E3BC5890E7FC7B7F7A04105_il2cpp_TypeInfo_var, L_40);
 			if (L_41)
 			{
-				goto IL_002f;
+				goto IL_002b;
 			}
 		}
 
-IL_00ff:
+IL_00f8:
 		{
-			IL2CPP_LEAVE(0x10C, FINALLY_0101);
+			IL2CPP_LEAVE(0x104, FINALLY_00fa);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_0101;
+		goto FINALLY_00fa;
 	}
 
-FINALLY_0101:
+FINALLY_00fa:
 	{ // begin finally (depth: 1)
 		{
 			RuntimeObject* L_42 = V_1;
 			if (!L_42)
 			{
-				goto IL_010b;
+				goto IL_0103;
 			}
 		}
 
-IL_0104:
+IL_00fd:
 		{
 			RuntimeObject* L_43 = V_1;
 			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t099785737FC6A1E3699919A94109383715A8D807_il2cpp_TypeInfo_var, L_43);
 		}
 
-IL_010b:
+IL_0103:
 		{
-			IL2CPP_END_FINALLY(257)
+			IL2CPP_END_FINALLY(250)
 		}
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(257)
+	IL2CPP_CLEANUP(250)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x10C, IL_010c)
+		IL2CPP_JUMP_TBL(0x104, IL_0104)
 	}
 
-IL_010c:
+IL_0104:
 	{
 		// message += "\nPurchase List: \n";
 		String_t* L_44 = V_0;
@@ -3842,14 +3797,14 @@ IL_010c:
 		V_3 = L_48;
 	}
 
-IL_0125:
+IL_011c:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_0165;
+			goto IL_0159;
 		}
 
-IL_0127:
+IL_011e:
 		{
 			// foreach (KeyValuePair<string, PurchaseInfo> purchaseInfo in inventory.GetPurchaseDictionary())
 			RuntimeObject* L_49 = V_3;
@@ -3876,7 +3831,7 @@ IL_0127:
 			V_0 = L_57;
 		}
 
-IL_0165:
+IL_0159:
 		{
 			// foreach (KeyValuePair<string, PurchaseInfo> purchaseInfo in inventory.GetPurchaseDictionary())
 			RuntimeObject* L_58 = V_3;
@@ -3884,72 +3839,70 @@ IL_0165:
 			L_59 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t5956F3AFB7ECF1117E3BC5890E7FC7B7F7A04105_il2cpp_TypeInfo_var, L_58);
 			if (L_59)
 			{
-				goto IL_0127;
+				goto IL_011e;
 			}
 		}
 
-IL_016d:
+IL_0161:
 		{
-			IL2CPP_LEAVE(0x17A, FINALLY_016f);
+			IL2CPP_LEAVE(0x16D, FINALLY_0163);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_016f;
+		goto FINALLY_0163;
 	}
 
-FINALLY_016f:
+FINALLY_0163:
 	{ // begin finally (depth: 1)
 		{
 			RuntimeObject* L_60 = V_3;
 			if (!L_60)
 			{
-				goto IL_0179;
+				goto IL_016c;
 			}
 		}
 
-IL_0172:
+IL_0166:
 		{
 			RuntimeObject* L_61 = V_3;
 			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t099785737FC6A1E3699919A94109383715A8D807_il2cpp_TypeInfo_var, L_61);
 		}
 
-IL_0179:
+IL_016c:
 		{
-			IL2CPP_END_FINALLY(367)
+			IL2CPP_END_FINALLY(355)
 		}
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(367)
+	IL2CPP_CLEANUP(355)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x17A, IL_017a)
+		IL2CPP_JUMP_TBL(0x16D, IL_016d)
 	}
 
-IL_017a:
+IL_016d:
 	{
 		// Show(message);
 		String_t* L_62 = V_0;
 		GameManager_Show_m37122C808CBC2017C7EC3DB18C631382CE23DA27(L_62, (bool)0, /*hidden argument*/NULL);
 		// if (_consumeOnQuery)
 		bool L_63 = ((GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_t07542AB8B898E85A55AA5602B4232D897CF34F97_il2cpp_TypeInfo_var))->get__consumeOnQuery_7();
-		V_5 = L_63;
-		bool L_64 = V_5;
-		if (!L_64)
+		if (!L_63)
 		{
-			goto IL_019c;
+			goto IL_0187;
 		}
 	}
 	{
 		// StoreService.ConsumePurchase(inventory.GetPurchaseList(), this);
-		Inventory_tBB10A768DA4FDE00983BC4313DD3EE4AFABDF3E6 * L_65 = ___inventory0;
-		List_1_tFCDCEEF26E1DA0748B07652864550C5414586CD4 * L_66;
-		L_66 = Inventory_GetPurchaseList_mD7D365527C37F3B12B4E6390E99FF64B736D3CCF(L_65, /*hidden argument*/NULL);
+		Inventory_tBB10A768DA4FDE00983BC4313DD3EE4AFABDF3E6 * L_64 = ___inventory0;
+		List_1_tFCDCEEF26E1DA0748B07652864550C5414586CD4 * L_65;
+		L_65 = Inventory_GetPurchaseList_mD7D365527C37F3B12B4E6390E99FF64B736D3CCF(L_64, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(StoreService_t8D0ED3FEFA033A9CF929B43E2CDA7AE838A2E453_il2cpp_TypeInfo_var);
-		StoreService_ConsumePurchase_m87F4C1166A9FEABAA5293D7751F799B80A61DC04(L_66, __this, /*hidden argument*/NULL);
+		StoreService_ConsumePurchase_m87F4C1166A9FEABAA5293D7751F799B80A61DC04(L_65, __this, /*hidden argument*/NULL);
 	}
 
-IL_019c:
+IL_0187:
 	{
 		// }
 		return;
@@ -4036,111 +3989,88 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CtimeoutCheckU3Ed__2_MoveNext_mD023EFF
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	bool V_1 = false;
-	bool V_2 = false;
+	LeanTester_tD42BFA66605F78E6EF467D897D39ED4CDE4668D4 * V_1 = NULL;
 	{
 		int32_t L_0 = __this->get_U3CU3E1__state_0();
 		V_0 = L_0;
-		int32_t L_1 = V_0;
-		if (!L_1)
-		{
-			goto IL_0012;
-		}
-	}
-	{
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
+		LeanTester_tD42BFA66605F78E6EF467D897D39ED4CDE4668D4 * L_1 = __this->get_U3CU3E4__this_2();
+		V_1 = L_1;
 		int32_t L_2 = V_0;
-		if ((((int32_t)L_2) == ((int32_t)1)))
+		if (!L_2)
 		{
-			goto IL_0014;
+			goto IL_0017;
 		}
 	}
 	{
-		goto IL_0016;
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0047;
+		}
 	}
-
-IL_0012:
-	{
-		goto IL_0018;
-	}
-
-IL_0014:
-	{
-		goto IL_004f;
-	}
-
-IL_0016:
 	{
 		return (bool)0;
 	}
 
-IL_0018:
+IL_0017:
 	{
 		__this->set_U3CU3E1__state_0((-1));
 		// float pauseEndTime = Time.realtimeSinceStartup + timeout;
-		float L_3;
-		L_3 = Time_get_realtimeSinceStartup_mA52B7B2C92FF893E5EAB8264B017E7464792BB36(/*hidden argument*/NULL);
-		LeanTester_tD42BFA66605F78E6EF467D897D39ED4CDE4668D4 * L_4 = __this->get_U3CU3E4__this_2();
-		float L_5 = L_4->get_timeout_4();
-		__this->set_U3CpauseEndTimeU3E5__1_3(((float)il2cpp_codegen_add((float)L_3, (float)L_5)));
-		goto IL_0057;
+		float L_4;
+		L_4 = Time_get_realtimeSinceStartup_mA52B7B2C92FF893E5EAB8264B017E7464792BB36(/*hidden argument*/NULL);
+		LeanTester_tD42BFA66605F78E6EF467D897D39ED4CDE4668D4 * L_5 = V_1;
+		float L_6 = L_5->get_timeout_4();
+		__this->set_U3CpauseEndTimeU3E5__2_3(((float)il2cpp_codegen_add((float)L_4, (float)L_6)));
+		goto IL_004e;
 	}
 
-IL_0039:
+IL_0032:
 	{
 		// yield return 0;
-		int32_t L_6 = 0;
-		RuntimeObject * L_7 = Box(Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var, &L_6);
-		__this->set_U3CU3E2__current_1(L_7);
+		int32_t L_7 = 0;
+		RuntimeObject * L_8 = Box(Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var, &L_7);
+		__this->set_U3CU3E2__current_1(L_8);
 		__this->set_U3CU3E1__state_0(1);
 		return (bool)1;
 	}
 
-IL_004f:
+IL_0047:
 	{
 		__this->set_U3CU3E1__state_0((-1));
 	}
 
-IL_0057:
+IL_004e:
 	{
 		// while (Time.realtimeSinceStartup < pauseEndTime)
-		float L_8;
-		L_8 = Time_get_realtimeSinceStartup_mA52B7B2C92FF893E5EAB8264B017E7464792BB36(/*hidden argument*/NULL);
-		float L_9 = __this->get_U3CpauseEndTimeU3E5__1_3();
-		V_1 = (bool)((((float)L_8) < ((float)L_9))? 1 : 0);
-		bool L_10 = V_1;
-		if (L_10)
+		float L_9;
+		L_9 = Time_get_realtimeSinceStartup_mA52B7B2C92FF893E5EAB8264B017E7464792BB36(/*hidden argument*/NULL);
+		float L_10 = __this->get_U3CpauseEndTimeU3E5__2_3();
+		if ((((float)L_9) < ((float)L_10)))
 		{
-			goto IL_0039;
+			goto IL_0032;
 		}
 	}
 	{
 		// if(LeanTest.testsFinished==false){
 		IL2CPP_RUNTIME_CLASS_INIT(LeanTest_tCAA6F23B1027BDCD7DEF5144D2ACDC0840EDEE6E_il2cpp_TypeInfo_var);
 		bool L_11 = ((LeanTest_tCAA6F23B1027BDCD7DEF5144D2ACDC0840EDEE6E_StaticFields*)il2cpp_codegen_static_fields_for(LeanTest_tCAA6F23B1027BDCD7DEF5144D2ACDC0840EDEE6E_il2cpp_TypeInfo_var))->get_testsFinished_5();
-		V_2 = (bool)((((int32_t)L_11) == ((int32_t)0))? 1 : 0);
-		bool L_12 = V_2;
-		if (!L_12)
+		if (L_11)
 		{
-			goto IL_008c;
+			goto IL_0076;
 		}
 	}
 	{
 		// Debug.Log(LeanTest.formatB("Tests timed out!"));
 		IL2CPP_RUNTIME_CLASS_INIT(LeanTest_tCAA6F23B1027BDCD7DEF5144D2ACDC0840EDEE6E_il2cpp_TypeInfo_var);
-		String_t* L_13;
-		L_13 = LeanTest_formatB_mB4DDF508AC2C7CD424A568705F376425E8E8FF5E(_stringLiteralA894FF40AE84794C68A71D0E10D64E73E4C0E16B, /*hidden argument*/NULL);
+		String_t* L_12;
+		L_12 = LeanTest_formatB_mB4DDF508AC2C7CD424A568705F376425E8E8FF5E(_stringLiteralA894FF40AE84794C68A71D0E10D64E73E4C0E16B, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(L_13, /*hidden argument*/NULL);
+		Debug_Log_mF2A2ACB1738BA264EF07744AAF260BC5DDD2A11A(L_12, /*hidden argument*/NULL);
 		// LeanTest.overview();
 		LeanTest_overview_m9536AFA65E1C1E68D19B7DF25B36DC0754391959(/*hidden argument*/NULL);
 	}
 
-IL_008c:
+IL_0076:
 	{
 		// }
 		return (bool)0;
@@ -4174,6 +4104,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * U3CtimeoutCheckU3Ed__2_System
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26_inline (Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * __this, const RuntimeMethod* method)
+{
+	{
+		// return m_Value;
+		int32_t L_0 = __this->get_m_Value_25();
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* OptionData_get_text_m8652FE3866405C4C7C3782659009EF2C7E54D232_inline (OptionData_t5F665DC13C1E4307727D66ECC1100B3A77E3E857 * __this, const RuntimeMethod* method)
+{
+	{
+		// public string text  { get { return m_Text; }  set { m_Text = value;  } }
+		String_t* L_0 = __this->get_m_Text_0();
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* PurchaseInfo_get_ProductId_m792BD5225AF49A893523BD43F87F4CBEAF58CED2_inline (PurchaseInfo_tFC415BB1B7B823401B491DB1BEB08638D73670AB * __this, const RuntimeMethod* method)
 {
 	{

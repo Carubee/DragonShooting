@@ -57,6 +57,7 @@ public class BalistaHitbox : MonoBehaviour
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
                 Destroy(this.gameObject);
+
             }
             if (bomb == false)
             {
@@ -77,7 +78,8 @@ public class BalistaHitbox : MonoBehaviour
 
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
+                
             }
            
         }

@@ -13,9 +13,11 @@ public class FishFlockLeaderControl : MonoBehaviour
     public int maxCount;
 
     public bool DestroyWithSpawner;
+
+    public static FishFlockLeaderControl instance;
     public  void Start()
     {
-        
+        instance = this;
     }
     public void FlockStart()
     {
@@ -28,7 +30,7 @@ public class FishFlockLeaderControl : MonoBehaviour
             _tr.position = new Vector3(0, 0, 10);
             _fish.Add(_tr);
             _tr.position = new Vector2(transform.position.x, transform.position.y) + Random.insideUnitCircle * 0.8f;
-            // FishManage.Instance._FishMange.Add(_tr);
+             FishManage.Instance._FishMange.Add(_tr);
             
         }
     }

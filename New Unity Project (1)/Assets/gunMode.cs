@@ -60,7 +60,6 @@ public class gunMode : NetworkBehaviour
 
     public float TimeDouble = 10;
     public float AngleRotate;
-
     public Vector2 mousePos;
 
     [Networked] public bool enchance { get; set; }
@@ -70,11 +69,13 @@ public class gunMode : NetworkBehaviour
         instance = this;
         firerateAmount = 0.5f;
     }
+
+
     
 
     public  void Update()
     {
-        if (Runner.IsServer) return;
+        //if (Runner.IsServer) return;
         if (!canPlay) return;
 
         if (Input.GetKeyDown("space"))
@@ -85,9 +86,9 @@ public class gunMode : NetworkBehaviour
         {
             TimeDouble += Time.deltaTime;
         }
-
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Rpc_RotateCilent(mousePos);
+
 
         if (firerate <= 2)
             firerate += Time.deltaTime;
@@ -96,7 +97,7 @@ public class gunMode : NetworkBehaviour
             //LaserServerRpc(false);
         }
 
-        if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
+        if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
         {
 
             if (gunModel == 6)
@@ -108,10 +109,12 @@ public class gunMode : NetworkBehaviour
                 if (TimeDouble < 10)
                 {
                     //PlayerShootGunServerRpc(bulletTypeValue.Value, true);
+                    Rpc_Shoot(gunModel, enchance);
                 }
                 else
                 {
                     //PlayerShootGunServerRpc(bulletTypeValue.Value, false);
+                    Rpc_Shoot(gunModel, enchance);
                 }
                 if (item.instace.spare == false)
                 {
@@ -130,15 +133,13 @@ public class gunMode : NetworkBehaviour
             }
 
         }
-        if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false)
+        if ( Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false && gunModel == 4)
         {
-            firerate += Time.deltaTime;
             if (firerate >= 0.1)
             {
+                Rpc_Shoot(gunModel, enchance);
                 firerate = 0;
                 UiTextSpawmControl.Instance.MinusGold(1);
-
-                Rpc_Shoot(gunModel, enchance);
             }
         }
         if (Input.GetKeyDown("1"))
@@ -530,14 +531,8 @@ public class gunMode : NetworkBehaviour
     [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     public void Rpc_RotateCilent(Vector2 angle)
     {
-
-        Rpc_RotateServer(angle);
-
-    }
-    [Rpc(RpcSources.StateAuthority,RpcTargets.All)]
-    public void Rpc_RotateServer(Vector2 angle)
-    {
         transform.up = angle - new Vector2(transform.position.x, transform.position.y);
 
     }
+    
 }

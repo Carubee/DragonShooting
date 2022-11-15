@@ -2854,8 +2854,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_ResetTriggerString_m6FC21A6B773
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_IsParameterControlledByCurveID_m741E77411D309424E5A2A55D74C92D87CB618B9B (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, int32_t ___id0, const RuntimeMethod* method);
 // System.Void UnityEngine.Animator::GetAnimatorStateInfo(System.Int32,UnityEngine.StateInfoIndex,UnityEngine.AnimatorStateInfo&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_GetAnimatorStateInfo_m623172399D38470B4C5EB7DE06A3106AB6958657 (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, int32_t ___layerIndex0, int32_t ___stateInfoIndex1, AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * ___info2, const RuntimeMethod* method);
-// System.Void UnityEngine.Animator::GetAnimatorTransitionInfo(System.Int32,UnityEngine.AnimatorTransitionInfo&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_GetAnimatorTransitionInfo_mBB68CA61A21C4D60B1109815CC4353628B428472 (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, int32_t ___layerIndex0, AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * ___info1, const RuntimeMethod* method);
 // System.Void UnityEngine.Animator::Play(System.String,System.Int32,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m1438EDACA2804B50ED0D00D9986E30BCF903418B (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, String_t* ___stateName0, int32_t ___layer1, float ___normalizedTime2, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Animator::StringToHash(System.String)
@@ -2889,18 +2887,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AnimatorStateInfo_IsName_mF1263FB1F2AB14
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AnimatorStateInfo_get_fullPathHash_m296D315AB1FBF6177A423298296CECC1DBA7221D (AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * __this, const RuntimeMethod* method);
 // System.Single UnityEngine.AnimatorStateInfo::get_normalizedTime()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorStateInfo_get_normalizedTime_mC951C5D83749FC2AE37DCC75A022383C578F3B40 (AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * __this, const RuntimeMethod* method);
-// System.Single UnityEngine.AnimatorStateInfo::get_length()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorStateInfo_get_length_m020815F180AA8D3485CC6AB59A7E596BBA11D6CF (AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * __this, const RuntimeMethod* method);
-// System.Single UnityEngine.AnimatorStateInfo::get_speed()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorStateInfo_get_speed_m1B2CAB95244A0ECCE42F79CCFC22BA7CB8618843 (AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * __this, const RuntimeMethod* method);
-// System.Single UnityEngine.AnimatorStateInfo::get_speedMultiplier()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorStateInfo_get_speedMultiplier_m9B6B8F0D9654B51B60E2A3BD01FA4C88FB60B793 (AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * __this, const RuntimeMethod* method);
-// System.Int32 UnityEngine.AnimatorTransitionInfo::get_fullPathHash()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AnimatorTransitionInfo_get_fullPathHash_m212C4F34B691C01A5E4A3DD3E2B840AC22E1FBD9 (AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * __this, const RuntimeMethod* method);
-// System.Single UnityEngine.AnimatorTransitionInfo::get_duration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorTransitionInfo_get_duration_m1AFECA9A550C5DCA4078683194445C1F4B0940EE (AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * __this, const RuntimeMethod* method);
-// System.Single UnityEngine.AnimatorTransitionInfo::get_normalizedTime()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorTransitionInfo_get_normalizedTime_m1290068AAADC91AA10E633AFCBB5E9BC6A65E831 (AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m4DCF5CDB32C2C69290894101A81F473865169279 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.ScriptableObject::.ctor()
@@ -4638,57 +4624,6 @@ IL_0010:
 		return L_2;
 	}
 }
-// UnityEngine.AnimatorStateInfo UnityEngine.Animator::GetNextAnimatorStateInfo(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA  Animator_GetNextAnimatorStateInfo_m0CE4DD9BD652C6C8C691C308FF86ACF650A91C62 (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, int32_t ___layerIndex0, const RuntimeMethod* method)
-{
-	AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA  V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	{
-		int32_t L_0 = ___layerIndex0;
-		Animator_GetAnimatorStateInfo_m623172399D38470B4C5EB7DE06A3106AB6958657(__this, L_0, 1, (AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA *)(&V_0), /*hidden argument*/NULL);
-		AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA  L_1 = V_0;
-		V_1 = L_1;
-		goto IL_0010;
-	}
-
-IL_0010:
-	{
-		AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA  L_2 = V_1;
-		return L_2;
-	}
-}
-// System.Void UnityEngine.Animator::GetAnimatorTransitionInfo(System.Int32,UnityEngine.AnimatorTransitionInfo&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_GetAnimatorTransitionInfo_mBB68CA61A21C4D60B1109815CC4353628B428472 (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, int32_t ___layerIndex0, AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * ___info1, const RuntimeMethod* method)
-{
-	typedef void (*Animator_GetAnimatorTransitionInfo_mBB68CA61A21C4D60B1109815CC4353628B428472_ftn) (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 *, int32_t, AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 *);
-	static Animator_GetAnimatorTransitionInfo_mBB68CA61A21C4D60B1109815CC4353628B428472_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Animator_GetAnimatorTransitionInfo_mBB68CA61A21C4D60B1109815CC4353628B428472_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::GetAnimatorTransitionInfo(System.Int32,UnityEngine.AnimatorTransitionInfo&)");
-	_il2cpp_icall_func(__this, ___layerIndex0, ___info1);
-}
-// UnityEngine.AnimatorTransitionInfo UnityEngine.Animator::GetAnimatorTransitionInfo(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0  Animator_GetAnimatorTransitionInfo_m1DE4BF583787BA1EFD2255C2DD0E3B157808CA16 (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, int32_t ___layerIndex0, const RuntimeMethod* method)
-{
-	AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0  V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	{
-		int32_t L_0 = ___layerIndex0;
-		Animator_GetAnimatorTransitionInfo_mBB68CA61A21C4D60B1109815CC4353628B428472(__this, L_0, (AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 *)(&V_0), /*hidden argument*/NULL);
-		AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0  L_1 = V_0;
-		V_1 = L_1;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0  L_2 = V_1;
-		return L_2;
-	}
-}
 // System.Boolean UnityEngine.Animator::IsInTransition(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_IsInTransition_mA37A7575AA127459175230011F2BA7560E0E44B9 (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, int32_t ___layerIndex0, const RuntimeMethod* method)
 {
@@ -4707,6 +4642,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimatorControllerParameterU5BU5D_t51A7788330
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Animator_get_parameters_m77F06017E5D918C35FEB6A60B4A78E97DFB81CCA_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::get_parameters()");
 	AnimatorControllerParameterU5BU5D_t51A7788330152A26BE85C81C904CD9C874598EDE* icallRetVal = _il2cpp_icall_func(__this);
+	return icallRetVal;
+}
+// System.Int32 UnityEngine.Animator::get_parameterCount()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Animator_get_parameterCount_m87FC9BB7A51F40CFC666600392693821DA5114EB (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, const RuntimeMethod* method)
+{
+	typedef int32_t (*Animator_get_parameterCount_m87FC9BB7A51F40CFC666600392693821DA5114EB_ftn) (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 *);
+	static Animator_get_parameterCount_m87FC9BB7A51F40CFC666600392693821DA5114EB_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animator_get_parameterCount_m87FC9BB7A51F40CFC666600392693821DA5114EB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::get_parameterCount()");
+	int32_t icallRetVal = _il2cpp_icall_func(__this);
 	return icallRetVal;
 }
 // System.Void UnityEngine.Animator::set_speed(System.Single)
@@ -5513,78 +5458,6 @@ IL2CPP_EXTERN_C  float AnimatorStateInfo_get_normalizedTime_mC951C5D83749FC2AE37
 	_returnValue = AnimatorStateInfo_get_normalizedTime_mC951C5D83749FC2AE37DCC75A022383C578F3B40(_thisAdjusted, method);
 	return _returnValue;
 }
-// System.Single UnityEngine.AnimatorStateInfo::get_length()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorStateInfo_get_length_m020815F180AA8D3485CC6AB59A7E596BBA11D6CF (AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * __this, const RuntimeMethod* method)
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->get_m_Length_4();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  float AnimatorStateInfo_get_length_m020815F180AA8D3485CC6AB59A7E596BBA11D6CF_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * _thisAdjusted = reinterpret_cast<AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA *>(__this + _offset);
-	float _returnValue;
-	_returnValue = AnimatorStateInfo_get_length_m020815F180AA8D3485CC6AB59A7E596BBA11D6CF(_thisAdjusted, method);
-	return _returnValue;
-}
-// System.Single UnityEngine.AnimatorStateInfo::get_speed()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorStateInfo_get_speed_m1B2CAB95244A0ECCE42F79CCFC22BA7CB8618843 (AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * __this, const RuntimeMethod* method)
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->get_m_Speed_5();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  float AnimatorStateInfo_get_speed_m1B2CAB95244A0ECCE42F79CCFC22BA7CB8618843_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * _thisAdjusted = reinterpret_cast<AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA *>(__this + _offset);
-	float _returnValue;
-	_returnValue = AnimatorStateInfo_get_speed_m1B2CAB95244A0ECCE42F79CCFC22BA7CB8618843(_thisAdjusted, method);
-	return _returnValue;
-}
-// System.Single UnityEngine.AnimatorStateInfo::get_speedMultiplier()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorStateInfo_get_speedMultiplier_m9B6B8F0D9654B51B60E2A3BD01FA4C88FB60B793 (AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * __this, const RuntimeMethod* method)
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->get_m_SpeedMultiplier_6();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  float AnimatorStateInfo_get_speedMultiplier_m9B6B8F0D9654B51B60E2A3BD01FA4C88FB60B793_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA * _thisAdjusted = reinterpret_cast<AnimatorStateInfo_t052E146D2DB1EC155950ECA45734BF57134258AA *>(__this + _offset);
-	float _returnValue;
-	_returnValue = AnimatorStateInfo_get_speedMultiplier_m9B6B8F0D9654B51B60E2A3BD01FA4C88FB60B793(_thisAdjusted, method);
-	return _returnValue;
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -5678,78 +5551,6 @@ IL2CPP_EXTERN_C void AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9
 // Conversion method for clean up from marshalling of: UnityEngine.AnimatorTransitionInfo
 IL2CPP_EXTERN_C void AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0_marshal_com_cleanup(AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0_marshaled_com& marshaled)
 {
-}
-// System.Int32 UnityEngine.AnimatorTransitionInfo::get_fullPathHash()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AnimatorTransitionInfo_get_fullPathHash_m212C4F34B691C01A5E4A3DD3E2B840AC22E1FBD9 (AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * __this, const RuntimeMethod* method)
-{
-	int32_t V_0 = 0;
-	{
-		int32_t L_0 = __this->get_m_FullPath_0();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		int32_t L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  int32_t AnimatorTransitionInfo_get_fullPathHash_m212C4F34B691C01A5E4A3DD3E2B840AC22E1FBD9_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * _thisAdjusted = reinterpret_cast<AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 *>(__this + _offset);
-	int32_t _returnValue;
-	_returnValue = AnimatorTransitionInfo_get_fullPathHash_m212C4F34B691C01A5E4A3DD3E2B840AC22E1FBD9(_thisAdjusted, method);
-	return _returnValue;
-}
-// System.Single UnityEngine.AnimatorTransitionInfo::get_duration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorTransitionInfo_get_duration_m1AFECA9A550C5DCA4078683194445C1F4B0940EE (AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * __this, const RuntimeMethod* method)
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->get_m_Duration_4();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  float AnimatorTransitionInfo_get_duration_m1AFECA9A550C5DCA4078683194445C1F4B0940EE_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * _thisAdjusted = reinterpret_cast<AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 *>(__this + _offset);
-	float _returnValue;
-	_returnValue = AnimatorTransitionInfo_get_duration_m1AFECA9A550C5DCA4078683194445C1F4B0940EE(_thisAdjusted, method);
-	return _returnValue;
-}
-// System.Single UnityEngine.AnimatorTransitionInfo::get_normalizedTime()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimatorTransitionInfo_get_normalizedTime_m1290068AAADC91AA10E633AFCBB5E9BC6A65E831 (AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * __this, const RuntimeMethod* method)
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->get_m_NormalizedTime_5();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  float AnimatorTransitionInfo_get_normalizedTime_m1290068AAADC91AA10E633AFCBB5E9BC6A65E831_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 * _thisAdjusted = reinterpret_cast<AnimatorTransitionInfo_t7D0BAD3D274C055F1FC7ACE0F3A195CA3C9026A0 *>(__this + _offset);
-	float _returnValue;
-	_returnValue = AnimatorTransitionInfo_get_normalizedTime_m1290068AAADC91AA10E633AFCBB5E9BC6A65E831(_thisAdjusted, method);
-	return _returnValue;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

@@ -1038,7 +1038,7 @@ IL_0022:
 		Type_t * L_10;
 		L_10 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_9, /*hidden argument*/NULL);
 		bool L_11;
-		L_11 = VirtFuncInvoker1< bool, Type_t * >::Invoke(105 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_8, L_10);
+		L_11 = VirtFuncInvoker1< bool, Type_t * >::Invoke(107 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_8, L_10);
 		G_B7_0 = ((int32_t)(L_11));
 		goto IL_003d;
 	}

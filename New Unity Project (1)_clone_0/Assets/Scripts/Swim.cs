@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-public class Swim : MonoBehaviour
+using Fusion;
+public class Swim : NetworkBehaviour
 {
-
+    
     struct RotateData
     {
         public float rotateDir;
@@ -19,7 +19,7 @@ public class Swim : MonoBehaviour
     public float BoundCircleRadius;
 
     private RotateData mCurRotateData;
-
+    [Networked] public TickTimer time { get; set; }
     Transform _tr;
     bool acpectRotate;
     public float RotateSpeed = 90;
@@ -31,9 +31,13 @@ public class Swim : MonoBehaviour
     void OnEnable()
     {
         _tr = transform;
-        //_tr.position = new Vector3(0, 0, 10);
+        _tr.position = new Vector3(0, 0, 10);
     }
-
+    public void Init(Vector3 forward)
+    {
+        time = TickTimer.CreateFromSeconds(Runner, 5.0f);
+        GetComponent<Rigidbody2D>().velocity = forward;
+    }
     public void Rotate(float angle)
     {
         if (_tr == null)
@@ -59,7 +63,7 @@ public class Swim : MonoBehaviour
         mCurRotateData.rotateDelta = 0F;
     }
 
-    void Update()
+    public   void Update()
     {
         if (Freeze == true)
             FreezeTime += Time.deltaTime;
@@ -81,6 +85,7 @@ public class Swim : MonoBehaviour
             if (mCurRotateData.rotatedAngle > mCurRotateData.stopRotateRadian)
                 acpectRotate = false;
         }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -89,4 +94,10 @@ public class Swim : MonoBehaviour
             Freeze = true;
         }
     }
+    [Rpc(RpcSources.StateAuthority,RpcTargets.All)]
+    public void Rpc_Pose(float Pos,float Rotate)
+    {
+        //gameObject.transform.position = new Vector3()
+    }
+    
 }

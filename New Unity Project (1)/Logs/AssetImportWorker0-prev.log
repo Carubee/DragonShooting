@@ -15,11 +15,11 @@ D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57849
+50038
 Successfully changed project path to: D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)
 D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 137.73 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 160.17 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.40f1 (ba48d4efcef1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Resources/UnitySubsystems
@@ -35,45 +35,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56244
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002685 seconds.
+Registered in 0.003005 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 231.02 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 248.29 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.217 seconds
+- Completed reload, in  1.034 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1217ms)
-		BeginReloadAssembly (60ms)
+	ReloadAssembly (1035ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (928ms)
-			LoadAssemblies (57ms)
+		EndReloadAssembly (820ms)
+			LoadAssemblies (103ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (306ms)
+			SetupTypeCache (222ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (423ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (400ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (231ms)
-				BeforeProcessingInitializeOnLoad (21ms)
-				ProcessInitializeOnLoadAttributes (101ms)
-				ProcessInitializeOnLoadMethodAttributes (64ms)
+				RefreshPlugins (248ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (80ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014044 seconds.
+Registered in 0.015958 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Game intern\ecurace\DragonShooting\New Unity Project (1)\New Unity Project (1)\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image D:\Game intern\ecurace\DragonShooting\New Unity Project (1)\New Unity Project (1)\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -81,48 +81,48 @@ OnLevelWasLoaded was found on LeanTween
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 124.60 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 304.54 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.580 seconds
+- Completed reload, in  4.272 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1581ms)
-		BeginReloadAssembly (134ms)
+	ReloadAssembly (4273ms)
+		BeginReloadAssembly (479ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (1392ms)
-			LoadAssemblies (102ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (3682ms)
+			LoadAssemblies (835ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (334ms)
+			SetupTypeCache (1062ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (800ms)
+			RebuildScriptCaches (114ms)
+			SetupLoadedEditorAssemblies (1482ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (125ms)
-				BeforeProcessingInitializeOnLoad (89ms)
-				ProcessInitializeOnLoadAttributes (561ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (305ms)
+				BeforeProcessingInitializeOnLoad (243ms)
+				ProcessInitializeOnLoadAttributes (897ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (1ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.76 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 1.61 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4299 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 262.6 MB.
+System memory in use before: 262.5 MB.
 System memory in use after: 262.8 MB.
 
 Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 4761.
-Total: 3.260000 ms (FindLiveObjects: 0.349700 ms CreateObjectMapping: 0.328700 ms MarkObjects: 2.478600 ms  DeleteObjects: 0.102000 ms)
+Total: 5.590700 ms (FindLiveObjects: 0.574600 ms CreateObjectMapping: 0.358800 ms MarkObjects: 4.506200 ms  DeleteObjects: 0.149700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -138,73 +138,355 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs
-  artifactKey: Guid(50440779be91d644e9d97eeb4f513f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(50440779be91d644e9d97eeb4f513f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ffe30d101728b98163e98d7778dc51') in 0.011979 seconds 
+  path: Assets/Prefabs/Fish2/Fish2FollowLeader.prefab
+  artifactKey: Guid(7bacb0a3382e7df4ebde3ed6c8a3825f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish2/Fish2FollowLeader.prefab using Guid(7bacb0a3382e7df4ebde3ed6c8a3825f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20cfef09d24cd6261af233c22e4cce3b') in 0.089002 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.726000 seconds.
-  path: Assets/Prefabs/Fish1
-  artifactKey: Guid(be94fc2cd0ac65f44a27ba8c0210bc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1 using Guid(be94fc2cd0ac65f44a27ba8c0210bc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e007050944bfe14b8ce8d90057a511') in 0.005520 seconds 
+  Time since last request: 0.000217 seconds.
+  path: Assets/Prefabs/Fish2/Fish2FollowLeaderBonus.prefab
+  artifactKey: Guid(049aa38a47455ff47bb2d485b53eafd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish2/Fish2FollowLeaderBonus.prefab using Guid(049aa38a47455ff47bb2d485b53eafd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43cf9adaa296b48439999286a340ab4b') in 0.019498 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.074731 seconds.
-  path: Assets/Prefabs/Fish1/Fish1Flock.prefab
-  artifactKey: Guid(e7ccca842db95094585444385c79b3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1Flock.prefab using Guid(e7ccca842db95094585444385c79b3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4020b67ca9d576788c56b8733a5e5967') in 0.271553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Prefabs/Fish1/Fish1FollowLeaderBonus4.prefab
-  artifactKey: Guid(7ab1e0df5bba93e4ca5116303fac887c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1FollowLeaderBonus4.prefab using Guid(7ab1e0df5bba93e4ca5116303fac887c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31aa88a7abf1b8e07077eee0c1858477') in 0.012313 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/Prefabs/Fish1/Fish1FollowLeader.prefab
-  artifactKey: Guid(3e88313d30dbfe24a862a7e54710d733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1FollowLeader.prefab using Guid(3e88313d30dbfe24a862a7e54710d733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1e1a29cff536243545193712e29f96') in 0.012179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
+  Time since last request: 0.000212 seconds.
   path: Assets/Prefabs/Fish1/Fish1FreeSign.prefab
   artifactKey: Guid(4b4f90068ded39a459e7e5691b9d6c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1FreeSign.prefab using Guid(4b4f90068ded39a459e7e5691b9d6c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8878193471094e5f44d53acbab0970') in 0.050742 seconds 
+Start importing Assets/Prefabs/Fish1/Fish1FreeSign.prefab using Guid(4b4f90068ded39a459e7e5691b9d6c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11421bb8a4f5487cf84580a7f5d97607') in 0.682868 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Prefabs/Fish1/Fish1FollowBonus.prefab
-  artifactKey: Guid(7cbeb0364cdd5f940a8348667e6f8b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1FollowBonus.prefab using Guid(7cbeb0364cdd5f940a8348667e6f8b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505e2c08b8db08598f8cc68682fe6111') in 0.018626 seconds 
+  Time since last request: 0.000484 seconds.
+  path: Assets/Prefabs/Fish2/Fish2FlockLeader.prefab
+  artifactKey: Guid(96a103c91bbb0f940bc0cebafc97ba91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish2/Fish2FlockLeader.prefab using Guid(96a103c91bbb0f940bc0cebafc97ba91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bcf1a0d23cc2d94ee7ea2a9cd4bbe3d') in 0.038627 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Prefabs/Fish1/Fish1Follow.prefab
-  artifactKey: Guid(8db243e122b3d1842b27c79f8fc3750a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1Follow.prefab using Guid(8db243e122b3d1842b27c79f8fc3750a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e049d6ed6479fb02c9f28396663481af') in 0.015272 seconds 
+  Time since last request: 0.000079 seconds.
+  path: Assets/Prefabs/Fish2/Fish2Follow.prefab
+  artifactKey: Guid(23acad036fa6d7a46a0b5d1319438f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish2/Fish2Follow.prefab using Guid(23acad036fa6d7a46a0b5d1319438f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76386d4bdb356b593e9781704d63e0d4') in 0.398588 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Prefabs/Fish1/Fish1FlockLeader.prefab
-  artifactKey: Guid(a0b607a8f6af02f4ca8cef49041253e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1FlockLeader.prefab using Guid(a0b607a8f6af02f4ca8cef49041253e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e56d4b8852d773aaaad120fc36348650') in 0.011871 seconds 
+  Time since last request: 0.015020 seconds.
+  path: Assets/Prefabs/Fish2/Fish2Flock.prefab
+  artifactKey: Guid(405ddd31e7af61b4faeaab31940b1828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish2/Fish2Flock.prefab using Guid(405ddd31e7af61b4faeaab31940b1828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a189605eda0bdd3bde09c8c538b0b24') in 0.100509 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Prefabs/Fish1/Fish1FollowLeaderBonus.prefab
-  artifactKey: Guid(95c3c78002aa712428c93a5453497448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1FollowLeaderBonus.prefab using Guid(95c3c78002aa712428c93a5453497448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bc4919131bc57ca84615cd0a50b931') in 0.011307 seconds 
+  Time since last request: 0.000440 seconds.
+  path: Assets/Prefabs/Fish2/Fish2FollowLeaderBonus4.prefab
+  artifactKey: Guid(316210bf889d3b24e8c1836a8aca1719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish2/Fish2FollowLeaderBonus4.prefab using Guid(316210bf889d3b24e8c1836a8aca1719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71190bddc01122fc69c40b79faaff632') in 0.102315 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.568094 seconds.
-  path: Assets/Prefabs/Fish1/Fish1FreeSign.prefab
-  artifactKey: Guid(4b4f90068ded39a459e7e5691b9d6c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1FreeSign.prefab using Guid(4b4f90068ded39a459e7e5691b9d6c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70628a39378799fe45c9453b3e2d7df8') in 0.016441 seconds 
+  Time since last request: 0.004689 seconds.
+  path: Assets/Prefabs/Fish2/Fish2FollowBonus.prefab
+  artifactKey: Guid(3d672ce4720c306488c13eb496c2ce6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish2/Fish2FollowBonus.prefab using Guid(3d672ce4720c306488c13eb496c2ce6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '298d645adc66f1957e33796aab5319b2') in 0.057464 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.894801 seconds.
-  path: Assets/Prefabs/Fish1/Fish1FreeSign.prefab
-  artifactKey: Guid(4b4f90068ded39a459e7e5691b9d6c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fish1/Fish1FreeSign.prefab using Guid(4b4f90068ded39a459e7e5691b9d6c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9888e0dddfd6d102b490ca2049e25231') in 0.017184 seconds 
+  Time since last request: 0.000082 seconds.
+  path: Assets/Prefabs/Fish2/Fish2FreeSign.prefab
+  artifactKey: Guid(1233d6775889c434f910f39c5a6cfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish2/Fish2FreeSign.prefab using Guid(1233d6775889c434f910f39c5a6cfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00cf00d61b36fe6c296ac742567000d5') in 0.059188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.077179 seconds.
+  path: Assets/Prefabs/Fish4/Fish4Flock.prefab
+  artifactKey: Guid(59663b2781ca7884788d2b0817d2659e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish4/Fish4Flock.prefab using Guid(59663b2781ca7884788d2b0817d2659e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eecab2f31b59ca2c457cc1d14389522a') in 0.015799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefabs/Fish4/Fish4FollowLeader.prefab
+  artifactKey: Guid(43478d3799ce3be498d450f7b8dda74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish4/Fish4FollowLeader.prefab using Guid(43478d3799ce3be498d450f7b8dda74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c38b5d2e8399faac1753c375ab54ab') in 0.012395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Prefabs/Fish4/Fish4FreeSign.prefab
+  artifactKey: Guid(904e0bb7a3152d44088cf22b33063d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish4/Fish4FreeSign.prefab using Guid(904e0bb7a3152d44088cf22b33063d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58406c93f151a7675abc73a8c57f88c2') in 0.020282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Prefabs/Fish4/Fish4Follow.prefab
+  artifactKey: Guid(dca6cca6e76c9b2429e6386e3b1c91d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish4/Fish4Follow.prefab using Guid(dca6cca6e76c9b2429e6386e3b1c91d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe9754b0882074ad8645a3b8e2346a7') in 0.020951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Prefabs/Fish4/Fish4FlockLeader.prefab
+  artifactKey: Guid(77d7fd0e4714e204a9f486cf12da2b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish4/Fish4FlockLeader.prefab using Guid(77d7fd0e4714e204a9f486cf12da2b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3bb89991d7e7b43ac4f33464f24a78') in 0.011767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Prefabs/Fish4/Fish4FollowLeaderBonus4.prefab
+  artifactKey: Guid(7ad1c76a246252b44b3718e93e7708af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish4/Fish4FollowLeaderBonus4.prefab using Guid(7ad1c76a246252b44b3718e93e7708af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363108bdd91e8b5ed6718df260a74a53') in 0.013938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Prefabs/Fish4/Fish4FollowBonus.prefab
+  artifactKey: Guid(90a4c535d6d733941b968f64c5d2ab92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish4/Fish4FollowBonus.prefab using Guid(90a4c535d6d733941b968f64c5d2ab92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f5ca6f6ae72b5f6cf4f174e7a47b7a') in 0.018662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Prefabs/Fish4/Fish4FollowLeaderBonus.prefab
+  artifactKey: Guid(523a10779fc471a4294aca164d6a31ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish4/Fish4FollowLeaderBonus.prefab using Guid(523a10779fc471a4294aca164d6a31ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78885bc0c57fdcb404ea5f08843990db') in 0.013959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.466082 seconds.
+  path: Assets/Prefabs/Fish5/Fish5Flock.prefab
+  artifactKey: Guid(ce298339d59ff4f43994ebee403e6dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish5/Fish5Flock.prefab using Guid(ce298339d59ff4f43994ebee403e6dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad28000a1ac655648992f025abb82a53') in 0.017407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Prefabs/Fish5/Fish5FollowBonus.prefab
+  artifactKey: Guid(9da560c8720c67d43999aa1cdad8500b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish5/Fish5FollowBonus.prefab using Guid(9da560c8720c67d43999aa1cdad8500b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133511033ec4373e1a2883f45a2d025e') in 0.019833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Prefabs/Fish5/Fish5FollowLeader.prefab
+  artifactKey: Guid(3052dd606efc958449758517582f8539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish5/Fish5FollowLeader.prefab using Guid(3052dd606efc958449758517582f8539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4127fc973e1c0be3c455454f4c48df2') in 0.013067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Prefabs/Fish5/Fish5FlockLeader.prefab
+  artifactKey: Guid(c2d3c17df9203ce4186a27290318282d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish5/Fish5FlockLeader.prefab using Guid(c2d3c17df9203ce4186a27290318282d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d2496a8be94d62631d94560bfa01b1') in 0.012299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Prefabs/Fish5/Fish5Follow.prefab
+  artifactKey: Guid(66631f8520547b64c84338c7ee7718c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish5/Fish5Follow.prefab using Guid(66631f8520547b64c84338c7ee7718c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a601ad8808a200c59c7a97d2dbbb230') in 0.016334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Prefabs/Fish5/Fish5FollowLeaderBonus4.prefab
+  artifactKey: Guid(bec7d164560397440a52b5d0276d28df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish5/Fish5FollowLeaderBonus4.prefab using Guid(bec7d164560397440a52b5d0276d28df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca1192d1ccb0b31e004173045ca55e5') in 0.012166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Prefabs/Fish5/Fish5FollowLeaderBonus.prefab
+  artifactKey: Guid(8c649355944d239488bdd82185c1509f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish5/Fish5FollowLeaderBonus.prefab using Guid(8c649355944d239488bdd82185c1509f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d8c51a477e8c038a7518d165ee77a7') in 0.012776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Prefabs/Fish5/Fish5FreeSign.prefab
+  artifactKey: Guid(ac0dd8a80ceec6a48a3bd3fe59be4d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish5/Fish5FreeSign.prefab using Guid(ac0dd8a80ceec6a48a3bd3fe59be4d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f56dc8560c1fa26c3f8924d9096d43') in 0.018050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.462446 seconds.
+  path: Assets/Prefabs/Fish6/Fish6Follow.prefab
+  artifactKey: Guid(1453ba4f8429da54d82fe5219f1baabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish6/Fish6Follow.prefab using Guid(1453ba4f8429da54d82fe5219f1baabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c115c602e2a7bc2c663519478b0ad06a') in 0.015750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Prefabs/Fish6/Fish6FollowLeaderBonus4.prefab
+  artifactKey: Guid(8adeb06354e241b46bf41e1fed0d1be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish6/Fish6FollowLeaderBonus4.prefab using Guid(8adeb06354e241b46bf41e1fed0d1be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a7a5c8e0c95fe012eb742a3ef09a272') in 0.010744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Prefabs/Fish6/Fish6FollowBonus.prefab
+  artifactKey: Guid(0680f311482ebc746b849a661cdf1a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish6/Fish6FollowBonus.prefab using Guid(0680f311482ebc746b849a661cdf1a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8bcf28a0b73fc8d8318388382d35c9e') in 0.016494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Prefabs/Fish6/Fish6FollowLeader.prefab
+  artifactKey: Guid(45a3d986627172c498feb8a96ee0cb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish6/Fish6FollowLeader.prefab using Guid(45a3d986627172c498feb8a96ee0cb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4ec77e74dcf36a7989a2466727faa5') in 0.010909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Prefabs/Fish6/Fish6FollowLeaderBonus.prefab
+  artifactKey: Guid(1b40b47adf0e2714db46f13921d76468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish6/Fish6FollowLeaderBonus.prefab using Guid(1b40b47adf0e2714db46f13921d76468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e092a66a9bef122c78f8be3fe9210d') in 0.010755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Prefabs/Fish6/Fish6FreeSign.prefab
+  artifactKey: Guid(6d322984e5de7ba4da300d578f66ed93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish6/Fish6FreeSign.prefab using Guid(6d322984e5de7ba4da300d578f66ed93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451222b2b1ca6857d593868d372a5173') in 0.017388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.936650 seconds.
+  path: Assets/Prefabs/Fish10/Fish10FollowBonus.prefab
+  artifactKey: Guid(d050e764005bcba4f84550080bc2ccf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish10/Fish10FollowBonus.prefab using Guid(d050e764005bcba4f84550080bc2ccf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359cb65921cba799c0d708209cba0674') in 0.014239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Prefabs/Fish10/Fish12FreeSign.prefab
+  artifactKey: Guid(90e914930d2862f4d8d2f2866a7c8b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish10/Fish12FreeSign.prefab using Guid(90e914930d2862f4d8d2f2866a7c8b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbcbb3eb744579643302d2b9f9ea1d95') in 0.022060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Prefabs/Fish10/Fish10FollowLeaderBonus.prefab
+  artifactKey: Guid(2d15da4c95b6b984ab2fa131dbf1c8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish10/Fish10FollowLeaderBonus.prefab using Guid(2d15da4c95b6b984ab2fa131dbf1c8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa45a5af5c5b2be1458afed6ac1d54f') in 0.012180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/Prefabs/Fish10/Fish10FreeSign.prefab
+  artifactKey: Guid(652175786b643d44cbc47c47e2679bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish10/Fish10FreeSign.prefab using Guid(652175786b643d44cbc47c47e2679bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adef07d78e95ac923bcd4c966b5516e') in 0.023264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Prefabs/Fish10/Fish11FreeSign.prefab
+  artifactKey: Guid(e8643f1b781dc60438091f60b74c5c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish10/Fish11FreeSign.prefab using Guid(e8643f1b781dc60438091f60b74c5c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5705409579cd6b77faa2a99af54cef9') in 0.022739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Prefabs/Fish10/Fish10FollowLeaderBonus4.prefab
+  artifactKey: Guid(1163804ea932a8d418a49b8352e203d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fish10/Fish10FollowLeaderBonus4.prefab using Guid(1163804ea932a8d418a49b8352e203d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc145f8ec9a2f58b9de880d1276335c') in 0.011510 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015586 seconds.
+OnLevelWasLoaded was found on LeanTween
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Game intern\ecurace\DragonShooting\New Unity Project (1)\New Unity Project (1)\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Game intern\ecurace\DragonShooting\New Unity Project (1)\New Unity Project (1)\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+OnLevelWasLoaded was found on LeanTween
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.42 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.305 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1306ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1114ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (450ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (381ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (250ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.44 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 258.8 MB.
+System memory in use after: 259.0 MB.
+
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 4774.
+Total: 3.040300 ms (FindLiveObjects: 0.370200 ms CreateObjectMapping: 0.261200 ms MarkObjects: 2.371300 ms  DeleteObjects: 0.036400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: 551ea9813040f695a4b383b6c6db3b9c -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009148 seconds.
+OnLevelWasLoaded was found on LeanTween
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Game intern\ecurace\DragonShooting\New Unity Project (1)\New Unity Project (1)\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Game intern\ecurace\DragonShooting\New Unity Project (1)\New Unity Project (1)\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+OnLevelWasLoaded was found on LeanTween
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.71 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.259 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1260ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1070ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (355ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (444ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (181ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.62 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 258.8 MB.
+System memory in use after: 259.1 MB.
+
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 4777.
+Total: 3.232900 ms (FindLiveObjects: 0.374100 ms CreateObjectMapping: 0.242100 ms MarkObjects: 2.568500 ms  DeleteObjects: 0.047000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:FusionILWeaverTriggerImporter/ConfigHash: 551ea9813040f695a4b383b6c6db3b9c -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

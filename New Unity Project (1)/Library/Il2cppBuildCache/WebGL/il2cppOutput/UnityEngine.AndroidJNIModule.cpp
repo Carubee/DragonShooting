@@ -9293,7 +9293,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidReflection_IsAssignableFrom_mD275
 		Type_t * L_0 = ___t0;
 		Type_t * L_1 = ___from1;
 		bool L_2;
-		L_2 = VirtFuncInvoker1< bool, Type_t * >::Invoke(107 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_0, L_1);
+		L_2 = VirtFuncInvoker1< bool, Type_t * >::Invoke(109 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_0, L_1);
 		V_0 = L_2;
 		goto IL_000b;
 	}
@@ -12248,7 +12248,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t _AndroidJNIHelper_ConvertToJNIArray_
 		Type_t * L_1;
 		L_1 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_0, /*hidden argument*/NULL);
 		Type_t * L_2;
-		L_2 = VirtFuncInvoker0< Type_t * >::Invoke(95 /* System.Type System.Type::GetElementType() */, L_1);
+		L_2 = VirtFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_1);
 		V_0 = L_2;
 		Type_t * L_3 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(AndroidReflection_tEB6633FD5B7D2816E1AC6C711E11B2DD33822F16_il2cpp_TypeInfo_var);
@@ -13452,7 +13452,7 @@ IL_002a:
 		Type_t * L_11;
 		L_11 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_10, /*hidden argument*/NULL);
 		bool L_12;
-		L_12 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_9, L_11);
+		L_12 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_9, L_11);
 		V_4 = L_12;
 		bool L_13 = V_4;
 		if (!L_13)
@@ -13473,7 +13473,7 @@ IL_005a:
 		Type_t * L_16;
 		L_16 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_15, /*hidden argument*/NULL);
 		bool L_17;
-		L_17 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_14, L_16);
+		L_17 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_14, L_16);
 		V_5 = L_17;
 		bool L_18 = V_5;
 		if (!L_18)
@@ -13494,7 +13494,7 @@ IL_007b:
 		Type_t * L_21;
 		L_21 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_20, /*hidden argument*/NULL);
 		bool L_22;
-		L_22 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_19, L_21);
+		L_22 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_19, L_21);
 		V_6 = L_22;
 		bool L_23 = V_6;
 		if (!L_23)
@@ -13517,7 +13517,7 @@ IL_00a8:
 		Type_t * L_26;
 		L_26 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_25, /*hidden argument*/NULL);
 		bool L_27;
-		L_27 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_24, L_26);
+		L_27 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_24, L_26);
 		V_7 = L_27;
 		bool L_28 = V_7;
 		if (!L_28)
@@ -13538,7 +13538,7 @@ IL_00c9:
 		Type_t * L_31;
 		L_31 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_30, /*hidden argument*/NULL);
 		bool L_32;
-		L_32 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_29, L_31);
+		L_32 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_29, L_31);
 		V_8 = L_32;
 		bool L_33 = V_8;
 		if (!L_33)
@@ -13559,7 +13559,7 @@ IL_00ea:
 		Type_t * L_36;
 		L_36 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_35, /*hidden argument*/NULL);
 		bool L_37;
-		L_37 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_34, L_36);
+		L_37 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_34, L_36);
 		V_9 = L_37;
 		bool L_38 = V_9;
 		if (!L_38)
@@ -13580,7 +13580,7 @@ IL_010b:
 		Type_t * L_41;
 		L_41 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_40, /*hidden argument*/NULL);
 		bool L_42;
-		L_42 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_39, L_41);
+		L_42 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_39, L_41);
 		V_10 = L_42;
 		bool L_43 = V_10;
 		if (!L_43)
@@ -13601,7 +13601,7 @@ IL_012c:
 		Type_t * L_46;
 		L_46 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_45, /*hidden argument*/NULL);
 		bool L_47;
-		L_47 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_44, L_46);
+		L_47 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_44, L_46);
 		V_11 = L_47;
 		bool L_48 = V_11;
 		if (!L_48)
@@ -13622,7 +13622,7 @@ IL_014d:
 		Type_t * L_51;
 		L_51 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_50, /*hidden argument*/NULL);
 		bool L_52;
-		L_52 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_49, L_51);
+		L_52 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_49, L_51);
 		V_12 = L_52;
 		bool L_53 = V_12;
 		if (!L_53)
@@ -13648,7 +13648,7 @@ IL_0174:
 		Type_t * L_56;
 		L_56 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_55, /*hidden argument*/NULL);
 		bool L_57;
-		L_57 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_54, L_56);
+		L_57 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_54, L_56);
 		V_13 = L_57;
 		bool L_58 = V_13;
 		if (!L_58)
@@ -13734,7 +13734,7 @@ IL_01f2:
 		Type_t * L_73;
 		L_73 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_72, /*hidden argument*/NULL);
 		bool L_74;
-		L_74 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_71, L_73);
+		L_74 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_71, L_73);
 		V_16 = L_74;
 		bool L_75 = V_16;
 		if (!L_75)
@@ -13755,7 +13755,7 @@ IL_0214:
 		Type_t * L_78;
 		L_78 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_77, /*hidden argument*/NULL);
 		bool L_79;
-		L_79 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_76, L_78);
+		L_79 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_76, L_78);
 		V_17 = L_79;
 		bool L_80 = V_17;
 		if (!L_80)
@@ -13776,7 +13776,7 @@ IL_0236:
 		Type_t * L_83;
 		L_83 = Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F(L_82, /*hidden argument*/NULL);
 		bool L_84;
-		L_84 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::Equals(System.Type) */, L_81, L_83);
+		L_84 = VirtFuncInvoker1< bool, Type_t * >::Invoke(112 /* System.Boolean System.Type::Equals(System.Type) */, L_81, L_83);
 		V_18 = L_84;
 		bool L_85 = V_18;
 		if (!L_85)
@@ -13900,7 +13900,7 @@ IL_02e9:
 		StringBuilder_t * L_111 = V_23;
 		Type_t * L_112 = V_0;
 		Type_t * L_113;
-		L_113 = VirtFuncInvoker0< Type_t * >::Invoke(95 /* System.Type System.Type::GetElementType() */, L_112);
+		L_113 = VirtFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_112);
 		String_t* L_114;
 		L_114 = _AndroidJNIHelper_GetSignature_m3A803B2695DB1EB9344C5596B97E8302A71BFD73(L_113, /*hidden argument*/NULL);
 		StringBuilder_t * L_115;

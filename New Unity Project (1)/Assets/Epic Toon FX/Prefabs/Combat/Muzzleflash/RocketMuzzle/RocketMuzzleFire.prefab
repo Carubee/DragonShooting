@@ -9666,7 +9666,7 @@ ParticleSystem:
   cullingMode: 3
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -14416,7 +14416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88de128d516f6824b9e4818b924df198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroytime: 0.5
+  destroytime: 0.2
   timeRun: 0
 --- !u!50 &7451122155101493771
 Rigidbody2D:
@@ -14433,7 +14433,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -14453,7 +14453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 476560}
+  InterpolationTarget: {fileID: 0}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3

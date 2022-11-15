@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 11462100}
   - component: {fileID: -5066840379078491336}
   - component: {fileID: 3786441838965148087}
-  - component: {fileID: 7800219644210921094}
+  - component: {fileID: 7546125304090313696}
   m_Layer: 0
   m_Name: Fish1FollowLeader
   m_TagString: fish
@@ -132,9 +132,9 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 11481696}
   - {fileID: 11448876}
-  - {fileID: 7800219644210921094}
+  - {fileID: 7546125304090313696}
   SimulationBehaviours: []
---- !u!114 &7800219644210921094
+--- !u!114 &7546125304090313696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

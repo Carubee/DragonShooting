@@ -1029,6 +1029,24 @@ IL_0087:
 		return L_20;
 	}
 }
+// System.Boolean UnityEngine.WWW::get_isDone()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WWW_get_isDone_m916B54D53395990DB59C64413798FBCAFB08E0E3 (WWW_tCC46D6E5A368D4A83A3D6FAFF00B19700C5373E2 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		UnityWebRequest_tB75B39F6951CA0DBA2D5BEDF85FDCAAC6026A37E * L_0 = __this->get__uwr_0();
+		bool L_1;
+		L_1 = UnityWebRequest_get_isDone_mF8C92D10767B80877BCFE6D119CBE9090ACCDFBD(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		bool L_2 = V_0;
+		return L_2;
+	}
+}
 // UnityEngine.Texture2D UnityEngine.WWW::CreateTextureFromDownloadedData(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * WWW_CreateTextureFromDownloadedData_m978F4A746B24EEA580E7AA8F1F05203196A299F9 (WWW_tCC46D6E5A368D4A83A3D6FAFF00B19700C5373E2 * __this, bool ___markNonReadable0, const RuntimeMethod* method)
 {
