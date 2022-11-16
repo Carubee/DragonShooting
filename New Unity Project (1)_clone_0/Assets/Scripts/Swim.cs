@@ -95,9 +95,9 @@ public class Swim : NetworkBehaviour
         }
     }
     [Rpc(RpcSources.StateAuthority,RpcTargets.All)]
-    public void Rpc_Pose(float Pos,float Rotate)
+    public void Rpc_Pose()
     {
-        //gameObject.transform.position = new Vector3()
+        gameObject.transform.position = gameObject.transform.position;
     }
     
 }

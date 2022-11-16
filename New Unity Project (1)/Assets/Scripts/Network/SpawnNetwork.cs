@@ -23,8 +23,8 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             SessionName = "TestRoom",
             Scene = SceneManager.GetActiveScene().buildIndex,
             SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>()
-            
-        }) ;}
+
+        }) ; ;}
     
 
     // Update is called once per 

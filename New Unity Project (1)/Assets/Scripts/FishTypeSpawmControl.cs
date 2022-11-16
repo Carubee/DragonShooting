@@ -38,107 +38,173 @@ public class FishTypeSpawmControl : NetworkBehaviour
     {
         yield return new WaitForSeconds(starttime);
         int a = Random.Range(0, _pre.Length);
-        Vector3 Rotate = new Vector3(0,90,0);
-        RotateStat.eulerAngles = Rotate;
-        //Transform _tr = Instantiate(_pre[a]).transform;
-        Transform _tr = Runner.Spawn(_pre[a]).transform;
-
-        int directionPos = Random.Range(0, 4);
-
-       
+        int directionPos = Random.Range(0, 6);
+        Transform _tr;
+        
         switch (directionPos)
         {
-            case 0:
-                float _posY0 = Random.Range(-limitHieght + 1, limitHieght - 1);
-                _tr.position = new Vector3(-limitWith - 1 - _distance, _posY0, 2);
-                if (_posY0 < -limitHieght / 2)
+                case 0:
+                 _tr = Runner.Spawn(_pre[a], new Vector3(7, -5, 0), Quaternion.Euler(0, 0, Random.Range(110, 150))).transform;
+                switch (a)
                 {
-                    _tr.eulerAngles = new Vector3(0, 0, Random.Range(25, 65));
+                    case 2:
+                        _tr.GetComponent<FishFlockLeaderControl>().FlockStart();
+                        break;
+                    case 1:
+                        _tr.GetComponent<FishFollowLeaderControl>().FollowStart();
+                        break;
                 }
-                else
+                break;
+                case 1:
+                 _tr = Runner.Spawn(_pre[a], new Vector3(-7, -5, 0), Quaternion.Euler(0, 0, Random.Range(30, 60))).transform;
+                switch (a)
                 {
-                    if (_posY0 > limitHieght / 2)
-                    {
-                        _tr.eulerAngles = new Vector3(0, 0, Random.Range(-65, -25));
-                    }
-                    else
-                    {
-                        _tr.eulerAngles = new Vector3(0, 0, Random.Range(-45, 45));
-                    }
+                    case 2:
+                        _tr.GetComponent<FishFlockLeaderControl>().FlockStart();
+                        break;
+                    case 1:
+                        _tr.GetComponent<FishFollowLeaderControl>().FollowStart();
+                        break;
+                }
+                break;
+                case 2:
+                _tr = Runner.Spawn(_pre[a], new Vector3(7, 5, 0), Quaternion.Euler(0, 0, Random.Range(-150, -110))).transform;
+                switch (a)
+                {
+                    case 2:
+                        _tr.GetComponent<FishFlockLeaderControl>().FlockStart();
+                        break;
+                    case 1:
+                        _tr.GetComponent<FishFollowLeaderControl>().FollowStart();
+                        break;
+                }
+                break;
+                case 3:
+                _tr = Runner.Spawn(_pre[a], new Vector3(-7, 5, 0), Quaternion.Euler(0, 0, Random.Range(-60, -30))).transform;
+                switch (a)
+                {
+                    case 2:
+                        _tr.GetComponent<FishFlockLeaderControl>().FlockStart();
+                        break;
+                    case 1:
+                        _tr.GetComponent<FishFollowLeaderControl>().FollowStart();
+                        break;
+                }
+                break;
+                case 4:
+                _tr = Runner.Spawn(_pre[a], new Vector3(7, Random.Range(-3,3), 0), Quaternion.Euler(0, 0, Random.Range(-130, 170))).transform;
+                switch (a)
+                {
+                    case 2:
+                        _tr.GetComponent<FishFlockLeaderControl>().FlockStart();
+                        break;
+                    case 1:
+                        _tr.GetComponent<FishFollowLeaderControl>().FollowStart();
+                        break;
+                }
+                break;
+                case 5:
+                _tr = Runner.Spawn(_pre[a], new Vector3(-7, Random.Range(-3, 3), 0), Quaternion.Euler(0, 0, Random.Range(-25, 25))).transform;
+                switch (a)
+                {
+                    case 2:
+                        _tr.GetComponent<FishFlockLeaderControl>().FlockStart();
+                        break;
+                    case 1:
+                        _tr.GetComponent<FishFollowLeaderControl>().FollowStart();
+                        break;
                 }
                 break;
 
-            case 1:
-                float _posX1 = Random.Range(-limitWith + 1, limitWith - 1);
-                _tr.position = new Vector3(_posX1, limitHieght + 1 + _distance,1);
-                if (_posX1 < -limitWith / 2)
-                {
-                    _tr.eulerAngles = new Vector3(0, 0, Random.Range(295, 335));
-                }
-                else
-                {
-                    if (_posX1 > limitWith / 2)
-                    {
-                        _tr.eulerAngles = new Vector3(0, 0, Random.Range(-155, -115));
-                    }
-                    else
-                    {
-                        _tr.eulerAngles = new Vector3(0, 0, Random.Range(-135, -35));
-                    }
-                }
-                break;
 
-            case 2:
-
-                float _posX2 = Random.Range(-limitWith + 1, limitWith - 1);
-                _tr.position = new Vector3(_posX2, -limitHieght - 1 - _distance,3);
-                if (_posX2 < -limitWith / 2)
-                {
-                    _tr.eulerAngles = new Vector3(0, 0, Random.Range(25, 65));
-                }
-                else
-                {
-                    if (_posX2 > limitWith / 2)
-                    {
-                        _tr.eulerAngles = new Vector3(0, 0, Random.Range(115, 155));
-                    }
-                    else
-                    {
-                        _tr.eulerAngles = new Vector3(0, 0, Random.Range(35, 145));
-                    }
-                }
-                break;
-
-            case 3:
-                float _posY3 = Random.Range(-limitHieght + 1, limitHieght - 1);
-                _tr.position = new Vector3(limitWith + 1 + _distance, _posY3,4);
-                if (_posY3 < -limitHieght / 2)
-                {
-                    _tr.eulerAngles = new Vector3(0, 0, Random.Range(115, 165));
-                }
-                else
-                {
-                    if (_posY3 > limitHieght / 2)
-                    {
-                        _tr.eulerAngles = new Vector3(0, 0, Random.Range(205, 245));
-                    }
-                    else
-                    {
-                        _tr.eulerAngles = new Vector3(0, 0, Random.Range(135, 235));
-                    }
-                }
-                break;
         }
+        
+        /* int directionPos = Random.Range(0, 4);
+         switch (directionPos)
+         {
+             case 0:
+                 float _posY0 = Random.Range(-limitHieght + 1, limitHieght - 1);
+                 _tr.position = new Vector3(-limitWith - 1 - _distance, _posY0, 2);
+                 if (_posY0 < -limitHieght / 2)
+                 {
+                     _tr.eulerAngles = new Vector3(0, 0, Random.Range(25, 65));
+                 }
+                 else
+                 {
+                     if (_posY0 > limitHieght / 2)
+                     {
+                         _tr.eulerAngles = new Vector3(0, 0, Random.Range(-65, -25));
+                     }
+                     else
+                     {
+                         _tr.eulerAngles = new Vector3(0, 0, Random.Range(-45, 45));
+                     }
+                 }
+                 break;
 
-        switch (a)
-        {
-            case 2:
-                _tr.GetComponent<FishFlockLeaderControl>().FlockStart();
-                break;
-            case 1:
-                _tr.GetComponent<FishFollowLeaderControl>().FollowStart();
-                break;
-        }
+             case 1:
+                 float _posX1 = Random.Range(-limitWith + 1, limitWith - 1);
+                 _tr.position = new Vector3(_posX1, limitHieght + 1 + _distance,1);
+                 if (_posX1 < -limitWith / 2)
+                 {
+                     _tr.eulerAngles = new Vector3(0, 0, Random.Range(295, 335));
+                 }
+                 else
+                 {
+                     if (_posX1 > limitWith / 2)
+                     {
+                         _tr.eulerAngles = new Vector3(0, 0, Random.Range(-155, -115));
+                     }
+                     else
+                     {
+                         _tr.eulerAngles = new Vector3(0, 0, Random.Range(-135, -35));
+                     }
+                 }
+                 break;
+
+             case 2:
+
+                 float _posX2 = Random.Range(-limitWith + 1, limitWith - 1);
+                 _tr.position = new Vector3(_posX2, -limitHieght - 1 - _distance,3);
+                 if (_posX2 < -limitWith / 2)
+                 {
+                     _tr.eulerAngles = new Vector3(0, 0, Random.Range(25, 65));
+                 }
+                 else
+                 {
+                     if (_posX2 > limitWith / 2)
+                     {
+                         _tr.eulerAngles = new Vector3(0, 0, Random.Range(115, 155));
+                     }
+                     else
+                     {
+                         _tr.eulerAngles = new Vector3(0, 0, Random.Range(35, 145));
+                     }
+                 }
+                 break;
+
+             case 3:
+                 float _posY3 = Random.Range(-limitHieght + 1, limitHieght - 1);
+                 _tr.position = new Vector3(limitWith + 1 + _distance, _posY3,4);
+                 if (_posY3 < -limitHieght / 2)
+                 {
+                     _tr.eulerAngles = new Vector3(0, 0, Random.Range(115, 165));
+                 }
+                 else
+                 {
+                     if (_posY3 > limitHieght / 2)
+                     {
+                         _tr.eulerAngles = new Vector3(0, 0, Random.Range(205, 245));
+                     }
+                     else
+                     {
+                         _tr.eulerAngles = new Vector3(0, 0, Random.Range(135, 235));
+                     }
+                 }
+                 break;
+         }*/
+
+
 
 
 

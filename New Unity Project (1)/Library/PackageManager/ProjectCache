@@ -238,7 +238,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Editor
-      type: 
+      type: asset
       description: The Version Control package gives you the ability to use either
         Collaborate or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic
         SCM for Unity (beta), a Plastic SCM subscription is required. Learn more
@@ -298,6 +298,7 @@ m_PackageAssets:
         - 1.17.1
         - 1.17.2
         - 1.17.6
+        - 1.17.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -311,6 +312,7 @@ m_PackageAssets:
         compatible:
         - 1.17.2
         - 1.17.6
+        - 1.17.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -321,7 +323,7 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.17.6
+        verified: 1.17.7
       dependencies:
       - name: com.unity.services.core
         version: 1.0.1
@@ -352,7 +354,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -733,7 +735,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Unity Test Framework
-      type: 
+      type: asset
       description: Test framework for running Edit mode and Play mode tests in Unity.
       status: 4
       errors: []
@@ -775,6 +777,7 @@ m_PackageAssets:
         - 1.1.33
         - 1.3.0
         - 2.0.1-exp.1
+        - 2.0.1-exp.2
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         compatible:
@@ -782,6 +785,7 @@ m_PackageAssets:
         - 1.1.33
         - 1.3.0
         - 2.0.1-exp.1
+        - 2.0.1-exp.2
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         verified: 1.1.33
@@ -810,7 +814,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1084,6 +1088,7 @@ m_PackageAssets:
         - 1.7.0
         - 1.7.1
         - 1.7.2
+        - 1.8.0
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1113,6 +1118,7 @@ m_PackageAssets:
         - 1.7.0
         - 1.7.1
         - 1.7.2
+        - 1.8.0
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -1201,6 +1207,7 @@ m_PackageAssets:
         - 2.0.0
         - 2.0.1
         - 2.0.2
+        - 2.0.3
         compatible:
         - 0.1.4-preview
         - 0.1.5-preview
@@ -1223,6 +1230,7 @@ m_PackageAssets:
         - 2.0.0
         - 2.0.1
         - 2.0.2
+        - 2.0.3
         verified: 
       dependencies:
       - name: com.unity.sysroot
@@ -3222,6 +3230,7 @@ m_PackageAssets:
         - 2.0.0
         - 2.0.2
         - 2.0.3
+        - 2.0.4
         compatible:
         - 0.1.7-preview
         - 0.1.8-preview
@@ -3239,6 +3248,7 @@ m_PackageAssets:
         - 2.0.0
         - 2.0.2
         - 2.0.3
+        - 2.0.4
         verified: 
       dependencies: []
       resolvedDependencies: []
@@ -3301,6 +3311,7 @@ m_PackageAssets:
         - 2.0.0
         - 2.0.1
         - 2.0.2
+        - 2.0.3
         compatible:
         - 0.1.6-preview
         - 0.1.7-preview
@@ -3316,6 +3327,7 @@ m_PackageAssets:
         - 2.0.0
         - 2.0.1
         - 2.0.2
+        - 2.0.3
         verified: 
       dependencies:
       - name: com.unity.sysroot
