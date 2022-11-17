@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815038372712662
 Transform:
   m_ObjectHideFlags: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -93,7 +93,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815038517633426
 Transform:
   m_ObjectHideFlags: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -168,7 +168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815038574416195
 Transform:
   m_ObjectHideFlags: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -243,7 +243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815038596866740
 Transform:
   m_ObjectHideFlags: 0
@@ -296,7 +296,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -320,7 +320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815038644751065
 Transform:
   m_ObjectHideFlags: 0
@@ -372,7 +372,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -396,7 +396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815038787240740
 Transform:
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -547,7 +547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815038876909949
 Transform:
   m_ObjectHideFlags: 0
@@ -599,7 +599,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -701,7 +701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815039555114255
 Transform:
   m_ObjectHideFlags: 0
@@ -754,7 +754,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -778,7 +778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815039588459257
 Transform:
   m_ObjectHideFlags: 0
@@ -829,7 +829,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -853,7 +853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815040061112825
 Transform:
   m_ObjectHideFlags: 0
@@ -904,7 +904,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
@@ -928,7 +928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3993815040412314059
 Transform:
   m_ObjectHideFlags: 0
@@ -979,7 +979,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 134145
+  Flags: 3073
   NetworkGuid:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []

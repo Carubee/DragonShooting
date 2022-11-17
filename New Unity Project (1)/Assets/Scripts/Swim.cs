@@ -31,7 +31,6 @@ public class Swim : NetworkBehaviour
     void OnEnable()
     {
         _tr = transform;
-        _tr.position = new Vector3(0, 0, 10);
     }
     public void Init(Vector3 forward)
     {
@@ -63,7 +62,7 @@ public class Swim : NetworkBehaviour
         mCurRotateData.rotateDelta = 0F;
     }
 
-    public   void Update()
+    public  void Update()
     {
         if (Freeze == true)
             FreezeTime += Time.deltaTime;
@@ -94,10 +93,16 @@ public class Swim : NetworkBehaviour
             Freeze = true;
         }
     }
-    [Rpc(RpcSources.StateAuthority,RpcTargets.All)]
+    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     public void Rpc_Pose()
     {
-        gameObject.transform.position = gameObject.transform.position;
+        //gameObject.transform.position = gameObject.transform.position;
+        Rpc_PoseServer();
+    }
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void Rpc_PoseServer()
+    {
+        //gameObject.transform.position = gameObject.transform.position;
     }
     
 }

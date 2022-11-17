@@ -20453,6 +20453,15 @@ IL_0027:
 		return il2cpp_codegen_cast_double_to_int<int32_t>(((double)il2cpp_codegen_multiply((double)L_5, (double)((double)((double)L_6)))));
 	}
 }
+// System.Double System.Random::NextDouble()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Random_NextDouble_m6193384C8ECEB23AFF6395780879F93BD0FEEE68 (Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118 * __this, const RuntimeMethod* method)
+{
+	{
+		double L_0;
+		L_0 = VirtFuncInvoker0< double >::Invoke(4 /* System.Double System.Random::Sample() */, __this);
+		return L_0;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

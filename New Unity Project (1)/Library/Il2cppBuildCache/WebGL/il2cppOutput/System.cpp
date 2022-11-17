@@ -758,6 +758,8 @@ struct Thread_tB9EB71664220EE16451AF3276D78DE6614D2A414;
 struct ThreadStart_tA13019555BA3CB2B0128F0880760196BF790E687;
 // Mono.Security.Interface.TlsException
 struct TlsException_tBC19BACCB2035C8415888FA80A1FD8BD0DFA4AC9;
+// System.Diagnostics.TraceFilter
+struct TraceFilter_t24F0CBA64D072E80156F00790EA506AFC708E8F8;
 // System.Diagnostics.TraceListener
 struct TraceListener_t769B47C3EA3223AE8329BFC3AA88E23B22785709;
 // System.Type
@@ -7746,6 +7748,8 @@ public:
 	bool ___needIndent_3;
 	// System.String System.Diagnostics.TraceListener::listenerName
 	String_t* ___listenerName_4;
+	// System.Diagnostics.TraceFilter System.Diagnostics.TraceListener::filter
+	TraceFilter_t24F0CBA64D072E80156F00790EA506AFC708E8F8 * ___filter_5;
 
 public:
 	inline static int32_t get_offset_of_indentLevel_1() { return static_cast<int32_t>(offsetof(TraceListener_t769B47C3EA3223AE8329BFC3AA88E23B22785709, ___indentLevel_1)); }
@@ -7779,6 +7783,15 @@ public:
 	{
 		___listenerName_4 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___listenerName_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_filter_5() { return static_cast<int32_t>(offsetof(TraceListener_t769B47C3EA3223AE8329BFC3AA88E23B22785709, ___filter_5)); }
+	inline TraceFilter_t24F0CBA64D072E80156F00790EA506AFC708E8F8 * get_filter_5() const { return ___filter_5; }
+	inline TraceFilter_t24F0CBA64D072E80156F00790EA506AFC708E8F8 ** get_address_of_filter_5() { return &___filter_5; }
+	inline void set_filter_5(TraceFilter_t24F0CBA64D072E80156F00790EA506AFC708E8F8 * value)
+	{
+		___filter_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___filter_5), (void*)value);
 	}
 };
 
@@ -9238,16 +9251,16 @@ struct DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468  : public 
 {
 public:
 	// System.String System.Diagnostics.DefaultTraceListener::logFileName
-	String_t* ___logFileName_8;
+	String_t* ___logFileName_9;
 
 public:
-	inline static int32_t get_offset_of_logFileName_8() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468, ___logFileName_8)); }
-	inline String_t* get_logFileName_8() const { return ___logFileName_8; }
-	inline String_t** get_address_of_logFileName_8() { return &___logFileName_8; }
-	inline void set_logFileName_8(String_t* value)
+	inline static int32_t get_offset_of_logFileName_9() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468, ___logFileName_9)); }
+	inline String_t* get_logFileName_9() const { return ___logFileName_9; }
+	inline String_t** get_address_of_logFileName_9() { return &___logFileName_9; }
+	inline void set_logFileName_9(String_t* value)
 	{
-		___logFileName_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___logFileName_8), (void*)value);
+		___logFileName_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___logFileName_9), (void*)value);
 	}
 };
 
@@ -9255,37 +9268,37 @@ struct DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFiel
 {
 public:
 	// System.Boolean System.Diagnostics.DefaultTraceListener::OnWin32
-	bool ___OnWin32_5;
+	bool ___OnWin32_6;
 	// System.String System.Diagnostics.DefaultTraceListener::MonoTracePrefix
-	String_t* ___MonoTracePrefix_6;
+	String_t* ___MonoTracePrefix_7;
 	// System.String System.Diagnostics.DefaultTraceListener::MonoTraceFile
-	String_t* ___MonoTraceFile_7;
+	String_t* ___MonoTraceFile_8;
 
 public:
-	inline static int32_t get_offset_of_OnWin32_5() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields, ___OnWin32_5)); }
-	inline bool get_OnWin32_5() const { return ___OnWin32_5; }
-	inline bool* get_address_of_OnWin32_5() { return &___OnWin32_5; }
-	inline void set_OnWin32_5(bool value)
+	inline static int32_t get_offset_of_OnWin32_6() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields, ___OnWin32_6)); }
+	inline bool get_OnWin32_6() const { return ___OnWin32_6; }
+	inline bool* get_address_of_OnWin32_6() { return &___OnWin32_6; }
+	inline void set_OnWin32_6(bool value)
 	{
-		___OnWin32_5 = value;
+		___OnWin32_6 = value;
 	}
 
-	inline static int32_t get_offset_of_MonoTracePrefix_6() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields, ___MonoTracePrefix_6)); }
-	inline String_t* get_MonoTracePrefix_6() const { return ___MonoTracePrefix_6; }
-	inline String_t** get_address_of_MonoTracePrefix_6() { return &___MonoTracePrefix_6; }
-	inline void set_MonoTracePrefix_6(String_t* value)
+	inline static int32_t get_offset_of_MonoTracePrefix_7() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields, ___MonoTracePrefix_7)); }
+	inline String_t* get_MonoTracePrefix_7() const { return ___MonoTracePrefix_7; }
+	inline String_t** get_address_of_MonoTracePrefix_7() { return &___MonoTracePrefix_7; }
+	inline void set_MonoTracePrefix_7(String_t* value)
 	{
-		___MonoTracePrefix_6 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___MonoTracePrefix_6), (void*)value);
+		___MonoTracePrefix_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___MonoTracePrefix_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_MonoTraceFile_7() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields, ___MonoTraceFile_7)); }
-	inline String_t* get_MonoTraceFile_7() const { return ___MonoTraceFile_7; }
-	inline String_t** get_address_of_MonoTraceFile_7() { return &___MonoTraceFile_7; }
-	inline void set_MonoTraceFile_7(String_t* value)
+	inline static int32_t get_offset_of_MonoTraceFile_8() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields, ___MonoTraceFile_8)); }
+	inline String_t* get_MonoTraceFile_8() const { return ___MonoTraceFile_8; }
+	inline String_t** get_address_of_MonoTraceFile_8() { return &___MonoTraceFile_8; }
+	inline void set_MonoTraceFile_8(String_t* value)
 	{
-		___MonoTraceFile_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___MonoTraceFile_7), (void*)value);
+		___MonoTraceFile_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___MonoTraceFile_8), (void*)value);
 	}
 };
 
@@ -32861,8 +32874,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultTraceListener__cctor_mBDFD439C796
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Path_tF1D95B78D57C1C1211BA6633FF2AC22FD6C48921_il2cpp_TypeInfo_var);
 		Il2CppChar L_0 = ((Path_tF1D95B78D57C1C1211BA6633FF2AC22FD6C48921_StaticFields*)il2cpp_codegen_static_fields_for(Path_tF1D95B78D57C1C1211BA6633FF2AC22FD6C48921_il2cpp_TypeInfo_var))->get_DirectorySeparatorChar_2();
-		((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->set_OnWin32_5((bool)((((int32_t)L_0) == ((int32_t)((int32_t)92)))? 1 : 0));
-		bool L_1 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_OnWin32_5();
+		((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->set_OnWin32_6((bool)((((int32_t)L_0) == ((int32_t)((int32_t)92)))? 1 : 0));
+		bool L_1 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_OnWin32_6();
 		if (L_1)
 		{
 			goto IL_0086;
@@ -32939,9 +32952,9 @@ IL_0072:
 IL_007a:
 	{
 		String_t* L_14 = V_1;
-		((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->set_MonoTraceFile_7(L_14);
+		((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->set_MonoTraceFile_8(L_14);
 		String_t* L_15 = V_2;
-		((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->set_MonoTracePrefix_6(L_15);
+		((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->set_MonoTracePrefix_7(L_15);
 	}
 
 IL_0086:
@@ -33003,7 +33016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultTraceListener__ctor_m73581B282436
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DefaultTraceListener_get_LogFileName_m0C130815D958E99C4EEE8F188539987F28FDB9E3 (DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468 * __this, const RuntimeMethod* method)
 {
 	{
-		String_t* L_0 = __this->get_logFileName_8();
+		String_t* L_0 = __this->get_logFileName_9();
 		return L_0;
 	}
 }
@@ -33025,7 +33038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultTraceListener_WriteDebugString_m6
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var);
-		bool L_0 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_OnWin32_5();
+		bool L_0 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_OnWin32_6();
 		if (!L_0)
 		{
 			goto IL_000e;
@@ -33060,7 +33073,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultTraceListener_WriteMonoTrace_m659
 	String_t* V_0 = NULL;
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var);
-		String_t* L_0 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_MonoTraceFile_7();
+		String_t* L_0 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_MonoTraceFile_8();
 		V_0 = L_0;
 		String_t* L_1 = V_0;
 		bool L_2;
@@ -33107,7 +33120,7 @@ IL_003a:
 	{
 		String_t* L_9 = ___message0;
 		IL2CPP_RUNTIME_CLASS_INIT(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var);
-		String_t* L_10 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_MonoTraceFile_7();
+		String_t* L_10 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_MonoTraceFile_8();
 		DefaultTraceListener_WriteLogFile_mCAD99214E3905446651E55E9B81228DE91392241(__this, L_9, L_10, /*hidden argument*/NULL);
 		return;
 	}
@@ -33123,7 +33136,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultTraceListener_WritePrefix_mFB5F40
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var);
-		bool L_0 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_OnWin32_5();
+		bool L_0 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_OnWin32_6();
 		if (L_0)
 		{
 			goto IL_0012;
@@ -33131,7 +33144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultTraceListener_WritePrefix_mFB5F40
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var);
-		String_t* L_1 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_MonoTracePrefix_6();
+		String_t* L_1 = ((DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_StaticFields*)il2cpp_codegen_static_fields_for(DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468_il2cpp_TypeInfo_var))->get_MonoTracePrefix_7();
 		DefaultTraceListener_WriteMonoTrace_m659A16E6E3BB32F6C032F5506D3C26A2DE339AEE(__this, L_1, /*hidden argument*/NULL);
 	}
 
@@ -43320,7 +43333,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TraceListener_get_NeedIndent
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* DefaultTraceListener_get_LogFileName_m0C130815D958E99C4EEE8F188539987F28FDB9E3_inline (DefaultTraceListener_t647482A20D5B546020E7A55D07263DD04D7FC468 * __this, const RuntimeMethod* method)
 {
 	{
-		String_t* L_0 = __this->get_logFileName_8();
+		String_t* L_0 = __this->get_logFileName_9();
 		return L_0;
 	}
 }

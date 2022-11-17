@@ -71,8 +71,8 @@ public class gunMode : NetworkBehaviour
     }
 
 
-    
 
+    
     public  void Update()
     {
         //if (Runner.IsServer) return;
@@ -87,6 +87,7 @@ public class gunMode : NetworkBehaviour
             TimeDouble += Time.deltaTime;
         }
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.up = mousePos - new Vector2(transform.position.x, transform.position.y);
         Rpc_RotateCilent(mousePos);
 
 
@@ -478,7 +479,7 @@ public class gunMode : NetworkBehaviour
         }
         if (seatNum == 2)
         {
-            transform.position = new Vector3(3.27f, -3.273f, -4.55f);
+            Runner.transform.position = new Vector3(3.27f, -3.273f, -4.55f);
         }
         if (seatNum == 3)
         {
@@ -531,8 +532,7 @@ public class gunMode : NetworkBehaviour
     [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     public void Rpc_RotateCilent(Vector2 angle)
     {
-        transform.up = angle - new Vector2(transform.position.x, transform.position.y);
-
+        transform.eulerAngles = angle;
     }
     
 }

@@ -15,9 +15,8 @@ GameObject:
   - component: {fileID: 9539036}
   - component: {fileID: 21208584}
   - component: {fileID: 6199942}
-  - component: {fileID: -4467337199602843483}
-  - component: {fileID: -5938500195316366277}
   - component: {fileID: -1528341717083218926}
+  - component: {fileID: -5555522738949020376}
   m_Layer: 0
   m_Name: Fish5Follow
   m_TagString: fish
@@ -53,6 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b53b64b2d64cd84d9cd6b6b774b54af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   BoundCircleRadius: 0.4
   RotateSpeed: 60
@@ -87,6 +88,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231b4857cddcd214bbe2942cf478d85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   AnimationName: fish5swim
   AnimationNameDie: fish5die
@@ -203,55 +206,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0464112, y: 0.41294336}
   m_EdgeRadius: 0
---- !u!50 &-4467337199602843483
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 121100}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-5938500195316366277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 121100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1779252708, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!114 &-1528341717083218926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,8 +230,38 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 11423734}
   - {fileID: 11473448}
-  - {fileID: -5938500195316366277}
+  - {fileID: -5555522738949020376}
   SimulationBehaviours: []
+--- !u!114 &-5555522738949020376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 1
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1001 &3892600941834779131
 PrefabInstance:
   m_ObjectHideFlags: 0

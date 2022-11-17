@@ -15,9 +15,8 @@ GameObject:
   - component: {fileID: 9546774}
   - component: {fileID: 21202106}
   - component: {fileID: 6141242}
-  - component: {fileID: 705981865322460511}
   - component: {fileID: 5725752637172067544}
-  - component: {fileID: 8298882326892831689}
+  - component: {fileID: -431913824616910848}
   m_Layer: 0
   m_Name: Fish1Flock
   m_TagString: fish
@@ -54,6 +53,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b53b64b2d64cd84d9cd6b6b774b54af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   BoundCircleRadius: 0.4
   RotateSpeed: 20
@@ -85,6 +86,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231b4857cddcd214bbe2942cf478d85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   AnimationName: fish1swim
   AnimationNameDie: fish1die
@@ -182,7 +185,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110020}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -201,27 +204,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5507789, y: 0.15188706}
   m_EdgeRadius: 0
---- !u!50 &705981865322460511
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110020}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &5725752637172067544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,21 +228,23 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 11435650}
   - {fileID: 11491204}
-  - {fileID: 8298882326892831689}
+  - {fileID: -431913824616910848}
   SimulationBehaviours: []
---- !u!114 &8298882326892831689
+--- !u!114 &-431913824616910848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110020}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1779252708, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 1
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 0}
   InterpolateErrorCorrection: 1

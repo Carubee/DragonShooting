@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 564599842314950118}
   - component: {fileID: 564599842314950116}
   - component: {fileID: 285201116038492732}
-  - component: {fileID: 3042587683683912747}
-  - component: {fileID: 7537979133634343265}
+  - component: {fileID: -5256322672335633545}
   m_Layer: 0
   m_Name: GunPivot
   m_TagString: Player
@@ -99,6 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e80e7c3f73bdb45b2a580f376324f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   mode: NormalGun
   Bullet: {fileID: 142546, guid: 486a1d0e74310e246946a7037ed7275a, type: 3}
@@ -171,58 +172,26 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 564599842314950116}
-  - {fileID: 7537979133634343265}
   - {fileID: 4375623912400405697}
   SimulationBehaviours: []
---- !u!50 &3042587683683912747
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!143 &-5256322672335633545
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564599842314950120}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &7537979133634343265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564599842314950120}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1779252708, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 2
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
+  serializedVersion: 2
+  m_Height: 1.07
+  m_Radius: 0.565
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &564599843058063023
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 0}

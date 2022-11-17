@@ -42,7 +42,7 @@ public class FishControl : NetworkBehaviour
     {
         _checkInvisible = false;
         _ani = GetComponent<Animator>();
-        _ani.Play(AnimationName, 0, Random.Range(0f, 1f));
+        //_ani.Play(AnimationName, 0, Random.Range(0f, 1f));
 
         _swim = GetComponent<Swim>();
 
@@ -209,9 +209,12 @@ public class FishControl : NetworkBehaviour
 
     void OnDestroy()
     {
+        if (Runner == null) return;
+        Runner.Despawn(Object);
         if (gameObject.tag == "fish")
         {
-            FishManage.Instance._FishMange.Remove(transform);
+            //FishManage.Instance._FishMange.Remove(transform);
+            //Runner.Despawn(Object);
             if (gameObject.name == "Fish12FreeSign(Clone)" || gameObject.name == "Fish11FreeSign(Clone)")
             {
                 FishManage.Instance._CaMapManage.Remove(transform);

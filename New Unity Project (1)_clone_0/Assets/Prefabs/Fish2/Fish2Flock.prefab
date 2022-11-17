@@ -16,8 +16,7 @@ GameObject:
   - component: {fileID: 21224978}
   - component: {fileID: 6140030}
   - component: {fileID: -4397630553040403265}
-  - component: {fileID: 2932450945563944235}
-  - component: {fileID: -7483147573330752826}
+  - component: {fileID: -6545079551662921104}
   m_Layer: 0
   m_Name: Fish2Flock
   m_TagString: fish
@@ -53,6 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b53b64b2d64cd84d9cd6b6b774b54af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   BoundCircleRadius: 0.4
   RotateSpeed: 20
@@ -84,6 +85,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231b4857cddcd214bbe2942cf478d85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   AnimationName: fish2swim
   AnimationNameDie: fish2die
@@ -224,30 +227,9 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 11499738}
   - {fileID: 11481522}
-  - {fileID: -7483147573330752826}
+  - {fileID: -6545079551662921104}
   SimulationBehaviours: []
---- !u!50 &2932450945563944235
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138562}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-7483147573330752826
+--- !u!114 &-6545079551662921104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,10 +238,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 138562}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1779252708, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 1
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 0}
   InterpolateErrorCorrection: 1

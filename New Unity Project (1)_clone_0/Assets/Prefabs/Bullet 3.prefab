@@ -171,7 +171,9 @@ MonoBehaviour:
   m_Script: {fileID: -1779252708, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 3
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 4227468661462007230}
   InterpolateErrorCorrection: 1

@@ -29,19 +29,16 @@ public class FishTypeSpawmControl : NetworkBehaviour
         
 
     }
-    public void count()
-    {
-
-    }
-
+    
     IEnumerator spawm(float starttime)
     {
         yield return new WaitForSeconds(starttime);
         int a = Random.Range(0, _pre.Length);
         int directionPos = Random.Range(0, 6);
         Transform _tr;
+        _tr = Runner.Spawn(_pre[a]).transform;
         
-        switch (directionPos)
+        /*switch (directionPos)
         {
                 case 0:
                  _tr = Runner.Spawn(_pre[a], new Vector3(7, -5, 0), Quaternion.Euler(0, 0, Random.Range(110, 150))).transform;
@@ -115,11 +112,9 @@ public class FishTypeSpawmControl : NetworkBehaviour
                         break;
                 }
                 break;
-
-
-        }
+        }*/
         
-        /* int directionPos = Random.Range(0, 4);
+
          switch (directionPos)
          {
              case 0:
@@ -202,8 +197,16 @@ public class FishTypeSpawmControl : NetworkBehaviour
                      }
                  }
                  break;
-         }*/
-
+         }
+        switch (a)
+        {
+            case 2:
+                _tr.GetComponent<FishFlockLeaderControl>().FlockStart();
+                break;
+            case 1:
+                _tr.GetComponent<FishFollowLeaderControl>().FollowStart();
+                break;
+        }
 
 
 
