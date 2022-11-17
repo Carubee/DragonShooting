@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - NGUITransformInspector
     Assembly-CSharp.dll:
     - BalistaHitbox
     - Bonus1Control
@@ -34,6 +36,7 @@ ScriptsOnlyBuild:
     - OpenOptioon
     - PlayerAOIPrototype
     - SciFiBeamStatic
+    - SciFiLightFlicker
     - SpawnNetwork
     - Swim
     - UI.Dialogs.uDialog
@@ -161,195 +164,195 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1988}
-    - Class: 114
       Script: {instanceID: 1992}
     - Class: 114
       Script: {instanceID: 1994}
     - Class: 114
       Script: {instanceID: 1996}
     - Class: 114
-      Script: {instanceID: 2002}
+      Script: {instanceID: 1998}
     - Class: 114
-      Script: {instanceID: 2322}
+      Script: {instanceID: 2006}
     - Class: 114
-      Script: {instanceID: 2412}
+      Script: {instanceID: 13438}
     - Class: 114
-      Script: {instanceID: 2436}
+      Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 2522}
+      Script: {instanceID: 13552}
     - Class: 114
-      Script: {instanceID: 2594}
+      Script: {instanceID: 13638}
     - Class: 114
-      Script: {instanceID: 2630}
+      Script: {instanceID: 13710}
     - Class: 114
-      Script: {instanceID: 2668}
+      Script: {instanceID: 13746}
     - Class: 114
-      Script: {instanceID: 2736}
+      Script: {instanceID: 13784}
     - Class: 114
-      Script: {instanceID: 2920}
+      Script: {instanceID: 13852}
     - Class: 114
-      Script: {instanceID: 3048}
+      Script: {instanceID: 14036}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 14164}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 14230}
     - Class: 114
-      Script: {instanceID: 3762}
+      Script: {instanceID: 14610}
     - Class: 114
-      Script: {instanceID: 3930}
+      Script: {instanceID: 14878}
     - Class: 114
-      Script: {instanceID: 4004}
+      Script: {instanceID: 15044}
     - Class: 114
-      Script: {instanceID: 4064}
+      Script: {instanceID: 15118}
     - Class: 114
-      Script: {instanceID: 4088}
+      Script: {instanceID: 15178}
     - Class: 114
-      Script: {instanceID: 4116}
+      Script: {instanceID: 15202}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 15230}
     - Class: 114
-      Script: {instanceID: 4144}
+      Script: {instanceID: 15248}
     - Class: 114
-      Script: {instanceID: 4172}
+      Script: {instanceID: 15258}
     - Class: 114
-      Script: {instanceID: 4206}
+      Script: {instanceID: 15286}
     - Class: 114
-      Script: {instanceID: 4376}
+      Script: {instanceID: 15320}
     - Class: 114
-      Script: {instanceID: 4454}
+      Script: {instanceID: 15490}
     - Class: 114
-      Script: {instanceID: 4806}
+      Script: {instanceID: 15568}
     - Class: 114
-      Script: {instanceID: 4846}
+      Script: {instanceID: 15920}
     - Class: 114
-      Script: {instanceID: 5086}
+      Script: {instanceID: 15960}
     - Class: 114
-      Script: {instanceID: 5418}
+      Script: {instanceID: 16200}
     - Class: 114
-      Script: {instanceID: 5722}
+      Script: {instanceID: 16532}
     - Class: 114
-      Script: {instanceID: 5744}
+      Script: {instanceID: 16836}
     - Class: 114
-      Script: {instanceID: 6016}
+      Script: {instanceID: 16858}
     - Class: 114
-      Script: {instanceID: 6066}
+      Script: {instanceID: 17130}
     - Class: 114
-      Script: {instanceID: 6344}
+      Script: {instanceID: 17180}
     - Class: 114
-      Script: {instanceID: 6414}
+      Script: {instanceID: 17458}
     - Class: 114
-      Script: {instanceID: 6508}
+      Script: {instanceID: 17528}
     - Class: 114
-      Script: {instanceID: 6522}
+      Script: {instanceID: 17622}
     - Class: 114
-      Script: {instanceID: 6590}
+      Script: {instanceID: 17636}
     - Class: 114
-      Script: {instanceID: 6756}
+      Script: {instanceID: 17704}
     - Class: 114
-      Script: {instanceID: 6796}
+      Script: {instanceID: 17870}
     - Class: 114
-      Script: {instanceID: 6918}
+      Script: {instanceID: 17910}
     - Class: 114
-      Script: {instanceID: 6922}
+      Script: {instanceID: 18032}
     - Class: 114
-      Script: {instanceID: 7162}
+      Script: {instanceID: 18036}
     - Class: 114
-      Script: {instanceID: 7216}
+      Script: {instanceID: 18276}
     - Class: 114
-      Script: {instanceID: 7284}
+      Script: {instanceID: 18330}
     - Class: 114
-      Script: {instanceID: 7366}
+      Script: {instanceID: 18398}
     - Class: 114
-      Script: {instanceID: 7370}
+      Script: {instanceID: 18480}
     - Class: 114
-      Script: {instanceID: 7382}
+      Script: {instanceID: 18484}
     - Class: 114
-      Script: {instanceID: 7408}
+      Script: {instanceID: 18496}
     - Class: 114
-      Script: {instanceID: 7420}
+      Script: {instanceID: 18522}
     - Class: 114
-      Script: {instanceID: 7436}
+      Script: {instanceID: 18534}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 18550}
     - Class: 114
-      Script: {instanceID: 7508}
+      Script: {instanceID: 18552}
     - Class: 114
-      Script: {instanceID: 7532}
+      Script: {instanceID: 18622}
     - Class: 114
-      Script: {instanceID: 7552}
+      Script: {instanceID: 18644}
     - Class: 114
-      Script: {instanceID: 7554}
+      Script: {instanceID: 18664}
     - Class: 114
-      Script: {instanceID: 7556}
+      Script: {instanceID: 18666}
     - Class: 114
-      Script: {instanceID: 7580}
+      Script: {instanceID: 18668}
     - Class: 114
-      Script: {instanceID: 7636}
+      Script: {instanceID: 18692}
     - Class: 114
-      Script: {instanceID: 7690}
+      Script: {instanceID: 18748}
     - Class: 114
-      Script: {instanceID: 7738}
+      Script: {instanceID: 18802}
     - Class: 114
-      Script: {instanceID: 7784}
+      Script: {instanceID: 18850}
     - Class: 114
-      Script: {instanceID: 7808}
+      Script: {instanceID: 18896}
     - Class: 114
-      Script: {instanceID: 7836}
+      Script: {instanceID: 18920}
     - Class: 114
-      Script: {instanceID: 7878}
+      Script: {instanceID: 18948}
     - Class: 114
-      Script: {instanceID: 8006}
+      Script: {instanceID: 18990}
     - Class: 114
-      Script: {instanceID: 8132}
+      Script: {instanceID: 19118}
     - Class: 114
-      Script: {instanceID: 8322}
+      Script: {instanceID: 19244}
     - Class: 114
-      Script: {instanceID: 8348}
+      Script: {instanceID: 19434}
     - Class: 114
-      Script: {instanceID: 8404}
+      Script: {instanceID: 19460}
     - Class: 114
-      Script: {instanceID: 8528}
+      Script: {instanceID: 19516}
     - Class: 114
-      Script: {instanceID: 8530}
+      Script: {instanceID: 19640}
     - Class: 114
-      Script: {instanceID: 8574}
+      Script: {instanceID: 19642}
     - Class: 114
-      Script: {instanceID: 8632}
+      Script: {instanceID: 19686}
     - Class: 114
-      Script: {instanceID: 8634}
+      Script: {instanceID: 19744}
     - Class: 114
-      Script: {instanceID: 8640}
+      Script: {instanceID: 19746}
     - Class: 114
-      Script: {instanceID: 8716}
+      Script: {instanceID: 19752}
     - Class: 114
-      Script: {instanceID: 8740}
+      Script: {instanceID: 19828}
     - Class: 114
-      Script: {instanceID: 9028}
+      Script: {instanceID: 19852}
     - Class: 114
-      Script: {instanceID: 9140}
+      Script: {instanceID: 20140}
     - Class: 114
-      Script: {instanceID: 9188}
+      Script: {instanceID: 20252}
     - Class: 114
-      Script: {instanceID: 9474}
+      Script: {instanceID: 20300}
     - Class: 114
-      Script: {instanceID: 9698}
+      Script: {instanceID: 20586}
     - Class: 114
-      Script: {instanceID: 10050}
+      Script: {instanceID: 20810}
     - Class: 114
-      Script: {instanceID: 10062}
+      Script: {instanceID: 21162}
     - Class: 114
-      Script: {instanceID: 10086}
+      Script: {instanceID: 21174}
     - Class: 114
-      Script: {instanceID: 10166}
+      Script: {instanceID: 21198}
     - Class: 114
-      Script: {instanceID: 10306}
+      Script: {instanceID: 21278}
     - Class: 114
-      Script: {instanceID: 10316}
+      Script: {instanceID: 21418}
     - Class: 114
-      Script: {instanceID: 10342}
+      Script: {instanceID: 21428}
     - Class: 114
-      Script: {instanceID: 31108}
+      Script: {instanceID: 21454}
+    - Class: 114
+      Script: {instanceID: 35496}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -395,22 +398,22 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: eaece91a420053a39322eb9cbbb80d1b
+    assemblyName: Fusion.Runtime.dll
+    namespaceName: Fusion
+    className: NetworkTransform
+  - hash:
+      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 65896ced9ac348d6600020f7a770dcdc
+      Hash: eaece91a420053a39322eb9cbbb80d1b
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkRigidbody
-  - hash:
-      serializedVersion: 2
-      Hash: 65896ced9ac348d6600020f7a770dcdc
-    assemblyName: Fusion.Runtime.dll
-    namespaceName: Fusion
-    className: NetworkTransform
   - hash:
       serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
@@ -1241,7 +1244,7 @@ ScriptsOnlyBuild:
     className: TweenPosition
   - hash:
       serializedVersion: 2
-      Hash: 8e7595ced5b0c11c269eb478deb7dfe0
+      Hash: 3fdc4bc3e81f7c3f941775093a83c0d3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FishFollowLeaderControl
@@ -1295,7 +1298,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 716de68246dd127378b0a79b576a37f9
+      Hash: 414bce7f79c550d9515f5de751a3556c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerAOIPrototype
@@ -1307,7 +1310,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: e361910b80956c9cd0d62b9ca1ab11d7
+      Hash: d896899da415f119eee757ad63e39fdf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FishControl
@@ -1595,7 +1598,7 @@ ScriptsOnlyBuild:
     className: RandomSFX
   - hash:
       serializedVersion: 2
-      Hash: d18a40d0f3bcbb3ef4b413aabbfa2faa
+      Hash: 25df77f1ca6e2d4fe27538ade6c1b999
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Swim
@@ -1883,7 +1886,7 @@ ScriptsOnlyBuild:
     className: UIAtlas
   - hash:
       serializedVersion: 2
-      Hash: 5a110e1947f0178e72dba04e35a4527d
+      Hash: f3dba9d15dcf196906d3834eb8d1066d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnTest
@@ -2333,7 +2336,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 78e7d8bd994b5c0ca8df8ad72a2a5e25
+      Hash: 157e8e45f5d96769c320b9aa5e6aa32c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkCharacterControllerPrototype
@@ -2417,7 +2420,7 @@ ScriptsOnlyBuild:
     className: UIPlayAnimation
   - hash:
       serializedVersion: 2
-      Hash: 8fadf92f7a60e169310a43bab02778ab
+      Hash: 0876f7961bca6ba1bbf2056c24b0fd0b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManagerUI
@@ -2555,13 +2558,13 @@ ScriptsOnlyBuild:
     className: HitboxManager
   - hash:
       serializedVersion: 2
-      Hash: 50e5049b1f98a6d8b653b70300993a1d
+      Hash: e7bb9281fe1e4303fa7977a2e106057f
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: HitboxRoot
   - hash:
       serializedVersion: 2
-      Hash: a7f6f94dffe6cfd6c4d1b60e4c0d9fde
+      Hash: 371112ce4681ea7e936970d67aebf9fa
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkCharacterController
@@ -2573,7 +2576,7 @@ ScriptsOnlyBuild:
     className: NetworkEvents
   - hash:
       serializedVersion: 2
-      Hash: fb515c0d92331c29150e3ab00e605580
+      Hash: de982d7464f617dd4d9ccb3cbefd28f0
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkMecanimAnimator
@@ -2597,13 +2600,13 @@ ScriptsOnlyBuild:
     className: NetworkPhysicsSimulation3D
   - hash:
       serializedVersion: 2
-      Hash: caba9b9ddcaebe25e9c7312a7ca38172
+      Hash: 6d7eb0c2dada19bd13f9235862c1f508
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkPosition
   - hash:
       serializedVersion: 2
-      Hash: caba9b9ddcaebe25e9c7312a7ca38172
+      Hash: 6d7eb0c2dada19bd13f9235862c1f508
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkPositionRotation
@@ -2645,19 +2648,19 @@ ScriptsOnlyBuild:
     className: NetworkProjectConfigAsset
   - hash:
       serializedVersion: 2
-      Hash: 65896ced9ac348d6600020f7a770dcdc
+      Hash: eaece91a420053a39322eb9cbbb80d1b
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkRigidbody2D
   - hash:
       serializedVersion: 2
-      Hash: 16c5269d18ae745dd780759e2078a85c
+      Hash: 4fa9294a09a49d12be09529c85783b89
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkRigidbodyObsolete
   - hash:
       serializedVersion: 2
-      Hash: 16c5269d18ae745dd780759e2078a85c
+      Hash: 4fa9294a09a49d12be09529c85783b89
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkRigidbodyObsolete2D
@@ -2669,13 +2672,13 @@ ScriptsOnlyBuild:
     className: NetworkRunner
   - hash:
       serializedVersion: 2
-      Hash: eb6bc51fd7c89b9bf66a8e5129a5cd57
+      Hash: bda28db25ad964ca1795ef40facf1c21
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkTransformAnchor
   - hash:
       serializedVersion: 2
-      Hash: 55068e8573f13e59fb19f5b7f1478472
+      Hash: 3605dd24063ba8116a9d0612c84c3a55
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
     className: NetworkTransformObsolete
@@ -2831,7 +2834,7 @@ ScriptsOnlyBuild:
     className: uDialog_ScreenOverlay
   - hash:
       serializedVersion: 2
-      Hash: 39e6865a4b11668eff5dd59fd767b180
+      Hash: 8d8a9b84e600e58a434afe608fd40470
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FishTypeSpawmControl
@@ -3173,7 +3176,7 @@ ScriptsOnlyBuild:
     className: UIWidgetContainer
   - hash:
       serializedVersion: 2
-      Hash: caba9b9ddcaebe25e9c7312a7ca38172
+      Hash: 6d7eb0c2dada19bd13f9235862c1f508
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetWorkPlayer
@@ -3527,7 +3530,7 @@ ScriptsOnlyBuild:
     className: ETFXProjectileScript
   - hash:
       serializedVersion: 2
-      Hash: 5d6396defe135de7cc5da93988ace4f2
+      Hash: 4ef96ed4030a6e4c94723dd1c51e9d95
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: gunMode
@@ -3683,7 +3686,7 @@ ScriptsOnlyBuild:
     className: PlayerSpawnPointManagerPrototype
   - hash:
       serializedVersion: 2
-      Hash: 102d90ce5b9717e2270af9d1e6c688fe
+      Hash: dcc65ac25cf402709b68719f0e9a4b52
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ControllerPrototype
@@ -3828,4 +3831,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Play4.unity
-  playerPath: C:/Users/Asus/Desktop/Server/DragonHunting.exe
+  playerPath: C:/Users/admin/Desktop/Build3/DragonHunting.exe

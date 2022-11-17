@@ -61,6 +61,7 @@ public class gunMode : NetworkBehaviour
     public float TimeDouble = 10;
     public float AngleRotate;
     public Vector2 mousePos;
+    Camera local;
 
     [Networked] public bool enchance { get; set; }
     [Networked] public int Rotation { get; set; }
@@ -68,16 +69,17 @@ public class gunMode : NetworkBehaviour
     {
         instance = this;
         firerateAmount = 0.5f;
+
+        
     }
+   
 
 
 
-    
     public  void Update()
     {
         //if (Runner.IsServer) return;
         if (!canPlay) return;
-
         if (Input.GetKeyDown("space"))
         {
             UiTextSpawmControl.Instance.PushGold(50);
@@ -470,7 +472,7 @@ public class gunMode : NetworkBehaviour
         rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
     }
    
-        [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
+        [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
     public void Rpc_Spawn(int seatNum)
     {
         if (seatNum == 1)
@@ -479,7 +481,7 @@ public class gunMode : NetworkBehaviour
         }
         if (seatNum == 2)
         {
-            Runner.transform.position = new Vector3(3.27f, -3.273f, -4.55f);
+            transform.position = new Vector3(3.27f, -3.273f, -4.55f);
         }
         if (seatNum == 3)
         {
@@ -529,10 +531,15 @@ public class gunMode : NetworkBehaviour
         Instantiate(upgradeEffect, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y,-4.55f), Quaternion.identity);
 
     }
-    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
     public void Rpc_RotateCilent(Vector2 angle)
     {
-        transform.eulerAngles = angle;
+        transform.up = angle - new Vector2(transform.position.x, transform.position.y);
+
+    }
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void Rpc_RotateServer(Vector2 angle)
+    {
     }
     
 }
