@@ -61,23 +61,19 @@ public class gunMode : NetworkBehaviour
     public float TimeDouble = 10;
     public float AngleRotate;
     public Vector2 mousePos;
+    Camera local;
 
     [Networked] public bool enchance { get; set; }
     [Networked] public int Rotation { get; set; }
     public void Awake()
     {
         instance = this;
-        firerateAmount = 0.5f;
+        firerateAmount = 0.5f;        
     }
-
-
-
-    
     public  void Update()
     {
         //if (Runner.IsServer) return;
         if (!canPlay) return;
-
         if (Input.GetKeyDown("space"))
         {
             UiTextSpawmControl.Instance.PushGold(50);
@@ -95,7 +91,7 @@ public class gunMode : NetworkBehaviour
             firerate += Time.deltaTime;
         if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost)
         {
-            //LaserServerRpc(false);
+            LaserServerRpc(false);
         }
 
         if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
@@ -198,10 +194,8 @@ public class gunMode : NetworkBehaviour
     [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     private void Rpc_ChangeGunCilent(int gunValue)
     {
-        
             gunModel = gunValue;
             Rpc_ChangeGunServer(gunValue);
-        
     }
 
         [Rpc(RpcSources.StateAuthority,RpcTargets.All)]
@@ -287,7 +281,6 @@ public class gunMode : NetworkBehaviour
             gunControl.damage = 10;
             gunModel = 6;
         }
-        //bulletTypeValue.Value = gunValue;
 
     }
     [Rpc(RpcSources.InputAuthority,RpcTargets.StateAuthority)]
@@ -314,26 +307,26 @@ public class gunMode : NetworkBehaviour
     {
         if (gunmode == 1)
         {
-            //GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
-            Runner.Spawn(flashGun, firepoint.position, firepoint.rotation);
+            GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+            //Runner.Spawn(flashGun, firepoint.position, firepoint.rotation);
             Normal(enchance3);
         }
         if (gunmode == 2)
         {
-            //GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
-            Runner.Spawn(flashGun, firepoint2.position, firepoint.rotation);
+            GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
+            //Runner.Spawn(flashGun, firepoint2.position, firepoint.rotation);
             Long(enchance3);
         }
         if (gunmode == 3)
         {
-            //GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
-            Runner.Spawn(flashGun, firepoint.position, firepoint.rotation);
+            GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+            //Runner.Spawn(flashGun, firepoint.position, firepoint.rotation);
             ShootShotgun(enchance3);
         }
         if (gunmode == 4)
         {
-            //GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
-            Runner.Spawn(flashGun, firepoint2.position, firepoint.rotation);
+            GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
+            //Runner.Spawn(flashGun, firepoint2.position, firepoint.rotation);
             Gatling(enchance3);
         }
 
@@ -470,7 +463,7 @@ public class gunMode : NetworkBehaviour
         rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
     }
    
-        [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
+        [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
     public void Rpc_Spawn(int seatNum)
     {
         if (seatNum == 1)
@@ -479,7 +472,7 @@ public class gunMode : NetworkBehaviour
         }
         if (seatNum == 2)
         {
-            Runner.transform.position = new Vector3(3.27f, -3.273f, -4.55f);
+            transform.position = new Vector3(3.27f, -3.273f, -4.55f);
         }
         if (seatNum == 3)
         {
@@ -529,10 +522,12 @@ public class gunMode : NetworkBehaviour
         Instantiate(upgradeEffect, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y,-4.55f), Quaternion.identity);
 
     }
-    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
     public void Rpc_RotateCilent(Vector2 angle)
     {
-        transform.eulerAngles = angle;
+        transform.up = angle - new Vector2(transform.position.x, transform.position.y);
+
     }
+   
     
 }

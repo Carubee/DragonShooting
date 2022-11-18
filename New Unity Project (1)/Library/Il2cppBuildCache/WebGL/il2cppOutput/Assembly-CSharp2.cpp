@@ -22603,10 +22603,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Convert_ToInt32_mC6D620D038611AD2490E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Convert_ToBoolean_m058EED31CCC96941FC99988427B550AE6BC72134 (String_t* ___value0, const RuntimeMethod* method);
 // System.Single System.Convert::ToSingle(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Convert_ToSingle_mD8D92A783EEF80012BB7683E1C1F4E6C48B5EFFD (String_t* ___value0, const RuntimeMethod* method);
-// System.Single UnityEngine.Random::Range(System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_mA944A98B82AFE4D46D05EF533ED0068148EFAEA5 (float ___minInclusive0, float ___maxInclusive1, const RuntimeMethod* method);
-// System.Void UnityEngine.Animator::Play(System.String,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m1438EDACA2804B50ED0D00D9986E30BCF903418B (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, String_t* ___stateName0, int32_t ___layer1, float ___normalizedTime2, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<Swim>()
 inline Swim_t9C1A37F601815F911D93EC023295DA6E012220E0 * Component_GetComponent_TisSwim_t9C1A37F601815F911D93EC023295DA6E012220E0_mAFBB5E70F08CD48D999B9996B6B9EB0A04165D60 (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method)
 {
@@ -22639,6 +22635,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Object_GetInstanceID_m7CF962BC1DB5C03
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CallDie_Invoke_mCBE3D79FCA72C81A40FBB981B5E224809D32F84F (CallDie_tC129138837F87425EF0130F52B4128FA798CCA15 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mDE415591B28853D1CD764C53CB499A2142247F32 (Behaviour_t1A3DDDCF73B4627928FBFE02ED52B7251777DBD9 * __this, bool ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.Animator::Play(System.String,System.Int32,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m1438EDACA2804B50ED0D00D9986E30BCF903418B (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, String_t* ___stateName0, int32_t ___layer1, float ___normalizedTime2, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.BoxCollider2D>()
 inline BoxCollider2D_t929D014FDE69DCA5443296C432D640BCBE7E30B9 * Component_GetComponent_TisBoxCollider2D_t929D014FDE69DCA5443296C432D640BCBE7E30B9_mD7909FB3C98B8C554A48934864C1F8E9065C36BA (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method)
 {
@@ -22697,6 +22695,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  Vector2_get_normalized_m1F7F7AA3B7AC2414F245395C3785880B847BF7F5 (Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector2 UnityEngine.Vector2::op_Multiply(UnityEngine.Vector2,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  Vector2_op_Multiply_m5598D6A258A2C8F873CDAB66756553112CD8073A_inline (Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___a0, float ___d1, const RuntimeMethod* method);
+// System.Single UnityEngine.Random::Range(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_mA944A98B82AFE4D46D05EF533ED0068148EFAEA5 (float ___minInclusive0, float ___maxInclusive1, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3_op_Subtraction_mF24598FCCA1D06E65CA6DAFF4F0F6E1667336722_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___a0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___b1, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Transform::get_right()
@@ -33704,46 +33704,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FishControl_Start_m73807443E9776144E7996
 		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_0;
 		L_0 = Component_GetComponent_TisAnimator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149_m56C584BE9A3B866D54FAEE0529E28C8D1E57989F(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149_m56C584BE9A3B866D54FAEE0529E28C8D1E57989F_RuntimeMethod_var);
 		__this->set__ani_19(L_0);
-		// _ani.Play(AnimationName, 0, Random.Range(0f, 1f));
-		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_1 = __this->get__ani_19();
-		String_t* L_2 = __this->get_AnimationName_17();
-		float L_3;
-		L_3 = Random_Range_mA944A98B82AFE4D46D05EF533ED0068148EFAEA5((0.0f), (1.0f), /*hidden argument*/NULL);
-		Animator_Play_m1438EDACA2804B50ED0D00D9986E30BCF903418B(L_1, L_2, 0, L_3, /*hidden argument*/NULL);
 		// _swim = GetComponent<Swim>();
-		Swim_t9C1A37F601815F911D93EC023295DA6E012220E0 * L_4;
-		L_4 = Component_GetComponent_TisSwim_t9C1A37F601815F911D93EC023295DA6E012220E0_mAFBB5E70F08CD48D999B9996B6B9EB0A04165D60(__this, /*hidden argument*/Component_GetComponent_TisSwim_t9C1A37F601815F911D93EC023295DA6E012220E0_mAFBB5E70F08CD48D999B9996B6B9EB0A04165D60_RuntimeMethod_var);
-		__this->set__swim_24(L_4);
+		Swim_t9C1A37F601815F911D93EC023295DA6E012220E0 * L_1;
+		L_1 = Component_GetComponent_TisSwim_t9C1A37F601815F911D93EC023295DA6E012220E0_mAFBB5E70F08CD48D999B9996B6B9EB0A04165D60(__this, /*hidden argument*/Component_GetComponent_TisSwim_t9C1A37F601815F911D93EC023295DA6E012220E0_mAFBB5E70F08CD48D999B9996B6B9EB0A04165D60_RuntimeMethod_var);
+		__this->set__swim_24(L_1);
 		// if (Random.Range(0, 2) == 1)
-		int32_t L_5;
-		L_5 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(0, 2, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_5) == ((uint32_t)1))))
+		int32_t L_2;
+		L_2 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(0, 2, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_2) == ((uint32_t)1))))
 		{
-			goto IL_0070;
+			goto IL_004f;
 		}
 	}
 	{
 		// _hp = Random.Range(HpMax - RndHpMax, HpMax + RndHpMax);
-		int32_t L_6 = __this->get_HpMax_22();
-		int32_t L_7 = __this->get_RndHpMax_23();
-		int32_t L_8 = __this->get_HpMax_22();
-		int32_t L_9 = __this->get_RndHpMax_23();
-		int32_t L_10;
-		L_10 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(((int32_t)il2cpp_codegen_subtract((int32_t)L_6, (int32_t)L_7)), ((int32_t)il2cpp_codegen_add((int32_t)L_8, (int32_t)L_9)), /*hidden argument*/NULL);
-		__this->set__hp_25(L_10);
+		int32_t L_3 = __this->get_HpMax_22();
+		int32_t L_4 = __this->get_RndHpMax_23();
+		int32_t L_5 = __this->get_HpMax_22();
+		int32_t L_6 = __this->get_RndHpMax_23();
+		int32_t L_7;
+		L_7 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(((int32_t)il2cpp_codegen_subtract((int32_t)L_3, (int32_t)L_4)), ((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)L_6)), /*hidden argument*/NULL);
+		__this->set__hp_25(L_7);
 		return;
 	}
 
-IL_0070:
+IL_004f:
 	{
 		// _hp = Random.Range(Hp - RndHp, Hp - RndHp);
-		int32_t L_11 = __this->get_Hp_20();
-		int32_t L_12 = __this->get_RndHp_21();
-		int32_t L_13 = __this->get_Hp_20();
-		int32_t L_14 = __this->get_RndHp_21();
-		int32_t L_15;
-		L_15 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(((int32_t)il2cpp_codegen_subtract((int32_t)L_11, (int32_t)L_12)), ((int32_t)il2cpp_codegen_subtract((int32_t)L_13, (int32_t)L_14)), /*hidden argument*/NULL);
-		__this->set__hp_25(L_15);
+		int32_t L_8 = __this->get_Hp_20();
+		int32_t L_9 = __this->get_RndHp_21();
+		int32_t L_10 = __this->get_Hp_20();
+		int32_t L_11 = __this->get_RndHp_21();
+		int32_t L_12;
+		L_12 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(((int32_t)il2cpp_codegen_subtract((int32_t)L_8, (int32_t)L_9)), ((int32_t)il2cpp_codegen_subtract((int32_t)L_10, (int32_t)L_11)), /*hidden argument*/NULL);
+		__this->set__hp_25(L_12);
 		// }
 		return;
 	}

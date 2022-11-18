@@ -4592,7 +4592,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3015
+  startingRenderQueue: 3014
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -4729,7 +4729,6 @@ GameObject:
   - component: {fileID: 411915461}
   - component: {fileID: 411915460}
   - component: {fileID: 411915459}
-  - component: {fileID: 411915458}
   m_Layer: 5
   m_Name: Name Player (4)
   m_TagString: Untagged
@@ -4751,18 +4750,6 @@ Transform:
   m_Father: {fileID: 921283370}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &411915458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411915456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &411915459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10832,7 +10819,6 @@ GameObject:
   - component: {fileID: 960691855}
   - component: {fileID: 960691854}
   - component: {fileID: 960691857}
-  - component: {fileID: 960691858}
   - component: {fileID: 960691856}
   m_Layer: 5
   m_Name: Name Player (3)
@@ -11004,18 +10990,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 400.42, y: 115.9, z: 0.20000003}
   m_Center: {x: -4.19, y: 14.39, z: 0}
---- !u!114 &960691858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960691852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &973227084
 GameObject:
   m_ObjectHideFlags: 0
@@ -12212,7 +12186,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1279
+  mWidth: 1280
   mHeight: 112
   mDepth: 1
   autoResizeBoxCollider: 0
@@ -12244,7 +12218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094809560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 307, z: 0}
+  m_LocalPosition: {x: -0, y: 307, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473344414}
@@ -13056,7 +13030,7 @@ Transform:
   m_GameObject: {fileID: 1204489982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0.01, z: 97}
-  m_LocalScale: {x: 0.24215624, y: 0.23994029, z: 0.22886072}
+  m_LocalScale: {x: 0.22501157, y: 0.22295251, z: 0.21265739}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -13352,7 +13326,6 @@ GameObject:
   - component: {fileID: 1230468183}
   - component: {fileID: 1230468186}
   - component: {fileID: 1230468185}
-  - component: {fileID: 1230468187}
   m_Layer: 5
   m_Name: Name Player (1)
   m_TagString: Untagged
@@ -13523,18 +13496,6 @@ MonoBehaviour:
     mMethodName: StartClient2
     mParameters: []
     oneShot: 0
---- !u!114 &1230468187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230468181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1246362094
 GameObject:
   m_ObjectHideFlags: 0
@@ -17763,7 +17724,6 @@ GameObject:
   - component: {fileID: 1631604708}
   - component: {fileID: 1631604707}
   - component: {fileID: 1631604710}
-  - component: {fileID: 1631604711}
   - component: {fileID: 1631604709}
   m_Layer: 5
   m_Name: Name Player (2)
@@ -17935,18 +17895,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 400.42, y: 115.9, z: 0.20000003}
   m_Center: {x: -4.19, y: 14.39, z: 0}
---- !u!114 &1631604711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631604705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1643314017 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3993815038876909948, guid: 215133838c0da3c43bf831c6ceda6ffe, type: 3}

@@ -93,16 +93,7 @@ public class Swim : NetworkBehaviour
             Freeze = true;
         }
     }
-    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
-    public void Rpc_Pose()
-    {
-        //gameObject.transform.position = gameObject.transform.position;
-        Rpc_PoseServer();
-    }
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
-    public void Rpc_PoseServer()
-    {
-        //gameObject.transform.position = gameObject.transform.position;
-    }
+    
+   
     
 }

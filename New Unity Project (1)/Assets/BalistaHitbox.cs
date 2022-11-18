@@ -38,7 +38,6 @@ public class BalistaHitbox : MonoBehaviour
         //bulletTypeValue.Value = item.instace.doubleDamage;
         if (item.instace.tracker)
         {
-            
             Vector3 direction = new Vector2(target.transform.position.x, target.transform.position.y) - rb.position;
             direction.Normalize();
             float rotateAmount = Vector3.Cross(direction, transform.up).z;
@@ -57,7 +56,6 @@ public class BalistaHitbox : MonoBehaviour
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
                 Destroy(this.gameObject);
-
             }
             if (bomb == false)
             {
@@ -75,11 +73,9 @@ public class BalistaHitbox : MonoBehaviour
             if (destroyOnHit == true)
             {
                 collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
-
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
                 //Destroy(this.gameObject);
-                
             }
            
         }

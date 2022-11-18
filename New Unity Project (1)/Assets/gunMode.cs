@@ -68,14 +68,8 @@ public class gunMode : NetworkBehaviour
     public void Awake()
     {
         instance = this;
-        firerateAmount = 0.5f;
-
-        
+        firerateAmount = 0.5f;        
     }
-   
-
-
-
     public  void Update()
     {
         //if (Runner.IsServer) return;
@@ -97,7 +91,7 @@ public class gunMode : NetworkBehaviour
             firerate += Time.deltaTime;
         if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost)
         {
-            //LaserServerRpc(false);
+            LaserServerRpc(false);
         }
 
         if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canfire == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
@@ -200,10 +194,8 @@ public class gunMode : NetworkBehaviour
     [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     private void Rpc_ChangeGunCilent(int gunValue)
     {
-        
             gunModel = gunValue;
             Rpc_ChangeGunServer(gunValue);
-        
     }
 
         [Rpc(RpcSources.StateAuthority,RpcTargets.All)]
@@ -289,7 +281,6 @@ public class gunMode : NetworkBehaviour
             gunControl.damage = 10;
             gunModel = 6;
         }
-        //bulletTypeValue.Value = gunValue;
 
     }
     [Rpc(RpcSources.InputAuthority,RpcTargets.StateAuthority)]
@@ -316,26 +307,26 @@ public class gunMode : NetworkBehaviour
     {
         if (gunmode == 1)
         {
-            //GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
-            Runner.Spawn(flashGun, firepoint.position, firepoint.rotation);
+            GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+            //Runner.Spawn(flashGun, firepoint.position, firepoint.rotation);
             Normal(enchance3);
         }
         if (gunmode == 2)
         {
-            //GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
-            Runner.Spawn(flashGun, firepoint2.position, firepoint.rotation);
+            GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
+            //Runner.Spawn(flashGun, firepoint2.position, firepoint.rotation);
             Long(enchance3);
         }
         if (gunmode == 3)
         {
-            //GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
-            Runner.Spawn(flashGun, firepoint.position, firepoint.rotation);
+            GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
+            //Runner.Spawn(flashGun, firepoint.position, firepoint.rotation);
             ShootShotgun(enchance3);
         }
         if (gunmode == 4)
         {
-            //GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
-            Runner.Spawn(flashGun, firepoint2.position, firepoint.rotation);
+            GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
+            //Runner.Spawn(flashGun, firepoint2.position, firepoint.rotation);
             Gatling(enchance3);
         }
 
@@ -537,9 +528,6 @@ public class gunMode : NetworkBehaviour
         transform.up = angle - new Vector2(transform.position.x, transform.position.y);
 
     }
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
-    public void Rpc_RotateServer(Vector2 angle)
-    {
-    }
+   
     
 }
