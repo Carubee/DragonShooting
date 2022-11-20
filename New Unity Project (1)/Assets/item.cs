@@ -48,7 +48,7 @@ public class item : MonoBehaviour
         buffText.text = "";
 
         amountDragonTracker = 3;
-        amountBomb = 1000   ;
+        amountBomb = 3;
         amountSpare = 3;
         amountDoubleDamage = 3;
         amountHunterBag = 3;

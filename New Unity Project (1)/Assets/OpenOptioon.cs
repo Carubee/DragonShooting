@@ -17,7 +17,6 @@ public class OpenOptioon : MonoBehaviour
     bool HunterBag;
 
     [SerializeField] item itemUse;
-    [SerializeField] gunMode gunmode;
     public static OpenOptioon instant;
     public bool openMenu;
 
@@ -28,7 +27,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void OpenOption()
     {
-        gunmode.canfire = false;
+        gunMode.instance.canfire = false;
         option.SetActive(true);
         openMenu = true;
 
@@ -40,12 +39,11 @@ public class OpenOptioon : MonoBehaviour
     }
     public void CloseOption()
     {
-        if (gunmode == null) return;
         option.SetActive(false);
         shop.SetActive(false);
         NoticeBuy.SetActive(false);
         NoticeNotEnough.SetActive(false);
-        gunmode.canfire = true;
+        gunMode.instance.canfire = true;
         openMenu = false;
 
     }

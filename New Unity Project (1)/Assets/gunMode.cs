@@ -89,7 +89,7 @@ public class gunMode : NetworkBehaviour
 
         if (firerate <= 2)
             firerate += Time.deltaTime;
-        if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost)
+        if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost && gunModel == 6 )
         {
             LaserServerRpc(false);
         }
