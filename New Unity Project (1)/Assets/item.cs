@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using CodeMonkey.Utils;
+using Fusion;
 
 
-public class item : MonoBehaviour
+public class item : NetworkBehaviour
 {
     public static item instace;
 
@@ -108,15 +109,22 @@ public class item : MonoBehaviour
         Effect();
 
     }
-    public void Bomb()
+    public void BombCilent()
     {
         if (amountBomb > 0)
         {
             amountBomb -= 1;
             gunMode.instance.BombTrigger();
+
         }
     }
-    
+    public void Rpc_Bomb(int amount)
+    {
+        for (int i = 0; i <= amount; i++)
+        {
+            Instantiate(bomb, new Vector3(Random.Range(-3, 3), Random.Range(-3, 3)),Quaternion.identity);           
+        }
+    }
     public void Spare()
     {
         if (amountSpare > 0)

@@ -6,8 +6,8 @@ public class MainStartControl : MonoBehaviour
 
     void Start()
     {
-        AudioControl.Instance.Offbg();
-        AudioControl.Instance.openbg();
+        //AudioControl.Instance.Offbg();
+        //AudioControl.Instance.openbg();
     }
 
     void Update()

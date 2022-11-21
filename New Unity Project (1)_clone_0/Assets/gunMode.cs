@@ -61,7 +61,6 @@ public class gunMode : NetworkBehaviour
     public float TimeDouble = 10;
     public float AngleRotate;
     public Vector2 mousePos;
-    Camera local;
 
     [Networked] public bool enchance { get; set; }
     [Networked] public int Rotation { get; set; }
@@ -89,7 +88,7 @@ public class gunMode : NetworkBehaviour
 
         if (firerate <= 2)
             firerate += Time.deltaTime;
-        if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost)
+        if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost && gunModel == 6 )
         {
             LaserServerRpc(false);
         }
@@ -502,11 +501,13 @@ public class gunMode : NetworkBehaviour
     }
     public void BombClientRpc(float posX, float posY)
     {
-        ResultBomb(posX,posY);
+        Rpc_ResultBomb(posX,posY);
     }
-    public void ResultBomb(float posX , float posY)
+    [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
+    public void Rpc_ResultBomb(float posX , float posY)
     {
-        Instantiate(bomb, new Vector3(posX,posY), Quaternion.identity);
+        Instantiate(bomb, new Vector3(posX, posY), Quaternion.identity);
+        //Runner.Spawn(bomb, new Vector3(posX,posY), Quaternion.identity);
         UtilsClass.ShakeCamera(0.03f, .1f);
     }
     public void EffectItemServerRpc()

@@ -16,7 +16,6 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     {
         _runner = gameObject.AddComponent<NetworkRunner>();
         _runner.ProvideInput = true;
-
         await _runner.StartGame(new StartGameArgs()
         {
             GameMode = mode,
@@ -25,12 +24,16 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>()
 
         }) ; ;}
-    
 
+    private void Start()
+    {
+        StartGame(GameMode.AutoHostOrClient);
+
+    }
     // Update is called once per 
     private void OnGUI()
     {
-        if (_runner == null) 
+        /*if (_runner == null) 
         {
             if (GUI.Button(new Rect(0, 0, 200, 40), "HOST"))
             {
@@ -43,7 +46,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
 
             } 
             
-        }
+        }*/
     }
     
     public void StartClient()

@@ -20,7 +20,7 @@ public class ButtonStartControl : MonoBehaviour
 	public void Start()
 	{
 		//goldtext.text = PlayerPrefs.GetInt("gold").ToString();
-		leveltext.text = "LEVEL " + PlayerPrefs.GetInt("level", 1).ToString();
+		//leveltext.text = "LEVEL " + PlayerPrefs.GetInt("level", 1).ToString();
 
 	}
 	void Enable()

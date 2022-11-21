@@ -425,8 +425,6 @@ struct AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA;
 struct AudioChorusFilter_t73A3C169ECB7F17A1B91A5420F845A3458CF46D6;
 // UnityEngine.AudioClip
 struct AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE;
-// AudioControl
-struct AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0;
 // UnityEngine.AudioDistortionFilter
 struct AudioDistortionFilter_tA126F7E72C3A03FB91FB1D05634BE1CF3A82B366;
 // UnityEngine.AudioEchoFilter
@@ -749,7 +747,6 @@ struct OnPostFillCallback_tD04A485429093EB8150D1542751D97BFC5A40501;
 struct SplineIterator_tCEED45CB199886972DEB9D9F66E19F4C3D96DA9C;
 
 IL2CPP_EXTERN_C RuntimeClass* AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AudioEventGroup_t8F1506F6C0C11DC07454CA90E7AFDD413EDB08C6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AudioGroupInfo_t38C791E4F335411C23D7C525D32C0458F46C84BD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AudioInfo_tD4DC8AA2216A8A4196588CBBFC2A2883ADD1506C_il2cpp_TypeInfo_var;
@@ -13074,62 +13071,6 @@ struct SphereCollider_t51A338502EEE6FA563248E3C0BF38D333077DC3A  : public Collid
 public:
 
 public:
-};
-
-
-// AudioControl
-struct AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
-{
-public:
-
-public:
-};
-
-struct AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_StaticFields
-{
-public:
-	// System.Boolean AudioControl::_isSound
-	bool ____isSound_4;
-	// System.Boolean AudioControl::_isMusic
-	bool ____isMusic_5;
-	// AudioControl AudioControl::Instance
-	AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0 * ___Instance_6;
-	// System.Int32 AudioControl::_indexMusic
-	int32_t ____indexMusic_7;
-
-public:
-	inline static int32_t get_offset_of__isSound_4() { return static_cast<int32_t>(offsetof(AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_StaticFields, ____isSound_4)); }
-	inline bool get__isSound_4() const { return ____isSound_4; }
-	inline bool* get_address_of__isSound_4() { return &____isSound_4; }
-	inline void set__isSound_4(bool value)
-	{
-		____isSound_4 = value;
-	}
-
-	inline static int32_t get_offset_of__isMusic_5() { return static_cast<int32_t>(offsetof(AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_StaticFields, ____isMusic_5)); }
-	inline bool get__isMusic_5() const { return ____isMusic_5; }
-	inline bool* get_address_of__isMusic_5() { return &____isMusic_5; }
-	inline void set__isMusic_5(bool value)
-	{
-		____isMusic_5 = value;
-	}
-
-	inline static int32_t get_offset_of_Instance_6() { return static_cast<int32_t>(offsetof(AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_StaticFields, ___Instance_6)); }
-	inline AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0 * get_Instance_6() const { return ___Instance_6; }
-	inline AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0 ** get_address_of_Instance_6() { return &___Instance_6; }
-	inline void set_Instance_6(AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0 * value)
-	{
-		___Instance_6 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Instance_6), (void*)value);
-	}
-
-	inline static int32_t get_offset_of__indexMusic_7() { return static_cast<int32_t>(offsetof(AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_StaticFields, ____indexMusic_7)); }
-	inline int32_t get__indexMusic_7() const { return ____indexMusic_7; }
-	inline int32_t* get_address_of__indexMusic_7() { return &____indexMusic_7; }
-	inline void set__indexMusic_7(int32_t value)
-	{
-		____indexMusic_7 = value;
-	}
 };
 
 
@@ -26765,10 +26706,6 @@ inline void List_1__ctor_m30C52A4F2828D86CA3FAB0B1B583948F4DA9F1F9 (List_1_t6C9F
 }
 // System.Boolean UnityEngine.Input::GetKeyDown(UnityEngine.KeyCode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_m806A477EAE0AE49AA9C5E518A0800A3D80D873DC (int32_t ___key0, const RuntimeMethod* method);
-// System.Void AudioControl::Offbg()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioControl_Offbg_m11C821C1F225AEDC8123E431B45B27FE2BB1BC07 (AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0 * __this, const RuntimeMethod* method);
-// System.Void AudioControl::openbg()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioControl_openbg_m17433F33007ADB1410A35830975EF2E11DD9C567 (AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Application::Quit()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_m10E44C187C0E5807F9C955A176885FAA95829267 (const RuntimeMethod* method);
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -34750,20 +34687,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainPlayControl__ctor_m3ADB660D8AD3E3699
 // System.Void MainStartControl::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainStartControl_Start_m44D97E53AB714D5F3DC08ABA993007076BAF50B1 (MainStartControl_tD2558DD440590BF008B6464CFBC14190E5EABF8F * __this, const RuntimeMethod* method)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// AudioControl.Instance.Offbg();
-		IL2CPP_RUNTIME_CLASS_INIT(AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_il2cpp_TypeInfo_var);
-		AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0 * L_0 = ((AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_StaticFields*)il2cpp_codegen_static_fields_for(AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_il2cpp_TypeInfo_var))->get_Instance_6();
-		AudioControl_Offbg_m11C821C1F225AEDC8123E431B45B27FE2BB1BC07(L_0, /*hidden argument*/NULL);
-		// AudioControl.Instance.openbg();
-		AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0 * L_1 = ((AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_StaticFields*)il2cpp_codegen_static_fields_for(AudioControl_t154778DD22C1857AC391A7CF78F3EB8729FDC1A0_il2cpp_TypeInfo_var))->get_Instance_6();
-		AudioControl_openbg_m17433F33007ADB1410A35830975EF2E11DD9C567(L_1, /*hidden argument*/NULL);
 		// }
 		return;
 	}

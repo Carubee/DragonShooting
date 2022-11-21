@@ -6,7 +6,7 @@ using UI.Dialogs;
 public class ButtonStartControl : MonoBehaviour
 {
 	public Text goldtext, leveltext;
-	public Button Level2, Level3, Level4;
+	//public Button Level2, Level3, Level4;
 	public GameObject mask_lock2, mask_lock3, mask_lock4;
 
 	public uDialog_NotificationPanel NotificationPanel;
@@ -19,8 +19,8 @@ public class ButtonStartControl : MonoBehaviour
 
 	public void Start()
 	{
-		goldtext.text = PlayerPrefs.GetInt("gold").ToString();
-		leveltext.text = "LEVEL " + PlayerPrefs.GetInt("level", 1).ToString();
+		//goldtext.text = PlayerPrefs.GetInt("gold").ToString();
+		//leveltext.text = "LEVEL " + PlayerPrefs.GetInt("level", 1).ToString();
 
 	}
 	void Enable()
