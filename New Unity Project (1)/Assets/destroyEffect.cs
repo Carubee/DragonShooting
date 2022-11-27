@@ -6,9 +6,12 @@ public class destroyEffect : MonoBehaviour
 {
     public float destroytime;
     public float timeRun;
+
+    [SerializeField] bool dieDragon;
     void Start()
     {
-            
+        if (dieDragon)
+            gameObject.SetActive(false);
     }
 
     void Update()
@@ -18,6 +21,8 @@ public class destroyEffect : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (dieDragon)
+            this.gameObject.transform.position -= new Vector3(0, 0, 0.01f);
     }
 
 }

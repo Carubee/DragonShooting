@@ -36,7 +36,7 @@ public class FishControl : NetworkBehaviour
     public int evade;
     public bool canEvade;
 
-
+    public GameObject dieDragon;
     
     public void Start()
     {
@@ -156,6 +156,7 @@ public class FishControl : NetworkBehaviour
                     _ani.Play(AnimationNameDie, 0, 0);
                     GetComponent<BoxCollider2D>().enabled = false;
                     Instantiate(Resources.Load("coinEff"),new Vector3 (transform.position.x, transform.position.y , -4.55f) , Quaternion.identity);
+                    //Instantiate(dieDragon,dieDragon.transform.position , dieDragon.transform.rotation);
 
                     if (item.instace.doubleGold == true)
                     {
@@ -165,6 +166,7 @@ public class FishControl : NetworkBehaviour
                     {
                         UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
                     }
+                    //gunMode.instance.MoneyPlayer += _gold;
                     Runner.Despawn(this.Object);
                     //FishManage.Instance._FishMange.Remove(transform);
                     Destroy(this.gameObject, 0.8f);

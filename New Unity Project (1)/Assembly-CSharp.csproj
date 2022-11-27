@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.40f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
@@ -164,6 +164,7 @@
     <Compile Include="Assets\Xffect\Scripts\Events\CameraEffects\RadialBlurTexAddEvent.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\Assistants\FusionSceneSetupAssistants.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Pixel8bitsGB.cs" />
+    <Compile Include="Assets\Malbers Animations\Common\Scripts\Readme\Readme.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\BetterList.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UILocalize.cs" />
     <Compile Include="Assets\Xffect\EnhancementTools\XPerObjImageEffects\XPerObjRenderer.cs" />
@@ -550,6 +551,7 @@
     <Compile Include="Assets\Xffect\Scripts\Affectors\TurbulenceFieldAffector.cs" />
     <Compile Include="Assets\Scripts\FishFollowControl.cs" />
     <Compile Include="Assets\Scripts\Network\SpawnNetwork.cs" />
+    <Compile Include="Assets\NameInput.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Settings\MasterCustomEventAttribute.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_HSV.cs" />
@@ -588,9 +590,12 @@
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\StdLib.hlsl" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Debug\Waveform.shader" />
     <None Include="Assets\Xffect\Resources\Shaders\AdvanceShader\xft_displacement-flow_additive.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\MultiScaleVOUpsample.compute" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Mask8Toon.shader" />
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\Distortion.hlsl" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Slim.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_WoodFX.shader" />
@@ -604,6 +609,7 @@
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\DeferredFog.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\EmberParticle.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\TemporalAntialiasing.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\DragonEggs_Shader.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Threshold.shader" />
     <None Include="Assets\Xffect\SpriteMaker\tutorial.txt" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\StartWave.shader" />
@@ -628,6 +634,7 @@
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\CopyStdFromTexArray.shader" />
     <None Include="Assets\Xffect\EnhancementTools\XWeaponTrail\Model\readme.txt" />
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Additive.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
     <None Include="Assets\Dee-Shaw\Information.txt" />
@@ -638,6 +645,7 @@
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Debug\Waveform.compute" />
     <None Include="Assets\Xffect\EnhancementTools\XPerObjImageEffects\Resources\Shaders\xft_whitepass.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_SkyCloud.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Color4x4.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_CircleFade.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\ExplosionSpriteUnlit.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Cartoon.shader" />
@@ -648,6 +656,7 @@
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\Photon\Fusion\Assemblies\Fusion.Sockets.xml" />
     <None Include="Assets\Xffect\Resources\Shaders\ImageEffect\GlowPerObj\xft_glow_replacement.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Mask4Toon.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\LaserConMeshv2.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\Laser_v02Con.shader" />
@@ -658,20 +667,25 @@
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Debug\LightMeter.shader" />
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_CompressionFX.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Mask4Realistic.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\MeshEnchantAlphaBlended.shader" />
     <None Include="Assets\Xffect\Tutorial\AdvanceShader\Dissolve\readme.txt" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_WaterAndBackground.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Negative.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\AutoExposure.compute" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\MultiScaleVORender.compute" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\Texture2DLerp.shader" />
+    <None Include="Assets\Malbers Animations\Dragons\Common\Eyes\Dragon_Eyes.shader" />
     <None Include="Assets\Photon\Fusion\Assemblies\Fusion.Realtime.xml" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\SubpixelMorphologicalAntialiasingBridge.hlsl" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\Laser_v02.shader" />
     <None Include="Assets\Xffect\EffectLibrary\readme.txt" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Golem Shader.shader" />
     <None Include="Assets\Xffect\EnhancementTools\XWeaponTrail\readme_english.txt" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\UI\license.txt" />
     <None Include="Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
@@ -698,7 +712,10 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\LaserDistortionCon.shader" />
     <None Include="Assets\Photon\Fusion\Resources\ConfigAssetsFolder.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Photon\Fusion\Assemblies\Fusion.Sockets.dll" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Fur.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Color3x3.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\StartSphereV5.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_PlasmaShield.shader" />
     <None Include="Assets\Xffect\EnhancementTools\XPerObjImageEffects\Resources\Shaders\xft_blur.shader" />
@@ -708,7 +725,9 @@
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\StartSphereV4.shader" />
     <None Include="Assets\Xffect\Resources\Shaders\AdvanceShader\xft_displacement-dissolve_additive.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\FlareCustom.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Color4x3.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Waterfall.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Wind Shader.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\RadialQuadExplosionV2.shader" />
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
@@ -744,6 +763,7 @@
     <None Include="Assets\Xffect\EnhancementTools\XClipArea\xft_clip_matcap_add.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\FinalPass.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Debug\Histogram.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Debug\Histogram.compute" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\API\Switch.hlsl" />
@@ -751,8 +771,11 @@
     <None Include="Assets\Epic Toon FX\Prefabs\Interactive\Interactive FX.txt" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\API\Metal.hlsl" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\Uber.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\CurveParticleAlphaBlendedV2.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\FireDartsOriginalFinal.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\DistortionSpherePS.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\StartSphereV2.shader" />
     <None Include="Assets\ParrelSync\VERSION.txt" />
@@ -760,26 +783,32 @@
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Readme.txt" />
     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\StartWaveAlphaBlended.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\CopyStdFromDoubleWide.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_4Gradients.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Teleportation.shader" />
     <None Include="Assets\Photon\Fusion\Resources\FusionGraphShader.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
     <None Include="Assets\DarkTonic\MasterAudio\ReleaseNotes.txt" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_GoldenFX.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\AnisotropicCircular.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\CurveParticleAlphaBlendedV2PlasmaSpecial.shader" />
     <None Include="Assets\Xffect\EnhancementTools\XPerObjImageEffects\Resources\Shaders\xft_mix.shader" />
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\CharaMain.cginc" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Liquify.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Debug\Overlays.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\API\PSP2.hlsl" />
     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\ScreenSpaceReflections.shader" />
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Hologram.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\DepthOfField.hlsl" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\MWater2.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\DiscardAlpha.shader" />
     <None Include="Assets\Xffect\Resources\Shaders\ImageEffect\xft_radial_blur_mask.shader" />
     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
@@ -792,6 +821,7 @@
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\readme.txt" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\Laser_v01Con.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\StartSphereCurveParticleAdditive.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Xffect\Tutorial\AdvanceShader\ScreenDistort\readme.txt" />
     <None Include="Assets\Xffect\Resources\Shaders\ImageEffect\xft_color_inverse.shader" />
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\CharaSkin.cginc" />
@@ -820,6 +850,7 @@
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\ExposureHistogram.compute" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Lightning.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Blur.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Xffect\Tutorial\GettingStart\readme.txt" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_LightningBolt.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_PlasmaRainbow.shader" />
@@ -847,23 +878,27 @@
     <None Include="Assets\Photon\Fusion\Plugins\NanoSockets\WebGL\NanoSockets.dll" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\API\XboxOne.hlsl" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\Copy.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\API\D3D12.hlsl" />
     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Pixel8bitsGB.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\DepthOfField.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_PatternAdditive.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Pattern.shader" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Builtins\SubpixelMorphologicalAntialiasing.hlsl" />
     <None Include="Assets\Xffect\EnhancementTools\XWeaponTrail\readme_chinese.txt" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
     <None Include="Assets\Xffect\Resources\Shaders\AdvanceShader\xft_displacement_screen.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_SandFX.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_DesintegrationFX.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Outline.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_Ghost.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
     <None Include="Assets\SineVFX\MagicMissilesAndLasers\Resources\Shaders\ExplosionFresnelSphere.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_FireAdditive.shader" />
@@ -873,9 +908,12 @@
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\ReadMe.txt" />
     <None Include="Assets\SineVFX\PostProcessingV2\Shaders\Colors.hlsl" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+    <None Include="Assets\Malbers Animations\Common\Shaders\Mask8Realistic.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_ColorChange.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_EdgeColor.shader" />
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Malbers Animations\Common\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_GrassFX.shader" />
     <None Include="Assets\2DxFX\Resources\_2dxFX_BlackHole.shader" />

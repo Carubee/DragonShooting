@@ -30,6 +30,7 @@ public class BalistaHitbox : MonoBehaviour
         {
             target = GameObject.FindGameObjectWithTag(tagName);
         }
+        if (!allow)
             timeToDestroy += Time.deltaTime;
         if (timeToDestroy > destroy && allow == false)
         {
@@ -96,9 +97,6 @@ public class BalistaHitbox : MonoBehaviour
             normalBullet.SetActive(true);
         }
     }
-    public void UserOwner(int ID)
-    {
-
-    }
+    
 
 }

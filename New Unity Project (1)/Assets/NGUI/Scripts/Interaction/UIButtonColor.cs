@@ -212,7 +212,7 @@ public class UIButtonColor : UIWidgetContainer
 		{
 			if (gunMode.instance != null)
 			{
-				gunMode.instance.canfire = false;
+				gunMode.instance.canPlay = false;
 			}
             if (!mInitDone) OnInit();
 			if (tweenTarget != null) SetState(isOver ? State.Hover : State.Normal, false);
@@ -221,7 +221,7 @@ public class UIButtonColor : UIWidgetContainer
         {
 			if (gunMode.instance != null)
 			{
-				gunMode.instance.canfire = true;
+				gunMode.instance.canPlay = true;
 			}
         }
 

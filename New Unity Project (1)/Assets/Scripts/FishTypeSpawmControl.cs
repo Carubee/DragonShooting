@@ -34,7 +34,7 @@ public class FishTypeSpawmControl : NetworkBehaviour
     {
         yield return new WaitForSeconds(starttime);
         int a = Random.Range(0, _pre.Length);
-        int directionPos = Random.Range(0, 6);
+        int directionPos = Random.Range(0, 3);
         Transform _tr;
         _tr = Runner.Spawn(_pre[a]).transform;
         

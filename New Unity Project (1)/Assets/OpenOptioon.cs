@@ -27,7 +27,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void OpenOption()
     {
-        gunMode.instance.canfire = false;
+        gunMode.instance.canPlay = false;
         option.SetActive(true);
         openMenu = true;
 
@@ -43,7 +43,7 @@ public class OpenOptioon : MonoBehaviour
         shop.SetActive(false);
         NoticeBuy.SetActive(false);
         NoticeNotEnough.SetActive(false);
-        gunMode.instance.canfire = true;
+        gunMode.instance.canPlay = true;
         openMenu = false;
 
     }

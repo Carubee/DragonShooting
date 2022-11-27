@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LobbyScript : MonoBehaviour
@@ -8,36 +9,36 @@ public class LobbyScript : MonoBehaviour
     [SerializeField] GameObject notice;
     [SerializeField] GameObject loading;
     [SerializeField] GameObject popUp;
-    float timeLoad;
-    public  bool loadingCheck;
+    [SerializeField] GameObject lobbyUI;
     public  bool noticCheck;
     public bool reSet;
+    [SerializeField] Text playerName;
+    [SerializeField] Text coin;
+    
     void Start()
-    {
-        
+    { 
+        lobbyUI.SetActive(true);
+        playerName.text = NameInput.Instance.input;
+       coin.text = "" + PlayerPrefs.GetInt("gold", 200);
     }
 
     void Update()
     {
-        
-        if(loadingCheck == true)
+        if (gameObject == false) 
         {
-            
-            timeLoad += Time.deltaTime;
-            if(timeLoad >= 3)
-                SceneManager.LoadScene(2);
+            Close();
         }
+        
     }
     public void lobby()
     {
         notice.SetActive(false);
         loading.SetActive(true);
-        loadingCheck = true;
+        SpawnNetwork.instance.JoinGame();
     }
     public void Close()
     {
         popUp.SetActive(false);
-        timeLoad = 0;
     } 
     public void Open()
     {

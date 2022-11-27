@@ -24,7 +24,6 @@ public class item : NetworkBehaviour
     public GameObject bomb;
     public GameObject upgrade;
     public GameObject lockTarget;
-    public GameObject goldEffect;
     public Slider timeMode;
 
     public Transform pointUpgrade;
@@ -61,13 +60,13 @@ public class item : NetworkBehaviour
     {
         if(doubleGold == true )
         {
-            goldEffect.SetActive(true);
+            gunMode.instance.doubleGold.SetActive(true);
             TimeDouble += Time.deltaTime;
             timeMode.value = TimeDouble;
             if (TimeDouble >= 10)
             {
                 doubleGold = false;
-                goldEffect.SetActive(false);
+                gunMode.instance.doubleGold.SetActive(false);
             }
         }
         if (doubleDamage == true )
@@ -92,8 +91,8 @@ public class item : NetworkBehaviour
                 tracker = false;
         }
         Vector3 mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetButtonDown("Fire1"))
-            Instantiate(lockTarget, new Vector3(mousePoint.x , mousePoint.y, mousePoint.z + 90) , Quaternion.identity);
+        //if (Input.GetButtonDown("Fire1"))
+            //Instantiate(lockTarget, new Vector3(mousePoint.x , mousePoint.y, mousePoint.z + 90) , Quaternion.identity);
     }
 
     public void DragonTracker()
@@ -115,6 +114,7 @@ public class item : NetworkBehaviour
         {
             amountBomb -= 1;
             gunMode.instance.BombTrigger();
+            UpdateText();
 
         }
     }

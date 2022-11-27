@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b53b64b2d64cd84d9cd6b6b774b54af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   BoundCircleRadius: 0.4
   RotateSpeed: 60
@@ -66,11 +68,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c7f030651b5140a0233c653530bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   _FishPre: {fileID: 125560, guid: 8db243e122b3d1842b27c79f8fc3750a, type: 3}
-  Distan: 0.5
-  minCount: 3
-  maxCount: 7
+  Distan: 0.8
+  minCount: 1
+  maxCount: 5
   DestroyWithSpawner: 0
 --- !u!114 &11462100
 MonoBehaviour:
@@ -146,6 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: -1779252708, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 0}

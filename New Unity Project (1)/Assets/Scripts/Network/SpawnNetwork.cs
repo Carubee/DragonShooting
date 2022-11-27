@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Fusion;
 using Fusion.Sockets;
 using System;
@@ -11,6 +12,8 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     private NetworkRunner _runner;
     public float pos;
     public GameObject Fishspawn;
+    public GameObject lobbyMenu;
+    public static SpawnNetwork instance;
     [Networked] bool FirstSpawn { get; set; }
     async void StartGame(GameMode mode)
     {
@@ -27,28 +30,19 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
 
     private void Start()
     {
+        instance = this;
+    }
+    // Update is called once per 
+    public void JoinGame()
+    {
         StartGame(GameMode.AutoHostOrClient);
 
     }
-    // Update is called once per 
-    private void OnGUI()
+    public void QuitGame()
     {
-        /*if (_runner == null) 
-        {
-            if (GUI.Button(new Rect(0, 0, 200, 40), "HOST"))
-            {
-                StartGame(GameMode.Host);
-
-            } 
-            if (GUI.Button(new Rect(0, 40, 200, 40), "JOIN"))
-            {
-                StartGame(GameMode.Client);            
-
-            } 
-            
-        }*/
+        
     }
-    
+
     public void StartClient()
     {
         gunMode.instance.canPlay = true;
@@ -78,7 +72,8 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     private Dictionary<PlayerRef, NetworkObject> _spawnedCharacter = new Dictionary<PlayerRef, NetworkObject>();
     public void OnPlayerJoined(NetworkRunner runner,PlayerRef player)
     {
-        
+        lobbyMenu.SetActive(false);
+
         if (runner.IsServer)
         {
             Vector3 spawnPos = new Vector3(0, 90, 0);
@@ -99,8 +94,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     public void OnInput(NetworkRunner runner,NetworkInput input)
     {
         var data = new NetworkInputData();
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - _runner.transform.position;
-        data.PosMouse = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+       
 
 
         input.Set(data);

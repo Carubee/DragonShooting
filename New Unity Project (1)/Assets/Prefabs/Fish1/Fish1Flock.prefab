@@ -108,6 +108,7 @@ MonoBehaviour:
   regenTime: 0
   evade: 0
   canEvade: 0
+  dieDragon: {fileID: 0}
 --- !u!95 &9546774
 Animator:
   serializedVersion: 3
@@ -244,7 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WordOffset: 0
   WordCount: 0
-  _interpolationDataSource: 1
+  _interpolationDataSource: 0
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 0}
   InterpolateErrorCorrection: 1
@@ -259,7 +260,7 @@ MonoBehaviour:
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
   UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.2
+  TargetInterpolationDelay: 0.01
 --- !u!1 &4316673477221987617
 GameObject:
   m_ObjectHideFlags: 0
