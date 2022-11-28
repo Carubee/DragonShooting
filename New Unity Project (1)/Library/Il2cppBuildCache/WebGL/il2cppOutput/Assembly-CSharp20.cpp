@@ -23025,8 +23025,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlayerPrefs_GetString_mDD7F10513504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_SetNickName_m895DAAC43DCAD39D833AF54FF170083C63E0CBB8 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, String_t* ___nickname0, const RuntimeMethod* method);
 // System.Void gunMode::OnNickNameChanged()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_OnNickNameChanged_mC83CB92322B61ED97878D263D08BB584534D8FCF (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, const RuntimeMethod* method);
-// System.Boolean Fusion.NetworkRunner::get_IsServer()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkRunner_get_IsServer_m8D324A095A5CD55B81AF224433C4CAD908C84DB8 (NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Input::GetKeyDown(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E (String_t* ___name0, const RuntimeMethod* method);
 // System.Void UiTextSpawmControl::PushGold(System.Int32)
@@ -25042,27 +25040,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Update_m8E3EAA6838FC74ADDF776B48
 	Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		// if (Runner.IsServer) return;
-		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_0 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
-		bool L_1;
-		L_1 = NetworkRunner_get_IsServer_m8D324A095A5CD55B81AF224433C4CAD908C84DB8(L_0, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_000e;
-		}
-	}
-	{
-		// if (Runner.IsServer) return;
-		return;
-	}
-
-IL_000e:
-	{
 		// if (!canPlay) return;
-		bool L_2 = __this->get_canPlay_60();
-		if (L_2)
+		bool L_0 = __this->get_canPlay_60();
+		if (L_0)
 		{
-			goto IL_0017;
+			goto IL_0009;
 		}
 	}
 	{
@@ -25070,176 +25052,176 @@ IL_000e:
 		return;
 	}
 
-IL_0017:
+IL_0009:
 	{
 		// if (Input.GetKeyDown("space"))
-		bool L_3;
-		L_3 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteralE1291C4D47635E327ECFE39842BD1A93F58C61A2, /*hidden argument*/NULL);
-		if (!L_3)
+		bool L_1;
+		L_1 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteralE1291C4D47635E327ECFE39842BD1A93F58C61A2, /*hidden argument*/NULL);
+		if (!L_1)
 		{
-			goto IL_002f;
+			goto IL_0021;
 		}
 	}
 	{
 		// UiTextSpawmControl.Instance.PushGold(50);
-		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_4 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
-		UiTextSpawmControl_PushGold_m0A3DAB2F30E7E29DD20CFE14B891733ABCD0BF04(L_4, ((int32_t)50), /*hidden argument*/NULL);
+		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_2 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
+		UiTextSpawmControl_PushGold_m0A3DAB2F30E7E29DD20CFE14B891733ABCD0BF04(L_2, ((int32_t)50), /*hidden argument*/NULL);
 	}
 
-IL_002f:
+IL_0021:
 	{
 		// if (TimeDouble < 10)
-		float L_5 = __this->get_TimeDouble_61();
-		if ((!(((float)L_5) < ((float)(10.0f)))))
+		float L_3 = __this->get_TimeDouble_61();
+		if ((!(((float)L_3) < ((float)(10.0f)))))
 		{
-			goto IL_004e;
+			goto IL_0040;
 		}
 	}
 	{
 		// TimeDouble += Time.deltaTime;
-		float L_6 = __this->get_TimeDouble_61();
-		float L_7;
-		L_7 = Time_get_deltaTime_mF558623BBB4EE65C8810243B05ED204A9E8D6FD1(/*hidden argument*/NULL);
-		__this->set_TimeDouble_61(((float)il2cpp_codegen_add((float)L_6, (float)L_7)));
+		float L_4 = __this->get_TimeDouble_61();
+		float L_5;
+		L_5 = Time_get_deltaTime_mF558623BBB4EE65C8810243B05ED204A9E8D6FD1(/*hidden argument*/NULL);
+		__this->set_TimeDouble_61(((float)il2cpp_codegen_add((float)L_4, (float)L_5)));
 	}
 
-IL_004e:
+IL_0040:
 	{
 		// Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_8;
-		L_8 = Camera_get_main_m4E3DB1CD03E916476426AB3F78B26F21690EE26B(/*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9;
-		L_9 = Input_get_mousePosition_mBCEAE9AEF8827512D6ADF03AB336DFA2C8A223E0(/*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_10;
-		L_10 = Camera_ScreenToWorldPoint_m7EE1C8665F9BB089581FA225BB4BFF411B5301B6(L_8, L_9, /*hidden argument*/NULL);
-		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_11;
-		L_11 = Vector2_op_Implicit_m101DE5340601C037D9252FB6B99AD18C793C54A1_inline(L_10, /*hidden argument*/NULL);
-		V_0 = L_11;
+		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_6;
+		L_6 = Camera_get_main_m4E3DB1CD03E916476426AB3F78B26F21690EE26B(/*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7;
+		L_7 = Input_get_mousePosition_mBCEAE9AEF8827512D6ADF03AB336DFA2C8A223E0(/*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8;
+		L_8 = Camera_ScreenToWorldPoint_m7EE1C8665F9BB089581FA225BB4BFF411B5301B6(L_6, L_7, /*hidden argument*/NULL);
+		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_9;
+		L_9 = Vector2_op_Implicit_m101DE5340601C037D9252FB6B99AD18C793C54A1_inline(L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
 		// transform.up = mousePos - new Vector2(transform.position.x, transform.position.y);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_10;
+		L_10 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
+		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_11 = V_0;
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_12;
 		L_12 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
-		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_13 = V_0;
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_14;
-		L_14 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_15;
-		L_15 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_14, /*hidden argument*/NULL);
-		float L_16 = L_15.get_x_2();
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_17;
-		L_17 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_18;
-		L_18 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_17, /*hidden argument*/NULL);
-		float L_19 = L_18.get_y_3();
-		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_20;
-		memset((&L_20), 0, sizeof(L_20));
-		Vector2__ctor_m9F1F2D5EB5D1FF7091BB527AC8A72CBB309D115E_inline((&L_20), L_16, L_19, /*hidden argument*/NULL);
-		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_21;
-		L_21 = Vector2_op_Subtraction_m3E4A2D9544C5A953CC0CA9CE76D5279987381BFC_inline(L_13, L_20, /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_22;
-		L_22 = Vector2_op_Implicit_mC91C21911FDB26792369C645DAABBC43B3DE9932_inline(L_21, /*hidden argument*/NULL);
-		Transform_set_up_m3D2B71DA51EA167C367FD275B7B28241C565F127(L_12, L_22, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_13;
+		L_13 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_12, /*hidden argument*/NULL);
+		float L_14 = L_13.get_x_2();
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_15;
+		L_15 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_16;
+		L_16 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_15, /*hidden argument*/NULL);
+		float L_17 = L_16.get_y_3();
+		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_18;
+		memset((&L_18), 0, sizeof(L_18));
+		Vector2__ctor_m9F1F2D5EB5D1FF7091BB527AC8A72CBB309D115E_inline((&L_18), L_14, L_17, /*hidden argument*/NULL);
+		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_19;
+		L_19 = Vector2_op_Subtraction_m3E4A2D9544C5A953CC0CA9CE76D5279987381BFC_inline(L_11, L_18, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_20;
+		L_20 = Vector2_op_Implicit_mC91C21911FDB26792369C645DAABBC43B3DE9932_inline(L_19, /*hidden argument*/NULL);
+		Transform_set_up_m3D2B71DA51EA167C367FD275B7B28241C565F127(L_10, L_20, /*hidden argument*/NULL);
 		// Rpc_RotateCilent(mousePos);
-		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_23 = V_0;
-		gunMode_Rpc_RotateCilent_m26D0E17392245BFFC67B0B194AF89A92A17D1C25(__this, L_23, /*hidden argument*/NULL);
+		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_21 = V_0;
+		gunMode_Rpc_RotateCilent_m26D0E17392245BFFC67B0B194AF89A92A17D1C25(__this, L_21, /*hidden argument*/NULL);
 		// if (firerate <= 2)
-		double L_24 = __this->get_firerate_21();
-		if ((!(((double)L_24) <= ((double)(2.0)))))
+		double L_22 = __this->get_firerate_21();
+		if ((!(((double)L_22) <= ((double)(2.0)))))
 		{
-			goto IL_00c9;
+			goto IL_00bb;
 		}
 	}
 	{
 		// firerate += Time.deltaTime;
-		double L_25 = __this->get_firerate_21();
-		float L_26;
-		L_26 = Time_get_deltaTime_mF558623BBB4EE65C8810243B05ED204A9E8D6FD1(/*hidden argument*/NULL);
-		__this->set_firerate_21(((double)il2cpp_codegen_add((double)L_25, (double)((double)((double)L_26)))));
+		double L_23 = __this->get_firerate_21();
+		float L_24;
+		L_24 = Time_get_deltaTime_mF558623BBB4EE65C8810243B05ED204A9E8D6FD1(/*hidden argument*/NULL);
+		__this->set_firerate_21(((double)il2cpp_codegen_add((double)L_23, (double)((double)((double)L_24)))));
 	}
 
-IL_00c9:
+IL_00bb:
 	{
 		// if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost && gunModel == 6)
-		bool L_27;
-		L_27 = Input_GetMouseButtonUp_m72BC7AC98DF3D431D2AD59D0916216D4E31A9503(0, /*hidden argument*/NULL);
-		if (L_27)
+		bool L_25;
+		L_25 = Input_GetMouseButtonUp_m72BC7AC98DF3D431D2AD59D0916216D4E31A9503(0, /*hidden argument*/NULL);
+		if (L_25)
 		{
-			goto IL_00f6;
+			goto IL_00e8;
 		}
 	}
 	{
-		int32_t L_28;
-		L_28 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_29 = __this->get_gunControl_46();
-		int32_t L_30 = L_29->get_cost_15();
-		if ((((int32_t)L_28) >= ((int32_t)L_30)))
+		int32_t L_26;
+		L_26 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_27 = __this->get_gunControl_46();
+		int32_t L_28 = L_27->get_cost_15();
+		if ((((int32_t)L_26) >= ((int32_t)L_28)))
 		{
-			goto IL_00fd;
+			goto IL_00ef;
 		}
 	}
 	{
-		int32_t L_31;
-		L_31 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_31) == ((uint32_t)6))))
+		int32_t L_29;
+		L_29 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_29) == ((uint32_t)6))))
 		{
-			goto IL_00fd;
+			goto IL_00ef;
 		}
 	}
 
-IL_00f6:
+IL_00e8:
 	{
 		// LaserServerRpc(false);
 		gunMode_LaserServerRpc_mAA4202A050336ABEC4FF5EEC03B144349431CC50(__this, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_00fd:
+IL_00ef:
 	{
 		// if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
-		bool L_32;
-		L_32 = Input_GetMouseButton_mEF40689A9E574691E832255C430A9E626B005AF3(0, /*hidden argument*/NULL);
-		if (!L_32)
+		bool L_30;
+		L_30 = Input_GetMouseButton_mEF40689A9E574691E832255C430A9E626B005AF3(0, /*hidden argument*/NULL);
+		if (!L_30)
 		{
-			goto IL_0208;
+			goto IL_01fa;
 		}
 	}
 	{
-		int32_t L_33;
-		L_33 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_34 = __this->get_gunControl_46();
-		int32_t L_35 = L_34->get_cost_15();
-		if ((((int32_t)L_33) < ((int32_t)L_35)))
+		int32_t L_31;
+		L_31 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_32 = __this->get_gunControl_46();
+		int32_t L_33 = L_32->get_cost_15();
+		if ((((int32_t)L_31) < ((int32_t)L_33)))
 		{
-			goto IL_0208;
+			goto IL_01fa;
 		}
 	}
 	{
-		bool L_36 = __this->get_canPlay_60();
-		if (!L_36)
+		bool L_34 = __this->get_canPlay_60();
+		if (!L_34)
 		{
-			goto IL_0208;
+			goto IL_01fa;
 		}
 	}
 	{
-		OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * L_37 = ((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->get_instant_14();
-		bool L_38 = L_37->get_openMenu_15();
-		if (L_38)
+		OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * L_35 = ((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->get_instant_14();
+		bool L_36 = L_35->get_openMenu_15();
+		if (L_36)
 		{
-			goto IL_0208;
+			goto IL_01fa;
 		}
 	}
 	{
-		int32_t L_39;
-		L_39 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		if ((((int32_t)L_39) == ((int32_t)4)))
+		int32_t L_37;
+		L_37 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		if ((((int32_t)L_37) == ((int32_t)4)))
 		{
-			goto IL_0208;
+			goto IL_01fa;
 		}
 	}
 	{
 		// if (gunModel == 6)
-		int32_t L_40;
-		L_40 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_40) == ((uint32_t)6))))
+		int32_t L_38;
+		L_38 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_38) == ((uint32_t)6))))
 		{
-			goto IL_015d;
+			goto IL_014f;
 		}
 	}
 	{
@@ -25247,197 +25229,197 @@ IL_00fd:
 		gunMode_LaserServerRpc_mAA4202A050336ABEC4FF5EEC03B144349431CC50(__this, (bool)1, /*hidden argument*/NULL);
 	}
 
-IL_015d:
+IL_014f:
 	{
 		// if (firerate >= firerateAmount)
-		double L_41 = __this->get_firerate_21();
-		float L_42 = __this->get_firerateAmount_22();
-		if ((!(((double)L_41) >= ((double)((double)((double)L_42))))))
+		double L_39 = __this->get_firerate_21();
+		float L_40 = __this->get_firerateAmount_22();
+		if ((!(((double)L_39) >= ((double)((double)((double)L_40))))))
 		{
-			goto IL_0208;
+			goto IL_01fa;
 		}
 	}
 	{
 		// if (TimeDouble < 10)
-		float L_43 = __this->get_TimeDouble_61();
-		if ((!(((float)L_43) < ((float)(10.0f)))))
+		float L_41 = __this->get_TimeDouble_61();
+		if ((!(((float)L_41) < ((float)(10.0f)))))
 		{
-			goto IL_018b;
+			goto IL_017d;
 		}
 	}
 	{
 		// Rpc_Shoot(gunModel, true);
-		int32_t L_44;
-		L_44 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_44, (bool)1, /*hidden argument*/NULL);
+		int32_t L_42;
+		L_42 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_42, (bool)1, /*hidden argument*/NULL);
 		// }
-		goto IL_0198;
+		goto IL_018a;
 	}
 
-IL_018b:
+IL_017d:
 	{
 		// Rpc_Shoot(gunModel, false);
-		int32_t L_45;
-		L_45 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_45, (bool)0, /*hidden argument*/NULL);
+		int32_t L_43;
+		L_43 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_43, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_0198:
+IL_018a:
 	{
 		// if (item.instace.spare == false)
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_46 = ((item_t250D4218EA405862560991833D9AB1D39076A398_StaticFields*)il2cpp_codegen_static_fields_for(item_t250D4218EA405862560991833D9AB1D39076A398_il2cpp_TypeInfo_var))->get_instace_17();
-		bool L_47 = L_46->get_spare_20();
-		if (L_47)
+		item_t250D4218EA405862560991833D9AB1D39076A398 * L_44 = ((item_t250D4218EA405862560991833D9AB1D39076A398_StaticFields*)il2cpp_codegen_static_fields_for(item_t250D4218EA405862560991833D9AB1D39076A398_il2cpp_TypeInfo_var))->get_instace_17();
+		bool L_45 = L_44->get_spare_20();
+		if (L_45)
 		{
-			goto IL_01b9;
+			goto IL_01ab;
 		}
 	}
 	{
 		// UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
-		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_48 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_49 = __this->get_gunControl_46();
-		int32_t L_50 = L_49->get_cost_15();
-		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_48, L_50, /*hidden argument*/NULL);
+		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_46 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_47 = __this->get_gunControl_46();
+		int32_t L_48 = L_47->get_cost_15();
+		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_46, L_48, /*hidden argument*/NULL);
 	}
 
-IL_01b9:
+IL_01ab:
 	{
 		// if (item.instace.spare == true)
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_51 = ((item_t250D4218EA405862560991833D9AB1D39076A398_StaticFields*)il2cpp_codegen_static_fields_for(item_t250D4218EA405862560991833D9AB1D39076A398_il2cpp_TypeInfo_var))->get_instace_17();
-		bool L_52 = L_51->get_spare_20();
-		if (!L_52)
+		item_t250D4218EA405862560991833D9AB1D39076A398 * L_49 = ((item_t250D4218EA405862560991833D9AB1D39076A398_StaticFields*)il2cpp_codegen_static_fields_for(item_t250D4218EA405862560991833D9AB1D39076A398_il2cpp_TypeInfo_var))->get_instace_17();
+		bool L_50 = L_49->get_spare_20();
+		if (!L_50)
 		{
-			goto IL_01f9;
+			goto IL_01eb;
 		}
 	}
 	{
 		// randomFreefire = UnityEngine.Random.Range(0, 3);
-		int32_t L_53;
-		L_53 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(0, 3, /*hidden argument*/NULL);
-		__this->set_randomFreefire_59(L_53);
+		int32_t L_51;
+		L_51 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(0, 3, /*hidden argument*/NULL);
+		__this->set_randomFreefire_59(L_51);
 		// if (randomFreefire == 1 || randomFreefire == 2)
-		int32_t L_54 = __this->get_randomFreefire_59();
-		if ((((int32_t)L_54) == ((int32_t)1)))
+		int32_t L_52 = __this->get_randomFreefire_59();
+		if ((((int32_t)L_52) == ((int32_t)1)))
 		{
-			goto IL_01e4;
+			goto IL_01d6;
 		}
 	}
 	{
-		int32_t L_55 = __this->get_randomFreefire_59();
-		if ((!(((uint32_t)L_55) == ((uint32_t)2))))
+		int32_t L_53 = __this->get_randomFreefire_59();
+		if ((!(((uint32_t)L_53) == ((uint32_t)2))))
 		{
-			goto IL_01f9;
+			goto IL_01eb;
 		}
 	}
 
-IL_01e4:
+IL_01d6:
 	{
 		// UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
-		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_56 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_57 = __this->get_gunControl_46();
-		int32_t L_58 = L_57->get_cost_15();
-		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_56, L_58, /*hidden argument*/NULL);
+		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_54 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_55 = __this->get_gunControl_46();
+		int32_t L_56 = L_55->get_cost_15();
+		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_54, L_56, /*hidden argument*/NULL);
 	}
 
-IL_01f9:
+IL_01eb:
 	{
 		// firerate = 0;
 		__this->set_firerate_21((0.0));
 	}
 
-IL_0208:
+IL_01fa:
 	{
 		// if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel == 4)
-		bool L_59;
-		L_59 = Input_GetMouseButton_mEF40689A9E574691E832255C430A9E626B005AF3(0, /*hidden argument*/NULL);
-		if (!L_59)
+		bool L_57;
+		L_57 = Input_GetMouseButton_mEF40689A9E574691E832255C430A9E626B005AF3(0, /*hidden argument*/NULL);
+		if (!L_57)
 		{
-			goto IL_02a0;
+			goto IL_0292;
 		}
 	}
 	{
-		int32_t L_60;
-		L_60 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_61 = __this->get_gunControl_46();
-		int32_t L_62 = L_61->get_cost_15();
-		if ((((int32_t)L_60) < ((int32_t)L_62)))
+		int32_t L_58;
+		L_58 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_59 = __this->get_gunControl_46();
+		int32_t L_60 = L_59->get_cost_15();
+		if ((((int32_t)L_58) < ((int32_t)L_60)))
 		{
-			goto IL_02a0;
+			goto IL_0292;
 		}
 	}
 	{
-		bool L_63 = __this->get_canPlay_60();
-		if (!L_63)
+		bool L_61 = __this->get_canPlay_60();
+		if (!L_61)
 		{
-			goto IL_02a0;
+			goto IL_0292;
 		}
 	}
 	{
-		OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * L_64 = ((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->get_instant_14();
-		bool L_65 = L_64->get_openMenu_15();
-		if (L_65)
+		OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * L_62 = ((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->get_instant_14();
+		bool L_63 = L_62->get_openMenu_15();
+		if (L_63)
 		{
-			goto IL_02a0;
+			goto IL_0292;
 		}
 	}
 	{
-		int32_t L_66;
-		L_66 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_66) == ((uint32_t)4))))
+		int32_t L_64;
+		L_64 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_64) == ((uint32_t)4))))
 		{
-			goto IL_02a0;
+			goto IL_0292;
 		}
 	}
 	{
 		// if (firerate >= 0.1)
-		double L_67 = __this->get_firerate_21();
-		if ((!(((double)L_67) >= ((double)(0.10000000000000001)))))
+		double L_65 = __this->get_firerate_21();
+		if ((!(((double)L_65) >= ((double)(0.10000000000000001)))))
 		{
-			goto IL_02a0;
+			goto IL_0292;
 		}
 	}
 	{
 		// if (TimeDouble < 10)
-		float L_68 = __this->get_TimeDouble_61();
-		if ((!(((float)L_68) < ((float)(10.0f)))))
+		float L_66 = __this->get_TimeDouble_61();
+		if ((!(((float)L_66) < ((float)(10.0f)))))
 		{
-			goto IL_0279;
+			goto IL_026b;
 		}
 	}
 	{
 		// Rpc_Shoot(gunModel, true);
-		int32_t L_69;
-		L_69 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_69, (bool)1, /*hidden argument*/NULL);
+		int32_t L_67;
+		L_67 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_67, (bool)1, /*hidden argument*/NULL);
 		// }
-		goto IL_0286;
+		goto IL_0278;
 	}
 
-IL_0279:
+IL_026b:
 	{
 		// Rpc_Shoot(gunModel, false);
-		int32_t L_70;
-		L_70 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_70, (bool)0, /*hidden argument*/NULL);
+		int32_t L_68;
+		L_68 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_68, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_0286:
+IL_0278:
 	{
 		// firerate = 0;
 		__this->set_firerate_21((0.0));
 		// UiTextSpawmControl.Instance.MinusGold(3);
-		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_71 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
-		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_71, 3, /*hidden argument*/NULL);
+		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_69 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
+		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_69, 3, /*hidden argument*/NULL);
 	}
 
-IL_02a0:
+IL_0292:
 	{
 		// if (Input.GetKeyDown("1"))
-		bool L_72;
-		L_72 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3, /*hidden argument*/NULL);
-		if (!L_72)
+		bool L_70;
+		L_70 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3, /*hidden argument*/NULL);
+		if (!L_70)
 		{
-			goto IL_02b3;
+			goto IL_02a5;
 		}
 	}
 	{
@@ -25445,14 +25427,14 @@ IL_02a0:
 		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 1, /*hidden argument*/NULL);
 	}
 
-IL_02b3:
+IL_02a5:
 	{
 		// if (Input.GetKeyDown("2"))
-		bool L_73;
-		L_73 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral21ED4C7AF50D987589A9029FC0422151BE3A0FC2, /*hidden argument*/NULL);
-		if (!L_73)
+		bool L_71;
+		L_71 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral21ED4C7AF50D987589A9029FC0422151BE3A0FC2, /*hidden argument*/NULL);
+		if (!L_71)
 		{
-			goto IL_02c6;
+			goto IL_02b8;
 		}
 	}
 	{
@@ -25460,99 +25442,99 @@ IL_02b3:
 		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 2, /*hidden argument*/NULL);
 	}
 
-IL_02c6:
+IL_02b8:
 	{
 		// if (Input.GetKeyDown("3"))
-		bool L_74;
-		L_74 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral2064F80F811DB79A33C4E51C10221454E30C74AE, /*hidden argument*/NULL);
-		if (!L_74)
+		bool L_72;
+		L_72 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral2064F80F811DB79A33C4E51C10221454E30C74AE, /*hidden argument*/NULL);
+		if (!L_72)
 		{
-			goto IL_02f8;
+			goto IL_02ea;
 		}
 	}
 	{
 		// gunControl.cost = 5;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_75 = __this->get_gunControl_46();
-		L_75->set_cost_15(5);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_73 = __this->get_gunControl_46();
+		L_73->set_cost_15(5);
 		// gunControl.damage = 2;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_76 = __this->get_gunControl_46();
-		L_76->set_damage_14(2);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_74 = __this->get_gunControl_46();
+		L_74->set_damage_14(2);
 		// gunModel = 3;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 3, /*hidden argument*/NULL);
 		// Rpc_ChangeGunCilent(3);
 		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 3, /*hidden argument*/NULL);
 	}
 
-IL_02f8:
+IL_02ea:
 	{
 		// if (Input.GetKeyDown("4"))
-		bool L_77;
-		L_77 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral7454695E25D304C65D0C1333D8008E862569CAE9, /*hidden argument*/NULL);
-		if (!L_77)
+		bool L_75;
+		L_75 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral7454695E25D304C65D0C1333D8008E862569CAE9, /*hidden argument*/NULL);
+		if (!L_75)
 		{
-			goto IL_032a;
+			goto IL_031c;
 		}
 	}
 	{
 		// gunControl.cost = 3;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_78 = __this->get_gunControl_46();
-		L_78->set_cost_15(3);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_76 = __this->get_gunControl_46();
+		L_76->set_cost_15(3);
 		// gunControl.damage = 3;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_79 = __this->get_gunControl_46();
-		L_79->set_damage_14(3);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_77 = __this->get_gunControl_46();
+		L_77->set_damage_14(3);
 		// gunModel = 4;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 4, /*hidden argument*/NULL);
 		// Rpc_ChangeGunCilent(4);
 		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 4, /*hidden argument*/NULL);
 	}
 
-IL_032a:
+IL_031c:
 	{
 		// if (Input.GetKeyDown("5"))
-		bool L_80;
-		L_80 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteralF7DDF59B44DDF9253B657C54053522CF694D3FBE, /*hidden argument*/NULL);
-		if (!L_80)
+		bool L_78;
+		L_78 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteralF7DDF59B44DDF9253B657C54053522CF694D3FBE, /*hidden argument*/NULL);
+		if (!L_78)
 		{
-			goto IL_035e;
+			goto IL_0350;
 		}
 	}
 	{
 		// gunControl.cost = 15;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_81 = __this->get_gunControl_46();
-		L_81->set_cost_15(((int32_t)15));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_79 = __this->get_gunControl_46();
+		L_79->set_cost_15(((int32_t)15));
 		// gunControl.damage = 10;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_82 = __this->get_gunControl_46();
-		L_82->set_damage_14(((int32_t)10));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_80 = __this->get_gunControl_46();
+		L_80->set_damage_14(((int32_t)10));
 		// gunModel = 5;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 5, /*hidden argument*/NULL);
 		// Rpc_ChangeGunCilent(5);
 		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 5, /*hidden argument*/NULL);
 	}
 
-IL_035e:
+IL_0350:
 	{
 		// if (Input.GetKeyDown("6"))
-		bool L_83;
-		L_83 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral2F7234099CCD07F9C0939ACCC13D7F7F6E95DBAD, /*hidden argument*/NULL);
-		if (!L_83)
+		bool L_81;
+		L_81 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral2F7234099CCD07F9C0939ACCC13D7F7F6E95DBAD, /*hidden argument*/NULL);
+		if (!L_81)
 		{
-			goto IL_0392;
+			goto IL_0384;
 		}
 	}
 	{
 		// gunControl.cost = 75;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_84 = __this->get_gunControl_46();
-		L_84->set_cost_15(((int32_t)75));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_82 = __this->get_gunControl_46();
+		L_82->set_cost_15(((int32_t)75));
 		// gunControl.damage = 10;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_85 = __this->get_gunControl_46();
-		L_85->set_damage_14(((int32_t)10));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_83 = __this->get_gunControl_46();
+		L_83->set_damage_14(((int32_t)10));
 		// gunModel = 6;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 6, /*hidden argument*/NULL);
 		// Rpc_ChangeGunCilent(6);
 		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 6, /*hidden argument*/NULL);
 	}
 
-IL_0392:
+IL_0384:
 	{
 		// }
 		return;

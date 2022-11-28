@@ -512,6 +512,8 @@ struct AudioEventGroup_t8F1506F6C0C11DC07454CA90E7AFDD413EDB08C6;
 struct AudioHighPassFilter_t0B178B59B995048CBBE7AF321FC5C3614A475D08;
 // UnityEngine.AudioLowPassFilter
 struct AudioLowPassFilter_t5FFDAD1A328004D17DD5E28FEA2F5468E6C2AC06;
+// AudioMIxer
+struct AudioMIxer_t86BFB749CCFCDCC541F805E53D372570B8D66DA5;
 // UnityEngine.Audio.AudioMixerGroup
 struct AudioMixerGroup_tDF20E4C7597CA1C491BEA95A530E9CA19AE37F1F;
 // UnityEngine.Audio.AudioMixerSnapshot
@@ -16238,6 +16240,15 @@ public:
 	{
 		____indexMusic_7 = value;
 	}
+};
+
+
+// AudioMIxer
+struct AudioMIxer_t86BFB749CCFCDCC541F805E53D372570B8D66DA5  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+
+public:
 };
 
 
@@ -40165,6 +40176,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioLoaderOptimizer__cctor_m8E04ED76CA0
 		Dictionary_2_t17D98C0C039E62412D1CF8DE53C9F11D1D71C280 * L_1 = (Dictionary_2_t17D98C0C039E62412D1CF8DE53C9F11D1D71C280 *)il2cpp_codegen_object_new(Dictionary_2_t17D98C0C039E62412D1CF8DE53C9F11D1D71C280_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m11A2B30A764751A7A47B91EA405B453A7286BC6B(L_1, L_0, /*hidden argument*/Dictionary_2__ctor_m11A2B30A764751A7A47B91EA405B453A7286BC6B_RuntimeMethod_var);
 		((AudioLoaderOptimizer_t2B79A2DB478AE54438C8BAB04A7DAD39E713CEC3_StaticFields*)il2cpp_codegen_static_fields_for(AudioLoaderOptimizer_t2B79A2DB478AE54438C8BAB04A7DAD39E713CEC3_il2cpp_TypeInfo_var))->set_PlayingGameObjectsByClipName_0(L_1);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void AudioMIxer::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioMIxer_Start_m631E3F77107682DC6384869BCBD135B442F1A2CC (AudioMIxer_t86BFB749CCFCDCC541F805E53D372570B8D66DA5 * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void AudioMIxer::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioMIxer_Update_mBC0548176EAEB066A6622257B3D14F8C140BA70C (AudioMIxer_t86BFB749CCFCDCC541F805E53D372570B8D66DA5 * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void AudioMIxer::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioMIxer__ctor_m85B38D4E17B609F409813D92DF516C49E521043E (AudioMIxer_t86BFB749CCFCDCC541F805E53D372570B8D66DA5 * __this, const RuntimeMethod* method)
+{
+	{
+		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
