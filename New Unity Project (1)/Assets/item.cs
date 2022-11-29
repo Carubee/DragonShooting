@@ -71,13 +71,18 @@ public class item : NetworkBehaviour
         }
         if (doubleDamage == true )
         {
+            gunMode.instance.doubleDamage.SetActive(true);
             TimeDamage += Time.deltaTime;
             timeMode.value = TimeDamage;
             if (TimeDamage >= 10)
+            {
                 doubleDamage = false;
+                gunMode.instance.doubleDamage.SetActive(false);
+            }
         }
         if (spare == true )
         {
+            gunMode.instance.spareEffect.SetActive(true);
             TimeSpare += Time.deltaTime;
             timeMode.value = TimeSpare;
             if (TimeSpare >= 10)
@@ -85,6 +90,7 @@ public class item : NetworkBehaviour
         }
         if (tracker == true )
         {
+            gunMode.instance.spareEffect.SetActive(false);
             Timetracker += Time.deltaTime;
             timeMode.value = Timetracker;
             if (Timetracker >= 10)
@@ -140,8 +146,15 @@ public class item : NetworkBehaviour
     }
     public void Double()
     {
-        gunMode.instance.DoubleDamage(0);
-        Effect();
+        if (amountDoubleDamage > 0)
+        {
+            amountDoubleDamage -= 1;
+            UpdateText();
+            gunMode.instance.DoubleDamage(0);
+            TimeDamage = 0;
+            doubleDamage = true;
+            Effect();
+        }
     }
     public void HunterBag()
     {

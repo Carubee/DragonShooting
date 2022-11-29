@@ -117,9 +117,9 @@ public class OpenOptioon : MonoBehaviour
         }
         if (Bomb == true)
         {
-            if (PlayerPrefs.GetInt("gold", 1000) >= 45)
+            if (PlayerPrefs.GetInt("gold", 1000) >= 200)
             {
-                UiTextSpawmControl.Instance.MinusGold(45);
+                UiTextSpawmControl.Instance.MinusGold(200);
                 itemUse.amountBomb += 1;
                 CloseBeforeBuy();
             }
@@ -164,7 +164,7 @@ public class OpenOptioon : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("gold", 1000) >= 350)
             {
-                UiTextSpawmControl.Instance.MinusGold(35);
+                UiTextSpawmControl.Instance.MinusGold(350);
                 itemUse.amountHunterBag += 1;
                 CloseBeforeBuy();
             }

@@ -73,7 +73,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     public void OnPlayerJoined(NetworkRunner runner,PlayerRef player)
     {
         lobbyMenu.SetActive(false);
-
+        AudioMIxer.instance.BGM.Play();
         if (runner.IsServer)
         {
             Vector3 spawnPos = new Vector3(0, 90, 0);

@@ -5867,6 +5867,24 @@ public:
 };
 
 
+// DarkTonic.MasterAudio.EventSounds/EventType
+struct EventType_t7BDC542935BBB98DD6EE0B5398BD0CF0341B53F5 
+{
+public:
+	// System.Int32 DarkTonic.MasterAudio.EventSounds/EventType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(EventType_t7BDC542935BBB98DD6EE0B5398BD0CF0341B53F5, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // DarkTonic.MasterAudio.EventSounds/GlidePitchType
 struct GlidePitchType_tF51BB7AF1EEE9C4FA3D1DCB9F24377D4171094CC 
 {
@@ -18423,6 +18441,78 @@ public:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5223[3] = 
+{
+	UnityUIVersion_tE21E778C3239FDB5E9DEED9A1EA2172756BD52BD::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
+	0,
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5224[50] = 
+{
+	EventType_t7BDC542935BBB98DD6EE0B5398BD0CF0341B53F5::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5225[4] = 
+{
+	GlidePitchType_tF51BB7AF1EEE9C4FA3D1DCB9F24377D4171094CC::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
+	0,
+	0,
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5226[3] = 
+{
+	VariationType_t215CDAECA1CE3BC354DA72422B641AA2A61B4FA7::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
+	0,
+};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5227[4] = 
 {
 	PreviousSoundStopMode_tB0FC22082C80AABD2CDB39F19A336B43AFF6C818::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),

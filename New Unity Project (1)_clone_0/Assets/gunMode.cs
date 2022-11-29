@@ -54,6 +54,8 @@ public class gunMode : NetworkBehaviour
     public GameObject bomb;
     public GameObject upgradeEffect;
     public GameObject doubleGold;
+    public GameObject doubleDamage;
+    public GameObject spareEffect;
 
     //public bool canfire;
     public int randomFreefire;
@@ -80,7 +82,7 @@ public class gunMode : NetworkBehaviour
         Rpc_SetNickName(PlayerPrefs.GetString("PlayerNickName"));
         OnNickNameChanged();
         instance = this;
-
+        gunModel = 1;
 
     }
     public void Update()
@@ -124,13 +126,11 @@ public class gunMode : NetworkBehaviour
                 {
                     //PlayerShootGunServerRpc(bulletTypeValue.Value, true);
                     Rpc_Shoot(gunModel, true);
-                    enchanceShoot.Play();
                 }
                 else
                 {
                     //PlayerShootGunServerRpc(bulletTypeValue.Value, false);
                     Rpc_Shoot(gunModel, false);
-                    normalShoot.Play();
 
                 }
                 if (item.instace.spare == false)
@@ -382,7 +382,7 @@ public class gunMode : NetworkBehaviour
             //Runner.Spawn(, firepoint.position, Quaternion.identity);
             Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
             rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
-
+            normalShoot.Play();
         }
         else
         {
@@ -390,6 +390,7 @@ public class gunMode : NetworkBehaviour
             //Runner.Spawn(bullet2, firepoint.position, Quaternion.identity);
             Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
             rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+            enchanceShoot.Play();
         }
        
     }
@@ -401,6 +402,8 @@ public class gunMode : NetworkBehaviour
             //Runner.Spawn(bullet2, firepoint.position, Quaternion.identity);
             Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
             rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+            normalShoot.Play();
+
         }
         else
         {
@@ -408,6 +411,8 @@ public class gunMode : NetworkBehaviour
             //Runner.Spawn(bullet2, firepoint.position, Quaternion.identity);
             Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
             rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+            enchanceShoot.Play();
+
         }
 
     }
@@ -417,7 +422,7 @@ public class gunMode : NetworkBehaviour
         {
             GameObject bullet2 = Instantiate(longBullet, firepoint.position, Quaternion.identity);
             //Runner.Spawn(bullet2, firepoint.position, Quaternion.identity);
-
+            normalShoot.Play();
             Rigidbody2D rb = bullet2.GetComponent<Rigidbody2D>();
             rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
         }
@@ -437,7 +442,6 @@ public class gunMode : NetworkBehaviour
         {
             GameObject bullet = Instantiate(arrowBullet, firepoint.position, firepoint.rotation);
             //Runner.Spawn(bullet, firepoint.position, firepoint.rotation);
-
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
         }
@@ -458,7 +462,7 @@ public class gunMode : NetworkBehaviour
             {
                 GameObject bullet = Instantiate(shotgunBullet, firepoint.position, Quaternion.identity);
                 //Runner.Spawn(bullet, firepoint.position, Quaternion.identity);
-
+                normalShoot.Play();
                 Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
                 Vector2 dir = transform.rotation * Vector2.up;
                 Vector2 pdir = Vector2.Perpendicular(dir) * UnityEngine.Random.Range(-spread, spread);
@@ -470,7 +474,7 @@ public class gunMode : NetworkBehaviour
             for (int i = 0; i < amountofshotgun; i++)
             {
                 GameObject bullet = Instantiate(bulletDoubleShort, firepoint.position, Quaternion.identity);
-                //Runner.Spawn(bullet, firepoint.position, Quaternion.identity);
+                enchanceShoot.Play();
 
                 Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
                 Vector2 dir = transform.rotation * Vector2.up;

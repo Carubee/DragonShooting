@@ -12,9 +12,12 @@ public class AudioMIxer : MonoBehaviour
     [SerializeField] Slider _sliderSFX;
     [SerializeField] Slider _sliderBGM;
     [SerializeField] float _multiplier = 30f;
+    public AudioSource BGM;
+    public static AudioMIxer instance;
     //[SerializeField] Toggle _toggle;
     void Start()
     {
+        instance = this;
         _sliderSFX.onValueChanged.AddListener(HandleSliderValueChangedSFX);
         _sliderBGM.onValueChanged.AddListener(HandleSliderValueChangedBGM);
         _sliderSFX.value = PlayerPrefs.GetFloat(_volumeParameterSFX, _sliderSFX.value);

@@ -718,6 +718,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Audio.AudioMixer
 
+		//System.Boolean UnityEngine.Audio.AudioMixer::SetFloat(System.String,System.Single)
+		void Register_UnityEngine_Audio_AudioMixer_SetFloat();
+		Register_UnityEngine_Audio_AudioMixer_SetFloat();
+
 		//System.Void UnityEngine.Audio.AudioMixer::TransitionToSnapshots(UnityEngine.Audio.AudioMixerSnapshot[],System.Single[],System.Single)
 		void Register_UnityEngine_Audio_AudioMixer_TransitionToSnapshots();
 		Register_UnityEngine_Audio_AudioMixer_TransitionToSnapshots();
