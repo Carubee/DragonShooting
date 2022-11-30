@@ -13,6 +13,7 @@ public class coinEffControl : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         Destroy(gameObject, 3f);
+       
     }
     private void Update()
     {
@@ -28,5 +29,5 @@ public class coinEffControl : MonoBehaviour
     {
         rb.MovePosition((Vector2)transform.position + (direction * movespeed * Time.deltaTime));
     }
-
+   
 }

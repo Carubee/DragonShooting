@@ -495,12 +495,14 @@ public class gunMode : NetworkBehaviour
         if (show == false)
         {
             laserbullet.SetActive(false);
-            
-        }
 
-        GameObject bullet = Instantiate(laserCollision, firepoint.position, firepoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
+        }
+        if (gunNumber == 6)
+        {
+            GameObject bullet = Instantiate(laserCollision, firepoint.position, firepoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
+        }
     }
     public int lastSeat;
     [Rpc(RpcSources.InputAuthority, RpcTargets.All)]

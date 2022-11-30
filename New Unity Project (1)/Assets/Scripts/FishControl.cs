@@ -39,7 +39,8 @@ public class FishControl : NetworkBehaviour
     public bool canEvade;
 
     public GameObject dieDragon;
-    
+    [SerializeField] GameObject dropItem;
+
     public void Start()
     {
         _checkInvisible = false;
@@ -168,6 +169,11 @@ public class FishControl : NetworkBehaviour
                     {
                         UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
                     }
+                    int itemDrop = Random.Range(0, 11);
+                    if(itemDrop == 0)
+                        Instantiate(Resources.Load("Item"), new Vector3(transform.position.x, transform.position.y, -4.3f), Quaternion.identity);
+
+
                     //gunMode.instance.MoneyPlayer += _gold;
                     Runner.Despawn(this.Object);
                     //FishManage.Instance._FishMange.Remove(transform);
