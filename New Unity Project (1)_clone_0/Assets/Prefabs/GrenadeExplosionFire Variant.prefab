@@ -133,8 +133,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 82007018935423512, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82007018935423512, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
+      propertyPath: BypassEffects
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82007018935423512, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 328987126169191978, guid: 2dc19fe30d0169041b429e792c2c752d, type: 2}
     - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -158,5 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88de128d516f6824b9e4818b924df198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroytime: 0.3
+  destroytime: 0.4
   timeRun: 0
+  dieDragon: 0

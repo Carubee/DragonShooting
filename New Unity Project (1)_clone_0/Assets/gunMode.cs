@@ -67,6 +67,7 @@ public class gunMode : NetworkBehaviour
     [SerializeField] Text Name;
     [SerializeField] private AudioSource normalShoot;
     [SerializeField] private AudioSource enchanceShoot;
+    [SerializeField] private AudioSource laserShoot;
     public NetworkString<_16> nickName { get; set; }
 
 
@@ -147,6 +148,8 @@ public class gunMode : NetworkBehaviour
                     if (randomFreefire == 1 || randomFreefire == 2)
                         UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
                 }
+                
+
                 firerate = 0;
             }
 
@@ -495,9 +498,9 @@ public class gunMode : NetworkBehaviour
             
         }
 
-        /*GameObject bullet = Instantiate(laserCollision, firepoint.position, firepoint.rotation);
+        GameObject bullet = Instantiate(laserCollision, firepoint.position, firepoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);*/
+        rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
     }
     public int lastSeat;
     [Rpc(RpcSources.InputAuthority, RpcTargets.All)]

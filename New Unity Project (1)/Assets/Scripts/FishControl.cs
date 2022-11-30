@@ -25,6 +25,8 @@ public class FishControl : NetworkBehaviour
     public CallDie _callDie;
     public int armor;
     public int _gold;
+    public int _gold_min;
+    public int _gold_max;
     [SerializeField] GameObject armorEffect;
     [SerializeField] GameObject healEffect;
     [SerializeField] GameObject lockEffect;
@@ -43,7 +45,7 @@ public class FishControl : NetworkBehaviour
         _checkInvisible = false;
         _ani = GetComponent<Animator>();
         //_ani.Play(AnimationName, 0, Random.Range(0f, 1f));
-
+        _gold = Random.Range(_gold_min, _gold_max);
         _swim = GetComponent<Swim>();
 
         if (Random.Range(0, 2) == 1)
