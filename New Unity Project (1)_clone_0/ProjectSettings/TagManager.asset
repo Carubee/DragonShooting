@@ -10,6 +10,12 @@ TagManager:
   - lock
   - Menu
   - canSwim
+  - Effect
+  - Animal
+  - Missile
+  - Drop
+  - Inventory
+  - SlotPanel
   layers:
   - Default
   - TransparentFX
