@@ -16,6 +16,9 @@ public class itemOpen : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         InventoryThis = GameObject.FindGameObjectWithTag("Drop");
         StartCoroutine(openInventory(2));
+        GotnewItem.instance.AmountBox += 1;
+       
+
         Destroy(gameObject, 3f);
          
     }
@@ -24,6 +27,8 @@ public class itemOpen : MonoBehaviour
         Vector3 direction = player.transform.position - transform.position;
         direction.Normalize();
         movement = direction;
+        PlayerPrefs.SetInt("Box", GotnewItem.instance.AmountBox);
+        PlayerPrefs.Save();
     }
     private void FixedUpdate()
     {

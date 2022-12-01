@@ -18,13 +18,17 @@ public class ItemSlot : MonoBehaviour
     {
         //scriptable = Resources.Load<Scriptable>("item/Box");
         artwork.sprite = itemUse.ImageName;
-        amountTmp.text = itemUse.Amount;
+        itemUse.Amount = GotnewItem.instance.AmountBox;
+    }
+    private void Update()
+    {
+        amountTmp.text = GotnewItem.instance.AmountBox.ToString();
     }
 
     public void UpdateText()
     {
         name.text = itemUse.name;
-        amount.text = itemUse.Amount;
+        amount.text = itemUse.Amount.ToString();
         Des.text = itemUse.Desciption;
         artwork.sprite = itemUse.ImageName;
     }

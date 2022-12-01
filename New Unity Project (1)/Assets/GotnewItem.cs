@@ -9,6 +9,7 @@ public class GotnewItem : MonoBehaviour
     public GameObject Inventory;
     public static GotnewItem instance;
     [SerializeField] Text namePlayer;
+    public int AmountBox;
 
     void Start()
     {

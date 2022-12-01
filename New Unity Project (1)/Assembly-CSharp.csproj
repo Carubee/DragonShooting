@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.40f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
@@ -233,6 +233,7 @@
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\AudioTransformExtensions.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Events\ButtonClicker.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Settings\AudioEventGroup.cs" />
+    <Compile Include="Assets\Inventory.cs" />
     <Compile Include="Assets\Scripts\WaveQuadControl.cs" />
     <Compile Include="Assets\SineVFX\MagicMissilesAndLasers\Scripts\RandomSFX.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Singleton\SingletonScriptable.cs" />
@@ -248,6 +249,7 @@
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Utilities\FusionEditorUtilitiesExternal.cs" />
     <Compile Include="Assets\Scripts\effScoreTextControl.cs" />
+    <Compile Include="Assets\ItemSlot.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UIWrapContent.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
@@ -443,6 +445,7 @@
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_GrayScale.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionRuntimeCheck.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_MetalFX.cs" />
+    <Compile Include="Assets\itemUse.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Settings\DynamicGroupVariation.cs" />
     <Compile Include="Assets\Xffect\Scripts\Events\CameraEffects\RadialBlurEvent.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\ExampleScenes\Scripts\MA_DestroyFinishedParticle.cs" />
@@ -586,9 +589,7 @@
     <Compile Include="Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenRotation.cs" />
-    <Compile Include="Assets\itemUse.cs" />
-    <Compile Include="Assets\ItemSlot.cs" />
-    <Compile Include="Assets\Inventory.cs" />
+    <Compile Include="Assets\ShowItemDetail.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

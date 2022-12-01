@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] GameObject itemFill;
     void Start()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 1; i++)
         {
             GameObject itemF = Instantiate(itemFill,itemEmpty[i].transform.position,Quaternion.identity) as GameObject;
             itemF.transform.SetParent(itemEmpty[i].transform,true);
