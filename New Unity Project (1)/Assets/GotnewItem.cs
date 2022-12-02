@@ -10,6 +10,7 @@ public class GotnewItem : MonoBehaviour
     public static GotnewItem instance;
     [SerializeField] Text namePlayer;
     public int AmountBox;
+    [SerializeField] GameObject inventoryDetail;
 
     void Start()
     {
@@ -31,15 +32,16 @@ public class GotnewItem : MonoBehaviour
     }
     public void closeInventory()
     {
+        inventoryDetail.SetActive(false);
         Box.gameObject.SetActive(false);
         Inventory.gameObject.SetActive(false);
         gunMode.instance.canPlay = true;
-
     }
     public void openInventory()
     {
         Box.gameObject.SetActive(false);
         Inventory.SetActive(true);
+        inventoryDetail.SetActive(false);
         gunMode.instance.canPlay = false;
     }
     

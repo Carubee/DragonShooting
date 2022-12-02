@@ -16,7 +16,6 @@ public class ItemSlot : MonoBehaviour
     public Image artwork;
     void Start()
     {
-        //scriptable = Resources.Load<Scriptable>("item/Box");
         artwork.sprite = itemUse.ImageName;
         itemUse.Amount = GotnewItem.instance.AmountBox;
     }
@@ -27,9 +26,6 @@ public class ItemSlot : MonoBehaviour
 
     public void UpdateText()
     {
-        name.text = itemUse.name;
-        amount.text = itemUse.Amount.ToString();
-        Des.text = itemUse.Desciption;
-        artwork.sprite = itemUse.ImageName;
+        ShowItemDetail.instance.ShowDetail();
     }
 }

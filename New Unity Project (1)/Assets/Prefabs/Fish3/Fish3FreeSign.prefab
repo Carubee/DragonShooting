@@ -99,6 +99,8 @@ MonoBehaviour:
   _hp: 0
   armor: 0
   _gold: 150
+  _gold_min: 20
+  _gold_max: 50
   armorEffect: {fileID: 0}
   healEffect: {fileID: 0}
   lockEffect: {fileID: 3187466296130785459}
@@ -109,6 +111,8 @@ MonoBehaviour:
   regenTime: 0
   evade: 0
   canEvade: 0
+  dieDragon: {fileID: 0}
+  dropItem: {fileID: 0}
 --- !u!212 &21290530
 SpriteRenderer:
   m_ObjectHideFlags: 0

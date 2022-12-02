@@ -13787,28 +13787,34 @@ public:
 	int32_t ___armor_29;
 	// System.Int32 FishControl::_gold
 	int32_t ____gold_30;
+	// System.Int32 FishControl::_gold_min
+	int32_t ____gold_min_31;
+	// System.Int32 FishControl::_gold_max
+	int32_t ____gold_max_32;
 	// UnityEngine.GameObject FishControl::armorEffect
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___armorEffect_31;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___armorEffect_33;
 	// UnityEngine.GameObject FishControl::healEffect
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___healEffect_32;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___healEffect_34;
 	// UnityEngine.GameObject FishControl::lockEffect
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___lockEffect_33;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___lockEffect_35;
 	// System.Single FishControl::resetArmor
-	float ___resetArmor_34;
+	float ___resetArmor_36;
 	// System.Boolean FishControl::armorCreate
-	bool ___armorCreate_35;
+	bool ___armorCreate_37;
 	// System.Single FishControl::resetOnHit
-	float ___resetOnHit_36;
+	float ___resetOnHit_38;
 	// System.Boolean FishControl::canRegen
-	bool ___canRegen_37;
+	bool ___canRegen_39;
 	// System.Single FishControl::regenTime
-	float ___regenTime_38;
+	float ___regenTime_40;
 	// System.Int32 FishControl::evade
-	int32_t ___evade_39;
+	int32_t ___evade_41;
 	// System.Boolean FishControl::canEvade
-	bool ___canEvade_40;
+	bool ___canEvade_42;
 	// UnityEngine.GameObject FishControl::dieDragon
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___dieDragon_41;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___dieDragon_43;
+	// UnityEngine.GameObject FishControl::dropItem
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___dropItem_44;
 
 public:
 	inline static int32_t get_offset_of_AnimationName_17() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___AnimationName_17)); }
@@ -13929,96 +13935,121 @@ public:
 		____gold_30 = value;
 	}
 
-	inline static int32_t get_offset_of_armorEffect_31() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___armorEffect_31)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_armorEffect_31() const { return ___armorEffect_31; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_armorEffect_31() { return &___armorEffect_31; }
-	inline void set_armorEffect_31(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of__gold_min_31() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ____gold_min_31)); }
+	inline int32_t get__gold_min_31() const { return ____gold_min_31; }
+	inline int32_t* get_address_of__gold_min_31() { return &____gold_min_31; }
+	inline void set__gold_min_31(int32_t value)
 	{
-		___armorEffect_31 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___armorEffect_31), (void*)value);
+		____gold_min_31 = value;
 	}
 
-	inline static int32_t get_offset_of_healEffect_32() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___healEffect_32)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_healEffect_32() const { return ___healEffect_32; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_healEffect_32() { return &___healEffect_32; }
-	inline void set_healEffect_32(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of__gold_max_32() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ____gold_max_32)); }
+	inline int32_t get__gold_max_32() const { return ____gold_max_32; }
+	inline int32_t* get_address_of__gold_max_32() { return &____gold_max_32; }
+	inline void set__gold_max_32(int32_t value)
 	{
-		___healEffect_32 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___healEffect_32), (void*)value);
+		____gold_max_32 = value;
 	}
 
-	inline static int32_t get_offset_of_lockEffect_33() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___lockEffect_33)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_lockEffect_33() const { return ___lockEffect_33; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_lockEffect_33() { return &___lockEffect_33; }
-	inline void set_lockEffect_33(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_armorEffect_33() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___armorEffect_33)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_armorEffect_33() const { return ___armorEffect_33; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_armorEffect_33() { return &___armorEffect_33; }
+	inline void set_armorEffect_33(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___lockEffect_33 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___lockEffect_33), (void*)value);
+		___armorEffect_33 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___armorEffect_33), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_resetArmor_34() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___resetArmor_34)); }
-	inline float get_resetArmor_34() const { return ___resetArmor_34; }
-	inline float* get_address_of_resetArmor_34() { return &___resetArmor_34; }
-	inline void set_resetArmor_34(float value)
+	inline static int32_t get_offset_of_healEffect_34() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___healEffect_34)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_healEffect_34() const { return ___healEffect_34; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_healEffect_34() { return &___healEffect_34; }
+	inline void set_healEffect_34(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___resetArmor_34 = value;
+		___healEffect_34 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___healEffect_34), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_armorCreate_35() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___armorCreate_35)); }
-	inline bool get_armorCreate_35() const { return ___armorCreate_35; }
-	inline bool* get_address_of_armorCreate_35() { return &___armorCreate_35; }
-	inline void set_armorCreate_35(bool value)
+	inline static int32_t get_offset_of_lockEffect_35() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___lockEffect_35)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_lockEffect_35() const { return ___lockEffect_35; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_lockEffect_35() { return &___lockEffect_35; }
+	inline void set_lockEffect_35(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___armorCreate_35 = value;
+		___lockEffect_35 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___lockEffect_35), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_resetOnHit_36() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___resetOnHit_36)); }
-	inline float get_resetOnHit_36() const { return ___resetOnHit_36; }
-	inline float* get_address_of_resetOnHit_36() { return &___resetOnHit_36; }
-	inline void set_resetOnHit_36(float value)
+	inline static int32_t get_offset_of_resetArmor_36() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___resetArmor_36)); }
+	inline float get_resetArmor_36() const { return ___resetArmor_36; }
+	inline float* get_address_of_resetArmor_36() { return &___resetArmor_36; }
+	inline void set_resetArmor_36(float value)
 	{
-		___resetOnHit_36 = value;
+		___resetArmor_36 = value;
 	}
 
-	inline static int32_t get_offset_of_canRegen_37() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___canRegen_37)); }
-	inline bool get_canRegen_37() const { return ___canRegen_37; }
-	inline bool* get_address_of_canRegen_37() { return &___canRegen_37; }
-	inline void set_canRegen_37(bool value)
+	inline static int32_t get_offset_of_armorCreate_37() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___armorCreate_37)); }
+	inline bool get_armorCreate_37() const { return ___armorCreate_37; }
+	inline bool* get_address_of_armorCreate_37() { return &___armorCreate_37; }
+	inline void set_armorCreate_37(bool value)
 	{
-		___canRegen_37 = value;
+		___armorCreate_37 = value;
 	}
 
-	inline static int32_t get_offset_of_regenTime_38() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___regenTime_38)); }
-	inline float get_regenTime_38() const { return ___regenTime_38; }
-	inline float* get_address_of_regenTime_38() { return &___regenTime_38; }
-	inline void set_regenTime_38(float value)
+	inline static int32_t get_offset_of_resetOnHit_38() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___resetOnHit_38)); }
+	inline float get_resetOnHit_38() const { return ___resetOnHit_38; }
+	inline float* get_address_of_resetOnHit_38() { return &___resetOnHit_38; }
+	inline void set_resetOnHit_38(float value)
 	{
-		___regenTime_38 = value;
+		___resetOnHit_38 = value;
 	}
 
-	inline static int32_t get_offset_of_evade_39() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___evade_39)); }
-	inline int32_t get_evade_39() const { return ___evade_39; }
-	inline int32_t* get_address_of_evade_39() { return &___evade_39; }
-	inline void set_evade_39(int32_t value)
+	inline static int32_t get_offset_of_canRegen_39() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___canRegen_39)); }
+	inline bool get_canRegen_39() const { return ___canRegen_39; }
+	inline bool* get_address_of_canRegen_39() { return &___canRegen_39; }
+	inline void set_canRegen_39(bool value)
 	{
-		___evade_39 = value;
+		___canRegen_39 = value;
 	}
 
-	inline static int32_t get_offset_of_canEvade_40() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___canEvade_40)); }
-	inline bool get_canEvade_40() const { return ___canEvade_40; }
-	inline bool* get_address_of_canEvade_40() { return &___canEvade_40; }
-	inline void set_canEvade_40(bool value)
+	inline static int32_t get_offset_of_regenTime_40() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___regenTime_40)); }
+	inline float get_regenTime_40() const { return ___regenTime_40; }
+	inline float* get_address_of_regenTime_40() { return &___regenTime_40; }
+	inline void set_regenTime_40(float value)
 	{
-		___canEvade_40 = value;
+		___regenTime_40 = value;
 	}
 
-	inline static int32_t get_offset_of_dieDragon_41() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___dieDragon_41)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_dieDragon_41() const { return ___dieDragon_41; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_dieDragon_41() { return &___dieDragon_41; }
-	inline void set_dieDragon_41(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_evade_41() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___evade_41)); }
+	inline int32_t get_evade_41() const { return ___evade_41; }
+	inline int32_t* get_address_of_evade_41() { return &___evade_41; }
+	inline void set_evade_41(int32_t value)
 	{
-		___dieDragon_41 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___dieDragon_41), (void*)value);
+		___evade_41 = value;
+	}
+
+	inline static int32_t get_offset_of_canEvade_42() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___canEvade_42)); }
+	inline bool get_canEvade_42() const { return ___canEvade_42; }
+	inline bool* get_address_of_canEvade_42() { return &___canEvade_42; }
+	inline void set_canEvade_42(bool value)
+	{
+		___canEvade_42 = value;
+	}
+
+	inline static int32_t get_offset_of_dieDragon_43() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___dieDragon_43)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_dieDragon_43() const { return ___dieDragon_43; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_dieDragon_43() { return &___dieDragon_43; }
+	inline void set_dieDragon_43(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___dieDragon_43 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___dieDragon_43), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_dropItem_44() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9, ___dropItem_44)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_dropItem_44() const { return ___dropItem_44; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_dropItem_44() { return &___dropItem_44; }
+	inline void set_dropItem_44(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___dropItem_44 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___dropItem_44), (void*)value);
 	}
 };
 
@@ -14026,38 +14057,38 @@ struct FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9_StaticFields
 {
 public:
 	// Fusion.Changed`1<FishControl> FishControl::$IL2CPP_CHANGED
-	Changed_1_tD699D832AA89A8E6DD81565DB9588030AC6DE448  ___U24IL2CPP_CHANGED_42;
+	Changed_1_tD699D832AA89A8E6DD81565DB9588030AC6DE448  ___U24IL2CPP_CHANGED_45;
 	// Fusion.ChangedDelegate`1<FishControl> FishControl::$IL2CPP_CHANGED_DELEGATE
-	ChangedDelegate_1_tD6619981F93756087332386E4A1A6014036FEF3C * ___U24IL2CPP_CHANGED_DELEGATE_43;
+	ChangedDelegate_1_tD6619981F93756087332386E4A1A6014036FEF3C * ___U24IL2CPP_CHANGED_DELEGATE_46;
 	// Fusion.NetworkBehaviourCallbacks`1<FishControl> FishControl::$IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS
-	NetworkBehaviourCallbacks_1_tC171F17B513CA4224F6B344B3A8FD7566CC44C66 * ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44;
+	NetworkBehaviourCallbacks_1_tC171F17B513CA4224F6B344B3A8FD7566CC44C66 * ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47;
 
 public:
-	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_42() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9_StaticFields, ___U24IL2CPP_CHANGED_42)); }
-	inline Changed_1_tD699D832AA89A8E6DD81565DB9588030AC6DE448  get_U24IL2CPP_CHANGED_42() const { return ___U24IL2CPP_CHANGED_42; }
-	inline Changed_1_tD699D832AA89A8E6DD81565DB9588030AC6DE448 * get_address_of_U24IL2CPP_CHANGED_42() { return &___U24IL2CPP_CHANGED_42; }
-	inline void set_U24IL2CPP_CHANGED_42(Changed_1_tD699D832AA89A8E6DD81565DB9588030AC6DE448  value)
+	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_45() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9_StaticFields, ___U24IL2CPP_CHANGED_45)); }
+	inline Changed_1_tD699D832AA89A8E6DD81565DB9588030AC6DE448  get_U24IL2CPP_CHANGED_45() const { return ___U24IL2CPP_CHANGED_45; }
+	inline Changed_1_tD699D832AA89A8E6DD81565DB9588030AC6DE448 * get_address_of_U24IL2CPP_CHANGED_45() { return &___U24IL2CPP_CHANGED_45; }
+	inline void set_U24IL2CPP_CHANGED_45(Changed_1_tD699D832AA89A8E6DD81565DB9588030AC6DE448  value)
 	{
-		___U24IL2CPP_CHANGED_42 = value;
-		Il2CppCodeGenWriteBarrier((void**)&(((&___U24IL2CPP_CHANGED_42))->____behaviour_3), (void*)NULL);
+		___U24IL2CPP_CHANGED_45 = value;
+		Il2CppCodeGenWriteBarrier((void**)&(((&___U24IL2CPP_CHANGED_45))->____behaviour_3), (void*)NULL);
 	}
 
-	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_DELEGATE_43() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9_StaticFields, ___U24IL2CPP_CHANGED_DELEGATE_43)); }
-	inline ChangedDelegate_1_tD6619981F93756087332386E4A1A6014036FEF3C * get_U24IL2CPP_CHANGED_DELEGATE_43() const { return ___U24IL2CPP_CHANGED_DELEGATE_43; }
-	inline ChangedDelegate_1_tD6619981F93756087332386E4A1A6014036FEF3C ** get_address_of_U24IL2CPP_CHANGED_DELEGATE_43() { return &___U24IL2CPP_CHANGED_DELEGATE_43; }
-	inline void set_U24IL2CPP_CHANGED_DELEGATE_43(ChangedDelegate_1_tD6619981F93756087332386E4A1A6014036FEF3C * value)
+	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_DELEGATE_46() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9_StaticFields, ___U24IL2CPP_CHANGED_DELEGATE_46)); }
+	inline ChangedDelegate_1_tD6619981F93756087332386E4A1A6014036FEF3C * get_U24IL2CPP_CHANGED_DELEGATE_46() const { return ___U24IL2CPP_CHANGED_DELEGATE_46; }
+	inline ChangedDelegate_1_tD6619981F93756087332386E4A1A6014036FEF3C ** get_address_of_U24IL2CPP_CHANGED_DELEGATE_46() { return &___U24IL2CPP_CHANGED_DELEGATE_46; }
+	inline void set_U24IL2CPP_CHANGED_DELEGATE_46(ChangedDelegate_1_tD6619981F93756087332386E4A1A6014036FEF3C * value)
 	{
-		___U24IL2CPP_CHANGED_DELEGATE_43 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_CHANGED_DELEGATE_43), (void*)value);
+		___U24IL2CPP_CHANGED_DELEGATE_46 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_CHANGED_DELEGATE_46), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9_StaticFields, ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44)); }
-	inline NetworkBehaviourCallbacks_1_tC171F17B513CA4224F6B344B3A8FD7566CC44C66 * get_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44() const { return ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44; }
-	inline NetworkBehaviourCallbacks_1_tC171F17B513CA4224F6B344B3A8FD7566CC44C66 ** get_address_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44() { return &___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44; }
-	inline void set_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44(NetworkBehaviourCallbacks_1_tC171F17B513CA4224F6B344B3A8FD7566CC44C66 * value)
+	inline static int32_t get_offset_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47() { return static_cast<int32_t>(offsetof(FishControl_t6E8E0394165A4904CD245B5126D611D3D0CB23E9_StaticFields, ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47)); }
+	inline NetworkBehaviourCallbacks_1_tC171F17B513CA4224F6B344B3A8FD7566CC44C66 * get_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47() const { return ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47; }
+	inline NetworkBehaviourCallbacks_1_tC171F17B513CA4224F6B344B3A8FD7566CC44C66 ** get_address_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47() { return &___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47; }
+	inline void set_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47(NetworkBehaviourCallbacks_1_tC171F17B513CA4224F6B344B3A8FD7566CC44C66 * value)
 	{
-		___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_44), (void*)value);
+		___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_47), (void*)value);
 	}
 };
 
