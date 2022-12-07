@@ -14,6 +14,8 @@ public class LobbyScript : MonoBehaviour
     public bool reSet;
     [SerializeField] Text playerName;
     [SerializeField] Text coin;
+    [SerializeField] AudioSource open;
+    [SerializeField] AudioSource close;
     
     void Start()
     { 
@@ -34,16 +36,29 @@ public class LobbyScript : MonoBehaviour
     {
         notice.SetActive(false);
         loading.SetActive(true);
+        open.Play();
         SpawnNetwork.instance.JoinGame();
     }
     public void Close()
     {
         popUp.SetActive(false);
-    } 
+        close.Play();
+    }
     public void Open()
     {
         popUp.SetActive(true);
         notice.SetActive(true);
         loading.SetActive(false);
+        open.Play();
+    }
+    public void soundOpen()
+    {
+        open.Play();
+
+    }
+    public void soundClose()
+    {
+        close.Play();
+
     }
 }

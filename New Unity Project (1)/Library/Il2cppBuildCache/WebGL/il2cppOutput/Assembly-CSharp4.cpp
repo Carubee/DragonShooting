@@ -21315,6 +21315,8 @@ public:
 	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___Des_8;
 	// UnityEngine.UI.Image ItemSlot::artwork
 	Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C * ___artwork_9;
+	// UnityEngine.AudioSource ItemSlot::clickSound
+	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___clickSound_10;
 
 public:
 	inline static int32_t get_offset_of_itemUse_4() { return static_cast<int32_t>(offsetof(ItemSlot_t8888ABD1C0352B921FCF6CE9D70E45990C692E4E, ___itemUse_4)); }
@@ -21369,6 +21371,15 @@ public:
 	{
 		___artwork_9 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___artwork_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_clickSound_10() { return static_cast<int32_t>(offsetof(ItemSlot_t8888ABD1C0352B921FCF6CE9D70E45990C692E4E, ___clickSound_10)); }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_clickSound_10() const { return ___clickSound_10; }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_clickSound_10() { return &___clickSound_10; }
+	inline void set_clickSound_10(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
+	{
+		___clickSound_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___clickSound_10), (void*)value);
 	}
 };
 
@@ -21796,6 +21807,10 @@ public:
 	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___playerName_10;
 	// UnityEngine.UI.Text LobbyScript::coin
 	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___coin_11;
+	// UnityEngine.AudioSource LobbyScript::open
+	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___open_12;
+	// UnityEngine.AudioSource LobbyScript::close
+	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___close_13;
 
 public:
 	inline static int32_t get_offset_of_notice_4() { return static_cast<int32_t>(offsetof(LobbyScript_t45582817181447DE2925F6B9C711CF94F163BD28, ___notice_4)); }
@@ -21866,6 +21881,24 @@ public:
 	{
 		___coin_11 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___coin_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_open_12() { return static_cast<int32_t>(offsetof(LobbyScript_t45582817181447DE2925F6B9C711CF94F163BD28, ___open_12)); }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_open_12() const { return ___open_12; }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_open_12() { return &___open_12; }
+	inline void set_open_12(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
+	{
+		___open_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___open_12), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_close_13() { return static_cast<int32_t>(offsetof(LobbyScript_t45582817181447DE2925F6B9C711CF94F163BD28, ___close_13)); }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_close_13() const { return ___close_13; }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_close_13() { return &___close_13; }
+	inline void set_close_13(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
+	{
+		___close_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___close_13), (void*)value);
 	}
 };
 
@@ -25162,6 +25195,16 @@ public:
 	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___Amount_8;
 	// UnityEngine.UI.Text ShowItemDetail::Des
 	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___Des_9;
+	// System.Int32 ShowItemDetail::amountItemInt
+	int32_t ___amountItemInt_11;
+	// System.Single ShowItemDetail::amountItemfloat
+	float ___amountItemfloat_12;
+	// UnityEngine.GameObject ShowItemDetail::openBox
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___openBox_13;
+	// UnityEngine.UI.Slider ShowItemDetail::sliderOpen
+	Slider_tBF39A11CC24CBD3F8BD728982ACAEAE43989B51A * ___sliderOpen_14;
+	// UnityEngine.UI.Text ShowItemDetail::amount
+	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___amount_15;
 
 public:
 	inline static int32_t get_offset_of_itemUseThis_4() { return static_cast<int32_t>(offsetof(ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2, ___itemUseThis_4)); }
@@ -25216,6 +25259,49 @@ public:
 	{
 		___Des_9 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___Des_9), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_amountItemInt_11() { return static_cast<int32_t>(offsetof(ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2, ___amountItemInt_11)); }
+	inline int32_t get_amountItemInt_11() const { return ___amountItemInt_11; }
+	inline int32_t* get_address_of_amountItemInt_11() { return &___amountItemInt_11; }
+	inline void set_amountItemInt_11(int32_t value)
+	{
+		___amountItemInt_11 = value;
+	}
+
+	inline static int32_t get_offset_of_amountItemfloat_12() { return static_cast<int32_t>(offsetof(ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2, ___amountItemfloat_12)); }
+	inline float get_amountItemfloat_12() const { return ___amountItemfloat_12; }
+	inline float* get_address_of_amountItemfloat_12() { return &___amountItemfloat_12; }
+	inline void set_amountItemfloat_12(float value)
+	{
+		___amountItemfloat_12 = value;
+	}
+
+	inline static int32_t get_offset_of_openBox_13() { return static_cast<int32_t>(offsetof(ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2, ___openBox_13)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_openBox_13() const { return ___openBox_13; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_openBox_13() { return &___openBox_13; }
+	inline void set_openBox_13(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___openBox_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___openBox_13), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_sliderOpen_14() { return static_cast<int32_t>(offsetof(ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2, ___sliderOpen_14)); }
+	inline Slider_tBF39A11CC24CBD3F8BD728982ACAEAE43989B51A * get_sliderOpen_14() const { return ___sliderOpen_14; }
+	inline Slider_tBF39A11CC24CBD3F8BD728982ACAEAE43989B51A ** get_address_of_sliderOpen_14() { return &___sliderOpen_14; }
+	inline void set_sliderOpen_14(Slider_tBF39A11CC24CBD3F8BD728982ACAEAE43989B51A * value)
+	{
+		___sliderOpen_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___sliderOpen_14), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_amount_15() { return static_cast<int32_t>(offsetof(ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2, ___amount_15)); }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * get_amount_15() const { return ___amount_15; }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 ** get_address_of_amount_15() { return &___amount_15; }
+	inline void set_amount_15(Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * value)
+	{
+		___amount_15 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___amount_15), (void*)value);
 	}
 };
 
@@ -33069,6 +33155,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UILabel_set_text_mE65FD3C99D147546EB8BD4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED (MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Image_set_sprite_m55C50F18ABA0A98E926FC777F7D07FA18A7D04E4 (Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C * __this, Sprite_t5B10B1178EC2E6F53D33FFD77557F31C08A51ED9 * ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.AudioSource::Play()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1 (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, const RuntimeMethod* method);
 // System.Void ShowItemDetail::ShowDetail()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowItemDetail_ShowDetail_mC251117190F0B30FD35F3BDAE0DB9A42CF1080D3 (ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2 * __this, const RuntimeMethod* method);
 // System.Void Xft.Affector::.ctor(Xft.EffectNode,Xft.AFFECTORTYPE)
@@ -34399,8 +34487,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MasterAudioGroup_t24C8937598D17D8DB7EE70CFE3D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundGroupVariation_Pause_m1D3BE1BE3C32A44662F2C316B5CAA0876D3312C1 (SoundGroupVariation_tB216F8B0A84B7C320DA4E33C3C3656C451826DCD * __this, const RuntimeMethod* method);
 // System.Boolean DarkTonic.MasterAudio.AudioUtil::IsAudioPaused(UnityEngine.AudioSource)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AudioUtil_IsAudioPaused_mFAB57111E447FC32329F4B43B7C93FA0D7D68EAC (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___source0, const RuntimeMethod* method);
-// System.Void UnityEngine.AudioSource::Play()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1 (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<DarkTonic.MasterAudio.SoundGroupVariation>::Clear()
 inline void List_1_Clear_mA324AF0595EF96275024FB1740C80E7A6E72460F (List_1_t81A4303EDB09FE4F6EB1AD60E48135F8D7C55242 * __this, const RuntimeMethod* method)
 {
@@ -35777,9 +35863,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemSlot_UpdateText_mF342F06B6F2CF4615DD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// clickSound.Play();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_clickSound_10();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_0, /*hidden argument*/NULL);
 		// ShowItemDetail.instance.ShowDetail();
-		ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2 * L_0 = ((ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2_StaticFields*)il2cpp_codegen_static_fields_for(ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2_il2cpp_TypeInfo_var))->get_instance_10();
-		ShowItemDetail_ShowDetail_mC251117190F0B30FD35F3BDAE0DB9A42CF1080D3(L_0, /*hidden argument*/NULL);
+		ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2 * L_1 = ((ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2_StaticFields*)il2cpp_codegen_static_fields_for(ShowItemDetail_t6FCCAA9933F1686B0C81B0CB466F80C27DC7BCD2_il2cpp_TypeInfo_var))->get_instance_10();
+		ShowItemDetail_ShowDetail_mC251117190F0B30FD35F3BDAE0DB9A42CF1080D3(L_1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -37611,9 +37700,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyScript_lobby_mD3544E39647277C3EC312
 		// loading.SetActive(true);
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_loading_5();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)1, /*hidden argument*/NULL);
+		// open.Play();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_open_12();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_2, /*hidden argument*/NULL);
 		// SpawnNetwork.instance.JoinGame();
-		SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153 * L_2 = ((SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153_StaticFields*)il2cpp_codegen_static_fields_for(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153_il2cpp_TypeInfo_var))->get_instance_8();
-		SpawnNetwork_JoinGame_mC70A82E1DC3049847D74446945CFAEC853302A52(L_2, /*hidden argument*/NULL);
+		SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153 * L_3 = ((SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153_StaticFields*)il2cpp_codegen_static_fields_for(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153_il2cpp_TypeInfo_var))->get_instance_8();
+		SpawnNetwork_JoinGame_mC70A82E1DC3049847D74446945CFAEC853302A52(L_3, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -37625,6 +37717,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyScript_Close_mC6E673CBF8E353DCD3AC7
 		// popUp.SetActive(false);
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_popUp_6();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)0, /*hidden argument*/NULL);
+		// close.Play();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_1 = __this->get_close_13();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -37642,6 +37737,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyScript_Open_m3A91A7C814AA9672CB4214
 		// loading.SetActive(false);
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_loading_5();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)0, /*hidden argument*/NULL);
+		// open.Play();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_3 = __this->get_open_12();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_3, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void LobbyScript::soundOpen()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyScript_soundOpen_m31BDF0CF4A7805EB86AE746B9E1625555BDD818E (LobbyScript_t45582817181447DE2925F6B9C711CF94F163BD28 * __this, const RuntimeMethod* method)
+{
+	{
+		// open.Play();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_open_12();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_0, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void LobbyScript::soundClose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyScript_soundClose_m653DFA2E313E7252590B7225A870C7C875F1D780 (LobbyScript_t45582817181447DE2925F6B9C711CF94F163BD28 * __this, const RuntimeMethod* method)
+{
+	{
+		// close.Play();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_close_13();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_0, /*hidden argument*/NULL);
 		// }
 		return;
 	}

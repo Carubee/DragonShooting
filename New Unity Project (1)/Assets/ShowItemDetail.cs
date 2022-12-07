@@ -57,4 +57,14 @@ public class ShowItemDetail : MonoBehaviour
         openBox.SetActive(false);
 
     }
+    public void Plus()
+    {
+        sliderOpen.value += 1;
+        amount.text = "Item : " + sliderOpen.value.ToString("0") + "/ " + sliderOpen.maxValue;
+    }
+    public void Minus()
+    {
+        sliderOpen.value -= 1;
+        amount.text = "Item : " + sliderOpen.value.ToString("0") + "/ " + sliderOpen.maxValue;
+    }
 }

@@ -9,6 +9,7 @@ public class itemOpen : MonoBehaviour
     public float movespeed = 5;
     public GameObject player;
     public GameObject InventoryThis;
+    [SerializeField] AudioSource openPop;
 
     void Start()
     {
@@ -40,7 +41,7 @@ public class itemOpen : MonoBehaviour
     }
     public void openItem()
     {
-        
+        openPop.Play();
         GotnewItem.instance.Box.SetActive(true);
         gunMode.instance.canPlay = false;
     }

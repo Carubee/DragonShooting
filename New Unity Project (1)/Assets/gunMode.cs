@@ -68,6 +68,8 @@ public class gunMode : NetworkBehaviour
     [SerializeField] private AudioSource normalShoot;
     [SerializeField] private AudioSource enchanceShoot;
     [SerializeField] private AudioSource laserShoot;
+    [SerializeField] private AudioSource coinSound;
+    [SerializeField] private AudioSource selectSeat;
     public NetworkString<_16> nickName { get; set; }
 
 
@@ -508,7 +510,7 @@ public class gunMode : NetworkBehaviour
     [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
     public void Rpc_Spawn(int seatNum)
     {
-
+        selectSeat.Play();
         if (seatNum == 1)
         {
             transform.position = new Vector3(-3.129f, -3.311f, -4.55f);
@@ -588,6 +590,13 @@ public class gunMode : NetworkBehaviour
     {
         this.nickName = nickname;
         Debug.Log(nickname);
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Coin")
+        {
+            coinSound.Play();
+        }
     }
 
 }

@@ -14,6 +14,7 @@ public class ItemSlot : MonoBehaviour
     public TMP_Text amountTmp;
     public Text Des;
     public Image artwork;
+    public AudioSource clickSound;
     void Start()
     {
         artwork.sprite = itemUse.ImageName;
@@ -26,6 +27,7 @@ public class ItemSlot : MonoBehaviour
 
     public void UpdateText()
     {
+        clickSound.Play();
         ShowItemDetail.instance.ShowDetail();
     }
 }
