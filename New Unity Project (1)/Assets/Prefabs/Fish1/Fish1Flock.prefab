@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 110020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.48444387, y: -0.063069716, z: 1.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 4316673477222148391}
   - {fileID: 4710036848305166421}
@@ -111,6 +111,7 @@ MonoBehaviour:
   evade: 0
   canEvade: 0
   dieDragon: {fileID: 0}
+  dropItem: {fileID: 0}
 --- !u!95 &9546774
 Animator:
   serializedVersion: 3

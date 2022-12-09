@@ -17,7 +17,6 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     [Networked] bool FirstSpawn { get; set; }
     async void StartGame(GameMode mode)
     {
-        string ip = 
         _runner = gameObject.AddComponent<NetworkRunner>();
         _runner.ProvideInput = true;
         await _runner.StartGame(new StartGameArgs()

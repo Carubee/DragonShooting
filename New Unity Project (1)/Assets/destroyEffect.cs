@@ -19,7 +19,7 @@ public class destroyEffect : MonoBehaviour
         timeRun += Time.deltaTime;
         if (timeRun >= destroytime)
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject); 
         }
         if (dieDragon)
             this.gameObject.transform.position -= new Vector3(0, 0, 0.01f);

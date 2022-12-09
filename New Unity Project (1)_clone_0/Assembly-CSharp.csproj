@@ -145,6 +145,7 @@
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\InputBehaviourPrototype.cs" />
     <Compile Include="Assets\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiLoadSceneOnClick.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionUnityLogger.cs" />
+    <Compile Include="Assets\AudioMIxer.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\CameraFollow.cs" />
     <Compile Include="Assets\Xffect\EnhancementTools\XSpline\Scripts\XSplineComponent.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_JellyAutoMove.cs" />
@@ -232,6 +233,7 @@
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\AudioTransformExtensions.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Events\ButtonClicker.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Settings\AudioEventGroup.cs" />
+    <Compile Include="Assets\Inventory.cs" />
     <Compile Include="Assets\Scripts\WaveQuadControl.cs" />
     <Compile Include="Assets\SineVFX\MagicMissilesAndLasers\Scripts\RandomSFX.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Singleton\SingletonScriptable.cs" />
@@ -247,6 +249,7 @@
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Utilities\FusionEditorUtilitiesExternal.cs" />
     <Compile Include="Assets\Scripts\effScoreTextControl.cs" />
+    <Compile Include="Assets\ItemSlot.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UIWrapContent.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
@@ -342,6 +345,7 @@
     <Compile Include="Assets\Xffect\Tutorial\GettingStart\ReleaseYourEffect.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Twist.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UIEventTrigger.cs" />
+    <Compile Include="Assets\itemOpen.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButton.cs" />
     <Compile Include="Assets\Xffect\EnhancementTools\XWeaponTrail\Scripts\XWeaponTrailDemo.cs" />
     <Compile Include="Assets\Xffect\Scripts\Events\TimeScaleEvent.cs" />
@@ -441,6 +445,7 @@
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_GrayScale.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionRuntimeCheck.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_MetalFX.cs" />
+    <Compile Include="Assets\itemUse.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Settings\DynamicGroupVariation.cs" />
     <Compile Include="Assets\Xffect\Scripts\Events\CameraEffects\RadialBlurEvent.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\ExampleScenes\Scripts\MA_DestroyFinishedParticle.cs" />
@@ -471,6 +476,7 @@
     <Compile Include="Assets\Scripts\Bonus4Control.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Sepia.cs" />
     <Compile Include="Assets\Scripts\Bonus1Control.cs" />
+    <Compile Include="Assets\GotnewItem.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\SpatializerHelper.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Singleton\SoundGroupOrganizer.cs" />
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenColor.cs" />
@@ -583,7 +589,6 @@
     <Compile Include="Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenRotation.cs" />
-    <Compile Include="Assets\AudioMIxer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

@@ -128,7 +128,7 @@ public class item : NetworkBehaviour
     {
         for (int i = 0; i <= amount; i++)
         {
-            Instantiate(bomb, new Vector3(Random.Range(-3, 3), Random.Range(-3, 3)),Quaternion.identity);           
+            Instantiate(bomb, new Vector3(Random.Range(-3, 3), Random.Range(-3, 3)), Quaternion.Euler(new Vector3(-90, 0, 0)));           
         }
     }
     public void Spare()

@@ -33852,7 +33852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FishControl_Start_m73807443E9776144E7996
 		L_5 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(0, 2, /*hidden argument*/NULL);
 		if ((!(((uint32_t)L_5) == ((uint32_t)1))))
 		{
-			goto IL_0066;
+			goto IL_0067;
 		}
 	}
 	{
@@ -33864,10 +33864,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FishControl_Start_m73807443E9776144E7996
 		int32_t L_10;
 		L_10 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(((int32_t)il2cpp_codegen_subtract((int32_t)L_6, (int32_t)L_7)), ((int32_t)il2cpp_codegen_add((int32_t)L_8, (int32_t)L_9)), /*hidden argument*/NULL);
 		__this->set__hp_25(L_10);
-		return;
+		goto IL_008c;
 	}
 
-IL_0066:
+IL_0067:
 	{
 		// _hp = Random.Range(Hp - RndHp, Hp - RndHp);
 		int32_t L_11 = __this->get_Hp_20();
@@ -33877,6 +33877,12 @@ IL_0066:
 		int32_t L_15;
 		L_15 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(((int32_t)il2cpp_codegen_subtract((int32_t)L_11, (int32_t)L_12)), ((int32_t)il2cpp_codegen_subtract((int32_t)L_13, (int32_t)L_14)), /*hidden argument*/NULL);
 		__this->set__hp_25(L_15);
+	}
+
+IL_008c:
+	{
+		// _hp = 100;
+		__this->set__hp_25(((int32_t)100));
 		// }
 		return;
 	}

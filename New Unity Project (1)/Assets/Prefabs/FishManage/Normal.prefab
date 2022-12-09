@@ -127,7 +127,7 @@ MonoBehaviour:
   _interpolationDataSource: 0
   _pre:
   - {fileID: 158038, guid: 1233d6775889c434f910f39c5a6cfbe7, type: 3}
-  countTime: 35
+  countTime: 38
   RndCountTime: 5
   StartWaitTime: 30
   _distance: 0.5
@@ -204,7 +204,7 @@ MonoBehaviour:
   _interpolationDataSource: 0
   _pre:
   - {fileID: 118576, guid: e8643f1b781dc60438091f60b74c5c36, type: 3}
-  countTime: 120
+  countTime: 125
   RndCountTime: 10
   StartWaitTime: 100
   _distance: 1.5
@@ -828,7 +828,7 @@ MonoBehaviour:
   _interpolationDataSource: 0
   _pre:
   - {fileID: 181834, guid: db26575790735d1479093c4824861fcf, type: 3}
-  countTime: 35
+  countTime: 42
   RndCountTime: 5
   StartWaitTime: 30
   _distance: 0.5
@@ -905,7 +905,7 @@ MonoBehaviour:
   _interpolationDataSource: 0
   _pre:
   - {fileID: 114912, guid: 90e914930d2862f4d8d2f2866a7c8b09, type: 3}
-  countTime: 125
+  countTime: 130
   RndCountTime: 5
   StartWaitTime: 100
   _distance: 1.5

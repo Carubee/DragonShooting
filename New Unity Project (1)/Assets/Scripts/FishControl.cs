@@ -53,7 +53,6 @@ public class FishControl : NetworkBehaviour
             _hp = Random.Range(HpMax - RndHpMax, HpMax + RndHpMax);
         else
             _hp = Random.Range(Hp - RndHp, Hp - RndHp);
-
     }
     private void FixedUpdate()
     {
@@ -169,7 +168,7 @@ public class FishControl : NetworkBehaviour
                     {
                         UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
                     }
-                    int itemDrop = Random.Range(0, 11);
+                    int itemDrop = Random.Range(0, 21);
                     if(itemDrop == 0)
                         Instantiate(Resources.Load("Item"), new Vector3(transform.position.x, transform.position.y, -4.3f), Quaternion.identity);
 
