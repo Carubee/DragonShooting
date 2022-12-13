@@ -72,13 +72,13 @@ public class gunMode : NetworkBehaviour
     [SerializeField] private AudioSource selectSeat;
     public NetworkString<_16> nickName { get; set; }
 
-
-
     [Networked] public bool enchance { get; set; }
     [Networked] public int Rotation { get; set; }
     public void Awake()
     {
         firerateAmount = 0.5f;
+        
+        
     }
     public override void Spawned()
     {
@@ -330,7 +330,7 @@ public class gunMode : NetworkBehaviour
     }
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     public void showResultClientRpc(int bulltetType, bool enchance2)
-    {
+    {        
         Rpc_Bullet(bulltetType, enchance2);
     }
     public void LaserServerRpc(bool show)
@@ -529,7 +529,7 @@ public class gunMode : NetworkBehaviour
             transform.position = new Vector3(3.222f, 3.286f, -4.55f);
         }
         lastSeat = seatNum - 1;
-        NetworkManagerUI.instance.Rpc_SeatDis2(seatNum - 1);
+        NetworkManagerUI.instance. Rpc_SeatDis2(seatNum - 1);
         NetworkManagerUI.instance.Rpc_SeatDis(seatNum - 1);
 
     }
