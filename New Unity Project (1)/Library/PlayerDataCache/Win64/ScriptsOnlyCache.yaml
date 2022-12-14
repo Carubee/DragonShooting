@@ -1,7 +1,5 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - NGUITransformInspector
     Assembly-CSharp.dll:
     - AnimationGun
     - AudioMIxer
@@ -50,7 +48,6 @@ ScriptsOnlyBuild:
     - PlayerAOIPrototype
     - RotateLoading
     - SciFiBeamStatic
-    - SciFiLightFlicker
     - ShowItemDetail
     - SpawnNetwork
     - Swim
@@ -912,7 +909,7 @@ ScriptsOnlyBuild:
     className: UISoundVolume
   - hash:
       serializedVersion: 2
-      Hash: d7d005c7e546862903f0fa0da9480afc
+      Hash: a7321e458d2b654171fb57852640e968
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnimationGun

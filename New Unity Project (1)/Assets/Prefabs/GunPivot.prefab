@@ -228,6 +228,12 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 564599842314950116}
   - {fileID: -1704571543027642566}
+  - {fileID: 5760879734200882542}
+  - {fileID: 4206009626397407789}
+  - {fileID: 4191557748733275940}
+  - {fileID: 8463304647738147891}
+  - {fileID: 3861749135261748806}
+  - {fileID: 2744484978451761495}
   SimulationBehaviours: []
 --- !u!114 &-1704571543027642566
 MonoBehaviour:
@@ -11668,6 +11674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630ba021e49afb146b1d560bc4753a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 0
   fire: {fileID: 4688402813114801875}
   firerate: 0
   holdfire: 0
@@ -11945,6 +11954,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630ba021e49afb146b1d560bc4753a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 0
   fire: {fileID: 5967568454777045666}
   firerate: 0
   holdfire: 0
@@ -12141,6 +12153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630ba021e49afb146b1d560bc4753a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 0
   fire: {fileID: 5705944013726463965}
   firerate: 0
   holdfire: 0
@@ -12262,6 +12277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630ba021e49afb146b1d560bc4753a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 0
   fire: {fileID: 7216603628357125332}
   firerate: 0
   holdfire: 1
@@ -12383,6 +12401,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630ba021e49afb146b1d560bc4753a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 0
   fire: {fileID: 3165805584874061637}
   firerate: 0
   holdfire: 0
@@ -12583,6 +12604,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630ba021e49afb146b1d560bc4753a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 0
   fire: {fileID: 7116602697238037057}
   firerate: 0
   holdfire: 1
