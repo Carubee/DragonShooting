@@ -6,7 +6,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638036922447303856
+      ticks: 638066044830630575
     m_Hash: 2119354480
   m_LockFileStatus:
     m_FilePath: D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638036922447303856
+      ticks: 638066044830640553
     m_Hash: 2891234974
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -783,6 +783,7 @@ m_PackageAssets:
         - 1.1.33
         - 1.3.0
         - 1.3.1
+        - 1.3.2
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -792,6 +793,7 @@ m_PackageAssets:
         - 1.1.33
         - 1.3.0
         - 1.3.1
+        - 1.3.2
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
