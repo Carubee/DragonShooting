@@ -12264,7 +12264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 7216603628357125332}
   firerate: 0
-  holdfire: 0
+  holdfire: 1
 --- !u!1001 &7432138997562697887
 PrefabInstance:
   m_ObjectHideFlags: 0
