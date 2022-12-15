@@ -35,12 +35,11 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
     m_Floats:
     - _Float: -0.77
     - _Float_1: 0.59
     - _Float_2: 0.26
-    - _Float_3: 0
+    - _Float_3: 2
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
