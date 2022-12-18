@@ -74,6 +74,7 @@ public class gunMode : NetworkBehaviour
 
     [Networked] public bool enchance { get; set; }
     [Networked] public int Rotation { get; set; }
+
     public void Awake()
     {
         firerateAmount = 0.5f;
@@ -86,7 +87,6 @@ public class gunMode : NetworkBehaviour
         OnNickNameChanged();
         instance = this;
         gunModel = 1;
-
     }
     public void Update()
     {
@@ -574,7 +574,7 @@ public class gunMode : NetworkBehaviour
         Instantiate(upgradeEffect, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y,-4.55f), Quaternion.identity);
 
     }
-    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     public void Rpc_RotateCilent(Vector2 angle)
     {
         transform.up = angle - new Vector2(transform.position.x, transform.position.y);

@@ -1,0 +1,92 @@
+# Starting compiling UnityEngine.TestRunner.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-96ed27a7b620ab641bc35db64fab52dd
+# Starting compiling UnityEngine.UI.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-8033fb97e81e4554182cf350f114a634
+# Starting IL post processing on UnityEngine.TestRunner.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-7c6a55d5aabccc14285d5990bbb3b81a"
+# Starting IL post processing on UnityEngine.UI.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-18cda573b6902f348b949e0487debcdf"
+# Starting compiling Unity.Timeline.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-e213802e2eb94ff4fbf5cef92b37822b
+# Starting compiling Unity.TextMeshPro.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-641afbc784d5b484cb6ca32eefad99f4
+# Starting compiling UnityEngine.Advertisements.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-ecd17d3a387b6344abeb775c187f0b1b
+# Starting compiling Unity.VisualScripting.Core.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-a5a173574dc5f5445bde25b64687cc10
+# Starting compiling Unity.Postprocessing.Runtime.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-ba7140d3939645b46b13e143b5a2a1f7
+# Starting compiling Fusion.Addressables.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-f7dc2045ba7c83e4abbcc5e78bd3809d
+# Starting IL post processing on Fusion.Addressables.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-2ea2001b79f8f324e9e2c9b2ee4c636c"
+# Starting compiling Unity.Mathematics.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-356240641d5756849884dc0ead27ea00
+# Starting IL post processing on UnityEngine.Advertisements.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-e547ed5612ea1724999b1ae32023df0d"
+# Starting compiling Unity.2D.Common.Runtime.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-6f6560bec3269ce4dac8c80996da8ecf
+# Starting compiling Unity.InternalAPIEngineBridge.001.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-c65bd9bd8ab7aa348964c62b8a1faeb0
+# Starting compiling Unity.2D.IK.Runtime.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-1bbc7d1a5b73f074da49eaa9ebfd23a2
+# Starting compiling Unity.RenderPipelines.Core.Runtime.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-af20b6c4b7e62114ca06aad20c914684
+# Starting compiling Unity.VisualScripting.Flow.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-6fe5621ea6b6bc64aa4f8e0003781667
+# Starting compiling Unity.RenderPipelines.Universal.Shaders.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-e978b3fc526181649bbfb36e90739e42
+# Starting IL post processing on Unity.Timeline.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-93dfb7fa8c24e9745b92cb04ea9da1fc"
+# Starting compiling Unity.RenderPipelines.Core.ShaderLibrary.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-94f1f5a452f42de4e93e044cd8f4be1c
+# Starting compiling Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-47acc92788927bd439b81a1c2361d928
+# Starting compiling Unity.RenderPipeline.Universal.ShaderLibrary.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-5689c7eb22312c74c87c0ed72203f8aa
+# Starting IL post processing on Unity.Postprocessing.Runtime.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-12b72c5c1b52e6240a62f2aed632f6f9"
+# Starting compiling Unity.VisualScripting.State.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-356a4caaa013f6b46b4843f0e3f833bc
+# Starting IL post processing on Unity.TextMeshPro.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-077e62ebd53b72c4d82c5bdb5ca0d45d"
+# Starting IL post processing on Unity.VisualScripting.Core.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-2bdfb928ad9890d46ada9d01d8db5f36"
+# Starting IL post processing on Unity.2D.Common.Runtime.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-d08fcfaed5cc63a41b18cf941b90fa79"
+# Starting compiling Unity.2D.Animation.Runtime.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-895d7bb1164eaf04e9819964808ac40c
+# Starting compiling Unity.RenderPipelines.Universal.Runtime.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-396a20913cee54a4a9111bb722657075
+# Starting IL post processing on Unity.InternalAPIEngineBridge.001.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-524d929bbdfe1c94f81494956514cac8"
+# Starting IL post processing on Unity.2D.IK.Runtime.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-893e7d58f5736d0429dc220c67524956"
+# Starting IL post processing on Unity.RenderPipelines.Universal.Shaders.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-fe76a01d9faa6254eb0ab8fe993a5bc6"
+# Starting IL post processing on Unity.RenderPipelines.Core.Runtime.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-da61e891dccc67f41b87cac620e61693"
+# Starting IL post processing on Unity.RenderPipelines.Core.ShaderLibrary.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-13087d06901eb064282813c162ece3d0"
+# Starting IL post processing on Unity.VisualScripting.Flow.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-f207e8f101f9ae54ba7eb957ca70bd96"
+# Starting IL post processing on Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-907a22147c8087447a353687b63d1669"
+# Starting IL post processing on Unity.RenderPipeline.Universal.ShaderLibrary.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-5ea70d29557677e438d3c3329ccbfeff"
+# Starting IL post processing on Unity.VisualScripting.State.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-30ed31c81ef41ed4bb3a468f0a2be86a"
+# Starting IL post processing on Unity.Mathematics.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-89c582f96ce916941b6bc1c1f6724100"
+# Starting IL post processing on Unity.2D.Animation.Runtime.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-93b756b89b868894e97d7c73890b14a6"
+# Starting compiling Assembly-CSharp-firstpass.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-c6f34da830089a74395b61398978bf66
+# Starting compiling Assembly-CSharp.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-a4a7b326e2f8dd645a4ed4efbba47fbc
+# Starting IL post processing on Unity.RenderPipelines.Universal.Runtime.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-39f7c225c42c245479656d66981762d9"
+# Starting IL post processing on Assembly-CSharp-firstpass.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-fee96c0a5f908cd4db034d53656ecb2d"
+# Starting IL post processing on Assembly-CSharp.dll
+"C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.40f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"D:/Game intern/ecurace/DragonShooting/New Unity Project (1)/New Unity Project (1)/Temp/UnityTempFile-8f8ae7585a688834288daee5ce9c442f"
