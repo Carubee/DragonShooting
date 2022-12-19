@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43942842, g: 0.47967792, b: 0.5242637, a: 1}
+  m_IndirectSpecularColor: {r: 0.43942815, g: 0.47967774, b: 0.524263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -28116,7 +28116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156089991}
   m_LocalRotation: {x: 0.70510423, y: -0, z: -0, w: 0.70910364}
-  m_LocalPosition: {x: 0.20151092, y: -0.7879854, z: 0.22412151}
+  m_LocalPosition: {x: 0.2023, y: -0.788, z: 0.2218}
   m_LocalScale: {x: 0.83581674, y: 0.46864536, z: 0.06448093}
   m_Children: []
   m_Father: {fileID: 543450653664158721}
@@ -37185,7 +37185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810029302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29, y: -60, z: 0}
+  m_LocalPosition: {x: 29, y: -61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 810327146}
@@ -37231,7 +37231,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1417, y: 644, z: 0}
+  m_Size: {x: 1415, y: 644, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1810029306
 MonoBehaviour:
@@ -37264,13 +37264,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1417
+  mWidth: 1415
   mHeight: 644
   mDepth: -1
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.2003105
+  aspectRatio: 2.197205
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 0}
