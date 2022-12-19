@@ -53,50 +53,54 @@
     <UnityVersion>2020.3.40f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\Grain.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Attributes\MinAttribute.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\PropertySheetFactory.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\ParameterOverride.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\PropertySheet.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessRenderContext.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Attributes\PostProcessAttribute.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessLayer.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\ChromaticAberration.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\ShaderIDs.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Monitors\LightMeterMonitor.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\Fog.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\AutoExposure.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Attributes\DisplayNameAttribute.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\XRSettings.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\Bloom.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\ColorUtilities.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessBundle.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\Spline.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessEffectSettings.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Monitors\Monitor.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\TargetPool.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\FastApproximateAntialiasing.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\MultiScaleVO.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\Dithering.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\MotionBlur.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\ScreenSpaceReflections.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\MeshUtilities.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Attributes\MinMaxAttribute.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessVolume.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessResources.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\AmbientOcclusion.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\LogHistogram.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\RuntimeUtilities.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessEvent.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\Vignette.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\DepthOfField.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\ScalableAO.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\HableCurve.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessManager.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Monitors\VectorscopeMonitor.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\ColorGrading.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\TextureFormatUtilities.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\LensDistortion.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\Grain.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\PropertySheetFactory.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\ParameterOverride.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessRenderContext.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Attributes\PostProcessAttribute.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessLayer.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\ShaderIDs.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\Fog.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\AutoExposure.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\Bloom.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\ColorUtilities.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\Spline.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessEffectSettings.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\TargetPool.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\FastApproximateAntialiasing.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\MultiScaleVO.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\ScreenSpaceReflections.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\AmbientOcclusion.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\RuntimeUtilities.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessEvent.cs" />
+    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\Vignette.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Monitors\WaveformMonitor.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\TextureLerper.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Monitors\HistogramMonitor.cs" />
@@ -105,11 +109,7 @@
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessProfile.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessDebug.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Attributes\MaxAttribute.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Monitors\VectorscopeMonitor.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\PostProcessEffectRenderer.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\ColorGrading.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\TextureFormatUtilities.cs" />
-    <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\LensDistortion.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Effects\SubpixelMorphologicalAntialiasing.cs" />
     <Compile Include="Assets\SineVFX\PostProcessingV2\Runtime\Utils\HaltonSeq.cs" />
   </ItemGroup>
@@ -399,14 +399,14 @@
     <Reference Include="RelationsInspector">
       <HintPath>Assets\DarkTonic\MasterAudio\Editor\RelationsInspector\RelationsInspector.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.10.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@1.10.2\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.10.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

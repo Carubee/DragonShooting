@@ -1204,7 +1204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1524364464302325723
 Transform:
   m_ObjectHideFlags: 0
@@ -11761,6 +11761,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1524364464302325723}
     m_Modifications:
+    - target: {fileID: 126488, guid: 9e4bcae82995535429d012d5fe4a76c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 183890, guid: 9e4bcae82995535429d012d5fe4a76c0, type: 3}
       propertyPath: m_Name
       value: PowerupGlow1
@@ -11812,6 +11816,18 @@ PrefabInstance:
     - target: {fileID: 410546, guid: 9e4bcae82995535429d012d5fe4a76c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895864, guid: 9e4bcae82995535429d012d5fe4a76c0, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895864, guid: 9e4bcae82995535429d012d5fe4a76c0, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 19895864, guid: 9e4bcae82995535429d012d5fe4a76c0, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 19903448, guid: 9e4bcae82995535429d012d5fe4a76c0, type: 3}
       propertyPath: m_Materials.Array.size

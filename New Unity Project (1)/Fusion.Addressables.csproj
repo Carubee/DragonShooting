@@ -53,15 +53,15 @@
     <UnityVersion>2020.3.40f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Photon\FusionAddressables\NetworkPrefabSourceUnityAddressable.cs" />
-    <Compile Include="Assets\Photon\FusionAddressables\NetworkPrefabSourceFactoryAddressables.cs" />
     <Compile Include="Assets\Photon\FusionAddressables\NetworkAddressablePrefabLoadInfo.cs" />
     <Compile Include="Assets\Photon\FusionAddressables\FusionAddressablePrefabsPreloader.cs" />
-    <Compile Include="Assets\Photon\FusionAddressables\NetworkPrefabSourceAddressables.cs" />
     <Compile Include="Assets\Photon\FusionAddressables\NetworkAddressablePrefabLoadInfoFactory.cs" />
+    <Compile Include="Assets\Photon\FusionAddressables\NetworkPrefabSourceFactoryAddressables.cs" />
+    <Compile Include="Assets\Photon\FusionAddressables\NetworkPrefabSourceAddressables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\FusionAddressables\Fusion.Addressables.asmdef" />
@@ -349,14 +349,14 @@
     <Reference Include="RelationsInspector">
       <HintPath>Assets\DarkTonic\MasterAudio\Editor\RelationsInspector\RelationsInspector.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.10.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@1.10.2\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.10.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

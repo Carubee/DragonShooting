@@ -407,9 +407,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8498578140808615822, guid: fcdc1f0ba9ca869459ba4636e8ef8c1f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8498578140808648940, guid: fcdc1f0ba9ca869459ba4636e8ef8c1f, type: 3}
       propertyPath: m_Name
       value: BulletSmallFire (1) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498578140826779584, guid: fcdc1f0ba9ca869459ba4636e8ef8c1f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498578140826779584, guid: fcdc1f0ba9ca869459ba4636e8ef8c1f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498578140826779584, guid: fcdc1f0ba9ca869459ba4636e8ef8c1f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498578140826814980, guid: fcdc1f0ba9ca869459ba4636e8ef8c1f, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcdc1f0ba9ca869459ba4636e8ef8c1f, type: 3}

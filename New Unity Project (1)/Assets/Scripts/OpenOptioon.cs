@@ -7,6 +7,7 @@ public class OpenOptioon : MonoBehaviour
 {
     [SerializeField] GameObject option;
     [SerializeField] GameObject shop;
+    [SerializeField] GameObject inventory;
     [SerializeField] GameObject NoticeBuy;
     [SerializeField] GameObject NoticeNotEnough;
 
@@ -27,6 +28,10 @@ public class OpenOptioon : MonoBehaviour
     {
         instant = this;
         CloseOption();
+    }
+    public void OpenIventory()
+    {
+        inventory.SetActive(true);
     }
     public void OpenOption()
     {

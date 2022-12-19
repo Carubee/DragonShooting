@@ -53,14 +53,14 @@
     <UnityVersion>2020.3.40f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Photon\Fusion\Scripts\Editor\Fusion.Editor.cs" />
-    <Compile Include="Assets\Photon\Fusion\Scripts\Editor\NetworkProjectConfigImporter.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Editor\Windows\RunnerVisibilityControlsWindow.cs" />
-    <Compile Include="Assets\Photon\Fusion\Scripts\Editor\NetworkProjectConfigImporterEditor.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Editor\Windows\SharedSceneControlsWindow.cs" />
+    <Compile Include="Assets\Photon\Fusion\Scripts\Editor\NetworkProjectConfigImporter.cs" />
+    <Compile Include="Assets\Photon\Fusion\Scripts\Editor\NetworkProjectConfigImporterEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\Fusion\Scripts\Editor\Fusion.Editor.asmdef" />

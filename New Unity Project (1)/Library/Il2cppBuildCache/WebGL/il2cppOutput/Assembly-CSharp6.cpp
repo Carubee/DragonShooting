@@ -17767,30 +17767,32 @@ public:
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___option_4;
 	// UnityEngine.GameObject OpenOptioon::shop
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___shop_5;
+	// UnityEngine.GameObject OpenOptioon::inventory
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___inventory_6;
 	// UnityEngine.GameObject OpenOptioon::NoticeBuy
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___NoticeBuy_6;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___NoticeBuy_7;
 	// UnityEngine.GameObject OpenOptioon::NoticeNotEnough
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___NoticeNotEnough_7;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___NoticeNotEnough_8;
 	// System.Boolean OpenOptioon::DragonTracker
-	bool ___DragonTracker_8;
+	bool ___DragonTracker_9;
 	// System.Boolean OpenOptioon::Bomb
-	bool ___Bomb_9;
+	bool ___Bomb_10;
 	// System.Boolean OpenOptioon::SpareShot
-	bool ___SpareShot_10;
+	bool ___SpareShot_11;
 	// System.Boolean OpenOptioon::DoubleDamage
-	bool ___DoubleDamage_11;
+	bool ___DoubleDamage_12;
 	// System.Boolean OpenOptioon::HunterBag
-	bool ___HunterBag_12;
+	bool ___HunterBag_13;
 	// item OpenOptioon::itemUse
-	item_t250D4218EA405862560991833D9AB1D39076A398 * ___itemUse_13;
+	item_t250D4218EA405862560991833D9AB1D39076A398 * ___itemUse_14;
 	// System.Boolean OpenOptioon::openMenu
-	bool ___openMenu_15;
+	bool ___openMenu_16;
 	// UnityEngine.AudioSource OpenOptioon::soundOpen
-	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___soundOpen_16;
+	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___soundOpen_17;
 	// UnityEngine.AudioSource OpenOptioon::closeOpen
-	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___closeOpen_17;
+	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___closeOpen_18;
 	// UnityEngine.AudioSource OpenOptioon::buy
-	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___buy_18;
+	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___buy_19;
 
 public:
 	inline static int32_t get_offset_of_option_4() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___option_4)); }
@@ -17811,106 +17813,115 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___shop_5), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_NoticeBuy_6() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___NoticeBuy_6)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_NoticeBuy_6() const { return ___NoticeBuy_6; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_NoticeBuy_6() { return &___NoticeBuy_6; }
-	inline void set_NoticeBuy_6(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_inventory_6() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___inventory_6)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_inventory_6() const { return ___inventory_6; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_inventory_6() { return &___inventory_6; }
+	inline void set_inventory_6(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___NoticeBuy_6 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___NoticeBuy_6), (void*)value);
+		___inventory_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___inventory_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_NoticeNotEnough_7() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___NoticeNotEnough_7)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_NoticeNotEnough_7() const { return ___NoticeNotEnough_7; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_NoticeNotEnough_7() { return &___NoticeNotEnough_7; }
-	inline void set_NoticeNotEnough_7(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_NoticeBuy_7() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___NoticeBuy_7)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_NoticeBuy_7() const { return ___NoticeBuy_7; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_NoticeBuy_7() { return &___NoticeBuy_7; }
+	inline void set_NoticeBuy_7(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___NoticeNotEnough_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___NoticeNotEnough_7), (void*)value);
+		___NoticeBuy_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___NoticeBuy_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_DragonTracker_8() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___DragonTracker_8)); }
-	inline bool get_DragonTracker_8() const { return ___DragonTracker_8; }
-	inline bool* get_address_of_DragonTracker_8() { return &___DragonTracker_8; }
-	inline void set_DragonTracker_8(bool value)
+	inline static int32_t get_offset_of_NoticeNotEnough_8() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___NoticeNotEnough_8)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_NoticeNotEnough_8() const { return ___NoticeNotEnough_8; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_NoticeNotEnough_8() { return &___NoticeNotEnough_8; }
+	inline void set_NoticeNotEnough_8(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___DragonTracker_8 = value;
+		___NoticeNotEnough_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___NoticeNotEnough_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_Bomb_9() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___Bomb_9)); }
-	inline bool get_Bomb_9() const { return ___Bomb_9; }
-	inline bool* get_address_of_Bomb_9() { return &___Bomb_9; }
-	inline void set_Bomb_9(bool value)
+	inline static int32_t get_offset_of_DragonTracker_9() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___DragonTracker_9)); }
+	inline bool get_DragonTracker_9() const { return ___DragonTracker_9; }
+	inline bool* get_address_of_DragonTracker_9() { return &___DragonTracker_9; }
+	inline void set_DragonTracker_9(bool value)
 	{
-		___Bomb_9 = value;
+		___DragonTracker_9 = value;
 	}
 
-	inline static int32_t get_offset_of_SpareShot_10() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___SpareShot_10)); }
-	inline bool get_SpareShot_10() const { return ___SpareShot_10; }
-	inline bool* get_address_of_SpareShot_10() { return &___SpareShot_10; }
-	inline void set_SpareShot_10(bool value)
+	inline static int32_t get_offset_of_Bomb_10() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___Bomb_10)); }
+	inline bool get_Bomb_10() const { return ___Bomb_10; }
+	inline bool* get_address_of_Bomb_10() { return &___Bomb_10; }
+	inline void set_Bomb_10(bool value)
 	{
-		___SpareShot_10 = value;
+		___Bomb_10 = value;
 	}
 
-	inline static int32_t get_offset_of_DoubleDamage_11() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___DoubleDamage_11)); }
-	inline bool get_DoubleDamage_11() const { return ___DoubleDamage_11; }
-	inline bool* get_address_of_DoubleDamage_11() { return &___DoubleDamage_11; }
-	inline void set_DoubleDamage_11(bool value)
+	inline static int32_t get_offset_of_SpareShot_11() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___SpareShot_11)); }
+	inline bool get_SpareShot_11() const { return ___SpareShot_11; }
+	inline bool* get_address_of_SpareShot_11() { return &___SpareShot_11; }
+	inline void set_SpareShot_11(bool value)
 	{
-		___DoubleDamage_11 = value;
+		___SpareShot_11 = value;
 	}
 
-	inline static int32_t get_offset_of_HunterBag_12() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___HunterBag_12)); }
-	inline bool get_HunterBag_12() const { return ___HunterBag_12; }
-	inline bool* get_address_of_HunterBag_12() { return &___HunterBag_12; }
-	inline void set_HunterBag_12(bool value)
+	inline static int32_t get_offset_of_DoubleDamage_12() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___DoubleDamage_12)); }
+	inline bool get_DoubleDamage_12() const { return ___DoubleDamage_12; }
+	inline bool* get_address_of_DoubleDamage_12() { return &___DoubleDamage_12; }
+	inline void set_DoubleDamage_12(bool value)
 	{
-		___HunterBag_12 = value;
+		___DoubleDamage_12 = value;
 	}
 
-	inline static int32_t get_offset_of_itemUse_13() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___itemUse_13)); }
-	inline item_t250D4218EA405862560991833D9AB1D39076A398 * get_itemUse_13() const { return ___itemUse_13; }
-	inline item_t250D4218EA405862560991833D9AB1D39076A398 ** get_address_of_itemUse_13() { return &___itemUse_13; }
-	inline void set_itemUse_13(item_t250D4218EA405862560991833D9AB1D39076A398 * value)
+	inline static int32_t get_offset_of_HunterBag_13() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___HunterBag_13)); }
+	inline bool get_HunterBag_13() const { return ___HunterBag_13; }
+	inline bool* get_address_of_HunterBag_13() { return &___HunterBag_13; }
+	inline void set_HunterBag_13(bool value)
 	{
-		___itemUse_13 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___itemUse_13), (void*)value);
+		___HunterBag_13 = value;
 	}
 
-	inline static int32_t get_offset_of_openMenu_15() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___openMenu_15)); }
-	inline bool get_openMenu_15() const { return ___openMenu_15; }
-	inline bool* get_address_of_openMenu_15() { return &___openMenu_15; }
-	inline void set_openMenu_15(bool value)
+	inline static int32_t get_offset_of_itemUse_14() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___itemUse_14)); }
+	inline item_t250D4218EA405862560991833D9AB1D39076A398 * get_itemUse_14() const { return ___itemUse_14; }
+	inline item_t250D4218EA405862560991833D9AB1D39076A398 ** get_address_of_itemUse_14() { return &___itemUse_14; }
+	inline void set_itemUse_14(item_t250D4218EA405862560991833D9AB1D39076A398 * value)
 	{
-		___openMenu_15 = value;
+		___itemUse_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___itemUse_14), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_soundOpen_16() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___soundOpen_16)); }
-	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_soundOpen_16() const { return ___soundOpen_16; }
-	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_soundOpen_16() { return &___soundOpen_16; }
-	inline void set_soundOpen_16(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
+	inline static int32_t get_offset_of_openMenu_16() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___openMenu_16)); }
+	inline bool get_openMenu_16() const { return ___openMenu_16; }
+	inline bool* get_address_of_openMenu_16() { return &___openMenu_16; }
+	inline void set_openMenu_16(bool value)
 	{
-		___soundOpen_16 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___soundOpen_16), (void*)value);
+		___openMenu_16 = value;
 	}
 
-	inline static int32_t get_offset_of_closeOpen_17() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___closeOpen_17)); }
-	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_closeOpen_17() const { return ___closeOpen_17; }
-	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_closeOpen_17() { return &___closeOpen_17; }
-	inline void set_closeOpen_17(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
+	inline static int32_t get_offset_of_soundOpen_17() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___soundOpen_17)); }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_soundOpen_17() const { return ___soundOpen_17; }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_soundOpen_17() { return &___soundOpen_17; }
+	inline void set_soundOpen_17(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
 	{
-		___closeOpen_17 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___closeOpen_17), (void*)value);
+		___soundOpen_17 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___soundOpen_17), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_buy_18() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___buy_18)); }
-	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_buy_18() const { return ___buy_18; }
-	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_buy_18() { return &___buy_18; }
-	inline void set_buy_18(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
+	inline static int32_t get_offset_of_closeOpen_18() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___closeOpen_18)); }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_closeOpen_18() const { return ___closeOpen_18; }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_closeOpen_18() { return &___closeOpen_18; }
+	inline void set_closeOpen_18(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
 	{
-		___buy_18 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___buy_18), (void*)value);
+		___closeOpen_18 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___closeOpen_18), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_buy_19() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69, ___buy_19)); }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * get_buy_19() const { return ___buy_19; }
+	inline AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B ** get_address_of_buy_19() { return &___buy_19; }
+	inline void set_buy_19(AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * value)
+	{
+		___buy_19 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___buy_19), (void*)value);
 	}
 };
 
@@ -17918,16 +17929,16 @@ struct OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields
 {
 public:
 	// OpenOptioon OpenOptioon::instant
-	OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * ___instant_14;
+	OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * ___instant_15;
 
 public:
-	inline static int32_t get_offset_of_instant_14() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields, ___instant_14)); }
-	inline OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * get_instant_14() const { return ___instant_14; }
-	inline OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 ** get_address_of_instant_14() { return &___instant_14; }
-	inline void set_instant_14(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * value)
+	inline static int32_t get_offset_of_instant_15() { return static_cast<int32_t>(offsetof(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields, ___instant_15)); }
+	inline OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * get_instant_15() const { return ___instant_15; }
+	inline OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 ** get_address_of_instant_15() { return &___instant_15; }
+	inline void set_instant_15(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * value)
 	{
-		___instant_14 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___instant_14), (void*)value);
+		___instant_15 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___instant_15), (void*)value);
 	}
 };
 
@@ -45012,9 +45023,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_Start_m89D63B8475877FF6927F4
 	}
 	{
 		// instant = this;
-		((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->set_instant_14(__this);
+		((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->set_instant_15(__this);
 		// CloseOption();
 		OpenOptioon_CloseOption_m56E52B889F7AF1D5CFF22450F4F61BF85D9BE706(__this, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void OpenOptioon::OpenIventory()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_OpenIventory_m35B944E417A427979460B7D801C878325350BA7C (OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * __this, const RuntimeMethod* method)
+{
+	{
+		// inventory.SetActive(true);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_inventory_6();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -45036,9 +45058,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_OpenOption_m8F5CD4A8839D4413
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_option_4();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)1, /*hidden argument*/NULL);
 		// openMenu = true;
-		__this->set_openMenu_15((bool)1);
+		__this->set_openMenu_16((bool)1);
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_2, /*hidden argument*/NULL);
 		// }
 		return;
@@ -45052,9 +45074,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_ShopOption_mBB2CA656935E658D
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_shop_5();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)1, /*hidden argument*/NULL);
 		// openMenu = true;
-		__this->set_openMenu_15((bool)1);
+		__this->set_openMenu_16((bool)1);
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_1 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_1 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_1, /*hidden argument*/NULL);
 		// }
 		return;
@@ -45077,18 +45099,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_CloseOption_m56E52B889F7AF1D
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_shop_5();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)0, /*hidden argument*/NULL);
 		// NoticeBuy.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_NoticeBuy_6();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_NoticeBuy_7();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)0, /*hidden argument*/NULL);
 		// NoticeNotEnough.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_NoticeNotEnough_7();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_NoticeNotEnough_8();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_3, (bool)0, /*hidden argument*/NULL);
 		// gunMode.instance.canPlay = true;
 		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_4 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
 		L_4->set_canPlay_62((bool)1);
 		// openMenu = false;
-		__this->set_openMenu_15((bool)0);
+		__this->set_openMenu_16((bool)0);
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_5 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_5 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_5, /*hidden argument*/NULL);
 		// }
 		return;
@@ -45099,13 +45121,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_CloseBeforeBuy_m342B230F74C7
 {
 	{
 		// NoticeBuy.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_NoticeBuy_6();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_NoticeBuy_7();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)0, /*hidden argument*/NULL);
 		// NoticeNotEnough.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_NoticeNotEnough_7();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_NoticeNotEnough_8();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)0, /*hidden argument*/NULL);
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_2, /*hidden argument*/NULL);
 		// }
 		return;
@@ -45133,13 +45155,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_Confirm_m120545D2D4251A04C1C
 {
 	{
 		// NoticeBuy.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_NoticeBuy_6();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_NoticeBuy_7();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)1, /*hidden argument*/NULL);
 		// NoticeNotEnough.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_NoticeNotEnough_7();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_NoticeNotEnough_8();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)0, /*hidden argument*/NULL);
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_2, /*hidden argument*/NULL);
 		// }
 		return;
@@ -45150,13 +45172,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_NotEnough_m342CDACF2C531A66D
 {
 	{
 		// NoticeNotEnough.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_NoticeNotEnough_7();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_NoticeNotEnough_8();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)1, /*hidden argument*/NULL);
 		// NoticeBuy.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_NoticeBuy_6();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_NoticeBuy_7();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)0, /*hidden argument*/NULL);
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_2, /*hidden argument*/NULL);
 		// }
 		return;
@@ -45167,10 +45189,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_BuyDragonTracker_m515C928B11
 {
 	{
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_0, /*hidden argument*/NULL);
 		// DragonTracker = true;
-		__this->set_DragonTracker_8((bool)1);
+		__this->set_DragonTracker_9((bool)1);
 		// Confirm();
 		OpenOptioon_Confirm_m120545D2D4251A04C1CC8093092CB80AEE45835D(__this, /*hidden argument*/NULL);
 		// }
@@ -45182,10 +45204,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_BuyBomb_m16F929F6FA01EB7D1D0
 {
 	{
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_0, /*hidden argument*/NULL);
 		// Bomb = true;
-		__this->set_Bomb_9((bool)1);
+		__this->set_Bomb_10((bool)1);
 		// Confirm();
 		OpenOptioon_Confirm_m120545D2D4251A04C1CC8093092CB80AEE45835D(__this, /*hidden argument*/NULL);
 		// }
@@ -45197,10 +45219,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_BuySpareSoht_mA9023F58737783
 {
 	{
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_0, /*hidden argument*/NULL);
 		// SpareShot = true;
-		__this->set_SpareShot_10((bool)1);
+		__this->set_SpareShot_11((bool)1);
 		// Confirm();
 		OpenOptioon_Confirm_m120545D2D4251A04C1CC8093092CB80AEE45835D(__this, /*hidden argument*/NULL);
 		// }
@@ -45212,10 +45234,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_BuyDoubleDamage_m958CAC6DE88
 {
 	{
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_0, /*hidden argument*/NULL);
 		// DoubleDamage = true;
-		__this->set_DoubleDamage_11((bool)1);
+		__this->set_DoubleDamage_12((bool)1);
 		// Confirm();
 		OpenOptioon_Confirm_m120545D2D4251A04C1CC8093092CB80AEE45835D(__this, /*hidden argument*/NULL);
 		// }
@@ -45227,10 +45249,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_BuyHunterBag_m7B6926208EB402
 {
 	{
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_16();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_0 = __this->get_soundOpen_17();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_0, /*hidden argument*/NULL);
 		// HunterBag = true;
-		__this->set_HunterBag_12((bool)1);
+		__this->set_HunterBag_13((bool)1);
 		// Confirm();
 		OpenOptioon_Confirm_m120545D2D4251A04C1CC8093092CB80AEE45835D(__this, /*hidden argument*/NULL);
 		// }
@@ -45249,7 +45271,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_buyChose_mB5AC1862422BA148C0
 	}
 	{
 		// if (DragonTracker == true)
-		bool L_0 = __this->get_DragonTracker_8();
+		bool L_0 = __this->get_DragonTracker_9();
 		if (!L_0)
 		{
 			goto IL_0060;
@@ -45269,12 +45291,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_buyChose_mB5AC1862422BA148C0
 		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_2 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
 		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_2, ((int32_t)150), /*hidden argument*/NULL);
 		// itemUse.amountDragonTracker += 1;
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_3 = __this->get_itemUse_13();
+		item_t250D4218EA405862560991833D9AB1D39076A398 * L_3 = __this->get_itemUse_14();
 		item_t250D4218EA405862560991833D9AB1D39076A398 * L_4 = L_3;
 		int32_t L_5 = L_4->get_amountDragonTracker_37();
 		L_4->set_amountDragonTracker_37(((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)1)));
 		// buy.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_6 = __this->get_buy_18();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_6 = __this->get_buy_19();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_6, /*hidden argument*/NULL);
 		// CloseBeforeBuy();
 		OpenOptioon_CloseBeforeBuy_m342B230F74C7AD5E00B8E82842A2798CEF4B067C(__this, /*hidden argument*/NULL);
@@ -45291,13 +45313,13 @@ IL_0053:
 IL_0059:
 	{
 		// DragonTracker = false;
-		__this->set_DragonTracker_8((bool)0);
+		__this->set_DragonTracker_9((bool)0);
 	}
 
 IL_0060:
 	{
 		// if (Bomb == true)
-		bool L_7 = __this->get_Bomb_9();
+		bool L_7 = __this->get_Bomb_10();
 		if (!L_7)
 		{
 			goto IL_00c0;
@@ -45317,12 +45339,12 @@ IL_0060:
 		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_9 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
 		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_9, ((int32_t)200), /*hidden argument*/NULL);
 		// itemUse.amountBomb += 1;
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_10 = __this->get_itemUse_13();
+		item_t250D4218EA405862560991833D9AB1D39076A398 * L_10 = __this->get_itemUse_14();
 		item_t250D4218EA405862560991833D9AB1D39076A398 * L_11 = L_10;
 		int32_t L_12 = L_11->get_amountBomb_38();
 		L_11->set_amountBomb_38(((int32_t)il2cpp_codegen_add((int32_t)L_12, (int32_t)1)));
 		// buy.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_13 = __this->get_buy_18();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_13 = __this->get_buy_19();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_13, /*hidden argument*/NULL);
 		// CloseBeforeBuy();
 		OpenOptioon_CloseBeforeBuy_m342B230F74C7AD5E00B8E82842A2798CEF4B067C(__this, /*hidden argument*/NULL);
@@ -45339,13 +45361,13 @@ IL_00b3:
 IL_00b9:
 	{
 		// Bomb = false;
-		__this->set_Bomb_9((bool)0);
+		__this->set_Bomb_10((bool)0);
 	}
 
 IL_00c0:
 	{
 		// if (SpareShot == true)
-		bool L_14 = __this->get_SpareShot_10();
+		bool L_14 = __this->get_SpareShot_11();
 		if (!L_14)
 		{
 			goto IL_011a;
@@ -45365,12 +45387,12 @@ IL_00c0:
 		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_16 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
 		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_16, ((int32_t)25), /*hidden argument*/NULL);
 		// itemUse.amountSpare += 1;
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_17 = __this->get_itemUse_13();
+		item_t250D4218EA405862560991833D9AB1D39076A398 * L_17 = __this->get_itemUse_14();
 		item_t250D4218EA405862560991833D9AB1D39076A398 * L_18 = L_17;
 		int32_t L_19 = L_18->get_amountSpare_39();
 		L_18->set_amountSpare_39(((int32_t)il2cpp_codegen_add((int32_t)L_19, (int32_t)1)));
 		// buy.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_20 = __this->get_buy_18();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_20 = __this->get_buy_19();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_20, /*hidden argument*/NULL);
 		// CloseBeforeBuy();
 		OpenOptioon_CloseBeforeBuy_m342B230F74C7AD5E00B8E82842A2798CEF4B067C(__this, /*hidden argument*/NULL);
@@ -45387,13 +45409,13 @@ IL_010d:
 IL_0113:
 	{
 		// SpareShot = false;
-		__this->set_SpareShot_10((bool)0);
+		__this->set_SpareShot_11((bool)0);
 	}
 
 IL_011a:
 	{
 		// if (DoubleDamage == true)
-		bool L_21 = __this->get_DoubleDamage_11();
+		bool L_21 = __this->get_DoubleDamage_12();
 		if (!L_21)
 		{
 			goto IL_0174;
@@ -45413,12 +45435,12 @@ IL_011a:
 		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_23 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
 		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_23, ((int32_t)35), /*hidden argument*/NULL);
 		// itemUse.amountDoubleDamage += 1;
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_24 = __this->get_itemUse_13();
+		item_t250D4218EA405862560991833D9AB1D39076A398 * L_24 = __this->get_itemUse_14();
 		item_t250D4218EA405862560991833D9AB1D39076A398 * L_25 = L_24;
 		int32_t L_26 = L_25->get_amountDoubleDamage_40();
 		L_25->set_amountDoubleDamage_40(((int32_t)il2cpp_codegen_add((int32_t)L_26, (int32_t)1)));
 		// buy.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_27 = __this->get_buy_18();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_27 = __this->get_buy_19();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_27, /*hidden argument*/NULL);
 		// CloseBeforeBuy();
 		OpenOptioon_CloseBeforeBuy_m342B230F74C7AD5E00B8E82842A2798CEF4B067C(__this, /*hidden argument*/NULL);
@@ -45435,13 +45457,13 @@ IL_0167:
 IL_016d:
 	{
 		// DoubleDamage = false;
-		__this->set_DoubleDamage_11((bool)0);
+		__this->set_DoubleDamage_12((bool)0);
 	}
 
 IL_0174:
 	{
 		// if (HunterBag == true)
-		bool L_28 = __this->get_HunterBag_12();
+		bool L_28 = __this->get_HunterBag_13();
 		if (!L_28)
 		{
 			goto IL_01d4;
@@ -45461,12 +45483,12 @@ IL_0174:
 		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_30 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
 		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_30, ((int32_t)350), /*hidden argument*/NULL);
 		// itemUse.amountHunterBag += 1;
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_31 = __this->get_itemUse_13();
+		item_t250D4218EA405862560991833D9AB1D39076A398 * L_31 = __this->get_itemUse_14();
 		item_t250D4218EA405862560991833D9AB1D39076A398 * L_32 = L_31;
 		int32_t L_33 = L_32->get_amountHunterBag_41();
 		L_32->set_amountHunterBag_41(((int32_t)il2cpp_codegen_add((int32_t)L_33, (int32_t)1)));
 		// buy.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_34 = __this->get_buy_18();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_34 = __this->get_buy_19();
 		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_34, /*hidden argument*/NULL);
 		// CloseBeforeBuy();
 		OpenOptioon_CloseBeforeBuy_m342B230F74C7AD5E00B8E82842A2798CEF4B067C(__this, /*hidden argument*/NULL);
@@ -45483,13 +45505,13 @@ IL_01c7:
 IL_01cd:
 	{
 		// HunterBag = false;
-		__this->set_HunterBag_12((bool)0);
+		__this->set_HunterBag_13((bool)0);
 	}
 
 IL_01d4:
 	{
 		// itemUse.UpdateText();
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_35 = __this->get_itemUse_13();
+		item_t250D4218EA405862560991833D9AB1D39076A398 * L_35 = __this->get_itemUse_14();
 		item_UpdateText_m3E4DF4C8156634AD1095C769FD7529CD6C7B721D(L_35, /*hidden argument*/NULL);
 		// }
 		return;
