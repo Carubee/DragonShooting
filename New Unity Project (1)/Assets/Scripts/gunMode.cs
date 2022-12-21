@@ -71,7 +71,6 @@ public class gunMode : NetworkBehaviour
     [SerializeField] private AudioSource coinSound;
     [SerializeField] private AudioSource selectSeat;
     public NetworkString<_16> nickName { get; set; }
-
     [Networked] public bool enchance { get; set; }
     [Networked] public int Rotation { get; set; }
 
@@ -88,10 +87,68 @@ public class gunMode : NetworkBehaviour
         instance = this;
         gunModel = 1;
     }
+   
+    public override void FixedUpdateNetwork()
+    {
+       
+        if (GetInput(out NetworkInputData data))
+        {
+            transform.up = data.direction - new Vector2(transform.position.x, transform.position.y);
+        }
+        if (Input.GetKeyDown("1"))
+        {
+            //Debug.Log("Buy");
+
+            Rpc_ChangeGunCilent(1);
+        }
+        if (Input.GetKeyDown("2"))
+        {
+            //Debug.Log("Buy1");
+
+            Rpc_ChangeGunCilent(2);
+
+        }
+        if (Input.GetKeyDown("3"))
+        {
+            //Debug.Log("Buy2");
+            gunControl.cost = 5;
+            gunControl.damage = 2;
+            gunModel = 3;
+            Rpc_ChangeGunCilent(3);
+
+        }
+        if (Input.GetKeyDown("4"))
+        {
+            //Debug.Log("Buy3");
+            gunControl.cost = 3;
+            gunControl.damage = 3;
+            gunModel = 4;
+            Rpc_ChangeGunCilent(4);
+
+        }
+        if (Input.GetKeyDown("5"))
+        {
+            //Debug.Log("Buy4");
+            gunControl.cost = 15;
+            gunControl.damage = 10;
+            gunModel = 5;
+            Rpc_ChangeGunCilent(5);
+
+        }
+        if (Input.GetKeyDown("6"))
+        {
+            //Debug.Log("Buy5");
+            gunControl.cost = 75;
+            gunControl.damage = 10;
+            gunModel = 6;
+            Rpc_ChangeGunCilent(6);
+
+        }
+    }
     public void Update()
     {
 
-        //if (Runner.IsServer) return;
+        if (Runner.IsServer) return;
         
 
         if (!canPlay) return;
@@ -104,9 +161,9 @@ public class gunMode : NetworkBehaviour
         {
             TimeDouble += Time.deltaTime;
         }
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.up = mousePos - new Vector2(transform.position.x, transform.position.y);
-        Rpc_RotateCilent(mousePos);
+        //Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //transform.up = mousePos - new Vector2(transform.position.x, transform.position.y);
+        //Rpc_RotateCilent(mousePos);
 
 
         if (firerate <= 2)
@@ -177,55 +234,7 @@ public class gunMode : NetworkBehaviour
             }
 
         }
-        if (Input.GetKeyDown("1"))
-        {
-            //Debug.Log("Buy");
-
-            Rpc_ChangeGunCilent(1);
-        }
-        if (Input.GetKeyDown("2"))
-        {
-            //Debug.Log("Buy1");
-
-            Rpc_ChangeGunCilent(2);
-
-        }
-        if (Input.GetKeyDown("3"))
-        {
-            //Debug.Log("Buy2");
-            gunControl.cost = 5;
-            gunControl.damage = 2;
-            gunModel = 3;
-            Rpc_ChangeGunCilent(3);
-
-        }
-        if (Input.GetKeyDown("4"))
-        {
-            //Debug.Log("Buy3");
-            gunControl.cost = 3;
-            gunControl.damage = 3;
-            gunModel = 4;
-            Rpc_ChangeGunCilent(4);
-
-        }
-        if (Input.GetKeyDown("5"))
-        {
-            //Debug.Log("Buy4");
-            gunControl.cost = 15;
-            gunControl.damage = 10;
-            gunModel = 5;
-            Rpc_ChangeGunCilent(5);
-
-        }
-        if (Input.GetKeyDown("6"))
-        {
-            //Debug.Log("Buy5");
-            gunControl.cost = 75;
-            gunControl.damage = 10;
-            gunModel = 6;
-            Rpc_ChangeGunCilent(6);
-
-        }
+        
     }
 
     [Networked] public int gunModel { get; set; }

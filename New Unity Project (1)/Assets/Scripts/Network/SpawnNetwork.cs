@@ -27,10 +27,11 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>()
 
         }) ; ;}
-
     private void Start()
     {
         instance = this;
+
+    
     }
     // Update is called once per 
     public void JoinGame()
@@ -94,7 +95,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     public void OnInput(NetworkRunner runner,NetworkInput input)
     {
         var data = new NetworkInputData();
-       
+        data.direction = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 
         input.Set(data);

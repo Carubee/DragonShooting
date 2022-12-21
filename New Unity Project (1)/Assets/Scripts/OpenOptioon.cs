@@ -31,6 +31,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void OpenIventory()
     {
+        gunMode.instance.canPlay = false;
         inventory.SetActive(true);
     }
     public void OpenOption()
@@ -42,6 +43,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void ShopOption()
     {
+        gunMode.instance.canPlay = false;
         shop.SetActive(true);
         openMenu = true;
         soundOpen.Play();

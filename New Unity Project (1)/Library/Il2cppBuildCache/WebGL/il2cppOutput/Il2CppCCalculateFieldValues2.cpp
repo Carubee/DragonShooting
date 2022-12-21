@@ -14006,47 +14006,47 @@ public:
 				#pragma pack(push, tp, 1)
 				struct
 				{
-					// UnityEngine.Vector3 NetworkInputData::direction
-					Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___direction_0;
+					// UnityEngine.Vector2 NetworkInputData::direction
+					Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___direction_0;
 				};
 				#pragma pack(pop, tp)
 				struct
 				{
-					Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___direction_0_forAlignmentOnly;
+					Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___direction_0_forAlignmentOnly;
 				};
 				#pragma pack(push, tp, 1)
 				struct
 				{
-					char ___PosMouse_1_OffsetPadding[12];
-					// System.Single NetworkInputData::PosMouse
-					float ___PosMouse_1;
+					char ___gunChange_1_OffsetPadding[8];
+					// System.Int32 NetworkInputData::gunChange
+					int32_t ___gunChange_1;
 				};
 				#pragma pack(pop, tp)
 				struct
 				{
-					char ___PosMouse_1_OffsetPadding_forAlignmentOnly[12];
-					float ___PosMouse_1_forAlignmentOnly;
+					char ___gunChange_1_OffsetPadding_forAlignmentOnly[8];
+					int32_t ___gunChange_1_forAlignmentOnly;
 				};
 			};
 		};
-		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[16];
+		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[12];
 	};
 
 public:
 	inline static int32_t get_offset_of_direction_0() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___direction_0)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_direction_0() const { return ___direction_0; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_direction_0() { return &___direction_0; }
-	inline void set_direction_0(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  get_direction_0() const { return ___direction_0; }
+	inline Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9 * get_address_of_direction_0() { return &___direction_0; }
+	inline void set_direction_0(Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  value)
 	{
 		___direction_0 = value;
 	}
 
-	inline static int32_t get_offset_of_PosMouse_1() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___PosMouse_1)); }
-	inline float get_PosMouse_1() const { return ___PosMouse_1; }
-	inline float* get_address_of_PosMouse_1() { return &___PosMouse_1; }
-	inline void set_PosMouse_1(float value)
+	inline static int32_t get_offset_of_gunChange_1() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___gunChange_1)); }
+	inline int32_t get_gunChange_1() const { return ___gunChange_1; }
+	inline int32_t* get_address_of_gunChange_1() { return &___gunChange_1; }
+	inline void set_gunChange_1(int32_t value)
 	{
-		___PosMouse_1 = value;
+		___gunChange_1 = value;
 	}
 };
 #pragma pack(pop, tp)
@@ -63316,7 +63316,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5598[8] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5599[2] = 
 {
 	NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81::get_offset_of_direction_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81::get_offset_of_PosMouse_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81::get_offset_of_gunChange_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5600[11] = 
 {

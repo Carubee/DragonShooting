@@ -8091,47 +8091,47 @@ public:
 				#pragma pack(push, tp, 1)
 				struct
 				{
-					// UnityEngine.Vector3 NetworkInputData::direction
-					Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___direction_0;
+					// UnityEngine.Vector2 NetworkInputData::direction
+					Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___direction_0;
 				};
 				#pragma pack(pop, tp)
 				struct
 				{
-					Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___direction_0_forAlignmentOnly;
+					Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___direction_0_forAlignmentOnly;
 				};
 				#pragma pack(push, tp, 1)
 				struct
 				{
-					char ___PosMouse_1_OffsetPadding[12];
-					// System.Single NetworkInputData::PosMouse
-					float ___PosMouse_1;
+					char ___gunChange_1_OffsetPadding[8];
+					// System.Int32 NetworkInputData::gunChange
+					int32_t ___gunChange_1;
 				};
 				#pragma pack(pop, tp)
 				struct
 				{
-					char ___PosMouse_1_OffsetPadding_forAlignmentOnly[12];
-					float ___PosMouse_1_forAlignmentOnly;
+					char ___gunChange_1_OffsetPadding_forAlignmentOnly[8];
+					int32_t ___gunChange_1_forAlignmentOnly;
 				};
 			};
 		};
-		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[16];
+		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[12];
 	};
 
 public:
 	inline static int32_t get_offset_of_direction_0() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___direction_0)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_direction_0() const { return ___direction_0; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_direction_0() { return &___direction_0; }
-	inline void set_direction_0(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  get_direction_0() const { return ___direction_0; }
+	inline Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9 * get_address_of_direction_0() { return &___direction_0; }
+	inline void set_direction_0(Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  value)
 	{
 		___direction_0 = value;
 	}
 
-	inline static int32_t get_offset_of_PosMouse_1() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___PosMouse_1)); }
-	inline float get_PosMouse_1() const { return ___PosMouse_1; }
-	inline float* get_address_of_PosMouse_1() { return &___PosMouse_1; }
-	inline void set_PosMouse_1(float value)
+	inline static int32_t get_offset_of_gunChange_1() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___gunChange_1)); }
+	inline int32_t get_gunChange_1() const { return ___gunChange_1; }
+	inline int32_t* get_address_of_gunChange_1() { return &___gunChange_1; }
+	inline void set_gunChange_1(int32_t value)
 	{
-		___PosMouse_1 = value;
+		___gunChange_1 = value;
 	}
 };
 #pragma pack(pop, tp)
@@ -45033,10 +45033,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_Start_m89D63B8475877FF6927F4
 // System.Void OpenOptioon::OpenIventory()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_OpenIventory_m35B944E417A427979460B7D801C878325350BA7C (OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// gunMode.instance.canPlay = false;
+		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_0 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
+		L_0->set_canPlay_62((bool)0);
 		// inventory.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_inventory_6();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_inventory_6();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -45069,15 +45078,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_OpenOption_m8F5CD4A8839D4413
 // System.Void OpenOptioon::ShopOption()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenOptioon_ShopOption_mBB2CA656935E658D0277A2753FF5AA9E39478BE0 (OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// gunMode.instance.canPlay = false;
+		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_0 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
+		L_0->set_canPlay_62((bool)0);
 		// shop.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_shop_5();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_shop_5();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)1, /*hidden argument*/NULL);
 		// openMenu = true;
 		__this->set_openMenu_16((bool)1);
 		// soundOpen.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_1 = __this->get_soundOpen_17();
-		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_1, /*hidden argument*/NULL);
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_2 = __this->get_soundOpen_17();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_2, /*hidden argument*/NULL);
 		// }
 		return;
 	}

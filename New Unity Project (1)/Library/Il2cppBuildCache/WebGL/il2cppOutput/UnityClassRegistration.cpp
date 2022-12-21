@@ -66,6 +66,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_UI();
 	RegisterModule_UI();
 
+	void RegisterModule_UnityAnalyticsCommon();
+	RegisterModule_UnityAnalyticsCommon();
+
 	void RegisterModule_UnityConnect();
 	RegisterModule_UnityConnect();
 

@@ -15501,7 +15501,7 @@ static void NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_CustomAtt
 {
 	{
 		NetworkInputWeavedAttribute_tC577075DFAAE4662B9D9D5F9C0B8D511AC8E985A * tmp = (NetworkInputWeavedAttribute_tC577075DFAAE4662B9D9D5F9C0B8D511AC8E985A *)cache->attributes[0];
-		NetworkInputWeavedAttribute__ctor_m1B755CE041C662B112E77F08C10D95344EB95571(tmp, 4LL, NULL);
+		NetworkInputWeavedAttribute__ctor_m1B755CE041C662B112E77F08C10D95344EB95571(tmp, 3LL, NULL);
 	}
 }
 static void NetworkManagerUI_t48071851AD5179F539ACEFD1B127F358451F69CA_CustomAttributesCacheGenerator(CustomAttributesCache* cache)

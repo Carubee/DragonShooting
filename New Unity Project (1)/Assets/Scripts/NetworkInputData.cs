@@ -5,9 +5,6 @@ using Fusion;
 
 public struct NetworkInputData : INetworkInput
 {
-    public Vector3 direction;
-    public float PosMouse;
-    
-       
-    
+    public Vector2 direction;     
+    public int  gunChange;     
 }
