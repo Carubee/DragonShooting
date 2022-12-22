@@ -87,63 +87,59 @@ public class gunMode : NetworkBehaviour
         instance = this;
         gunModel = 1;
     }
-   
+   [Networked] private TickTimer delay { get; set; }
     public override void FixedUpdateNetwork()
     {
        
         if (GetInput(out NetworkInputData data))
         {
+                
             transform.up = data.direction - new Vector2(transform.position.x, transform.position.y);
-        }
-        if (Input.GetKeyDown("1"))
-        {
-            //Debug.Log("Buy");
+            if (delay.ExpiredOrNotRunning(Runner))
+            {
+                if ((data.button & NetworkInputData.MOUSEBUTTON1) != 0 && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
+                {
+                    delay = TickTimer.CreateFromSeconds(Runner, 0.5f);
+                    Rpc_Bullet(gunModel, false);
 
-            Rpc_ChangeGunCilent(1);
+                }
+            }
+            switch (data.gunChange) 
+            {
+                case 1:
+                    Rpc_ChangeGunServer(1);
+                    break;
+                case 2:
+                    Rpc_ChangeGunServer(2);
+                    break;
+                case 3:
+                    gunControl.cost = 5;
+                    gunControl.damage = 2;
+                    gunModel = 3;
+                    Rpc_ChangeGunServer(3);
+                    break;
+                case 4:
+                    Rpc_ChangeGunServer(4);
+                    gunControl.cost = 3;
+                    gunControl.damage = 3;
+                    gunModel = 4;
+                    break;
+                case 5:
+                    Rpc_ChangeGunServer(5);
+                    gunControl.cost = 15;
+                    gunControl.damage = 10;
+                    gunModel = 5;
+                    break;
+                case 6:
+                    Rpc_ChangeGunServer(6);
+                    gunControl.cost = 75;
+                    gunControl.damage = 10;
+                    gunModel = 6;
+                    break;
+            }
+            
         }
-        if (Input.GetKeyDown("2"))
-        {
-            //Debug.Log("Buy1");
-
-            Rpc_ChangeGunCilent(2);
-
-        }
-        if (Input.GetKeyDown("3"))
-        {
-            //Debug.Log("Buy2");
-            gunControl.cost = 5;
-            gunControl.damage = 2;
-            gunModel = 3;
-            Rpc_ChangeGunCilent(3);
-
-        }
-        if (Input.GetKeyDown("4"))
-        {
-            //Debug.Log("Buy3");
-            gunControl.cost = 3;
-            gunControl.damage = 3;
-            gunModel = 4;
-            Rpc_ChangeGunCilent(4);
-
-        }
-        if (Input.GetKeyDown("5"))
-        {
-            //Debug.Log("Buy4");
-            gunControl.cost = 15;
-            gunControl.damage = 10;
-            gunModel = 5;
-            Rpc_ChangeGunCilent(5);
-
-        }
-        if (Input.GetKeyDown("6"))
-        {
-            //Debug.Log("Buy5");
-            gunControl.cost = 75;
-            gunControl.damage = 10;
-            gunModel = 6;
-            Rpc_ChangeGunCilent(6);
-
-        }
+        
     }
     public void Update()
     {
@@ -168,51 +164,50 @@ public class gunMode : NetworkBehaviour
 
         if (firerate <= 2)
             firerate += Time.deltaTime;
-        if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost && gunModel == 6)
-        {
-            LaserServerRpc(false);
-        }
+        //if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost && gunModel == 6)
+        //{
+        //    LaserServerRpc(false);
+        //}
 
-        if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
-        {
+        //if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
+        //{
 
-            if (gunModel == 6)
-            {
-                LaserServerRpc(true);
-            }
-            if (firerate >= firerateAmount)
-            {
-                if (TimeDouble < 10)
-                {
-                    //PlayerShootGunServerRpc(bulletTypeValue.Value, true);
-                    Rpc_Shoot(gunModel, true);
-                }
-                else
-                {
-                    //PlayerShootGunServerRpc(bulletTypeValue.Value, false);
-                    Rpc_Shoot(gunModel, false);
+        //    if (gunModel == 6)
+        //    {
+        //        LaserServerRpc(true);
+        //    }
+        //    if (firerate >= firerateAmount)
+        //    {
+        //        if (TimeDouble < 10)
+        //        {
+        //            //PlayerShootGunServerRpc(bulletTypeValue.Value, true);
+        //            Rpc_Shoot(gunModel, true);
+        //        }
+        //        else
+        //        {
+        //            //PlayerShootGunServerRpc(bulletTypeValue.Value, false);
+        //            Rpc_Shoot(gunModel, false);
 
-                }
-                if (item.instace.spare == false)
-                {
+        //        }
+        //        if (item.instace.spare == false)
+        //        {
 
-                    //if (bulletTypeValue.Value != 4)
-                    //    PlayerShootGunServerRpc(bulletTypeValue.Value, DoubleBullet.Value);
-                    UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
+        //            //if (bulletTypeValue.Value != 4)
+        //            //    PlayerShootGunServerRpc(bulletTypeValue.Value, DoubleBullet.Value);
+        //            UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
 
-                }
-                if (item.instace.spare == true)
-                {
-                    randomFreefire = UnityEngine.Random.Range(0, 3);
-                    if (randomFreefire == 1 || randomFreefire == 2)
-                        UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
-                }
-                
+        //        }
+        //        if (item.instace.spare == true)
+        //        {
+        //            randomFreefire = UnityEngine.Random.Range(0, 3);
+        //            if (randomFreefire == 1 || randomFreefire == 2)
+        //                UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
+        //        }
 
-                firerate = 0;
-            }
 
-        }
+        //        firerate = 0;
+
+        
         if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel == 4)
         {
             if (firerate >= 0.1)
@@ -246,7 +241,6 @@ public class gunMode : NetworkBehaviour
 
     }
 
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     public void Rpc_ChangeGunServer(int gunValue)
     {
 
@@ -351,6 +345,7 @@ public class gunMode : NetworkBehaviour
     {
         Laser(show);
     }
+    [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
     public void Rpc_Bullet(int gunmode, bool enchance3)
     {
         if (gunmode == 1)

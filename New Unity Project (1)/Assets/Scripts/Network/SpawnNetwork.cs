@@ -15,6 +15,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     public GameObject lobbyMenu;
     public static SpawnNetwork instance;
     [Networked] bool FirstSpawn { get; set; }
+    private bool _mouseButton0;
     async void StartGame(GameMode mode)
     {
         _runner = gameObject.AddComponent<NetworkRunner>();
@@ -33,6 +34,11 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
 
     
     }
+    private void Update()
+    {
+        _mouseButton0 = _mouseButton0 || Input.GetMouseButton(0);
+    }
+
     // Update is called once per 
     public void JoinGame()
     {
@@ -97,7 +103,37 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
         var data = new NetworkInputData();
         data.direction = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
+        if (_mouseButton0)
+        {
+            data.button |= NetworkInputData.MOUSEBUTTON1;
+            _mouseButton0 = false;
+        }
+        if (Input.GetKeyDown("1"))
+        {
+            data.gunChange = 1;
+        }
+        if (Input.GetKeyDown("2"))
+        {
+            data.gunChange = 2;
 
+        }
+        if (Input.GetKeyDown("3"))
+        {
+            data.gunChange = 3;
+        }
+        if (Input.GetKeyDown("4"))
+        {
+            data.gunChange = 4;
+        }
+        if (Input.GetKeyDown("5"))
+        {
+            data.gunChange = 5;
+
+        }
+        if (Input.GetKeyDown("6"))
+        {
+            data.gunChange = 6;
+        }
         input.Set(data);
     }
 

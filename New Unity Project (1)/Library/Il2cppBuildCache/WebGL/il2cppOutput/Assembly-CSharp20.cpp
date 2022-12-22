@@ -817,21 +817,19 @@ IL2CPP_EXTERN_C String_t* _stringLiteral08555C5790CB59800E76C3E0D71B2E3C7DBF012A
 IL2CPP_EXTERN_C String_t* _stringLiteral0B97E043FFCBF26D5E79E8EFFB4365A9D6B491FD;
 IL2CPP_EXTERN_C String_t* _stringLiteral1100CAC1A04C412348AA9617D8526218BFE3DA62;
 IL2CPP_EXTERN_C String_t* _stringLiteral12C4A6F0B4F9EE4A6121FEE9C3844D940F9402F3;
+IL2CPP_EXTERN_C String_t* _stringLiteral12F8A958E16574361A80E9EB467C374415470886;
 IL2CPP_EXTERN_C String_t* _stringLiteral19E6F54B915CB01A74B7174DFEF8AC62E0C2BB5F;
 IL2CPP_EXTERN_C String_t* _stringLiteral1B92593E72A48F786B0078E14FCFAEF1C2232035;
 IL2CPP_EXTERN_C String_t* _stringLiteral1CA3F602784561E1378042E622D754E36710532B;
 IL2CPP_EXTERN_C String_t* _stringLiteral1EA557A9BB6649011C0A357E1FAB484B56F19E01;
 IL2CPP_EXTERN_C String_t* _stringLiteral1FA2C2DF7F1E2C9FFCF8A1A086406E61FE4BA6BA;
-IL2CPP_EXTERN_C String_t* _stringLiteral2064F80F811DB79A33C4E51C10221454E30C74AE;
 IL2CPP_EXTERN_C String_t* _stringLiteral20E39C3AB7068FAFD9E4B868E16D2E5BC64D4952;
-IL2CPP_EXTERN_C String_t* _stringLiteral21ED4C7AF50D987589A9029FC0422151BE3A0FC2;
 IL2CPP_EXTERN_C String_t* _stringLiteral2239BF73D23E4B4AFC5E061C81FA0AA1449902E0;
 IL2CPP_EXTERN_C String_t* _stringLiteral23890D6BFAD489B1CC7CDA230975F02A6E480C0A;
 IL2CPP_EXTERN_C String_t* _stringLiteral26A4CC00D3AC2844A2B1B21479C261A8EDE2847F;
 IL2CPP_EXTERN_C String_t* _stringLiteral2732277E9D8A4846B7023B9ABCA3C260EFCD3ABA;
 IL2CPP_EXTERN_C String_t* _stringLiteral27A2FC008EA25A752A7B1519EA57FCAF335DF4A0;
 IL2CPP_EXTERN_C String_t* _stringLiteral28B7EDF9E324F8C7C00DCE82B9611E6089187E1F;
-IL2CPP_EXTERN_C String_t* _stringLiteral2F7234099CCD07F9C0939ACCC13D7F7F6E95DBAD;
 IL2CPP_EXTERN_C String_t* _stringLiteral30DB5C75640B6076F685BFA86F34603B34C87A37;
 IL2CPP_EXTERN_C String_t* _stringLiteral33F3A5C224805F21619B3F182EABF6612F6A45B4;
 IL2CPP_EXTERN_C String_t* _stringLiteral360C2C050890993EFEDD6F9C1D8AA2FBB2E33FA5;
@@ -874,11 +872,9 @@ IL2CPP_EXTERN_C String_t* _stringLiteral6FE13411335192A2033EB8B2071FCCF404804A2B
 IL2CPP_EXTERN_C String_t* _stringLiteral71274C7B1E9CF76F3BC2007BBAF6524CA3D8754E;
 IL2CPP_EXTERN_C String_t* _stringLiteral735C0FD9A6240294240DAA0971B9FDE7C747CA79;
 IL2CPP_EXTERN_C String_t* _stringLiteral73655D138145D890992687EACE7338560DA0F5F9;
-IL2CPP_EXTERN_C String_t* _stringLiteral7454695E25D304C65D0C1333D8008E862569CAE9;
 IL2CPP_EXTERN_C String_t* _stringLiteral7510E73EAEF459D0B31B5B2F56F1B8A0639B59C8;
 IL2CPP_EXTERN_C String_t* _stringLiteral77C4A6E8E5772D6825F634148F5A1D5D26FCCDF3;
 IL2CPP_EXTERN_C String_t* _stringLiteral781A0B763B73DF4D731AF7F62B289E3787D89807;
-IL2CPP_EXTERN_C String_t* _stringLiteral78802E373C27D74F1DC4A8A87AFE2A72290503CD;
 IL2CPP_EXTERN_C String_t* _stringLiteral7B1F94FAB3F184EE313F78633E95FFC1C48CE46A;
 IL2CPP_EXTERN_C String_t* _stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD;
 IL2CPP_EXTERN_C String_t* _stringLiteral7D14D4796E1AF9A30A0999DD798079DA22D5DF29;
@@ -932,11 +928,11 @@ IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709
 IL2CPP_EXTERN_C String_t* _stringLiteralE1291C4D47635E327ECFE39842BD1A93F58C61A2;
 IL2CPP_EXTERN_C String_t* _stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3;
 IL2CPP_EXTERN_C String_t* _stringLiteralE92BD092E398DB797B14697E0CC4D8517FAAD773;
+IL2CPP_EXTERN_C String_t* _stringLiteralE9A087A388445930DDAB79759E4A6FBCCD228DA4;
 IL2CPP_EXTERN_C String_t* _stringLiteralEB9BE505D7B72713DB5F51D36B74F5E9F2898034;
 IL2CPP_EXTERN_C String_t* _stringLiteralEBE46DF54B01B606DB21F86C7C40D5E6231B0C66;
 IL2CPP_EXTERN_C String_t* _stringLiteralF206A742254DACC8FD6047AC41DA7F96EA011D86;
 IL2CPP_EXTERN_C String_t* _stringLiteralF6C61F6ADB7386C8A1C35FAD9CF18FC009E4414A;
-IL2CPP_EXTERN_C String_t* _stringLiteralF7DDF59B44DDF9253B657C54053522CF694D3FBE;
 IL2CPP_EXTERN_C String_t* _stringLiteralF88A6B417C6AF2045B5575CA711BC3E2CFBCC989;
 IL2CPP_EXTERN_C String_t* _stringLiteralFC075BC3DFE942623230E78DC9D41126E9C003CA;
 IL2CPP_EXTERN_C String_t* _stringLiteralFC4C53F00018DCB023999AB160967655E3B0F7A0;
@@ -1082,9 +1078,11 @@ IL2CPP_EXTERN_C const RuntimeMethod* UnityAction_2__ctor_m9756B138E23F1BA3FBCF67
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_AddListener_m0BF74D4DC0259DB12B96581EFD47F2FB1F62C85B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_Invoke_m06DD0BBD76D8BDBA4A45D4FD7AE9BB12C29E0397_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* gunMode_get_Rotation_m94BFB7BFFEEDBDAF7CBAE29543501762CD03ADEB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* gunMode_get_delay_m4A07D5CE8FE6401DB0D643CCEB9E83CF98262149_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* gunMode_get_enchance_m1324733ABBFA5B4B1E5BEEDFB1521C2EAEDEE262_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* gunMode_set_Rotation_m6E0D28DDF3B04CC74B813DBC4281C0DBBBEEA040_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* gunMode_set_delay_mAEE493D85CCF07DE6140F4D8C5142C6ED3ECDE90_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* gunMode_set_enchance_m96310A6131B40934DC2C07367EAEA9E6049A5586_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* uDialog_ButtonClicked_mAF2D6A3B6A910EF3A6721BE7BEAA92B3F70C977B_RuntimeMethod_var;
@@ -4807,6 +4805,36 @@ struct TickAccumulator_t0438543B810430A8DB30DD6D40F2127BC4B42392_marshaled_com
 	int32_t ____running_3;
 };
 
+// Fusion.TickTimer
+struct TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201 
+{
+public:
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Int32 Fusion.TickTimer::_target
+			int32_t ____target_0;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ____target_0_forAlignmentOnly;
+		};
+	};
+
+public:
+	inline static int32_t get_offset_of__target_0() { return static_cast<int32_t>(offsetof(TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201, ____target_0)); }
+	inline int32_t get__target_0() const { return ____target_0; }
+	inline int32_t* get_address_of__target_0() { return &____target_0; }
+	inline void set__target_0(int32_t value)
+	{
+		____target_0 = value;
+	}
+};
+
+
 // UnityEngine.Events.UnityEvent
 struct UnityEvent_tA0EA9BC49FD7D5185E7A238EF2E0E6F5D0EE27F4  : public UnityEventBase_tBB43047292084BA63C5CBB1A379A8BB88611C6FB
 {
@@ -6414,9 +6442,22 @@ public:
 					char ___gunChange_1_OffsetPadding_forAlignmentOnly[8];
 					int32_t ___gunChange_1_forAlignmentOnly;
 				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___button_2_OffsetPadding[12];
+					// System.Byte NetworkInputData::button
+					uint8_t ___button_2;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___button_2_OffsetPadding_forAlignmentOnly[12];
+					uint8_t ___button_2_forAlignmentOnly;
+				};
 			};
 		};
-		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[12];
+		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[16];
 	};
 
 public:
@@ -6434,6 +6475,14 @@ public:
 	inline void set_gunChange_1(int32_t value)
 	{
 		___gunChange_1 = value;
+	}
+
+	inline static int32_t get_offset_of_button_2() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___button_2)); }
+	inline uint8_t get_button_2() const { return ___button_2; }
+	inline uint8_t* get_address_of_button_2() { return &___button_2; }
+	inline void set_button_2(uint8_t value)
+	{
+		___button_2 = value;
 	}
 };
 #pragma pack(pop, tp)
@@ -18921,10 +18970,12 @@ public:
 	bool ____enchance_73;
 	// System.Int32 gunMode::_Rotation
 	int32_t ____Rotation_74;
+	// Fusion.TickTimer gunMode::_delay
+	TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  ____delay_75;
 	// System.Int32 gunMode::_gunModel
-	int32_t ____gunModel_75;
+	int32_t ____gunModel_76;
 	// System.Int32 gunMode::lastSeat
-	int32_t ___lastSeat_76;
+	int32_t ___lastSeat_77;
 
 public:
 	inline static int32_t get_offset_of_MoneyPlayer_17() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ___MoneyPlayer_17)); }
@@ -19419,20 +19470,28 @@ public:
 		____Rotation_74 = value;
 	}
 
-	inline static int32_t get_offset_of__gunModel_75() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____gunModel_75)); }
-	inline int32_t get__gunModel_75() const { return ____gunModel_75; }
-	inline int32_t* get_address_of__gunModel_75() { return &____gunModel_75; }
-	inline void set__gunModel_75(int32_t value)
+	inline static int32_t get_offset_of__delay_75() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____delay_75)); }
+	inline TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  get__delay_75() const { return ____delay_75; }
+	inline TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201 * get_address_of__delay_75() { return &____delay_75; }
+	inline void set__delay_75(TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  value)
 	{
-		____gunModel_75 = value;
+		____delay_75 = value;
 	}
 
-	inline static int32_t get_offset_of_lastSeat_76() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ___lastSeat_76)); }
-	inline int32_t get_lastSeat_76() const { return ___lastSeat_76; }
-	inline int32_t* get_address_of_lastSeat_76() { return &___lastSeat_76; }
-	inline void set_lastSeat_76(int32_t value)
+	inline static int32_t get_offset_of__gunModel_76() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____gunModel_76)); }
+	inline int32_t get__gunModel_76() const { return ____gunModel_76; }
+	inline int32_t* get_address_of__gunModel_76() { return &____gunModel_76; }
+	inline void set__gunModel_76(int32_t value)
 	{
-		___lastSeat_76 = value;
+		____gunModel_76 = value;
+	}
+
+	inline static int32_t get_offset_of_lastSeat_77() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ___lastSeat_77)); }
+	inline int32_t get_lastSeat_77() const { return ___lastSeat_77; }
+	inline int32_t* get_address_of_lastSeat_77() { return &___lastSeat_77; }
+	inline void set_lastSeat_77(int32_t value)
+	{
+		___lastSeat_77 = value;
 	}
 };
 
@@ -19442,11 +19501,11 @@ public:
 	// gunMode gunMode::instance
 	gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * ___instance_19;
 	// Fusion.Changed`1<gunMode> gunMode::$IL2CPP_CHANGED
-	Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  ___U24IL2CPP_CHANGED_77;
+	Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  ___U24IL2CPP_CHANGED_78;
 	// Fusion.ChangedDelegate`1<gunMode> gunMode::$IL2CPP_CHANGED_DELEGATE
-	ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * ___U24IL2CPP_CHANGED_DELEGATE_78;
+	ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * ___U24IL2CPP_CHANGED_DELEGATE_79;
 	// Fusion.NetworkBehaviourCallbacks`1<gunMode> gunMode::$IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS
-	NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79;
+	NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80;
 
 public:
 	inline static int32_t get_offset_of_instance_19() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___instance_19)); }
@@ -19458,31 +19517,31 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___instance_19), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_77() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_CHANGED_77)); }
-	inline Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  get_U24IL2CPP_CHANGED_77() const { return ___U24IL2CPP_CHANGED_77; }
-	inline Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48 * get_address_of_U24IL2CPP_CHANGED_77() { return &___U24IL2CPP_CHANGED_77; }
-	inline void set_U24IL2CPP_CHANGED_77(Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  value)
+	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_78() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_CHANGED_78)); }
+	inline Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  get_U24IL2CPP_CHANGED_78() const { return ___U24IL2CPP_CHANGED_78; }
+	inline Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48 * get_address_of_U24IL2CPP_CHANGED_78() { return &___U24IL2CPP_CHANGED_78; }
+	inline void set_U24IL2CPP_CHANGED_78(Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  value)
 	{
-		___U24IL2CPP_CHANGED_77 = value;
-		Il2CppCodeGenWriteBarrier((void**)&(((&___U24IL2CPP_CHANGED_77))->____behaviour_3), (void*)NULL);
+		___U24IL2CPP_CHANGED_78 = value;
+		Il2CppCodeGenWriteBarrier((void**)&(((&___U24IL2CPP_CHANGED_78))->____behaviour_3), (void*)NULL);
 	}
 
-	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_DELEGATE_78() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_CHANGED_DELEGATE_78)); }
-	inline ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * get_U24IL2CPP_CHANGED_DELEGATE_78() const { return ___U24IL2CPP_CHANGED_DELEGATE_78; }
-	inline ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 ** get_address_of_U24IL2CPP_CHANGED_DELEGATE_78() { return &___U24IL2CPP_CHANGED_DELEGATE_78; }
-	inline void set_U24IL2CPP_CHANGED_DELEGATE_78(ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * value)
+	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_DELEGATE_79() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_CHANGED_DELEGATE_79)); }
+	inline ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * get_U24IL2CPP_CHANGED_DELEGATE_79() const { return ___U24IL2CPP_CHANGED_DELEGATE_79; }
+	inline ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 ** get_address_of_U24IL2CPP_CHANGED_DELEGATE_79() { return &___U24IL2CPP_CHANGED_DELEGATE_79; }
+	inline void set_U24IL2CPP_CHANGED_DELEGATE_79(ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * value)
 	{
-		___U24IL2CPP_CHANGED_DELEGATE_78 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_CHANGED_DELEGATE_78), (void*)value);
+		___U24IL2CPP_CHANGED_DELEGATE_79 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_CHANGED_DELEGATE_79), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79)); }
-	inline NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * get_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79() const { return ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79; }
-	inline NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 ** get_address_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79() { return &___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79; }
-	inline void set_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79(NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * value)
+	inline static int32_t get_offset_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80)); }
+	inline NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * get_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80() const { return ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80; }
+	inline NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 ** get_address_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80() { return &___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80; }
+	inline void set_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80(NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * value)
 	{
-		___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79), (void*)value);
+		___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80), (void*)value);
 	}
 };
 
@@ -20254,36 +20313,38 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector2_op_Implicit_mC91C21911FDB26792369C645DAABBC43B3DE9932_inline (Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___v0, const RuntimeMethod* method);
 // System.Void UnityEngine.Transform::set_up(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_up_m3D2B71DA51EA167C367FD275B7B28241C565F127 (Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___value0, const RuntimeMethod* method);
-// System.Boolean UnityEngine.Input::GetKeyDown(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E (String_t* ___name0, const RuntimeMethod* method);
-// System.Void gunMode::Rpc_ChangeGunCilent(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___gunValue0, const RuntimeMethod* method);
-// System.Boolean Fusion.NetworkRunner::get_IsServer()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkRunner_get_IsServer_m8D324A095A5CD55B81AF224433C4CAD908C84DB8 (NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * __this, const RuntimeMethod* method);
-// System.Void UiTextSpawmControl::PushGold(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_PushGold_m0A3DAB2F30E7E29DD20CFE14B891733ABCD0BF04 (UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * __this, int32_t ___gold0, const RuntimeMethod* method);
-// System.Single UnityEngine.Time::get_deltaTime()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mF558623BBB4EE65C8810243B05ED204A9E8D6FD1 (const RuntimeMethod* method);
-// System.Boolean UnityEngine.Input::GetMouseButtonUp(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButtonUp_m72BC7AC98DF3D431D2AD59D0916216D4E31A9503 (int32_t ___button0, const RuntimeMethod* method);
+// Fusion.TickTimer gunMode::get_delay()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  gunMode_get_delay_m4A07D5CE8FE6401DB0D643CCEB9E83CF98262149 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, const RuntimeMethod* method);
+// System.Boolean Fusion.TickTimer::ExpiredOrNotRunning(Fusion.NetworkRunner)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TickTimer_ExpiredOrNotRunning_mBFA587C04833CC0806C4FF986EB02C44C87C901B (TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201 * __this, NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * ___runner0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4 (String_t* ___key0, int32_t ___defaultValue1, const RuntimeMethod* method);
 // System.Int32 gunMode::get_gunModel()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, const RuntimeMethod* method);
-// System.Void gunMode::LaserServerRpc(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_LaserServerRpc_mAA4202A050336ABEC4FF5EEC03B144349431CC50 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, bool ___show0, const RuntimeMethod* method);
+// Fusion.TickTimer Fusion.TickTimer::CreateFromSeconds(Fusion.NetworkRunner,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  TickTimer_CreateFromSeconds_mFA52F94BD8B36D012E9681BABE64CEE052A5B36A (NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * ___runner0, float ___delayInSeconds1, const RuntimeMethod* method);
+// System.Void gunMode::set_delay(Fusion.TickTimer)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_set_delay_mAEE493D85CCF07DE6140F4D8C5142C6ED3ECDE90 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  ___value0, const RuntimeMethod* method);
+// System.Void gunMode::Rpc_Bullet(System.Int32,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_Bullet_m2B383F1C3C5B1FAFE8FDCB7083B70AB8449FC91E (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___gunmode0, bool ___enchance31, const RuntimeMethod* method);
+// System.Void gunMode::Rpc_ChangeGunServer(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___gunValue0, const RuntimeMethod* method);
+// System.Boolean Fusion.NetworkRunner::get_IsServer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkRunner_get_IsServer_m8D324A095A5CD55B81AF224433C4CAD908C84DB8 (NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Input::GetKeyDown(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E (String_t* ___name0, const RuntimeMethod* method);
+// System.Void UiTextSpawmControl::PushGold(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_PushGold_m0A3DAB2F30E7E29DD20CFE14B891733ABCD0BF04 (UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * __this, int32_t ___gold0, const RuntimeMethod* method);
+// System.Single UnityEngine.Time::get_deltaTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mF558623BBB4EE65C8810243B05ED204A9E8D6FD1 (const RuntimeMethod* method);
 // System.Boolean UnityEngine.Input::GetMouseButton(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButton_mEF40689A9E574691E832255C430A9E626B005AF3 (int32_t ___button0, const RuntimeMethod* method);
 // System.Void gunMode::Rpc_Shoot(System.Int32,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___shootType0, bool ___enchanceTo1, const RuntimeMethod* method);
-// System.Void UiTextSpawmControl::MinusGold(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB (UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * __this, int32_t ___gold0, const RuntimeMethod* method);
-// System.Int32 UnityEngine.Random::Range(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213 (int32_t ___minInclusive0, int32_t ___maxExclusive1, const RuntimeMethod* method);
 // System.Void UnityEngine.AudioSource::Play()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1 (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, const RuntimeMethod* method);
-// System.Void gunMode::Rpc_ChangeGunServer(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___gunValue0, const RuntimeMethod* method);
+// System.Void UiTextSpawmControl::MinusGold(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB (UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * __this, int32_t ___gold0, const RuntimeMethod* method);
 // System.Void Fusion.NetworkBehaviourUtils::ThrowIfBehaviourNotInitialized(Fusion.NetworkBehaviour)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkBehaviourUtils_ThrowIfBehaviourNotInitialized_mD44E1511B8CD7B2B7C76733D3F144F12BC937CCA (NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 * ___behaviour0, const RuntimeMethod* method);
 // Fusion.SimulationStages Fusion.NetworkRunner::get_Stage()
@@ -20310,8 +20371,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkRunner_SendRpc_m047F73EDA46A8A2AD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_set_enchance_m96310A6131B40934DC2C07367EAEA9E6049A5586 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, bool ___value0, const RuntimeMethod* method);
 // System.Void gunMode::showResultClientRpc(System.Int32,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_showResultClientRpc_mB83CD8B47217B293382015042B876655543997B5 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___bulltetType0, bool ___enchance21, const RuntimeMethod* method);
-// System.Void gunMode::Rpc_Bullet(System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_Bullet_m2B383F1C3C5B1FAFE8FDCB7083B70AB8449FC91E (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___gunmode0, bool ___enchance31, const RuntimeMethod* method);
 // System.Void gunMode::LaserClientRpc(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_LaserClientRpc_m43C8AAA39AB6194530ACD73E5FE48CB382245817 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, bool ___show0, const RuntimeMethod* method);
 // System.Void gunMode::Laser(System.Boolean)
@@ -20378,6 +20437,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m57495F692C6CE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkManagerUI_Rpc_SeatDis2_m57DB8ED7DA5E8868FB42BED62BA4FACC581131CA (NetworkManagerUI_t48071851AD5179F539ACEFD1B127F358451F69CA * __this, int32_t ___seat0, const RuntimeMethod* method);
 // System.Void NetworkManagerUI::Rpc_SeatDis(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkManagerUI_Rpc_SeatDis_mDE06A2DC9001ACA63B7A57100DB99AB45C6F48B9 (NetworkManagerUI_t48071851AD5179F539ACEFD1B127F358451F69CA * __this, int32_t ___seat0, const RuntimeMethod* method);
+// System.Int32 UnityEngine.Random::Range(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213 (int32_t ___minInclusive0, int32_t ___maxExclusive1, const RuntimeMethod* method);
 // System.Void gunMode::BombServerRpc(System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_BombServerRpc_m64AD6F2BA80AA1FF6B95DD172BBB7CF90E7C4F5A (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, float ___posX0, float ___posY1, const RuntimeMethod* method);
 // System.Void gunMode::BombClientRpc(System.Single,System.Single)
@@ -20430,6 +20491,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool gunMode_get_enchance_m1324733ABBFA5B4B1E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t gunMode_get_Rotation_m94BFB7BFFEEDBDAF7CBAE29543501762CD03ADEB (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, const RuntimeMethod* method);
 // System.Int32 Fusion.RpcHeader::ReadSize(System.Byte*)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t RpcHeader_ReadSize_mDDC8A65D75577AC7A011148AB71400635E421CDA_inline (uint8_t* ___data0, const RuntimeMethod* method);
+// System.Void gunMode::Rpc_ChangeGunCilent(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___gunValue0, const RuntimeMethod* method);
 // System.Void gunMode::Rpc_Spawn(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_Spawn_mADF5D30C2F2455E0E2DEE36171A817C7814D0222 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___seatNum0, const RuntimeMethod* method);
 // UnityEngine.Vector2 Fusion.ReadWriteUtilsForWeaver::ReadVector2(System.Int32*,System.Single)
@@ -22246,6 +22309,55 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Spawned_m2DB2FCF0D980555D26796B3
 		return;
 	}
 }
+// Fusion.TickTimer gunMode::get_delay()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  gunMode_get_delay_m4A07D5CE8FE6401DB0D643CCEB9E83CF98262149 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, const RuntimeMethod* method)
+{
+	{
+		// [Networked] private TickTimer delay { get; set; }
+		int32_t* L_0 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_Ptr_9();
+		if (!((((intptr_t)L_0) == ((intptr_t)((uintptr_t)0)))? 1 : 0))
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB * L_1 = (InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB_il2cpp_TypeInfo_var)));
+		InvalidOperationException__ctor_mC012CE552988309733C896F3FEA8249171E4402E(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE9A087A388445930DDAB79759E4A6FBCCD228DA4)), /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&gunMode_get_delay_m4A07D5CE8FE6401DB0D643CCEB9E83CF98262149_RuntimeMethod_var)));
+	}
+
+IL_001a:
+	{
+		int32_t* L_2 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_Ptr_9();
+		TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  L_3 = (*(TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201 *)((int32_t*)il2cpp_codegen_add((intptr_t)L_2, (int32_t)8)));
+		return L_3;
+	}
+}
+// System.Void gunMode::set_delay(Fusion.TickTimer)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_set_delay_mAEE493D85CCF07DE6140F4D8C5142C6ED3ECDE90 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  ___value0, const RuntimeMethod* method)
+{
+	{
+		// [Networked] private TickTimer delay { get; set; }
+		int32_t* L_0 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_Ptr_9();
+		if (!((((intptr_t)L_0) == ((intptr_t)((uintptr_t)0)))? 1 : 0))
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB * L_1 = (InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB_il2cpp_TypeInfo_var)));
+		InvalidOperationException__ctor_mC012CE552988309733C896F3FEA8249171E4402E(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE9A087A388445930DDAB79759E4A6FBCCD228DA4)), /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&gunMode_set_delay_mAEE493D85CCF07DE6140F4D8C5142C6ED3ECDE90_RuntimeMethod_var)));
+	}
+
+IL_001a:
+	{
+		int32_t* L_2 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_Ptr_9();
+		TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  L_3 = ___value0;
+		*(TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201 *)((int32_t*)il2cpp_codegen_add((intptr_t)L_2, (int32_t)8)) = L_3;
+		return;
+	}
+}
 // System.Void gunMode::FixedUpdateNetwork()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_FixedUpdateNetwork_m59008F48CE9C8B71790FF4567A78AD5AAE5AF43C (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, const RuntimeMethod* method)
 {
@@ -22253,23 +22365,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_FixedUpdateNetwork_m59008F48CE9C
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NetworkBehaviour_GetInput_TisNetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_mF85CA153B8B1C188BE26FE17866309BE23982C7D_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2064F80F811DB79A33C4E51C10221454E30C74AE);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral21ED4C7AF50D987589A9029FC0422151BE3A0FC2);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2F7234099CCD07F9C0939ACCC13D7F7F6E95DBAD);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7454695E25D304C65D0C1333D8008E862569CAE9);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF7DDF59B44DDF9253B657C54053522CF694D3FBE);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD);
 		s_Il2CppMethodInitialized = true;
 	}
 	NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81  V_0;
 	memset((&V_0), 0, sizeof(V_0));
+	TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	int32_t V_2 = 0;
 	{
 		// if (GetInput(out NetworkInputData data))
 		bool L_0;
 		L_0 = NetworkBehaviour_GetInput_TisNetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_mF85CA153B8B1C188BE26FE17866309BE23982C7D(__this, (NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81 *)(&V_0), /*hidden argument*/NetworkBehaviour_GetInput_TisNetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_mF85CA153B8B1C188BE26FE17866309BE23982C7D_RuntimeMethod_var);
 		if (!L_0)
 		{
-			goto IL_004a;
+			goto IL_01a0;
 		}
 	}
 	{
@@ -22296,131 +22407,190 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_FixedUpdateNetwork_m59008F48CE9C
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_12;
 		L_12 = Vector2_op_Implicit_mC91C21911FDB26792369C645DAABBC43B3DE9932_inline(L_11, /*hidden argument*/NULL);
 		Transform_set_up_m3D2B71DA51EA167C367FD275B7B28241C565F127(L_1, L_12, /*hidden argument*/NULL);
-	}
-
-IL_004a:
-	{
-		// if (Input.GetKeyDown("1"))
-		bool L_13;
-		L_13 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3, /*hidden argument*/NULL);
-		if (!L_13)
-		{
-			goto IL_005d;
-		}
-	}
-	{
-		// Rpc_ChangeGunCilent(1);
-		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 1, /*hidden argument*/NULL);
-	}
-
-IL_005d:
-	{
-		// if (Input.GetKeyDown("2"))
-		bool L_14;
-		L_14 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral21ED4C7AF50D987589A9029FC0422151BE3A0FC2, /*hidden argument*/NULL);
-		if (!L_14)
-		{
-			goto IL_0070;
-		}
-	}
-	{
-		// Rpc_ChangeGunCilent(2);
-		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 2, /*hidden argument*/NULL);
-	}
-
-IL_0070:
-	{
-		// if (Input.GetKeyDown("3"))
+		// if (delay.ExpiredOrNotRunning(Runner))
+		TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  L_13;
+		L_13 = gunMode_get_delay_m4A07D5CE8FE6401DB0D643CCEB9E83CF98262149(__this, /*hidden argument*/NULL);
+		V_1 = L_13;
+		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_14 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
 		bool L_15;
-		L_15 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral2064F80F811DB79A33C4E51C10221454E30C74AE, /*hidden argument*/NULL);
+		L_15 = TickTimer_ExpiredOrNotRunning_mBFA587C04833CC0806C4FF986EB02C44C87C901B((TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201 *)(&V_1), L_14, /*hidden argument*/NULL);
 		if (!L_15)
 		{
-			goto IL_00a2;
+			goto IL_00c9;
 		}
 	}
 	{
-		// gunControl.cost = 5;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_16 = __this->get_gunControl_46();
-		L_16->set_cost_15(5);
-		// gunControl.damage = 2;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_17 = __this->get_gunControl_46();
-		L_17->set_damage_14(2);
-		// gunModel = 3;
-		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 3, /*hidden argument*/NULL);
-		// Rpc_ChangeGunCilent(3);
-		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 3, /*hidden argument*/NULL);
-	}
-
-IL_00a2:
-	{
-		// if (Input.GetKeyDown("4"))
-		bool L_18;
-		L_18 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral7454695E25D304C65D0C1333D8008E862569CAE9, /*hidden argument*/NULL);
-		if (!L_18)
+		// if ((data.button & NetworkInputData.MOUSEBUTTON1) != 0 && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
+		NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81  L_16 = V_0;
+		uint8_t L_17 = L_16.get_button_2();
+		if (!((int32_t)((int32_t)L_17&(int32_t)1)))
 		{
-			goto IL_00d4;
+			goto IL_00c9;
 		}
 	}
 	{
-		// gunControl.cost = 3;
+		int32_t L_18;
+		L_18 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
 		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_19 = __this->get_gunControl_46();
-		L_19->set_cost_15(3);
-		// gunControl.damage = 3;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_20 = __this->get_gunControl_46();
-		L_20->set_damage_14(3);
-		// gunModel = 4;
-		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 4, /*hidden argument*/NULL);
-		// Rpc_ChangeGunCilent(4);
-		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 4, /*hidden argument*/NULL);
+		int32_t L_20 = L_19->get_cost_15();
+		if ((((int32_t)L_18) < ((int32_t)L_20)))
+		{
+			goto IL_00c9;
+		}
 	}
-
-IL_00d4:
 	{
-		// if (Input.GetKeyDown("5"))
-		bool L_21;
-		L_21 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteralF7DDF59B44DDF9253B657C54053522CF694D3FBE, /*hidden argument*/NULL);
+		bool L_21 = __this->get_canPlay_62();
 		if (!L_21)
 		{
-			goto IL_0108;
+			goto IL_00c9;
 		}
 	}
 	{
+		OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * L_22 = ((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->get_instant_15();
+		bool L_23 = L_22->get_openMenu_16();
+		if (L_23)
+		{
+			goto IL_00c9;
+		}
+	}
+	{
+		int32_t L_24;
+		L_24 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		if ((((int32_t)L_24) == ((int32_t)4)))
+		{
+			goto IL_00c9;
+		}
+	}
+	{
+		// delay = TickTimer.CreateFromSeconds(Runner, 0.5f);
+		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_25 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
+		TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  L_26;
+		L_26 = TickTimer_CreateFromSeconds_mFA52F94BD8B36D012E9681BABE64CEE052A5B36A(L_25, (0.5f), /*hidden argument*/NULL);
+		gunMode_set_delay_mAEE493D85CCF07DE6140F4D8C5142C6ED3ECDE90(__this, L_26, /*hidden argument*/NULL);
+		// Rpc_Bullet(gunModel, false);
+		int32_t L_27;
+		L_27 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		gunMode_Rpc_Bullet_m2B383F1C3C5B1FAFE8FDCB7083B70AB8449FC91E(__this, L_27, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_00c9:
+	{
+		// switch (data.gunChange)
+		NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81  L_28 = V_0;
+		int32_t L_29 = L_28.get_gunChange_1();
+		V_2 = L_29;
+		int32_t L_30 = V_2;
+		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_30, (int32_t)1)))
+		{
+			case 0:
+			{
+				goto IL_00f1;
+			}
+			case 1:
+			{
+				goto IL_00f9;
+			}
+			case 2:
+			{
+				goto IL_0101;
+			}
+			case 3:
+			{
+				goto IL_0128;
+			}
+			case 4:
+			{
+				goto IL_014f;
+			}
+			case 5:
+			{
+				goto IL_0178;
+			}
+		}
+	}
+	{
+		return;
+	}
+
+IL_00f1:
+	{
+		// Rpc_ChangeGunServer(1);
+		gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E(__this, 1, /*hidden argument*/NULL);
+		// break;
+		return;
+	}
+
+IL_00f9:
+	{
+		// Rpc_ChangeGunServer(2);
+		gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E(__this, 2, /*hidden argument*/NULL);
+		// break;
+		return;
+	}
+
+IL_0101:
+	{
+		// gunControl.cost = 5;
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_31 = __this->get_gunControl_46();
+		L_31->set_cost_15(5);
+		// gunControl.damage = 2;
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_32 = __this->get_gunControl_46();
+		L_32->set_damage_14(2);
+		// gunModel = 3;
+		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 3, /*hidden argument*/NULL);
+		// Rpc_ChangeGunServer(3);
+		gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E(__this, 3, /*hidden argument*/NULL);
+		// break;
+		return;
+	}
+
+IL_0128:
+	{
+		// Rpc_ChangeGunServer(4);
+		gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E(__this, 4, /*hidden argument*/NULL);
+		// gunControl.cost = 3;
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_33 = __this->get_gunControl_46();
+		L_33->set_cost_15(3);
+		// gunControl.damage = 3;
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_34 = __this->get_gunControl_46();
+		L_34->set_damage_14(3);
+		// gunModel = 4;
+		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 4, /*hidden argument*/NULL);
+		// break;
+		return;
+	}
+
+IL_014f:
+	{
+		// Rpc_ChangeGunServer(5);
+		gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E(__this, 5, /*hidden argument*/NULL);
 		// gunControl.cost = 15;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_22 = __this->get_gunControl_46();
-		L_22->set_cost_15(((int32_t)15));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_35 = __this->get_gunControl_46();
+		L_35->set_cost_15(((int32_t)15));
 		// gunControl.damage = 10;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_23 = __this->get_gunControl_46();
-		L_23->set_damage_14(((int32_t)10));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_36 = __this->get_gunControl_46();
+		L_36->set_damage_14(((int32_t)10));
 		// gunModel = 5;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 5, /*hidden argument*/NULL);
-		// Rpc_ChangeGunCilent(5);
-		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 5, /*hidden argument*/NULL);
+		// break;
+		return;
 	}
 
-IL_0108:
+IL_0178:
 	{
-		// if (Input.GetKeyDown("6"))
-		bool L_24;
-		L_24 = Input_GetKeyDown_mF00F385E091122A0BF7FF55714CDCA2B29788B8E(_stringLiteral2F7234099CCD07F9C0939ACCC13D7F7F6E95DBAD, /*hidden argument*/NULL);
-		if (!L_24)
-		{
-			goto IL_013c;
-		}
-	}
-	{
+		// Rpc_ChangeGunServer(6);
+		gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E(__this, 6, /*hidden argument*/NULL);
 		// gunControl.cost = 75;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_25 = __this->get_gunControl_46();
-		L_25->set_cost_15(((int32_t)75));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_37 = __this->get_gunControl_46();
+		L_37->set_cost_15(((int32_t)75));
 		// gunControl.damage = 10;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_26 = __this->get_gunControl_46();
-		L_26->set_damage_14(((int32_t)10));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_38 = __this->get_gunControl_46();
+		L_38->set_damage_14(((int32_t)10));
 		// gunModel = 6;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 6, /*hidden argument*/NULL);
-		// Rpc_ChangeGunCilent(6);
-		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(__this, 6, /*hidden argument*/NULL);
 	}
 
-IL_013c:
+IL_01a0:
 	{
 		// }
 		return;
@@ -22436,7 +22606,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Update_m8E3EAA6838FC74ADDF776B48
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE1291C4D47635E327ECFE39842BD1A93F58C61A2);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&item_t250D4218EA405862560991833D9AB1D39076A398_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -22520,12 +22689,12 @@ IL_004e:
 
 IL_0072:
 	{
-		// if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost && gunModel == 6)
+		// if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel == 4)
 		bool L_11;
-		L_11 = Input_GetMouseButtonUp_m72BC7AC98DF3D431D2AD59D0916216D4E31A9503(0, /*hidden argument*/NULL);
-		if (L_11)
+		L_11 = Input_GetMouseButton_mEF40689A9E574691E832255C430A9E626B005AF3(0, /*hidden argument*/NULL);
+		if (!L_11)
 		{
-			goto IL_009f;
+			goto IL_0123;
 		}
 	}
 	{
@@ -22533,273 +22702,83 @@ IL_0072:
 		L_12 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
 		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_13 = __this->get_gunControl_46();
 		int32_t L_14 = L_13->get_cost_15();
-		if ((((int32_t)L_12) >= ((int32_t)L_14)))
+		if ((((int32_t)L_12) < ((int32_t)L_14)))
 		{
-			goto IL_00a6;
+			goto IL_0123;
 		}
 	}
 	{
-		int32_t L_15;
-		L_15 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_15) == ((uint32_t)6))))
+		bool L_15 = __this->get_canPlay_62();
+		if (!L_15)
 		{
-			goto IL_00a6;
-		}
-	}
-
-IL_009f:
-	{
-		// LaserServerRpc(false);
-		gunMode_LaserServerRpc_mAA4202A050336ABEC4FF5EEC03B144349431CC50(__this, (bool)0, /*hidden argument*/NULL);
-	}
-
-IL_00a6:
-	{
-		// if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
-		bool L_16;
-		L_16 = Input_GetMouseButton_mEF40689A9E574691E832255C430A9E626B005AF3(0, /*hidden argument*/NULL);
-		if (!L_16)
-		{
-			goto IL_01b1;
+			goto IL_0123;
 		}
 	}
 	{
-		int32_t L_17;
-		L_17 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_18 = __this->get_gunControl_46();
-		int32_t L_19 = L_18->get_cost_15();
-		if ((((int32_t)L_17) < ((int32_t)L_19)))
+		OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * L_16 = ((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->get_instant_15();
+		bool L_17 = L_16->get_openMenu_16();
+		if (L_17)
 		{
-			goto IL_01b1;
+			goto IL_0123;
 		}
 	}
 	{
-		bool L_20 = __this->get_canPlay_62();
-		if (!L_20)
+		int32_t L_18;
+		L_18 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_18) == ((uint32_t)4))))
 		{
-			goto IL_01b1;
-		}
-	}
-	{
-		OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * L_21 = ((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->get_instant_15();
-		bool L_22 = L_21->get_openMenu_16();
-		if (L_22)
-		{
-			goto IL_01b1;
-		}
-	}
-	{
-		int32_t L_23;
-		L_23 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		if ((((int32_t)L_23) == ((int32_t)4)))
-		{
-			goto IL_01b1;
-		}
-	}
-	{
-		// if (gunModel == 6)
-		int32_t L_24;
-		L_24 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_24) == ((uint32_t)6))))
-		{
-			goto IL_0106;
-		}
-	}
-	{
-		// LaserServerRpc(true);
-		gunMode_LaserServerRpc_mAA4202A050336ABEC4FF5EEC03B144349431CC50(__this, (bool)1, /*hidden argument*/NULL);
-	}
-
-IL_0106:
-	{
-		// if (firerate >= firerateAmount)
-		double L_25 = __this->get_firerate_21();
-		float L_26 = __this->get_firerateAmount_22();
-		if ((!(((double)L_25) >= ((double)((double)((double)L_26))))))
-		{
-			goto IL_01b1;
-		}
-	}
-	{
-		// if (TimeDouble < 10)
-		float L_27 = __this->get_TimeDouble_63();
-		if ((!(((float)L_27) < ((float)(10.0f)))))
-		{
-			goto IL_0134;
-		}
-	}
-	{
-		// Rpc_Shoot(gunModel, true);
-		int32_t L_28;
-		L_28 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_28, (bool)1, /*hidden argument*/NULL);
-		// }
-		goto IL_0141;
-	}
-
-IL_0134:
-	{
-		// Rpc_Shoot(gunModel, false);
-		int32_t L_29;
-		L_29 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_29, (bool)0, /*hidden argument*/NULL);
-	}
-
-IL_0141:
-	{
-		// if (item.instace.spare == false)
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_30 = ((item_t250D4218EA405862560991833D9AB1D39076A398_StaticFields*)il2cpp_codegen_static_fields_for(item_t250D4218EA405862560991833D9AB1D39076A398_il2cpp_TypeInfo_var))->get_instace_17();
-		bool L_31 = L_30->get_spare_20();
-		if (L_31)
-		{
-			goto IL_0162;
-		}
-	}
-	{
-		// UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
-		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_32 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_33 = __this->get_gunControl_46();
-		int32_t L_34 = L_33->get_cost_15();
-		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_32, L_34, /*hidden argument*/NULL);
-	}
-
-IL_0162:
-	{
-		// if (item.instace.spare == true)
-		item_t250D4218EA405862560991833D9AB1D39076A398 * L_35 = ((item_t250D4218EA405862560991833D9AB1D39076A398_StaticFields*)il2cpp_codegen_static_fields_for(item_t250D4218EA405862560991833D9AB1D39076A398_il2cpp_TypeInfo_var))->get_instace_17();
-		bool L_36 = L_35->get_spare_20();
-		if (!L_36)
-		{
-			goto IL_01a2;
-		}
-	}
-	{
-		// randomFreefire = UnityEngine.Random.Range(0, 3);
-		int32_t L_37;
-		L_37 = Random_Range_mCD7505433C26B6FA511AC1EA07E58AEF7ED1C213(0, 3, /*hidden argument*/NULL);
-		__this->set_randomFreefire_61(L_37);
-		// if (randomFreefire == 1 || randomFreefire == 2)
-		int32_t L_38 = __this->get_randomFreefire_61();
-		if ((((int32_t)L_38) == ((int32_t)1)))
-		{
-			goto IL_018d;
-		}
-	}
-	{
-		int32_t L_39 = __this->get_randomFreefire_61();
-		if ((!(((uint32_t)L_39) == ((uint32_t)2))))
-		{
-			goto IL_01a2;
-		}
-	}
-
-IL_018d:
-	{
-		// UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
-		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_40 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_41 = __this->get_gunControl_46();
-		int32_t L_42 = L_41->get_cost_15();
-		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_40, L_42, /*hidden argument*/NULL);
-	}
-
-IL_01a2:
-	{
-		// firerate = 0;
-		__this->set_firerate_21((0.0));
-	}
-
-IL_01b1:
-	{
-		// if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel == 4)
-		bool L_43;
-		L_43 = Input_GetMouseButton_mEF40689A9E574691E832255C430A9E626B005AF3(0, /*hidden argument*/NULL);
-		if (!L_43)
-		{
-			goto IL_0262;
-		}
-	}
-	{
-		int32_t L_44;
-		L_44 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)1000), /*hidden argument*/NULL);
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_45 = __this->get_gunControl_46();
-		int32_t L_46 = L_45->get_cost_15();
-		if ((((int32_t)L_44) < ((int32_t)L_46)))
-		{
-			goto IL_0262;
-		}
-	}
-	{
-		bool L_47 = __this->get_canPlay_62();
-		if (!L_47)
-		{
-			goto IL_0262;
-		}
-	}
-	{
-		OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69 * L_48 = ((OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_StaticFields*)il2cpp_codegen_static_fields_for(OpenOptioon_t6D919E01249F6E1D5326BD7AB77DC2408BF7DF69_il2cpp_TypeInfo_var))->get_instant_15();
-		bool L_49 = L_48->get_openMenu_16();
-		if (L_49)
-		{
-			goto IL_0262;
-		}
-	}
-	{
-		int32_t L_50;
-		L_50 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_50) == ((uint32_t)4))))
-		{
-			goto IL_0262;
+			goto IL_0123;
 		}
 	}
 	{
 		// if (firerate >= 0.1)
-		double L_51 = __this->get_firerate_21();
-		if ((!(((double)L_51) >= ((double)(0.10000000000000001)))))
+		double L_19 = __this->get_firerate_21();
+		if ((!(((double)L_19) >= ((double)(0.10000000000000001)))))
 		{
-			goto IL_0262;
+			goto IL_0123;
 		}
 	}
 	{
 		// if (TimeDouble < 10)
-		float L_52 = __this->get_TimeDouble_63();
-		if ((!(((float)L_52) < ((float)(10.0f)))))
+		float L_20 = __this->get_TimeDouble_63();
+		if ((!(((float)L_20) < ((float)(10.0f)))))
 		{
-			goto IL_0230;
+			goto IL_00f1;
 		}
 	}
 	{
 		// Rpc_Shoot(gunModel, true);
-		int32_t L_53;
-		L_53 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_53, (bool)1, /*hidden argument*/NULL);
+		int32_t L_21;
+		L_21 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_21, (bool)1, /*hidden argument*/NULL);
 		// enchanceShoot.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_54 = __this->get_enchanceShoot_68();
-		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_54, /*hidden argument*/NULL);
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_22 = __this->get_enchanceShoot_68();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_22, /*hidden argument*/NULL);
 		// }
-		goto IL_0248;
+		goto IL_0109;
 	}
 
-IL_0230:
+IL_00f1:
 	{
 		// Rpc_Shoot(gunModel, false);
-		int32_t L_55;
-		L_55 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_55, (bool)0, /*hidden argument*/NULL);
+		int32_t L_23;
+		L_23 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		gunMode_Rpc_Shoot_m4F80FD619EFAA07197D8ED2D2FDF35198FAD14C9(__this, L_23, (bool)0, /*hidden argument*/NULL);
 		// normalShoot.Play();
-		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_56 = __this->get_normalShoot_67();
-		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_56, /*hidden argument*/NULL);
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_24 = __this->get_normalShoot_67();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_24, /*hidden argument*/NULL);
 	}
 
-IL_0248:
+IL_0109:
 	{
 		// firerate = 0;
 		__this->set_firerate_21((0.0));
 		// UiTextSpawmControl.Instance.MinusGold(3);
-		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_57 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
-		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_57, 3, /*hidden argument*/NULL);
+		UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * L_25 = ((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->get_Instance_11();
+		UiTextSpawmControl_MinusGold_m18D9D4F0C18BB4FB4F460110475B87FCE4A142BB(L_25, 3, /*hidden argument*/NULL);
 	}
 
-IL_0262:
+IL_0123:
 	{
 		// }
 		return;
@@ -22825,7 +22804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t gunMode_get_gunModel_m7BD92F8980545DB
 IL_001a:
 	{
 		int32_t* L_2 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_Ptr_9();
-		int32_t L_3 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_2, (int32_t)8)));
+		int32_t L_3 = *((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_2, (int32_t)((int32_t)12))));
 		return L_3;
 	}
 }
@@ -22850,7 +22829,7 @@ IL_001a:
 	{
 		int32_t* L_2 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_Ptr_9();
 		int32_t L_3 = ___value0;
-		*((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_2, (int32_t)8))) = (int32_t)L_3;
+		*((int32_t*)((int32_t*)il2cpp_codegen_add((intptr_t)L_2, (int32_t)((int32_t)12)))) = (int32_t)L_3;
 		return;
 	}
 }
@@ -23017,371 +22996,236 @@ IL_0131:
 // System.Void gunMode::Rpc_ChangeGunServer(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, int32_t ___gunValue0, const RuntimeMethod* method)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NetworkBehaviourUtils_tEF88A0AC34C48C4674937D037E0875B8AE2D7F30_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral78802E373C27D74F1DC4A8A87AFE2A72290503CD);
-		s_Il2CppMethodInitialized = true;
-	}
-	uint8_t* V_0 = NULL;
-	int32_t V_1 = 0;
-	SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * V_2 = NULL;
-	int32_t V_3 = 0;
-	int32_t V_4 = 0;
-	{
-		bool L_0 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_InvokeRpc_11();
-		if (!L_0)
-		{
-			goto IL_029a;
-		}
-	}
-	{
-		((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->set_InvokeRpc_11((bool)0);
-	}
-
-IL_0012:
 	{
 		// if (gunValue == 1)
-		int32_t L_1 = ___gunValue0;
-		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
+		int32_t L_0 = ___gunValue0;
+		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
 		{
-			goto IL_007e;
+			goto IL_006b;
 		}
 	}
 	{
 		// normalGun.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_normalGun_49();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_normalGun_49();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)1, /*hidden argument*/NULL);
 		// longGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_longGun_50();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_3, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_longGun_50();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)0, /*hidden argument*/NULL);
 		// shotGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_4 = __this->get_shotGun_51();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_4, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_shotGun_51();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_3, (bool)0, /*hidden argument*/NULL);
 		// gatingGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5 = __this->get_gatingGun_52();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_5, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_4 = __this->get_gatingGun_52();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_4, (bool)0, /*hidden argument*/NULL);
 		// balistaGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6 = __this->get_balistaGun_53();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_6, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5 = __this->get_balistaGun_53();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_5, (bool)0, /*hidden argument*/NULL);
 		// laserGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_7 = __this->get_laserGun_54();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_7, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6 = __this->get_laserGun_54();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_6, (bool)0, /*hidden argument*/NULL);
 		// gunControl.cost = 1;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_8 = __this->get_gunControl_46();
-		L_8->set_cost_15(1);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_7 = __this->get_gunControl_46();
+		L_7->set_cost_15(1);
 		// gunControl.damage = 1;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_9 = __this->get_gunControl_46();
-		L_9->set_damage_14(1);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_8 = __this->get_gunControl_46();
+		L_8->set_damage_14(1);
 		// gunModel = 1;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 1, /*hidden argument*/NULL);
 	}
 
-IL_007e:
+IL_006b:
 	{
 		// if (gunValue == 2)
-		int32_t L_10 = ___gunValue0;
-		if ((!(((uint32_t)L_10) == ((uint32_t)2))))
+		int32_t L_9 = ___gunValue0;
+		if ((!(((uint32_t)L_9) == ((uint32_t)2))))
 		{
-			goto IL_00e9;
+			goto IL_00d6;
 		}
 	}
 	{
 		// normalGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_11 = __this->get_normalGun_49();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_11, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_10 = __this->get_normalGun_49();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_10, (bool)0, /*hidden argument*/NULL);
 		// longGun.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_12 = __this->get_longGun_50();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_12, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_11 = __this->get_longGun_50();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_11, (bool)1, /*hidden argument*/NULL);
 		// shotGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_13 = __this->get_shotGun_51();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_13, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_12 = __this->get_shotGun_51();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_12, (bool)0, /*hidden argument*/NULL);
 		// gatingGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_14 = __this->get_gatingGun_52();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_14, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_13 = __this->get_gatingGun_52();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_13, (bool)0, /*hidden argument*/NULL);
 		// balistaGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_15 = __this->get_balistaGun_53();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_15, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_14 = __this->get_balistaGun_53();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_14, (bool)0, /*hidden argument*/NULL);
 		// laserGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_16 = __this->get_laserGun_54();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_16, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_15 = __this->get_laserGun_54();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_15, (bool)0, /*hidden argument*/NULL);
 		// gunControl.cost = 2;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_17 = __this->get_gunControl_46();
-		L_17->set_cost_15(2);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_16 = __this->get_gunControl_46();
+		L_16->set_cost_15(2);
 		// gunControl.damage = 2;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_18 = __this->get_gunControl_46();
-		L_18->set_damage_14(2);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_17 = __this->get_gunControl_46();
+		L_17->set_damage_14(2);
 		// gunModel = 2;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 2, /*hidden argument*/NULL);
 	}
 
-IL_00e9:
+IL_00d6:
 	{
 		// if (gunValue == 3)
-		int32_t L_19 = ___gunValue0;
-		if ((!(((uint32_t)L_19) == ((uint32_t)3))))
+		int32_t L_18 = ___gunValue0;
+		if ((!(((uint32_t)L_18) == ((uint32_t)3))))
 		{
-			goto IL_0154;
+			goto IL_0141;
 		}
 	}
 	{
 		// normalGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_20 = __this->get_normalGun_49();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_20, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_19 = __this->get_normalGun_49();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_19, (bool)0, /*hidden argument*/NULL);
 		// longGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_21 = __this->get_longGun_50();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_21, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_20 = __this->get_longGun_50();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_20, (bool)0, /*hidden argument*/NULL);
 		// shotGun.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_22 = __this->get_shotGun_51();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_22, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_21 = __this->get_shotGun_51();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_21, (bool)1, /*hidden argument*/NULL);
 		// gatingGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_23 = __this->get_gatingGun_52();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_23, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_22 = __this->get_gatingGun_52();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_22, (bool)0, /*hidden argument*/NULL);
 		// balistaGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_24 = __this->get_balistaGun_53();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_24, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_23 = __this->get_balistaGun_53();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_23, (bool)0, /*hidden argument*/NULL);
 		// laserGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_25 = __this->get_laserGun_54();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_25, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_24 = __this->get_laserGun_54();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_24, (bool)0, /*hidden argument*/NULL);
 		// gunControl.cost = 5;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_26 = __this->get_gunControl_46();
-		L_26->set_cost_15(5);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_25 = __this->get_gunControl_46();
+		L_25->set_cost_15(5);
 		// gunControl.damage = 2;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_27 = __this->get_gunControl_46();
-		L_27->set_damage_14(2);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_26 = __this->get_gunControl_46();
+		L_26->set_damage_14(2);
 		// gunModel = 3;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 3, /*hidden argument*/NULL);
 	}
 
-IL_0154:
+IL_0141:
 	{
 		// if (gunValue == 4)
-		int32_t L_28 = ___gunValue0;
-		if ((!(((uint32_t)L_28) == ((uint32_t)4))))
+		int32_t L_27 = ___gunValue0;
+		if ((!(((uint32_t)L_27) == ((uint32_t)4))))
 		{
-			goto IL_01bf;
+			goto IL_01ac;
 		}
 	}
 	{
 		// normalGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_29 = __this->get_normalGun_49();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_29, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_28 = __this->get_normalGun_49();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_28, (bool)0, /*hidden argument*/NULL);
 		// longGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_30 = __this->get_longGun_50();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_30, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_29 = __this->get_longGun_50();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_29, (bool)0, /*hidden argument*/NULL);
 		// shotGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_31 = __this->get_shotGun_51();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_31, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_30 = __this->get_shotGun_51();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_30, (bool)0, /*hidden argument*/NULL);
 		// gatingGun.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_32 = __this->get_gatingGun_52();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_32, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_31 = __this->get_gatingGun_52();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_31, (bool)1, /*hidden argument*/NULL);
 		// balistaGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_33 = __this->get_balistaGun_53();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_33, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_32 = __this->get_balistaGun_53();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_32, (bool)0, /*hidden argument*/NULL);
 		// laserGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_34 = __this->get_laserGun_54();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_34, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_33 = __this->get_laserGun_54();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_33, (bool)0, /*hidden argument*/NULL);
 		// gunControl.cost = 3;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_35 = __this->get_gunControl_46();
-		L_35->set_cost_15(3);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_34 = __this->get_gunControl_46();
+		L_34->set_cost_15(3);
 		// gunControl.damage = 3;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_36 = __this->get_gunControl_46();
-		L_36->set_damage_14(3);
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_35 = __this->get_gunControl_46();
+		L_35->set_damage_14(3);
 		// gunModel = 4;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 4, /*hidden argument*/NULL);
 	}
 
-IL_01bf:
+IL_01ac:
 	{
 		// if (gunValue == 5)
-		int32_t L_37 = ___gunValue0;
-		if ((!(((uint32_t)L_37) == ((uint32_t)5))))
+		int32_t L_36 = ___gunValue0;
+		if ((!(((uint32_t)L_36) == ((uint32_t)5))))
 		{
-			goto IL_022c;
+			goto IL_0219;
 		}
 	}
 	{
 		// normalGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_38 = __this->get_normalGun_49();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_38, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_37 = __this->get_normalGun_49();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_37, (bool)0, /*hidden argument*/NULL);
 		// longGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_39 = __this->get_longGun_50();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_39, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_38 = __this->get_longGun_50();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_38, (bool)0, /*hidden argument*/NULL);
 		// shotGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_40 = __this->get_shotGun_51();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_40, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_39 = __this->get_shotGun_51();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_39, (bool)0, /*hidden argument*/NULL);
 		// gatingGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_41 = __this->get_gatingGun_52();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_41, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_40 = __this->get_gatingGun_52();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_40, (bool)0, /*hidden argument*/NULL);
 		// balistaGun.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_42 = __this->get_balistaGun_53();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_42, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_41 = __this->get_balistaGun_53();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_41, (bool)1, /*hidden argument*/NULL);
 		// laserGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_43 = __this->get_laserGun_54();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_43, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_42 = __this->get_laserGun_54();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_42, (bool)0, /*hidden argument*/NULL);
 		// gunControl.cost = 15;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_44 = __this->get_gunControl_46();
-		L_44->set_cost_15(((int32_t)15));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_43 = __this->get_gunControl_46();
+		L_43->set_cost_15(((int32_t)15));
 		// gunControl.damage = 10;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_45 = __this->get_gunControl_46();
-		L_45->set_damage_14(((int32_t)10));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_44 = __this->get_gunControl_46();
+		L_44->set_damage_14(((int32_t)10));
 		// gunModel = 5;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 5, /*hidden argument*/NULL);
 	}
 
-IL_022c:
+IL_0219:
 	{
 		// if (gunValue == 6)
-		int32_t L_46 = ___gunValue0;
-		if ((!(((uint32_t)L_46) == ((uint32_t)6))))
+		int32_t L_45 = ___gunValue0;
+		if ((!(((uint32_t)L_45) == ((uint32_t)6))))
 		{
-			goto IL_0299;
+			goto IL_0286;
 		}
 	}
 	{
 		// normalGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_47 = __this->get_normalGun_49();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_47, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_46 = __this->get_normalGun_49();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_46, (bool)0, /*hidden argument*/NULL);
 		// longGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_48 = __this->get_longGun_50();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_48, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_47 = __this->get_longGun_50();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_47, (bool)0, /*hidden argument*/NULL);
 		// shotGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_49 = __this->get_shotGun_51();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_49, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_48 = __this->get_shotGun_51();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_48, (bool)0, /*hidden argument*/NULL);
 		// gatingGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_50 = __this->get_gatingGun_52();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_50, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_49 = __this->get_gatingGun_52();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_49, (bool)0, /*hidden argument*/NULL);
 		// balistaGun.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_51 = __this->get_balistaGun_53();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_51, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_50 = __this->get_balistaGun_53();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_50, (bool)0, /*hidden argument*/NULL);
 		// laserGun.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_52 = __this->get_laserGun_54();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_52, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_51 = __this->get_laserGun_54();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_51, (bool)1, /*hidden argument*/NULL);
 		// gunControl.cost = 75;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_53 = __this->get_gunControl_46();
-		L_53->set_cost_15(((int32_t)75));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_52 = __this->get_gunControl_46();
+		L_52->set_cost_15(((int32_t)75));
 		// gunControl.damage = 10;
-		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_54 = __this->get_gunControl_46();
-		L_54->set_damage_14(((int32_t)10));
+		GunControl_t343ED579295474AF6B44C6B29AB5EF7CCD4729D5 * L_53 = __this->get_gunControl_46();
+		L_53->set_damage_14(((int32_t)10));
 		// gunModel = 6;
 		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, 6, /*hidden argument*/NULL);
 	}
 
-IL_0299:
+IL_0286:
 	{
 		// }
-		return;
-	}
-
-IL_029a:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(NetworkBehaviourUtils_tEF88A0AC34C48C4674937D037E0875B8AE2D7F30_il2cpp_TypeInfo_var);
-		NetworkBehaviourUtils_ThrowIfBehaviourNotInitialized_mD44E1511B8CD7B2B7C76733D3F144F12BC937CCA(__this, /*hidden argument*/NULL);
-		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_55 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
-		int32_t L_56;
-		L_56 = NetworkRunner_get_Stage_mFD4A7DBE0FD6B4E9747AE753869EF1494F877432(L_55, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_56) == ((uint32_t)4))))
-		{
-			goto IL_02b4;
-		}
-	}
-	{
-		goto IL_039d;
-	}
-
-IL_02b4:
-	{
-		NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * L_57 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Object_8();
-		int32_t L_58;
-		L_58 = NetworkObject_GetLocalAuthorityMask_m5FEB0CB05ED4D2C60548B3B82E2DCD652A63E812(L_57, /*hidden argument*/NULL);
-		V_3 = L_58;
-		int32_t L_59 = V_3;
-		if (((int32_t)((int32_t)L_59&(int32_t)1)))
-		{
-			goto IL_02e2;
-		}
-	}
-	{
-		NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * L_60 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Object_8();
-		IL2CPP_RUNTIME_CLASS_INIT(NetworkBehaviourUtils_tEF88A0AC34C48C4674937D037E0875B8AE2D7F30_il2cpp_TypeInfo_var);
-		NetworkBehaviourUtils_NotifyLocalSimulationNotAllowedToSendRpc_m26D621AB0EC00836D35165598BB8FFCE5B069798(_stringLiteral78802E373C27D74F1DC4A8A87AFE2A72290503CD, L_60, 1, /*hidden argument*/NULL);
-		goto IL_039d;
-	}
-
-IL_02e2:
-	{
-		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_61 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
-		bool L_62;
-		L_62 = NetworkRunner_HasAnyActiveConnections_m099E01E87E7609A710BE60D73F6F227D651FC9C9_inline(L_61, /*hidden argument*/NULL);
-		if (L_62)
-		{
-			goto IL_02f8;
-		}
-	}
-	{
-		goto IL_0388;
-	}
-
-IL_02f8:
-	{
-		V_4 = 8;
-		int32_t L_63 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_63, (int32_t)4));
-		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_64 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
-		Simulation_t6E5CF48ED757B1C1B28F6EED55B79C871C8B6571 * L_65;
-		L_65 = NetworkRunner_get_Simulation_mAAC30DB587E6F034B8E4A0F04024861EF86C259B_inline(L_64, /*hidden argument*/NULL);
-		int32_t L_66 = V_4;
-		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_67;
-		L_67 = SimulationMessage_Allocate_m31B6B241375D3D21EDAFECFDA7CA310217C0ED79(L_65, L_66, /*hidden argument*/NULL);
-		V_2 = (SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)L_67;
-		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_68 = V_2;
-		uint8_t* L_69;
-		L_69 = SimulationMessage_GetData_m04D058E32A68186B71F88E096C410F59F97A13C5_inline((SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)(SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)L_68, /*hidden argument*/NULL);
-		V_0 = (uint8_t*)L_69;
-		NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * L_70 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Object_8();
-		NetworkId_tAFB7DE457C41C5F9BFEFFB726E03455546D97E4F  L_71 = L_70->get_Id_8();
-		int32_t L_72 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_ObjectIndex_10();
-		RpcHeader_t3FC06FC9E6941B0B543E063C4C3510D9933BCBE4  L_73;
-		L_73 = RpcHeader_Create_m2DC1201F9C35B24533F6B8F947BD2C00685FBC5C(L_71, L_72, 2, /*hidden argument*/NULL);
-		uint8_t* L_74 = V_0;
-		int32_t L_75;
-		L_75 = RpcHeader_Write_m808884E4DE8BB2E36D03A6A1587EBE2280F36E4C_inline(L_73, (uint8_t*)(uint8_t*)L_74, /*hidden argument*/NULL);
-		V_1 = L_75;
-		uint8_t* L_76 = V_0;
-		int32_t L_77 = V_1;
-		int32_t L_78 = ___gunValue0;
-		*((int32_t*)((uint8_t*)il2cpp_codegen_add((intptr_t)L_76, (int32_t)L_77))) = (int32_t)L_78;
-		int32_t L_79 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_79, (int32_t)4));
-		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_80 = V_2;
-		int32_t* L_81 = L_80->get_address_of_Offset_16();
-		int32_t L_82 = V_1;
-		*((int32_t*)L_81) = (int32_t)((int32_t)il2cpp_codegen_multiply((int32_t)L_82, (int32_t)8));
-		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_83 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
-		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_84 = V_2;
-		NetworkRunner_SendRpc_m047F73EDA46A8A2AD14BD4425E6DAF75681C26C7(L_83, (SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)(SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)L_84, /*hidden argument*/NULL);
-	}
-
-IL_0388:
-	{
-		int32_t L_85 = V_3;
-		if (((int32_t)((int32_t)L_85&(int32_t)7)))
-		{
-			goto IL_0396;
-		}
-	}
-	{
-		goto IL_039d;
-	}
-
-IL_0396:
-	{
-		goto IL_0012;
-	}
-
-IL_039d:
-	{
 		return;
 	}
 }
@@ -23505,7 +23349,7 @@ IL_0094:
 		NetworkId_tAFB7DE457C41C5F9BFEFFB726E03455546D97E4F  L_23 = L_22->get_Id_8();
 		int32_t L_24 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_ObjectIndex_10();
 		RpcHeader_t3FC06FC9E6941B0B543E063C4C3510D9933BCBE4  L_25;
-		L_25 = RpcHeader_Create_m2DC1201F9C35B24533F6B8F947BD2C00685FBC5C(L_23, L_24, 3, /*hidden argument*/NULL);
+		L_25 = RpcHeader_Create_m2DC1201F9C35B24533F6B8F947BD2C00685FBC5C(L_23, L_24, 2, /*hidden argument*/NULL);
 		uint8_t* L_26 = V_0;
 		int32_t L_27;
 		L_27 = RpcHeader_Write_m808884E4DE8BB2E36D03A6A1587EBE2280F36E4C_inline(L_25, (uint8_t*)(uint8_t*)L_26, /*hidden argument*/NULL);
@@ -23664,7 +23508,7 @@ IL_007a:
 		NetworkId_tAFB7DE457C41C5F9BFEFFB726E03455546D97E4F  L_20 = L_19->get_Id_8();
 		int32_t L_21 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_ObjectIndex_10();
 		RpcHeader_t3FC06FC9E6941B0B543E063C4C3510D9933BCBE4  L_22;
-		L_22 = RpcHeader_Create_m2DC1201F9C35B24533F6B8F947BD2C00685FBC5C(L_20, L_21, 4, /*hidden argument*/NULL);
+		L_22 = RpcHeader_Create_m2DC1201F9C35B24533F6B8F947BD2C00685FBC5C(L_20, L_21, 3, /*hidden argument*/NULL);
 		uint8_t* L_23 = V_0;
 		int32_t L_24;
 		L_24 = RpcHeader_Write_m808884E4DE8BB2E36D03A6A1587EBE2280F36E4C_inline(L_22, (uint8_t*)(uint8_t*)L_23, /*hidden argument*/NULL);
@@ -23827,7 +23671,7 @@ IL_0079:
 		NetworkId_tAFB7DE457C41C5F9BFEFFB726E03455546D97E4F  L_18 = L_17->get_Id_8();
 		int32_t L_19 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_ObjectIndex_10();
 		RpcHeader_t3FC06FC9E6941B0B543E063C4C3510D9933BCBE4  L_20;
-		L_20 = RpcHeader_Create_m2DC1201F9C35B24533F6B8F947BD2C00685FBC5C(L_18, L_19, 5, /*hidden argument*/NULL);
+		L_20 = RpcHeader_Create_m2DC1201F9C35B24533F6B8F947BD2C00685FBC5C(L_18, L_19, 4, /*hidden argument*/NULL);
 		uint8_t* L_21 = V_0;
 		int32_t L_22;
 		L_22 = RpcHeader_Write_m808884E4DE8BB2E36D03A6A1587EBE2280F36E4C_inline(L_20, (uint8_t*)(uint8_t*)L_21, /*hidden argument*/NULL);
@@ -23875,158 +23719,296 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_Bullet_m2B383F1C3C5B1FAFE8FD
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NetworkBehaviourUtils_tEF88A0AC34C48C4674937D037E0875B8AE2D7F30_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m6F1238037ACD87D7DC2C911C35EEC7D1B73F5830_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_mE732995EF14954D1EAC0F4968A668BFA448E078D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral12F8A958E16574361A80E9EB467C374415470886);
 		s_Il2CppMethodInitialized = true;
 	}
 	Nullable_1_t1DF992A51DAF7B6FA3075AB0D0FC3CD96F35D4AD  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	Nullable_1_t7695CF027234E345EA0E2A54477DEC312BF48800  V_1;
 	memset((&V_1), 0, sizeof(V_1));
+	uint8_t* V_2 = NULL;
+	int32_t V_3 = 0;
+	SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * V_4 = NULL;
+	int32_t V_5 = 0;
+	int32_t V_6 = 0;
+	{
+		bool L_0 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_InvokeRpc_11();
+		if (!L_0)
+		{
+			goto IL_0119;
+		}
+	}
+	{
+		((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->set_InvokeRpc_11((bool)0);
+	}
+
+IL_0012:
 	{
 		// if (gunmode == 1)
-		int32_t L_0 = ___gunmode0;
-		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
+		int32_t L_1 = ___gunmode0;
+		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
 		{
-			goto IL_002d;
+			goto IL_0040;
 		}
 	}
 	{
 		// GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_flashGun_33();
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_2 = __this->get_firepoint_26();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3;
-		L_3 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_2, /*hidden argument*/NULL);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_4 = __this->get_firepoint_26();
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_5;
-		L_5 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_4, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_flashGun_33();
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_3 = __this->get_firepoint_26();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
+		L_4 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_3, /*hidden argument*/NULL);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_5 = __this->get_firepoint_26();
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_6;
+		L_6 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_5, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6;
-		L_6 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F(L_1, L_3, L_5, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F_RuntimeMethod_var);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_7;
+		L_7 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F(L_2, L_4, L_6, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F_RuntimeMethod_var);
 		// Normal(enchance3);
-		bool L_7 = ___enchance31;
-		gunMode_Normal_mFB323098E042860810C8A51F48A4DEEDC27A38B2(__this, L_7, /*hidden argument*/NULL);
+		bool L_8 = ___enchance31;
+		gunMode_Normal_mFB323098E042860810C8A51F48A4DEEDC27A38B2(__this, L_8, /*hidden argument*/NULL);
 	}
 
-IL_002d:
+IL_0040:
 	{
 		// if (gunmode == 2)
-		int32_t L_8 = ___gunmode0;
-		if ((!(((uint32_t)L_8) == ((uint32_t)2))))
+		int32_t L_9 = ___gunmode0;
+		if ((!(((uint32_t)L_9) == ((uint32_t)2))))
 		{
-			goto IL_005a;
+			goto IL_006d;
 		}
 	}
 	{
 		// GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_9 = __this->get_flashGun_33();
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_10 = __this->get_firepoint2_27();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_11;
-		L_11 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_10, /*hidden argument*/NULL);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_12 = __this->get_firepoint_26();
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_13;
-		L_13 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_12, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_10 = __this->get_flashGun_33();
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_11 = __this->get_firepoint2_27();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_12;
+		L_12 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_11, /*hidden argument*/NULL);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_13 = __this->get_firepoint_26();
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_14;
+		L_14 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_13, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_14;
-		L_14 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F(L_9, L_11, L_13, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F_RuntimeMethod_var);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_15;
+		L_15 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F(L_10, L_12, L_14, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F_RuntimeMethod_var);
 		// Long(enchance3);
-		bool L_15 = ___enchance31;
-		gunMode_Long_m3D8D6B706A8633C2F1B796362412B884D1233F9A(__this, L_15, /*hidden argument*/NULL);
+		bool L_16 = ___enchance31;
+		gunMode_Long_m3D8D6B706A8633C2F1B796362412B884D1233F9A(__this, L_16, /*hidden argument*/NULL);
 	}
 
-IL_005a:
+IL_006d:
 	{
 		// if (gunmode == 3)
-		int32_t L_16 = ___gunmode0;
-		if ((!(((uint32_t)L_16) == ((uint32_t)3))))
+		int32_t L_17 = ___gunmode0;
+		if ((!(((uint32_t)L_17) == ((uint32_t)3))))
 		{
-			goto IL_0087;
+			goto IL_009a;
 		}
 	}
 	{
 		// GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_17 = __this->get_flashGun_33();
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_18 = __this->get_firepoint_26();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_19;
-		L_19 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_18, /*hidden argument*/NULL);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_20 = __this->get_firepoint_26();
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_21;
-		L_21 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_20, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_18 = __this->get_flashGun_33();
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_19 = __this->get_firepoint_26();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_20;
+		L_20 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_19, /*hidden argument*/NULL);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_21 = __this->get_firepoint_26();
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_22;
+		L_22 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_21, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_22;
-		L_22 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F(L_17, L_19, L_21, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F_RuntimeMethod_var);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_23;
+		L_23 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F(L_18, L_20, L_22, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F_RuntimeMethod_var);
 		// ShootShotgun(enchance3);
-		bool L_23 = ___enchance31;
-		gunMode_ShootShotgun_m021D09F64AA53FC9B6D0B213704ED9696B3F9BC5(__this, L_23, /*hidden argument*/NULL);
+		bool L_24 = ___enchance31;
+		gunMode_ShootShotgun_m021D09F64AA53FC9B6D0B213704ED9696B3F9BC5(__this, L_24, /*hidden argument*/NULL);
 	}
 
-IL_0087:
+IL_009a:
 	{
 		// if (gunmode == 4)
-		int32_t L_24 = ___gunmode0;
-		if ((!(((uint32_t)L_24) == ((uint32_t)4))))
+		int32_t L_25 = ___gunmode0;
+		if ((!(((uint32_t)L_25) == ((uint32_t)4))))
 		{
-			goto IL_00b4;
+			goto IL_00c7;
 		}
 	}
 	{
 		// GameObject bullet = Instantiate(flashGun, firepoint2.position, firepoint.rotation);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_25 = __this->get_flashGun_33();
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_26 = __this->get_firepoint2_27();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_27;
-		L_27 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_26, /*hidden argument*/NULL);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_28 = __this->get_firepoint_26();
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_29;
-		L_29 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_28, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_26 = __this->get_flashGun_33();
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_27 = __this->get_firepoint2_27();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_28;
+		L_28 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_27, /*hidden argument*/NULL);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_29 = __this->get_firepoint_26();
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_30;
+		L_30 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_29, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_30;
-		L_30 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F(L_25, L_27, L_29, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F_RuntimeMethod_var);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_31;
+		L_31 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F(L_26, L_28, L_30, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_m3D9494354F266A105B5A9DE8603B57850EAD902F_RuntimeMethod_var);
 		// Gatling(enchance3);
-		bool L_31 = ___enchance31;
-		gunMode_Gatling_mBAC86090D52A14723F02CBA44B8034A63ACF4CD4(__this, L_31, /*hidden argument*/NULL);
+		bool L_32 = ___enchance31;
+		gunMode_Gatling_mBAC86090D52A14723F02CBA44B8034A63ACF4CD4(__this, L_32, /*hidden argument*/NULL);
 	}
 
-IL_00b4:
+IL_00c7:
 	{
 		// if (gunmode == 5)
-		int32_t L_32 = ___gunmode0;
-		if ((!(((uint32_t)L_32) == ((uint32_t)5))))
+		int32_t L_33 = ___gunmode0;
+		if ((!(((uint32_t)L_33) == ((uint32_t)5))))
 		{
-			goto IL_0105;
+			goto IL_0118;
 		}
 	}
 	{
 		// Runner.Spawn(flashGun2, firepoint.position, firepoint.rotation);
-		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_33 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_34 = __this->get_flashGun2_34();
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_35 = __this->get_firepoint_26();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_36;
-		L_36 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_35, /*hidden argument*/NULL);
-		Nullable_1_t1829213F3538788DF79B4659AFC9D6A9C90C3258  L_37;
-		memset((&L_37), 0, sizeof(L_37));
-		Nullable_1__ctor_m6F1238037ACD87D7DC2C911C35EEC7D1B73F5830((&L_37), L_36, /*hidden argument*/Nullable_1__ctor_m6F1238037ACD87D7DC2C911C35EEC7D1B73F5830_RuntimeMethod_var);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_38 = __this->get_firepoint_26();
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_39;
-		L_39 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_38, /*hidden argument*/NULL);
-		Nullable_1_tD696E865843136E8D2141FD179BA7F088A4D8BA1  L_40;
-		memset((&L_40), 0, sizeof(L_40));
-		Nullable_1__ctor_mE732995EF14954D1EAC0F4968A668BFA448E078D((&L_40), L_39, /*hidden argument*/Nullable_1__ctor_mE732995EF14954D1EAC0F4968A668BFA448E078D_RuntimeMethod_var);
+		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_34 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_35 = __this->get_flashGun2_34();
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_36 = __this->get_firepoint_26();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_37;
+		L_37 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_36, /*hidden argument*/NULL);
+		Nullable_1_t1829213F3538788DF79B4659AFC9D6A9C90C3258  L_38;
+		memset((&L_38), 0, sizeof(L_38));
+		Nullable_1__ctor_m6F1238037ACD87D7DC2C911C35EEC7D1B73F5830((&L_38), L_37, /*hidden argument*/Nullable_1__ctor_m6F1238037ACD87D7DC2C911C35EEC7D1B73F5830_RuntimeMethod_var);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_39 = __this->get_firepoint_26();
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_40;
+		L_40 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_39, /*hidden argument*/NULL);
+		Nullable_1_tD696E865843136E8D2141FD179BA7F088A4D8BA1  L_41;
+		memset((&L_41), 0, sizeof(L_41));
+		Nullable_1__ctor_mE732995EF14954D1EAC0F4968A668BFA448E078D((&L_41), L_40, /*hidden argument*/Nullable_1__ctor_mE732995EF14954D1EAC0F4968A668BFA448E078D_RuntimeMethod_var);
 		il2cpp_codegen_initobj((&V_0), sizeof(Nullable_1_t1DF992A51DAF7B6FA3075AB0D0FC3CD96F35D4AD ));
-		Nullable_1_t1DF992A51DAF7B6FA3075AB0D0FC3CD96F35D4AD  L_41 = V_0;
+		Nullable_1_t1DF992A51DAF7B6FA3075AB0D0FC3CD96F35D4AD  L_42 = V_0;
 		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_t7695CF027234E345EA0E2A54477DEC312BF48800 ));
-		Nullable_1_t7695CF027234E345EA0E2A54477DEC312BF48800  L_42 = V_1;
-		NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * L_43;
-		L_43 = NetworkRunner_Spawn_m5C0574D5423011E40F38C4AAEC78840D157F41BF(L_33, L_34, L_37, L_40, L_41, (OnBeforeSpawned_tED612CDB4BDFF7BE7F2D0550F7C71F526B6BC37A *)NULL, L_42, (bool)1, /*hidden argument*/NULL);
+		Nullable_1_t7695CF027234E345EA0E2A54477DEC312BF48800  L_43 = V_1;
+		NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * L_44;
+		L_44 = NetworkRunner_Spawn_m5C0574D5423011E40F38C4AAEC78840D157F41BF(L_34, L_35, L_38, L_41, L_42, (OnBeforeSpawned_tED612CDB4BDFF7BE7F2D0550F7C71F526B6BC37A *)NULL, L_43, (bool)1, /*hidden argument*/NULL);
 		// ShootArrow(enchance3);
-		bool L_44 = ___enchance31;
-		gunMode_ShootArrow_m8F902E91F1D7C5DC589C58DB0EFA99695D8B6638(__this, L_44, /*hidden argument*/NULL);
+		bool L_45 = ___enchance31;
+		gunMode_ShootArrow_m8F902E91F1D7C5DC589C58DB0EFA99695D8B6638(__this, L_45, /*hidden argument*/NULL);
 	}
 
-IL_0105:
+IL_0118:
 	{
 		// }
+		return;
+	}
+
+IL_0119:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(NetworkBehaviourUtils_tEF88A0AC34C48C4674937D037E0875B8AE2D7F30_il2cpp_TypeInfo_var);
+		NetworkBehaviourUtils_ThrowIfBehaviourNotInitialized_mD44E1511B8CD7B2B7C76733D3F144F12BC937CCA(__this, /*hidden argument*/NULL);
+		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_46 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
+		int32_t L_47;
+		L_47 = NetworkRunner_get_Stage_mFD4A7DBE0FD6B4E9747AE753869EF1494F877432(L_46, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_47) == ((uint32_t)4))))
+		{
+			goto IL_0133;
+		}
+	}
+	{
+		goto IL_0242;
+	}
+
+IL_0133:
+	{
+		NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * L_48 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Object_8();
+		int32_t L_49;
+		L_49 = NetworkObject_GetLocalAuthorityMask_m5FEB0CB05ED4D2C60548B3B82E2DCD652A63E812(L_48, /*hidden argument*/NULL);
+		V_5 = L_49;
+		int32_t L_50 = V_5;
+		if (((int32_t)((int32_t)L_50&(int32_t)2)))
+		{
+			goto IL_0161;
+		}
+	}
+	{
+		NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * L_51 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Object_8();
+		IL2CPP_RUNTIME_CLASS_INIT(NetworkBehaviourUtils_tEF88A0AC34C48C4674937D037E0875B8AE2D7F30_il2cpp_TypeInfo_var);
+		NetworkBehaviourUtils_NotifyLocalSimulationNotAllowedToSendRpc_m26D621AB0EC00836D35165598BB8FFCE5B069798(_stringLiteral12F8A958E16574361A80E9EB467C374415470886, L_51, 2, /*hidden argument*/NULL);
+		goto IL_0242;
+	}
+
+IL_0161:
+	{
+		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_52 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
+		bool L_53;
+		L_53 = NetworkRunner_HasAnyActiveConnections_m099E01E87E7609A710BE60D73F6F227D651FC9C9_inline(L_52, /*hidden argument*/NULL);
+		if (L_53)
+		{
+			goto IL_0177;
+		}
+	}
+	{
+		goto IL_022d;
+	}
+
+IL_0177:
+	{
+		V_6 = 8;
+		int32_t L_54 = V_6;
+		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_54, (int32_t)4));
+		int32_t L_55 = V_6;
+		V_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_55, (int32_t)4));
+		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_56 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
+		Simulation_t6E5CF48ED757B1C1B28F6EED55B79C871C8B6571 * L_57;
+		L_57 = NetworkRunner_get_Simulation_mAAC30DB587E6F034B8E4A0F04024861EF86C259B_inline(L_56, /*hidden argument*/NULL);
+		int32_t L_58 = V_6;
+		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_59;
+		L_59 = SimulationMessage_Allocate_m31B6B241375D3D21EDAFECFDA7CA310217C0ED79(L_57, L_58, /*hidden argument*/NULL);
+		V_4 = (SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)L_59;
+		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_60 = V_4;
+		uint8_t* L_61;
+		L_61 = SimulationMessage_GetData_m04D058E32A68186B71F88E096C410F59F97A13C5_inline((SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)(SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)L_60, /*hidden argument*/NULL);
+		V_2 = (uint8_t*)L_61;
+		NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * L_62 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Object_8();
+		NetworkId_tAFB7DE457C41C5F9BFEFFB726E03455546D97E4F  L_63 = L_62->get_Id_8();
+		int32_t L_64 = ((NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 *)__this)->get_ObjectIndex_10();
+		RpcHeader_t3FC06FC9E6941B0B543E063C4C3510D9933BCBE4  L_65;
+		L_65 = RpcHeader_Create_m2DC1201F9C35B24533F6B8F947BD2C00685FBC5C(L_63, L_64, 5, /*hidden argument*/NULL);
+		uint8_t* L_66 = V_2;
+		int32_t L_67;
+		L_67 = RpcHeader_Write_m808884E4DE8BB2E36D03A6A1587EBE2280F36E4C_inline(L_65, (uint8_t*)(uint8_t*)L_66, /*hidden argument*/NULL);
+		V_3 = L_67;
+		uint8_t* L_68 = V_2;
+		int32_t L_69 = V_3;
+		int32_t L_70 = ___gunmode0;
+		*((int32_t*)((uint8_t*)il2cpp_codegen_add((intptr_t)L_68, (int32_t)L_69))) = (int32_t)L_70;
+		int32_t L_71 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_71, (int32_t)4));
+		uint8_t* L_72 = V_2;
+		int32_t L_73 = V_3;
+		bool L_74 = ___enchance31;
+		ReadWriteUtilsForWeaver_WriteBoolean_m0D6825D86C9CABD932B2F30793DFF376B8EB4163_inline((int32_t*)(int32_t*)((uint8_t*)il2cpp_codegen_add((intptr_t)L_72, (int32_t)L_73)), L_74, /*hidden argument*/NULL);
+		int32_t L_75 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_75, (int32_t)4));
+		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_76 = V_4;
+		int32_t* L_77 = L_76->get_address_of_Offset_16();
+		int32_t L_78 = V_3;
+		*((int32_t*)L_77) = (int32_t)((int32_t)il2cpp_codegen_multiply((int32_t)L_78, (int32_t)8));
+		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_79 = ((SimulationBehaviour_tBA998163EC22A9EFD1954E4545384FF2354482AE *)__this)->get_Runner_7();
+		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_80 = V_4;
+		NetworkRunner_SendRpc_m047F73EDA46A8A2AD14BD4425E6DAF75681C26C7(L_79, (SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)(SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)L_80, /*hidden argument*/NULL);
+	}
+
+IL_022d:
+	{
+		int32_t L_81 = V_5;
+		if (((int32_t)((int32_t)L_81&(int32_t)7)))
+		{
+			goto IL_023b;
+		}
+	}
+	{
+		goto IL_0242;
+	}
+
+IL_023b:
+	{
+		goto IL_0012;
+	}
+
+IL_0242:
+	{
 		return;
 	}
 }
@@ -24728,7 +24710,7 @@ IL_00aa:
 	{
 		// lastSeat = seatNum - 1;
 		int32_t L_14 = ___seatNum0;
-		__this->set_lastSeat_76(((int32_t)il2cpp_codegen_subtract((int32_t)L_14, (int32_t)1)));
+		__this->set_lastSeat_77(((int32_t)il2cpp_codegen_subtract((int32_t)L_14, (int32_t)1)));
 		// NetworkManagerUI.instance. Rpc_SeatDis2(seatNum - 1);
 		NetworkManagerUI_t48071851AD5179F539ACEFD1B127F358451F69CA * L_15 = ((NetworkManagerUI_t48071851AD5179F539ACEFD1B127F358451F69CA_StaticFields*)il2cpp_codegen_static_fields_for(NetworkManagerUI_t48071851AD5179F539ACEFD1B127F358451F69CA_il2cpp_TypeInfo_var))->get_instance_17();
 		int32_t L_16 = ___seatNum0;
@@ -25588,8 +25570,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_CopyBackingFieldsToState_m89600E
 		gunMode_set_enchance_m96310A6131B40934DC2C07367EAEA9E6049A5586(__this, L_0, /*hidden argument*/NULL);
 		int32_t L_1 = __this->get__Rotation_74();
 		gunMode_set_Rotation_m6E0D28DDF3B04CC74B813DBC4281C0DBBBEEA040(__this, L_1, /*hidden argument*/NULL);
-		int32_t L_2 = __this->get__gunModel_75();
-		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, L_2, /*hidden argument*/NULL);
+		TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  L_2 = __this->get__delay_75();
+		gunMode_set_delay_mAEE493D85CCF07DE6140F4D8C5142C6ED3ECDE90(__this, L_2, /*hidden argument*/NULL);
+		int32_t L_3 = __this->get__gunModel_76();
+		gunMode_set_gunModel_mD64FFF86B32EC6909FA473B6D5C92D8547E99612(__this, L_3, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -25603,9 +25587,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_CopyStateToBackingFields_mC23914
 		int32_t L_1;
 		L_1 = gunMode_get_Rotation_m94BFB7BFFEEDBDAF7CBAE29543501762CD03ADEB(__this, /*hidden argument*/NULL);
 		__this->set__Rotation_74(L_1);
-		int32_t L_2;
-		L_2 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
-		__this->set__gunModel_75(L_2);
+		TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  L_2;
+		L_2 = gunMode_get_delay_m4A07D5CE8FE6401DB0D643CCEB9E83CF98262149(__this, /*hidden argument*/NULL);
+		__this->set__delay_75(L_2);
+		int32_t L_3;
+		L_3 = gunMode_get_gunModel_m7BD92F8980545DBA72261C2B533C88CA7E783142(__this, /*hidden argument*/NULL);
+		__this->set__gunModel_76(L_3);
 		return;
 	}
 }
@@ -25641,41 +25628,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_ChangeGunCilentU40Invoker_m5
 		NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 * L_9 = ___behaviour0;
 		int32_t L_10 = V_0;
 		gunMode_Rpc_ChangeGunCilent_mD9C030D88253ABBB6490A5D6B3030C5324900D91(((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A *)CastclassClass((RuntimeObject*)L_9, gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var)), L_10, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void gunMode::Rpc_ChangeGunServer@Invoker(Fusion.NetworkBehaviour,Fusion.SimulationMessage*)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_ChangeGunServerU40Invoker_m24C1A6BE9CDB4859C8E3374DC9892F014B65C0CF (NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 * ___behaviour0, SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * ___message1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	uint8_t* V_1 = NULL;
-	int32_t V_2 = 0;
-	{
-		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_0 = ___message1;
-		uint8_t* L_1;
-		L_1 = SimulationMessage_GetData_m04D058E32A68186B71F88E096C410F59F97A13C5_inline((SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)(SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)L_0, /*hidden argument*/NULL);
-		V_1 = (uint8_t*)L_1;
-		uint8_t* L_2 = V_1;
-		int32_t L_3;
-		L_3 = RpcHeader_ReadSize_mDDC8A65D75577AC7A011148AB71400635E421CDA_inline((uint8_t*)(uint8_t*)L_2, /*hidden argument*/NULL);
-		V_2 = ((int32_t)((int32_t)((int32_t)il2cpp_codegen_add((int32_t)L_3, (int32_t)3))&(int32_t)((int32_t)-4)));
-		uint8_t* L_4 = V_1;
-		int32_t L_5 = V_2;
-		int32_t L_6 = *((int32_t*)((uint8_t*)il2cpp_codegen_add((intptr_t)L_4, (int32_t)L_5)));
-		int32_t L_7 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_7, (int32_t)4));
-		V_0 = L_6;
-		NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 * L_8 = ___behaviour0;
-		L_8->set_InvokeRpc_11((bool)1);
-		NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 * L_9 = ___behaviour0;
-		int32_t L_10 = V_0;
-		gunMode_Rpc_ChangeGunServer_m559D6FC1671AD024ADEDC2358114B02DE77E8A1E(((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A *)CastclassClass((RuntimeObject*)L_9, gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var)), L_10, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -25800,6 +25752,50 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_LaserClientRpcU40Invoker_m5CA16C
 		NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 * L_9 = ___behaviour0;
 		bool L_10 = V_0;
 		gunMode_LaserClientRpc_m43C8AAA39AB6194530ACD73E5FE48CB382245817(((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A *)CastclassClass((RuntimeObject*)L_9, gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var)), L_10, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void gunMode::Rpc_Bullet@Invoker(Fusion.NetworkBehaviour,Fusion.SimulationMessage*)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gunMode_Rpc_BulletU40Invoker_m930EB1A5104E0676BB3EADC2649E5298586647E9 (NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 * ___behaviour0, SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * ___message1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	uint8_t* V_2 = NULL;
+	int32_t V_3 = 0;
+	{
+		SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 * L_0 = ___message1;
+		uint8_t* L_1;
+		L_1 = SimulationMessage_GetData_m04D058E32A68186B71F88E096C410F59F97A13C5_inline((SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)(SimulationMessage_t81A177498E028C9B2613FF0FC136051D00E2BA00 *)L_0, /*hidden argument*/NULL);
+		V_2 = (uint8_t*)L_1;
+		uint8_t* L_2 = V_2;
+		int32_t L_3;
+		L_3 = RpcHeader_ReadSize_mDDC8A65D75577AC7A011148AB71400635E421CDA_inline((uint8_t*)(uint8_t*)L_2, /*hidden argument*/NULL);
+		V_3 = ((int32_t)((int32_t)((int32_t)il2cpp_codegen_add((int32_t)L_3, (int32_t)3))&(int32_t)((int32_t)-4)));
+		uint8_t* L_4 = V_2;
+		int32_t L_5 = V_3;
+		int32_t L_6 = *((int32_t*)((uint8_t*)il2cpp_codegen_add((intptr_t)L_4, (int32_t)L_5)));
+		int32_t L_7 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_7, (int32_t)4));
+		V_0 = L_6;
+		uint8_t* L_8 = V_2;
+		int32_t L_9 = V_3;
+		bool L_10;
+		L_10 = ReadWriteUtilsForWeaver_ReadBoolean_m7DEB8D85F08D4A7BF1D0352A8F9C3B1BB1604E58_inline((int32_t*)(int32_t*)((uint8_t*)il2cpp_codegen_add((intptr_t)L_8, (int32_t)L_9)), /*hidden argument*/NULL);
+		int32_t L_11 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_11, (int32_t)4));
+		V_1 = L_10;
+		NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 * L_12 = ___behaviour0;
+		L_12->set_InvokeRpc_11((bool)1);
+		NetworkBehaviour_t09ED75A5F70FEE7E3CD9483E4D99C1C1FCBB0F27 * L_13 = ___behaviour0;
+		int32_t L_14 = V_0;
+		bool L_15 = V_1;
+		gunMode_Rpc_Bullet_m2B383F1C3C5B1FAFE8FDCB7083B70AB8449FC91E(((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A *)CastclassClass((RuntimeObject*)L_13, gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var)), L_14, L_15, /*hidden argument*/NULL);
 		return;
 	}
 }

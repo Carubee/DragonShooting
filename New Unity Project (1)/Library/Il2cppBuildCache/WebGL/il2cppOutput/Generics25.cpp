@@ -10357,9 +10357,22 @@ public:
 					char ___gunChange_1_OffsetPadding_forAlignmentOnly[8];
 					int32_t ___gunChange_1_forAlignmentOnly;
 				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___button_2_OffsetPadding[12];
+					// System.Byte NetworkInputData::button
+					uint8_t ___button_2;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___button_2_OffsetPadding_forAlignmentOnly[12];
+					uint8_t ___button_2_forAlignmentOnly;
+				};
 			};
 		};
-		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[12];
+		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[16];
 	};
 
 public:
@@ -10377,6 +10390,14 @@ public:
 	inline void set_gunChange_1(int32_t value)
 	{
 		___gunChange_1 = value;
+	}
+
+	inline static int32_t get_offset_of_button_2() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___button_2)); }
+	inline uint8_t get_button_2() const { return ___button_2; }
+	inline uint8_t* get_address_of_button_2() { return &___button_2; }
+	inline void set_button_2(uint8_t value)
+	{
+		___button_2 = value;
 	}
 };
 #pragma pack(pop, tp)

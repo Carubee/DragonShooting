@@ -26447,10 +26447,12 @@ public:
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___lobbyMenu_7;
 	// System.Boolean SpawnNetwork::<FirstSpawn>k__BackingField
 	bool ___U3CFirstSpawnU3Ek__BackingField_9;
+	// System.Boolean SpawnNetwork::_mouseButton0
+	bool ____mouseButton0_10;
 	// Fusion.NetworkPrefabRef SpawnNetwork::_playerPrefab
-	NetworkPrefabRef_t7AA64F4D5C8AF51EE9C9C35455E054F4342D289A  ____playerPrefab_10;
+	NetworkPrefabRef_t7AA64F4D5C8AF51EE9C9C35455E054F4342D289A  ____playerPrefab_11;
 	// System.Collections.Generic.Dictionary`2<Fusion.PlayerRef,Fusion.NetworkObject> SpawnNetwork::_spawnedCharacter
-	Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * ____spawnedCharacter_11;
+	Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * ____spawnedCharacter_12;
 
 public:
 	inline static int32_t get_offset_of__runner_4() { return static_cast<int32_t>(offsetof(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153, ____runner_4)); }
@@ -26496,21 +26498,29 @@ public:
 		___U3CFirstSpawnU3Ek__BackingField_9 = value;
 	}
 
-	inline static int32_t get_offset_of__playerPrefab_10() { return static_cast<int32_t>(offsetof(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153, ____playerPrefab_10)); }
-	inline NetworkPrefabRef_t7AA64F4D5C8AF51EE9C9C35455E054F4342D289A  get__playerPrefab_10() const { return ____playerPrefab_10; }
-	inline NetworkPrefabRef_t7AA64F4D5C8AF51EE9C9C35455E054F4342D289A * get_address_of__playerPrefab_10() { return &____playerPrefab_10; }
-	inline void set__playerPrefab_10(NetworkPrefabRef_t7AA64F4D5C8AF51EE9C9C35455E054F4342D289A  value)
+	inline static int32_t get_offset_of__mouseButton0_10() { return static_cast<int32_t>(offsetof(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153, ____mouseButton0_10)); }
+	inline bool get__mouseButton0_10() const { return ____mouseButton0_10; }
+	inline bool* get_address_of__mouseButton0_10() { return &____mouseButton0_10; }
+	inline void set__mouseButton0_10(bool value)
 	{
-		____playerPrefab_10 = value;
+		____mouseButton0_10 = value;
 	}
 
-	inline static int32_t get_offset_of__spawnedCharacter_11() { return static_cast<int32_t>(offsetof(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153, ____spawnedCharacter_11)); }
-	inline Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * get__spawnedCharacter_11() const { return ____spawnedCharacter_11; }
-	inline Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B ** get_address_of__spawnedCharacter_11() { return &____spawnedCharacter_11; }
-	inline void set__spawnedCharacter_11(Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * value)
+	inline static int32_t get_offset_of__playerPrefab_11() { return static_cast<int32_t>(offsetof(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153, ____playerPrefab_11)); }
+	inline NetworkPrefabRef_t7AA64F4D5C8AF51EE9C9C35455E054F4342D289A  get__playerPrefab_11() const { return ____playerPrefab_11; }
+	inline NetworkPrefabRef_t7AA64F4D5C8AF51EE9C9C35455E054F4342D289A * get_address_of__playerPrefab_11() { return &____playerPrefab_11; }
+	inline void set__playerPrefab_11(NetworkPrefabRef_t7AA64F4D5C8AF51EE9C9C35455E054F4342D289A  value)
 	{
-		____spawnedCharacter_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____spawnedCharacter_11), (void*)value);
+		____playerPrefab_11 = value;
+	}
+
+	inline static int32_t get_offset_of__spawnedCharacter_12() { return static_cast<int32_t>(offsetof(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153, ____spawnedCharacter_12)); }
+	inline Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * get__spawnedCharacter_12() const { return ____spawnedCharacter_12; }
+	inline Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B ** get_address_of__spawnedCharacter_12() { return &____spawnedCharacter_12; }
+	inline void set__spawnedCharacter_12(Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * value)
+	{
+		____spawnedCharacter_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____spawnedCharacter_12), (void*)value);
 	}
 };
 

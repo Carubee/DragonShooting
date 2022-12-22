@@ -5491,6 +5491,36 @@ struct TickAccumulator_t0438543B810430A8DB30DD6D40F2127BC4B42392_marshaled_com
 	int32_t ____running_3;
 };
 
+// Fusion.TickTimer
+struct TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201 
+{
+public:
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Int32 Fusion.TickTimer::_target
+			int32_t ____target_0;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ____target_0_forAlignmentOnly;
+		};
+	};
+
+public:
+	inline static int32_t get_offset_of__target_0() { return static_cast<int32_t>(offsetof(TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201, ____target_0)); }
+	inline int32_t get__target_0() const { return ____target_0; }
+	inline int32_t* get_address_of__target_0() { return &____target_0; }
+	inline void set__target_0(int32_t value)
+	{
+		____target_0 = value;
+	}
+};
+
+
 // System.UInt16
 struct UInt16_t894EA9D4FB7C799B244E7BBF2DF0EEEDBC77A8BD 
 {
@@ -8112,9 +8142,22 @@ public:
 					char ___gunChange_1_OffsetPadding_forAlignmentOnly[8];
 					int32_t ___gunChange_1_forAlignmentOnly;
 				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___button_2_OffsetPadding[12];
+					// System.Byte NetworkInputData::button
+					uint8_t ___button_2;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___button_2_OffsetPadding_forAlignmentOnly[12];
+					uint8_t ___button_2_forAlignmentOnly;
+				};
 			};
 		};
-		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[12];
+		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[16];
 	};
 
 public:
@@ -8132,6 +8175,14 @@ public:
 	inline void set_gunChange_1(int32_t value)
 	{
 		___gunChange_1 = value;
+	}
+
+	inline static int32_t get_offset_of_button_2() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___button_2)); }
+	inline uint8_t get_button_2() const { return ___button_2; }
+	inline uint8_t* get_address_of_button_2() { return &___button_2; }
+	inline void set_button_2(uint8_t value)
+	{
+		___button_2 = value;
 	}
 };
 #pragma pack(pop, tp)
@@ -26318,10 +26369,12 @@ public:
 	bool ____enchance_73;
 	// System.Int32 gunMode::_Rotation
 	int32_t ____Rotation_74;
+	// Fusion.TickTimer gunMode::_delay
+	TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  ____delay_75;
 	// System.Int32 gunMode::_gunModel
-	int32_t ____gunModel_75;
+	int32_t ____gunModel_76;
 	// System.Int32 gunMode::lastSeat
-	int32_t ___lastSeat_76;
+	int32_t ___lastSeat_77;
 
 public:
 	inline static int32_t get_offset_of_MoneyPlayer_17() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ___MoneyPlayer_17)); }
@@ -26816,20 +26869,28 @@ public:
 		____Rotation_74 = value;
 	}
 
-	inline static int32_t get_offset_of__gunModel_75() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____gunModel_75)); }
-	inline int32_t get__gunModel_75() const { return ____gunModel_75; }
-	inline int32_t* get_address_of__gunModel_75() { return &____gunModel_75; }
-	inline void set__gunModel_75(int32_t value)
+	inline static int32_t get_offset_of__delay_75() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____delay_75)); }
+	inline TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  get__delay_75() const { return ____delay_75; }
+	inline TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201 * get_address_of__delay_75() { return &____delay_75; }
+	inline void set__delay_75(TickTimer_t14187C6AEB29692C5FF3ABE8055B5D1C7B27A201  value)
 	{
-		____gunModel_75 = value;
+		____delay_75 = value;
 	}
 
-	inline static int32_t get_offset_of_lastSeat_76() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ___lastSeat_76)); }
-	inline int32_t get_lastSeat_76() const { return ___lastSeat_76; }
-	inline int32_t* get_address_of_lastSeat_76() { return &___lastSeat_76; }
-	inline void set_lastSeat_76(int32_t value)
+	inline static int32_t get_offset_of__gunModel_76() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____gunModel_76)); }
+	inline int32_t get__gunModel_76() const { return ____gunModel_76; }
+	inline int32_t* get_address_of__gunModel_76() { return &____gunModel_76; }
+	inline void set__gunModel_76(int32_t value)
 	{
-		___lastSeat_76 = value;
+		____gunModel_76 = value;
+	}
+
+	inline static int32_t get_offset_of_lastSeat_77() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ___lastSeat_77)); }
+	inline int32_t get_lastSeat_77() const { return ___lastSeat_77; }
+	inline int32_t* get_address_of_lastSeat_77() { return &___lastSeat_77; }
+	inline void set_lastSeat_77(int32_t value)
+	{
+		___lastSeat_77 = value;
 	}
 };
 
@@ -26839,11 +26900,11 @@ public:
 	// gunMode gunMode::instance
 	gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * ___instance_19;
 	// Fusion.Changed`1<gunMode> gunMode::$IL2CPP_CHANGED
-	Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  ___U24IL2CPP_CHANGED_77;
+	Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  ___U24IL2CPP_CHANGED_78;
 	// Fusion.ChangedDelegate`1<gunMode> gunMode::$IL2CPP_CHANGED_DELEGATE
-	ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * ___U24IL2CPP_CHANGED_DELEGATE_78;
+	ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * ___U24IL2CPP_CHANGED_DELEGATE_79;
 	// Fusion.NetworkBehaviourCallbacks`1<gunMode> gunMode::$IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS
-	NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79;
+	NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80;
 
 public:
 	inline static int32_t get_offset_of_instance_19() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___instance_19)); }
@@ -26855,31 +26916,31 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___instance_19), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_77() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_CHANGED_77)); }
-	inline Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  get_U24IL2CPP_CHANGED_77() const { return ___U24IL2CPP_CHANGED_77; }
-	inline Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48 * get_address_of_U24IL2CPP_CHANGED_77() { return &___U24IL2CPP_CHANGED_77; }
-	inline void set_U24IL2CPP_CHANGED_77(Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  value)
+	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_78() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_CHANGED_78)); }
+	inline Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  get_U24IL2CPP_CHANGED_78() const { return ___U24IL2CPP_CHANGED_78; }
+	inline Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48 * get_address_of_U24IL2CPP_CHANGED_78() { return &___U24IL2CPP_CHANGED_78; }
+	inline void set_U24IL2CPP_CHANGED_78(Changed_1_t8AE33674AE9CEF1AB49F7AC73A163C3CC0511B48  value)
 	{
-		___U24IL2CPP_CHANGED_77 = value;
-		Il2CppCodeGenWriteBarrier((void**)&(((&___U24IL2CPP_CHANGED_77))->____behaviour_3), (void*)NULL);
+		___U24IL2CPP_CHANGED_78 = value;
+		Il2CppCodeGenWriteBarrier((void**)&(((&___U24IL2CPP_CHANGED_78))->____behaviour_3), (void*)NULL);
 	}
 
-	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_DELEGATE_78() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_CHANGED_DELEGATE_78)); }
-	inline ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * get_U24IL2CPP_CHANGED_DELEGATE_78() const { return ___U24IL2CPP_CHANGED_DELEGATE_78; }
-	inline ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 ** get_address_of_U24IL2CPP_CHANGED_DELEGATE_78() { return &___U24IL2CPP_CHANGED_DELEGATE_78; }
-	inline void set_U24IL2CPP_CHANGED_DELEGATE_78(ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * value)
+	inline static int32_t get_offset_of_U24IL2CPP_CHANGED_DELEGATE_79() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_CHANGED_DELEGATE_79)); }
+	inline ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * get_U24IL2CPP_CHANGED_DELEGATE_79() const { return ___U24IL2CPP_CHANGED_DELEGATE_79; }
+	inline ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 ** get_address_of_U24IL2CPP_CHANGED_DELEGATE_79() { return &___U24IL2CPP_CHANGED_DELEGATE_79; }
+	inline void set_U24IL2CPP_CHANGED_DELEGATE_79(ChangedDelegate_1_t4BC77CB12924D3D3FB040F2CEF6F1BEE5704A516 * value)
 	{
-		___U24IL2CPP_CHANGED_DELEGATE_78 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_CHANGED_DELEGATE_78), (void*)value);
+		___U24IL2CPP_CHANGED_DELEGATE_79 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_CHANGED_DELEGATE_79), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79)); }
-	inline NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * get_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79() const { return ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79; }
-	inline NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 ** get_address_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79() { return &___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79; }
-	inline void set_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79(NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * value)
+	inline static int32_t get_offset_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields, ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80)); }
+	inline NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * get_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80() const { return ___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80; }
+	inline NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 ** get_address_of_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80() { return &___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80; }
+	inline void set_U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80(NetworkBehaviourCallbacks_1_t1FAD13678E5796901B133AE58C57C6C7A8E375B0 * value)
 	{
-		___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_79), (void*)value);
+		___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U24IL2CPP_NETWORK_BEHAVIOUR_CALLBACKS_80), (void*)value);
 	}
 };
 
@@ -42640,7 +42701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkManagerUI_StartClient_mA1024D8500
 	{
 		// Rpc_LastSeat(gunMode.instance.lastSeat);
 		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_0 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
-		int32_t L_1 = L_0->get_lastSeat_76();
+		int32_t L_1 = L_0->get_lastSeat_77();
 		NetworkManagerUI_Rpc_LastSeat_m2D1FC130CC8097CDC94ECBFB440B93887831D7D0(__this, L_1, /*hidden argument*/NULL);
 		// seatNum = 0;
 		__this->set_seatNum_24(0);
@@ -42687,7 +42748,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkManagerUI_StartClient2_m4D3A0D755
 	{
 		// Rpc_LastSeat(gunMode.instance.lastSeat);
 		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_0 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
-		int32_t L_1 = L_0->get_lastSeat_76();
+		int32_t L_1 = L_0->get_lastSeat_77();
 		NetworkManagerUI_Rpc_LastSeat_m2D1FC130CC8097CDC94ECBFB440B93887831D7D0(__this, L_1, /*hidden argument*/NULL);
 		// seatNum = 1;
 		__this->set_seatNum_24(1);
@@ -42734,7 +42795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkManagerUI_StartClient3_mBDC1F8F55
 	{
 		// Rpc_LastSeat(gunMode.instance.lastSeat);
 		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_0 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
-		int32_t L_1 = L_0->get_lastSeat_76();
+		int32_t L_1 = L_0->get_lastSeat_77();
 		NetworkManagerUI_Rpc_LastSeat_m2D1FC130CC8097CDC94ECBFB440B93887831D7D0(__this, L_1, /*hidden argument*/NULL);
 		// seatNum = 2;
 		__this->set_seatNum_24(2);
@@ -42781,7 +42842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkManagerUI_StartClient4_m3575A069E
 	{
 		// Rpc_LastSeat(gunMode.instance.lastSeat);
 		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_0 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
-		int32_t L_1 = L_0->get_lastSeat_76();
+		int32_t L_1 = L_0->get_lastSeat_77();
 		NetworkManagerUI_Rpc_LastSeat_m2D1FC130CC8097CDC94ECBFB440B93887831D7D0(__this, L_1, /*hidden argument*/NULL);
 		// seatNum = 3;
 		__this->set_seatNum_24(3);
