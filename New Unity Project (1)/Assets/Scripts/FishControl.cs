@@ -166,6 +166,7 @@ public class FishControl : NetworkBehaviour
                     }
                     else
                     {
+                        if(Runner.UserId == Runner.UserId)
                         UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
                     }
                     int itemDrop = Random.Range(0, 21);
@@ -174,9 +175,9 @@ public class FishControl : NetworkBehaviour
 
 
                     //gunMode.instance.MoneyPlayer += _gold;
-                    Runner.Despawn(this.Object);
+                    Debug.Log(Runner.UserId);
+                    Runner.Despawn(this.Object,true);
                     //FishManage.Instance._FishMange.Remove(transform);
-                    Destroy(this.gameObject, 0.8f);
                     
                 }
             }

@@ -77,8 +77,8 @@ public class gunMode : NetworkBehaviour
     public void Awake()
     {
         firerateAmount = 0.5f;
-        
-        
+        PlayerPrefs.GetInt("gold");
+        PlayerPrefs.Save();
     }
     public override void Spawned()
     {
@@ -87,21 +87,21 @@ public class gunMode : NetworkBehaviour
         instance = this;
         gunModel = 1;
     }
-   [Networked] private TickTimer delay { get; set; }
+   [Networked] public TickTimer delay { get; set; }
     public override void FixedUpdateNetwork()
     {
-       
+        
         if (GetInput(out NetworkInputData data))
         {
                 
             transform.up = data.direction - new Vector2(transform.position.x, transform.position.y);
             if (delay.ExpiredOrNotRunning(Runner))
             {
-                if ((data.button & NetworkInputData.MOUSEBUTTON1) != 0 && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
                 {
-                    delay = TickTimer.CreateFromSeconds(Runner, 0.5f);
-                    Rpc_Bullet(gunModel, false);
-
+                    if ((data.button & NetworkInputData.MOUSEBUTTON1) != 0 )
+                    {
+                      Rpc_Bullet(gunModel, enchance);
+                    }
                 }
             }
             switch (data.gunChange) 
@@ -208,27 +208,27 @@ public class gunMode : NetworkBehaviour
         //        firerate = 0;
 
         
-        if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel == 4)
-        {
-            if (firerate >= 0.1)
-            {
+        //if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel == 4)
+        //{
+        //    if (firerate >= 0.1)
+        //    {
 
-                if (TimeDouble < 10)
-                {
-                    Rpc_Shoot(gunModel, true);
-                    enchanceShoot.Play();
-                }
-                else
-                {
-                    Rpc_Shoot(gunModel, false);
-                    normalShoot.Play();
+        //        if (TimeDouble < 10)
+        //        {
+        //            Rpc_Shoot(gunModel, true);
+        //            enchanceShoot.Play();
+        //        }
+        //        else
+        //        {
+        //            Rpc_Shoot(gunModel, false);
+        //            normalShoot.Play();
 
-                }
-                firerate = 0;
-                UiTextSpawmControl.Instance.MinusGold(3);
-            }
+        //        }
+        //        firerate = 0;
+        //        UiTextSpawmControl.Instance.MinusGold(3);
+        //    }
 
-        }
+        //}
         
     }
 
@@ -243,6 +243,9 @@ public class gunMode : NetworkBehaviour
 
     public void Rpc_ChangeGunServer(int gunValue)
     {
+        if (gunValue == 4)
+            firerateAmount = 0.1f;
+        else firerateAmount = 0.5f;
 
         if (gunValue == 1)
         {
@@ -348,6 +351,10 @@ public class gunMode : NetworkBehaviour
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
     public void Rpc_Bullet(int gunmode, bool enchance3)
     {
+        
+        if (Time.time - firerate < firerateAmount || PlayerPrefs.GetInt("gold",100) < gunControl.cost)
+            return;
+        UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
         if (gunmode == 1)
         {
             GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
@@ -380,6 +387,7 @@ public class gunMode : NetworkBehaviour
             //GameObject bullet = Instantiate(flashGun2, firepoint.position, firepoint.rotation);
             ShootArrow(enchance3);
         }
+        firerate = Time.time;
     }
 
 
@@ -593,7 +601,6 @@ public class gunMode : NetworkBehaviour
     public void Rpc_SetNickName(string nickname)
     {
         this.nickName = nickname;
-        Debug.Log(nickname);
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
