@@ -16,6 +16,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     public static SpawnNetwork instance;
     [Networked] bool FirstSpawn { get; set; }
     private bool _mouseButton0;
+    private bool _mouseButton0Up;
     async void StartGame(GameMode mode)
     {
         _runner = gameObject.AddComponent<NetworkRunner>();
@@ -37,6 +38,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     private void Update()
     {
         _mouseButton0 = _mouseButton0 || Input.GetMouseButton(0);
+        _mouseButton0Up = _mouseButton0Up || Input.GetMouseButtonUp(0);
     }
 
     // Update is called once per 
@@ -101,38 +103,45 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     public void OnInput(NetworkRunner runner,NetworkInput input)
     {
         var data = new NetworkInputData();
-        data.direction = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            data.gunChange = (byte)1;
+            Debug.Log("Pess1");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            data.gunChange = (byte)2;
+            Debug.Log("Pess2");
 
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            data.gunChange = 3;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            data.gunChange = 4;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            data.gunChange = 5;
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            data.gunChange = 6;
+        }
+        data.direction = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (_mouseButton0)
         {
             data.button |= NetworkInputData.MOUSEBUTTON1;
             _mouseButton0 = false;
         }
-        if (Input.GetKeyDown("1"))
+        if (_mouseButton0Up)
         {
-            data.gunChange = 1;
-        }
-        if (Input.GetKeyDown("2"))
-        {
-            data.gunChange = 2;
-
-        }
-        if (Input.GetKeyDown("3"))
-        {
-            data.gunChange = 3;
-        }
-        if (Input.GetKeyDown("4"))
-        {
-            data.gunChange = 4;
-        }
-        if (Input.GetKeyDown("5"))
-        {
-            data.gunChange = 5;
-
-        }
-        if (Input.GetKeyDown("6"))
-        {
-            data.gunChange = 6;
+            data.button |= NetworkInputData.MOUSEBUTTON2;
+            _mouseButton0Up = false;
         }
         input.Set(data);
     }

@@ -60,6 +60,7 @@ MonoBehaviour:
   Speed: 2
   FreezeTime: 0
   Freeze: 0
+  Web: {fileID: 4217006150825016699}
 --- !u!114 &11458250
 MonoBehaviour:
   m_ObjectHideFlags: 0

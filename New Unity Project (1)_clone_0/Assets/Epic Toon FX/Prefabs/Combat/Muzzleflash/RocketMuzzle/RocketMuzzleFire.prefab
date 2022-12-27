@@ -388,7 +388,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 0
       maxCurve:
@@ -441,7 +441,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 0
       maxCurve:
@@ -14418,6 +14418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroytime: 0.2
   timeRun: 0
+  dieDragon: 0
 --- !u!50 &7451122155101493771
 Rigidbody2D:
   serializedVersion: 4

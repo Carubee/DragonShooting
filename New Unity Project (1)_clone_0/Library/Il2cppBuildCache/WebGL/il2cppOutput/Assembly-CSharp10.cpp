@@ -30637,11 +30637,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIFont_Trim_mFFC156D226BAFD5EBB30B470105
 		Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * L_5;
 		L_5 = UIFont_get_texture_m6670A15055B42431091EAF594C0A5988585B7E80(__this, /*hidden argument*/NULL);
 		int32_t L_6;
-		L_6 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_5);
+		L_6 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_5);
 		Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * L_7;
 		L_7 = UIFont_get_texture_m6670A15055B42431091EAF594C0A5988585B7E80(__this, /*hidden argument*/NULL);
 		int32_t L_8;
-		L_8 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_7);
+		L_8 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_7);
 		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_9;
 		L_9 = NGUIMath_ConvertToPixels_mB14E4E1F52CBF0276BBD4C92EEBDDD389049B0A8(L_4, L_6, L_8, (bool)1, /*hidden argument*/NULL);
 		V_0 = L_9;
@@ -31187,10 +31187,10 @@ IL_000f:
 		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_27 = __this->get_mUVRect_5();
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_28 = V_0;
 		int32_t L_29;
-		L_29 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_28);
+		L_29 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_28);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_30 = V_0;
 		int32_t L_31;
-		L_31 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_30);
+		L_31 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_30);
 		Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  L_32;
 		L_32 = NGUIMath_ConvertToTexCoords_mC5028A5E111BF9655D7A800CC397319C109488BF(L_27, L_29, L_31, /*hidden argument*/NULL);
 		__this->set_mUVRect_5(L_32);

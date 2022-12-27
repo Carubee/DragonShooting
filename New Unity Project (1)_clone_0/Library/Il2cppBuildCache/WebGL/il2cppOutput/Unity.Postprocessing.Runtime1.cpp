@@ -29174,7 +29174,7 @@ IL_006c:
 		// else if (m_Result.width != context.width || m_Result.height != context.height)
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_15 = __this->get_m_Result_0();
 		int32_t L_16;
-		L_16 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_15);
+		L_16 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_15);
 		PostProcessRenderContext_t4001B4D308D662025D2A74FB357B9324C6751EF5 * L_17 = ___context0;
 		int32_t L_18;
 		L_18 = PostProcessRenderContext_get_width_m4965F17411CA0E2AEC993B02D9CEEB0E258E8A74_inline(L_17, /*hidden argument*/NULL);
@@ -29186,7 +29186,7 @@ IL_006c:
 	{
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_19 = __this->get_m_Result_0();
 		int32_t L_20;
-		L_20 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_19);
+		L_20 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_19);
 		PostProcessRenderContext_t4001B4D308D662025D2A74FB357B9324C6751EF5 * L_21 = ___context0;
 		int32_t L_22;
 		L_22 = PostProcessRenderContext_get_height_m3F500068E9E598DA75850D864AEC83708B1D9BD4_inline(L_21, /*hidden argument*/NULL);
@@ -29206,13 +29206,13 @@ IL_0092:
 		PostProcessRenderContext_t4001B4D308D662025D2A74FB357B9324C6751EF5 * L_25 = ___context0;
 		int32_t L_26;
 		L_26 = PostProcessRenderContext_get_width_m4965F17411CA0E2AEC993B02D9CEEB0E258E8A74_inline(L_25, /*hidden argument*/NULL);
-		VirtActionInvoker1< int32_t >::Invoke(5 /* System.Void UnityEngine.Texture::set_width(System.Int32) */, L_24, L_26);
+		VirtActionInvoker1< int32_t >::Invoke(6 /* System.Void UnityEngine.Texture::set_width(System.Int32) */, L_24, L_26);
 		// m_Result.height = context.height;
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_27 = __this->get_m_Result_0();
 		PostProcessRenderContext_t4001B4D308D662025D2A74FB357B9324C6751EF5 * L_28 = ___context0;
 		int32_t L_29;
 		L_29 = PostProcessRenderContext_get_height_m3F500068E9E598DA75850D864AEC83708B1D9BD4_inline(L_28, /*hidden argument*/NULL);
-		VirtActionInvoker1< int32_t >::Invoke(7 /* System.Void UnityEngine.Texture::set_height(System.Int32) */, L_27, L_29);
+		VirtActionInvoker1< int32_t >::Invoke(8 /* System.Void UnityEngine.Texture::set_height(System.Int32) */, L_27, L_29);
 		// reset = true;
 		V_0 = (bool)1;
 	}
@@ -29975,7 +29975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenSpaceReflectionsRenderer_CheckRT_m
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 ** L_6 = ___rt0;
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_7 = *((RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 **)L_6);
 		int32_t L_8;
-		L_8 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_7);
+		L_8 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_7);
 		int32_t L_9 = ___width1;
 		if ((!(((uint32_t)L_8) == ((uint32_t)L_9))))
 		{
@@ -29986,7 +29986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenSpaceReflectionsRenderer_CheckRT_m
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 ** L_10 = ___rt0;
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_11 = *((RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 **)L_10);
 		int32_t L_12;
-		L_12 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_11);
+		L_12 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_11);
 		int32_t L_13 = ___height2;
 		if ((((int32_t)L_12) == ((int32_t)L_13)))
 		{
@@ -30382,7 +30382,7 @@ IL_0101:
 		int32_t L_131 = V_1;
 		Texture2D_t9B604D0D8E28032123641A7E7338FA872E2698BF * L_132 = V_3;
 		int32_t L_133;
-		L_133 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_132);
+		L_133 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_132);
 		ScreenSpaceReflections_t72F3D0BFD060FD28231D41C2F235DFF1545ECF05 * L_134;
 		L_134 = PostProcessEffectRenderer_1_get_settings_m5FE0D0A8E427EF81096F8CBD6CEFFCDDE6166FD1_inline(__this, /*hidden argument*/PostProcessEffectRenderer_1_get_settings_m5FE0D0A8E427EF81096F8CBD6CEFFCDDE6166FD1_RuntimeMethod_var);
 		FloatParameter_t4C8D8D2C3227E9CAAC57869A84F0AE22F63E1AD0 * L_135 = L_134->get_thickness_10();
@@ -32909,7 +32909,7 @@ IL_0098:
 		// else if (rt.width != context.width || rt.height != context.height)
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_43 = V_1;
 		int32_t L_44;
-		L_44 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_43);
+		L_44 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_43);
 		PostProcessRenderContext_t4001B4D308D662025D2A74FB357B9324C6751EF5 * L_45 = ___context1;
 		int32_t L_46;
 		L_46 = PostProcessRenderContext_get_width_m4965F17411CA0E2AEC993B02D9CEEB0E258E8A74_inline(L_45, /*hidden argument*/NULL);
@@ -32921,7 +32921,7 @@ IL_0098:
 	{
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_47 = V_1;
 		int32_t L_48;
-		L_48 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_47);
+		L_48 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_47);
 		PostProcessRenderContext_t4001B4D308D662025D2A74FB357B9324C6751EF5 * L_49 = ___context1;
 		int32_t L_50;
 		L_50 = PostProcessRenderContext_get_height_m3F500068E9E598DA75850D864AEC83708B1D9BD4_inline(L_49, /*hidden argument*/NULL);
@@ -34225,7 +34225,7 @@ IL_0012:
 		// if (r.width == w && r.height == h && r.volumeDepth == d && r.format == format && r.enableRandomWrite == enableRandomWrite && (!force3D || (r.dimension == TextureDimension.Tex3D)))
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_5 = V_3;
 		int32_t L_6;
-		L_6 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_5);
+		L_6 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_5);
 		int32_t L_7 = ___w1;
 		if ((!(((uint32_t)L_6) == ((uint32_t)L_7))))
 		{
@@ -34235,7 +34235,7 @@ IL_0012:
 	{
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_8 = V_3;
 		int32_t L_9;
-		L_9 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_8);
+		L_9 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_8);
 		int32_t L_10 = ___h2;
 		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
 		{
@@ -34282,7 +34282,7 @@ IL_0012:
 	{
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_21 = V_3;
 		int32_t L_22;
-		L_22 = VirtFuncInvoker0< int32_t >::Invoke(8 /* UnityEngine.Rendering.TextureDimension UnityEngine.Texture::get_dimension() */, L_21);
+		L_22 = VirtFuncInvoker0< int32_t >::Invoke(9 /* UnityEngine.Rendering.TextureDimension UnityEngine.Texture::get_dimension() */, L_21);
 		if ((!(((uint32_t)L_22) == ((uint32_t)3))))
 		{
 			goto IL_005f;
@@ -34368,7 +34368,7 @@ IL_007e:
 		RenderTexture__ctor_m8E4220FDA652BA3CACE60FBA59D868B921C0F533(L_34, L_31, L_32, 0, L_33, /*hidden argument*/NULL);
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_35 = L_34;
 		int32_t L_36 = V_4;
-		VirtActionInvoker1< int32_t >::Invoke(9 /* System.Void UnityEngine.Texture::set_dimension(UnityEngine.Rendering.TextureDimension) */, L_35, L_36);
+		VirtActionInvoker1< int32_t >::Invoke(10 /* System.Void UnityEngine.Texture::set_dimension(UnityEngine.Rendering.TextureDimension) */, L_35, L_36);
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_37 = L_35;
 		Texture_set_filterMode_m045141DB0FEFE496885D45F5F23B15BC0E77C8D0(L_37, 1, /*hidden argument*/NULL);
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_38 = L_37;
@@ -34565,10 +34565,10 @@ IL_0068:
 		// int size = Mathf.Max(from.width, from.height);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_17 = ___from0;
 		int32_t L_18;
-		L_18 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_17);
+		L_18 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_17);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_19 = ___from0;
 		int32_t L_20;
-		L_20 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_19);
+		L_20 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_19);
 		int32_t L_21;
 		L_21 = Mathf_Max_mDE96ED504F75C9C7985CC49B099CF308AC52BF48(L_18, L_20, /*hidden argument*/NULL);
 		// size = Mathf.Max(size, dpth);
@@ -34578,10 +34578,10 @@ IL_0068:
 		// rt = Get(RenderTextureFormat.ARGBHalf, from.width, from.height, dpth, true, true);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_24 = ___from0;
 		int32_t L_25;
-		L_25 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_24);
+		L_25 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_24);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_26 = ___from0;
 		int32_t L_27;
-		L_27 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_26);
+		L_27 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_26);
 		int32_t L_28 = V_3;
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_29;
 		L_29 = TextureLerper_Get_m7BD996F475523844239018F193F65A66ED0DC2C8(__this, 2, L_25, L_27, L_28, (bool)1, (bool)1, /*hidden argument*/NULL);
@@ -34601,10 +34601,10 @@ IL_0068:
 		ComputeShader_tBEFDB4D759632A61AC138B2DAA292332BE7DAD30 * L_36 = V_4;
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_37 = ___from0;
 		int32_t L_38;
-		L_38 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_37);
+		L_38 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_37);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_39 = ___from0;
 		int32_t L_40;
-		L_40 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_39);
+		L_40 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_39);
 		int32_t L_41 = V_3;
 		float L_42 = ___t2;
 		Vector4_tA56A37FC5661BCC89C3DDC24BE12BA5BCB6A02C7  L_43;
@@ -34675,10 +34675,10 @@ IL_016e:
 		int32_t L_75 = V_1;
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_76 = ___to1;
 		int32_t L_77;
-		L_77 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_76);
+		L_77 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_76);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_78 = ___to1;
 		int32_t L_79;
-		L_79 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_78);
+		L_79 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_78);
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_80;
 		L_80 = TextureLerper_Get_m7BD996F475523844239018F193F65A66ED0DC2C8(__this, L_75, L_77, L_79, 1, (bool)0, (bool)0, /*hidden argument*/NULL);
 		V_0 = L_80;
@@ -34840,10 +34840,10 @@ IL_0058:
 		// int size = Mathf.Max(from.width, from.height);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_11 = ___from0;
 		int32_t L_12;
-		L_12 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_11);
+		L_12 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_11);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_13 = ___from0;
 		int32_t L_14;
-		L_14 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_13);
+		L_14 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_13);
 		int32_t L_15;
 		L_15 = Mathf_Max_mDE96ED504F75C9C7985CC49B099CF308AC52BF48(L_12, L_14, /*hidden argument*/NULL);
 		// size = Mathf.Max(size, dpth);
@@ -34853,10 +34853,10 @@ IL_0058:
 		// rt = Get(RenderTextureFormat.ARGBHalf, from.width, from.height, dpth, true, true);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_18 = ___from0;
 		int32_t L_19;
-		L_19 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_18);
+		L_19 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_18);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_20 = ___from0;
 		int32_t L_21;
-		L_21 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_20);
+		L_21 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_20);
 		int32_t L_22 = V_3;
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_23;
 		L_23 = TextureLerper_Get_m7BD996F475523844239018F193F65A66ED0DC2C8(__this, 2, L_19, L_21, L_22, (bool)1, (bool)1, /*hidden argument*/NULL);
@@ -34876,10 +34876,10 @@ IL_0058:
 		ComputeShader_tBEFDB4D759632A61AC138B2DAA292332BE7DAD30 * L_30 = V_4;
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_31 = ___from0;
 		int32_t L_32;
-		L_32 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_31);
+		L_32 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_31);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_33 = ___from0;
 		int32_t L_34;
-		L_34 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_33);
+		L_34 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_33);
 		int32_t L_35 = V_3;
 		float L_36 = ___t2;
 		Vector4_tA56A37FC5661BCC89C3DDC24BE12BA5BCB6A02C7  L_37;
@@ -34946,10 +34946,10 @@ IL_0157:
 		int32_t L_69 = V_1;
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_70 = ___from0;
 		int32_t L_71;
-		L_71 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_70);
+		L_71 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_70);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_72 = ___from0;
 		int32_t L_73;
-		L_73 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_72);
+		L_73 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_72);
 		RenderTexture_t5FE7A5B47EF962A0E8D7BEBA05E9FC87D49A1849 * L_74;
 		L_74 = TextureLerper_Get_m7BD996F475523844239018F193F65A66ED0DC2C8(__this, L_69, L_71, L_73, 1, (bool)0, (bool)0, /*hidden argument*/NULL);
 		V_0 = L_74;
@@ -35264,7 +35264,7 @@ IL_0040:
 	{
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_16 = ___to1;
 		int32_t L_17;
-		L_17 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_16);
+		L_17 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_16);
 		G_B10_0 = L_17;
 		goto IL_0060;
 	}
@@ -35273,7 +35273,7 @@ IL_005a:
 	{
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_18 = ___from0;
 		int32_t L_19;
-		L_19 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_18);
+		L_19 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_18);
 		G_B10_0 = L_19;
 	}
 
@@ -35393,7 +35393,7 @@ IL_00bd:
 	{
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_34 = ___to1;
 		int32_t L_35;
-		L_35 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_34);
+		L_35 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_34);
 		G_B22_0 = L_35;
 		goto IL_00d4;
 	}
@@ -35402,7 +35402,7 @@ IL_00ce:
 	{
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_36 = ___from0;
 		int32_t L_37;
-		L_37 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_36);
+		L_37 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_36);
 		G_B22_0 = L_37;
 	}
 
@@ -35452,10 +35452,10 @@ IL_00f2:
 		// if (from.width != to.width || from.height != to.height)
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_45 = ___from0;
 		int32_t L_46;
-		L_46 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_45);
+		L_46 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_45);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_47 = ___to1;
 		int32_t L_48;
-		L_48 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_47);
+		L_48 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_47);
 		if ((!(((uint32_t)L_46) == ((uint32_t)L_48))))
 		{
 			goto IL_010e;
@@ -35464,10 +35464,10 @@ IL_00f2:
 	{
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_49 = ___from0;
 		int32_t L_50;
-		L_50 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_49);
+		L_50 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_49);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_51 = ___to1;
 		int32_t L_52;
-		L_52 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_51);
+		L_52 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_51);
 		if ((((int32_t)L_50) == ((int32_t)L_52)))
 		{
 			goto IL_0116;

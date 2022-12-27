@@ -5,13 +5,13 @@ public class coinEffControl : MonoBehaviour
 {
     private Vector2 movement;
     private Rigidbody2D rb;
-    public float movespeed = 5;
+    public float movespeed = 10;
     public GameObject player;
 
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("InventoryFollow");
         Destroy(gameObject, 3f);
        
     }

@@ -78,22 +78,22 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[5] =
 };
 static const int32_t s_InvokerIndices[16] = 
 {
-	3430,
-	5319,
-	5470,
-	2123,
-	2207,
-	3465,
-	3496,
-	5593,
-	4905,
-	5538,
-	4886,
-	5295,
-	4124,
-	4124,
-	4886,
-	4881,
+	4041,
+	6339,
+	6506,
+	2449,
+	2548,
+	4081,
+	4114,
+	6652,
+	5823,
+	6584,
+	5802,
+	6312,
+	4898,
+	4898,
+	5802,
+	5796,
 };
 extern const CustomAttributesCacheGenerator g_NanoSockets_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_NanoSockets_CodeGenModule;

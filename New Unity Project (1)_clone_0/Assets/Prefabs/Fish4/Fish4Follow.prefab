@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 127844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.48444387, y: -0.063069716, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 215473972597829961}
   - {fileID: 5470082114083266082}
@@ -60,6 +60,7 @@ MonoBehaviour:
   Speed: 1
   FreezeTime: 0
   Freeze: 0
+  Web: {fileID: 5470082114083266076}
 --- !u!114 &11403558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +101,8 @@ MonoBehaviour:
   _hp: 0
   armor: 0
   _gold: 5
+  _gold_min: 3
+  _gold_max: 5
   armorEffect: {fileID: 0}
   healEffect: {fileID: 0}
   lockEffect: {fileID: 5470082114083266076}
@@ -110,6 +113,8 @@ MonoBehaviour:
   regenTime: 0
   evade: 0
   canEvade: 0
+  dieDragon: {fileID: 0}
+  dropItem: {fileID: 0}
 --- !u!95 &9528310
 Animator:
   serializedVersion: 3
@@ -377,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalRotation.w

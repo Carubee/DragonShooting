@@ -1646,6 +1646,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Input_GetAxisRaw_m6B145732584DA7EDEE6B3
 	float icallRetVal = _il2cpp_icall_func(___axisName0);
 	return icallRetVal;
 }
+// System.Boolean UnityEngine.Input::GetButton(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetButton_mD120F964CE816519CE7416BDF8DAEE32FDE83F3B (String_t* ___buttonName0, const RuntimeMethod* method)
+{
+	typedef bool (*Input_GetButton_mD120F964CE816519CE7416BDF8DAEE32FDE83F3B_ftn) (String_t*);
+	static Input_GetButton_mD120F964CE816519CE7416BDF8DAEE32FDE83F3B_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_GetButton_mD120F964CE816519CE7416BDF8DAEE32FDE83F3B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetButton(System.String)");
+	bool icallRetVal = _il2cpp_icall_func(___buttonName0);
+	return icallRetVal;
+}
 // System.Boolean UnityEngine.Input::GetButtonDown(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetButtonDown_m118FFE5239B51967E8EE77A3651B53E1E55412BA (String_t* ___buttonName0, const RuntimeMethod* method)
 {
@@ -1653,6 +1663,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetButtonDown_m118FFE5239B51967E8E
 	static Input_GetButtonDown_m118FFE5239B51967E8EE77A3651B53E1E55412BA_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Input_GetButtonDown_m118FFE5239B51967E8EE77A3651B53E1E55412BA_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetButtonDown(System.String)");
+	bool icallRetVal = _il2cpp_icall_func(___buttonName0);
+	return icallRetVal;
+}
+// System.Boolean UnityEngine.Input::GetButtonUp(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetButtonUp_mFE7C663734D39FA395E90CC845D9C04449B1A75A (String_t* ___buttonName0, const RuntimeMethod* method)
+{
+	typedef bool (*Input_GetButtonUp_mFE7C663734D39FA395E90CC845D9C04449B1A75A_ftn) (String_t*);
+	static Input_GetButtonUp_mFE7C663734D39FA395E90CC845D9C04449B1A75A_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_GetButtonUp_mFE7C663734D39FA395E90CC845D9C04449B1A75A_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetButtonUp(System.String)");
 	bool icallRetVal = _il2cpp_icall_func(___buttonName0);
 	return icallRetVal;
 }

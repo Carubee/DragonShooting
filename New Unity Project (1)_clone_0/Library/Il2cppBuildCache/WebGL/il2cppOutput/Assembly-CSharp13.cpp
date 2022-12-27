@@ -19495,8 +19495,6 @@ inline effScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818 * GameObjec
 }
 // System.Void effScoreTextControl::InitEffScore(UnityEngine.Vector3,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void effScoreTextControl_InitEffScore_mA073E60E046FBB501A5BBE57515E83E2EDBF4A95 (effScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ____trs0, int32_t ___gold1, const RuntimeMethod* method);
-// System.Void UiTextSpawmControl::PushGold(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_PushGold_m0A3DAB2F30E7E29DD20CFE14B891733ABCD0BF04 (UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * __this, int32_t ___gold0, const RuntimeMethod* method);
 // System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_SetInt_m2660AEEE642894B67FC56B1F93F6E9214D7F3E32 (String_t* ___key0, int32_t ___value1, const RuntimeMethod* method);
 // System.Void UnityEngine.PlayerPrefs::Save()
@@ -31685,12 +31683,12 @@ IL_0013:
 		// int tWidth = mainTex.width;
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_27 = ___mainTex3;
 		int32_t L_28;
-		L_28 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_27);
+		L_28 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_27);
 		V_6 = L_28;
 		// int tHeight = mainTex.height;
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_29 = ___mainTex3;
 		int32_t L_30;
-		L_30 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_29);
+		L_30 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_29);
 		V_7 = L_30;
 		// for (int row = 0; row < rows; ++row)
 		V_8 = 0;
@@ -32277,9 +32275,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_CallTextEff_m46A4696D
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4 = ____pos0;
 		int32_t L_5 = ___gold1;
 		effScoreTextControl_InitEffScore_mA073E60E046FBB501A5BBE57515E83E2EDBF4A95(L_3, L_4, L_5, /*hidden argument*/NULL);
-		// PushGold(gold);
-		int32_t L_6 = ___gold1;
-		UiTextSpawmControl_PushGold_m0A3DAB2F30E7E29DD20CFE14B891733ABCD0BF04(__this, L_6, /*hidden argument*/NULL);
 		// }
 		return;
 	}

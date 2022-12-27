@@ -11026,10 +11026,10 @@ IL_0038:
 	{
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_8 = ___image1;
 		int32_t L_9;
-		L_9 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_8);
+		L_9 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_8);
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_10 = ___image1;
 		int32_t L_11;
-		L_11 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_10);
+		L_11 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_10);
 		___imageAspect4 = ((float)((float)((float)((float)L_9))/(float)((float)((float)L_11))));
 	}
 

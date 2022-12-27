@@ -60,6 +60,7 @@ MonoBehaviour:
   Speed: 2
   FreezeTime: 0
   Freeze: 0
+  Web: {fileID: 2210386742077481883}
 --- !u!114 &11415040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +337,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
+--- !u!1 &2210386742077481883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4572166908939240136, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
+  m_PrefabInstance: {fileID: 2440747123132358995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2210386742077481893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}

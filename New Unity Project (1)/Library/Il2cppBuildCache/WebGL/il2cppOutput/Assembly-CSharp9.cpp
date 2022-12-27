@@ -17488,43 +17488,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonColor_OnHover_m34A7B1E228A8E4813
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	UIButtonColor_t8B2DF5E000B5807CC3AF3144E31A5984DAE24B9E * G_B8_0 = NULL;
-	UIButtonColor_t8B2DF5E000B5807CC3AF3144E31A5984DAE24B9E * G_B7_0 = NULL;
-	int32_t G_B9_0 = 0;
-	UIButtonColor_t8B2DF5E000B5807CC3AF3144E31A5984DAE24B9E * G_B9_1 = NULL;
+	UIButtonColor_t8B2DF5E000B5807CC3AF3144E31A5984DAE24B9E * G_B6_0 = NULL;
+	UIButtonColor_t8B2DF5E000B5807CC3AF3144E31A5984DAE24B9E * G_B5_0 = NULL;
+	int32_t G_B7_0 = 0;
+	UIButtonColor_t8B2DF5E000B5807CC3AF3144E31A5984DAE24B9E * G_B7_1 = NULL;
 	{
 		// if (isEnabled)
 		bool L_0;
 		L_0 = VirtFuncInvoker0< bool >::Invoke(4 /* System.Boolean UIButtonColor::get_isEnabled() */, __this);
 		if (!L_0)
 		{
-			goto IL_004a;
-		}
-	}
-	{
-		// if (gunMode.instance != null)
-		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_1 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_2;
-		L_2 = Object_op_Inequality_mDCB4E958808E725D0612CCABF340B284085F03D6(L_1, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0020;
+			goto IL_003d;
 		}
 	}
 	{
 		// gunMode.instance.canPlay = false;
-		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_3 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
-		L_3->set_canPlay_62((bool)0);
-	}
-
-IL_0020:
-	{
+		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_1 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
+		L_1->set_canPlay_62((bool)0);
 		// if (!mInitDone) OnInit();
-		bool L_4 = __this->get_mInitDone_11();
-		if (L_4)
+		bool L_2 = __this->get_mInitDone_11();
+		if (L_2)
 		{
-			goto IL_002e;
+			goto IL_0021;
 		}
 	}
 	{
@@ -17532,72 +17517,61 @@ IL_0020:
 		VirtActionInvoker0::Invoke(6 /* System.Void UIButtonColor::OnInit() */, __this);
 	}
 
-IL_002e:
+IL_0021:
 	{
 		// if (tweenTarget != null) SetState(isOver ? State.Hover : State.Normal, false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5 = __this->get_tweenTarget_4();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_tweenTarget_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_6;
-		L_6 = Object_op_Inequality_mDCB4E958808E725D0612CCABF340B284085F03D6(L_5, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		if (!L_6)
+		bool L_4;
+		L_4 = Object_op_Inequality_mDCB4E958808E725D0612CCABF340B284085F03D6(L_3, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		if (!L_4)
 		{
-			goto IL_004a;
+			goto IL_003d;
 		}
 	}
 	{
 		// if (tweenTarget != null) SetState(isOver ? State.Hover : State.Normal, false);
-		bool L_7 = ___isOver0;
-		G_B7_0 = __this;
-		if (L_7)
+		bool L_5 = ___isOver0;
+		G_B5_0 = __this;
+		if (L_5)
 		{
-			G_B8_0 = __this;
-			goto IL_0043;
+			G_B6_0 = __this;
+			goto IL_0036;
 		}
 	}
 	{
-		G_B9_0 = 0;
-		G_B9_1 = G_B7_0;
-		goto IL_0044;
+		G_B7_0 = 0;
+		G_B7_1 = G_B5_0;
+		goto IL_0037;
 	}
 
-IL_0043:
+IL_0036:
 	{
-		G_B9_0 = 1;
-		G_B9_1 = G_B8_0;
+		G_B7_0 = 1;
+		G_B7_1 = G_B6_0;
 	}
 
-IL_0044:
+IL_0037:
 	{
-		VirtActionInvoker2< int32_t, bool >::Invoke(13 /* System.Void UIButtonColor::SetState(UIButtonColor/State,System.Boolean) */, G_B9_1, G_B9_0, (bool)0);
+		VirtActionInvoker2< int32_t, bool >::Invoke(13 /* System.Void UIButtonColor::SetState(UIButtonColor/State,System.Boolean) */, G_B7_1, G_B7_0, (bool)0);
 	}
 
-IL_004a:
+IL_003d:
 	{
 		// if (!isOver)
-		bool L_8 = ___isOver0;
-		if (L_8)
+		bool L_6 = ___isOver0;
+		if (L_6)
 		{
-			goto IL_0065;
-		}
-	}
-	{
-		// if (gunMode.instance != null)
-		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_9 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_10;
-		L_10 = Object_op_Inequality_mDCB4E958808E725D0612CCABF340B284085F03D6(L_9, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		if (!L_10)
-		{
-			goto IL_0065;
+			goto IL_004b;
 		}
 	}
 	{
 		// gunMode.instance.canPlay = true;
-		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_11 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
-		L_11->set_canPlay_62((bool)1);
+		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_7 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
+		L_7->set_canPlay_62((bool)1);
 	}
 
-IL_0065:
+IL_004b:
 	{
 		// }
 		return;

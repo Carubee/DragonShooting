@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 139142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.48444387, y: -0.063069716, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 5812356522872833189}
   - {fileID: 898581126117400561}
@@ -50,6 +50,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b53b64b2d64cd84d9cd6b6b774b54af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 0
   BoundCircleRadius: 0.4
   RotateSpeed: 60
   Speed: 1
@@ -83,6 +86,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231b4857cddcd214bbe2942cf478d85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 0
   AnimationName: fish6swim
   AnimationNameDie: fish6die
   Hp: 10
@@ -92,6 +98,8 @@ MonoBehaviour:
   _hp: 0
   armor: 0
   _gold: 10
+  _gold_min: 0
+  _gold_max: 0
   armorEffect: {fileID: 0}
   healEffect: {fileID: 0}
   lockEffect: {fileID: 898581126117400527}
@@ -102,6 +110,8 @@ MonoBehaviour:
   regenTime: 0
   evade: 0
   canEvade: 0
+  dieDragon: {fileID: 0}
+  dropItem: {fileID: 0}
 --- !u!95 &9586442
 Animator:
   serializedVersion: 3
@@ -219,15 +229,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.25
+      value: 0.439475
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.439475
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.25
+      value: 0.439475
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalPosition.x
@@ -239,7 +249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalRotation.w

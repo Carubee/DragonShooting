@@ -31,7 +31,7 @@ public class UiTextSpawmControl : MonoBehaviour
     {
         GameObject obj = NGUITools.AddChild(_UiRoot, _TextChil);
         obj.GetComponent<effScoreTextControl>().InitEffScore(_pos, gold);
-        PushGold(gold);
+        //PushGold(gold);
         //PlayerPrefs.SetFloat("EXP", PlayerPrefs.GetFloat("EXP") + gold);
         //EXPbar.fillAmount = PlayerPrefs.GetFloat("EXP") / (450 + 500 * PlayerPrefs.GetInt("level", 1));
         //RocketImg.fillAmount += (float)((float)gold / 1000);

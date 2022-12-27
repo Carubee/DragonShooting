@@ -26,7 +26,7 @@ public class Swim : NetworkBehaviour
     public float Speed;
     public float FreezeTime;
     public bool Freeze;
-
+    public GameObject Web;
 
     void OnEnable()
     {
@@ -71,9 +71,11 @@ public class Swim : NetworkBehaviour
         {
             Freeze = false;
             FreezeTime = 0;
+            Web.SetActive(false);
+
         }
 
-        if(Freeze == false)
+        if (Freeze == false)
         transform.position += _tr.right * Time.deltaTime * Speed;
 
         if (acpectRotate)
@@ -91,6 +93,7 @@ public class Swim : NetworkBehaviour
         if (collision.gameObject.tag == "Arrow")
         {
             Freeze = true;
+            Web.SetActive(true);
         }
     }
     

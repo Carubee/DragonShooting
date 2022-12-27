@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 125560}
   m_LocalRotation: {x: 0, y: 0, z: -0.98328865, w: 0.18205345}
   m_LocalPosition: {x: 1.4990001, y: -1.5810001, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 2488466758938256403}
   - {fileID: 6216447500048478512}
@@ -61,6 +61,7 @@ MonoBehaviour:
   Speed: 2
   FreezeTime: 0
   Freeze: 0
+  Web: {fileID: 6216447500048478478}
 --- !u!114 &11436878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +115,7 @@ MonoBehaviour:
   evade: 0
   canEvade: 0
   dieDragon: {fileID: 6675517942575444336}
+  dropItem: {fileID: 0}
 --- !u!95 &9577262
 Animator:
   serializedVersion: 3
@@ -1241,7 +1243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4572166908939240182, guid: 372ae4b37e48e4c428edb9a1bda71262, type: 3}
       propertyPath: m_LocalRotation.w

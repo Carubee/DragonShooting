@@ -10348,14 +10348,14 @@ public:
 				struct
 				{
 					char ___gunChange_1_OffsetPadding[8];
-					// System.Int32 NetworkInputData::gunChange
-					int32_t ___gunChange_1;
+					// System.Byte NetworkInputData::gunChange
+					uint8_t ___gunChange_1;
 				};
 				#pragma pack(pop, tp)
 				struct
 				{
 					char ___gunChange_1_OffsetPadding_forAlignmentOnly[8];
-					int32_t ___gunChange_1_forAlignmentOnly;
+					uint8_t ___gunChange_1_forAlignmentOnly;
 				};
 				#pragma pack(push, tp, 1)
 				struct
@@ -10370,9 +10370,22 @@ public:
 					char ___button_2_OffsetPadding_forAlignmentOnly[12];
 					uint8_t ___button_2_forAlignmentOnly;
 				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___button2_3_OffsetPadding[16];
+					// System.Byte NetworkInputData::button2
+					uint8_t ___button2_3;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___button2_3_OffsetPadding_forAlignmentOnly[16];
+					uint8_t ___button2_3_forAlignmentOnly;
+				};
 			};
 		};
-		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[16];
+		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[20];
 	};
 
 public:
@@ -10385,9 +10398,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_gunChange_1() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___gunChange_1)); }
-	inline int32_t get_gunChange_1() const { return ___gunChange_1; }
-	inline int32_t* get_address_of_gunChange_1() { return &___gunChange_1; }
-	inline void set_gunChange_1(int32_t value)
+	inline uint8_t get_gunChange_1() const { return ___gunChange_1; }
+	inline uint8_t* get_address_of_gunChange_1() { return &___gunChange_1; }
+	inline void set_gunChange_1(uint8_t value)
 	{
 		___gunChange_1 = value;
 	}
@@ -10398,6 +10411,14 @@ public:
 	inline void set_button_2(uint8_t value)
 	{
 		___button_2 = value;
+	}
+
+	inline static int32_t get_offset_of_button2_3() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___button2_3)); }
+	inline uint8_t get_button2_3() const { return ___button2_3; }
+	inline uint8_t* get_address_of_button2_3() { return &___button2_3; }
+	inline void set_button2_3(uint8_t value)
+	{
+		___button2_3 = value;
 	}
 };
 #pragma pack(pop, tp)

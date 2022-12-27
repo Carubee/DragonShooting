@@ -13356,11 +13356,11 @@ IL_0296:
 		LTRect_t396F930F5DDFB848D6C6A9C7E01D3354C7D3C630 * L_114 = ((LTGUI_t2208CBE5EA6E2E929B83C3186AE0D6420CB30697_StaticFields*)il2cpp_codegen_static_fields_for(LTGUI_t2208CBE5EA6E2E929B83C3186AE0D6420CB30697_il2cpp_TypeInfo_var))->get_r_8();
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_115 = L_114->get_texture_17();
 		int32_t L_116;
-		L_116 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_115);
+		L_116 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_115);
 		LTRect_t396F930F5DDFB848D6C6A9C7E01D3354C7D3C630 * L_117 = ((LTGUI_t2208CBE5EA6E2E929B83C3186AE0D6420CB30697_StaticFields*)il2cpp_codegen_static_fields_for(LTGUI_t2208CBE5EA6E2E929B83C3186AE0D6420CB30697_il2cpp_TypeInfo_var))->get_r_8();
 		Texture_t9FE0218A1EEDF266E8C85879FE123265CACC95AE * L_118 = L_117->get_texture_17();
 		int32_t L_119;
-		L_119 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_118);
+		L_119 = VirtFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_118);
 		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_120 = V_3;
 		float L_121 = L_120.get_y_1();
 		(&V_3)->set_x_0(((float)il2cpp_codegen_multiply((float)((float)((float)((float)((float)L_116))/(float)((float)((float)L_119)))), (float)L_121)));

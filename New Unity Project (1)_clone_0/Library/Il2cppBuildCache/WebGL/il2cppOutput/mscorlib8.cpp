@@ -23192,6 +23192,13 @@ IL_001d:
 		return L_4;
 	}
 }
+// System.Int32 System.Runtime.InteropServices.Marshal::SizeOf(System.Type)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Marshal_SizeOf_m8CD931EE1525CF3F1A3628F71285862BC74A4A92 (Type_t * ___t0, const RuntimeMethod* method)
+{
+	typedef int32_t (*Marshal_SizeOf_m8CD931EE1525CF3F1A3628F71285862BC74A4A92_ftn) (Type_t *);
+	using namespace il2cpp::icalls;
+	return ((Marshal_SizeOf_m8CD931EE1525CF3F1A3628F71285862BC74A4A92_ftn)mscorlib::System::Runtime::InteropServices::Marshal::SizeOf) (___t0);
+}
 // System.Void System.Runtime.InteropServices.Marshal::StructureToPtr(System.Object,System.IntPtr,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_StructureToPtr_m49B48D001F4AA83C6B2AF0567DBC4AE2F070249C (RuntimeObject * ___structure0, intptr_t ___ptr1, bool ___fDeleteOld2, const RuntimeMethod* method)
 {

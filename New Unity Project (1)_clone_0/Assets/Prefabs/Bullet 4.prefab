@@ -417,6 +417,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8498578140808615822, guid: fcdc1f0ba9ca869459ba4636e8ef8c1f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8498578140808648940, guid: fcdc1f0ba9ca869459ba4636e8ef8c1f, type: 3}
       propertyPath: m_Name
       value: BulletSmallFire (1) Variant

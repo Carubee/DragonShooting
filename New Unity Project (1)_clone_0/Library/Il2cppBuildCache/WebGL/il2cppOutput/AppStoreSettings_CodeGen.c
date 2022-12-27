@@ -20,7 +20,7 @@ static Il2CppMethodPointer s_methodPointers[1] =
 };
 static const int32_t s_InvokerIndices[1] = 
 {
-	3558,
+	4195,
 };
 extern const CustomAttributesCacheGenerator g_AppStoreSettings_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AppStoreSettings_CodeGenModule;
