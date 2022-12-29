@@ -48,6 +48,5 @@ public class itemOpen : MonoBehaviour
     IEnumerator openInventory(float starttime)
     {
         yield return new WaitForSeconds(starttime);
-        openItem();
     }
 }

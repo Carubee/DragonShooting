@@ -15241,9 +15241,48 @@ public:
 					char ___button2_3_OffsetPadding_forAlignmentOnly[16];
 					uint8_t ___button2_3_forAlignmentOnly;
 				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___PosChange_6_OffsetPadding[20];
+					// System.Byte NetworkInputData::PosChange
+					uint8_t ___PosChange_6;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___PosChange_6_OffsetPadding_forAlignmentOnly[20];
+					uint8_t ___PosChange_6_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___LastPose_7_OffsetPadding[24];
+					// System.Byte NetworkInputData::LastPose
+					uint8_t ___LastPose_7;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___LastPose_7_OffsetPadding_forAlignmentOnly[24];
+					uint8_t ___LastPose_7_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___Switch_8_OffsetPadding[28];
+					// System.Boolean NetworkInputData::Switch
+					bool ___Switch_8;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___Switch_8_OffsetPadding_forAlignmentOnly[28];
+					bool ___Switch_8_forAlignmentOnly;
+				};
 			};
 		};
-		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[20];
+		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[32];
 	};
 
 public:
@@ -15278,9 +15317,225 @@ public:
 	{
 		___button2_3 = value;
 	}
+
+	inline static int32_t get_offset_of_PosChange_6() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___PosChange_6)); }
+	inline uint8_t get_PosChange_6() const { return ___PosChange_6; }
+	inline uint8_t* get_address_of_PosChange_6() { return &___PosChange_6; }
+	inline void set_PosChange_6(uint8_t value)
+	{
+		___PosChange_6 = value;
+	}
+
+	inline static int32_t get_offset_of_LastPose_7() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___LastPose_7)); }
+	inline uint8_t get_LastPose_7() const { return ___LastPose_7; }
+	inline uint8_t* get_address_of_LastPose_7() { return &___LastPose_7; }
+	inline void set_LastPose_7(uint8_t value)
+	{
+		___LastPose_7 = value;
+	}
+
+	inline static int32_t get_offset_of_Switch_8() { return static_cast<int32_t>(offsetof(NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81, ___Switch_8)); }
+	inline bool get_Switch_8() const { return ___Switch_8; }
+	inline bool* get_address_of_Switch_8() { return &___Switch_8; }
+	inline void set_Switch_8(bool value)
+	{
+		___Switch_8 = value;
+	}
 };
 #pragma pack(pop, tp)
 
+// Native definition for P/Invoke marshalling of NetworkInputData
+struct NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_marshaled_pinvoke
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___direction_0;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___direction_0_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___gunChange_1_OffsetPadding[8];
+					uint8_t ___gunChange_1;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___gunChange_1_OffsetPadding_forAlignmentOnly[8];
+					uint8_t ___gunChange_1_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___button_2_OffsetPadding[12];
+					uint8_t ___button_2;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___button_2_OffsetPadding_forAlignmentOnly[12];
+					uint8_t ___button_2_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___button2_3_OffsetPadding[16];
+					uint8_t ___button2_3;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___button2_3_OffsetPadding_forAlignmentOnly[16];
+					uint8_t ___button2_3_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___PosChange_6_OffsetPadding[20];
+					uint8_t ___PosChange_6;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___PosChange_6_OffsetPadding_forAlignmentOnly[20];
+					uint8_t ___PosChange_6_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___LastPose_7_OffsetPadding[24];
+					uint8_t ___LastPose_7;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___LastPose_7_OffsetPadding_forAlignmentOnly[24];
+					uint8_t ___LastPose_7_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___Switch_8_OffsetPadding[28];
+					int32_t ___Switch_8;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___Switch_8_OffsetPadding_forAlignmentOnly[28];
+					int32_t ___Switch_8_forAlignmentOnly;
+				};
+			};
+		};
+		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[32];
+	};
+};
+// Native definition for COM marshalling of NetworkInputData
+struct NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_marshaled_com
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___direction_0;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  ___direction_0_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___gunChange_1_OffsetPadding[8];
+					uint8_t ___gunChange_1;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___gunChange_1_OffsetPadding_forAlignmentOnly[8];
+					uint8_t ___gunChange_1_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___button_2_OffsetPadding[12];
+					uint8_t ___button_2;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___button_2_OffsetPadding_forAlignmentOnly[12];
+					uint8_t ___button_2_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___button2_3_OffsetPadding[16];
+					uint8_t ___button2_3;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___button2_3_OffsetPadding_forAlignmentOnly[16];
+					uint8_t ___button2_3_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___PosChange_6_OffsetPadding[20];
+					uint8_t ___PosChange_6;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___PosChange_6_OffsetPadding_forAlignmentOnly[20];
+					uint8_t ___PosChange_6_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___LastPose_7_OffsetPadding[24];
+					uint8_t ___LastPose_7;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___LastPose_7_OffsetPadding_forAlignmentOnly[24];
+					uint8_t ___LastPose_7_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___Switch_8_OffsetPadding[28];
+					int32_t ___Switch_8;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___Switch_8_OffsetPadding_forAlignmentOnly[28];
+					int32_t ___Switch_8_forAlignmentOnly;
+				};
+			};
+		};
+		uint8_t NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81__padding[32];
+	};
+};
 
 // NetworkInputPrototype
 #pragma pack(push, tp, 1)

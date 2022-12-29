@@ -22,7 +22,7 @@ public class NameInput : MonoBehaviour
         }
         input = PlayerPrefs.GetString("PlayerNickName");
         NamePlayer.text = PlayerPrefs.GetString("PlayerNickName");
-        if(input == "")
+        if (input == "")
         {
             NamePlayer.text = "Entername";
 

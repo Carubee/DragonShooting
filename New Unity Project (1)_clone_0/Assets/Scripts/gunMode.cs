@@ -72,88 +72,142 @@ public class gunMode : NetworkBehaviour
     [SerializeField] private AudioSource selectSeat;
     public NetworkString<_16> nickName { get; set; }
     [Networked] public bool enchance { get; set; }
-    [Networked] public int Rotation { get; set; }
+    [SerializeField] UILabel NameText;
+    [SerializeField] UILabel NameText2;
+    [SerializeField] UILabel NameText3;
+    [SerializeField] UILabel NameText4;
 
-    public void Awake()
+    [SerializeField] UILabel NamePlayer1;
+    [SerializeField] UILabel NamePlayer2;
+    [SerializeField] UILabel NamePlayer3;
+    [SerializeField] UILabel NamePlayer4;
+    [Networked] public string NameInput { get; set; }
+    [Networked] public int NumInput { get; set; }
+
+
+public void Awake()
     {
         firerateAmount = 0.5f;
         PlayerPrefs.GetInt("gold",200);
         PlayerPrefs.Save();
+        
+    }
+    public void Start()
+    {
+        NameInput = PlayerPrefs.GetString("PlayerNickName");
+
     }
     public override void Spawned()
     {
-        Rpc_SetNickName(PlayerPrefs.GetString("PlayerNickName"));
+        //Rpc_SetNickName(PlayerPrefs.GetString("PlayerNickName"));
         OnNickNameChanged();
         instance = this;
-        gunModel = 1;
+        if (Object.HasInputAuthority)
+        {
+
+            Rpc_ChangeGunServer(1);
+            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
+            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
+            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
+            NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+
+        }
+        else
+        {
+            ChangeGunVisual(gunModel);
+            ChangeName(NumInput, NameInput);
+            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
+            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
+            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
+            NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+
+        }
     }
    [Networked] public TickTimer delay { get; set; }
     public override void FixedUpdateNetwork()
     {
-        
-        if (GetInput(out NetworkInputData data) )
+
+        if (GetInput(out NetworkInputData data))
         {
-                
+
             transform.up = data.direction - new Vector2(transform.position.x, transform.position.y);
             if (delay.ExpiredOrNotRunning(Runner))
             {
                 {
-                    if ((data.button & NetworkInputData.MOUSEBUTTON1) != 0 )
+                    if ((data.button & NetworkInputData.MOUSEBUTTON1) != 0)
                     {
-                      Rpc_Bullet(gunModel, enchance);
+                        Rpc_Bullet(gunModel, enchance);
 
                     }
                     else
                     {
-                        if(gunModel ==6 )
+                        if (gunModel == 6)
                             Rpc_Laser(false);
                     }
                 }
             }
             if (!Object.HasInputAuthority) return;
-            switch (data.gunChange) 
+            switch (data.gunChange)
             {
                 case 1:
                     Rpc_ChangeGunServer(1);
                     break;
                 case 2:
                     Rpc_ChangeGunServer(2);
+
                     break;
                 case 3:
-                    gunControl.cost = 5;
-                    gunControl.damage = 2;
-                    gunModel = 3;
+
                     Rpc_ChangeGunServer(3);
                     break;
                 case 4:
                     Rpc_ChangeGunServer(4);
-                    gunControl.cost = 3;
-                    gunControl.damage = 3;
-                    gunModel = 4;
+
                     break;
                 case 5:
                     Rpc_ChangeGunServer(5);
-                    gunControl.cost = 15;
-                    gunControl.damage = 10;
-                    gunModel = 5;
+
                     break;
                 case 6:
                     Rpc_ChangeGunServer(6);
-                    gunControl.cost = 75;
-                    gunControl.damage = 10;
-                    gunModel = 6;
+
                     break;
             }
-            
+            switch (data.PosChange)
+            {
+                case 1:
+                    Rpc_ChangePos(1);
+                    Rpc_ChangeName(1, data.LastPose, NameInput);
+                    break;
+                case 2:
+                    Rpc_ChangePos(2);
+
+                    Rpc_ChangeName(2, data.LastPose, NameInput);
+
+                    break;
+                case 3:
+                    Rpc_ChangePos(3);
+
+                    Rpc_ChangeName(3, data.LastPose, NameInput);
+                    break;
+                case 4:
+                    Rpc_ChangePos(4);
+
+                    Rpc_ChangeName(4, data.LastPose, NameInput);
+                    break;
+            }
+
         }
-        
     }
     public void Update()
     {
 
         //if (Runner.IsServer) return;
-        
 
+        if (Object.HasInputAuthority && Input.GetKeyDown(KeyCode.R))
+        {
+            RPC_SendMessage(NameInput);
+        }
         if (!canPlay) return;
         if (Input.GetKeyDown("space"))
         {
@@ -164,84 +218,139 @@ public class gunMode : NetworkBehaviour
         {
             TimeDouble += Time.deltaTime;
         }
-        //Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //transform.up = mousePos - new Vector2(transform.position.x, transform.position.y);
-        //Rpc_RotateCilent(mousePos);
-
-
+      
         if (firerate <= 2)
             firerate += Time.deltaTime;
-        //if (Input.GetMouseButtonUp(0) || PlayerPrefs.GetInt("gold", 1000) < gunControl.cost && gunModel == 6)
-        //{
-        //    LaserServerRpc(false);
-        //}
-
-        //if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel != 4)
-        //{
-
-        //    if (gunModel == 6)
-        //    {
-        //        LaserServerRpc(true);
-        //    }
-        //    if (firerate >= firerateAmount)
-        //    {
-        //        if (TimeDouble < 10)
-        //        {
-        //            //PlayerShootGunServerRpc(bulletTypeValue.Value, true);
-        //            Rpc_Shoot(gunModel, true);
-        //        }
-        //        else
-        //        {
-        //            //PlayerShootGunServerRpc(bulletTypeValue.Value, false);
-        //            Rpc_Shoot(gunModel, false);
-
-        //        }
-        //        if (item.instace.spare == false)
-        //        {
-
-        //            //if (bulletTypeValue.Value != 4)
-        //            //    PlayerShootGunServerRpc(bulletTypeValue.Value, DoubleBullet.Value);
-        //            UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
-
-        //        }
-        //        if (item.instace.spare == true)
-        //        {
-        //            randomFreefire = UnityEngine.Random.Range(0, 3);
-        //            if (randomFreefire == 1 || randomFreefire == 2)
-        //                UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
-        //        }
-
-
-        //        firerate = 0;
-
-        
-        //if (Input.GetMouseButton(0) && PlayerPrefs.GetInt("gold", 1000) >= gunControl.cost && canPlay == true && OpenOptioon.instant.openMenu == false && gunModel == 4)
-        //{
-        //    if (firerate >= 0.1)
-        //    {
-
-        //        if (TimeDouble < 10)
-        //        {
-        //            Rpc_Shoot(gunModel, true);
-        //            enchanceShoot.Play();
-        //        }
-        //        else
-        //        {
-        //            Rpc_Shoot(gunModel, false);
-        //            normalShoot.Play();
-
-        //        }
-        //        firerate = 0;
-        //        UiTextSpawmControl.Instance.MinusGold(3);
-        //    }
-
-        //}
         
     }
+    public Text _messages;
 
-    [Networked] public int gunModel { get; set; }
-    
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    public void RPC_SendMessage(string message, RpcInfo info = default)
+    {
+        if (_messages == null)
+            _messages = FindObjectOfType<Text>();
+        if (info.IsInvokeLocal)
+            Debug.Log ( $"You said: {message}");
+        else
+            Debug.Log($"Some other player said: {message}\n");
+        _messages.text += message;
+    }
+    private void OnNickNameChanged()
+    {
+        Name.text = nickName.ToString();
+    }
+    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
+    public void Rpc_SetNickName(string nickname)
+    {
+        this.nickName = nickname;
+    }
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    public void Rpc_ChangeName(int gunValue,int last, string Name)
+    {
+
+        Debug.Log(gunValue + " = " + last);
+        if (last == 1)
+        {
+            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
+
+            NameText.text = "Select";
+        }
+
+        if (last == 2)
+        {
+            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
+
+            NameText2.text = "Select";
+        }
+
+        if (last == 3)
+        {
+            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
+
+            NameText3.text = "Select";
+        }
+        if (last == 4)
+        {
+            NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+
+            NameText4.text = "Select";
+        }
+        
+            if (gunValue == 1)
+            {
+                NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
+            NumInput = gunValue;
+
+            NameText.text = Name;
+            }
+            if (gunValue == 2)
+            {
+                NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
+            NumInput = gunValue;
+
+            NameText2.text = Name;
+            }
+            if (gunValue == 3)
+            {
+                NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
+            NumInput = gunValue;
+
+            NameText3.text = Name;
+            }
+            if (gunValue == 4)
+            {
+                NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+            NumInput = gunValue;
+
+            NameText4.text = Name;
+            } 
+    }
+    public void ChangeName(int gunValue, string Name)
+    {
+        
+        if (gunValue == 1)
+        {
+            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
+
+            NameText.text = Name;
+        }
+        if (gunValue == 2)
+        {
+            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
+
+            NameText2.text = Name;
+        }
+        if (gunValue == 3)
+        {
+            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
+
+            NameText3.text = Name;
+        }
+        if (gunValue == 4)
+        {
+            NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+
+            NameText4.text = Name;
+        }
+    }
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
+    public void Rpc_ChangePos(int gunValue)
+    {
+        selectSeat.Play();
+        canPlay = true;
+        if (gunValue == 1)
+            transform.position = new Vector3(-3.129f, -3.311f, -4.55f);
+        if (gunValue == 2)
+            transform.position = new Vector3(3.27f, -3.273f, -4.55f);
+        if (gunValue == 3)
+            transform.position = new Vector3(-3.168f, 3.25f, -4.55f);
+        if (gunValue == 4)
+            transform.position = new Vector3(3.222f, 3.286f, -4.55f);
+    }
+    [Networked] public int gunModel { get; set; }
+
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
     public void Rpc_ChangeGunServer(int gunValue)
     {
         if (gunValue == 4)
@@ -328,27 +437,66 @@ public class gunMode : NetworkBehaviour
             gunModel = 6;
         }
     }
-    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
-    public void Rpc_Shoot(int shootType, bool enchanceTo)
+        public void ChangeGunVisual(int gunValue)
     {
-        gunModel = shootType;
-        enchance = enchanceTo;
-        showResultClientRpc(shootType, enchanceTo);
+        
+        if (gunValue == 1)
+        {
+            normalGun.SetActive(true);
+            longGun.SetActive(false);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(false);
+        }
+        if (gunValue == 2)
+        {
+            normalGun.SetActive(false);
+            longGun.SetActive(true);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(false);
+        }
+        if (gunValue == 3)
+        {
+            normalGun.SetActive(false);
+            longGun.SetActive(false);
+            shotGun.SetActive(true);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(false);
+        }
+        if (gunValue == 4)
+        {
+            normalGun.SetActive(false);
+            longGun.SetActive(false);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(true);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(false);
+        }
+        if (gunValue == 5)
+        {
+            normalGun.SetActive(false);
+            longGun.SetActive(false);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(true);
+            laserGun.SetActive(false);
+        }
+        if (gunValue == 6)
+        {
+            normalGun.SetActive(false);
+            longGun.SetActive(false);
+            shotGun.SetActive(false);
+            gatingGun.SetActive(false);
+            balistaGun.SetActive(false);
+            laserGun.SetActive(true);
+        }
     }
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
-    public void showResultClientRpc(int bulltetType, bool enchance2)
-    {        
-        Rpc_Bullet(bulltetType, enchance2);
-    }
-    public void LaserServerRpc(bool show)
-    {
-        LaserClientRpc(show);
-    }
-    [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
-    public void LaserClientRpc(bool show)
-    {
-        Rpc_Laser(show);
-    }
+    
+   
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
     public void Rpc_Bullet(int gunmode, bool enchance3)
     {
@@ -532,11 +680,12 @@ public class gunMode : NetworkBehaviour
         }
         
     }
+    
     public int lastSeat;
+   
     [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
     public void Rpc_Spawn(int seatNum)
     {
-
         selectSeat.Play();
         if (seatNum == 1)
         {
@@ -556,8 +705,8 @@ public class gunMode : NetworkBehaviour
             transform.position = new Vector3(3.222f, 3.286f, -4.55f);
         }
         lastSeat = seatNum - 1;
-        NetworkManagerUI.instance. Rpc_SeatDis2(seatNum - 1);
-        NetworkManagerUI.instance.Rpc_SeatDis(seatNum - 1);
+        //NetworkManagerUI.instance. Rpc_SeatDis2(seatNum - 1);
+        //NetworkManagerUI.instance.Rpc_SeatDis(seatNum - 1);
 
     }
     public void DoubleDamage(float TimeDouble2)
@@ -627,28 +776,6 @@ public class gunMode : NetworkBehaviour
         }
     }
    
-    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
-    public void Rpc_RotateCilent(Vector2 angle)
-    {
-        transform.up = angle - new Vector2(transform.position.x, transform.position.y);
-
-    }
-    
-    private void OnNickNameChanged()
-    {
-        Name.text = nickName.ToString();
-    } 
-    [Rpc(RpcSources.InputAuthority,RpcTargets.StateAuthority)]
-    public void Rpc_SetNickName(string nickname)
-    {
-        this.nickName = nickname;
-    }
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Coin")
-        {
-            coinSound.Play();
-        }
-    }
-
+   
+   
 }

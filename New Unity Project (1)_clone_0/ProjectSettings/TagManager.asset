@@ -18,6 +18,7 @@ TagManager:
   - SlotPanel
   - Coin
   - InventoryFollow
+  - NameText
   layers:
   - Default
   - TransparentFX

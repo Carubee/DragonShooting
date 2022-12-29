@@ -3939,6 +3939,24 @@ public:
 };
 
 
+// MyButton
+struct MyButton_t2AE24CA4A45460C7744AC3D52749C3D90BD5B733 
+{
+public:
+	// System.Int32 MyButton::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(MyButton_t2AE24CA4A45460C7744AC3D52749C3D90BD5B733, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // UnityEngine.Object
 struct Object_tF2F3778131EFF286AF62B7B013A170F95A91571A  : public RuntimeObject
 {
@@ -15795,6 +15813,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MusicSetting_tDDB5B8E18A52DF4665A10277AEA56E2
 		return L_40;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

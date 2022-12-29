@@ -8,21 +8,18 @@ public class NetworkManagerUI : NetworkBehaviour
 {
      public static NetworkManagerUI instance;
     [SerializeField] private GameObject playerGun;
-    [SerializeField] GameObject[] seatEmpty;
+    public GameObject[] seatEmpty;
     [SerializeField] GameObject[] seatAlready;
     [SerializeField] UILabel[] PlayerName;
     [SerializeField] UILabel[] PlayerNameMulti;
     [SerializeField] string name;
-    int seatNum;
+    [Networked] public int seatNum { get; set; }
     private void Start()
     {
         instance = this;
-        for (int i = 0; i < seatEmpty.Length; i++)
-        {
-            PlayerName[i].text = NameInput.Instance.input;
-        }
+       
     }
-
+    
     public void Rpc_StartClient()
     {
 
@@ -31,7 +28,7 @@ public class NetworkManagerUI : NetworkBehaviour
             if (Runner == null) return;
             gunMode.instance.Rpc_Spawn(1);
             gunMode.instance.canPlay = true;
-            selectSeat(seatNum);
+        Rpc_selectSeat(seatNum);
         
     }
 
@@ -43,7 +40,7 @@ public class NetworkManagerUI : NetworkBehaviour
             if (Runner == null) return;
             gunMode.instance.Rpc_Spawn(2);
             gunMode.instance.canPlay = true;
-            selectSeat(seatNum);
+        Rpc_selectSeat(seatNum);
         
     }
 
@@ -54,7 +51,7 @@ public class NetworkManagerUI : NetworkBehaviour
         if (Runner == null) return;
         gunMode.instance.Rpc_Spawn(3);
         gunMode.instance.canPlay = true;
-        selectSeat(seatNum);
+        Rpc_selectSeat(seatNum);
     }
 
     public void Rpc_StartClient4()
@@ -64,29 +61,45 @@ public class NetworkManagerUI : NetworkBehaviour
         if (Runner == null) return;
         gunMode.instance.Rpc_Spawn(4);
         gunMode.instance.canPlay = true;
-        selectSeat(seatNum);
+        Rpc_selectSeat(seatNum);
     }
-    public void selectSeat(int numberSeat)
+    public void Rpc_selectSeat(int numberSeat)
     {
         for(int i = 0 ; i < seatEmpty.Length; i++)
         {
             seatAlready[i].SetActive(false);
-
+            
         }
         seatEmpty[numberSeat].SetActive(false);
         seatAlready[numberSeat].SetActive(true);
+    }
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    public void Rpc_nameSeat(int numberSeat)
+    {
+        PlayerName[numberSeat].text = gunMode.instance.nickName.ToString();
+
+    }
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void Rpc_nameOther(int numberSeat)
+    {
+        PlayerNameMulti[numberSeat].text = gunMode.instance.nickName.ToString();
+
     }
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     public void Rpc_LastSeat(int seat)
     {
         seatEmpty[seat].SetActive(true);
-        PlayerNameMulti[seat].text = "select";
+        //PlayerNameMulti[seat].text = "select";
     }
         //สร้างชื่อตัวเองให้คนอื่นเห็น
         [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     public void Rpc_SeatDis2(int seat )
     {
-        PlayerNameMulti[seat].text = gunMode.instance.nickName.ToString();
+        for(int i = 0;i < PlayerNameMulti.Length;i++)
+        {
+            PlayerNameMulti[i].text = "Select";
+        }
+        PlayerNameMulti[seat].text = "BA";
         //seatEmpty[seat].SetActive(true);
 
     }
@@ -94,6 +107,6 @@ public class NetworkManagerUI : NetworkBehaviour
     [Rpc(RpcSources.StateAuthority, RpcTargets.Proxies)]
     public void Rpc_SeatDis(int seat)
     {
-        seatEmpty[seat].SetActive(false);
+        //seatEmpty[seat].SetActive(false);
     }
 }

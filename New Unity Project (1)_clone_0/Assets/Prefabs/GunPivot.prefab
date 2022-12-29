@@ -199,7 +199,8 @@ MonoBehaviour:
   coinSound: {fileID: -3727794402822381593}
   selectSeat: {fileID: 7101470351400340850}
   _enchance: 0
-  _Rotation: 0
+  NameText:
+  - {fileID: 0}
   _gunModel: 0
   lastSeat: 0
 --- !u!114 &285201116038492732

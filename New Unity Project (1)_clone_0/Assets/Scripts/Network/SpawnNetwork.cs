@@ -88,15 +88,13 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             Vector3 spawnPos = new Vector3(0, 90, 0);
             NetworkObject networkObject = runner.Spawn(_playerPrefab, spawnPos, Quaternion.identity, player);
             _spawnedCharacter.Add(player, networkObject);
-            gunMode.instance.Rpc_ChangeGunServer(1);
             if (!FirstSpawn)
             {
                 _runner.Spawn(Fishspawn);
                 FirstSpawn = true;
             }
-
         }
-
+        
 
 
     }
@@ -133,7 +131,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             data.gunChange = 6;
         }
         data.direction = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (_mouseButton0)
+        if (_mouseButton0 )
         {
             data.button |= NetworkInputData.MOUSEBUTTON1;
             _mouseButton0 = false;
@@ -143,16 +141,50 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             data.button |= NetworkInputData.MOUSEBUTTON2;
             _mouseButton0Up = false;
         }
+        //ตำแหน่งใหม่
+        if (TestButton.instancel.Switch)
+        {
+            if (TestButton.instancel.LastPos == 1)
+            {
+                data.LastPose = 1;
+            }
+            if (TestButton.instancel.LastPos == 2)
+            {
+                data.LastPose = 2;
+            }
+            if (TestButton.instancel.LastPos == 3)
+            {
+                data.LastPose = 3;
+            }
+            if (TestButton.instancel.LastPos == 4)
+            {
+                data.LastPose = 4;
+            }
+            //ตำแหน่งใหม่
+            if (TestButton.instancel.Pos == 1)
+            {
+                data.PosChange = 1;
+            }
+            if (TestButton.instancel.Pos == 2)
+            {
+                data.PosChange = 2;
+            }
+            if (TestButton.instancel.Pos == 3)
+            {
+                data.PosChange = 3;
+            }
+            if (TestButton.instancel.Pos == 4)
+            {
+                data.PosChange = 4;
+            }
+            TestButton.instancel.Switch = false;
+        }
         input.Set(data);
     }
 
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
     {
-        if(_spawnedCharacter.TryGetValue(player,out NetworkObject networkObject))
-        {
-            runner.Despawn(networkObject);
-            _spawnedCharacter.Remove(player);
-        }
+        
     }
 
     public void OnInputMissing(NetworkRunner runner, PlayerRef player, NetworkInput input)

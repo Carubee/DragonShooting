@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad489340f5ecec84484b55df9ff4cb17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 10
+  movespeed: 5
   player: {fileID: 0}
   InventoryThis: {fileID: 0}
   openPop: {fileID: 7106607425142242702}

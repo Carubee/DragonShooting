@@ -173,9 +173,10 @@ public class FishControl : NetworkBehaviour
                     if(itemDrop == 0)
                         Instantiate(Resources.Load("Item"), new Vector3(transform.position.x, transform.position.y, -4.3f), Quaternion.identity);
 
-
+                    RPC_SendMessage("Hey Mate!");
                     //gunMode.instance.MoneyPlayer += _gold;
-                    Debug.Log(Runner.UserId);
+                    //Debug.Log(gunMode.instance.NameInput);
+
                     Runner.Despawn(this.Object,true);
                     //FishManage.Instance._FishMange.Remove(transform);
                     
@@ -194,7 +195,15 @@ public class FishControl : NetworkBehaviour
         Destroy(gameObject);
 
     }
-
+    [Rpc(RpcSources.Proxies, RpcTargets.Proxies)]
+    public void RPC_SendMessage(string message, RpcInfo info = default)
+    {
+        
+        if (info.IsInvokeLocal)
+            Debug.Log( $"You said: {message}\n");
+        else
+            Debug.Log($"Some other player said: {message}\n");
+    }
 
     void OnBecameVisible()
     {
