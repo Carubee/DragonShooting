@@ -535,6 +535,7 @@
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Blood.cs" />
     <Compile Include="Assets\Scripts\Bonus3Control.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Sepia.cs" />
+    <Compile Include="Assets\Scripts\TestButton.cs" />
     <Compile Include="Assets\Scripts\Bonus1Control.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\SpatializerHelper.cs" />
     <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Singleton\SoundGroupOrganizer.cs" />
@@ -591,7 +592,7 @@
     <Compile Include="Assets\Scripts\ButtonStartControl.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionPeriodic.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
-    <Compile Include="Assets\Scripts\TestButton.cs" />
+    <Compile Include="Assets\CheckUID.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

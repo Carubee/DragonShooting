@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1964761836439622335}
   - component: {fileID: 2665646938376494943}
   - component: {fileID: -1367567923009167578}
+  - component: {fileID: 5516839402818510112}
   m_Layer: 0
   m_Name: Bullet 3
   m_TagString: Untagged
@@ -188,6 +189,18 @@ MonoBehaviour:
     RotTeleportRadians: 1.5
   UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
+--- !u!114 &5516839402818510112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2447030445355977266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d901831f86af8545add6c2f6778fdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4227468661462355128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -356,15 +369,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 463606, guid: 8a30595d8f5ffe244b5b70512f0dc5fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 463606, guid: 8a30595d8f5ffe244b5b70512f0dc5fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 463606, guid: 8a30595d8f5ffe244b5b70512f0dc5fc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 109.52
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 463606, guid: 8a30595d8f5ffe244b5b70512f0dc5fc, type: 3}
       propertyPath: m_LocalRotation.w

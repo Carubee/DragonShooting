@@ -49,7 +49,7 @@ public class WebControl : MonoBehaviour
     {
         if (col.gameObject.tag == "fish")
         {
-            col.GetComponent<FishControl>().hitDame(dame, gameObject);
+            //col.GetComponent<FishControl>().hitDame(dame, gameObject);
         }
     }
 

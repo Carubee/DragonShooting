@@ -25,16 +25,7 @@ public class effScoreTextControl : MonoBehaviour
         LeanTween.move(gameObject, a + Vector3.up * 0.1f, 0.8f).setOnComplete(() =>
         {
             Destroy(gameObject);
-            if (item.instace.doubleGold == true)
-            {
-                UiTextSpawmControl.Instance.PushGold(gold * 2);
-
-            }
-            else
-            {
-                UiTextSpawmControl.Instance.PushGold(gold );
-
-            }
+            
         });
     }
 

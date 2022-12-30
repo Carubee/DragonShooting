@@ -44,10 +44,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c93f05d2c7ddd40939065bd8c4c560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
   _interpolationDataSource: 0
   _pre:
   - {fileID: 166954, guid: 0be1b07c9a43aad48b28061c34b72695, type: 3}
   - {fileID: 187452, guid: 04cf361d708cd124c899f51aadf8455d, type: 3}
+  - {fileID: 142098, guid: 59663b2781ca7884788d2b0817d2659e, type: 3}
+  - {fileID: 127844, guid: dca6cca6e76c9b2429e6386e3b1c91d2, type: 3}
+  - {fileID: 158046, guid: 904e0bb7a3152d44088cf22b33063d6d, type: 3}
   countTime: 5
   RndCountTime: 1
   StartWaitTime: 2

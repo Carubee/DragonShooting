@@ -40,9 +40,10 @@ public class FishControl : NetworkBehaviour
 
     public GameObject dieDragon;
     [SerializeField] GameObject dropItem;
-
+    public static FishControl instance;
     public void Start()
     {
+        instance = this;
         _checkInvisible = false;
         _ani = GetComponent<Animator>();
         //_ani.Play(AnimationName, 0, Random.Range(0f, 1f));
@@ -88,22 +89,7 @@ public class FishControl : NetworkBehaviour
         {
             regenTime += Time.deltaTime;
         }
-        if (Input.GetKeyDown("1"))
-        {
-            if (item.instace.tracker == true)
-            {
-                gameObject.tag = "fish";
 
-            }
-        }
-        if (item.instace.tracker == false)
-        {
-            gameObject.tag = "fish";
-        }
-        if (_hp <= 0 && item.instace.tracker == true)
-        {
-            gameObject.tag = "fish";
-        }
     }
     private void OnMouseDown()
     {
@@ -113,7 +99,8 @@ public class FishControl : NetworkBehaviour
             lockEffect.SetActive(true);
         }
     }
-    public void hitDame(int dame, GameObject obj)
+    
+    public void hitDame(int dame, GameObject obj, string damageBy )
     {
         if (armorCreate == true)
         {
@@ -148,6 +135,19 @@ public class FishControl : NetworkBehaviour
 
                 if (_hp <= 0)
                 {
+                   
+                    //Instantiate(dieDragon,dieDragon.transform.position , dieDragon.transform.rotation);
+
+                    if (item.instace.doubleGold == true)
+                    {
+                        gunMode.instance.dropLocal(damageBy, _gold * 2, new Vector3(transform.position.x, transform.position.y, -4.55f));
+
+                    }
+                    else
+                    {
+                        gunMode.instance.dropLocal(damageBy, _gold, new Vector3(transform.position.x, transform.position.y, -4.55f));
+                    }
+                    
                     if (_callDie != null)
                     {
                         _callDie();
@@ -157,34 +157,21 @@ public class FishControl : NetworkBehaviour
                     _swim.enabled = false;
                     _ani.Play(AnimationNameDie, 0, 0);
                     GetComponent<BoxCollider2D>().enabled = false;
-                    Instantiate(Resources.Load("coinEff"),new Vector3 (transform.position.x, transform.position.y , -4.55f) , Quaternion.identity);
-                    //Instantiate(dieDragon,dieDragon.transform.position , dieDragon.transform.rotation);
 
-                    if (item.instace.doubleGold == true)
-                    {
-                        UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold * 2);
-                    }
-                    else
-                    {
-                        if(Runner.UserId == Runner.UserId)
-                        UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
-                    }
-                    int itemDrop = Random.Range(0, 21);
-                    if(itemDrop == 0)
-                        Instantiate(Resources.Load("Item"), new Vector3(transform.position.x, transform.position.y, -4.3f), Quaternion.identity);
 
-                    RPC_SendMessage("Hey Mate!");
+
+
                     //gunMode.instance.MoneyPlayer += _gold;
                     //Debug.Log(gunMode.instance.NameInput);
 
-                    Runner.Despawn(this.Object,true);
+                    //Runner.Despawn(this.Object,true);
                     //FishManage.Instance._FishMange.Remove(transform);
-                    
+
                 }
             }
         }
     }
-
+    
     public void CollisionWithWave()
     {
         if (_callDie != null)
@@ -195,15 +182,7 @@ public class FishControl : NetworkBehaviour
         Destroy(gameObject);
 
     }
-    [Rpc(RpcSources.Proxies, RpcTargets.Proxies)]
-    public void RPC_SendMessage(string message, RpcInfo info = default)
-    {
-        
-        if (info.IsInvokeLocal)
-            Debug.Log( $"You said: {message}\n");
-        else
-            Debug.Log($"Some other player said: {message}\n");
-    }
+
 
     void OnBecameVisible()
     {
@@ -268,16 +247,5 @@ public class FishControl : NetworkBehaviour
         Destroy(gameObject);
 
     }
-    public void DeadServerRpc()
-    {
-        DeadServerRpc();
-    }
-    public void DeadClientRpc()
-    {
-        DeadClientRpc();
-    }
-    public void DeadResult()
-    {
-
-    }
+   
 }

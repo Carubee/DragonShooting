@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using CodeMonkey.Utils;
 using Fusion;
 
-public class gunMode : NetworkBehaviour
+public class gunMode : NetworkBehaviour , IPlayerLeft
 {
     public int MoneyPlayer;
     public string mode;
@@ -70,7 +70,10 @@ public class gunMode : NetworkBehaviour
     [SerializeField] private AudioSource laserShoot;
     [SerializeField] private AudioSource coinSound;
     [SerializeField] private AudioSource selectSeat;
+
+    [Networked(OnChanged = nameof(OnNickNameChanged))]
     public NetworkString<_16> nickName { get; set; }
+    
     [Networked] public bool enchance { get; set; }
     [SerializeField] UILabel NameText;
     [SerializeField] UILabel NameText2;
@@ -85,32 +88,29 @@ public class gunMode : NetworkBehaviour
     [Networked] public int NumInput { get; set; }
 
 
-public void Awake()
+    public void Awake()
     {
         firerateAmount = 0.5f;
         PlayerPrefs.GetInt("gold",200);
         PlayerPrefs.Save();
-        
     }
     public void Start()
     {
-        NameInput = PlayerPrefs.GetString("PlayerNickName");
 
     }
     public override void Spawned()
     {
+
         //Rpc_SetNickName(PlayerPrefs.GetString("PlayerNickName"));
-        OnNickNameChanged();
         instance = this;
         if (Object.HasInputAuthority)
         {
-
+            Rpc_SetNickName(PlayerPrefs.GetString("PlayerNickName"));
             Rpc_ChangeGunServer(1);
             NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
             NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
             NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
             NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
-
         }
         else
         {
@@ -136,7 +136,7 @@ public void Awake()
                 {
                     if ((data.button & NetworkInputData.MOUSEBUTTON1) != 0)
                     {
-                        Rpc_Bullet(gunModel, enchance);
+                        Rpc_Bullet(gunModel, item.instace.doubleDamage);
 
                     }
                     else
@@ -221,6 +221,8 @@ public void Awake()
       
         if (firerate <= 2)
             firerate += Time.deltaTime;
+
+       
         
     }
     public Text _messages;
@@ -236,9 +238,37 @@ public void Awake()
             Debug.Log($"Some other player said: {message}\n");
         _messages.text += message;
     }
-    private void OnNickNameChanged()
+    public void dropLocal(string message , int coin,Vector3 pos)
     {
-        Name.text = nickName.ToString();
+        RPC_Drop(message,coin,pos);
+    }
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    public void RPC_Drop(string message, int coin,Vector3 pos, RpcInfo info = default)
+    {
+        if (info.IsInvokeLocal)
+        {
+            Debug.Log(message + " And " + nickName.ToString());
+            UiTextSpawmControl.Instance.PushGold(coin);
+            Instantiate(Resources.Load("coinEff"), pos, Quaternion.identity);
+            UiTextSpawmControl.Instance.CallTextEff(pos + Vector3.up * 0.5f, coin);
+            int itemDrop = Random.Range(0, 21);
+            if (itemDrop == 0)
+                Instantiate(Resources.Load("Item"), pos, Quaternion.identity);
+        }
+        else
+        {
+            Debug.Log("Other " + message + " And " + nickName.ToString());
+        }
+
+
+    }
+    static void OnNickNameChanged(Changed<gunMode> changed)
+    {
+        changed.Behaviour.OnNickNameChanged();
+    }
+    public void OnNickNameChanged()
+    {
+        NameInput = nickName.ToString();
     }
     [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     public void Rpc_SetNickName(string nickname)
@@ -500,7 +530,7 @@ public void Awake()
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
     public void Rpc_Bullet(int gunmode, bool enchance3)
     {
-        if(gunmode == 6)
+        if(gunmode == 6 && PlayerPrefs.GetInt("gold", 100) < gunControl.cost || !canPlay)
         {
 
             Rpc_Laser(true);
@@ -508,7 +538,10 @@ public void Awake()
         }
         if (Time.time - firerate < firerateAmount || PlayerPrefs.GetInt("gold",100) < gunControl.cost || !canPlay)
             return;
-        UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
+        if (HasInputAuthority)
+        {
+            UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
+        }
         if (gunmode == 1)
         {
             GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
@@ -541,7 +574,7 @@ public void Awake()
             //GameObject bullet = Instantiate(flashGun2, firepoint.position, firepoint.rotation);
             Rpc_ShootArrow(enchance3);
         }
-        
+       
         firerate = Time.time;
     }
 
@@ -564,7 +597,7 @@ public void Awake()
             rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
             enchanceShoot.Play();
         }
-       
+
     }
     [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
 
@@ -643,7 +676,7 @@ public void Awake()
                 GameObject bullet = Instantiate(shotgunBullet, firepoint.position, Quaternion.identity);
                 //Runner.Spawn(bullet, firepoint.position, Quaternion.identity);
                 normalShoot.Play();
-                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();                
                 Vector2 dir = transform.rotation * Vector2.up;
                 Vector2 pdir = Vector2.Perpendicular(dir) * UnityEngine.Random.Range(-spread, spread);
                 rb.velocity = (dir + pdir) * bulletForce;
@@ -775,7 +808,33 @@ public void Awake()
 
         }
     }
-   
-   
+    public void PlayerLeft(PlayerRef player)
+    {
+        if (player == Object.InputAuthority)
+        {
+            Debug.Log("Left");
+
+
+            if (NumInput == 1)
+            {
+                NameText.text = "Select";
+            }
+
+            if (NumInput == 2)
+            {
+                NameText2.text = "Select";
+            }
+
+            if (NumInput == 3)
+            {
+                NameText3.text = "Select";
+            }
+            if (NumInput == 4)
+            {
+                NameText4.text = "Select";
+            }
+            Runner.Despawn(Object);
+        }
+    }
    
 }

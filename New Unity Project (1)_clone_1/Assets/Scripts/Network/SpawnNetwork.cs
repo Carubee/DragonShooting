@@ -93,10 +93,9 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
                 _runner.Spawn(Fishspawn);
                 FirstSpawn = true;
             }
-        }
-        
+            lobbyMenu.SetActive(false);
 
-
+        }        
     }
     public void OnInput(NetworkRunner runner,NetworkInput input)
     {
@@ -184,7 +183,11 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
 
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
     {
-        
+        if (_spawnedCharacter.TryGetValue(player, out NetworkObject networkObject))
+        {
+            runner.Despawn(networkObject);
+            _spawnedCharacter.Remove(player);
+        }
     }
 
     public void OnInputMissing(NetworkRunner runner, PlayerRef player, NetworkInput input)

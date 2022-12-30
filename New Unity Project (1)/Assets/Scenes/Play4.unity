@@ -9686,6 +9686,7 @@ MonoBehaviour:
   Pos: 6
   LastPos: 6
   Switch: 0
+  Name: 
   Item: {fileID: 1152837306}
 --- !u!114 &244900161
 MonoBehaviour:
@@ -48052,7 +48053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810029302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29, y: -60, z: 0}
+  m_LocalPosition: {x: 29, y: -61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 810327146}
@@ -55114,6 +55115,10 @@ PrefabInstance:
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
       value: 1970918270910330037
       objectReference: {fileID: 0}
+    - target: {fileID: 3993815038644751070, guid: 215133838c0da3c43bf831c6ceda6ffe, type: 3}
+      propertyPath: _pre.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3993815038787240742, guid: 215133838c0da3c43bf831c6ceda6ffe, type: 3}
       propertyPath: Flags
       value: 133633
@@ -55126,6 +55131,14 @@ PrefabInstance:
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
       value: 8859768536608627365
       objectReference: {fileID: 0}
+    - target: {fileID: 3993815038789766288, guid: 215133838c0da3c43bf831c6ceda6ffe, type: 3}
+      propertyPath: _pre.Array.data[0]
+      value: 
+      objectReference: {fileID: 110020, guid: e7ccca842db95094585444385c79b3d2, type: 3}
+    - target: {fileID: 3993815038789766288, guid: 215133838c0da3c43bf831c6ceda6ffe, type: 3}
+      propertyPath: _pre.Array.data[2]
+      value: 
+      objectReference: {fileID: 152852, guid: a0b607a8f6af02f4ca8cef49041253e0, type: 3}
     - target: {fileID: 3993815038789766291, guid: 215133838c0da3c43bf831c6ceda6ffe, type: 3}
       propertyPath: Flags
       value: 133633

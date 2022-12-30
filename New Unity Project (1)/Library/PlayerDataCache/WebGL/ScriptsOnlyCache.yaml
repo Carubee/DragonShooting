@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - Bonus4Control
     - BoomControl
     - BulletControl
+    - CheckUID
     - CodeMonkey.Assets
     - ControllerPrototype
     - DarkTonic.MasterAudio.MasterAudio
@@ -53,7 +54,6 @@ ScriptsOnlyBuild:
     - PlayerAOIPrototype
     - RotateLoading
     - SciFiBeamStatic
-    - SciFiLightFlicker
     - ShowItemDetail
     - SpawnNetwork
     - Swim
@@ -423,17 +423,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 12636}
+      Script: {instanceID: 12638}
     - Class: 114
-      Script: {instanceID: 12712}
+      Script: {instanceID: 12714}
     - Class: 114
-      Script: {instanceID: 13092}
+      Script: {instanceID: 13094}
     - Class: 114
-      Script: {instanceID: 13350}
+      Script: {instanceID: 13352}
     - Class: 114
-      Script: {instanceID: 13374}
+      Script: {instanceID: 13376}
     - Class: 114
-      Script: {instanceID: 13518}
+      Script: {instanceID: 13520}
+    - Class: 114
+      Script: {instanceID: 84036}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -654,8 +656,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9212}
     - Class: 114
-      Script: {instanceID: 9262}
-    - Class: 114
       Script: {instanceID: 9378}
     - Class: 114
       Script: {instanceID: 9396}
@@ -712,19 +712,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12400}
     - Class: 114
-      Script: {instanceID: 12468}
+      Script: {instanceID: 12464}
     - Class: 114
-      Script: {instanceID: 12946}
+      Script: {instanceID: 12470}
     - Class: 114
-      Script: {instanceID: 13092}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13356}
+      Script: {instanceID: 13094}
     - Class: 114
-      Script: {instanceID: 13518}
+      Script: {instanceID: 13358}
     - Class: 114
-      Script: {instanceID: 13576}
+      Script: {instanceID: 13520}
     - Class: 114
-      Script: {instanceID: 382914}
+      Script: {instanceID: 13578}
+    - Class: 114
+      Script: {instanceID: 84036}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1952,7 +1954,7 @@ ScriptsOnlyBuild:
     className: buyGun
   - hash:
       serializedVersion: 2
-      Hash: efd94e1d8d62464d6fc3db0a22e5b167
+      Hash: 04d0f0a4354af615a39aaac5b68e11e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BalistaHitbox
@@ -4370,6 +4372,12 @@ ScriptsOnlyBuild:
     className: _2dxFX_Sepia
   - hash:
       serializedVersion: 2
+      Hash: 844348210ec6d32feb28261b6e4bd2a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestButton
+  - hash:
+      serializedVersion: 2
       Hash: 92eeb25669276244eff5afa8ff746589
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -4562,7 +4570,7 @@ ScriptsOnlyBuild:
     className: ComponentActions
   - hash:
       serializedVersion: 2
-      Hash: 6a28a32388a668c2a3d9c0aa7b6ac896
+      Hash: 409a4fc5eb1a24dbdae1ee34552f9f50
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: gunMode
@@ -4724,10 +4732,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 844348210ec6d32feb28261b6e4bd2a9
+      Hash: cf6c761b54554708ce1b3645ca4c46f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TestButton
+    className: CheckUID
   platform: 20
   scenePathNames:
   - Assets/Scenes/Home.unity

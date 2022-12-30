@@ -26645,8 +26645,8 @@ public:
 	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___coinSound_70;
 	// UnityEngine.AudioSource gunMode::selectSeat
 	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___selectSeat_71;
-	// Fusion.NetworkString`1<Fusion._16> gunMode::<nickName>k__BackingField
-	NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  ___U3CnickNameU3Ek__BackingField_72;
+	// Fusion.NetworkString`1<Fusion._16> gunMode::_nickName
+	NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  ____nickName_72;
 	// System.Boolean gunMode::_enchance
 	bool ____enchance_73;
 	// UILabel gunMode::NameText
@@ -27149,12 +27149,12 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___selectSeat_71), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CnickNameU3Ek__BackingField_72() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ___U3CnickNameU3Ek__BackingField_72)); }
-	inline NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  get_U3CnickNameU3Ek__BackingField_72() const { return ___U3CnickNameU3Ek__BackingField_72; }
-	inline NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0 * get_address_of_U3CnickNameU3Ek__BackingField_72() { return &___U3CnickNameU3Ek__BackingField_72; }
-	inline void set_U3CnickNameU3Ek__BackingField_72(NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  value)
+	inline static int32_t get_offset_of__nickName_72() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____nickName_72)); }
+	inline NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  get__nickName_72() const { return ____nickName_72; }
+	inline NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0 * get_address_of__nickName_72() { return &____nickName_72; }
+	inline void set__nickName_72(NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  value)
 	{
-		___U3CnickNameU3Ek__BackingField_72 = value;
+		____nickName_72 = value;
 	}
 
 	inline static int32_t get_offset_of__enchance_73() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____enchance_73)); }
@@ -29990,7 +29990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NetworkManagerUI_get_seatNum_m1354ABC
 // System.Void NetworkManagerUI::Rpc_selectSeat(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkManagerUI_Rpc_selectSeat_mADA0C783C8FE41552BB1404ABD640902A4C32F98 (NetworkManagerUI_t48071851AD5179F539ACEFD1B127F358451F69CA * __this, int32_t ___numberSeat0, const RuntimeMethod* method);
 // Fusion.NetworkString`1<Fusion._16> gunMode::get_nickName()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  gunMode_get_nickName_m89320CC3547DC8B15F0DCF6C95E819C335632777_inline (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  gunMode_get_nickName_m89320CC3547DC8B15F0DCF6C95E819C335632777 (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, const RuntimeMethod* method);
 // System.String Fusion.NetworkString`1<Fusion._16>::ToString()
 inline String_t* NetworkString_1_ToString_m9672F6A5494588D3926EA94190D1DCB44DF7EF7F (NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0 * __this, const RuntimeMethod* method)
 {
@@ -43476,7 +43476,7 @@ IL_0012:
 		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_4 = (L_1)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_3));
 		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_5 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
 		NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  L_6;
-		L_6 = gunMode_get_nickName_m89320CC3547DC8B15F0DCF6C95E819C335632777_inline(L_5, /*hidden argument*/NULL);
+		L_6 = gunMode_get_nickName_m89320CC3547DC8B15F0DCF6C95E819C335632777(L_5, /*hidden argument*/NULL);
 		V_0 = L_6;
 		String_t* L_7;
 		L_7 = NetworkString_1_ToString_m9672F6A5494588D3926EA94190D1DCB44DF7EF7F((NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0 *)(&V_0), /*hidden argument*/NetworkString_1_ToString_m9672F6A5494588D3926EA94190D1DCB44DF7EF7F_RuntimeMethod_var);
@@ -43635,7 +43635,7 @@ IL_0012:
 		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_4 = (L_1)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_3));
 		gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * L_5 = ((gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_StaticFields*)il2cpp_codegen_static_fields_for(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A_il2cpp_TypeInfo_var))->get_instance_19();
 		NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  L_6;
-		L_6 = gunMode_get_nickName_m89320CC3547DC8B15F0DCF6C95E819C335632777_inline(L_5, /*hidden argument*/NULL);
+		L_6 = gunMode_get_nickName_m89320CC3547DC8B15F0DCF6C95E819C335632777(L_5, /*hidden argument*/NULL);
 		V_0 = L_6;
 		String_t* L_7;
 		L_7 = NetworkString_1_ToString_m9672F6A5494588D3926EA94190D1DCB44DF7EF7F((NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0 *)(&V_0), /*hidden argument*/NetworkString_1_ToString_m9672F6A5494588D3926EA94190D1DCB44DF7EF7F_RuntimeMethod_var);
@@ -59098,14 +59098,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NetworkDebugStart_set_LastCr
 		int32_t L_0 = ___value0;
 		__this->set_U3CLastCreatedClientIndexU3Ek__BackingField_16(L_0);
 		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  gunMode_get_nickName_m89320CC3547DC8B15F0DCF6C95E819C335632777_inline (gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A * __this, const RuntimeMethod* method)
-{
-	{
-		// public NetworkString<_16> nickName { get; set; }
-		NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  L_0 = __this->get_U3CnickNameU3Ek__BackingField_72();
-		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool NetworkRunner_HasAnyActiveConnections_m099E01E87E7609A710BE60D73F6F227D651FC9C9_inline (NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * __this, const RuntimeMethod* method)

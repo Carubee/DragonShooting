@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.Utils;
+using Fusion;
 
-public class BalistaHitbox : MonoBehaviour
+public class BalistaHitbox : NetworkBehaviour
 {    
     public float destroy;
     public bool destroyOnHit;
@@ -18,9 +19,11 @@ public class BalistaHitbox : MonoBehaviour
     public GameObject target;
     private Rigidbody2D rb;
     private string tagName = "lock";
+    public string nameDamage;
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        nameDamage = gunMode.instance.nickName.ToString();
     }
 
     void FixedUpdate()
@@ -60,11 +63,11 @@ public class BalistaHitbox : MonoBehaviour
             }
             if (bomb == false)
             {
-                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject, nameDamage);
             }
             if (bomb == true)
             {
-                collision.GetComponent<FishControl>().hitDame(100, gameObject);
+                collision.GetComponent<FishControl>().hitDame(100, gameObject, nameDamage);
 
             }
             
@@ -73,7 +76,7 @@ public class BalistaHitbox : MonoBehaviour
         {
             if (destroyOnHit == true)
             {
-                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject);
+                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject, nameDamage);
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
                 //Destroy(this.gameObject);

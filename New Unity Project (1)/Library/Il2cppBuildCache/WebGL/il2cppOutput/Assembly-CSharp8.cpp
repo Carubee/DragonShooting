@@ -858,7 +858,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_mEC3068A6A6108471DC37FE962
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_m170AB9498EC66D74E7548BC9F97893DE678C02A8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_m6D070B7479E570F2F4265092DF429B94EC79B7A4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_mD7B9F15F23ABFF7FD35384DD8FD941427C7241A0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_m0020A5C7076B8F8105096D1DF8625347C58E4842_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m8E06A6DF244254BF419D7EC23A9A6809E19A544D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m998F02CF92306C24EF62FEBD2810219BBEA4E5B2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m9ABDB39C6BBB798F371C95507EE25C52D3E2ECA9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mAEAF9E23D8372334B9FF5823901205C7BC79EACA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mD1387823487D37C4362D7BDC2086E96987E2680C_RuntimeMethod_var;
@@ -24837,8 +24839,8 @@ public:
 	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___coinSound_70;
 	// UnityEngine.AudioSource gunMode::selectSeat
 	AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * ___selectSeat_71;
-	// Fusion.NetworkString`1<Fusion._16> gunMode::<nickName>k__BackingField
-	NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  ___U3CnickNameU3Ek__BackingField_72;
+	// Fusion.NetworkString`1<Fusion._16> gunMode::_nickName
+	NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  ____nickName_72;
 	// System.Boolean gunMode::_enchance
 	bool ____enchance_73;
 	// UILabel gunMode::NameText
@@ -25341,12 +25343,12 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___selectSeat_71), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CnickNameU3Ek__BackingField_72() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ___U3CnickNameU3Ek__BackingField_72)); }
-	inline NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  get_U3CnickNameU3Ek__BackingField_72() const { return ___U3CnickNameU3Ek__BackingField_72; }
-	inline NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0 * get_address_of_U3CnickNameU3Ek__BackingField_72() { return &___U3CnickNameU3Ek__BackingField_72; }
-	inline void set_U3CnickNameU3Ek__BackingField_72(NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  value)
+	inline static int32_t get_offset_of__nickName_72() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____nickName_72)); }
+	inline NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  get__nickName_72() const { return ____nickName_72; }
+	inline NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0 * get_address_of__nickName_72() { return &____nickName_72; }
+	inline void set__nickName_72(NetworkString_1_t562C4CCF93152AAF2DAEDCFE3B60FE247F7677A0  value)
 	{
-		___U3CnickNameU3Ek__BackingField_72 = value;
+		____nickName_72 = value;
 	}
 
 	inline static int32_t get_offset_of__enchance_73() { return static_cast<int32_t>(offsetof(gunMode_tAE6DC5F1994B9BA846DAB0F1ECFEEB3AEA938F7A, ____enchance_73)); }
@@ -26099,6 +26101,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m4C656C53BC3F05F3194BBA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_mCE9F52E74A810D3F02F67547DF8E972F50FE4F15_gshared (Dictionary_2_tB257B70093B3F5B507A0F4C7DEF02AC1A720A9E5 * __this, PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51  ___key0, RuntimeObject * ___value1, const RuntimeMethod* method);
 // System.Void Fusion.NetworkInput::Set<NetworkInputData>(!!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkInput_Set_TisNetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_m2A0AAF2C929465712EF16B6635E4E2B913AAC675_gshared (NetworkInput_t1CD381FD555C10E4FF599C4B51D3EC81D610BB38 * __this, NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81  ___value0, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.Dictionary`2<Fusion.PlayerRef,System.Object>::TryGetValue(!0,!1&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_m8CF0CC821EF67576866475C61D3C71C4368F8688_gshared (Dictionary_2_tB257B70093B3F5B507A0F4C7DEF02AC1A720A9E5 * __this, PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51  ___key0, RuntimeObject ** ___value1, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.Dictionary`2<Fusion.PlayerRef,System.Object>::Remove(!0)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m4F6D4C925B3991F71A41A044C2B7981B6D2F6EDA_gshared (Dictionary_2_tB257B70093B3F5B507A0F4C7DEF02AC1A720A9E5 * __this, PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51  ___key0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Dictionary`2<Fusion.PlayerRef,System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m61A02E52D6373CE53AE2ED368F0C0E44BCDC8758_gshared (Dictionary_2_tB257B70093B3F5B507A0F4C7DEF02AC1A720A9E5 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
@@ -26253,6 +26259,18 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18
 inline void NetworkInput_Set_TisNetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_m2A0AAF2C929465712EF16B6635E4E2B913AAC675 (NetworkInput_t1CD381FD555C10E4FF599C4B51D3EC81D610BB38 * __this, NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81  ___value0, const RuntimeMethod* method)
 {
 	((  void (*) (NetworkInput_t1CD381FD555C10E4FF599C4B51D3EC81D610BB38 *, NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81 , const RuntimeMethod*))NetworkInput_Set_TisNetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_m2A0AAF2C929465712EF16B6635E4E2B913AAC675_gshared)(__this, ___value0, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<Fusion.PlayerRef,Fusion.NetworkObject>::TryGetValue(!0,!1&)
+inline bool Dictionary_2_TryGetValue_m998F02CF92306C24EF62FEBD2810219BBEA4E5B2 (Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * __this, PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51  ___key0, NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 ** ___value1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B *, PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51 , NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 **, const RuntimeMethod*))Dictionary_2_TryGetValue_m8CF0CC821EF67576866475C61D3C71C4368F8688_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void Fusion.NetworkRunner::Despawn(Fusion.NetworkObject,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkRunner_Despawn_m85C0D8C60B1D2D0DE1848A795C9D2D0FEC04384F (NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * __this, NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * ___networkObject0, bool ___allowPredicted1, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.Dictionary`2<Fusion.PlayerRef,Fusion.NetworkObject>::Remove(!0)
+inline bool Dictionary_2_Remove_m0020A5C7076B8F8105096D1DF8625347C58E4842 (Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * __this, PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51  ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B *, PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51 , const RuntimeMethod*))Dictionary_2_Remove_m4F6D4C925B3991F71A41A044C2B7981B6D2F6EDA_gshared)(__this, ___key0, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<Fusion.PlayerRef,Fusion.NetworkObject>::.ctor()
 inline void Dictionary_2__ctor_mAEAF9E23D8372334B9FF5823901205C7BC79EACA (Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * __this, const RuntimeMethod* method)
@@ -27900,7 +27918,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnNetwork_OnPlayerJoined_m051C1F4E392
 		L_4 = NetworkRunner_get_IsServer_m8D324A095A5CD55B81AF224433C4CAD908C84DB8(L_3, /*hidden argument*/NULL);
 		if (!L_4)
 		{
-			goto IL_00bf;
+			goto IL_00cb;
 		}
 	}
 	{
@@ -27959,6 +27977,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnNetwork_OnPlayerJoined_m051C1F4E392
 	}
 
 IL_00bf:
+	{
+		// lobbyMenu.SetActive(false);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_26 = __this->get_lobbyMenu_7();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_26, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_00cb:
 	{
 		// }
 		return;
@@ -28272,6 +28297,38 @@ IL_0197:
 // System.Void SpawnNetwork::OnPlayerLeft(Fusion.NetworkRunner,Fusion.PlayerRef)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnNetwork_OnPlayerLeft_m86665B756AF6BFB46BD1AE6BF41B7AAF1527DC9E (SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153 * __this, NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * ___runner0, PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51  ___player1, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_m0020A5C7076B8F8105096D1DF8625347C58E4842_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_m998F02CF92306C24EF62FEBD2810219BBEA4E5B2_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * V_0 = NULL;
+	{
+		// if (_spawnedCharacter.TryGetValue(player, out NetworkObject networkObject))
+		Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * L_0 = __this->get__spawnedCharacter_13();
+		PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51  L_1 = ___player1;
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_m998F02CF92306C24EF62FEBD2810219BBEA4E5B2(L_0, L_1, (NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 **)(&V_0), /*hidden argument*/Dictionary_2_TryGetValue_m998F02CF92306C24EF62FEBD2810219BBEA4E5B2_RuntimeMethod_var);
+		if (!L_2)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		// runner.Despawn(networkObject);
+		NetworkRunner_t080AF0402303A06F54A28C6E2ABBFE431B0F8718 * L_3 = ___runner0;
+		NetworkObject_t8A8092105F90D37910C2ECF4326FDEC009D57AA3 * L_4 = V_0;
+		NetworkRunner_Despawn_m85C0D8C60B1D2D0DE1848A795C9D2D0FEC04384F(L_3, L_4, (bool)0, /*hidden argument*/NULL);
+		// _spawnedCharacter.Remove(player);
+		Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * L_5 = __this->get__spawnedCharacter_13();
+		PlayerRef_t44D2437F3BB86845A74B2CE59D34F33B5735FA51  L_6 = ___player1;
+		bool L_7;
+		L_7 = Dictionary_2_Remove_m0020A5C7076B8F8105096D1DF8625347C58E4842(L_5, L_6, /*hidden argument*/Dictionary_2_Remove_m0020A5C7076B8F8105096D1DF8625347C58E4842_RuntimeMethod_var);
+	}
+
+IL_0025:
 	{
 		// }
 		return;

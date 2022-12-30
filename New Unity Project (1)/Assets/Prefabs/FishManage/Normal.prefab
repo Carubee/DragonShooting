@@ -48,7 +48,7 @@ MonoBehaviour:
   WordCount: 0
   _interpolationDataSource: 0
   _pre:
-  - {fileID: 159758, guid: 6d322984e5de7ba4da300d578f66ed93, type: 3}
+  - {fileID: 171870, guid: ce298339d59ff4f43994ebee403e6dc1, type: 3}
   - {fileID: 123756, guid: 45a3d986627172c498feb8a96ee0cb2c, type: 3}
   countTime: 10
   RndCountTime: 5
@@ -129,7 +129,7 @@ MonoBehaviour:
   - {fileID: 158038, guid: 1233d6775889c434f910f39c5a6cfbe7, type: 3}
   countTime: 38
   RndCountTime: 5
-  StartWaitTime: 30
+  StartWaitTime: 40
   _distance: 0.5
 --- !u!114 &3993815038517633421
 MonoBehaviour:
@@ -280,9 +280,8 @@ MonoBehaviour:
   WordCount: 0
   _interpolationDataSource: 0
   _pre:
-  - {fileID: 160482, guid: ac0dd8a80ceec6a48a3bd3fe59be4d1d, type: 3}
+  - {fileID: 171870, guid: ce298339d59ff4f43994ebee403e6dc1, type: 3}
   - {fileID: 112912, guid: 3052dd606efc958449758517582f8539, type: 3}
-  - {fileID: 188114, guid: c2d3c17df9203ce4186a27290318282d, type: 3}
   countTime: 30
   RndCountTime: 2
   StartWaitTime: 15
@@ -359,7 +358,7 @@ MonoBehaviour:
   WordCount: 0
   _interpolationDataSource: 0
   _pre:
-  - {fileID: 110020, guid: e7ccca842db95094585444385c79b3d2, type: 3}
+  - {fileID: 138562, guid: 405ddd31e7af61b4faeaab31940b1828, type: 3}
   - {fileID: 165470, guid: 7bacb0a3382e7df4ebde3ed6c8a3825f, type: 3}
   countTime: 5
   RndCountTime: 0.5
@@ -748,9 +747,8 @@ MonoBehaviour:
   WordCount: 0
   _interpolationDataSource: 0
   _pre:
-  - {fileID: 158046, guid: 904e0bb7a3152d44088cf22b33063d6d, type: 3}
+  - {fileID: 142098, guid: 59663b2781ca7884788d2b0817d2659e, type: 3}
   - {fileID: 106522, guid: 43478d3799ce3be498d450f7b8dda74f, type: 3}
-  - {fileID: 154644, guid: 77d7fd0e4714e204a9f486cf12da2b27, type: 3}
   countTime: 25
   RndCountTime: 1
   StartWaitTime: 10
@@ -830,7 +828,7 @@ MonoBehaviour:
   - {fileID: 181834, guid: db26575790735d1479093c4824861fcf, type: 3}
   countTime: 42
   RndCountTime: 5
-  StartWaitTime: 30
+  StartWaitTime: 60
   _distance: 0.5
 --- !u!114 &3993815039588459256
 MonoBehaviour:

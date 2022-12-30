@@ -32,12 +32,25 @@ public class LobbyScript : MonoBehaviour
         }
         
     }
+    private IEnumerator coroutine;
+
     public void lobby()
     {
         notice.SetActive(false);
         loading.SetActive(true);
         open.Play();
         SpawnNetwork.instance.JoinGame();
+        coroutine = WaitAndPrint(10.0f);
+        StartCoroutine(coroutine);
+    }
+    private IEnumerator WaitAndPrint(float waitTime)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(waitTime);
+            lobbyUI.SetActive(false);
+
+        }
     }
     public void Close()
     {
