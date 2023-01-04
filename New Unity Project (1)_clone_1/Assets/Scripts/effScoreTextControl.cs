@@ -28,6 +28,20 @@ public class effScoreTextControl : MonoBehaviour
             
         });
     }
+    public void InitEffCoin(Vector3 _trs)
+    {
+        
+        uiCam = GameObject.FindObjectOfType<UICamera>().GetComponent<Camera>();
+        Vector3 a = _trs;
+        a = Camera.main.WorldToScreenPoint(a);
+        a = uiCam.ScreenToWorldPoint(a);
+        transform.position = a;
+        LeanTween.move(gameObject, a + Vector3.up * 0.1f, 0.8f).setOnComplete(() =>
+        {
+            Destroy(gameObject);
+            
+        });
+    }
 
 
 }

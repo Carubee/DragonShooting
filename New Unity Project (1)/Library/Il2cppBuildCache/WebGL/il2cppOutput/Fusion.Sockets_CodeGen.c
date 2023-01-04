@@ -2357,8 +2357,8 @@ static const Il2CppRGCTXDefinition s_rgctxValues[8] =
 	{ (Il2CppRGCTXDataType)3, 120 },
 	{ (Il2CppRGCTXDataType)2, 731 },
 	{ (Il2CppRGCTXDataType)3, 694 },
-	{ (Il2CppRGCTXDataType)3, 30361 },
 	{ (Il2CppRGCTXDataType)3, 30362 },
+	{ (Il2CppRGCTXDataType)3, 30363 },
 };
 extern const CustomAttributesCacheGenerator g_Fusion_Sockets_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Fusion_Sockets_CodeGenModule;

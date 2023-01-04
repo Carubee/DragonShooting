@@ -552,6 +552,7 @@
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Smoke.cs" />
     <Compile Include="Assets\Xffect\Scripts\Events\CameraEffects\GlowEvent.cs" />
     <Compile Include="Assets\Xffect\Scripts\RenderObject.cs" />
+    <Compile Include="Assets\CheckUID.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_EnergyBar.cs" />
     <Compile Include="Assets\Xffect\Scripts\Events\CameraEffects\CameraEffectEvent.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_GrassFX.cs" />
@@ -592,7 +593,6 @@
     <Compile Include="Assets\Scripts\ButtonStartControl.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionPeriodic.cs" />
     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
-    <Compile Include="Assets\CheckUID.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cute Animal Pet (Dragon Pack)\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

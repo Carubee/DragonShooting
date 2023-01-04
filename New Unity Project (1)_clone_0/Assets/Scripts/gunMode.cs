@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using CodeMonkey.Utils;
 using Fusion;
 
-public class gunMode : NetworkBehaviour , IPlayerLeft
+public class gunMode : NetworkBehaviour , IPlayerLeft 
 {
     public int MoneyPlayer;
     public string mode;
@@ -84,9 +84,15 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     [SerializeField] UILabel NamePlayer2;
     [SerializeField] UILabel NamePlayer3;
     [SerializeField] UILabel NamePlayer4;
+
+    [SerializeField] UIButton Button1;
+    [SerializeField] UIButton Button2;
+    [SerializeField] UIButton Button3;
+    [SerializeField] UIButton Button4;
     [Networked] public string NameInput { get; set; }
     [Networked] public int NumInput { get; set; }
 
+    private Dictionary<PlayerRef, NetworkObject> _spawnedCharacter = new Dictionary<PlayerRef, NetworkObject>();
 
     public void Awake()
     {
@@ -96,7 +102,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     }
     public void Start()
     {
-
+        Rpc_Laser(false);
     }
     public override void Spawned()
     {
@@ -111,6 +117,11 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
             NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
             NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
             NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+
+            Button1 = GameObject.Find("Name Player (4)").GetComponent<UIButton>();
+            Button2 = GameObject.Find("Name Player (1)").GetComponent<UIButton>();
+            Button3 = GameObject.Find("Name Player (2)").GetComponent<UIButton>();
+            Button4 = GameObject.Find("Name Player (3)").GetComponent<UIButton>();
         }
         else
         {
@@ -121,6 +132,10 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
             NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
             NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
 
+            Button1 = GameObject.Find("Name Player (4)").GetComponent<UIButton>();
+            Button2 = GameObject.Find("Name Player (1)").GetComponent<UIButton>();
+            Button3 = GameObject.Find("Name Player (2)").GetComponent<UIButton>();
+            Button4 = GameObject.Find("Name Player (3)").GetComponent<UIButton>();
         }
     }
    [Networked] public TickTimer delay { get; set; }
@@ -139,11 +154,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
                         Rpc_Bullet(gunModel, item.instace.doubleDamage);
 
                     }
-                    else
-                    {
-                        if (gunModel == 6)
-                            Rpc_Laser(false);
-                    }
+                    
                 }
             }
             if (!Object.HasInputAuthority) return;
@@ -203,7 +214,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     {
 
         //if (Runner.IsServer) return;
-
+       
         if (Object.HasInputAuthority && Input.GetKeyDown(KeyCode.R))
         {
             RPC_SendMessage(NameInput);
@@ -221,7 +232,18 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
       
         if (firerate <= 2)
             firerate += Time.deltaTime;
+        if(laserSwitch == true)
+        {
+            Rpc_Laser(true);
+            firelaser += Time.deltaTime;
+            if(firelaser > 0.5)
+            {
+                laserSwitch = false;
+                firelaser = 0;
+                Rpc_Laser(false);
 
+            }
+        }
        
         
     }
@@ -283,13 +305,15 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
         if (last == 1)
         {
             NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
-
+            Button1.enabled = true;
             NameText.text = "Select";
+
         }
 
         if (last == 2)
         {
             NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
+            Button2.enabled = true;
 
             NameText2.text = "Select";
         }
@@ -297,33 +321,42 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
         if (last == 3)
         {
             NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
+            Button3.enabled = true;
 
             NameText3.text = "Select";
         }
         if (last == 4)
         {
             NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+            Button4.enabled = true;
 
             NameText4.text = "Select";
         }
         
             if (gunValue == 1)
             {
-                NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
-            NumInput = gunValue;
 
+            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
+            Button1.enabled = false;
+
+            NumInput = gunValue;
+            
             NameText.text = Name;
             }
             if (gunValue == 2)
             {
-                NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
+            Button2.enabled = false;
+
+            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
             NumInput = gunValue;
 
             NameText2.text = Name;
             }
             if (gunValue == 3)
             {
-                NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
+            Button3.enabled = false;
+
+            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
             NumInput = gunValue;
 
             NameText3.text = Name;
@@ -331,6 +364,8 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
             if (gunValue == 4)
             {
                 NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+            Button4.enabled = false;
+
             NumInput = gunValue;
 
             NameText4.text = Name;
@@ -385,7 +420,10 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     {
         if (gunValue == 4)
             firerateAmount = 0.1f;
-        else firerateAmount = 0.5f;
+        if (gunValue == 6)
+            firerateAmount = 1.5f;
+        if (gunValue != 6 && gunValue != 4) 
+            firerateAmount = 0.5f;
 
         if (gunValue == 1)
         {
@@ -530,18 +568,17 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
     public void Rpc_Bullet(int gunmode, bool enchance3)
     {
-        if(gunmode == 6 && PlayerPrefs.GetInt("gold", 100) < gunControl.cost || !canPlay)
-        {
-
-            Rpc_Laser(true);
-            
-        }
+       
         if (Time.time - firerate < firerateAmount || PlayerPrefs.GetInt("gold",100) < gunControl.cost || !canPlay)
             return;
         if (HasInputAuthority)
         {
             UiTextSpawmControl.Instance.MinusGold(gunControl.cost);
         }
+        if (gunmode == 6)
+        {
+            laserSwitch = true;
+      }
         if (gunmode == 1)
         {
             GameObject bullet = Instantiate(flashGun, firepoint.position, firepoint.rotation);
@@ -808,6 +845,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
 
         }
     }
+    
     public void PlayerLeft(PlayerRef player)
     {
         if (player == Object.InputAuthority)
@@ -836,5 +874,9 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
             Runner.Despawn(Object);
         }
     }
-   
+    public void Quit()
+    {
+        Runner.Shutdown();
+    }
+
 }

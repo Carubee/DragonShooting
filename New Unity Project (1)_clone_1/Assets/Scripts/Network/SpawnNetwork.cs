@@ -21,13 +21,14 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     {
         _runner = gameObject.AddComponent<NetworkRunner>();
         _runner.ProvideInput = true;
+
         await _runner.StartGame(new StartGameArgs()
         {
             GameMode = mode,
             SessionName = "TestRoom",
             Scene = SceneManager.GetActiveScene().buildIndex,
             SceneManager = gameObject.AddComponent<NetworkSceneManagerDefault>()
-
+            
         }) ; ;}
     private void Start()
     {
@@ -45,11 +46,10 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     public void JoinGame()
     {
         StartGame(GameMode.AutoHostOrClient);
-
     }
     public void QuitGame()
     {
-        
+
     }
 
     public void StartClient()
@@ -79,6 +79,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     }
     [SerializeField] private NetworkPrefabRef _playerPrefab;
     private Dictionary<PlayerRef, NetworkObject> _spawnedCharacter = new Dictionary<PlayerRef, NetworkObject>();
+    private Dictionary<PlayerRef, NetworkObject> _spawnedCharacter2 = new Dictionary<PlayerRef, NetworkObject>();
     public void OnPlayerJoined(NetworkRunner runner,PlayerRef player)
     {
         lobbyMenu.SetActive(false);
@@ -95,7 +96,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             }
             lobbyMenu.SetActive(false);
 
-        }        
+        }
     }
     public void OnInput(NetworkRunner runner,NetworkInput input)
     {
@@ -140,6 +141,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
             data.button |= NetworkInputData.MOUSEBUTTON2;
             _mouseButton0Up = false;
         }
+        
         //ตำแหน่งใหม่
         if (TestButton.instancel.Switch)
         {
@@ -177,6 +179,7 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
                 data.PosChange = 4;
             }
             TestButton.instancel.Switch = false;
+           
         }
         input.Set(data);
     }
@@ -194,12 +197,14 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     {
     }
 
-    public void OnShutdown(NetworkRunner runner, ShutdownReason shutdownReason)
+    public void OnShutdown(NetworkRunner runner, ShutdownReason shutdownReason )
     {
+
     }
 
     public void OnDisconnectedFromServer(NetworkRunner runner)
     {
+       
     }
 
     public void OnConnectRequest(NetworkRunner runner, NetworkRunnerCallbackArgs.ConnectRequest request, byte[] token)

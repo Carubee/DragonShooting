@@ -27336,6 +27336,8 @@ public:
 	NetworkPrefabRef_t7AA64F4D5C8AF51EE9C9C35455E054F4342D289A  ____playerPrefab_12;
 	// System.Collections.Generic.Dictionary`2<Fusion.PlayerRef,Fusion.NetworkObject> SpawnNetwork::_spawnedCharacter
 	Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * ____spawnedCharacter_13;
+	// System.Collections.Generic.Dictionary`2<Fusion.PlayerRef,Fusion.NetworkObject> SpawnNetwork::_spawnedCharacter2
+	Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * ____spawnedCharacter2_14;
 
 public:
 	inline static int32_t get_offset_of__runner_4() { return static_cast<int32_t>(offsetof(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153, ____runner_4)); }
@@ -27412,6 +27414,15 @@ public:
 	{
 		____spawnedCharacter_13 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&____spawnedCharacter_13), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__spawnedCharacter2_14() { return static_cast<int32_t>(offsetof(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153, ____spawnedCharacter2_14)); }
+	inline Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * get__spawnedCharacter2_14() const { return ____spawnedCharacter2_14; }
+	inline Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B ** get_address_of__spawnedCharacter2_14() { return &____spawnedCharacter2_14; }
+	inline void set__spawnedCharacter2_14(Dictionary_2_t362313D320DF614D75267C39F86292E3E4D1573B * value)
+	{
+		____spawnedCharacter2_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____spawnedCharacter2_14), (void*)value);
 	}
 };
 

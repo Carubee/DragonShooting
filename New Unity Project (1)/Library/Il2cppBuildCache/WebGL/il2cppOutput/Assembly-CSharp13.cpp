@@ -15252,16 +15252,18 @@ public:
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ____UiRoot_4;
 	// UnityEngine.GameObject UiTextSpawmControl::_TextChil
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ____TextChil_5;
+	// UnityEngine.GameObject UiTextSpawmControl::coin
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___coin_6;
 	// UILabel[] UiTextSpawmControl::TextGold
-	UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* ___TextGold_6;
+	UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* ___TextGold_7;
 	// UILabel[] UiTextSpawmControl::TextCostGun
-	UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* ___TextCostGun_7;
+	UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* ___TextCostGun_8;
 	// UISprite UiTextSpawmControl::EXPbar
-	UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * ___EXPbar_8;
+	UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * ___EXPbar_9;
 	// UILabel UiTextSpawmControl::TextLevel
-	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * ___TextLevel_9;
+	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * ___TextLevel_10;
 	// UnityEngine.UI.Image UiTextSpawmControl::RocketImg
-	Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C * ___RocketImg_10;
+	Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C * ___RocketImg_11;
 
 public:
 	inline static int32_t get_offset_of__UiRoot_4() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ____UiRoot_4)); }
@@ -15282,49 +15284,58 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&____TextChil_5), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_TextGold_6() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___TextGold_6)); }
-	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* get_TextGold_6() const { return ___TextGold_6; }
-	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE** get_address_of_TextGold_6() { return &___TextGold_6; }
-	inline void set_TextGold_6(UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* value)
+	inline static int32_t get_offset_of_coin_6() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___coin_6)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_coin_6() const { return ___coin_6; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_coin_6() { return &___coin_6; }
+	inline void set_coin_6(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___TextGold_6 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___TextGold_6), (void*)value);
+		___coin_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___coin_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_TextCostGun_7() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___TextCostGun_7)); }
-	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* get_TextCostGun_7() const { return ___TextCostGun_7; }
-	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE** get_address_of_TextCostGun_7() { return &___TextCostGun_7; }
-	inline void set_TextCostGun_7(UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* value)
+	inline static int32_t get_offset_of_TextGold_7() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___TextGold_7)); }
+	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* get_TextGold_7() const { return ___TextGold_7; }
+	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE** get_address_of_TextGold_7() { return &___TextGold_7; }
+	inline void set_TextGold_7(UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* value)
 	{
-		___TextCostGun_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___TextCostGun_7), (void*)value);
+		___TextGold_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___TextGold_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_EXPbar_8() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___EXPbar_8)); }
-	inline UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * get_EXPbar_8() const { return ___EXPbar_8; }
-	inline UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 ** get_address_of_EXPbar_8() { return &___EXPbar_8; }
-	inline void set_EXPbar_8(UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * value)
+	inline static int32_t get_offset_of_TextCostGun_8() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___TextCostGun_8)); }
+	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* get_TextCostGun_8() const { return ___TextCostGun_8; }
+	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE** get_address_of_TextCostGun_8() { return &___TextCostGun_8; }
+	inline void set_TextCostGun_8(UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* value)
 	{
-		___EXPbar_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___EXPbar_8), (void*)value);
+		___TextCostGun_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___TextCostGun_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_TextLevel_9() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___TextLevel_9)); }
-	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * get_TextLevel_9() const { return ___TextLevel_9; }
-	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 ** get_address_of_TextLevel_9() { return &___TextLevel_9; }
-	inline void set_TextLevel_9(UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * value)
+	inline static int32_t get_offset_of_EXPbar_9() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___EXPbar_9)); }
+	inline UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * get_EXPbar_9() const { return ___EXPbar_9; }
+	inline UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 ** get_address_of_EXPbar_9() { return &___EXPbar_9; }
+	inline void set_EXPbar_9(UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * value)
 	{
-		___TextLevel_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___TextLevel_9), (void*)value);
+		___EXPbar_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___EXPbar_9), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_RocketImg_10() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___RocketImg_10)); }
-	inline Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C * get_RocketImg_10() const { return ___RocketImg_10; }
-	inline Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C ** get_address_of_RocketImg_10() { return &___RocketImg_10; }
-	inline void set_RocketImg_10(Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C * value)
+	inline static int32_t get_offset_of_TextLevel_10() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___TextLevel_10)); }
+	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * get_TextLevel_10() const { return ___TextLevel_10; }
+	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 ** get_address_of_TextLevel_10() { return &___TextLevel_10; }
+	inline void set_TextLevel_10(UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * value)
 	{
-		___RocketImg_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___RocketImg_10), (void*)value);
+		___TextLevel_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___TextLevel_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_RocketImg_11() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___RocketImg_11)); }
+	inline Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C * get_RocketImg_11() const { return ___RocketImg_11; }
+	inline Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C ** get_address_of_RocketImg_11() { return &___RocketImg_11; }
+	inline void set_RocketImg_11(Image_t4021FF27176E44BFEDDCBE43C7FE6B713EC70D3C * value)
+	{
+		___RocketImg_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___RocketImg_11), (void*)value);
 	}
 };
 
@@ -15332,16 +15343,16 @@ struct UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields
 {
 public:
 	// UiTextSpawmControl UiTextSpawmControl::Instance
-	UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * ___Instance_11;
+	UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * ___Instance_12;
 
 public:
-	inline static int32_t get_offset_of_Instance_11() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields, ___Instance_11)); }
-	inline UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * get_Instance_11() const { return ___Instance_11; }
-	inline UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 ** get_address_of_Instance_11() { return &___Instance_11; }
-	inline void set_Instance_11(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * value)
+	inline static int32_t get_offset_of_Instance_12() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields, ___Instance_12)); }
+	inline UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * get_Instance_12() const { return ___Instance_12; }
+	inline UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 ** get_address_of_Instance_12() { return &___Instance_12; }
+	inline void set_Instance_12(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * value)
 	{
-		___Instance_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Instance_11), (void*)value);
+		___Instance_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Instance_12), (void*)value);
 	}
 };
 
@@ -19495,6 +19506,8 @@ inline effScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818 * GameObjec
 }
 // System.Void effScoreTextControl::InitEffScore(UnityEngine.Vector3,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void effScoreTextControl_InitEffScore_mA073E60E046FBB501A5BBE57515E83E2EDBF4A95 (effScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ____trs0, int32_t ___gold1, const RuntimeMethod* method);
+// System.Void effScoreTextControl::InitEffCoin(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void effScoreTextControl_InitEffCoin_m1417478FF80268279EEE30A916E1D7FC0157C0EC (effScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ____trs0, const RuntimeMethod* method);
 // System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_SetInt_m2660AEEE642894B67FC56B1F93F6E9214D7F3E32 (String_t* ___key0, int32_t ___value1, const RuntimeMethod* method);
 // System.Void UnityEngine.PlayerPrefs::Save()
@@ -32164,7 +32177,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_Start_m20A847A39EE2C5
 	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B6_1 = NULL;
 	{
 		// Instance = this;
-		((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->set_Instance_11(__this);
+		((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->set_Instance_12(__this);
 		// for (int i = 0; i < TextGold.Length; i++)
 		V_0 = 0;
 		goto IL_003b;
@@ -32173,7 +32186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_Start_m20A847A39EE2C5
 IL_000a:
 	{
 		// TextGold[i].text = "" + PlayerPrefs.GetInt("gold", 200);
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_0 = __this->get_TextGold_6();
+		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_0 = __this->get_TextGold_7();
 		int32_t L_1 = V_0;
 		int32_t L_2 = L_1;
 		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_3 = (L_0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2));
@@ -32209,7 +32222,7 @@ IL_003b:
 	{
 		// for (int i = 0; i < TextGold.Length; i++)
 		int32_t L_8 = V_0;
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_9 = __this->get_TextGold_6();
+		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_9 = __this->get_TextGold_7();
 		if ((((int32_t)L_8) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_9)->max_length))))))
 		{
 			goto IL_000a;
@@ -32217,14 +32230,14 @@ IL_003b:
 	}
 	{
 		// EXPbar.fillAmount = PlayerPrefs.GetFloat("EXP") / (450 + 500 * PlayerPrefs.GetInt("level", 1));
-		UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * L_10 = __this->get_EXPbar_8();
+		UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * L_10 = __this->get_EXPbar_9();
 		float L_11;
 		L_11 = PlayerPrefs_GetFloat_mD7C0FF082E41084D8CAB187CE70843A678733913(_stringLiteralBCC1A653A8451839100C2815C538B2B7A46F73E6, /*hidden argument*/NULL);
 		int32_t L_12;
 		L_12 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral9B5D93EBDD41E0250436B5C2FA8A1004ADC41CB9, 1, /*hidden argument*/NULL);
 		UIBasicSprite_set_fillAmount_m9D811CEED2F63EC6F2048137883B145D4F697AD0(L_10, ((float)((float)L_11/(float)((float)((float)((int32_t)il2cpp_codegen_add((int32_t)((int32_t)450), (int32_t)((int32_t)il2cpp_codegen_multiply((int32_t)((int32_t)500), (int32_t)L_12)))))))), /*hidden argument*/NULL);
 		// TextLevel.text = PlayerPrefs.GetInt("level", 1) + "";
-		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_13 = __this->get_TextLevel_9();
+		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_13 = __this->get_TextLevel_10();
 		int32_t L_14;
 		L_14 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral9B5D93EBDD41E0250436B5C2FA8A1004ADC41CB9, 1, /*hidden argument*/NULL);
 		V_1 = L_14;
@@ -32262,6 +32275,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_CallTextEff_m46A4696D
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NGUITools_t712F57930B17916A2FD1D6E42F203E0E5DE46C71_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * V_0 = NULL;
 	{
 		// GameObject obj = NGUITools.AddChild(_UiRoot, _TextChil);
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get__UiRoot_4();
@@ -32269,12 +32283,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_CallTextEff_m46A4696D
 		IL2CPP_RUNTIME_CLASS_INIT(NGUITools_t712F57930B17916A2FD1D6E42F203E0E5DE46C71_il2cpp_TypeInfo_var);
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2;
 		L_2 = NGUITools_AddChild_mAF8705006105AC1BC096A67BF5DFEE83443DEB53(L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// GameObject obj2 = NGUITools.AddChild(_UiRoot, coin);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get__UiRoot_4();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_4 = __this->get_coin_6();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5;
+		L_5 = NGUITools_AddChild_mAF8705006105AC1BC096A67BF5DFEE83443DEB53(L_3, L_4, /*hidden argument*/NULL);
 		// obj.GetComponent<effScoreTextControl>().InitEffScore(_pos, gold);
-		effScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818 * L_3;
-		L_3 = GameObject_GetComponent_TiseffScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818_mC54F5AF931798512ABDCB4BC3F2EBBFCFFAC6ADD(L_2, /*hidden argument*/GameObject_GetComponent_TiseffScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818_mC54F5AF931798512ABDCB4BC3F2EBBFCFFAC6ADD_RuntimeMethod_var);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4 = ____pos0;
-		int32_t L_5 = ___gold1;
-		effScoreTextControl_InitEffScore_mA073E60E046FBB501A5BBE57515E83E2EDBF4A95(L_3, L_4, L_5, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6 = V_0;
+		effScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818 * L_7;
+		L_7 = GameObject_GetComponent_TiseffScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818_mC54F5AF931798512ABDCB4BC3F2EBBFCFFAC6ADD(L_6, /*hidden argument*/GameObject_GetComponent_TiseffScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818_mC54F5AF931798512ABDCB4BC3F2EBBFCFFAC6ADD_RuntimeMethod_var);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8 = ____pos0;
+		int32_t L_9 = ___gold1;
+		effScoreTextControl_InitEffScore_mA073E60E046FBB501A5BBE57515E83E2EDBF4A95(L_7, L_8, L_9, /*hidden argument*/NULL);
+		// obj2.GetComponent<effScoreTextControl>().InitEffCoin(new Vector3(_pos.x - 0.3f,_pos.y));
+		effScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818 * L_10;
+		L_10 = GameObject_GetComponent_TiseffScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818_mC54F5AF931798512ABDCB4BC3F2EBBFCFFAC6ADD(L_5, /*hidden argument*/GameObject_GetComponent_TiseffScoreTextControl_tC7652869D1A43A6F0FCD3F8DE397A55DD54F3818_mC54F5AF931798512ABDCB4BC3F2EBBFCFFAC6ADD_RuntimeMethod_var);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_11 = ____pos0;
+		float L_12 = L_11.get_x_2();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_13 = ____pos0;
+		float L_14 = L_13.get_y_3();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_15;
+		memset((&L_15), 0, sizeof(L_15));
+		Vector3__ctor_mF7FCDE24496D619F4BB1A0BA44AF17DCB5D697FF_inline((&L_15), ((float)il2cpp_codegen_subtract((float)L_12, (float)(0.300000012f))), L_14, /*hidden argument*/NULL);
+		effScoreTextControl_InitEffCoin_m1417478FF80268279EEE30A916E1D7FC0157C0EC(L_10, L_15, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -32309,7 +32341,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_PushGold_m0A3DAB2F30E
 IL_001f:
 	{
 		// TextGold[i].text = "" + PlayerPrefs.GetInt("gold", 200);
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_2 = __this->get_TextGold_6();
+		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_2 = __this->get_TextGold_7();
 		int32_t L_3 = V_0;
 		int32_t L_4 = L_3;
 		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_5 = (L_2)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
@@ -32345,7 +32377,7 @@ IL_0050:
 	{
 		// for (int i = 0; i < TextGold.Length; i++)
 		int32_t L_10 = V_0;
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_11 = __this->get_TextGold_6();
+		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_11 = __this->get_TextGold_7();
 		if ((((int32_t)L_10) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_11)->max_length))))))
 		{
 			goto IL_001f;
@@ -32388,7 +32420,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_MinusGold_m18D9D4F0C1
 IL_001f:
 	{
 		// TextGold[i].text = "" + PlayerPrefs.GetInt("gold", 200);
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_2 = __this->get_TextGold_6();
+		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_2 = __this->get_TextGold_7();
 		int32_t L_3 = V_0;
 		int32_t L_4 = L_3;
 		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_5 = (L_2)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
@@ -32424,7 +32456,7 @@ IL_0050:
 	{
 		// for (int i = 0; i < TextGold.Length; i++)
 		int32_t L_10 = V_0;
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_11 = __this->get_TextGold_6();
+		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_11 = __this->get_TextGold_7();
 		if ((((int32_t)L_10) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_11)->max_length))))))
 		{
 			goto IL_001f;
@@ -32450,7 +32482,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_costText_m5BC190BAEAB
 IL_0004:
 	{
 		// TextCostGun[i].text = cost.ToString();
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_0 = __this->get_TextCostGun_7();
+		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_0 = __this->get_TextCostGun_8();
 		int32_t L_1 = V_0;
 		int32_t L_2 = L_1;
 		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_3 = (L_0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2));
@@ -32466,7 +32498,7 @@ IL_001c:
 	{
 		// for (int i = 0; i < TextGold.Length; i++)
 		int32_t L_6 = V_0;
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_7 = __this->get_TextGold_6();
+		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_7 = __this->get_TextGold_7();
 		if ((((int32_t)L_6) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_7)->max_length))))))
 		{
 			goto IL_0004;

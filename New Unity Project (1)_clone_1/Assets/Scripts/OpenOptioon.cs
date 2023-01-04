@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Fusion;
 
 public class OpenOptioon : MonoBehaviour
 {
@@ -10,7 +12,6 @@ public class OpenOptioon : MonoBehaviour
     [SerializeField] GameObject inventory;
     [SerializeField] GameObject NoticeBuy;
     [SerializeField] GameObject NoticeNotEnough;
-
     bool DragonTracker;
     bool Bomb;
     bool SpareShot;
@@ -24,10 +25,46 @@ public class OpenOptioon : MonoBehaviour
     [SerializeField] AudioSource soundOpen;
     [SerializeField] AudioSource closeOpen;
     [SerializeField] AudioSource buy;
+
+    [SerializeField] Slider sliderOpen;
+    [SerializeField] Text amount;
+    [SerializeField] Text amountPrice;
+
+    int amountItemInt;
+    float amountItemfloat;
     public void Start()
     {
         instant = this;
         CloseOption();
+    }
+    void HandleSliderValueChanged(float value)
+    {
+        amount.text = "Buy : " + sliderOpen.value.ToString("0") + "/ " + sliderOpen.maxValue;
+        amountItemfloat = sliderOpen.value;
+        amountItemInt = Mathf.RoundToInt(amountItemfloat);
+        
+        if (Bomb == true)
+        {
+            amountPrice.text = "Price : " + amountItemInt * 200;
+        }
+        if (SpareShot == true)
+        {
+            amountPrice.text = "Price : " + amountItemInt * 25;
+        }
+        if (DoubleDamage == true)
+        {
+            amountPrice.text = "Price : " + amountItemInt * 35;
+        }
+        if (HunterBag == true)
+        {
+            amountPrice.text = "Price : " + amountItemInt * 350;
+        }
+    }
+    public void ShowDetail()
+    {
+        sliderOpen.maxValue = amountItemfloat;
+        amount.text = "Buy : " + sliderOpen.value + " / " + sliderOpen.maxValue;
+        sliderOpen.onValueChanged.AddListener(HandleSliderValueChanged);
     }
     public void Update()
     {
@@ -76,6 +113,7 @@ public class OpenOptioon : MonoBehaviour
 
     public void LeaveGame()
     {
+        gunMode.instance.Quit();
         SceneManager.LoadScene(0);
     }
     public void Confirm()
@@ -83,7 +121,7 @@ public class OpenOptioon : MonoBehaviour
         NoticeBuy.SetActive(true);
         NoticeNotEnough.SetActive(false);
         soundOpen.Play();
-
+        ShowDetail();
     }
     public void NotEnough()
     {
@@ -98,9 +136,12 @@ public class OpenOptioon : MonoBehaviour
 
         DragonTracker = true;
         Confirm();
+        
     }
     public void BuyBomb()
     {
+        amountItemfloat = PlayerPrefs.GetInt("gold", 1000) / 200;
+
         soundOpen.Play();
 
         Bomb = true;
@@ -109,6 +150,8 @@ public class OpenOptioon : MonoBehaviour
     }
     public void BuySpareSoht()
     {
+        amountItemfloat = PlayerPrefs.GetInt("gold", 1000) / 25;
+
         soundOpen.Play();
 
         SpareShot = true;
@@ -117,6 +160,8 @@ public class OpenOptioon : MonoBehaviour
     }
     public void BuyDoubleDamage()
     {
+        amountItemfloat = PlayerPrefs.GetInt("gold", 1000) / 35;
+
         soundOpen.Play();
 
         DoubleDamage = true;
@@ -125,6 +170,8 @@ public class OpenOptioon : MonoBehaviour
     }
     public void BuyHunterBag()
     {
+        amountItemfloat = PlayerPrefs.GetInt("gold", 1000) / 350;
+
         soundOpen.Play();
 
         HunterBag = true;
@@ -136,85 +183,68 @@ public class OpenOptioon : MonoBehaviour
         
         if (DragonTracker == true)
         {
-            if (PlayerPrefs.GetInt("gold", 1000) >= 150)
-            {
-                UiTextSpawmControl.Instance.MinusGold(150);
-                itemUse.amountDragonTracker += 1;
+            
+                itemUse.amountDragonTracker += amountItemInt;
                 buy.Play();
                 CloseBeforeBuy();
-            }
-            else
-            {
-                NotEnough();
-            }
+            
             DragonTracker = false;
 
         }
         if (Bomb == true)
         {
-            if (PlayerPrefs.GetInt("gold", 1000) >= 200)
-            {
-                UiTextSpawmControl.Instance.MinusGold(200);
-                itemUse.amountBomb += 1;
+            UiTextSpawmControl.Instance.MinusGold(amountItemInt * 200);
+            itemUse.amountBomb += amountItemInt;
                 buy.Play();
                 CloseBeforeBuy();
-            }
-            else
-            {
-                NotEnough();
-            }
+            
             Bomb = false;
 
         }
         if (SpareShot == true)
         {
-            if (PlayerPrefs.GetInt("gold", 1000) >= 25)
-            {
-                UiTextSpawmControl.Instance.MinusGold(25);
-                itemUse.amountSpare += 1;
+            UiTextSpawmControl.Instance.MinusGold(amountItemInt * 25);
+
+            itemUse.amountSpare += amountItemInt;
                 buy.Play();
                 CloseBeforeBuy();
-            }
-            else
-            {
-                NotEnough();
-            }
+           
             SpareShot = false;
 
         }
         if (DoubleDamage == true)
         {
-            if (PlayerPrefs.GetInt("gold", 1000) >= 35)
-            {
-                UiTextSpawmControl.Instance.MinusGold(35);
-                itemUse.amountDoubleDamage += 1;
+            UiTextSpawmControl.Instance.MinusGold(amountItemInt * 35);
+
+            itemUse.amountDoubleDamage += amountItemInt;
                 buy.Play();
                 CloseBeforeBuy();
-            }
-            else
-            {
-                NotEnough();
-            }
+            
             DoubleDamage = false;
 
         }
         if (HunterBag == true)
         {
-            if (PlayerPrefs.GetInt("gold", 1000) >= 350)
-            {
-                UiTextSpawmControl.Instance.MinusGold(350);
-                itemUse.amountHunterBag += 1;
+            UiTextSpawmControl.Instance.MinusGold(amountItemInt * 350);
+
+            itemUse.amountHunterBag += amountItemInt;
                 buy.Play();
                 CloseBeforeBuy();
-            }
-            else
-            {
-                NotEnough();
-            }
+            
             HunterBag = false;
 
         }
         itemUse.UpdateText();
     }
-    
+    public void Plus()
+    {
+        sliderOpen.value += 1;
+        amount.text = "Item : " + sliderOpen.value.ToString("0") + "/ " + sliderOpen.maxValue;
+    }
+    public void Minus()
+    {
+        sliderOpen.value -= 1;
+        amount.text = "Item : " + sliderOpen.value.ToString("0") + "/ " + sliderOpen.maxValue;
+    }
+
 }
