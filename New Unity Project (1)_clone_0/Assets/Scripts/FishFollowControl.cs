@@ -28,7 +28,7 @@ public class FishFollowControl : MonoBehaviour
     void calldie()
     {
         this.enabled = false;
-        _swimLeader.EventRotate -= Handlel_TargetFishRotateStasrt;
+        //_swimLeader.EventRotate -= Handlel_TargetFishRotateStasrt;
     }
 
     public void Handlel_TargetFishRotateStasrt(float angle)

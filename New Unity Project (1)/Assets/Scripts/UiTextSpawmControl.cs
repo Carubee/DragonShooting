@@ -8,8 +8,8 @@ public class UiTextSpawmControl : MonoBehaviour
     public GameObject _UiRoot;
     public GameObject _TextChil;
     public GameObject coin;
-    public UILabel[] TextGold;
-    public UILabel[] TextCostGun;
+    public UILabel TextGold;
+    public UILabel TextCostGun;
 
     public UISprite EXPbar;
     public UILabel TextLevel;
@@ -20,10 +20,9 @@ public class UiTextSpawmControl : MonoBehaviour
     void Start()
     {
         Instance = this;
-        for (int i = 0; i < TextGold.Length; i++)
-        {
-            TextGold[i].text = "" + PlayerPrefs.GetInt("gold", 200);
-        }
+        
+            TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
+        
         EXPbar.fillAmount = PlayerPrefs.GetFloat("EXP") / (450 + 500 * PlayerPrefs.GetInt("level", 1));
         TextLevel.text = PlayerPrefs.GetInt("level", 1) + "";
     }
@@ -58,10 +57,9 @@ public class UiTextSpawmControl : MonoBehaviour
     public void PushGold(int gold)
     {
         PlayerPrefs.SetInt("gold", PlayerPrefs.GetInt("gold",200) + gold);
-        for (int i = 0; i < TextGold.Length; i++)
-        {
-            TextGold[i].text = "" + PlayerPrefs.GetInt("gold", 200);
-        }
+        
+            TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
+        
         PlayerPrefs.Save();
 
     }
@@ -69,18 +67,16 @@ public class UiTextSpawmControl : MonoBehaviour
     public void MinusGold(int gold)
     {
         PlayerPrefs.SetInt("gold", PlayerPrefs.GetInt("gold", 200) - gold);
-        for (int i = 0; i < TextGold.Length; i++)
-        {
-            TextGold[i].text = "" + PlayerPrefs.GetInt("gold", 200);
-        }
+        
+            TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
+        
         PlayerPrefs.Save();
 
     }
     public void costText(int cost)
     {
-        for (int i = 0; i < TextGold.Length; i++)
-        {
-            TextCostGun[i].text = cost.ToString();
-        }
+       
+            TextCostGun.text = cost.ToString();
+        
     }
 }

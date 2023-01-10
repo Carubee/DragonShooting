@@ -244,8 +244,6 @@ struct StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A;
 struct TransformU5BU5D_t7821C0520CC567C0A069329C01AE9C058C7E3F1D;
 // System.Type[]
 struct TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755;
-// UILabel[]
-struct UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE;
 // UnityEngine.UIVertex[]
 struct UIVertexU5BU5D_tE3D523C48DFEBC775876720DE2539A79FB7E5E5A;
 // UIWidget[]
@@ -1092,7 +1090,6 @@ struct RectTransformU5BU5D_tA38C18F6D88709B30F107C43E0669847172879D5;
 struct SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA;
 struct StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A;
 struct TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755;
-struct UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE;
 struct UIWidgetU5BU5D_t06164D163E23C003917DDA6E5198EEDAF559040B;
 struct Vector2U5BU5D_tE0F58A2D6D8592B5EC37D9CDEF09103A02E5D7FA;
 struct Vector2IntU5BU5D_tA91A00C258BDBF38BD76CF790B67CB344A126E9E;
@@ -15254,10 +15251,10 @@ public:
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ____TextChil_5;
 	// UnityEngine.GameObject UiTextSpawmControl::coin
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___coin_6;
-	// UILabel[] UiTextSpawmControl::TextGold
-	UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* ___TextGold_7;
-	// UILabel[] UiTextSpawmControl::TextCostGun
-	UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* ___TextCostGun_8;
+	// UILabel UiTextSpawmControl::TextGold
+	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * ___TextGold_7;
+	// UILabel UiTextSpawmControl::TextCostGun
+	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * ___TextCostGun_8;
 	// UISprite UiTextSpawmControl::EXPbar
 	UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * ___EXPbar_9;
 	// UILabel UiTextSpawmControl::TextLevel
@@ -15294,18 +15291,18 @@ public:
 	}
 
 	inline static int32_t get_offset_of_TextGold_7() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___TextGold_7)); }
-	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* get_TextGold_7() const { return ___TextGold_7; }
-	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE** get_address_of_TextGold_7() { return &___TextGold_7; }
-	inline void set_TextGold_7(UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* value)
+	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * get_TextGold_7() const { return ___TextGold_7; }
+	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 ** get_address_of_TextGold_7() { return &___TextGold_7; }
+	inline void set_TextGold_7(UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * value)
 	{
 		___TextGold_7 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___TextGold_7), (void*)value);
 	}
 
 	inline static int32_t get_offset_of_TextCostGun_8() { return static_cast<int32_t>(offsetof(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4, ___TextCostGun_8)); }
-	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* get_TextCostGun_8() const { return ___TextCostGun_8; }
-	inline UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE** get_address_of_TextCostGun_8() { return &___TextCostGun_8; }
-	inline void set_TextCostGun_8(UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* value)
+	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * get_TextCostGun_8() const { return ___TextCostGun_8; }
+	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 ** get_address_of_TextCostGun_8() { return &___TextCostGun_8; }
+	inline void set_TextCostGun_8(UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * value)
 	{
 		___TextCostGun_8 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___TextCostGun_8), (void*)value);
@@ -18507,43 +18504,6 @@ public:
 	inline void SetAtUnchecked(il2cpp_array_size_t index, EanFrame_tECB0A86B7B1A18496BF779BF901239D52738CA5D  value)
 	{
 		m_Items[index] = value;
-	}
-};
-// UILabel[]
-struct UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * m_Items[1];
-
-public:
-	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 ** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
 // System.String[]
@@ -32166,101 +32126,74 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_Start_m20A847A39EE2C5
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	String_t* G_B3_0 = NULL;
-	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B3_1 = NULL;
 	String_t* G_B2_0 = NULL;
 	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B2_1 = NULL;
-	String_t* G_B7_0 = NULL;
-	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B7_1 = NULL;
-	String_t* G_B6_0 = NULL;
-	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B6_1 = NULL;
+	String_t* G_B1_0 = NULL;
+	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B1_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B4_1 = NULL;
+	String_t* G_B3_0 = NULL;
+	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B3_1 = NULL;
 	{
 		// Instance = this;
 		((UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_StaticFields*)il2cpp_codegen_static_fields_for(UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4_il2cpp_TypeInfo_var))->set_Instance_12(__this);
-		// for (int i = 0; i < TextGold.Length; i++)
-		V_0 = 0;
-		goto IL_003b;
-	}
-
-IL_000a:
-	{
-		// TextGold[i].text = "" + PlayerPrefs.GetInt("gold", 200);
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_0 = __this->get_TextGold_7();
-		int32_t L_1 = V_0;
-		int32_t L_2 = L_1;
-		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_3 = (L_0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2));
-		int32_t L_4;
-		L_4 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)200), /*hidden argument*/NULL);
-		V_1 = L_4;
-		String_t* L_5;
-		L_5 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_1), /*hidden argument*/NULL);
-		String_t* L_6 = L_5;
-		G_B2_0 = L_6;
-		G_B2_1 = L_3;
-		if (L_6)
+		// TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
+		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_0 = __this->get_TextGold_7();
+		int32_t L_1;
+		L_1 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)200), /*hidden argument*/NULL);
+		V_0 = L_1;
+		String_t* L_2;
+		L_2 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_0), /*hidden argument*/NULL);
+		String_t* L_3 = L_2;
+		G_B1_0 = L_3;
+		G_B1_1 = L_0;
+		if (L_3)
 		{
-			G_B3_0 = L_6;
-			G_B3_1 = L_3;
-			goto IL_0032;
+			G_B2_0 = L_3;
+			G_B2_1 = L_0;
+			goto IL_002c;
 		}
 	}
 	{
-		G_B3_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		G_B3_1 = G_B2_1;
+		G_B2_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		G_B2_1 = G_B1_1;
 	}
 
-IL_0032:
+IL_002c:
 	{
-		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(G_B3_1, G_B3_0, /*hidden argument*/NULL);
-		// for (int i = 0; i < TextGold.Length; i++)
-		int32_t L_7 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_7, (int32_t)1));
-	}
-
-IL_003b:
-	{
-		// for (int i = 0; i < TextGold.Length; i++)
-		int32_t L_8 = V_0;
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_9 = __this->get_TextGold_7();
-		if ((((int32_t)L_8) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_9)->max_length))))))
-		{
-			goto IL_000a;
-		}
-	}
-	{
+		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(G_B2_1, G_B2_0, /*hidden argument*/NULL);
 		// EXPbar.fillAmount = PlayerPrefs.GetFloat("EXP") / (450 + 500 * PlayerPrefs.GetInt("level", 1));
-		UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * L_10 = __this->get_EXPbar_9();
-		float L_11;
-		L_11 = PlayerPrefs_GetFloat_mD7C0FF082E41084D8CAB187CE70843A678733913(_stringLiteralBCC1A653A8451839100C2815C538B2B7A46F73E6, /*hidden argument*/NULL);
-		int32_t L_12;
-		L_12 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral9B5D93EBDD41E0250436B5C2FA8A1004ADC41CB9, 1, /*hidden argument*/NULL);
-		UIBasicSprite_set_fillAmount_m9D811CEED2F63EC6F2048137883B145D4F697AD0(L_10, ((float)((float)L_11/(float)((float)((float)((int32_t)il2cpp_codegen_add((int32_t)((int32_t)450), (int32_t)((int32_t)il2cpp_codegen_multiply((int32_t)((int32_t)500), (int32_t)L_12)))))))), /*hidden argument*/NULL);
+		UISprite_t0F151F17C16AC62333ED6DCAC9D72978A5093AA0 * L_4 = __this->get_EXPbar_9();
+		float L_5;
+		L_5 = PlayerPrefs_GetFloat_mD7C0FF082E41084D8CAB187CE70843A678733913(_stringLiteralBCC1A653A8451839100C2815C538B2B7A46F73E6, /*hidden argument*/NULL);
+		int32_t L_6;
+		L_6 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral9B5D93EBDD41E0250436B5C2FA8A1004ADC41CB9, 1, /*hidden argument*/NULL);
+		UIBasicSprite_set_fillAmount_m9D811CEED2F63EC6F2048137883B145D4F697AD0(L_4, ((float)((float)L_5/(float)((float)((float)((int32_t)il2cpp_codegen_add((int32_t)((int32_t)450), (int32_t)((int32_t)il2cpp_codegen_multiply((int32_t)((int32_t)500), (int32_t)L_6)))))))), /*hidden argument*/NULL);
 		// TextLevel.text = PlayerPrefs.GetInt("level", 1) + "";
-		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_13 = __this->get_TextLevel_10();
-		int32_t L_14;
-		L_14 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral9B5D93EBDD41E0250436B5C2FA8A1004ADC41CB9, 1, /*hidden argument*/NULL);
-		V_1 = L_14;
-		String_t* L_15;
-		L_15 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_1), /*hidden argument*/NULL);
-		String_t* L_16 = L_15;
-		G_B6_0 = L_16;
-		G_B6_1 = L_13;
-		if (L_16)
+		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_7 = __this->get_TextLevel_10();
+		int32_t L_8;
+		L_8 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral9B5D93EBDD41E0250436B5C2FA8A1004ADC41CB9, 1, /*hidden argument*/NULL);
+		V_0 = L_8;
+		String_t* L_9;
+		L_9 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_0), /*hidden argument*/NULL);
+		String_t* L_10 = L_9;
+		G_B3_0 = L_10;
+		G_B3_1 = L_7;
+		if (L_10)
 		{
-			G_B7_0 = L_16;
-			G_B7_1 = L_13;
-			goto IL_0096;
+			G_B4_0 = L_10;
+			G_B4_1 = L_7;
+			goto IL_0081;
 		}
 	}
 	{
-		G_B7_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		G_B7_1 = G_B6_1;
+		G_B4_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		G_B4_1 = G_B3_1;
 	}
 
-IL_0096:
+IL_0081:
 	{
-		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(G_B7_1, G_B7_0, /*hidden argument*/NULL);
+		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(G_B4_1, G_B4_0, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -32322,68 +32255,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_PushGold_m0A3DAB2F30E
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	String_t* G_B3_0 = NULL;
-	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B3_1 = NULL;
 	String_t* G_B2_0 = NULL;
 	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B2_1 = NULL;
+	String_t* G_B1_0 = NULL;
+	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B1_1 = NULL;
 	{
 		// PlayerPrefs.SetInt("gold", PlayerPrefs.GetInt("gold",200) + gold);
 		int32_t L_0;
 		L_0 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)200), /*hidden argument*/NULL);
 		int32_t L_1 = ___gold0;
 		PlayerPrefs_SetInt_m2660AEEE642894B67FC56B1F93F6E9214D7F3E32(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)il2cpp_codegen_add((int32_t)L_0, (int32_t)L_1)), /*hidden argument*/NULL);
-		// for (int i = 0; i < TextGold.Length; i++)
-		V_0 = 0;
-		goto IL_0050;
-	}
-
-IL_001f:
-	{
-		// TextGold[i].text = "" + PlayerPrefs.GetInt("gold", 200);
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_2 = __this->get_TextGold_7();
-		int32_t L_3 = V_0;
-		int32_t L_4 = L_3;
-		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_5 = (L_2)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
-		int32_t L_6;
-		L_6 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)200), /*hidden argument*/NULL);
-		V_1 = L_6;
-		String_t* L_7;
-		L_7 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_1), /*hidden argument*/NULL);
-		String_t* L_8 = L_7;
-		G_B2_0 = L_8;
-		G_B2_1 = L_5;
-		if (L_8)
+		// TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
+		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_2 = __this->get_TextGold_7();
+		int32_t L_3;
+		L_3 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)200), /*hidden argument*/NULL);
+		V_0 = L_3;
+		String_t* L_4;
+		L_4 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_0), /*hidden argument*/NULL);
+		String_t* L_5 = L_4;
+		G_B1_0 = L_5;
+		G_B1_1 = L_2;
+		if (L_5)
 		{
-			G_B3_0 = L_8;
-			G_B3_1 = L_5;
-			goto IL_0047;
+			G_B2_0 = L_5;
+			G_B2_1 = L_2;
+			goto IL_0041;
 		}
 	}
 	{
-		G_B3_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		G_B3_1 = G_B2_1;
+		G_B2_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		G_B2_1 = G_B1_1;
 	}
 
-IL_0047:
+IL_0041:
 	{
-		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(G_B3_1, G_B3_0, /*hidden argument*/NULL);
-		// for (int i = 0; i < TextGold.Length; i++)
-		int32_t L_9 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_9, (int32_t)1));
-	}
-
-IL_0050:
-	{
-		// for (int i = 0; i < TextGold.Length; i++)
-		int32_t L_10 = V_0;
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_11 = __this->get_TextGold_7();
-		if ((((int32_t)L_10) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_11)->max_length))))))
-		{
-			goto IL_001f;
-		}
-	}
-	{
+		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(G_B2_1, G_B2_0, /*hidden argument*/NULL);
 		// PlayerPrefs.Save();
 		PlayerPrefs_Save_m577A632653C7788682CD8FB6579B24B4CE507393(/*hidden argument*/NULL);
 		// }
@@ -32401,68 +32307,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_MinusGold_m18D9D4F0C1
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	String_t* G_B3_0 = NULL;
-	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B3_1 = NULL;
 	String_t* G_B2_0 = NULL;
 	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B2_1 = NULL;
+	String_t* G_B1_0 = NULL;
+	UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * G_B1_1 = NULL;
 	{
 		// PlayerPrefs.SetInt("gold", PlayerPrefs.GetInt("gold", 200) - gold);
 		int32_t L_0;
 		L_0 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)200), /*hidden argument*/NULL);
 		int32_t L_1 = ___gold0;
 		PlayerPrefs_SetInt_m2660AEEE642894B67FC56B1F93F6E9214D7F3E32(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)il2cpp_codegen_subtract((int32_t)L_0, (int32_t)L_1)), /*hidden argument*/NULL);
-		// for (int i = 0; i < TextGold.Length; i++)
-		V_0 = 0;
-		goto IL_0050;
-	}
-
-IL_001f:
-	{
-		// TextGold[i].text = "" + PlayerPrefs.GetInt("gold", 200);
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_2 = __this->get_TextGold_7();
-		int32_t L_3 = V_0;
-		int32_t L_4 = L_3;
-		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_5 = (L_2)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
-		int32_t L_6;
-		L_6 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)200), /*hidden argument*/NULL);
-		V_1 = L_6;
-		String_t* L_7;
-		L_7 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_1), /*hidden argument*/NULL);
-		String_t* L_8 = L_7;
-		G_B2_0 = L_8;
-		G_B2_1 = L_5;
-		if (L_8)
+		// TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
+		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_2 = __this->get_TextGold_7();
+		int32_t L_3;
+		L_3 = PlayerPrefs_GetInt_m2F02E263F3639B18B0634184BA8FB049F8865FB4(_stringLiteral7C6EFA425812F1F3EE9C396E088A0EBB0FF822AD, ((int32_t)200), /*hidden argument*/NULL);
+		V_0 = L_3;
+		String_t* L_4;
+		L_4 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_0), /*hidden argument*/NULL);
+		String_t* L_5 = L_4;
+		G_B1_0 = L_5;
+		G_B1_1 = L_2;
+		if (L_5)
 		{
-			G_B3_0 = L_8;
-			G_B3_1 = L_5;
-			goto IL_0047;
+			G_B2_0 = L_5;
+			G_B2_1 = L_2;
+			goto IL_0041;
 		}
 	}
 	{
-		G_B3_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		G_B3_1 = G_B2_1;
+		G_B2_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		G_B2_1 = G_B1_1;
 	}
 
-IL_0047:
+IL_0041:
 	{
-		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(G_B3_1, G_B3_0, /*hidden argument*/NULL);
-		// for (int i = 0; i < TextGold.Length; i++)
-		int32_t L_9 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_9, (int32_t)1));
-	}
-
-IL_0050:
-	{
-		// for (int i = 0; i < TextGold.Length; i++)
-		int32_t L_10 = V_0;
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_11 = __this->get_TextGold_7();
-		if ((((int32_t)L_10) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_11)->max_length))))))
-		{
-			goto IL_001f;
-		}
-	}
-	{
+		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(G_B2_1, G_B2_0, /*hidden argument*/NULL);
 		// PlayerPrefs.Save();
 		PlayerPrefs_Save_m577A632653C7788682CD8FB6579B24B4CE507393(/*hidden argument*/NULL);
 		// }
@@ -32472,39 +32351,12 @@ IL_0050:
 // System.Void UiTextSpawmControl::costText(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiTextSpawmControl_costText_m5BC190BAEAB43FE30F6696A8D2F82B1A5C471E53 (UiTextSpawmControl_tBF92E03B03CABA3C852EBA3D625E98844E6BCAB4 * __this, int32_t ___cost0, const RuntimeMethod* method)
 {
-	int32_t V_0 = 0;
 	{
-		// for (int i = 0; i < TextGold.Length; i++)
-		V_0 = 0;
-		goto IL_001c;
-	}
-
-IL_0004:
-	{
-		// TextCostGun[i].text = cost.ToString();
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_0 = __this->get_TextCostGun_8();
-		int32_t L_1 = V_0;
-		int32_t L_2 = L_1;
-		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_3 = (L_0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2));
-		String_t* L_4;
-		L_4 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&___cost0), /*hidden argument*/NULL);
-		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(L_3, L_4, /*hidden argument*/NULL);
-		// for (int i = 0; i < TextGold.Length; i++)
-		int32_t L_5 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)1));
-	}
-
-IL_001c:
-	{
-		// for (int i = 0; i < TextGold.Length; i++)
-		int32_t L_6 = V_0;
-		UILabelU5BU5D_t9314408F967EC6E3D7963C2CA8FEBCF4317237EE* L_7 = __this->get_TextGold_7();
-		if ((((int32_t)L_6) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_7)->max_length))))))
-		{
-			goto IL_0004;
-		}
-	}
-	{
+		// TextCostGun.text = cost.ToString();
+		UILabel_t92810B217CC98387FE53AB293284F1CCD92162A0 * L_0 = __this->get_TextCostGun_8();
+		String_t* L_1;
+		L_1 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&___cost0), /*hidden argument*/NULL);
+		UILabel_set_text_mE65FD3C99D147546EB8BD4B673C92EA09839594E(L_0, L_1, /*hidden argument*/NULL);
 		// }
 		return;
 	}

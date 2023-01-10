@@ -99,7 +99,6 @@ public class NetworkManagerUI : NetworkBehaviour
         {
             PlayerNameMulti[i].text = "Select";
         }
-        PlayerNameMulti[seat].text = "BA";
         //seatEmpty[seat].SetActive(true);
 
     }

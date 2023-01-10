@@ -54,13 +54,13 @@ public class AnimationGun : NetworkBehaviour
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
     public void Rpc_animHold()
     {
-        fire.SetBool("Holdshot", true);
+            fire.SetBool("Holdshot", true);
 
     }
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
     public void Rpc_animHoldDis()
     {
-        fire.SetBool("Holdshot", false);
+            fire.SetBool("Holdshot", false);
 
     }
 }

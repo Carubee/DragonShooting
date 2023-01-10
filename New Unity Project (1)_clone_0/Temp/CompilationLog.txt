@@ -1,8 +1,0 @@
-# Starting compiling Assembly-CSharp.dll
-C:\Program Files\Unity\Hub\Editor\2020.3.41f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-a4cd45337e439b648be36137a0903331
-# Starting IL post processing on Assembly-CSharp.dll
-"C:/Program Files/Unity/Hub/Editor/2020.3.41f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"C:/Users/Asus/Documents/GitHub/DragonShooting/New Unity Project (1)_clone_0/Temp/UnityTempFile-1bd792329ed6fff4294a16b7dbed6a65"
-# Starting compiling Assembly-CSharp-Editor.dll
-C:\Program Files\Unity\Hub\Editor\2020.3.41f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-1705d387b2864bb40a598ff341cdef63
-# Starting IL post processing on Assembly-CSharp-Editor.dll
-"C:/Program Files/Unity/Hub/Editor/2020.3.41f1/Editor/Data/MonoBleedingEdge/bin/mono.exe" "C:/Program Files/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"C:/Users/Asus/Documents/GitHub/DragonShooting/New Unity Project (1)_clone_0/Temp/UnityTempFile-91e7316f4555f5d448f285c1c54ad848"

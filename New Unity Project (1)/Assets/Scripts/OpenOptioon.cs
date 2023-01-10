@@ -29,9 +29,10 @@ public class OpenOptioon : MonoBehaviour
     [SerializeField] Slider sliderOpen;
     [SerializeField] Text amount;
     [SerializeField] Text amountPrice;
-
+    [SerializeField] Image image;
     int amountItemInt;
     float amountItemfloat;
+    [SerializeField] Text nameItem;
     public void Start()
     {
         instant = this;
@@ -39,32 +40,34 @@ public class OpenOptioon : MonoBehaviour
     }
     void HandleSliderValueChanged(float value)
     {
-        amount.text = "Buy : " + sliderOpen.value.ToString("0") + "/ " + sliderOpen.maxValue;
         amountItemfloat = sliderOpen.value;
         amountItemInt = Mathf.RoundToInt(amountItemfloat);
-        
+        amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
+
+
         if (Bomb == true)
         {
-            amountPrice.text = "Price : " + amountItemInt * 200;
+            amountPrice.text =  (amountItemInt * 200).ToString();
         }
         if (SpareShot == true)
         {
-            amountPrice.text = "Price : " + amountItemInt * 25;
+            amountPrice.text =  (amountItemInt * 25).ToString();
         }
         if (DoubleDamage == true)
         {
-            amountPrice.text = "Price : " + amountItemInt * 35;
+            amountPrice.text = (amountItemInt * 35).ToString();
         }
         if (HunterBag == true)
         {
-            amountPrice.text = "Price : " + amountItemInt * 350;
+            amountPrice.text =  (amountItemInt * 350).ToString();
         }
     }
     public void ShowDetail()
     {
         sliderOpen.maxValue = amountItemfloat;
-        amount.text = "Buy : " + sliderOpen.value + " / " + sliderOpen.maxValue;
+        amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
         sliderOpen.onValueChanged.AddListener(HandleSliderValueChanged);
+        
     }
     public void Update()
     {
@@ -109,6 +112,22 @@ public class OpenOptioon : MonoBehaviour
         NoticeNotEnough.SetActive(false);
         soundOpen.Play();
 
+        if (Bomb == true)
+        {
+            Bomb = false;
+        }
+        if (SpareShot == true)
+        {
+            SpareShot = false;
+        }
+        if (DoubleDamage == true)
+        {
+            DoubleDamage = false;
+        }
+        if (HunterBag == true)
+        {
+            HunterBag = false;
+        }
     }
 
     public void LeaveGame()
@@ -122,6 +141,29 @@ public class OpenOptioon : MonoBehaviour
         NoticeNotEnough.SetActive(false);
         soundOpen.Play();
         ShowDetail();
+        if (Bomb == true)
+        {
+            amountPrice.text = (amountItemInt * 200).ToString();
+            nameItem.text = "Bomb";
+        }
+        if (SpareShot == true)
+        {
+            amountPrice.text = (amountItemInt * 25).ToString();
+            nameItem.text = "Spare Shot";
+
+        }
+        if (DoubleDamage == true)
+        {
+            amountPrice.text = (amountItemInt * 35).ToString();
+            nameItem.text = "Double Damage";
+
+        }
+        if (HunterBag == true)
+        {
+            amountPrice.text = (amountItemInt * 350).ToString();
+            nameItem.text = "Double Gold";
+
+        }
     }
     public void NotEnough()
     {
@@ -188,7 +230,6 @@ public class OpenOptioon : MonoBehaviour
                 buy.Play();
                 CloseBeforeBuy();
             
-            DragonTracker = false;
 
         }
         if (Bomb == true)
@@ -198,7 +239,6 @@ public class OpenOptioon : MonoBehaviour
                 buy.Play();
                 CloseBeforeBuy();
             
-            Bomb = false;
 
         }
         if (SpareShot == true)
@@ -209,7 +249,6 @@ public class OpenOptioon : MonoBehaviour
                 buy.Play();
                 CloseBeforeBuy();
            
-            SpareShot = false;
 
         }
         if (DoubleDamage == true)
@@ -220,7 +259,6 @@ public class OpenOptioon : MonoBehaviour
                 buy.Play();
                 CloseBeforeBuy();
             
-            DoubleDamage = false;
 
         }
         if (HunterBag == true)
@@ -231,20 +269,27 @@ public class OpenOptioon : MonoBehaviour
                 buy.Play();
                 CloseBeforeBuy();
             
-            HunterBag = false;
 
         }
         itemUse.UpdateText();
     }
     public void Plus()
     {
-        sliderOpen.value += 1;
-        amount.text = "Item : " + sliderOpen.value.ToString("0") + "/ " + sliderOpen.maxValue;
+        if (amountItemInt < sliderOpen.maxValue)
+        {
+            amountItemInt += 1;
+            sliderOpen.value = amountItemInt;
+            amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
+        }
     }
     public void Minus()
     {
-        sliderOpen.value -= 1;
-        amount.text = "Item : " + sliderOpen.value.ToString("0") + "/ " + sliderOpen.maxValue;
+        if (amountItemInt > 0)
+        {
+            amountItemInt -= 1;
+            sliderOpen.value = amountItemInt;
+            amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
+        }
     }
 
 }

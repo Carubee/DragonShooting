@@ -422,6 +422,7 @@
     <Compile Include="Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
     <Compile Include="Assets\Xffect\Scripts\Events\CameraEffects\GlitchEvent.cs" />
     <Compile Include="Assets\2DxFX\Scripts\_2dxFX_Wave.cs" />
+    <Compile Include="Assets\Scripts\AnimationSelectGun.cs" />
     <Compile Include="Assets\NGUI\Scripts\Interaction\UISlider.cs" />
     <Compile Include="Assets\Xffect\Scripts\Affectors\VortexAffector.cs" />
     <Compile Include="Assets\Xffect\EnhancementTools\XSpline\Scripts\XSplineUtil.cs" />

@@ -19,6 +19,7 @@ public class TestButton : MonoBehaviour
     {
         instancel = this;
         Name = PlayerPrefs.GetString("PlayerNickName");
+        
     }
     public void Button()
     {
@@ -57,12 +58,22 @@ public class TestButton : MonoBehaviour
         for(int i = 0; i < ButtonOther.Length; i++)
         {
             ButtonPlayer[i].SetActive(false);
-            ButtonOther[i].SetActive(true);
-
+            //ButtonOther[i].SetActive(true);
         }
         ButtonOther[SeatNum].SetActive(false);
-        ButtonPlayer[SeatNum].SetActive(true);
+        //ButtonPlayer[SeatNum].SetActive(true);
         ButtonOtherText[SeatNum].text = Name;
+
         ;
+    }
+    public void Change()
+    {
+
+        for (int i = 0; i < ButtonOther.Length; i++)
+        {
+            ButtonPlayer[i].SetActive(false);
+        }
+
+
     }
 }

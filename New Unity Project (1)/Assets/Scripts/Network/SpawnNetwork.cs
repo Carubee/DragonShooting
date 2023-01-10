@@ -79,7 +79,6 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     }
     [SerializeField] private NetworkPrefabRef _playerPrefab;
     private Dictionary<PlayerRef, NetworkObject> _spawnedCharacter = new Dictionary<PlayerRef, NetworkObject>();
-    private Dictionary<PlayerRef, NetworkObject> _spawnedCharacter2 = new Dictionary<PlayerRef, NetworkObject>();
     public void OnPlayerJoined(NetworkRunner runner,PlayerRef player)
     {
         lobbyMenu.SetActive(false);

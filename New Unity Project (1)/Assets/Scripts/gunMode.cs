@@ -59,6 +59,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
 
     //public bool canfire;
     public int randomFreefire;
+
     public bool canPlay;
 
     public float TimeDouble = 10;
@@ -85,14 +86,38 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     [SerializeField] UILabel NamePlayer3;
     [SerializeField] UILabel NamePlayer4;
 
-    [SerializeField] UIButton Button1;
-    [SerializeField] UIButton Button2;
-    [SerializeField] UIButton Button3;
-    [SerializeField] UIButton Button4;
+    [SerializeField] UI2DSprite Fake1;
+    [SerializeField] UI2DSprite Fake2;
+    [SerializeField] UI2DSprite Fake3;
+    [SerializeField] UI2DSprite Fake4;
+
+    [SerializeField] UILabel FakeText1;
+    [SerializeField] UILabel FakeText2;
+    [SerializeField] UILabel FakeText3;
+    [SerializeField] UILabel FakeText4;
+
+    [SerializeField] GameObject Button1;
+    [SerializeField] GameObject Button2;
+    [SerializeField] GameObject Button3;
+    [SerializeField] GameObject Button4;
+    
+    [SerializeField] GameObject Panel1;
+    [SerializeField] GameObject Panel2;
+    [SerializeField] GameObject Panel3;
+    [SerializeField] GameObject Panel4;
+
+    [SerializeField] AnimationSelectGun animationSelectGun;
+
     [Networked] public string NameInput { get; set; }
     [Networked] public int NumInput { get; set; }
 
+    public GameObject FindName;
+    public GameObject FindName2;
+    public GameObject FindName3;
+    public GameObject FindName4;
+
     private Dictionary<PlayerRef, NetworkObject> _spawnedCharacter = new Dictionary<PlayerRef, NetworkObject>();
+    public string NameReal;
 
     public void Awake()
     {
@@ -102,40 +127,107 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     }
     public void Start()
     {
+        NameReal = (PlayerPrefs.GetString("PlayerNickName"));
+
+        Rpc_ChangeGunServer(1);
         Rpc_Laser(false);
+        
+            FindName = GameObject.Find("seat 1");
+            FindName2 = GameObject.Find("seat 2");
+            FindName3 = GameObject.Find("seat 3");
+            FindName4 = GameObject.Find("seat 4");
+
+        Panel1 = GameObject.Find("Name Player 1");
+        Panel2 = GameObject.Find("Name Player 2");
+        Panel3 = GameObject.Find("Name Player 3");
+        Panel4 = GameObject.Find("Name Player 4");
+
+        Fake1 = GameObject.Find("FakeNameBar 1").GetComponent<UI2DSprite>();
+        FakeText1 = GameObject.Find("FakeText 1").GetComponent<UILabel>();
+        Fake2 = GameObject.Find("FakeNameBar 2").GetComponent<UI2DSprite>();
+        FakeText2 = GameObject.Find("FakeText 2").GetComponent<UILabel>();
+        Fake3 = GameObject.Find("FakeNameBar 3").GetComponent<UI2DSprite>();
+        FakeText3 = GameObject.Find("FakeText 3").GetComponent<UILabel>();
+        Fake4 = GameObject.Find("FakeNameBar 4").GetComponent<UI2DSprite>();
+        FakeText4 = GameObject.Find("FakeText 4").GetComponent<UILabel>();
+
     }
     public override void Spawned()
     {
-
-        //Rpc_SetNickName(PlayerPrefs.GetString("PlayerNickName"));
         instance = this;
         if (Object.HasInputAuthority)
         {
+            //TestButton.instancel.Change();
             Rpc_SetNickName(PlayerPrefs.GetString("PlayerNickName"));
             Rpc_ChangeGunServer(1);
-            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
-            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
-            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
-            NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
 
-            Button1 = GameObject.Find("Name Player (4)").GetComponent<UIButton>();
-            Button2 = GameObject.Find("Name Player (1)").GetComponent<UIButton>();
-            Button3 = GameObject.Find("Name Player (2)").GetComponent<UIButton>();
-            Button4 = GameObject.Find("Name Player (3)").GetComponent<UIButton>();
+            //ChangeName(NumInput, NameInput);
+            //NameText2 = GameObject.Find("NameText2").GetComponent<UILabel>();
+            //NameText3 = GameObject.Find("NameText3").GetComponent<UILabel>();
+            //NameText4 = GameObject.Find("NameText4").GetComponent<UILabel>();
+            Panel1 = GameObject.Find("Name Player 1");
+            Panel2 = GameObject.Find("Name Player 2");
+            Panel3 = GameObject.Find("Name Player 3");
+            Panel4 = GameObject.Find("Name Player 4");
+
+            Button1 = GameObject.Find("NameBar 1");
+            Button2 = GameObject.Find("NameBar 2");
+            Button3 = GameObject.Find("NameBar 3");
+            Button4 = GameObject.Find("NameBar 4");
+
+            //NameText = GameObject.Find("NameText1").GetComponent<UILabel>();
         }
         else
         {
             ChangeGunVisual(gunModel);
-            ChangeName(NumInput, NameInput);
-            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
-            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
-            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
-            NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+            Panel1 = GameObject.Find("Name Player 1");
+            Panel2 = GameObject.Find("Name Player 2");
+            Panel3 = GameObject.Find("Name Player 3");
+            Panel4 = GameObject.Find("Name Player 4");
 
-            Button1 = GameObject.Find("Name Player (4)").GetComponent<UIButton>();
-            Button2 = GameObject.Find("Name Player (1)").GetComponent<UIButton>();
-            Button3 = GameObject.Find("Name Player (2)").GetComponent<UIButton>();
-            Button4 = GameObject.Find("Name Player (3)").GetComponent<UIButton>();
+            Button1 = GameObject.Find("NameBar 1");
+            Button2 = GameObject.Find("NameBar 2");
+            Button3 = GameObject.Find("NameBar 3");
+            Button4 = GameObject.Find("NameBar 4");
+
+            switch (NumInput) {
+                case 1:
+                    Panel1.SetActive(false);
+                    Fake1 = GameObject.Find("FakeNameBar 1").GetComponent<UI2DSprite>();
+                    Fake1.GetComponent<UI2DSprite>().enabled = true;
+                    FakeText1 = GameObject.Find("FakeText 1").GetComponent<UILabel>();
+                    FakeText1.GetComponent<UILabel>().enabled = true;
+                    FakeText1.text = NameInput;
+                    break;
+                case 2:
+                    Panel2.SetActive(false);
+                    Fake2 = GameObject.Find("FakeNameBar 2").GetComponent<UI2DSprite>();
+                    Fake2.GetComponent<UI2DSprite>().enabled = true;
+                    FakeText2 = GameObject.Find("FakeText 2").GetComponent<UILabel>();
+                    FakeText2.GetComponent<UILabel>().enabled = true;
+                    FakeText2.text = NameInput;
+                    break;
+                case 3:
+                    Panel3.SetActive(false);
+                    Fake3 = GameObject.Find("FakeNameBar 3").GetComponent<UI2DSprite>();
+                    Fake3.GetComponent<UI2DSprite>().enabled = true;
+                    FakeText3 = GameObject.Find("FakeText 3").GetComponent<UILabel>();
+                    FakeText3.GetComponent<UILabel>().enabled = true;
+                    FakeText3.text = NameInput;
+                    break;
+                case 4:
+                    Panel4.SetActive(false);
+                    Fake4 = GameObject.Find("FakeNameBar 4").GetComponent<UI2DSprite>();
+                    Fake4.GetComponent<UI2DSprite>().enabled = true;
+                    FakeText4 = GameObject.Find("FakeText 4").GetComponent<UILabel>();
+                    FakeText4.GetComponent<UILabel>().enabled = true;
+                    FakeText4.text = NameInput;
+                    break;
+                        }
+            //NameText = GameObject.Find("NameText1").GetComponent<UILabel>();
+            //NameText2 = GameObject.Find("NameText2").GetComponent<UILabel>();
+            //NameText3 = GameObject.Find("NameText3").GetComponent<UILabel>();
+            //NameText4 = GameObject.Find("NameText4").GetComponent<UILabel>();
         }
     }
    [Networked] public TickTimer delay { get; set; }
@@ -151,10 +243,9 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
                 {
                     if ((data.button & NetworkInputData.MOUSEBUTTON1) != 0)
                     {
+                        if (!Object.HasInputAuthority) return;
                         Rpc_Bullet(gunModel, item.instace.doubleDamage);
-
                     }
-                    
                 }
             }
             if (!Object.HasInputAuthority) return;
@@ -165,49 +256,47 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
                     break;
                 case 2:
                     Rpc_ChangeGunServer(2);
-
                     break;
                 case 3:
-
                     Rpc_ChangeGunServer(3);
                     break;
                 case 4:
                     Rpc_ChangeGunServer(4);
-
                     break;
                 case 5:
                     Rpc_ChangeGunServer(5);
-
                     break;
                 case 6:
                     Rpc_ChangeGunServer(6);
-
                     break;
             }
             switch (data.PosChange)
             {
                 case 1:
+                    Button1 = GameObject.Find("NameBar 1");
                     Rpc_ChangePos(1);
-                    Rpc_ChangeName(1, data.LastPose, NameInput);
+                    Rpc_ChangeName(1, data.LastPose, NameReal);
+                    canPlay = true;
                     break;
                 case 2:
+                    Button2 = GameObject.Find("NameBar 2");
                     Rpc_ChangePos(2);
-
-                    Rpc_ChangeName(2, data.LastPose, NameInput);
-
+                    Rpc_ChangeName(2, data.LastPose, NameReal);
+                    canPlay = true;
                     break;
                 case 3:
+                    Button3 = GameObject.Find("NameBar 3");
                     Rpc_ChangePos(3);
-
-                    Rpc_ChangeName(3, data.LastPose, NameInput);
+                    Rpc_ChangeName(3, data.LastPose, NameReal);
+                    canPlay = true;
                     break;
                 case 4:
+                    Button4 = GameObject.Find("NameBar 4");
                     Rpc_ChangePos(4);
-
-                    Rpc_ChangeName(4, data.LastPose, NameInput);
+                    Rpc_ChangeName(4, data.LastPose, NameReal);
+                    canPlay = true;
                     break;
             }
-
         }
     }
     public void Update()
@@ -263,8 +352,9 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     public void dropLocal(string message , int coin,Vector3 pos)
     {
         RPC_Drop(message,coin,pos);
+       //RPC_HostDrop(message, coin, pos);
     }
-    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     public void RPC_Drop(string message, int coin,Vector3 pos, RpcInfo info = default)
     {
         if (info.IsInvokeLocal)
@@ -281,10 +371,23 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
         {
             Debug.Log("Other " + message + " And " + nickName.ToString());
         }
-
-
     }
-    static void OnNickNameChanged(Changed<gunMode> changed)
+    [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
+    public void RPC_HostDrop(string message, int coin, Vector3 pos, RpcInfo info = default)
+    {
+        if (info.IsInvokeLocal)
+        {
+            Debug.Log(message + " And " + nickName.ToString());
+            UiTextSpawmControl.Instance.PushGold(coin);
+            Instantiate(Resources.Load("coinEff"), pos, Quaternion.identity);
+            UiTextSpawmControl.Instance.CallTextEff(pos + Vector3.up * 0.5f, coin);
+            int itemDrop = Random.Range(0, 21);
+            if (itemDrop == 0)
+                Instantiate(Resources.Load("Item"), pos, Quaternion.identity);
+        }
+    }
+
+        static void OnNickNameChanged(Changed<gunMode> changed)
     {
         changed.Behaviour.OnNickNameChanged();
     }
@@ -300,101 +403,144 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
     public void Rpc_ChangeName(int gunValue,int last, string Name)
     {
+        canPlay = true;
 
         Debug.Log(gunValue + " = " + last);
         if (last == 1)
         {
-            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
-            Button1.enabled = true;
-            NameText.text = "Select";
+            Panel1.SetActive(true);
+            NameText.text = "";
 
         }
 
         if (last == 2)
         {
-            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
-            Button2.enabled = true;
+            Panel2.SetActive(true);
+            NameText2.text = "";
 
-            NameText2.text = "Select";
         }
 
         if (last == 3)
         {
-            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
-            Button3.enabled = true;
+            Panel3.SetActive(true);
+            NameText3.text = "";
 
-            NameText3.text = "Select";
         }
         if (last == 4)
         {
-            NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
-            Button4.enabled = true;
+            Panel4.SetActive(true);
+            NameText4.text = "";
 
-            NameText4.text = "Select";
         }
-        
-            if (gunValue == 1)
+
+        if (gunValue == 1)
             {
-
-            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
-            Button1.enabled = false;
-
+            //Button1.SetActive(true);
+            Transform[] button = FindName.transform.GetComponentsInChildren<Transform>(true);
+            for (int i = 0; i < button.Length; i++)
+            {
+                button[i].gameObject.SetActive(true);
+            }
+            NameText = GameObject.Find("NameText1").GetComponent<UILabel>();
+            GameObject GunSelect = GameObject.Find("GunSelect");
+            if (!Object.HasInputAuthority)
+            {
+                GunSelect.gameObject.SetActive(false);
+            }
             NumInput = gunValue;
-            
             NameText.text = Name;
-            }
-            if (gunValue == 2)
+            Panel1.SetActive(false);
+
+        }
+        if (gunValue == 2)
             {
-            Button2.enabled = false;
-
-            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
+            Transform[] button = FindName2.transform.GetComponentsInChildren<Transform>(true);
+            for (int i = 0; i < button.Length; i++)
+            {
+                button[i].gameObject.SetActive(true);
+            }
+            NameText2 = GameObject.Find("NameText2").GetComponent<UILabel>();
+            GameObject GunSelect = GameObject.Find("GunSelect2");
+            if (!Object.HasInputAuthority)
+            {
+                GunSelect.gameObject.SetActive(false);
+            }
             NumInput = gunValue;
-
             NameText2.text = Name;
-            }
-            if (gunValue == 3)
+            Panel2.SetActive(false);
+        }
+        if (gunValue == 3)
+        {
+            Transform[] button = FindName3.transform.GetComponentsInChildren<Transform>(true);
+            for (int i = 0; i < button.Length; i++)
             {
-            Button3.enabled = false;
-
-            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
+                button[i].gameObject.SetActive(true);
+            }
+            NameText3 = GameObject.Find("NameText3").GetComponent<UILabel>();
+            GameObject GunSelect = GameObject.Find("GunSelect3");
+            if (!Object.HasInputAuthority)
+            {
+                GunSelect.gameObject.SetActive(false);
+            }
             NumInput = gunValue;
-
             NameText3.text = Name;
-            }
-            if (gunValue == 4)
+            Panel3.SetActive(false);
+        }
+        if (gunValue == 4)
             {
-                NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
-            Button4.enabled = false;
-
+            Transform[] button = FindName4.transform.GetComponentsInChildren<Transform>(true);
+            for (int i = 0; i < button.Length; i++)
+            {
+                button[i].gameObject.SetActive(true);
+            }
+            NameText4 = GameObject.Find("NameText4").GetComponent<UILabel>();
+            GameObject GunSelect = GameObject.Find("GunSelect4");
+            if (!Object.HasInputAuthority)
+            {
+                GunSelect.gameObject.SetActive(false);
+            }
             NumInput = gunValue;
-
             NameText4.text = Name;
-            } 
+            Panel4.SetActive(false);
+        } 
     }
-    public void ChangeName(int gunValue, string Name)
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void Rpc_ChangePanel (int gunValue, string Name)
     {
-        
+        if (!Object.HasInputAuthority)
+        {
+                Panel1.SetActive(false);
+        }
+    }
+        public void Rpc_ChangeName2(int gunValue, string Name)
+    {
         if (gunValue == 1)
         {
-            NameText = GameObject.Find("NameText (4)").GetComponent<UILabel>();
 
+            
+            Panel1.SetActive(false);
+            NameText = GameObject.Find("NameText1").GetComponent<UILabel>();
+            GameObject GunSelect = GameObject.Find("NameBar 1");
+            GunSelect.SetActive(true);
             NameText.text = Name;
+
         }
         if (gunValue == 2)
         {
-            NameText2 = GameObject.Find("NameText (1)").GetComponent<UILabel>();
-
+            NameText2 = GameObject.Find("NameText2").GetComponent<UILabel>();
+            GameObject GunSelect = GameObject.Find("NameBar 2");
+            GunSelect.SetActive(true);
             NameText2.text = Name;
         }
         if (gunValue == 3)
         {
-            NameText3 = GameObject.Find("NameText (2)").GetComponent<UILabel>();
+            NameText3 = GameObject.Find("NameText3").GetComponent<UILabel>();
 
             NameText3.text = Name;
         }
         if (gunValue == 4)
         {
-            NameText4 = GameObject.Find("NameText (3)").GetComponent<UILabel>();
+            NameText4 = GameObject.Find("NameText4").GetComponent<UILabel>();
 
             NameText4.text = Name;
         }
@@ -402,8 +548,9 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
     public void Rpc_ChangePos(int gunValue)
     {
-        selectSeat.Play();
         canPlay = true;
+
+        selectSeat.Play();
         if (gunValue == 1)
             transform.position = new Vector3(-3.129f, -3.311f, -4.55f);
         if (gunValue == 2)
@@ -412,6 +559,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
             transform.position = new Vector3(-3.168f, 3.25f, -4.55f);
         if (gunValue == 4)
             transform.position = new Vector3(3.222f, 3.286f, -4.55f);
+
     }
     [Networked] public int gunModel { get; set; }
 
@@ -424,7 +572,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
             firerateAmount = 1.5f;
         if (gunValue != 6 && gunValue != 4) 
             firerateAmount = 0.5f;
-
+        
         if (gunValue == 1)
         {
             normalGun.SetActive(true);
@@ -437,6 +585,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
             gunControl.cost = 1;
             gunControl.damage = 1;
             gunModel = 1;
+            
         }
         if (gunValue == 2)
         {
@@ -504,6 +653,12 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
             gunControl.damage = 10;
             gunModel = 6;
         }
+        if (canPlay && Object.HasInputAuthority)
+        {
+            AnimationSelectGun.instance.gunNumberScript = gunValue;
+            AnimationSelectGun.instance.costValue = gunControl.cost;
+
+        }
     }
         public void ChangeGunVisual(int gunValue)
     {
@@ -568,8 +723,9 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
     public void Rpc_Bullet(int gunmode, bool enchance3)
     {
-       
-        if (Time.time - firerate < firerateAmount || PlayerPrefs.GetInt("gold",100) < gunControl.cost || !canPlay)
+        if (!Object.HasInputAuthority) return;
+
+            if (Time.time - firerate < firerateAmount || PlayerPrefs.GetInt("gold",100) < gunControl.cost || !canPlay)
             return;
         if (HasInputAuthority)
         {
@@ -848,28 +1004,40 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     
     public void PlayerLeft(PlayerRef player)
     {
+        RPC_closeUI();
         if (player == Object.InputAuthority)
         {
-            Debug.Log("Left");
-
-
             if (NumInput == 1)
             {
-                NameText.text = "Select";
+                Panel1.SetActive(true);
+                Fake1 = GameObject.Find("FakeNameBar 1").GetComponent<UI2DSprite>();
+                Fake1.GetComponent<UI2DSprite>().enabled = false;
+                FakeText1 = GameObject.Find("FakeText 1").GetComponent<UILabel>();
+                FakeText1.GetComponent<UILabel>().enabled = false;
+                FakeText1.text = "";
             }
 
             if (NumInput == 2)
             {
-                NameText2.text = "Select";
+                GameObject GunSelect = GameObject.Find("NameBar 2");
+                GunSelect.SetActive(false);
+                Panel2.SetActive(true);
+
             }
 
             if (NumInput == 3)
             {
-                NameText3.text = "Select";
+                GameObject GunSelect = GameObject.Find("NameBar 3");
+                GunSelect.SetActive(false);
+                Panel3.SetActive(true);
+
             }
             if (NumInput == 4)
             {
-                NameText4.text = "Select";
+                GameObject GunSelect = GameObject.Find("NameBar 4");
+                GunSelect.SetActive(false);
+                Panel4.SetActive(true);
+
             }
             Runner.Despawn(Object);
         }
@@ -877,6 +1045,15 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     public void Quit()
     {
         Runner.Shutdown();
+    }
+    public void RPC_closeUI()
+    {
+        Debug.Log("Left");
+        Fake1 = GameObject.Find("FakeNameBar 1").GetComponent<UI2DSprite>();
+        Fake1.GetComponent<UI2DSprite>().enabled = false;
+        FakeText1 = GameObject.Find("FakeText 1").GetComponent<UILabel>();
+        FakeText1.GetComponent<UILabel>().enabled = false;
+        FakeText1.text = "";
     }
 
 }
