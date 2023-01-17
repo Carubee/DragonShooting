@@ -99,7 +99,7 @@ public class FishControl : NetworkBehaviour
             lockEffect.SetActive(true);
         }
     }
-    
+   
     public void hitDame(int dame, GameObject obj, string damageBy )
     {
         if (armorCreate == true)
@@ -132,7 +132,10 @@ public class FishControl : NetworkBehaviour
                     //Debug.Log(GunControl.instance.damage);
                 }
                 _checkCollsion = obj;
-
+                if (!OpenOptioon.instant.GoldSwitch)
+                {
+                        UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, dame);
+                }
                 if (_hp <= 0)
                 {
                    
@@ -181,6 +184,28 @@ public class FishControl : NetworkBehaviour
         FishManage.Instance._FishMange.Remove(transform);
         Destroy(gameObject);
 
+    }
+    public void PlusGold(PlayerRef player)
+    {
+        if (Object == null || (player != PlayerRef.None && player != Runner.LocalPlayer)) return;
+
+        if (Runner.TryGetPlayerObject(player, out NetworkObject networkObject))
+        {
+            networkObject.GetComponent<gunMode>().PlusGold(_gold);
+            Instantiate(Resources.Load("coinEff"), transform.position, Quaternion.identity);
+            if (OpenOptioon.instant.GoldSwitch)
+            {
+                if (item.instace.doubleGold)
+                    UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold * 2);
+                else
+                    UiTextSpawmControl.Instance.CallTextEff(transform.position + Vector3.up * 0.5f, _gold);
+            }
+            int itemDrop = Random.Range(0,100);
+            if (itemDrop == 0)
+            {
+                Instantiate(Resources.Load("Item"), transform.position, Quaternion.identity);
+            }
+        }
     }
 
 

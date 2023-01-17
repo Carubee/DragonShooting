@@ -8,6 +8,10 @@ public class effScoreTextControl : MonoBehaviour
     public void InitEffScore(Vector3 _trs, int gold)
     {
         _lb.text = "+" + gold;
+        if (!OpenOptioon.instant.GoldSwitch)
+        {
+            _lb.text = gold.ToString() ;
+        }
         switch (GunControl.BonusCoin)
         {
             case 2:

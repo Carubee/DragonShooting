@@ -20,6 +20,8 @@ public class BalistaHitbox : NetworkBehaviour
     private Rigidbody2D rb;
     private string tagName = "lock";
     public string nameDamage;
+    public PlayerRef playerThis;
+    public string name;
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,25 +52,47 @@ public class BalistaHitbox : NetworkBehaviour
         }
 
     }
+    public void InputPlayerRef(PlayerRef player)
+    {
+        playerThis = player;
+        name = playerThis.ToString();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.tag == "fish" && GameObject.FindGameObjectWithTag("lock") == null)
+        if (collision.gameObject.tag == "fish")
         {
             if (destroyOnHit == true)
             {
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
-                Destroy(this.gameObject);
+                
             }
             if (bomb == false)
             {
-                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject, nameDamage);
+                if (item.instace.doubleDamage)
+                {
+
+                    collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage *
+                         2, gameObject, nameDamage);
+                }
+                else
+                {
+                    Debug.Log("Tes");
+                    collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject, nameDamage);
+                }
+
+                if (collision.GetComponent<FishControl>()._hp <= 0)
+                {
+                    var hit = collision.GetComponent<FishControl>();
+                    hit.PlusGold(playerThis);
+
+                }
+                Destroy(this.gameObject);
             }
             if (bomb == true)
             {
-                collision.GetComponent<FishControl>().hitDame(100, gameObject, nameDamage);
-
+                collision.GetComponent<FishControl>().hitDame(Random.Range(50,100), gameObject, nameDamage);
             }
             
         }
@@ -79,14 +103,10 @@ public class BalistaHitbox : NetworkBehaviour
                 collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject, nameDamage);
                 UtilsClass.ShakeCamera(0.03f, .1f);
                 Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
-                //Destroy(this.gameObject);
             }
            
         }
-
     }
-    
-
     public void CheckTypeBullet(bool bullet2)
     {
         if (bullet2 == true && bomb == false && allow == false)
@@ -100,6 +120,5 @@ public class BalistaHitbox : NetworkBehaviour
             normalBullet.SetActive(true);
         }
     }
-    
 
 }

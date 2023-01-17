@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8879303840242311135}
   - component: {fileID: 8879303840242311128}
   - component: {fileID: 8879303840242311129}
+  - component: {fileID: 1117447055876752932}
   m_Layer: 0
   m_Name: LockObject
   m_TagString: Untagged
@@ -146,3 +147,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroytime: 0.3
   timeRun: 0
+  dieDragon: 0
+--- !u!114 &1117447055876752932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8879303840242311132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f61405a5bad0e914dbec7ff10a9a00ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WordOffset: 0
+  WordCount: 0
+  _interpolationDataSource: 0
+  destroy: 0
+  destroyOnHit: 0
+  allow: 0
+  bomb: 0
+  explosion: {fileID: 0}
+  enchanceDamage: {fileID: 0}
+  normalBullet: {fileID: 0}
+  timeToDestroy: 0
+  speed: 5
+  rotateSpeed: 200
+  target: {fileID: 0}
+  nameDamage: 
+  name: 

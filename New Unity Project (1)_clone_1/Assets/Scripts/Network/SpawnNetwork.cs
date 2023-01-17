@@ -79,24 +79,26 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     }
     [SerializeField] private NetworkPrefabRef _playerPrefab;
     private Dictionary<PlayerRef, NetworkObject> _spawnedCharacter = new Dictionary<PlayerRef, NetworkObject>();
-    public void OnPlayerJoined(NetworkRunner runner,PlayerRef player)
+    public void OnPlayerJoined(NetworkRunner runner,PlayerRef playerMy)
     {
+       
         lobbyMenu.SetActive(false);
         AudioMIxer.instance.BGM.Play();
         if (runner.IsServer)
         {
             Vector3 spawnPos = new Vector3(0, 90, 0);
-            NetworkObject networkObject = runner.Spawn(_playerPrefab, spawnPos, Quaternion.identity, player);
-            _spawnedCharacter.Add(player, networkObject);
+            NetworkObject networkObject = runner.Spawn(_playerPrefab, spawnPos, Quaternion.identity, playerMy);
+            _spawnedCharacter.Add(playerMy, networkObject);
+            var playerData = networkObject.GetComponent<gunMode>();
             if (!FirstSpawn)
             {
                 _runner.Spawn(Fishspawn);
                 FirstSpawn = true;
             }
             lobbyMenu.SetActive(false);
-
         }
-    }
+           }
+    
     public void OnInput(NetworkRunner runner,NetworkInput input)
     {
         var data = new NetworkInputData();
@@ -139,6 +141,10 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
         {
             data.button |= NetworkInputData.MOUSEBUTTON2;
             _mouseButton0Up = false;
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            
         }
         
         //ตำแหน่งใหม่

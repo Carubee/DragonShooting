@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Fusion;
+using System.Linq;
 
 public class OpenOptioon : MonoBehaviour
 {
@@ -29,19 +30,31 @@ public class OpenOptioon : MonoBehaviour
     [SerializeField] Slider sliderOpen;
     [SerializeField] Text amount;
     [SerializeField] Text amountPrice;
-    [SerializeField] Image image;
-    int amountItemInt;
-    float amountItemfloat;
+    [SerializeField] Sprite BombSprite,SpareSprite,DoubleDamageSprite,DoubleGoldSprite;
+    [SerializeField] int amountItemInt;
+    [SerializeField] float amountItemfloat;
     [SerializeField] Text nameItem;
+    [SerializeField] UILabel TextGold;
+
+    [SerializeField] Image iamge;
+
+    public bool GoldSwitch;
+
     public void Start()
     {
         instant = this;
         CloseOption();
+
+        BombSprite = Resources.Load<Sprite>("Bomb_Item");
+        SpareSprite = Resources.Load<Sprite>("Spare shot_Item");
+        DoubleDamageSprite = Resources.Load<Sprite>("Double Damage_Item");
+        DoubleGoldSprite = Resources.Load<Sprite>("Professional Hunter Bag_Item");
     }
     void HandleSliderValueChanged(float value)
     {
         amountItemfloat = sliderOpen.value;
         amountItemInt = Mathf.RoundToInt(amountItemfloat);
+
         amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
 
 
@@ -65,7 +78,34 @@ public class OpenOptioon : MonoBehaviour
     public void ShowDetail()
     {
         sliderOpen.maxValue = amountItemfloat;
-        amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
+        if (amountItemfloat > 1)
+        {
+            sliderOpen.value = 1;
+            amountItemInt = 1;
+            amount.text = "Buy : " + 1 + "/ " + sliderOpen.maxValue;
+            if (Bomb == true)
+            {
+                amountPrice.text = (1 * 200).ToString();
+            }
+            if (SpareShot == true)
+            {
+                amountPrice.text = (1 * 25).ToString();
+            }
+            if (DoubleDamage == true)
+            {
+                amountPrice.text = (1 * 35).ToString();
+            }
+            if (HunterBag == true)
+            {
+                amountPrice.text = (1 * 350).ToString();
+            }
+        }
+        else
+        {
+            sliderOpen.value = 0;
+            amount.text = "Buy : " + 0 + "/ " + sliderOpen.maxValue;
+        }
+
         sliderOpen.onValueChanged.AddListener(HandleSliderValueChanged);
         
     }
@@ -108,6 +148,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void CloseBeforeBuy()
     {
+        TextGold.text  = PlayerPrefs.GetInt("coin").ToString();
         NoticeBuy.SetActive(false);
         NoticeNotEnough.SetActive(false);
         soundOpen.Play();
@@ -129,7 +170,7 @@ public class OpenOptioon : MonoBehaviour
             HunterBag = false;
         }
     }
-
+    //Use in button Leave
     public void LeaveGame()
     {
         gunMode.instance.Quit();
@@ -141,25 +182,31 @@ public class OpenOptioon : MonoBehaviour
         NoticeNotEnough.SetActive(false);
         soundOpen.Play();
         ShowDetail();
+        //iamge = gameObject.GetComponent<Image>();
+
         if (Bomb == true)
         {
+            iamge.sprite = BombSprite;
             amountPrice.text = (amountItemInt * 200).ToString();
             nameItem.text = "Bomb";
         }
         if (SpareShot == true)
         {
+            iamge.sprite = SpareSprite;
             amountPrice.text = (amountItemInt * 25).ToString();
             nameItem.text = "Spare Shot";
 
         }
         if (DoubleDamage == true)
         {
+            iamge.sprite = DoubleDamageSprite;
             amountPrice.text = (amountItemInt * 35).ToString();
             nameItem.text = "Double Damage";
 
         }
         if (HunterBag == true)
         {
+            iamge.sprite = DoubleGoldSprite;
             amountPrice.text = (amountItemInt * 350).ToString();
             nameItem.text = "Double Gold";
 
@@ -182,7 +229,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void BuyBomb()
     {
-        amountItemfloat = PlayerPrefs.GetInt("gold", 1000) / 200;
+        amountItemfloat = PlayerPrefs.GetInt("coin") / 200;
 
         soundOpen.Play();
 
@@ -192,7 +239,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void BuySpareSoht()
     {
-        amountItemfloat = PlayerPrefs.GetInt("gold", 1000) / 25;
+        amountItemfloat = PlayerPrefs.GetInt("coin") / 25;
 
         soundOpen.Play();
 
@@ -202,7 +249,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void BuyDoubleDamage()
     {
-        amountItemfloat = PlayerPrefs.GetInt("gold", 1000) / 35;
+        amountItemfloat = PlayerPrefs.GetInt("coin") / 35;
 
         soundOpen.Play();
 
@@ -212,7 +259,7 @@ public class OpenOptioon : MonoBehaviour
     }
     public void BuyHunterBag()
     {
-        amountItemfloat = PlayerPrefs.GetInt("gold", 1000) / 350;
+        amountItemfloat = PlayerPrefs.GetInt("coin") / 350;
 
         soundOpen.Play();
 
@@ -225,37 +272,33 @@ public class OpenOptioon : MonoBehaviour
         
         if (DragonTracker == true)
         {
-            
                 itemUse.amountDragonTracker += amountItemInt;
                 buy.Play();
                 CloseBeforeBuy();
-            
-
         }
         if (Bomb == true)
         {
             UiTextSpawmControl.Instance.MinusGold(amountItemInt * 200);
-            itemUse.amountBomb += amountItemInt;
-                buy.Play();
+            PlayerPrefs.SetInt("coin", PlayerPrefs.GetInt("coin") - (amountItemInt * 200));
+            PlayerPrefs.SetInt("Bomb", PlayerPrefs.GetInt("Bomb") + amountItemInt);
+            buy.Play();
                 CloseBeforeBuy();
             
 
         }
         if (SpareShot == true)
         {
-            UiTextSpawmControl.Instance.MinusGold(amountItemInt * 25);
-
-            itemUse.amountSpare += amountItemInt;
-                buy.Play();
+            PlayerPrefs.SetInt("coin", PlayerPrefs.GetInt("coin") - (amountItemInt * 25));
+            PlayerPrefs.SetInt("Spare", PlayerPrefs.GetInt("Spare") + amountItemInt);
+            buy.Play();
                 CloseBeforeBuy();
            
 
         }
         if (DoubleDamage == true)
         {
-            UiTextSpawmControl.Instance.MinusGold(amountItemInt * 35);
-
-            itemUse.amountDoubleDamage += amountItemInt;
+            PlayerPrefs.SetInt("coin", PlayerPrefs.GetInt("coin") - (amountItemInt * 35));
+            PlayerPrefs.SetInt("DoubleDamage", PlayerPrefs.GetInt("DoubleDamage") + amountItemInt);
                 buy.Play();
                 CloseBeforeBuy();
             
@@ -263,14 +306,14 @@ public class OpenOptioon : MonoBehaviour
         }
         if (HunterBag == true)
         {
-            UiTextSpawmControl.Instance.MinusGold(amountItemInt * 350);
-
-            itemUse.amountHunterBag += amountItemInt;
+            PlayerPrefs.SetInt("coin", PlayerPrefs.GetInt("coin") - (amountItemInt * 350));
+            PlayerPrefs.SetInt("DoubleGold", PlayerPrefs.GetInt("DoubleGold") + amountItemInt);
                 buy.Play();
                 CloseBeforeBuy();
             
 
         }
+        PlayerPrefs.Save();
         itemUse.UpdateText();
     }
     public void Plus()
@@ -290,6 +333,11 @@ public class OpenOptioon : MonoBehaviour
             sliderOpen.value = amountItemInt;
             amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
         }
+    }
+    public void toggle_change(bool value)
+    {
+        Debug.Log(value);
+        GoldSwitch = (value);
     }
 
 }

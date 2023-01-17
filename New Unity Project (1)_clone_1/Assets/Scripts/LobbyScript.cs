@@ -21,7 +21,7 @@ public class LobbyScript : MonoBehaviour
     { 
         lobbyUI.SetActive(true);
         playerName.text = NameInput.Instance.input;
-       coin.text = "" + PlayerPrefs.GetInt("gold", 200);
+       coin.text = PlayerPrefs.GetInt("coin").ToString();
     }
 
     void Update()

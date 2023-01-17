@@ -158,7 +158,6 @@ public class UIButtonColor : UIWidgetContainer
 	/// <summary>
 	/// Set the initial state.
 	/// </summary>
-
 	protected virtual void OnEnable ()
 	{
 #if UNITY_EDITOR
@@ -202,28 +201,31 @@ public class UIButtonColor : UIWidgetContainer
 
     }
 
-    /// <summary>
-    /// Set the hover state.
-    /// </summary>
+	/// <summary>
+	/// Set the hover state.
+	/// </summary>
 
-    protected virtual void OnHover (bool isOver)
+	protected virtual void OnHover (bool isOver)
 	{
         if (isEnabled)
 		{
 			
 				gunMode.instance.canPlay = false;
-			
+            
+				//MouseHover.instace.hover = true;
+            
             if (!mInitDone) OnInit();
 			if (tweenTarget != null) SetState(isOver ? State.Hover : State.Normal, false);
 		}
         if (!isOver)
         {
-			
-				gunMode.instance.canPlay = true;
-			
-        }
 
-    }
+			gunMode.instance.canPlay = true;
+			//MouseHover.instace.hover = false;
+
+		}
+
+	}
 
 	/// <summary>
 	/// Set the pressed state.

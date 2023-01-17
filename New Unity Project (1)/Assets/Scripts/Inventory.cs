@@ -9,16 +9,17 @@ public class Inventory : MonoBehaviour
     [SerializeField] GameObject itemFill;
     void Start()
     {
-        for (int i = 0; i < 1; i++)
-        {
-            GameObject itemF = Instantiate(itemFill,itemEmpty[i].transform.position,Quaternion.identity) as GameObject;
-            itemF.transform.SetParent(itemEmpty[i].transform,true);
-        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (GotnewItem.instance.AmountBox > 0)
+        {
+                GameObject itemF = Instantiate(itemFill, itemEmpty[0].transform.position, Quaternion.identity) as GameObject;
+                itemF.transform.SetParent(itemEmpty[0].transform, true);
+            
+        }
     }
 }

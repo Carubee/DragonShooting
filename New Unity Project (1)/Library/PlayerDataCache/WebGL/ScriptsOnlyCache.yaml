@@ -55,7 +55,6 @@ ScriptsOnlyBuild:
     - PlayerAOIPrototype
     - RotateLoading
     - SciFiBeamStatic
-    - SciFiLightFlicker
     - ShowItemDetail
     - SpawnNetwork
     - Swim
@@ -181,6 +180,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
+    - UnityEngine.UI.ToggleGroup
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
     Assets/Scenes/Home.unity:
@@ -660,6 +660,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9212}
     - Class: 114
+      Script: {instanceID: 9302}
+    - Class: 114
       Script: {instanceID: 9378}
     - Class: 114
       Script: {instanceID: 9396}
@@ -721,6 +723,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12466}
     - Class: 114
       Script: {instanceID: 12472}
+    - Class: 114
+      Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 12854}
     - Class: 114
@@ -1366,7 +1370,7 @@ ScriptsOnlyBuild:
     className: CompositeXffect
   - hash:
       serializedVersion: 2
-      Hash: e8327e6d555ed030022bb5c54aea1644
+      Hash: e5c1f728b96970b40a885f70b32d9d9f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OpenOptioon
@@ -1960,7 +1964,7 @@ ScriptsOnlyBuild:
     className: buyGun
   - hash:
       serializedVersion: 2
-      Hash: 04d0f0a4354af615a39aaac5b68e11e4
+      Hash: 89a2923afefbd835e4c45ea5d7aaa035
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BalistaHitbox
@@ -3718,7 +3722,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: ab385a8d9d8ceaaf2c02fff03a5eea49
+      Hash: 8d41a0dedbd29e04defce4cf6bc98127
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UiTextSpawmControl
@@ -4054,7 +4058,7 @@ ScriptsOnlyBuild:
     className: NetworkRunnerHandler
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 84d85e5b316eeb4994cbaa22de387d97
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MouseHover
@@ -4096,7 +4100,7 @@ ScriptsOnlyBuild:
     className: FishFollowBonusControl
   - hash:
       serializedVersion: 2
-      Hash: 8446388e34646d6605756b3e184c6804
+      Hash: a4d00a9f133e27ebf4fc78073b2bdc86
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: item
@@ -4384,7 +4388,7 @@ ScriptsOnlyBuild:
     className: _2dxFX_Sepia
   - hash:
       serializedVersion: 2
-      Hash: 844348210ec6d32feb28261b6e4bd2a9
+      Hash: a23c97e52437a410dbc4247a71a739da
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TestButton
@@ -4588,7 +4592,7 @@ ScriptsOnlyBuild:
     className: ComponentActions
   - hash:
       serializedVersion: 2
-      Hash: e7ad25755e8791098090f3eac9a0df1c
+      Hash: fb1f1f0d93c527f659753401cc6f84a8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: gunMode
@@ -4752,4 +4756,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Home.unity
   - Assets/Scenes/Play4.unity
-  playerPath: C:/Users/Asus/Desktop/DeployTest
+  playerPath: C:/Users/Asus/Desktop/DeployTest/public

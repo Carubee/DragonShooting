@@ -305,6 +305,7 @@ IL2CPP_EXTERN_C RuntimeClass* List_1_t260B41F956D673396C33A4CF94E8D6C4389EACB7_i
 IL2CPP_EXTERN_C RuntimeClass* List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t81A4303EDB09FE4F6EB1AD60E48135F8D7C55242_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MasterAudio_t0921F613A40D1D4749AEC92A326EBED70E7898F0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MusicSetting_tDDB5B8E18A52DF4665A10277AEA56E29D6469CD6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NGUIDebug_t323CA78DAE4723CFADB2CBA1D59066F7E5975D21_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NGUIText_t64D012F88C2ED67BF14CDBE0AB5DC970EA8D064C_il2cpp_TypeInfo_var;
@@ -8433,8 +8434,98 @@ public:
 struct MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
 public:
+	// UnityEngine.GameObject MouseHover::Bomb
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___Bomb_5;
+	// UnityEngine.GameObject MouseHover::spare
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___spare_6;
+	// UnityEngine.GameObject MouseHover::damage
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___damage_7;
+	// UnityEngine.GameObject MouseHover::gold
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___gold_8;
+	// System.Int32 MouseHover::numdes
+	int32_t ___numdes_9;
+	// System.Boolean MouseHover::hover
+	bool ___hover_10;
+	// System.Single MouseHover::timeHover
+	float ___timeHover_11;
 
 public:
+	inline static int32_t get_offset_of_Bomb_5() { return static_cast<int32_t>(offsetof(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA, ___Bomb_5)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_Bomb_5() const { return ___Bomb_5; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_Bomb_5() { return &___Bomb_5; }
+	inline void set_Bomb_5(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___Bomb_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Bomb_5), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_spare_6() { return static_cast<int32_t>(offsetof(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA, ___spare_6)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_spare_6() const { return ___spare_6; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_spare_6() { return &___spare_6; }
+	inline void set_spare_6(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___spare_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___spare_6), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_damage_7() { return static_cast<int32_t>(offsetof(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA, ___damage_7)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_damage_7() const { return ___damage_7; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_damage_7() { return &___damage_7; }
+	inline void set_damage_7(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___damage_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___damage_7), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_gold_8() { return static_cast<int32_t>(offsetof(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA, ___gold_8)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_gold_8() const { return ___gold_8; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_gold_8() { return &___gold_8; }
+	inline void set_gold_8(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___gold_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___gold_8), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_numdes_9() { return static_cast<int32_t>(offsetof(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA, ___numdes_9)); }
+	inline int32_t get_numdes_9() const { return ___numdes_9; }
+	inline int32_t* get_address_of_numdes_9() { return &___numdes_9; }
+	inline void set_numdes_9(int32_t value)
+	{
+		___numdes_9 = value;
+	}
+
+	inline static int32_t get_offset_of_hover_10() { return static_cast<int32_t>(offsetof(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA, ___hover_10)); }
+	inline bool get_hover_10() const { return ___hover_10; }
+	inline bool* get_address_of_hover_10() { return &___hover_10; }
+	inline void set_hover_10(bool value)
+	{
+		___hover_10 = value;
+	}
+
+	inline static int32_t get_offset_of_timeHover_11() { return static_cast<int32_t>(offsetof(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA, ___timeHover_11)); }
+	inline float get_timeHover_11() const { return ___timeHover_11; }
+	inline float* get_address_of_timeHover_11() { return &___timeHover_11; }
+	inline void set_timeHover_11(float value)
+	{
+		___timeHover_11 = value;
+	}
+};
+
+struct MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA_StaticFields
+{
+public:
+	// MouseHover MouseHover::instace
+	MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * ___instace_4;
+
+public:
+	inline static int32_t get_offset_of_instace_4() { return static_cast<int32_t>(offsetof(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA_StaticFields, ___instace_4)); }
+	inline MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * get_instace_4() const { return ___instace_4; }
+	inline MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA ** get_address_of_instace_4() { return &___instace_4; }
+	inline void set_instace_4(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * value)
+	{
+		___instace_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___instace_4), (void*)value);
+	}
 };
 
 
@@ -11403,6 +11494,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mF558623BBB4EE65C8810243B05ED204A9E8D6FD1 (const RuntimeMethod* method);
 // System.Void UnityEngine.AudioSource::set_volume(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_volume_m37B6B2EACA7C2C18ABEE55EE5EA404085E94EE58 (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, float ___value0, const RuntimeMethod* method);
+// System.Void MouseHover::ShowDes(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_ShowDes_m3F29BA084DE5AE6253D08AD73CF9F20EAFFD5769 (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, int32_t ___num0, const RuntimeMethod* method);
+// System.Void MouseHover::Close()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_Close_m19A7C8B85F1E3489081F81C24CA421A2DE8E6D20 (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86 (GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * __this, bool ___value0, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Animator>()
 inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * Component_GetComponent_TisAnimator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149_m56C584BE9A3B866D54FAEE0529E28C8D1E57989F (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method)
 {
@@ -15181,6 +15278,205 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaAudioController__ctor_m4879329F77064
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void MouseHover::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_Start_m82888A092A8DDA6837DE4C204B63C65DA14ACADB (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// instace = this;
+		((MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA_StaticFields*)il2cpp_codegen_static_fields_for(MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA_il2cpp_TypeInfo_var))->set_instace_4(__this);
+		// }
+		return;
+	}
+}
+// System.Void MouseHover::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_Update_m0577D92ACA4AA1694431BE2ABE00ECA64C47F845 (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, const RuntimeMethod* method)
+{
+	{
+		// if (hover)
+		bool L_0 = __this->get_hover_10();
+		if (!L_0)
+		{
+			goto IL_003f;
+		}
+	}
+	{
+		// timeHover += Time.deltaTime;
+		float L_1 = __this->get_timeHover_11();
+		float L_2;
+		L_2 = Time_get_deltaTime_mF558623BBB4EE65C8810243B05ED204A9E8D6FD1(/*hidden argument*/NULL);
+		__this->set_timeHover_11(((float)il2cpp_codegen_add((float)L_1, (float)L_2)));
+		// if (timeHover > 0)
+		float L_3 = __this->get_timeHover_11();
+		if ((!(((float)L_3) > ((float)(0.0f)))))
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		// ShowDes(numdes);
+		int32_t L_4 = __this->get_numdes_9();
+		MouseHover_ShowDes_m3F29BA084DE5AE6253D08AD73CF9F20EAFFD5769(__this, L_4, /*hidden argument*/NULL);
+		// timeHover = 1;
+		__this->set_timeHover_11((1.0f));
+		// }
+		return;
+	}
+
+IL_003f:
+	{
+		// timeHover = 0;
+		__this->set_timeHover_11((0.0f));
+		// Close();
+		MouseHover_Close_m19A7C8B85F1E3489081F81C24CA421A2DE8E6D20(__this, /*hidden argument*/NULL);
+	}
+
+IL_0050:
+	{
+		// }
+		return;
+	}
+}
+// System.Void MouseHover::ShowDes(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_ShowDes_m3F29BA084DE5AE6253D08AD73CF9F20EAFFD5769 (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, int32_t ___num0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___num0;
+		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_0, (int32_t)1)))
+		{
+			case 0:
+			{
+				goto IL_0019;
+			}
+			case 1:
+			{
+				goto IL_0026;
+			}
+			case 2:
+			{
+				goto IL_0033;
+			}
+			case 3:
+			{
+				goto IL_0040;
+			}
+		}
+	}
+	{
+		return;
+	}
+
+IL_0019:
+	{
+		// Bomb.SetActive(true);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_Bomb_5();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)1, /*hidden argument*/NULL);
+		// break;
+		return;
+	}
+
+IL_0026:
+	{
+		// spare.SetActive(true);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_spare_6();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)1, /*hidden argument*/NULL);
+		// break;
+		return;
+	}
+
+IL_0033:
+	{
+		// damage.SetActive(true);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_damage_7();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_3, (bool)1, /*hidden argument*/NULL);
+		// break;
+		return;
+	}
+
+IL_0040:
+	{
+		// gold.SetActive(true);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_4 = __this->get_gold_8();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_4, (bool)1, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void MouseHover::Close()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_Close_m19A7C8B85F1E3489081F81C24CA421A2DE8E6D20 (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, const RuntimeMethod* method)
+{
+	{
+		// hover = false;
+		__this->set_hover_10((bool)0);
+		// Bomb.SetActive(false);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_Bomb_5();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)0, /*hidden argument*/NULL);
+		// spare.SetActive(false);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_spare_6();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)0, /*hidden argument*/NULL);
+		// damage.SetActive(false);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_damage_7();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)0, /*hidden argument*/NULL);
+		// gold.SetActive(false);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_gold_8();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_3, (bool)0, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void MouseHover::OnBomb()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_OnBomb_m3D190732FF7BF661883FACE5CE7F9588267D9573 (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, const RuntimeMethod* method)
+{
+	{
+		// hover = true;
+		__this->set_hover_10((bool)1);
+		// numdes = 1;
+		__this->set_numdes_9(1);
+		// }
+		return;
+	}
+}
+// System.Void MouseHover::OnSpare()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_OnSpare_m63ADE9E6252FC8BC7E12DCC888DE5FF7AD32BF26 (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, const RuntimeMethod* method)
+{
+	{
+		// hover = true;
+		__this->set_hover_10((bool)1);
+		// numdes = 2;
+		__this->set_numdes_9(2);
+		// }
+		return;
+	}
+}
+// System.Void MouseHover::OnDamage()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_OnDamage_mC841545DFCCB4CFBBA97013F3F326099726D376F (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, const RuntimeMethod* method)
+{
+	{
+		// hover = true;
+		__this->set_hover_10((bool)1);
+		// numdes = 3;
+		__this->set_numdes_9(3);
+		// }
+		return;
+	}
+}
+// System.Void MouseHover::OnGold()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover_OnGold_mCEBB12F58342A9BCD377BC764F4D8F90B6D40A4D (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, const RuntimeMethod* method)
+{
+	{
+		// hover = true;
+		__this->set_hover_10((bool)1);
+		// numdes = 4;
+		__this->set_numdes_9(4);
+		// }
+		return;
+	}
+}
 // System.Void MouseHover::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MouseHover__ctor_m10110D59B22230C05C863D9D6930F40ABEBCD430 (MouseHover_tB057575FA5BE79D72EE7A42E4CD606CC4BA6F6BA * __this, const RuntimeMethod* method)
 {

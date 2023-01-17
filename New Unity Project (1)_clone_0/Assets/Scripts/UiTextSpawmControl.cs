@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using Fusion;
 
 public class UiTextSpawmControl : MonoBehaviour
 {
@@ -17,11 +18,12 @@ public class UiTextSpawmControl : MonoBehaviour
 
     public static UiTextSpawmControl Instance;
 
+    public GameObject damageText;
+    public GameObject damageIcon;
     void Start()
     {
         Instance = this;
         
-            TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
         
         EXPbar.fillAmount = PlayerPrefs.GetFloat("EXP") / (450 + 500 * PlayerPrefs.GetInt("level", 1));
         TextLevel.text = PlayerPrefs.GetInt("level", 1) + "";
@@ -29,11 +31,24 @@ public class UiTextSpawmControl : MonoBehaviour
 
     public void CallTextEff(Vector3 _pos, int gold)
     {
-        GameObject obj = NGUITools.AddChild(_UiRoot, _TextChil);
-        GameObject obj2 = NGUITools.AddChild(_UiRoot, coin);
+        
 
-        obj.GetComponent<effScoreTextControl>().InitEffScore(_pos, gold);
-        obj2.GetComponent<effScoreTextControl>().InitEffCoin(new Vector3(_pos.x - 0.3f,_pos.y));
+        if (OpenOptioon.instant.GoldSwitch)
+        {
+            GameObject obj = NGUITools.AddChild(_UiRoot, _TextChil);
+            obj.GetComponent<effScoreTextControl>().InitEffScore(_pos, gold);
+
+            GameObject obj2 = NGUITools.AddChild(_UiRoot, coin);
+            obj2.GetComponent<effScoreTextControl>().InitEffCoin(new Vector3(_pos.x - 0.3f, _pos.y));
+        }
+        else
+        {
+            GameObject obj = NGUITools.AddChild(_UiRoot, damageText);
+            obj.GetComponent<effScoreTextControl>().InitEffScore(_pos, gold);
+
+            GameObject obj2 = NGUITools.AddChild(_UiRoot, damageIcon);
+            obj2.GetComponent<effScoreTextControl>().InitEffCoin(new Vector3(_pos.x + 0.2f, _pos.y));
+        }
 
         //PushGold(gold);
         //PlayerPrefs.SetFloat("EXP", PlayerPrefs.GetFloat("EXP") + gold);
@@ -58,7 +73,6 @@ public class UiTextSpawmControl : MonoBehaviour
     {
         PlayerPrefs.SetInt("gold", PlayerPrefs.GetInt("gold",200) + gold);
         
-            TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
         
         PlayerPrefs.Save();
 
@@ -66,9 +80,9 @@ public class UiTextSpawmControl : MonoBehaviour
 
     public void MinusGold(int gold)
     {
+
         PlayerPrefs.SetInt("gold", PlayerPrefs.GetInt("gold", 200) - gold);
         
-            TextGold.text = "" + PlayerPrefs.GetInt("gold", 200);
         
         PlayerPrefs.Save();
 
@@ -76,7 +90,6 @@ public class UiTextSpawmControl : MonoBehaviour
     public void costText(int cost)
     {
        
-            TextCostGun.text = cost.ToString();
         
     }
 }

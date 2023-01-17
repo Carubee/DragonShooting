@@ -24,7 +24,6 @@ public class item : NetworkBehaviour
     public GameObject bomb;
     public GameObject upgrade;
     public GameObject lockTarget;
-    public Slider timeMode;
 
     public Transform pointUpgrade;
 
@@ -42,16 +41,24 @@ public class item : NetworkBehaviour
     public int amountDoubleDamage;
     public int amountHunterBag;
 
+    [SerializeField] UILabel DoubleGold;
+    [SerializeField] UILabel DoubleDamage;
+    [SerializeField] UILabel SpareShot;
+
+    [SerializeField] GameObject ButtonDoubleGold;
+    [SerializeField] GameObject ButtonDoubleDamage;
+    [SerializeField] GameObject ButtonSpareShot;
+
+    [SerializeField] UILabel TextGold;
     void Start()
     {
         instace = this;
         buffText.text = "";
 
-        amountDragonTracker = 3;
-        amountBomb = 3;
-        amountSpare = 3;
-        amountDoubleDamage = 3;
-        amountHunterBag = 3;
+        amountBomb = PlayerPrefs.GetInt("Bomb", 0) ;
+        amountSpare = PlayerPrefs.GetInt("Spare", 0);
+        amountDoubleDamage = PlayerPrefs.GetInt("DoubleDamage", 0);
+        amountHunterBag = PlayerPrefs.GetInt("DoubleGold", 0); 
 
         UpdateText();
     }
@@ -60,45 +67,56 @@ public class item : NetworkBehaviour
     {
         if(doubleGold == true )
         {
-            
-            TimeDouble += Time.deltaTime;
-            timeMode.value = TimeDouble;
-            if (TimeDouble >= 10)
+            TimeDouble -= Time.deltaTime;
+            int TimeCount = Mathf.RoundToInt(TimeDouble);
+            DoubleGold.text = TimeCount.ToString();
+            ButtonDoubleGold.GetComponent<UIButton>().enabled = false;
+            if (TimeDouble <= 0)
             {
+                ButtonDoubleGold.GetComponent<UIButton>().enabled = true;
                 doubleGold = false;
                 closeEffect();
+                DoubleGold.text = "";
+                
+
             }
         }
         if (doubleDamage == true )
         {
-            TimeDamage += Time.deltaTime;
-            timeMode.value = TimeDamage;
-            if (TimeDamage >= 10)
+           
+            TimeDamage -= Time.deltaTime;
+            int TimeCount = Mathf.RoundToInt(TimeDamage);
+            DoubleDamage.text = TimeCount.ToString();
+            ButtonDoubleDamage.GetComponent<UIButton>().enabled = false;
+            if (TimeDamage <= 0)
             {
+                ButtonDoubleDamage.GetComponent<UIButton>().enabled = true;
                 doubleDamage = false;
                 closeEffect();
+                DoubleDamage.text = "";
+                
+
             }
         }
         if (spare == true )
         {
-            
-            TimeSpare += Time.deltaTime;
-            timeMode.value = TimeSpare;
-            if (TimeSpare >= 10)
+            TimeSpare -= Time.deltaTime;
+            int TimeCount = Mathf.RoundToInt(TimeSpare);
+            SpareShot.text = TimeCount.ToString();
+            ButtonSpareShot.GetComponent<UIButton>().enabled = false;
+
+            if (TimeSpare <= 0)
             {
+                ButtonSpareShot.GetComponent<UIButton>().enabled = true;
                 spare = false;
                 closeEffect();
+                SpareShot.text = "";
+                
+
             }
-           
+
         }
-        if (tracker == true )
-        {
-            gunMode.instance.spareEffect.SetActive(false);
-            Timetracker += Time.deltaTime;
-            timeMode.value = Timetracker;
-            if (Timetracker >= 10)
-                tracker = false;
-        }
+       
         Vector3 mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //if (Input.GetButtonDown("Fire1"))
             //Instantiate(lockTarget, new Vector3(mousePoint.x , mousePoint.y, mousePoint.z + 90) , Quaternion.identity);
@@ -119,9 +137,10 @@ public class item : NetworkBehaviour
     }
     public void BombCilent()
     {
-        if (amountBomb > 0)
+        if (PlayerPrefs.GetInt("Bomb", 0) > 0)
         {
-            amountBomb -= 1;
+            PlayerPrefs.SetInt("Bomb", PlayerPrefs.GetInt("Bomb") - 1);
+            PlayerPrefs.Save();
             gunMode.instance.BombTrigger();
             UpdateText();
 
@@ -136,11 +155,12 @@ public class item : NetworkBehaviour
     }
     public void Spare()
     {
-        if (amountSpare > 0)
+        if (PlayerPrefs.GetInt("Spare", 0) > 0)
         {
-            amountSpare -= 1;
+            PlayerPrefs.SetInt("Spare", PlayerPrefs.GetInt("Spare") - 1);
+            PlayerPrefs.Save();
             UpdateText();
-            TimeSpare = 0;
+            TimeSpare = 10;
             spare = true;
             buffText.text = "30 percent Shoot Free";
 
@@ -150,12 +170,13 @@ public class item : NetworkBehaviour
     }
     public void Double()
     {
-        if (amountDoubleDamage > 0)
+        if (PlayerPrefs.GetInt("DoubleDamage", 0) > 0)
         {
-            amountDoubleDamage -= 1;
+            PlayerPrefs.SetInt("DoubleDamage", PlayerPrefs.GetInt("DoubleDamage") - 1);
+            PlayerPrefs.Save();
             UpdateText();
             gunMode.instance.DoubleDamage(0);
-            TimeDamage = 0;
+            TimeDamage = 10;
             doubleDamage = true;
 
             Effect();
@@ -163,11 +184,12 @@ public class item : NetworkBehaviour
     }
     public void HunterBag()
     {
-        if (amountHunterBag > 0)
+        if (PlayerPrefs.GetInt("DoubleGold", 0) > 0)
         {
-            amountHunterBag -= 1;
+            PlayerPrefs.SetInt("DoubleGold", PlayerPrefs.GetInt("DoubleGold") - 1);
+            PlayerPrefs.Save();
             UpdateText();
-            TimeDouble = 0;
+            TimeDouble = 10;
             doubleGold = true;
 
             buffText.text = "Double Gold";
@@ -175,16 +197,14 @@ public class item : NetworkBehaviour
         Effect();
 
     }
-    public void CardCollection()
-    {
-    }
+    
     public void UpdateText()
     {
-        itemTrackText.text = amountDragonTracker.ToString();
-        itemBombText.text = amountBomb.ToString();
-        itemSpareText.text = amountSpare.ToString();
-        itemDoubleDamageText.text = amountDoubleDamage.ToString();
-        itemDoubleGoldText.text = amountHunterBag.ToString();
+        itemBombText.text = PlayerPrefs.GetInt("Bomb", 0).ToString();
+        itemSpareText.text = PlayerPrefs.GetInt("Spare", 0).ToString();
+        itemDoubleDamageText.text = PlayerPrefs.GetInt("DoubleDamage", 0).ToString();
+        itemDoubleGoldText.text = PlayerPrefs.GetInt("DoubleGold", 0).ToString();
+        TextGold.text = PlayerPrefs.GetInt("coin").ToString();
     }
     public void Effect()
     {

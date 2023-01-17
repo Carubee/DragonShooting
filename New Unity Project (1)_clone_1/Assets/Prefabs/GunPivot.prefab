@@ -202,17 +202,41 @@ MonoBehaviour:
     _length: 0
     _data:
       Data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  _enchance: 0
   NameText: {fileID: 0}
   NameText2: {fileID: 0}
   NameText3: {fileID: 0}
   NameText4: {fileID: 0}
-  NamePlayer1: {fileID: 0}
-  NamePlayer2: {fileID: 0}
-  NamePlayer3: {fileID: 0}
-  NamePlayer4: {fileID: 0}
+  ButtonText: {fileID: 0}
+  ButtonText2: {fileID: 0}
+  ButtonText3: {fileID: 0}
+  ButtonText4: {fileID: 0}
+  Fake1: {fileID: 0}
+  Fake2: {fileID: 0}
+  Fake3: {fileID: 0}
+  Fake4: {fileID: 0}
+  FakeText1: {fileID: 0}
+  FakeText2: {fileID: 0}
+  FakeText3: {fileID: 0}
+  FakeText4: {fileID: 0}
+  Button1: {fileID: 0}
+  Button2: {fileID: 0}
+  Button3: {fileID: 0}
+  Button4: {fileID: 0}
+  Panel1: {fileID: 0}
+  Panel2: {fileID: 0}
+  Panel3: {fileID: 0}
+  Panel4: {fileID: 0}
+  animationSelectGun: {fileID: 0}
   _NameInput: BAA
   _NumInput: 0
+  FindName: {fileID: 0}
+  FindName2: {fileID: 0}
+  FindName3: {fileID: 0}
+  FindName4: {fileID: 0}
+  NameReal: 
+  goldtext: {fileID: 0}
+  costtext: {fileID: 0}
+  Money: 0
   _messages: {fileID: 0}
   _gunModel: 0
   lastSeat: 0
@@ -230,8 +254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectInterest: 1
   DefaultInterestGroups: []
-  DestroyWhenStateAuthorityLeaves: 0
-  AllowStateAuthorityOverride: 0
+  DestroyWhenStateAuthorityLeaves: 1
+  AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
   Flags: 2305
   NetworkGuid:
@@ -1071,7 +1095,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3222499228449117814}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61405a5bad0e914dbec7ff10a9a00ee, type: 3}
   m_Name: 
@@ -1091,6 +1115,7 @@ MonoBehaviour:
   rotateSpeed: 200
   target: {fileID: 0}
   nameDamage: 
+  name: 
 --- !u!82 &4582678814151583888
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11338,8 +11363,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1810386423929616930, guid: 4a3aa732794d641479c8c3fca03a0422, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 4203572319159354104, guid: b16239546b8584c43b8c7e452e730f13, type: 3}
+    - target: {fileID: -1810386423929616930, guid: 4a3aa732794d641479c8c3fca03a0422, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2008160388644620900, guid: 4a3aa732794d641479c8c3fca03a0422, type: 3}
       propertyPath: GlobalObjectIdHash
@@ -11443,7 +11472,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 564599843420959445}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2747272366212692199}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f61405a5bad0e914dbec7ff10a9a00ee, type: 3}
   m_Name: 

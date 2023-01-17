@@ -42,7 +42,7 @@ public class AnimationSelectGun : MonoBehaviour
                 break;
         }
 
-        switch (gunNumberScript)
+        switch (gunMode.instance.gunNumber)
         {
             case 1:
                 GunUI[0].transform.localScale = new Vector2(1.2f, 1.2f);
@@ -78,6 +78,6 @@ public class AnimationSelectGun : MonoBehaviour
     }
     void Changname()
     {
-        cost.text = costValue.ToString();
+        //cost.text = costValue.ToString();
     }
 }
