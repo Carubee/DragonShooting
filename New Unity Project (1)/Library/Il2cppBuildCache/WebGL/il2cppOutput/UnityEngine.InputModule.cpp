@@ -380,7 +380,6 @@ public:
 
 
 // UnityEngineInternal.Input.NativeInputEventBuffer
-#pragma pack(push, tp, 1)
 struct NativeInputEventBuffer_t023B708C62AA03D87D92E48DC9C472FDAC4375B4 
 {
 public:
@@ -486,7 +485,6 @@ public:
 		___capacityInBytes_3 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // System.Void

@@ -2742,7 +2742,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=104
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D104_tB71F1AD887763AA07E5F5C9ED0C1DCE5A893F9DE 
 {
 public:
@@ -2759,11 +2758,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=112
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D112_t366701DE02350ED8C8A65F92A137F54409B95542 
 {
 public:
@@ -2780,11 +2777,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=120
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D120_tD78937C26C99B5FDF514E7F2EB4F8F2367B4C05A 
 {
 public:
@@ -2801,11 +2796,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=136
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D136_t87A39F2387ACAD01A78B961E121C8210B933BE71 
 {
 public:
@@ -2822,11 +2815,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=16
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D16_tFDEEE4051A26433A5996232ADC3414625654DA66 
 {
 public:
@@ -2843,11 +2834,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=160
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D160_t01D8A735071F3884433FD17606956ED602F11B27 
 {
 public:
@@ -2864,11 +2853,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D24_t2F23740D8943FC7C06AD3DD80B71D65744F140F2 
 {
 public:
@@ -2885,11 +2872,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D32_t1DFB229ADDC86DD5A295F9C768E8E5D0DF92913F 
 {
 public:
@@ -2906,11 +2891,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=40
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D40_tEADC5D82E308542CB0A95168FC156FE53D85DB4F 
 {
 public:
@@ -2927,11 +2910,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=48
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D48_tFD8B246DD801288DF862F996D7F0915222433AD7 
 {
 public:
@@ -2948,11 +2929,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=56
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D56_tEBF9CCD8C2A1E8B12AE6EDE1B31598793DD01186 
 {
 public:
@@ -2969,11 +2948,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=580
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D580_t2F53536A70FB50CB40AE5BA5EFD386E810B48535 
 {
 public:
@@ -2990,11 +2967,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=64
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D64_t793535D031B918C2C510207830D7BE6CAC6F369C 
 {
 public:
@@ -3011,11 +2986,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=72
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D72_t2005207C3F6F7C1227A5084885E3320B238A2489 
 {
 public:
@@ -3032,11 +3005,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=80
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D80_t96F91921A1B05688D604AA0DDC6261BCAA3FF625 
 {
 public:
@@ -3053,11 +3024,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=88
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D88_t4C9F0619769B65D1722D44A3ECB97AAEB2791C16 
 {
 public:
@@ -3074,11 +3043,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=96
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D96_tADB23F3DA94DC89452F2BC0884B51C90615CDCD5 
 {
 public:
@@ -3095,7 +3062,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // UnityEngine.ParticleSystem/EmissionModule

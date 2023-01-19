@@ -13962,6 +13962,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_ClosestPowerOfTwo_m85A5E33784CB
 	int32_t icallRetVal = _il2cpp_icall_func(___value0);
 	return icallRetVal;
 }
+// System.Boolean UnityEngine.Mathf::IsPowerOfTwo(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mathf_IsPowerOfTwo_m2E8F44EDB3228002463457B682A961A5ECE68246 (int32_t ___value0, const RuntimeMethod* method)
+{
+	typedef bool (*Mathf_IsPowerOfTwo_m2E8F44EDB3228002463457B682A961A5ECE68246_ftn) (int32_t);
+	static Mathf_IsPowerOfTwo_m2E8F44EDB3228002463457B682A961A5ECE68246_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Mathf_IsPowerOfTwo_m2E8F44EDB3228002463457B682A961A5ECE68246_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mathf::IsPowerOfTwo(System.Int32)");
+	bool icallRetVal = _il2cpp_icall_func(___value0);
+	return icallRetVal;
+}
 // System.Int32 UnityEngine.Mathf::NextPowerOfTwo(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_NextPowerOfTwo_mABE370E8200128E78F3900B3ECFD9400C864FA17 (int32_t ___value0, const RuntimeMethod* method)
 {

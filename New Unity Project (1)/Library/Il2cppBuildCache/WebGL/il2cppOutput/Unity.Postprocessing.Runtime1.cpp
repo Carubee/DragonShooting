@@ -8174,7 +8174,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=20
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D20_tD909A6F2769690F3D9DA25C5DA4EA2496F5F73E7 
 {
 public:
@@ -8191,7 +8190,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // System.Collections.Generic.Dictionary`2/Enumerator<System.Int32,System.Collections.Generic.List`1<UnityEngine.Rendering.PostProcessing.PostProcessVolume>>

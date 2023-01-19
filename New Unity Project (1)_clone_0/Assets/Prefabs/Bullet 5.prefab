@@ -164,6 +164,8 @@ MonoBehaviour:
   rotateSpeed: 200
   target: {fileID: 0}
   nameDamage: 
+  name: 
+  laser: 0
 --- !u!82 &705850982814427902
 AudioSource:
   m_ObjectHideFlags: 0
@@ -173,7 +175,7 @@ AudioSource:
   m_GameObject: {fileID: 2447030445355977266}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 328987126169191978, guid: 2dc19fe30d0169041b429e792c2c752d, type: 2}
   m_audioClip: {fileID: 8300000, guid: 11390b4b43824e54e9eaada95422a366, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3

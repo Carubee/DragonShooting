@@ -1938,6 +1938,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Experimental_Rendering_GraphicsFormatUtility_IsCompressedTextureFormat();
 		Register_UnityEngine_Experimental_Rendering_GraphicsFormatUtility_IsCompressedTextureFormat();
 
+		//System.Boolean UnityEngine.Experimental.Rendering.GraphicsFormatUtility::IsPVRTCFormat(UnityEngine.Experimental.Rendering.GraphicsFormat)
+		void Register_UnityEngine_Experimental_Rendering_GraphicsFormatUtility_IsPVRTCFormat();
+		Register_UnityEngine_Experimental_Rendering_GraphicsFormatUtility_IsPVRTCFormat();
+
 		//System.Boolean UnityEngine.Experimental.Rendering.GraphicsFormatUtility::IsSRGBFormat(UnityEngine.Experimental.Rendering.GraphicsFormat)
 		void Register_UnityEngine_Experimental_Rendering_GraphicsFormatUtility_IsSRGBFormat();
 		Register_UnityEngine_Experimental_Rendering_GraphicsFormatUtility_IsSRGBFormat();
@@ -2985,6 +2989,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.MaterialPropertyBlock
 
 	//Start Registrations for type : UnityEngine.Mathf
+
+		//System.Boolean UnityEngine.Mathf::IsPowerOfTwo(System.Int32)
+		void Register_UnityEngine_Mathf_IsPowerOfTwo();
+		Register_UnityEngine_Mathf_IsPowerOfTwo();
 
 		//System.Int32 UnityEngine.Mathf::ClosestPowerOfTwo(System.Int32)
 		void Register_UnityEngine_Mathf_ClosestPowerOfTwo();

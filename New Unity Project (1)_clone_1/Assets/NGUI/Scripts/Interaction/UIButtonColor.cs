@@ -219,8 +219,8 @@ public class UIButtonColor : UIWidgetContainer
 		}
         if (!isOver)
         {
-
-			gunMode.instance.canPlay = true;
+            gunMode.instance.delayGun = 0.2f;
+            gunMode.instance.canPlay = true;
 			//MouseHover.instace.hover = false;
 
 		}

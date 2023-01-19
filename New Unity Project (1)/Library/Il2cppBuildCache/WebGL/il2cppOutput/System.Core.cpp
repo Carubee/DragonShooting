@@ -1192,7 +1192,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1024
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D1024_tF2C607C4230B8D85B26B8A9266E0014DCAC33106 
 {
 public:
@@ -1209,11 +1208,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=120
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D120_tA9F11D2506ED5E19BC8FF035C1306EC7ECAB936E 
 {
 public:
@@ -1230,11 +1227,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=256
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D256_t26A2D4D21AB256AEDA78F696334DD823935B9017 
 {
 public:
@@ -1251,7 +1246,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>

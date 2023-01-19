@@ -4903,7 +4903,6 @@ public:
 
 
 // NanoSockets.Address
-#pragma pack(push, tp, 1)
 struct Address_tF949B1753722F9F53B10A2531AB1C50F77B0AFA4 
 {
 public:
@@ -4980,7 +4979,6 @@ public:
 		___Port_2 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion.Angle
@@ -6588,7 +6586,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=228
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D228_t52634722F65D0CB605F1757D756F640F3570FC78 
 {
 public:
@@ -6605,7 +6602,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // Fusion.Allocator/Bucket

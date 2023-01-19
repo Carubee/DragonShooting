@@ -4151,7 +4151,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=120
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D120_t9FB2971929BB5806D249BD3E8E65045A1F21B90A 
 {
 public:
@@ -4168,11 +4167,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=128
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D128_t4988A3EB09A611C9770B8E38A2C16573B269812E 
 {
 public:
@@ -4189,11 +4186,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=192
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D192_tAAF55679FAEED5B3AAA4ABD0881A804B81F0ABC2 
 {
 public:
@@ -4210,11 +4205,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=9
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D9_tCED38E3469D821B10759A401C94374F3B4EB20F9 
 {
 public:
@@ -4231,11 +4224,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=97
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D97_t7FB77CACB119FDDEFDD7382E43425F403489ABE9 
 {
 public:
@@ -4252,7 +4243,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // System.Collections.Generic.Dictionary`2/Enumerator<System.Byte,System.Object>

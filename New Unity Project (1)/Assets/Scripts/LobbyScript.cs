@@ -16,12 +16,20 @@ public class LobbyScript : MonoBehaviour
     [SerializeField] Text coin;
     [SerializeField] AudioSource open;
     [SerializeField] AudioSource close;
+
+    [SerializeField] bool server;
     
     void Start()
     { 
         lobbyUI.SetActive(true);
         playerName.text = NameInput.Instance.input;
        coin.text = PlayerPrefs.GetInt("coin").ToString();
+
+        if (SpawnNetwork.instance.server)
+        {
+            lobby();
+        }
+
     }
 
     void Update()

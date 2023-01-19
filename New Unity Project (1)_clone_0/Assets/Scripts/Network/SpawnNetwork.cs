@@ -17,6 +17,9 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     [Networked] bool FirstSpawn { get; set; }
     private bool _mouseButton0;
     private bool _mouseButton0Up;
+
+    public bool server;
+    public bool Fortest;
     async void StartGame(GameMode mode)
     {
         _runner = gameObject.AddComponent<NetworkRunner>();
@@ -45,7 +48,15 @@ public class SpawnNetwork : MonoBehaviour, INetworkRunnerCallbacks
     // Update is called once per 
     public void JoinGame()
     {
-        StartGame(GameMode.AutoHostOrClient);
+        if (!Fortest)
+        {
+            if (server)
+                StartGame(GameMode.Host);
+            else
+                StartGame(GameMode.Client);
+        }
+        else
+            StartGame(GameMode.AutoHostOrClient);
     }
     public void QuitGame()
     {

@@ -7680,7 +7680,6 @@ public:
 
 
 // NetworkInputPrototype
-#pragma pack(push, tp, 1)
 struct NetworkInputPrototype_tDC26B9205B2F25AA908FC1A5504425FB57180D46 
 {
 public:
@@ -7778,7 +7777,6 @@ public:
 		___Pitch_18 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Xft.ORIPOINT

@@ -2521,7 +2521,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=120
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D120_t81CFB68A4FC4D7C8F3DA14287150451C4D0CFFF0 
 {
 public:
@@ -2538,11 +2537,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2048
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D2048_t371C9DC7F94753FF7C11B08DACBBF10795778A58 
 {
 public:
@@ -2559,11 +2556,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D32_tC09B7C83499F101A9BA647CF0085E80F70C6A565 
 {
 public:
@@ -2580,11 +2575,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=512
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D512_tBF905B1117A80E8E2C7C457341646CA6DF1D75EB 
 {
 public:
@@ -2601,11 +2594,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=64
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D64_t6965B0F2CEC20F6F2EA8132D401AC6FF5DE79B27 
 {
 public:
@@ -2622,7 +2613,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // Fusion.Log/DefaultContext
@@ -2642,7 +2632,6 @@ public:
 
 
 // Fusion.Radix/SortTarget
-#pragma pack(push, tp, 1)
 struct SortTarget_tE23BFA7924210C1EC4EDCC8643ED5BBDC3B440F8 
 {
 public:
@@ -2780,7 +2769,6 @@ public:
 		___UserData_7 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion.UTF32Tools/CharEnumerator

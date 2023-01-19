@@ -1290,7 +1290,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CSendClos
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CSendFrameFallbackAsyncU3Ed__55_tFCE1865A9F0F302F671995FF43AD9BBF1F995B3C_m45F58E4F8D83EADE451363E74F71A9371D422810_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CWriteAsyncInternalU3Ed__37_tA3EF177C6A131D3592E16BE287ADA414A14FD361_m5A3E13CA613AFE51618B2702701D9297A9A680B6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisRuntimeObject_m106EE2F1FA18DC25ED42F23C4E8E8F2E11B48995_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m6CA836088518519B3C6201B0DDAB6A1E38F1D7E6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_m166C8A9B0B2BD6D1B1D09DA9608F4563650355AB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BaseInvokableCall_ThrowOnInvalidArg_TisArraySegment_1_t89782CFC3178DB9FD8FFCCC398B4575AE8D740AE_mE6BCC0F5498B8EDDE0421581031107CB2C283436_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BaseInvokableCall_ThrowOnInvalidArg_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_m89E04E66342DAD4AEE770BB08EC0BBE8DB65A679_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BaseInvokableCall_ThrowOnInvalidArg_TisByteEnum_t39285A9D8C7F88982FF718C04A9FA1AE64827307_m195032DA919AD2CDE3025083C382102663A2E31E_RuntimeMethod_var;
@@ -7486,7 +7486,6 @@ public:
 
 
 // NanoSockets.Address
-#pragma pack(push, tp, 1)
 struct Address_tF949B1753722F9F53B10A2531AB1C50F77B0AFA4 
 {
 public:
@@ -7563,7 +7562,6 @@ public:
 		___Port_2 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion.Angle
@@ -11453,7 +11451,6 @@ public:
 
 
 // Fusion.Radix/SortTarget
-#pragma pack(push, tp, 1)
 struct SortTarget_tE23BFA7924210C1EC4EDCC8643ED5BBDC3B440F8 
 {
 public:
@@ -11591,7 +11588,6 @@ public:
 		___UserData_7 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraphDebugData/PassDebugData
@@ -14702,7 +14698,6 @@ public:
 
 
 // NetworkInputData
-#pragma pack(push, tp, 1)
 struct NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81 
 {
 public:
@@ -14863,7 +14858,6 @@ public:
 		___Switch_8 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 // Native definition for P/Invoke marshalling of NetworkInputData
 struct NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_marshaled_pinvoke
@@ -15059,7 +15053,6 @@ struct NetworkInputData_t93822B726B4FF3A4062BFE57ECFA75F3D3780D81_marshaled_com
 };
 
 // NetworkInputPrototype
-#pragma pack(push, tp, 1)
 struct NetworkInputPrototype_tDC26B9205B2F25AA908FC1A5504425FB57180D46 
 {
 public:
@@ -15157,7 +15150,6 @@ public:
 		___Pitch_18 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion.NetworkObjectFlags
@@ -21289,23 +21281,23 @@ struct DeferredShutdownParams_tF3FADD2D1EE5CB6D47120AFB7C103B91F4585141_marshale
 	int32_t ___DestroyGO_2;
 };
 
-// SpawnNetwork/<StartGame>d__11
-struct U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B 
+// SpawnNetwork/<StartGame>d__13
+struct U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C 
 {
 public:
-	// System.Int32 SpawnNetwork/<StartGame>d__11::<>1__state
+	// System.Int32 SpawnNetwork/<StartGame>d__13::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder SpawnNetwork/<StartGame>d__11::<>t__builder
+	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder SpawnNetwork/<StartGame>d__13::<>t__builder
 	AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6  ___U3CU3Et__builder_1;
-	// SpawnNetwork SpawnNetwork/<StartGame>d__11::<>4__this
+	// SpawnNetwork SpawnNetwork/<StartGame>d__13::<>4__this
 	SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153 * ___U3CU3E4__this_2;
-	// Fusion.GameMode SpawnNetwork/<StartGame>d__11::mode
+	// Fusion.GameMode SpawnNetwork/<StartGame>d__13::mode
 	int32_t ___mode_3;
-	// System.Runtime.CompilerServices.TaskAwaiter`1<Fusion.StartGameResult> SpawnNetwork/<StartGame>d__11::<>u__1
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Fusion.StartGameResult> SpawnNetwork/<StartGame>d__13::<>u__1
 	TaskAwaiter_1_t27C41FE849F1833628E1B70D370BD25805E1F86C  ___U3CU3Eu__1_4;
 
 public:
-	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B, ___U3CU3E1__state_0)); }
+	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C, ___U3CU3E1__state_0)); }
 	inline int32_t get_U3CU3E1__state_0() const { return ___U3CU3E1__state_0; }
 	inline int32_t* get_address_of_U3CU3E1__state_0() { return &___U3CU3E1__state_0; }
 	inline void set_U3CU3E1__state_0(int32_t value)
@@ -21313,7 +21305,7 @@ public:
 		___U3CU3E1__state_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B, ___U3CU3Et__builder_1)); }
+	inline static int32_t get_offset_of_U3CU3Et__builder_1() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C, ___U3CU3Et__builder_1)); }
 	inline AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6  get_U3CU3Et__builder_1() const { return ___U3CU3Et__builder_1; }
 	inline AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * get_address_of_U3CU3Et__builder_1() { return &___U3CU3Et__builder_1; }
 	inline void set_U3CU3Et__builder_1(AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6  value)
@@ -21331,7 +21323,7 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B, ___U3CU3E4__this_2)); }
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C, ___U3CU3E4__this_2)); }
 	inline SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
 	inline SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
 	inline void set_U3CU3E4__this_2(SpawnNetwork_t3F08661EBB93602AA37310CE3CBA36C69C129153 * value)
@@ -21340,7 +21332,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_mode_3() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B, ___mode_3)); }
+	inline static int32_t get_offset_of_mode_3() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C, ___mode_3)); }
 	inline int32_t get_mode_3() const { return ___mode_3; }
 	inline int32_t* get_address_of_mode_3() { return &___mode_3; }
 	inline void set_mode_3(int32_t value)
@@ -21348,7 +21340,7 @@ public:
 		___mode_3 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Eu__1_4() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B, ___U3CU3Eu__1_4)); }
+	inline static int32_t get_offset_of_U3CU3Eu__1_4() { return static_cast<int32_t>(offsetof(U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C, ___U3CU3Eu__1_4)); }
 	inline TaskAwaiter_1_t27C41FE849F1833628E1B70D370BD25805E1F86C  get_U3CU3Eu__1_4() const { return ___U3CU3Eu__1_4; }
 	inline TaskAwaiter_1_t27C41FE849F1833628E1B70D370BD25805E1F86C * get_address_of_U3CU3Eu__1_4() { return &___U3CU3Eu__1_4; }
 	inline void set_U3CU3Eu__1_4(TaskAwaiter_1_t27C41FE849F1833628E1B70D370BD25805E1F86C  value)
@@ -31317,14 +31309,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_Start_TisU3CConne
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t2CE498F9A6CE5405242AE2D77F03E58985B7C3ED_TisRuntimeObject_m59CAC0C3148DD19AA64CC82944CC050E08DDAC43_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, ConfiguredTaskAwaiter_t2CE498F9A6CE5405242AE2D77F03E58985B7C3ED * ___awaiter0, RuntimeObject ** ___stateMachine1, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Boolean>,System.Object>(TAwaiter&,TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t98B8214BA5C5BD14FD8D98B71C67E11FFE8B684C_TisRuntimeObject_m5C599364BFA954A82A59A1959BE9FB5FE8305577_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, TaskAwaiter_1_t98B8214BA5C5BD14FD8D98B71C67E11FFE8B684C * ___awaiter0, RuntimeObject ** ___stateMachine1, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,SpawnNetwork/<StartGame>d__11>(TAwaiter&,TStateMachine&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m638B51E998E2C81DD50C618746C1C020697C783D_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE * ___awaiter0, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * ___stateMachine1, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,SpawnNetwork/<StartGame>d__13>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_mF59E534A787D5DA3FD75DB5C01B62E2CD95A0DC3_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE * ___awaiter0, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * ___stateMachine1, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Object,System.Object>(TAwaiter&,TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisRuntimeObject_TisRuntimeObject_m7BE3C991C9BC01BC0E34298B658EC833394E2091_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, RuntimeObject ** ___awaiter0, RuntimeObject ** ___stateMachine1, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<System.Object>(TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisRuntimeObject_m106EE2F1FA18DC25ED42F23C4E8E8F2E11B48995_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, RuntimeObject ** ___stateMachine0, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<SpawnNetwork/<StartGame>d__11>(TStateMachine&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m6CA836088518519B3C6201B0DDAB6A1E38F1D7E6_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<SpawnNetwork/<StartGame>d__13>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_m166C8A9B0B2BD6D1B1D09DA9608F4563650355AB_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * ___stateMachine0, const RuntimeMethod* method);
 // System.Void System.Action`2<System.Int32,System.Object>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_mD005A0CCFFD77790ADB8E1E418161A6F27A30C64_gshared (Action_2_tDD9145FF6BEFC0F795374D3C54FE5138E8FDDC96 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(!0,!1)
@@ -31748,10 +31740,10 @@ inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t98B8
 {
 	((  void (*) (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *, TaskAwaiter_1_t98B8214BA5C5BD14FD8D98B71C67E11FFE8B684C *, RuntimeObject **, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t98B8214BA5C5BD14FD8D98B71C67E11FFE8B684C_TisRuntimeObject_m5C599364BFA954A82A59A1959BE9FB5FE8305577_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,SpawnNetwork/<StartGame>d__11>(TAwaiter&,TStateMachine&)
-inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m638B51E998E2C81DD50C618746C1C020697C783D (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE * ___awaiter0, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * ___stateMachine1, const RuntimeMethod* method)
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,SpawnNetwork/<StartGame>d__13>(TAwaiter&,TStateMachine&)
+inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_mF59E534A787D5DA3FD75DB5C01B62E2CD95A0DC3 (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE * ___awaiter0, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * ___stateMachine1, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE *, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B *, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m638B51E998E2C81DD50C618746C1C020697C783D_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+	((  void (*) (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE *, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C *, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_mF59E534A787D5DA3FD75DB5C01B62E2CD95A0DC3_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Object,System.Object>(TAwaiter&,TStateMachine&)
 inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisRuntimeObject_TisRuntimeObject_m7BE3C991C9BC01BC0E34298B658EC833394E2091 (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, RuntimeObject ** ___awaiter0, RuntimeObject ** ___stateMachine1, const RuntimeMethod* method)
@@ -31763,12 +31755,12 @@ inline void AsyncVoidMethodBuilder_Start_TisRuntimeObject_m106EE2F1FA18DC25ED42F
 {
 	((  void (*) (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *, RuntimeObject **, const RuntimeMethod*))AsyncVoidMethodBuilder_Start_TisRuntimeObject_m106EE2F1FA18DC25ED42F23C4E8E8F2E11B48995_gshared)(__this, ___stateMachine0, method);
 }
-// System.Void SpawnNetwork/<StartGame>d__11::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartGameU3Ed__11_MoveNext_m46CD12B475811D9FDF469C5A82B69B83ED574D85 (U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * __this, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<SpawnNetwork/<StartGame>d__11>(TStateMachine&)
-inline void AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m6CA836088518519B3C6201B0DDAB6A1E38F1D7E6 (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * ___stateMachine0, const RuntimeMethod* method)
+// System.Void SpawnNetwork/<StartGame>d__13::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartGameU3Ed__13_MoveNext_mBB8BBF61AF6BA90E7A2A89DC5838619DA91972D1 (U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * __this, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<SpawnNetwork/<StartGame>d__13>(TStateMachine&)
+inline void AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_m166C8A9B0B2BD6D1B1D09DA9608F4563650355AB (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * ___stateMachine0, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B *, const RuntimeMethod*))AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m6CA836088518519B3C6201B0DDAB6A1E38F1D7E6_gshared)(__this, ___stateMachine0, method);
+	((  void (*) (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C *, const RuntimeMethod*))AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_m166C8A9B0B2BD6D1B1D09DA9608F4563650355AB_gshared)(__this, ___stateMachine0, method);
 }
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * Type_GetTypeFromHandle_m180706985100778663E9C75D4FC001D367C0120F (RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  ___handle0, const RuntimeMethod* method);
@@ -37353,8 +37345,8 @@ IL2CPP_EXTERN_C  void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwait
 	AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * _thisAdjusted = reinterpret_cast<AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *>(__this + _offset);
 	AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t98B8214BA5C5BD14FD8D98B71C67E11FFE8B684C_TisRuntimeObject_m5C599364BFA954A82A59A1959BE9FB5FE8305577(_thisAdjusted, ___awaiter0, ___stateMachine1, method);
 }
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,SpawnNetwork/<StartGame>d__11>(TAwaiter&,TStateMachine&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m638B51E998E2C81DD50C618746C1C020697C783D_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE * ___awaiter0, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * ___stateMachine1, const RuntimeMethod* method)
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,SpawnNetwork/<StartGame>d__13>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_mF59E534A787D5DA3FD75DB5C01B62E2CD95A0DC3_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE * ___awaiter0, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * ___stateMachine1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -37432,11 +37424,11 @@ IL_0034:
 			L_7 = AsyncVoidMethodBuilder_get_Task_m2C3316BD647CD8BB6997CDE9568AF84AA9A146A0((AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *)(AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *)__this, /*hidden argument*/NULL);
 			int32_t L_8;
 			L_8 = Task_get_Id_m34DAC27D91939B78DCD73A26085505A0B4D7235C((Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 *)L_7, /*hidden argument*/NULL);
-			U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * L_9 = ___stateMachine1;
+			U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * L_9 = ___stateMachine1;
 			RuntimeObject * L_10 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), L_9);
 			Type_t * L_11;
 			L_11 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B((RuntimeObject *)L_10, /*hidden argument*/NULL);
-			*L_9 = *(U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B *)UnBox(L_10);
+			*L_9 = *(U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C *)UnBox(L_10);
 			String_t* L_12;
 			L_12 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, (MemberInfo_t *)L_11);
 			String_t* L_13;
@@ -37447,9 +37439,9 @@ IL_0034:
 IL_0062:
 		{
 			AsyncMethodBuilderCore_t2C85055E04767C52B9F66144476FCBF500DBFA34 * L_14 = (AsyncMethodBuilderCore_t2C85055E04767C52B9F66144476FCBF500DBFA34 *)__this->get_address_of_m_coreState_1();
-			U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * L_15 = ___stateMachine1;
-			U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B  L_16 = (*(U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B *)L_15);
-			U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B  L_17 = (U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B )L_16;
+			U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * L_15 = ___stateMachine1;
+			U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C  L_16 = (*(U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C *)L_15);
+			U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C  L_17 = (U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C )L_16;
 			RuntimeObject * L_18 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_17);
 			MoveNextRunner_tFAEA0BEDD353E2E34E8E287C67B1F5572FD30C2D * L_19 = V_0;
 			AsyncMethodBuilderCore_PostBoxInitialization_m22C1D9A2745255C6FC1426D4CB0C4355FBDA07E3((AsyncMethodBuilderCore_t2C85055E04767C52B9F66144476FCBF500DBFA34 *)(AsyncMethodBuilderCore_t2C85055E04767C52B9F66144476FCBF500DBFA34 *)L_14, (RuntimeObject*)L_18, (MoveNextRunner_tFAEA0BEDD353E2E34E8E287C67B1F5572FD30C2D *)L_19, (Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 *)NULL, /*hidden argument*/NULL);
@@ -37487,11 +37479,11 @@ IL_0091:
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m638B51E998E2C81DD50C618746C1C020697C783D_AdjustorThunk (RuntimeObject * __this, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE * ___awaiter0, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * ___stateMachine1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_mF59E534A787D5DA3FD75DB5C01B62E2CD95A0DC3_AdjustorThunk (RuntimeObject * __this, TaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE * ___awaiter0, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * ___stateMachine1, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
 	AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * _thisAdjusted = reinterpret_cast<AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *>(__this + _offset);
-	AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m638B51E998E2C81DD50C618746C1C020697C783D(_thisAdjusted, ___awaiter0, ___stateMachine1, method);
+	AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2631C6B4AF6F87F9DA4817BE4B0962E01B4F47FE_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_mF59E534A787D5DA3FD75DB5C01B62E2CD95A0DC3(_thisAdjusted, ___awaiter0, ___stateMachine1, method);
 }
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Object,System.Object>(TAwaiter&,TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisRuntimeObject_TisRuntimeObject_m7BE3C991C9BC01BC0E34298B658EC833394E2091_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, RuntimeObject ** ___awaiter0, RuntimeObject ** ___stateMachine1, const RuntimeMethod* method)
@@ -37698,8 +37690,8 @@ IL2CPP_EXTERN_C  void AsyncVoidMethodBuilder_Start_TisRuntimeObject_m106EE2F1FA1
 	AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * _thisAdjusted = reinterpret_cast<AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *>(__this + _offset);
 	AsyncVoidMethodBuilder_Start_TisRuntimeObject_m106EE2F1FA18DC25ED42F23C4E8E8F2E11B48995(_thisAdjusted, ___stateMachine0, method);
 }
-// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<SpawnNetwork/<StartGame>d__11>(TStateMachine&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m6CA836088518519B3C6201B0DDAB6A1E38F1D7E6_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * ___stateMachine0, const RuntimeMethod* method)
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<SpawnNetwork/<StartGame>d__13>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_m166C8A9B0B2BD6D1B1D09DA9608F4563650355AB_gshared (AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * __this, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * ___stateMachine0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -37717,7 +37709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CStart
 	{
 		ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB * L_1 = (ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB_il2cpp_TypeInfo_var)));
 		ArgumentNullException__ctor_m81AB157B93BFE2FBFDB08B88F84B444293042F97(L_1, (String_t*)((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralC70965A7D491520CA8D04D4EA01613EFED3309E0)), /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m6CA836088518519B3C6201B0DDAB6A1E38F1D7E6_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_m166C8A9B0B2BD6D1B1D09DA9608F4563650355AB_RuntimeMethod_var)));
 	}
 
 IL_0018:
@@ -37731,8 +37723,8 @@ IL_0025:
 	{ // begin try (depth: 1)
 		IL2CPP_RUNTIME_CLASS_INIT(ExecutionContext_t16AC73BB21FEEEAD34A017877AC18DD8BB836414_il2cpp_TypeInfo_var);
 		ExecutionContext_EstablishCopyOnWriteScope_mA3CC2D9406F9CD45DFBACECAAE5443A76CAC305E((ExecutionContextSwitcher_t11B7DEE83408478EE3D5E29C988E5385AA9D7277 *)(ExecutionContextSwitcher_t11B7DEE83408478EE3D5E29C988E5385AA9D7277 *)(&V_0), /*hidden argument*/NULL);
-		U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * L_2 = ___stateMachine0;
-		U3CStartGameU3Ed__11_MoveNext_m46CD12B475811D9FDF469C5A82B69B83ED574D85((U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B *)(U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B *)L_2, /*hidden argument*/NULL);
+		U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * L_2 = ___stateMachine0;
+		U3CStartGameU3Ed__13_MoveNext_mBB8BBF61AF6BA90E7A2A89DC5838619DA91972D1((U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C *)(U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C *)L_2, /*hidden argument*/NULL);
 		IL2CPP_LEAVE(0x42, FINALLY_003a);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -37757,11 +37749,11 @@ IL_0042:
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m6CA836088518519B3C6201B0DDAB6A1E38F1D7E6_AdjustorThunk (RuntimeObject * __this, U3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B * ___stateMachine0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_m166C8A9B0B2BD6D1B1D09DA9608F4563650355AB_AdjustorThunk (RuntimeObject * __this, U3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C * ___stateMachine0, const RuntimeMethod* method)
 {
 	int32_t _offset = 1;
 	AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 * _thisAdjusted = reinterpret_cast<AsyncVoidMethodBuilder_tA31C888168B27AABF7B0D9E7DF720547D4892DE6 *>(__this + _offset);
-	AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__11_tBAB25199343F930D9F862E99C0522C7121B5543B_m6CA836088518519B3C6201B0DDAB6A1E38F1D7E6(_thisAdjusted, ___stateMachine0, method);
+	AsyncVoidMethodBuilder_Start_TisU3CStartGameU3Ed__13_t10CB6254006A9DE79D46F41FE771860BAA27BD2C_m166C8A9B0B2BD6D1B1D09DA9608F4563650355AB(_thisAdjusted, ___stateMachine0, method);
 }
 // T UnityEngine.AttributeHelperEngine::GetCustomAttributeOfType<System.Object>(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * AttributeHelperEngine_GetCustomAttributeOfType_TisRuntimeObject_m92A071553B5A15736435EAA727CB5F88270BA020_gshared (Type_t * ___klass0, const RuntimeMethod* method)

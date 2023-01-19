@@ -6035,7 +6035,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=144
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D144_tB96C26BE23C2D6F698770D065626F1285E250349 
 {
 public:
@@ -6052,7 +6051,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // UnityEngine.Rendering.DrawingSettings/<shaderPassNames>e__FixedBuffer

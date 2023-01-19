@@ -50,6 +50,10 @@ public class item : NetworkBehaviour
     [SerializeField] GameObject ButtonSpareShot;
 
     [SerializeField] UILabel TextGold;
+
+    [SerializeField] GameObject TimeitemSpare;
+    [SerializeField] GameObject TimeitemDamage;
+    [SerializeField] GameObject TimeitemGold;
     void Start()
     {
         instace = this;
@@ -67,12 +71,15 @@ public class item : NetworkBehaviour
     {
         if(doubleGold == true )
         {
+            TimeitemGold.SetActive(true);
+            TimeitemGold.GetComponent<UI2DSprite>().fillAmount -= Time.deltaTime / 10;
             TimeDouble -= Time.deltaTime;
             int TimeCount = Mathf.RoundToInt(TimeDouble);
             DoubleGold.text = TimeCount.ToString();
             ButtonDoubleGold.GetComponent<UIButton>().enabled = false;
             if (TimeDouble <= 0)
             {
+                TimeitemGold.SetActive(false);
                 ButtonDoubleGold.GetComponent<UIButton>().enabled = true;
                 doubleGold = false;
                 closeEffect();
@@ -83,13 +90,15 @@ public class item : NetworkBehaviour
         }
         if (doubleDamage == true )
         {
-           
+            TimeitemDamage.SetActive(true);
+            TimeitemDamage.GetComponent<UI2DSprite>().fillAmount -= Time.deltaTime / 10;
             TimeDamage -= Time.deltaTime;
             int TimeCount = Mathf.RoundToInt(TimeDamage);
             DoubleDamage.text = TimeCount.ToString();
             ButtonDoubleDamage.GetComponent<UIButton>().enabled = false;
             if (TimeDamage <= 0)
             {
+                TimeitemDamage.SetActive(false);
                 ButtonDoubleDamage.GetComponent<UIButton>().enabled = true;
                 doubleDamage = false;
                 closeEffect();
@@ -100,6 +109,8 @@ public class item : NetworkBehaviour
         }
         if (spare == true )
         {
+            TimeitemSpare.SetActive(true);
+            TimeitemSpare.GetComponent<UI2DSprite>().fillAmount -= Time.deltaTime / 15;
             TimeSpare -= Time.deltaTime;
             int TimeCount = Mathf.RoundToInt(TimeSpare);
             SpareShot.text = TimeCount.ToString();
@@ -107,6 +118,7 @@ public class item : NetworkBehaviour
 
             if (TimeSpare <= 0)
             {
+                TimeitemSpare.SetActive(false);
                 ButtonSpareShot.GetComponent<UIButton>().enabled = true;
                 spare = false;
                 closeEffect();
@@ -160,7 +172,7 @@ public class item : NetworkBehaviour
             PlayerPrefs.SetInt("Spare", PlayerPrefs.GetInt("Spare") - 1);
             PlayerPrefs.Save();
             UpdateText();
-            TimeSpare = 10;
+            TimeSpare = 15;
             spare = true;
             buffText.text = "30 percent Shoot Free";
 

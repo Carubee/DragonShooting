@@ -4316,7 +4316,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=12
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D12_t2220102B640286E12FA39257350C9720EE55BD78 
 {
 public:
@@ -4333,7 +4332,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // TMPro.TMP_DefaultControls/Resources

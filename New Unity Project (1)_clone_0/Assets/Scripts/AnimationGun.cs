@@ -8,6 +8,9 @@ public class AnimationGun : NetworkBehaviour
     public Animator fire;
     public float firerate;
     public bool holdfire;
+    public float timeLaser;
+    public float firerateLaser;
+    bool laserSwitch;
     void Start()
     {
         fire = GetComponent<Animator>();
@@ -24,14 +27,14 @@ public class AnimationGun : NetworkBehaviour
         {
             firerate += Time.deltaTime;
         }
-        if (!Input.GetMouseButton(0))
+        if (!Input.GetMouseButton(0) && gunMode.instance.gunNumber != 6)
         {
             if (holdfire)
             {
                 Rpc_animHoldDis();
             }
         }
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && gunMode.instance.gunNumber != 6 )
         {
             if (holdfire)
             {
@@ -43,7 +46,28 @@ public class AnimationGun : NetworkBehaviour
                 firerate = 0;
 
             }
-            
+        }
+        if (firerateLaser < 1)
+        {
+            firerateLaser += Time.deltaTime;
+        }
+
+        if(Input.GetMouseButton(0) && firerateLaser >= 1 && gunMode.instance.gunNumber == 6 && PlayerPrefs.GetInt("coin") > 75)
+        {
+            laserSwitch = true;
+           
+        }
+        if (laserSwitch)
+        {
+            Rpc_animHold();
+            timeLaser += Time.deltaTime;
+            if (timeLaser > 0.5)
+            {
+                Rpc_animHoldDis();
+                timeLaser = 0;
+                firerateLaser = 0;
+                laserSwitch = false;
+            }
         }
     }
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]

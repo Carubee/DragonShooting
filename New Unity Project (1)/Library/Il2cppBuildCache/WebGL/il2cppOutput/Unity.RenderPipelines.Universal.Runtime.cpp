@@ -5017,7 +5017,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=12
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D12_t85E6BB2A79D28D2B8A5047FBE0E2AC0731AD3602 
 {
 public:
@@ -5034,11 +5033,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D24_t9CA92874AB130D18C637C309162ED092CF386A19 
 {
 public:
@@ -5055,11 +5052,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=960
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D960_t4244660502AFB93FBF3750CA7153331C86B80957 
 {
 public:
@@ -5076,7 +5071,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // UnityEngine.Rendering.CameraProperties/<layerCullDistances>e__FixedBuffer

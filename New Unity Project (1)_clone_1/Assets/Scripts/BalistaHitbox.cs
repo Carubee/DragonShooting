@@ -22,6 +22,7 @@ public class BalistaHitbox : NetworkBehaviour
     public string nameDamage;
     public PlayerRef playerThis;
     public string name;
+    [SerializeField] bool laser;
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -64,9 +65,22 @@ public class BalistaHitbox : NetworkBehaviour
         {
             if (destroyOnHit == true)
             {
-                UtilsClass.ShakeCamera(0.03f, .1f);
+                if (OpenOptioon.instant.Shake)
+                {
+                    UtilsClass.ShakeCamera(0.03f, .1f);
+                }
                 GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
-                
+                Destroy(this.gameObject);
+
+            }
+            if (laser)
+            {
+                if (OpenOptioon.instant.Shake)
+                {
+                    UtilsClass.ShakeCamera(0.03f, .1f);
+                }
+                GameObject bomb = Instantiate(explosion, this.gameObject.transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
+
             }
             if (bomb == false)
             {
@@ -78,7 +92,6 @@ public class BalistaHitbox : NetworkBehaviour
                 }
                 else
                 {
-                    Debug.Log("Tes");
                     collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject, nameDamage);
                 }
 
@@ -88,7 +101,6 @@ public class BalistaHitbox : NetworkBehaviour
                     hit.PlusGold(playerThis);
 
                 }
-                Destroy(this.gameObject);
             }
             if (bomb == true)
             {
@@ -96,16 +108,7 @@ public class BalistaHitbox : NetworkBehaviour
             }
             
         }
-        if (collision.gameObject.tag == "lock" && item.instace.tracker == true)
-        {
-            if (destroyOnHit == true)
-            {
-                collision.GetComponent<FishControl>().hitDame(GunControl.instance.damage, gameObject, nameDamage);
-                UtilsClass.ShakeCamera(0.03f, .1f);
-                Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity);
-            }
-           
-        }
+        
     }
     public void CheckTypeBullet(bool bullet2)
     {

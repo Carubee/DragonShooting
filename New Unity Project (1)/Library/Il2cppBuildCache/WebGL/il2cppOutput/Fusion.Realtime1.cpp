@@ -5596,7 +5596,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=13
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D13_t65EA9F24954F2305D89498A61BF3EC19696C6E30 
 {
 public:
@@ -5613,7 +5612,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>

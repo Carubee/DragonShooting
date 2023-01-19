@@ -2785,7 +2785,6 @@ public:
 
 
 // NanoSockets.Address
-#pragma pack(push, tp, 1)
 struct Address_tF949B1753722F9F53B10A2531AB1C50F77B0AFA4 
 {
 public:
@@ -2862,7 +2861,6 @@ public:
 		___Port_2 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // System.Runtime.CompilerServices.AsyncMethodBuilderCore
@@ -4963,7 +4961,6 @@ public:
 
 
 // Fusion.Radix/SortTarget
-#pragma pack(push, tp, 1)
 struct SortTarget_tE23BFA7924210C1EC4EDCC8643ED5BBDC3B440F8 
 {
 public:
@@ -5101,7 +5098,6 @@ public:
 		___UserData_7 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion.RpcSendResult/<>c__DisplayClass4_0

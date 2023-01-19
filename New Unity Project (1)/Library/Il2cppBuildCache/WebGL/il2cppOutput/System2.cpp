@@ -3138,7 +3138,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=12
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D12_tB03FD2B627BB01BB37E9AE2DB4557084F0026ACA 
 {
 public:
@@ -3155,11 +3154,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=128
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D128_t2C1166FE3CC05212DD55648859D997CA8842A83B 
 {
 public:
@@ -3176,11 +3173,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D14_t4B341AB58EF8F7A8D248C3EC4ED45FBC3E19CDAF 
 {
 public:
@@ -3197,11 +3192,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=256
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D256_t3D7752AC597E9D12F8CA9D83DED6BB4AA67F736D 
 {
 public:
@@ -3218,11 +3211,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=3
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D3_t2822E06E7570D02A3B51B4B68B2D90A77AB7CA02 
 {
 public:
@@ -3239,11 +3230,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D32_tD37BEF7101998702862991181C721026AB96A59F 
 {
 public:
@@ -3260,11 +3249,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=44
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D44_t2F10E0A6A5CD8F1EC7DB466A80FA89066B4E0B24 
 {
 public:
@@ -3281,11 +3268,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D6_t27650A226C11FAD389D4736DAD4E30DA7DD59B92 
 {
 public:
@@ -3302,11 +3287,9 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=9
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D9_t6F4B3CBBC229ABC1E0D4889D9B109047F6FA9B71 
 {
 public:
@@ -3323,7 +3306,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // System.Text.RegularExpressions.RegexCharClass/LowerCaseMapping

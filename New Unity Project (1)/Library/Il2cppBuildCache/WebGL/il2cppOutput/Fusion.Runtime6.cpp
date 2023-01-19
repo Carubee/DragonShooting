@@ -5276,7 +5276,6 @@ public:
 
 
 // NanoSockets.Address
-#pragma pack(push, tp, 1)
 struct Address_tF949B1753722F9F53B10A2531AB1C50F77B0AFA4 
 {
 public:
@@ -5353,7 +5352,6 @@ public:
 		___Port_2 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // System.Runtime.CompilerServices.AsyncMethodBuilderCore
@@ -7805,7 +7803,6 @@ public:
 
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=228
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D228_t52634722F65D0CB605F1757D756F640F3570FC78 
 {
 public:
@@ -7822,7 +7819,6 @@ public:
 
 public:
 };
-#pragma pack(pop, tp)
 
 
 // Fusion.Allocator/Bucket
@@ -12973,7 +12969,6 @@ public:
 
 
 // Fusion._128
-#pragma pack(push, tp, 1)
 struct _128_t49281BD099485522B56DA86C58EFE5280400BBC6 
 {
 public:
@@ -15952,11 +15947,9 @@ public:
 		____data127_129 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion._16
-#pragma pack(push, tp, 1)
 struct _16_t8CC9C6460B903E069E53DBC02B408B407455A947 
 {
 public:
@@ -16359,11 +16352,9 @@ public:
 		____data15_17 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion._2
-#pragma pack(push, tp, 1)
 struct _2_tF9AABFA8FCB3B07FCE2A70D72442714BB147A3A4 
 {
 public:
@@ -16444,11 +16435,9 @@ public:
 		____data1_3 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion._256
-#pragma pack(push, tp, 1)
 struct _256_tC27348620739C7877AEB2371A5F769079A6762FC 
 {
 public:
@@ -22371,11 +22360,9 @@ public:
 		____data255_257 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion._32
-#pragma pack(push, tp, 1)
 struct _32_tB6F93D8BFD3711E3D41B3E65926E1E5077699BF8 
 {
 public:
@@ -23146,11 +23133,9 @@ public:
 		____data31_33 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion._4
-#pragma pack(push, tp, 1)
 struct _4_t21D45E5CC9AFD800645AA8B2A6D9243279EF6E1B 
 {
 public:
@@ -23277,11 +23262,9 @@ public:
 		____data3_5 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion._512
-#pragma pack(push, tp, 1)
 struct _512_t5CCEB67932CCC4C013EE6371B87E9C77BB904D10 
 {
 public:
@@ -35092,11 +35075,9 @@ public:
 		____data511_513 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion._64
-#pragma pack(push, tp, 1)
 struct _64_t3CCD623552F04B2A76EBAA87C3995B91D7B59EC2 
 {
 public:
@@ -36603,11 +36584,9 @@ public:
 		____data63_65 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion._8
-#pragma pack(push, tp, 1)
 struct _8_tD47C8992A4A57B7FBFB5910A7F534166371F9E58 
 {
 public:
@@ -36826,7 +36805,6 @@ public:
 		____data7_9 = value;
 	}
 };
-#pragma pack(pop, tp)
 
 
 // Fusion.Allocator/Block

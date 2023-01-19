@@ -30,15 +30,17 @@ public class OpenOptioon : MonoBehaviour
     [SerializeField] Slider sliderOpen;
     [SerializeField] Text amount;
     [SerializeField] Text amountPrice;
-    [SerializeField] Sprite BombSprite,SpareSprite,DoubleDamageSprite,DoubleGoldSprite;
+    [SerializeField] Sprite BombSprite, SpareSprite, DoubleDamageSprite, DoubleGoldSprite;
     [SerializeField] int amountItemInt;
     [SerializeField] float amountItemfloat;
     [SerializeField] Text nameItem;
     [SerializeField] UILabel TextGold;
 
     [SerializeField] Image iamge;
-
+    [SerializeField] Text CostText;
+    [SerializeField] Text Des;
     public bool GoldSwitch;
+    public bool Shake;
 
     public void Start()
     {
@@ -55,7 +57,7 @@ public class OpenOptioon : MonoBehaviour
         amountItemfloat = sliderOpen.value;
         amountItemInt = Mathf.RoundToInt(amountItemfloat);
 
-        amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
+        amount.text = "จำนวน : " + amountItemInt + "/ " + sliderOpen.maxValue +  " ชิ้น";
 
 
         if (Bomb == true)
@@ -85,25 +87,36 @@ public class OpenOptioon : MonoBehaviour
             amount.text = "Buy : " + 1 + "/ " + sliderOpen.maxValue;
             if (Bomb == true)
             {
+                Des.text = "ระเบิดสังหารมังกร สร้างความเสียหายจำนวน50-100 หน่วย แบบสุ่มทั่วทั้งสนาม";
                 amountPrice.text = (1 * 200).ToString();
+                CostText.text = "100";
             }
             if (SpareShot == true)
             {
+                Des.text = "อุปกรณ์เสริมใช้ติดกับป้อมปืน ทำให้มีโอกาส 30% ที่จะยิงปืนโดยไม่เสียลูกกระสุน เป็นระยะเวลา 15 วินาที";
                 amountPrice.text = (1 * 25).ToString();
+                CostText.text = "35";
+
             }
             if (DoubleDamage == true)
             {
+                Des.text = "อุปกรณ์เสริมใช้ติดกับป้อมปืน ช่วยเพิ่มพลังโจมตีเป็น 2 เท่า เป็นระยะเวลา 10 วินาที";
                 amountPrice.text = (1 * 35).ToString();
+                CostText.text = "55";
+
             }
             if (HunterBag == true)
             {
+                Des.text = "กระเป่าของนักล่า ทำให้เหรียญทองที่ได้รับจากการสังหารมังกรเพิ่มขึ้น 2 เท่า เป็นระยะเวลา 10 วินาที";
                 amountPrice.text = (1 * 350).ToString();
+                CostText.text = "350";
+
             }
         }
         else
         {
             sliderOpen.value = 0;
-            amount.text = "Buy : " + 0 + "/ " + sliderOpen.maxValue;
+            amount.text = "จำนวน : " + 0 + "/ " + sliderOpen.maxValue +" ชิ้น";
         }
 
         sliderOpen.onValueChanged.AddListener(HandleSliderValueChanged);
@@ -142,6 +155,7 @@ public class OpenOptioon : MonoBehaviour
         NoticeBuy.SetActive(false);
         NoticeNotEnough.SetActive(false);
         openMenu = false;
+        gunMode.instance.delayGun = 0.2f;
         gunMode.instance.canPlay = true;
         soundOpen.Play();
 
@@ -322,7 +336,7 @@ public class OpenOptioon : MonoBehaviour
         {
             amountItemInt += 1;
             sliderOpen.value = amountItemInt;
-            amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
+            amount.text = "จำนวน : " + amountItemInt + "/ " + sliderOpen.maxValue + " ชิ้น";
         }
     }
     public void Minus()
@@ -331,13 +345,17 @@ public class OpenOptioon : MonoBehaviour
         {
             amountItemInt -= 1;
             sliderOpen.value = amountItemInt;
-            amount.text = "Buy : " + amountItemInt + "/ " + sliderOpen.maxValue;
+            amount.text = "จำนวน : " + amountItemInt + "/ " + sliderOpen.maxValue + " ชิ้น";
         }
     }
     public void toggle_change(bool value)
     {
         Debug.Log(value);
         GoldSwitch = (value);
+    }
+    public void toggle_changeShake(bool value)
+    {
+        Shake = (value);
     }
 
 }

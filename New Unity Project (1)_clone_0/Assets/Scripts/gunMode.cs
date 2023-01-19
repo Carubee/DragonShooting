@@ -123,6 +123,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     [SerializeField] UILabel costtext;
     public int Money;
 
+    public float delayGun;
     public void Awake()
     {
         firerateAmount = 0.5f;
@@ -361,6 +362,8 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
 
             }
         }
+        if (delayGun > 0)
+            delayGun -= Time.deltaTime;
     }
     public Text _messages;
 
@@ -722,7 +725,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     {
         if (!Object.HasInputAuthority) return;
 
-            if (Time.time - firerate < firerateAmount || PlayerPrefs.GetInt("coin") < gunControl.cost || !canPlay)
+            if (Time.time - firerate < firerateAmount || PlayerPrefs.GetInt("coin") < gunControl.cost || !canPlay || delayGun > 0)
             return;
         if (HasInputAuthority)
         {
@@ -914,7 +917,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             var player = bullet.GetComponent<BalistaHitbox>();
             player.InputPlayerRef(Object.InputAuthority);
-            rb.AddForce(firepoint.up * 60, ForceMode2D.Impulse);
+            rb.AddForce(firepoint.up * 30, ForceMode2D.Impulse);
         }
         if (show == false)
         {
@@ -978,6 +981,7 @@ public class gunMode : NetworkBehaviour , IPlayerLeft
     {
         Instantiate(bomb, new Vector3(posX, posY), Quaternion.identity);
         //Runner.Spawn(bomb, new Vector3(posX,posY), Quaternion.identity);
+        if (OpenOptioon.instant.Shake)
         UtilsClass.ShakeCamera(0.03f, .1f);
     }
     [Rpc(RpcSources.InputAuthority,RpcTargets.All)]
